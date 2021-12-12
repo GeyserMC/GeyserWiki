@@ -1,23 +1,92 @@
-- title: Documentation
-  url: docs
+- title: Geyser Documentation
+  url: "geyser/Geyser"
   links:
-    - title: "Getting Started"
-      url: "docs/getting-started"
+    - title: "Geyser Setup"
+      url: "geyser/GeyserSetup"
       children:
-        - title: Features
-          url: "docs/getting-started#getting-started"
-        - title: Development
-          url: "docs/getting-started#development"
-        - title: Customization
-          url: "docs/getting-started#customization"
-    - title: "About"
-      url: "about"
-    - title: "News"
-      url: "news"
-- title: "Extras"
-  url: "docs/extras"
+        - title: prerequisites
+          url: "geyser/GeyserSetup#prerequisites"
+        - title: plugin-setup
+          url: "geyser/GeyserSetup#plugin-setup"
+        - title: bungeecordvelocity-setup
+          url: "geyser/GeyserSetup#bungeecordvelocity-setup"
+        - title: standalone-setup
+          url: "geyser/GeyserSetup#standalone-setup"
+        - title: gui-setup-recommended
+          url: "geyser/GeyserSetup#gui-setup-recommended"
+        - title: console-setup
+          url: "geyser/GeyserSetup#console-setup"
+        - title: standalone-setup-geyser-and-floodgate-are-not-on-the-same-server
+          url: "geyser/GeyserSetup#standalone-setup-geyser-and-floodgate-are-not-on-the-same-server"
+        - title: port-forwarding
+          url: "geyser/GeyserSetup#port-forwarding"
+        - title: termux-android
+          url: "geyser/GeyserSetup#termux-android"
+        - title: newterm-2-ios
+          url: "geyser/GeyserSetup#newterm-2-ios"
+        - title: setup-videos
+          url: "geyser/GeyserSetup#setup-videos"
+    - title: FAQ
+      url: geyser/FAQ
+    - title: Common Issues
+      url: geyser/Common-Issues
+      children:
+        - title: Fixing Unable to Connect to World
+          url: "geyser/Common-Issues/#see-here-for-fixing-unable-to-connect-to-world-with-no-console-errors"
+    - title: Understanding the Config
+      url: geyser/Understanding-the-Config
+    - title: Standalone Command Line Arguments
+      url: geyser/Standalone-Command-Line-Arguments
+    - title: Commands
+      url: geyser/Commands
+    - title: Supported Hosting Providers
+      url: geyser/Supported-Hosting-Providers
+    - title: Anticheat Compatibility
+      url: geyser/Anticheat-Compatibility
+    - title: Using geyser or floodgate as a dependency
+      url: geyser/Using-Geyser-or-Floodgate-as-a-dependency
+    - title: Current Limitations
+      url: geyser/Current-Limitations
+- title: Floodgate Documentation
+  url: "floodgate/Floodgate"
   links:
-    - title: Quizzes
-      url: "docs/extras/example-quiz"
-    - title: Tags Page
-      url: "tags"
+    - title: "Floodgate Setup"
+      url: "floodgate/FloodgateSetup"
+    - title: "Issues"
+      url: "floodgate/Issues"
+    - title: "Features"
+      url: "floodgate/Features"
+      children:
+        - title: Whitelist command
+          url: "floodgate/Features#whitelist-command"
+        - title: Global Api
+          url: "floodgate/Features#what-is-the-global-api"
+        - title: Global Linking
+          url: "floodgate/Features#what-is-global-linking"
+        - title: Local Linking
+          url: "floodgate/Features#local-linking"
+        - title: Skin Uploading
+          url: "floodgate/Features#what-is-skin-uploading"
+    - title: "FloodgateAPI"
+      url: "floodgate/FloodgateApi"
+    - title: "FloodgatePlayer"
+      url: "floodgate/FloodgatePlayer"
+    - title: "Forms and Cumulus"
+      url: "floodgate/Forms"
+    - title: "Commands"
+      url: "floodgate/Commands"
+- title: Other
+  url: "other/Other"
+  links:
+    - title: "GeyserOptionalPack"
+      url: "other/GeyserOptionalPack"
+    - title: "GeyserConnect"
+      url: "other/GeyserConnect"
+    - title: "Geyser-Fabric"
+      url: "other/Geyser-Fabric"
+    - title: "Test Server"
+      url: "other/TestServer"
+    - title: "Developer Guide"
+      url: "other/DeveloperGuide"
+    - title: "Community Geyser Projects"
+      url: "other/Community-Geyser-Projects"

@@ -9,7 +9,7 @@ workflows:
       - build-site:
           filters:
             branches:
-              ignore: master
+              ignore: 
 
 build_jekyll: &build_jekyll
     name: Jekyll Build
@@ -47,4 +47,4 @@ jobs:
       - run: *build_jekyll
       - store_artifacts:
           path: ~/repo/_site
-          destination: docsy-jekyll
+          destination: GeyserDocs

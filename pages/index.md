@@ -1,41 +1,86 @@
 ---
 layout: page
-title: Docsy Jekyll Theme
+title: Docsy GeyserMC
 permalink: /
 ---
 
-# Welcome to Docsy Jekyll
-
-This is a starter template for a docsy jekyll theme.
-
-![assets/img/docsy-jekyll.png](assets/img/docsy-jekyll.png)
-
-## Purpose
-
-GitHub pages uses Jekyll natively, so when I make documentation, I typically
-look for Jekyll templates. Why? Using Jekyll means that I can use markdown,
-and allow for users to easily contribute, and build automatically just by
-way of pushing to a master branch (or general GitHub pages).
-I found Docsy, a beautiful Hugo template, but it requires hugo with GoLang
-which doesn't render natively on GitHub pages. For this reason, I've spent
-some time creating a custom Jekyll template that is (almost) as beautiful,
-and includes all the features that I might want.
-
-## Features
-
-What are these features? You should see the {% include doc.html name="Getting Started" path="getting-started" %}
-guide for a complete summary. Briefly:
-
- - *User interaction* including consistent permalinks, links to ask questions via GitHub issues, and edit the file on GitHub directly.
- - *Search* across posts, documentation, and other site pages, with an ability to exclude from search.
- - *External Search* meaning an ability to link any page tag to trigger an external search.
- - *Documentation* A documentation collection that was easy to organize on the filesystem, render with nested headings for the user, and refer to in markdown.
- - *Pages* A separate folder for more traditional pages (e.g, about).
- - *Navigation*: Control over the main navigation on the left of the page, and automatic generation of table of contents for each page on the right.
- - *News* A posts feed for news and updates, along with an archive (organized by year).
- - *Templates* or specifically, "includes" that make it easy to create an alert, documentation link, or other content.
- - *Continuous Integration* recipes to preview the site
-
-
-For features, getting started with development, see the {% include doc.html name="Getting Started" path="getting-started" %} page. Would you like to request a feature or contribute?
-[Open an issue]({{ site.repo }}/issues)
+<html lang="en">
+    <body>
+        <header>
+            <div id="header" class="section1 sections">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 text-center">
+                            <img class="logoimg" src="https://geysermc.org/img/geyser.png" alt="geyser logo"/>
+                            <h1 class="text-center">Revolutionize Your Minecraft Server</h1>
+                            <h4 class="text-center">Enable clients from Minecraft Bedrock Edition to join your Minecraft Java server.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="whatisgeyser" class="section2 sections">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>What is Geyser?</h1>
+                        <p>Geyser is a proxy, bridging the gap between Minecraft: Bedrock Edition and Minecraft: Java Edition servers. The ultimate goal of this project is to allow Minecraft: Bedrock Edition users to join Minecraft: Java Edition servers as seamlessly as possible to allow for true cross-platform.</p>
+                    </div>
+                    <div class="col">
+                        <div><img src="https://geysermc.org/img/crossplat0.png" alt="image of bedrock client on java edition server"/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="howto" class="section3 sections">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <iframe src="https://www.youtube.com/embed/U7dZZ8w7Gi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col">
+                        <h1>How do I use it?</h1>
+                        <p>Geyser can be downloaded from our Jenkins server <a href="http://ci.geysermc.org">here</a> and setup installations can be found on our <a href="https://github.com/GeyserMC/Geyser/wiki#Setup">wiki</a> or in the tutorial video. Geyser can be used to join any modern Java server and doesn't require anything extra to be done on their end.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="howitworks" class="section4 sections">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>How does it work?</h1>
+                        <p>Geyser is a middleware, which translates all the incoming and outgoing packets. With this being said, Geyser works as a standalone proxy, meaning you can use it to join <i>any</i> modern Minecraft Java server. Geyser can also be installed on your server as a plugin, so you can easily make your server compatible with Minecraft: Bedrock Edition.</p>
+                    </div>
+                    <div class="col">
+                        <div><img src="https://geysermc.org/img/crossplat1.png" alt="diagram of bedrock edition to geyser to java edition"/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="floodgate" class="section5 sections">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Join from anywhere</h1>
+                        <p>Geyser can be joined from Windows 10, iOS, Android, and even consoles
+                            (see <a href="https://github.com/GeyserMC/Geyser/wiki/Using-Geyser-with-Consoles">here</a>
+                            for how to set this up!) Geyser is tested working with a
+                            <a href="https://github.com/GeyserMC/Geyser/wiki/Supported-Hosting-Providers">wide array of hosting providers</a>,
+                        and, if you own the server, you aren't limited by a Java account with our <a href="https://github.com/GeyserMC/Floodgate/">Floodgate</a>
+                        plugin!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">© 2021 GeyserMC</h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
