@@ -169,9 +169,9 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #222;
+    color: #c9d1d9;
     text-align: left;
-    background-color: #fff
+    background-color: #0d1117
 }
 
 [tabindex="-1"]:focus {
@@ -2989,7 +2989,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #30638e;
+    background-color: #0d1117;
 }
 
 .btn-primary:hover {
@@ -18091,7 +18091,7 @@ html body .md-typeset .headerlink {
 }
 
 .td-sidebar-nav__section-title a {
-    color: #222
+    color: #c9d1d9
 }
 
 .td-sidebar-nav .td-sidebar-link {
@@ -18100,7 +18100,7 @@ html body .md-typeset .headerlink {
 }
 
 .td-sidebar-nav .td-sidebar-link__page {
-    color: #495057;
+    color: #fff;
     font-weight: 300
 }
 
@@ -18114,7 +18114,7 @@ html body .md-typeset .headerlink {
 }
 
 .td-sidebar-nav .dropdown a {
-    color: #495057
+    color: #fff
 }
 
 .td-sidebar-nav .dropdown .nav-link {
@@ -18221,7 +18221,7 @@ html body .md-typeset .headerlink {
 }
 
 .td-toc #TableOfContents a {
-    color: #888
+    color: #c9d1d9
 }
 
 .td-toc #TableOfContents a:hover {
