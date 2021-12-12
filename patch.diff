@@ -1,0 +1,1479 @@
+From f421d0e2ede93f40a4eb0a5827520b48fba0fe81 Mon Sep 17 00:00:00 2001
+From: Jens Collaert <jenscollaertprive@hotmail.com>
+Date: Sat, 11 Dec 2021 13:23:50 +0100
+Subject: [PATCH] link title update
+
+---
+ _data/toc.yml | 84 +++++++++++++++++++++++++--------------------------
+ 1 file changed, 42 insertions(+), 42 deletions(-)
+
+diff --git a/_data/toc.yml b/_data/toc.yml
+index f26294c..bcb4baa 100644
+--- a/_data/toc.yml
++++ b/_data/toc.yml
+@@ -1,92 +1,92 @@
+ - title: Geyser Documentation
+   url: "geyser/Geyser"
+   links:
+-    - title: "Geyser Setup"
++    - title: "• Geyser Setup"
+       url: "geyser/GeyserSetup"
+       children:
+-        - title: prerequisites
++        - title: • prerequisites
+           url: "geyser/GeyserSetup#prerequisites"
+-        - title: plugin-setup
++        - title: • plugin-setup
+           url: "geyser/GeyserSetup#plugin-setup"
+-        - title: bungeecordvelocity-setup
++        - title: • bungeecordvelocity-setup
+           url: "geyser/GeyserSetup#bungeecordvelocity-setup"
+-        - title: standalone-setup
++        - title: • standalone-setup
+           url: "geyser/GeyserSetup#standalone-setup"
+-        - title: gui-setup-recommended
++        - title: • gui-setup-recommended
+           url: "geyser/GeyserSetup#gui-setup-recommended"
+-        - title: console-setup
++        - title: • console-setup
+           url: "geyser/GeyserSetup#console-setup"
+-        - title: standalone-setup-geyser-and-floodgate-are-not-on-the-same-server
++        - title: • standalone-setup-geyser-and-floodgate-are-not-on-the-same-server
+           url: "geyser/GeyserSetup#standalone-setup-geyser-and-floodgate-are-not-on-the-same-server"
+-        - title: port-forwarding
++        - title: • port-forwarding
+           url: "geyser/GeyserSetup#port-forwarding"
+-        - title: termux-android
++        - title: • termux-android
+           url: "geyser/GeyserSetup#termux-android"
+-        - title: newterm-2-ios
++        - title: • newterm-2-ios
+           url: "geyser/GeyserSetup#newterm-2-ios"
+-        - title: setup-videos
++        - title: • setup-videos
+           url: "geyser/GeyserSetup#setup-videos"
+-    - title: FAQ
++    - title: • FAQ
+       url: geyser/FAQ
+-    - title: Common Issues
++    - title: • Common Issues
+       url: geyser/Common-Issues
+       children:
+-        - title: Fixing Unable to Connect to World
++        - title: • Fixing Unable to Connect to World
+           url: "geyser/Common-Issues/#see-here-for-fixing-unable-to-connect-to-world-with-no-console-errors"
+-    - title: Understanding the Config
++    - title: • Understanding the Config
+       url: geyser/Understanding-the-Config
+-    - title: Standalone Command Line Arguments
++    - title: • Standalone Command Line Arguments
+       url: geyser/Standalone-Command-Line-Arguments
+-    - title: Commands
++    - title: • Commands
+       url: geyser/Commands
+-    - title: Supported Hosting Providers
++    - title: • Supported Hosting Providers
+       url: geyser/Supported-Hosting-Providers
+-    - title: Anticheat Compatibility
++    - title: • Anticheat Compatibility
+       url: geyser/Anticheat-Compatibility
+-    - title: Using geyser or floodgate as a dependency
++    - title: • Using geyser or floodgate as a dependency
+       url: geyser/Using-Geyser-or-Floodgate-as-a-dependency
+-    - title: Current Limitations
++    - title: • Current Limitations
+       url: geyser/Current-Limitations
+-- title: Floodgate Documentation
++- title: • Floodgate Documentation
+   url: "floodgate/Floodgate"
+   links:
+-    - title: "Floodgate Setup"
++    - title: "• Floodgate Setup"
+       url: "floodgate/FloodgateSetup"
+-    - title: "Issues"
++    - title: "• Issues"
+       url: "floodgate/Issues"
+-    - title: "Features"
++    - title: "• Features"
+       url: "floodgate/Features"
+       children:
+-        - title: Whitelist command
++        - title: • Whitelist command
+           url: "floodgate/Features#whitelist-command"
+-        - title: Global Api
++        - title: • Global Api
+           url: "floodgate/Features#what-is-the-global-api"
+-        - title: Global Linking
++        - title: • Global Linking
+           url: "floodgate/Features#what-is-global-linking"
+-        - title: Local Linking
++        - title: • Local Linking
+           url: "floodgate/Features#local-linking"
+-        - title: Skin Uploading
++        - title: • Skin Uploading
+           url: "floodgate/Features#what-is-skin-uploading"
+-    - title: "FloodgateAPI"
++    - title: "• FloodgateAPI"
+       url: "floodgate/FloodgateApi"
+-    - title: "FloodgatePlayer"
++    - title: "• FloodgatePlayer"
+       url: "floodgate/FloodgatePlayer"
+-    - title: "Forms and Cumulus"
++    - title: "• Forms and Cumulus"
+       url: "floodgate/Forms"
+-    - title: "Commands"
++    - title: "• Commands"
+       url: "floodgate/Commands"
+-- title: Other
++- title: • Other
+   url: "other/Other"
+   links:
+-    - title: "GeyserOptionalPack"
++    - title: "• GeyserOptionalPack"
+       url: "other/GeyserOptionalPack"
+-    - title: "GeyserConnect"
++    - title: "• GeyserConnect"
+       url: "other/GeyserConnect"
+-    - title: "Geyser-Fabric"
++    - title: "• Geyser-Fabric"
+       url: "other/Geyser-Fabric"
+-    - title: "Test Server"
++    - title: "• Test Server"
+       url: "other/TestServer"
+-    - title: "Developer Guide"
++    - title: "• Developer Guide"
+       url: "other/DeveloperGuide"
+-    - title: "Community Geyser Projects"
++    - title: "• Community Geyser Projects"
+       url: "other/Community-Geyser-Projects"
+-- 
+2.31.1.windows.1
+
+From 3599c2f85b624baeb32d88b1c64037a8e3206479 Mon Sep 17 00:00:00 2001
+From: rtm516 <rtm516@users.noreply.github.com>
+Date: Sat, 11 Dec 2021 18:05:01 +0000
+Subject: [PATCH] Clean-up and extras (#4)
+
+* Clean-up and restructure
+
+* Add PR check
+---
+ .circleci/circle_urls.sh                      |   4 -
+ .circleci/config.yml                          |  50 ------
+ .github/scripts/check_permalinks.py           |  85 +++++++++
+ .github/stale.yml                             |  17 --
+ .github/workflows/pr.yml                      |  19 ++
+ .idea/.gitignore                              |   3 -
+ .idea/docsy-jekyll.iml                        |   9 -
+ .idea/modules.xml                             |   8 -
+ .idea/vcs.xml                                 |   6 -
+ CHANGELOG.md                                  |  32 ----
+ Gemfile                                       |   2 +-
+ VERSION                                       |   1 -
+ _config.yml                                   |  24 +--
+ _data/toc.yml                                 | 162 +++++++++---------
+ _includes/footer.html                         |   1 -
+ _includes/header.html                         |   2 +-
+ _includes/logo.svg                            |   1 -
+ _includes/quiz.html                           |   3 -
+ _includes/quiz/multiple-choice.html           |   5 -
+ _includes/sidebar.html                        |   2 +-
+ _layouts/post.html                            |   8 -
+ assets/css/main.css                           |   2 +-
+ docker-compose.yaml                           |  12 --
+ {pages => docs}/feed.xml                      |   0
+ .../FloodgateApi.md => docs/floodgate/api.md  |   2 +-
+ .../Commands.md => docs/floodgate/commands.md |   2 +-
+ .../Features.md => docs/floodgate/features.md |   2 +-
+ .../Forms.md => docs/floodgate/forms.md       |   2 +-
+ .../Issues.md => docs/floodgate/issues.md     |   2 +-
+ .../floodgate/player.md                       |   2 +-
+ .../Floodgate.md => docs/floodgate/root.md    |   2 +-
+ .../floodgate/setup.md                        |   2 +-
+ .../geyser/anticheat-compatibility.md         |   2 +-
+ .../Commands.md => docs/geyser/commands.md    |   2 +-
+ .../geyser/common-issues.md                   |   2 +-
+ docs/geyser/creating-a-startup-script.md      |  40 +++++
+ .../geyser/current-limitations.md             |   2 +-
+ pages/geyser/FAQ.md => docs/geyser/faq.md     |   2 +-
+ pages/geyser/Geyser.md => docs/geyser/root.md |   2 +-
+ .../GeyserSetup.md => docs/geyser/setup.md    |   3 +-
+ .../standalone-command-line-arguments.md      |   2 +-
+ .../geyser/supported-hosting-providers.md     |   2 +-
+ .../geyser/understanding-the-config.md        |   2 +-
+ ...ing-geyser-or-floodgate-as-a-dependency.md |   2 +-
+ .../geyser/using-geyser-with-consoles.md      |   2 +-
+ {pages => docs}/index.md                      |  10 --
+ .../other/community-geyser-projects.md        |   2 +-
+ .../other/developer-guide.md                  |   2 +-
+ .../other/geyser-fabric.md                    |   2 +-
+ .../other/geyserconnect.md                    |   2 +-
+ .../other/geyseroptionalpack.md               |   2 +-
+ docs/other/root.md                            |   7 +
+ .../other/test-server.md                      |   2 +-
+ {pages => docs}/search.html                   |   0
+ {pages => docs}/sitemap.xml                   |   0
+ {pages => docs}/tags.html                     |   0
+ 56 files changed, 263 insertions(+), 305 deletions(-)
+ delete mode 100644 .circleci/circle_urls.sh
+ delete mode 100644 .circleci/config.yml
+ create mode 100644 .github/scripts/check_permalinks.py
+ delete mode 100644 .github/stale.yml
+ create mode 100644 .github/workflows/pr.yml
+ delete mode 100644 .idea/.gitignore
+ delete mode 100644 .idea/docsy-jekyll.iml
+ delete mode 100644 .idea/modules.xml
+ delete mode 100644 .idea/vcs.xml
+ delete mode 100644 CHANGELOG.md
+ delete mode 100644 VERSION
+ delete mode 100644 _includes/logo.svg
+ delete mode 100644 _includes/quiz.html
+ delete mode 100644 _includes/quiz/multiple-choice.html
+ delete mode 100755 _layouts/post.html
+ delete mode 100644 docker-compose.yaml
+ rename {pages => docs}/feed.xml (100%)
+ rename pages/floodgate/FloodgateApi.md => docs/floodgate/api.md (98%)
+ rename pages/floodgate/Commands.md => docs/floodgate/commands.md (87%)
+ rename pages/floodgate/Features.md => docs/floodgate/features.md (99%)
+ rename pages/floodgate/Forms.md => docs/floodgate/forms.md (99%)
+ rename pages/floodgate/Issues.md => docs/floodgate/issues.md (99%)
+ rename pages/floodgate/FloodgatePlayer.md => docs/floodgate/player.md (88%)
+ rename pages/floodgate/Floodgate.md => docs/floodgate/root.md (97%)
+ rename pages/floodgate/FloodgateSetup.md => docs/floodgate/setup.md (99%)
+ rename pages/geyser/Anticheat-Compatibility.md => docs/geyser/anticheat-compatibility.md (97%)
+ rename pages/geyser/Commands.md => docs/geyser/commands.md (96%)
+ rename pages/geyser/Common-Issues.md => docs/geyser/common-issues.md (99%)
+ create mode 100644 docs/geyser/creating-a-startup-script.md
+ rename pages/geyser/Current-Limitations.md => docs/geyser/current-limitations.md (96%)
+ rename pages/geyser/FAQ.md => docs/geyser/faq.md (99%)
+ rename pages/geyser/Geyser.md => docs/geyser/root.md (97%)
+ rename pages/geyser/GeyserSetup.md => docs/geyser/setup.md (99%)
+ rename pages/geyser/Standalone-Command-Line-Arguments.md => docs/geyser/standalone-command-line-arguments.md (90%)
+ rename pages/geyser/Supported-Hosting-Providers.md => docs/geyser/supported-hosting-providers.md (99%)
+ rename pages/geyser/Understanding-the-Config.md => docs/geyser/understanding-the-config.md (99%)
+ rename pages/geyser/Using-Geyser-or-Floodgate-as-a-dependency.md => docs/geyser/using-geyser-or-floodgate-as-a-dependency.md (96%)
+ rename pages/geyser/Using-Geyser-with-Consoles.md => docs/geyser/using-geyser-with-consoles.md (96%)
+ rename {pages => docs}/index.md (92%)
+ rename pages/other/Community-Geyser-Projects.md => docs/other/community-geyser-projects.md (98%)
+ rename pages/other/DeveloperGuide.md => docs/other/developer-guide.md (99%)
+ rename pages/other/Geyser-Fabric.md => docs/other/geyser-fabric.md (97%)
+ rename pages/other/GeyserConnect.md => docs/other/geyserconnect.md (98%)
+ rename pages/other/GeyserOptionalPack.md => docs/other/geyseroptionalpack.md (97%)
+ create mode 100644 docs/other/root.md
+ rename pages/other/TestServer.md => docs/other/test-server.md (96%)
+ rename {pages => docs}/search.html (100%)
+ rename {pages => docs}/sitemap.xml (100%)
+ mode change 100755 => 100644
+ rename {pages => docs}/tags.html (100%)
+
+diff --git a/.circleci/circle_urls.sh b/.circleci/circle_urls.sh
+deleted file mode 100644
+index 22729ae..0000000
+--- a/.circleci/circle_urls.sh
++++ /dev/null
+@@ -1,4 +0,0 @@
+-REPO_ID=$(curl https://api.github.com/repos/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME} | jq --raw-output '.id')
+-echo "Repo ID is ${REPO_ID}"
+-BASEURL=https://${CIRCLE_BUILD_NUM}-${REPO_ID}-gh.circle-artifacts.com/0/${CIRCLE_PROJECT_REPONAME}
+-sed -i "26 s,.*,baseurl: $BASEURL,g" "_config.yml"
+diff --git a/.circleci/config.yml b/.circleci/config.yml
+deleted file mode 100644
+index 6a798b8..0000000
+--- a/.circleci/config.yml
++++ /dev/null
+@@ -1,50 +0,0 @@
+-version: 2.1
+-
+-workflows:
+-  version: 2
+-
+-  # The build workflow will build a preview for the site, intended for PRs
+-  build:
+-    jobs:
+-      - build-site:
+-          filters:
+-            branches:
+-              ignore: 
+-
+-build_jekyll: &build_jekyll
+-    name: Jekyll Build
+-    command: |
+-        echo "Building RSE Blog for Preview"
+-        cp ~/repo/.circleci/circle_urls.sh ~/repo/circle_urls.sh
+-        cd ~/repo
+-        chmod u+x circle_urls.sh
+-        bash circle_urls.sh              
+-        bundle exec jekyll build
+-        
+-jobs:
+-  build-site:
+-    docker:
+-      - image: circleci/ruby:2.4.1
+-    working_directory: ~/repo
+-    environment:
+-      - JEKYLL_ENV: production
+-      - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+-      - BUNDLE_PATH: ~/repo/vendor/bundle
+-    steps:
+-      - checkout
+-      - restore_cache:
+-          keys:
+-          - rubygems-v1
+-      - run:
+-          name: Bundle Install
+-          command: |
+-              cd ~/repo
+-              bundle check || bundle install
+-      - save_cache:
+-          key: rubygems-v1
+-          paths:
+-            - vendor/bundle
+-      - run: *build_jekyll
+-      - store_artifacts:
+-          path: ~/repo/_site
+-          destination: GeyserDocs
+diff --git a/.github/scripts/check_permalinks.py b/.github/scripts/check_permalinks.py
+new file mode 100644
+index 0000000..ff83004
+--- /dev/null
++++ b/.github/scripts/check_permalinks.py
+@@ -0,0 +1,85 @@
++import glob, os, sys
++from collections import OrderedDict
++
++hadError = False
++
++# _escape and _error_workflow_command taken from https://github.com/utgwkk/pytest-github-actions-annotate-failures/blob/main/pytest_github_actions_annotate_failures/plugin.py
++def _escape(s):
++    return s.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
++
++def _error_workflow_command(filesystempath, lineno, longrepr):
++    # Build collection of arguments. Ordering is strict for easy testing
++    details_dict = OrderedDict()
++    details_dict["file"] = filesystempath
++    if lineno is not None:
++        details_dict["line"] = lineno
++
++    details = ",".join("{}={}".format(k, v) for k, v in details_dict.items())
++
++    if longrepr is None:
++        return "\n::error {}".format(details)
++    else:
++        longrepr = _escape(longrepr)
++        return "\n::error {}::{}".format(details, longrepr)
++
++
++# Load toc but all stripped
++toc = open('./_data/toc.yml', 'r', encoding='utf-8')
++tocLines = toc.readlines()
++toc.close()
++tocContents = ''
++for tocLine in tocLines:
++	tocContents += tocLine.replace('- ', '').strip() + '\n'
++
++# Check the permalinks
++directory = './docs/'
++files = glob.glob(os.path.join(directory, '**/*.md'), recursive=True)
++for file in files:
++	contents = open(file, 'r', encoding='utf-8')
++	lines = contents.readlines()
++	contents.close()
++
++	lineNo = 0
++	for line in lines:
++		lineNo += 1
++
++		# End of header?
++		if (line == '---' and lineNo != 1):
++			break
++		
++		if (line.startswith('permalink:')):
++			url = line.replace('permalink:', '').strip()
++			wantedUrl = '/' + file.replace(os.path.sep, '/').replace(directory, '').replace('.md', '/')
++
++			# Special file cleanup
++			wantedUrl = wantedUrl.replace('index/', '')
++			wantedUrl = wantedUrl.replace('root/', '')
++
++			errorFileName = file
++
++       		# try to convert to absolute path in GitHub Actions
++			# from https://github.com/utgwkk/pytest-github-actions-annotate-failures/blob/main/pytest_github_actions_annotate_failures/plugin.py#L38-L50
++			workspace = os.environ.get("GITHUB_WORKSPACE")
++			if workspace:
++				full_path = os.path.abspath(file)
++				try:
++					rel_path = os.path.relpath(full_path, workspace)
++				except ValueError:
++					# os.path.relpath() will raise ValueError on Windows
++					# when full_path and workspace have different mount points.
++					# https://github.com/utgwkk/pytest-github-actions-annotate-failures/issues/20
++					rel_path = errorFileName
++				if not rel_path.startswith(".."):
++					errorFileName = rel_path
++
++			# Check if the perma link it correct
++			if (url != wantedUrl):
++				hadError = True
++				print(_error_workflow_command(errorFileName, lineNo, "Permalink does not match filename! Should be " + wantedUrl), file=sys.stderr)
++
++			# Check toc
++			if (wantedUrl != '/' and not (f"url: \"" + url[1:] + "\"" in tocContents)):
++				hadError = True
++				print(_error_workflow_command(errorFileName, lineNo, "Permalink not in toc.yml!"), file=sys.stderr)
++
++sys.exit(1 if hadError else 0)
+diff --git a/.github/stale.yml b/.github/stale.yml
+deleted file mode 100644
+index dc90e5a..0000000
+--- a/.github/stale.yml
++++ /dev/null
+@@ -1,17 +0,0 @@
+-# Number of days of inactivity before an issue becomes stale
+-daysUntilStale: 60
+-# Number of days of inactivity before a stale issue is closed
+-daysUntilClose: 7
+-# Issues with these labels will never be considered stale
+-exemptLabels:
+-  - pinned
+-  - security
+-# Label to use when marking an issue as stale
+-staleLabel: wontfix
+-# Comment to post when marking an issue as stale. Set to `false` to disable
+-markComment: >
+-  This issue has been automatically marked as stale because it has not had
+-  recent activity. It will be closed if no further activity occurs. Thank you
+-  for your contributions.
+-# Comment to post when closing a stale issue. Set to `false` to disable
+-closeComment: false
+diff --git a/.github/workflows/pr.yml b/.github/workflows/pr.yml
+new file mode 100644
+index 0000000..c0214de
+--- /dev/null
++++ b/.github/workflows/pr.yml
+@@ -0,0 +1,19 @@
++name: Check PR
++
++on: pull_request
++
++jobs:
++  build:
++    runs-on: ubuntu-latest
++
++    steps:
++      - name: Checkout repo content
++        uses: actions/checkout@v2
++
++      - name: Setup Python
++        uses: actions/setup-python@v2
++        with:
++          python-version: 3.8
++      
++      - name: Check permalinks
++        run: python .github/scripts/check_permalinks.py
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+index 26d3352..0000000
+--- a/.idea/.gitignore
++++ /dev/null
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+diff --git a/.idea/docsy-jekyll.iml b/.idea/docsy-jekyll.iml
+deleted file mode 100644
+index d6ebd48..0000000
+--- a/.idea/docsy-jekyll.iml
++++ /dev/null
+@@ -1,9 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-  </component>
+-</module>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+index 31f76f1..0000000
+--- a/.idea/modules.xml
++++ /dev/null
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/docsy-jekyll.iml" filepath="$PROJECT_DIR$/.idea/docsy-jekyll.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+index 35eb1dd..0000000
+--- a/.idea/vcs.xml
++++ /dev/null
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+deleted file mode 100644
+index 6657502..0000000
+--- a/CHANGELOG.md
++++ /dev/null
+@@ -1,32 +0,0 @@
+-# Changelog
+-
+-This is a manually generated log to track changes to the repository for each release. 
+-Each section should include general headers such as **Implemented enhancements** 
+-and **Merged pull requests**. All closed issued and bug fixes should be 
+-represented by the pull requests that fixed them.
+-Critical items to know are:
+-
+- - renamed commands
+- - deprecated / removed commands
+- - changed defaults
+- - backward incompatible changes
+- - migration guidance
+- - changed behaviour
+-
+-## [master](https://github.com/vsoch/docsy-jekyll/tree/master)
+- - adding more verbose example for subfolders (0.0.24)
+- - sidebar fix to support multiple top level menus (0.0.23)
+- - added support for github_branch (default 'master') in config (0.0.22)
+- - adding support in footer to icon and link to linkedin url (0.0.21)
+- - updating repository with copyright notice, google analytics bug fix (0.0.2)
+- - fixing link to repository in about.md (0.0.19)
+- - use jquery locally, in case that jquery is unreachable in some places (0.0.18)
+- - hiding sidebar links to reflect parent functionality (0.0.17)
+- - adding breadcrumb link to documentation root (0.0.16)
+- - bug with link in top breadcrumb (404) missing baseurl (0.0.15)
+- - bug that news items (posts) don't render in search (0.0.14)
+- - minimum width of 150px for top right site name (0.0.13)
+- - tags page and option to link to it from post/docs tags (0.0.12)
+- - adding search endpoint tags to docs (0.0.11)
+- - adding site.url to config, making links in readme absolute (0.0.1)
+- - start of theme  (0.0.0)
+diff --git a/Gemfile b/Gemfile
+index d1cfaf3..bb5cfc8 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -16,7 +16,7 @@ ruby RUBY_VERSION
+ 
+ # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+ # uncomment the line below. To upgrade, run `bundle update github-pages`.
+-gem "master", group: :jekyll_plugins
++gem "github-pages", group: :jekyll_plugins
+ 
+ # If you have any plugins, put them here!
+ # group :jekyll_plugins do
+diff --git a/VERSION b/VERSION
+deleted file mode 100644
+index b056f41..0000000
+--- a/VERSION
++++ /dev/null
+@@ -1 +0,0 @@
+-0.0.24
+diff --git a/_config.yml b/_config.yml
+index d88422a..ac8c2ad 100644
+--- a/_config.yml
++++ b/_config.yml
+@@ -23,21 +23,19 @@ description: > # this means to ignore newlines until "baseurl:"
+   Google search results) and in your feed.xml site description.
+ 
+ # Add your baseurl here (your repository) but DO NOT CHANGE THE LINE NUMBER without editing .circleci/circle_urls.sh
+-baseurl: "/GeyserDocs" # the subpath of your site, e.g. /blog
++baseurl: "" # the subpath of your site, e.g. /blog
+ 
+ # This is mostly for testing
+-url: "https://vsoch.github.io" # the base hostname & protocol for your site
++url: "https://docs.geysermc.org" # the base hostname & protocol for your site
+ 
+ # Social (First three Required)
+-repo: "https://github.com/Jens-Co/GeyserDocs"
+-github_user: "Jens-Co"
++repo: "https://github.com/GeyserMC/GeyserDocs"
++github_user: "GeyserMC"
+ github_repo: "GeyserDocs"
+ github_branch: "master"
+ 
+ # Optional
+-twitter: vsoch
+-linkedin: vsochat
+-dockerhub: vanessa
++twitter: geyser_mc
+ 
+ # Should there be feedback buttons at the bottom of pages?
+ feedback: true
+@@ -78,19 +76,7 @@ collections:
+ # Defaults
+ defaults:
+   - scope:
+-      path: "_docs"
+-      type: "docs"
+-    values:
+-      layout: page
+-  -
+-    scope:
+       path: ""
+       type: "pages"
+     values:
+       layout: "page"
+-  -
+-    scope:
+-      path: "posts"
+-      type: "posts"
+-    values:
+-      layout: "post"
+diff --git a/_data/toc.yml b/_data/toc.yml
+index bcb4baa..e12f967 100644
+--- a/_data/toc.yml
++++ b/_data/toc.yml
+@@ -1,92 +1,84 @@
+ - title: Geyser Documentation
+-  url: "geyser/Geyser"
++  url: "geyser/"
+   links:
+-    - title: "• Geyser Setup"
+-      url: "geyser/GeyserSetup"
++    - title: "Geyser Setup"
++      url: "geyser/setup/"
+       children:
+-        - title: • prerequisites
+-          url: "geyser/GeyserSetup#prerequisites"
+-        - title: • plugin-setup
+-          url: "geyser/GeyserSetup#plugin-setup"
+-        - title: • bungeecordvelocity-setup
+-          url: "geyser/GeyserSetup#bungeecordvelocity-setup"
+-        - title: • standalone-setup
+-          url: "geyser/GeyserSetup#standalone-setup"
+-        - title: • gui-setup-recommended
+-          url: "geyser/GeyserSetup#gui-setup-recommended"
+-        - title: • console-setup
+-          url: "geyser/GeyserSetup#console-setup"
+-        - title: • standalone-setup-geyser-and-floodgate-are-not-on-the-same-server
+-          url: "geyser/GeyserSetup#standalone-setup-geyser-and-floodgate-are-not-on-the-same-server"
+-        - title: • port-forwarding
+-          url: "geyser/GeyserSetup#port-forwarding"
+-        - title: • termux-android
+-          url: "geyser/GeyserSetup#termux-android"
+-        - title: • newterm-2-ios
+-          url: "geyser/GeyserSetup#newterm-2-ios"
+-        - title: • setup-videos
+-          url: "geyser/GeyserSetup#setup-videos"
+-    - title: • FAQ
+-      url: geyser/FAQ
+-    - title: • Common Issues
+-      url: geyser/Common-Issues
++        - title: Plugin Setup
++          url: "geyser/setup/#plugin-setup"
++        - title: Standalone Setup
++          url: "geyser/setup/#standalone-setup"
++        - title: Termux (Android)
++          url: "geyser/setup/#termux-android"
++        - title: NewTerm 2 (iOS)
++          url: "geyser/setup/#newterm-2-ios"
++        - title: Videos
++          url: "geyser/setup/#setup-videos"
++    - title: FAQ
++      url: "geyser/faq/"
++    - title: Common Issues
++      url: "geyser/common-issues/"
+       children:
+-        - title: • Fixing Unable to Connect to World
+-          url: "geyser/Common-Issues/#see-here-for-fixing-unable-to-connect-to-world-with-no-console-errors"
+-    - title: • Understanding the Config
+-      url: geyser/Understanding-the-Config
+-    - title: • Standalone Command Line Arguments
+-      url: geyser/Standalone-Command-Line-Arguments
+-    - title: • Commands
+-      url: geyser/Commands
+-    - title: • Supported Hosting Providers
+-      url: geyser/Supported-Hosting-Providers
+-    - title: • Anticheat Compatibility
+-      url: geyser/Anticheat-Compatibility
+-    - title: • Using geyser or floodgate as a dependency
+-      url: geyser/Using-Geyser-or-Floodgate-as-a-dependency
+-    - title: • Current Limitations
+-      url: geyser/Current-Limitations
+-- title: • Floodgate Documentation
+-  url: "floodgate/Floodgate"
++        - title: Fixing 'Unable to Connect to World'
++          url: "geyser/common-issues/#see-here-for-fixing-unable-to-connect-to-world-with-no-console-errors"
++    - title: Understanding the Config
++      url: "geyser/understanding-the-config/"
++    - title: Standalone Command Line Arguments
++      url: "geyser/standalone-command-line-arguments/"
++    - title: Creating a Startup Script
++      url: "geyser/creating-a-startup-script/"
++    - title: Commands
++      url: "geyser/commands/"
++    - title: Supported Hosting Providers
++      url: "geyser/supported-hosting-providers/"
++    - title: Using Geyser with Consoles
++      url: "geyser/using-geyser-with-consoles/"
++    - title: Anticheat Compatibility
++      url: "geyser/anticheat-compatibility/"
++    - title: Using geyser or floodgate as a dependency
++      url: "geyser/using-geyser-or-floodgate-as-a-dependency/"
++    - title: Current Limitations
++      url: "geyser/current-limitations/"
++- title: Floodgate Documentation
++  url: "floodgate/"
+   links:
+-    - title: "• Floodgate Setup"
+-      url: "floodgate/FloodgateSetup"
+-    - title: "• Issues"
+-      url: "floodgate/Issues"
+-    - title: "• Features"
+-      url: "floodgate/Features"
++    - title: "Setup"
++      url: "floodgate/setup/"
++    - title: "Issues"
++      url: "floodgate/issues/"
++    - title: "Features"
++      url: "floodgate/features/"
+       children:
+-        - title: • Whitelist command
+-          url: "floodgate/Features#whitelist-command"
+-        - title: • Global Api
+-          url: "floodgate/Features#what-is-the-global-api"
+-        - title: • Global Linking
+-          url: "floodgate/Features#what-is-global-linking"
+-        - title: • Local Linking
+-          url: "floodgate/Features#local-linking"
+-        - title: • Skin Uploading
+-          url: "floodgate/Features#what-is-skin-uploading"
+-    - title: "• FloodgateAPI"
+-      url: "floodgate/FloodgateApi"
+-    - title: "• FloodgatePlayer"
+-      url: "floodgate/FloodgatePlayer"
+-    - title: "• Forms and Cumulus"
+-      url: "floodgate/Forms"
+-    - title: "• Commands"
+-      url: "floodgate/Commands"
+-- title: • Other
+-  url: "other/Other"
++        - title: Whitelist command
++          url: "floodgate/features/#whitelist-command"
++        - title: Global Api
++          url: "floodgate/features/#what-is-the-global-api"
++        - title: Global Linking
++          url: "floodgate/features/#what-is-global-linking"
++        - title: Local Linking
++          url: "floodgate/features/#local-linking"
++        - title: Skin Uploading
++          url: "floodgate/features/#what-is-skin-uploading"
++    - title: "Floodgate API"
++      url: "floodgate/api/"
++    - title: "FloodgatePlayer"
++      url: "floodgate/player/"
++    - title: "Forms and Cumulus"
++      url: "floodgate/forms/"
++    - title: "Commands"
++      url: "floodgate/commands/"
++- title: Other
++  url: "other/"
+   links:
+-    - title: "• GeyserOptionalPack"
+-      url: "other/GeyserOptionalPack"
+-    - title: "• GeyserConnect"
+-      url: "other/GeyserConnect"
+-    - title: "• Geyser-Fabric"
+-      url: "other/Geyser-Fabric"
+-    - title: "• Test Server"
+-      url: "other/TestServer"
+-    - title: "• Developer Guide"
+-      url: "other/DeveloperGuide"
+-    - title: "• Community Geyser Projects"
+-      url: "other/Community-Geyser-Projects"
++    - title: "GeyserOptionalPack"
++      url: "other/geyseroptionalpack/"
++    - title: "GeyserConnect"
++      url: "other/geyserconnect/"
++    - title: "Geyser-Fabric"
++      url: "other/geyser-fabric/"
++    - title: "Test Server"
++      url: "other/test-server/"
++    - title: "Developer Guide"
++      url: "other/developer-guide/"
++    - title: "Community Geyser Projects"
++      url: "other/community-geyser-projects/"
+diff --git a/_includes/footer.html b/_includes/footer.html
+index 5745163..a801a32 100755
+--- a/_includes/footer.html
++++ b/_includes/footer.html
+@@ -31,7 +31,6 @@
+       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+         <small class="text-white">© {{ 'now' | date: "%Y" }} {{ site.author }} All Rights Reserved</small>
+         {% if site.privacy %}<small class="ml-1"><a href="{{ site.privacy }}" target="_blank">Privacy Policy</a></small>{% endif %}
+-        <p class="mt-2"><a href="/about/">About Docsy</a></p>	
+       </div>
+     </div>
+   </div>
+diff --git a/_includes/header.html b/_includes/header.html
+index 9d40c05..f573318 100644
+--- a/_includes/header.html
++++ b/_includes/header.html
+@@ -1,7 +1,7 @@
+ <header>
+         <nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+         <a class="navbar-brand" href="{{ site.baseurl }}/">
+-            <span class="navbar-logo"></span>{% include logo.svg %}<span class="text-uppercase font-weight-bold">{{ site.title }}</span>
++            <span class="navbar-logo"></span><img src="https://geysermc.org/android-chrome-512x512.png" /><span class="text-uppercase font-weight-bold">{{ site.title }}</span>
+ 	</a>
+ 	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+ 		<ul class="navbar-nav mt-2 mt-lg-0">{% if site.repo %}
+diff --git a/_includes/logo.svg b/_includes/logo.svg
+deleted file mode 100644
+index 082af75..0000000
+--- a/_includes/logo.svg
++++ /dev/null
+@@ -1 +0,0 @@
+-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149v0 0zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.328-2.2733-15.458-6.4032s-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zM197.0804 232.033c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zM197.0839 232.0372c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zM197.0839 232.0372c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><path style="fill:#5b7fc0" d="M198.8952 225.1043h122.6266v13.8671H198.8952z"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.328-2.2733-15.458-6.4032s-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zM197.0804 177.6188c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zM197.0839 177.623c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zM197.0839 177.623c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><path style="fill:#d95140" d="M198.8952 170.69h122.6266v13.8671H198.8952z"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zM197.5309 286.4723c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zM197.5344 286.4765c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zM197.5344 286.4765c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><path style="fill:#56a55c" d="M199.3456 279.5436h122.6266v13.8671H199.3456z"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.328-2.2733-15.458-6.4032-4.13-4.1299-6.4032-9.6186-6.4056-15.4628.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zM197.0804 340.5784c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zM197.0839 340.5826c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zM197.0839 340.5826c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><path style="fill:#f1bc42" d="M198.8952 333.6497h122.6266v13.8671H198.8952z"/></g></g></svg>
+diff --git a/_includes/quiz.html b/_includes/quiz.html
+deleted file mode 100644
+index f80fa73..0000000
+--- a/_includes/quiz.html
++++ /dev/null
+@@ -1,3 +0,0 @@
+-{% assign quiz = site.data.quizzes[include.file] %}
+-{% if quiz.randomize == true %}{% assign questions = quiz.questions | sample %}{% else %}{% assign questions = quiz.questions %}{% endif %}{% if quiz.title %}<h2>{{ quiz.title }}</h2>{% endif %}{% for item in questions %}
+-{% if item.type == "multiple-choice" %}{% include quiz/multiple-choice.html item=item count=forloop.index %}{% endif %}<br>{% endfor %}
+diff --git a/_includes/quiz/multiple-choice.html b/_includes/quiz/multiple-choice.html
+deleted file mode 100644
+index aceb0c0..0000000
+--- a/_includes/quiz/multiple-choice.html
++++ /dev/null
+@@ -1,5 +0,0 @@
+-<div class="admonition question">
+-<p class="admonition-title">{% if include.item.question %}{{ include.item.question }}{% else %}Question {{ include.count }}{% endif %}</p>
+-<p>{% for choice in include.item.items %}{% if choice.correct == true %}<span class="correct-{{ include.count }}">{% endif %}{{ forloop.index }}. {{ choice.choice }}{% if choice.correct == true %}</span>{% endif %}<br>{% endfor %}</p>
+-</div><button class="btn btn-success" onclick='$(".correct-{{ include.count }}").css("font-weight", 600);$(".correct-more-{{ include.count }}").css("display", "inline")'>Show Answer</button>
+-{% if include.item.followup %}<p class="well correct-more-{{ include.count }}" style="display:none">{{ include.item.followup }}</p>{% endif %}
+diff --git a/_includes/sidebar.html b/_includes/sidebar.html
+index 6e17312..b86741b 100644
+--- a/_includes/sidebar.html
++++ b/_includes/sidebar.html
+@@ -17,7 +17,7 @@
+         {% endcapture %}
+         
+         <li class="td-sidebar-nav__section-title">
+-          <a  href="{% if section.url %}{{ site.baseurl }}/{{ section.url }}{% else %}{{ section.external_url }}{% endif %}" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">{{ section.title }}</a>
++          <a href="{% if section.url %}{{ site.baseurl }}/{{ section.url }}{% else %}{{ section.external_url }}{% endif %}" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">{{ section.title }}</a>
+         </li>
+         {% if section.links %}
+           <ul>
+diff --git a/_layouts/post.html b/_layouts/post.html
+deleted file mode 100755
+index 40b1fb2..0000000
+--- a/_layouts/post.html
++++ /dev/null
+@@ -1,8 +0,0 @@
+----
+-layout: page
+----
+-<!-- Copyright 2019-2021 Vanessa Sochat-->
+-<h1 style="margin-bottom:0px">{{ page.title }}</h1>
+-{% if page.badges %}{% for badge in page.badges %}<span class="badge badge-{{ badge.type }}">{{ badge.tag }}</span>{% endfor %}{% endif %}
+-<span class="post-date" style="font-style: italic;">{{ page.date | date: "%B %d, %Y" }}</span>
+-{{ content }}
+diff --git a/assets/css/main.css b/assets/css/main.css
+index 418313d..c991a48 100644
+--- a/assets/css/main.css
++++ b/assets/css/main.css
+@@ -17953,7 +17953,7 @@ a.text-dark:focus {
+     margin-right: -30px
+ }
+ 
+-.td-navbar .navbar-brand svg {
++.td-navbar .navbar-brand img {
+     display: inline-block;
+     margin: 0 10px;
+     height: 30px
+diff --git a/docker-compose.yaml b/docker-compose.yaml
+deleted file mode 100644
+index 7c5f0ea..0000000
+--- a/docker-compose.yaml
++++ /dev/null
+@@ -1,12 +0,0 @@
+-version: '3.7'
+-services:
+-  site:
+-    container_name: docsy
+-    command: jekyll serve --watch --drafts
+-    image: jekyll/jekyll:3.8
+-    volumes: 
+-      - "./:/srv/jekyll"
+-      - "./vendor/bundle:/usr/local/bundle"
+-      # remove "./vendor/bundle:/usr/local/bundle" volume when deploying in production
+-    ports: 
+-      - "4000:4000"
+diff --git a/pages/feed.xml b/docs/feed.xml
+similarity index 100%
+rename from pages/feed.xml
+rename to docs/feed.xml
+diff --git a/pages/floodgate/FloodgateApi.md b/docs/floodgate/api.md
+similarity index 98%
+rename from pages/floodgate/FloodgateApi.md
+rename to docs/floodgate/api.md
+index 7756834..91d7058 100644
+--- a/pages/floodgate/FloodgateApi.md
++++ b/docs/floodgate/api.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Floodgate API
+-permalink: /floodgate/FloodgateApi/
++permalink: /floodgate/api/
+ ---
+ 
+ ### Floodgate has an API to extend what is possible and allow servers to get information about the Bedrock client. It also allows other plugins access to [Cumulus](Forms)
+diff --git a/pages/floodgate/Commands.md b/docs/floodgate/commands.md
+similarity index 87%
+rename from pages/floodgate/Commands.md
+rename to docs/floodgate/commands.md
+index b8ad9c9..83749a9 100644
+--- a/pages/floodgate/Commands.md
++++ b/docs/floodgate/commands.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Commands
+-permalink: /floodgate/Commands/
++permalink: /floodgate/commands/
+ ---
+ 
+ | Command | Permission | Description |
+diff --git a/pages/floodgate/Features.md b/docs/floodgate/features.md
+similarity index 99%
+rename from pages/floodgate/Features.md
+rename to docs/floodgate/features.md
+index ebe001f..13ed9e6 100644
+--- a/pages/floodgate/Features.md
++++ b/docs/floodgate/features.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Features
+-permalink: /floodgate/Features/
++permalink: /floodgate/features/
+ ---
+ 
+ ## Whitelist command
+diff --git a/pages/floodgate/Forms.md b/docs/floodgate/forms.md
+similarity index 99%
+rename from pages/floodgate/Forms.md
+rename to docs/floodgate/forms.md
+index bc460a7..deb4229 100644
+--- a/pages/floodgate/Forms.md
++++ b/docs/floodgate/forms.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Forms and Cumulus
+-permalink: /floodgate/Forms/
++permalink: /floodgate/forms1/
+ ---
+ 
+ # What is Cumulus?
+diff --git a/pages/floodgate/Issues.md b/docs/floodgate/issues.md
+similarity index 99%
+rename from pages/floodgate/Issues.md
+rename to docs/floodgate/issues.md
+index ee2486f..b91a265 100644
+--- a/pages/floodgate/Issues.md
++++ b/docs/floodgate/issues.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Issues
+-permalink: /floodgate/Issues/
++permalink: /floodgate/issues/
+ ---
+ 
+ # Known Issues & Caveats
+diff --git a/pages/floodgate/FloodgatePlayer.md b/docs/floodgate/player.md
+similarity index 88%
+rename from pages/floodgate/FloodgatePlayer.md
+rename to docs/floodgate/player.md
+index 00ac387..c11eab2 100644
+--- a/pages/floodgate/FloodgatePlayer.md
++++ b/docs/floodgate/player.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: FloodgatePlayer
+-permalink: /floodgate/FloodgatePlayer/
++permalink: /floodgate/player/
+ ---
+ 
+ FloodgatePlayer is something that every player who's connect through Floodgate has.<br>
+diff --git a/pages/floodgate/Floodgate.md b/docs/floodgate/root.md
+similarity index 97%
+rename from pages/floodgate/Floodgate.md
+rename to docs/floodgate/root.md
+index e3c48d1..2f6329b 100644
+--- a/pages/floodgate/Floodgate.md
++++ b/docs/floodgate/root.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Floodgate
+-permalink: /floodgate/Floodgate/
++permalink: /floodgate/
+ ---
+ 
+ # Floodgate
+diff --git a/pages/floodgate/FloodgateSetup.md b/docs/floodgate/setup.md
+similarity index 99%
+rename from pages/floodgate/FloodgateSetup.md
+rename to docs/floodgate/setup.md
+index 835b0b6..d568706 100644
+--- a/pages/floodgate/FloodgateSetup.md
++++ b/docs/floodgate/setup.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Floodgate Setup
+-permalink: /floodgate/FloodgateSetup/
++permalink: /floodgate/setup/
+ ---
+ 
+ ## Downloads:
+diff --git a/pages/geyser/Anticheat-Compatibility.md b/docs/geyser/anticheat-compatibility.md
+similarity index 97%
+rename from pages/geyser/Anticheat-Compatibility.md
+rename to docs/geyser/anticheat-compatibility.md
+index 5e81318..54852fd 100644
+--- a/pages/geyser/Anticheat-Compatibility.md
++++ b/docs/geyser/anticheat-compatibility.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Anticheat Compatibility
+-permalink: /geyser/Anticheat-Compatibility/
++permalink: /geyser/anticheat-compatibility/
+ ---
+ 
+ Do note that this is a community-compiled list and is incomplete! If you wish to update or add to this list, feel free.
+diff --git a/pages/geyser/Commands.md b/docs/geyser/commands.md
+similarity index 96%
+rename from pages/geyser/Commands.md
+rename to docs/geyser/commands.md
+index 75ba97a..f3542b5 100644
+--- a/pages/geyser/Commands.md
++++ b/docs/geyser/commands.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Commands
+-permalink: /geyser/Commands/
++permalink: /geyser/commands/
+ ---
+ 
+ # Commands and Permissions
+diff --git a/pages/geyser/Common-Issues.md b/docs/geyser/common-issues.md
+similarity index 99%
+rename from pages/geyser/Common-Issues.md
+rename to docs/geyser/common-issues.md
+index eaf2cc3..875e9e8 100644
+--- a/pages/geyser/Common-Issues.md
++++ b/docs/geyser/common-issues.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Common Issues
+-permalink: /geyser/Common-Issues/
++permalink: /geyser/common-issues/
+ ---
+ 
+ Commonly, people may have issues with Geyser not showing up in their server list or run into similar issues. This page contains a few common issues people may encounter that you might have as well as potential fixes for them. If you still can't make it work, join [our Discord](https://discord.geysermc.org) for support.
+diff --git a/docs/geyser/creating-a-startup-script.md b/docs/geyser/creating-a-startup-script.md
+new file mode 100644
+index 0000000..214abc3
+--- /dev/null
++++ b/docs/geyser/creating-a-startup-script.md
+@@ -0,0 +1,40 @@
++---
++layout: page
++title: Creating a Startup Script
++permalink: /geyser/creating-a-startup-script/
++---
++
++**In order for this to work, you MUST have Java 8 installed!**
++
++Once you have downloaded and placed Geyser into its own folder, you will need to create a startup script; similar to how you'd run a Bukkit server.
++
++### Windows
++* Create a new text file in the same location as the Geyser jar file, and call it `run.bat`. Open this with a text editor (preferably Notepad++), and insert the text below:
++```batch
++@echo off
++java -Xms1024M -jar Geyser.jar
++pause
++```
++* Double-click the **run.bat**, and Geyser should start up. Geyser will generate all the needed files.
++
++
++### macOS
++* Create a text file called **run.command**, and open it with a text editor such as TextEdit or TextMate. Type the text below into the **run.command** file:
++```sh
++#!/bin/bash 
++cd "$( dirname "$0" )" 
++java -Xms1024M -jar Geyser.jar
++```
++* Open Terminal, and type in `chmod a+x` **(Do NOT press return!)**, and drag your *run.command* file into the Terminal.
++* Press return on your keyboard, and Geyser will start up. Geyser will generate all the needed files.
++
++
++### Linux
++* Create a file called *run.sh*, and open it with a text editor. Type the text below into your `run.sh` file:
++```sh
++#!/bin/sh 
++cd "$( dirname "$0" )" 
++java -Xms1024M -jar Geyser.jar
++```
++* In your default terminal application, make the file executable by running `chmod +x ~(dir)/run.sh` where `dir` is the name of the folder Geyser is in, or by changing the file permissions;
++* Open your default terminal application, and type `./run.sh` to run Geyser. Geyser will generate all the needed files.
+diff --git a/pages/geyser/Current-Limitations.md b/docs/geyser/current-limitations.md
+similarity index 96%
+rename from pages/geyser/Current-Limitations.md
+rename to docs/geyser/current-limitations.md
+index bcb5a89..2d412f3 100644
+--- a/pages/geyser/Current-Limitations.md
++++ b/docs/geyser/current-limitations.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Current Limitations
+-permalink: /geyser/Current-Limitations/
++permalink: /geyser/current-limitations/
+ ---
+ 
+ With Geyser being a protocol translator between two different games with two different codebases, there are a handful of limitations that Geyser is unfortunately unable to handle. Despite Minecraft Bedrock and Java being quite close in comparison, there are some vast differences in many areas.
+diff --git a/pages/geyser/FAQ.md b/docs/geyser/faq.md
+similarity index 99%
+rename from pages/geyser/FAQ.md
+rename to docs/geyser/faq.md
+index 2a65c85..251500a 100644
+--- a/pages/geyser/FAQ.md
++++ b/docs/geyser/faq.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: FAQ
+-permalink: /geyser/FAQ/
++permalink: /geyser/faq/
+ ---
+ 
+ ## How Does it Work?
+diff --git a/pages/geyser/Geyser.md b/docs/geyser/root.md
+similarity index 97%
+rename from pages/geyser/Geyser.md
+rename to docs/geyser/root.md
+index 4160278..ff466e5 100644
+--- a/pages/geyser/Geyser.md
++++ b/docs/geyser/root.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Geyser
+-permalink: /geyser/Geyser/
++permalink: /geyser/
+ ---
+ 
+ # Geyser
+diff --git a/pages/geyser/GeyserSetup.md b/docs/geyser/setup.md
+similarity index 99%
+rename from pages/geyser/GeyserSetup.md
+rename to docs/geyser/setup.md
+index 07fbda5..f741b24 100644
+--- a/pages/geyser/GeyserSetup.md
++++ b/docs/geyser/setup.md
+@@ -1,8 +1,7 @@
+ ---
+ layout: page
+ title: Geyser Setup
+-permalink: /geyser/GeyserSetup/
+-
++permalink: /geyser/setup/
+ ---
+ 
+ # Setup
+diff --git a/pages/geyser/Standalone-Command-Line-Arguments.md b/docs/geyser/standalone-command-line-arguments.md
+similarity index 90%
+rename from pages/geyser/Standalone-Command-Line-Arguments.md
+rename to docs/geyser/standalone-command-line-arguments.md
+index 4ed44cd..e4aa383 100644
+--- a/pages/geyser/Standalone-Command-Line-Arguments.md
++++ b/docs/geyser/standalone-command-line-arguments.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Standalone Command Line Arguments
+-permalink: /geyser/Standalone-Command-Line-Arguments/
++permalink: /geyser/standalone-command-line-arguments/
+ ---
+ 
+ # General command-line arguments
+diff --git a/pages/geyser/Supported-Hosting-Providers.md b/docs/geyser/supported-hosting-providers.md
+similarity index 99%
+rename from pages/geyser/Supported-Hosting-Providers.md
+rename to docs/geyser/supported-hosting-providers.md
+index 9632fa9..de47707 100644
+--- a/pages/geyser/Supported-Hosting-Providers.md
++++ b/docs/geyser/supported-hosting-providers.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Supported Hosting Providers
+-permalink: /geyser/Supported-Hosting-Providers/
++permalink: /geyser/supported-hosting-providers/
+ ---
+ 
+ This list is incomplete. Please add a link or contact us on Discord if the information is incorrect or you want to add a new hosting provider!
+diff --git a/pages/geyser/Understanding-the-Config.md b/docs/geyser/understanding-the-config.md
+similarity index 99%
+rename from pages/geyser/Understanding-the-Config.md
+rename to docs/geyser/understanding-the-config.md
+index 2e0f0b7..17bce4a 100644
+--- a/pages/geyser/Understanding-the-Config.md
++++ b/docs/geyser/understanding-the-config.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Understanding the Config
+-permalink: /geyser/Understanding-the-Config/
++permalink: /geyser/understanding-the-config/
+ ---
+ 
+ This page covers basic information about the Geyser config and what each option does. Though they are explained in the configuration itself, this explains what each option does in more detail.
+diff --git a/pages/geyser/Using-Geyser-or-Floodgate-as-a-dependency.md b/docs/geyser/using-geyser-or-floodgate-as-a-dependency.md
+similarity index 96%
+rename from pages/geyser/Using-Geyser-or-Floodgate-as-a-dependency.md
+rename to docs/geyser/using-geyser-or-floodgate-as-a-dependency.md
+index 529b5ad..48e75b9 100644
+--- a/pages/geyser/Using-Geyser-or-Floodgate-as-a-dependency.md
++++ b/docs/geyser/using-geyser-or-floodgate-as-a-dependency.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Using geyser or floodgate as a dependency
+-permalink: /geyser/Using-Geyser-or-Floodgate-as-a-dependency/
++permalink: /geyser/using-geyser-or-floodgate-as-a-dependency/
+ ---
+ 
+ To start, add the Open Collaboration repository to your project:
+diff --git a/pages/geyser/Using-Geyser-with-Consoles.md b/docs/geyser/using-geyser-with-consoles.md
+similarity index 96%
+rename from pages/geyser/Using-Geyser-with-Consoles.md
+rename to docs/geyser/using-geyser-with-consoles.md
+index 01ccb7d..ff15506 100644
+--- a/pages/geyser/Using-Geyser-with-Consoles.md
++++ b/docs/geyser/using-geyser-with-consoles.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Using Geyser with Consoles
+-permalink: /geyser/Using-Geyser-with-Consoles/
++permalink: /geyser/using-geyser-with-consoles/
+ ---
+ 
+ All consoles can join third-party servers - including Geyser servers - with workarounds. Xbox One, Nintendo Switch, and PS4 systems can join third-party servers using a third-party program called BedrockConnect. For technical information about the program, including how to run your own setup, see [their GitHub repository](https://github.com/Pugmatt/BedrockConnect) (*This program is not affiliated with GeyserMC*). Other methods are also available for use.
+diff --git a/pages/index.md b/docs/index.md
+similarity index 92%
+rename from pages/index.md
+rename to docs/index.md
+index 82950d6..c95fa1e 100644
+--- a/pages/index.md
++++ b/docs/index.md
+@@ -1,6 +1,5 @@
+ ---
+ layout: page
+-title: Docsy GeyserMC
+ permalink: /
+ ---
+ 
+@@ -73,14 +72,5 @@ permalink: /
+                 </div>
+             </div>
+         </div>
+-        <footer>
+-            <div class="container">
+-                <div class="row py-4 d-flex align-items-center">
+-                    <div class="col text-center text-md-left mb-4 mb-md-0">
+-                        <h6 class="mb-0">© 2021 GeyserMC</h6>
+-                    </div>
+-                </div>
+-            </div>
+-        </footer>
+     </body>
+ </html>
+\ No newline at end of file
+diff --git a/pages/other/Community-Geyser-Projects.md b/docs/other/community-geyser-projects.md
+similarity index 98%
+rename from pages/other/Community-Geyser-Projects.md
+rename to docs/other/community-geyser-projects.md
+index 70e9266..f20f54b 100644
+--- a/pages/other/Community-Geyser-Projects.md
++++ b/docs/other/community-geyser-projects.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Community Geyser Projects
+-permalink: /other/Community-Geyser-Projects/
++permalink: /other/community-geyser-projects/
+ ---
+ 
+ Below is a list of community-compiled plugins, extensions and tools that work with Geyser. 
+diff --git a/pages/other/DeveloperGuide.md b/docs/other/developer-guide.md
+similarity index 99%
+rename from pages/other/DeveloperGuide.md
+rename to docs/other/developer-guide.md
+index d8467b8..fd440ef 100644
+--- a/pages/other/DeveloperGuide.md
++++ b/docs/other/developer-guide.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Developer Guide
+-permalink: /other/DeveloperGuide/
++permalink: /other/developer-guide/
+ ---
+ 
+ ## Compiling
+diff --git a/pages/other/Geyser-Fabric.md b/docs/other/geyser-fabric.md
+similarity index 97%
+rename from pages/other/Geyser-Fabric.md
+rename to docs/other/geyser-fabric.md
+index 6eaac60..d3c2842 100644
+--- a/pages/other/Geyser-Fabric.md
++++ b/docs/other/geyser-fabric.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Geyser-Fabric
+-permalink: /other/Geyser-Fabric/
++permalink: /other/geyser-fabric/
+ ---
+ 
+ # [Download here](https://ci.opencollab.dev/job/GeyserMC/job/Geyser-Fabric/job/java-1.18/lastSuccessfulBuild/artifact/build/libs/Geyser-Fabric-2.0.0-SNAPSHOT.jar)
+diff --git a/pages/other/GeyserConnect.md b/docs/other/geyserconnect.md
+similarity index 98%
+rename from pages/other/GeyserConnect.md
+rename to docs/other/geyserconnect.md
+index 8c788c9..3da39c8 100644
+--- a/pages/other/GeyserConnect.md
++++ b/docs/other/geyserconnect.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: GeyserConnect
+-permalink: /other/GeyserConnect/
++permalink: /other/geyserconnect/
+ ---
+ 
+ GeyserConnect is a version of Geyser that allows you to join multiple servers using a single GeyserMC proxy.
+diff --git a/pages/other/GeyserOptionalPack.md b/docs/other/geyseroptionalpack.md
+similarity index 97%
+rename from pages/other/GeyserOptionalPack.md
+rename to docs/other/geyseroptionalpack.md
+index 9a49be9..50d7bff 100644
+--- a/pages/other/GeyserOptionalPack.md
++++ b/docs/other/geyseroptionalpack.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: GeyserOptionalPack
+-permalink: /other/GeyserOptionalPack/
++permalink: /other/geyseroptionalpack/
+ ---
+ 
+ **Download:** https://ci.opencollab.dev/job/GeyserMC/job/GeyserOptionalPack/job/master/lastSuccessfulBuild/artifact/GeyserOptionalPack.mcpack
+diff --git a/docs/other/root.md b/docs/other/root.md
+new file mode 100644
+index 0000000..eedb22e
+--- /dev/null
++++ b/docs/other/root.md
+@@ -0,0 +1,7 @@
++---
++layout: page
++title: Other
++permalink: /other/
++---
++
++# Other
+\ No newline at end of file
+diff --git a/pages/other/TestServer.md b/docs/other/test-server.md
+similarity index 96%
+rename from pages/other/TestServer.md
+rename to docs/other/test-server.md
+index 0315156..0d2cce9 100644
+--- a/pages/other/TestServer.md
++++ b/docs/other/test-server.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Test Server
+-permalink: /other/TestServer/
++permalink: /other/test-server/
+ ---
+ 
+ ### Details
+diff --git a/pages/search.html b/docs/search.html
+similarity index 100%
+rename from pages/search.html
+rename to docs/search.html
+diff --git a/pages/sitemap.xml b/docs/sitemap.xml
+old mode 100755
+new mode 100644
+similarity index 100%
+rename from pages/sitemap.xml
+rename to docs/sitemap.xml
+diff --git a/pages/tags.html b/docs/tags.html
+similarity index 100%
+rename from pages/tags.html
+rename to docs/tags.html
+-- 
+2.31.1.windows.1
+
+From 98860521d806e81bcdec654bee60932e0cfe90c4 Mon Sep 17 00:00:00 2001
+From: Jens Collaert <63231928+Jens-Co@users.noreply.github.com>
+Date: Sat, 11 Dec 2021 19:06:55 +0100
+Subject: [PATCH] Update forms.md
+
+---
+ docs/floodgate/forms.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/docs/floodgate/forms.md b/docs/floodgate/forms.md
+index deb4229..a9daf56 100644
+--- a/docs/floodgate/forms.md
++++ b/docs/floodgate/forms.md
+@@ -1,7 +1,7 @@
+ ---
+ layout: page
+ title: Forms and Cumulus
+-permalink: /floodgate/forms1/
++permalink: /floodgate/forms/
+ ---
+ 
+ # What is Cumulus?
+@@ -199,4 +199,4 @@ _Modal_Form form = _Modal_Form.builder()
+     .button1("translate.button1")
+     .button2("translate.button2")
+     .build();
+-```
+\ No newline at end of file
++```
+-- 
+2.31.1.windows.1
+

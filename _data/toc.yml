@@ -1,92 +1,84 @@
 - title: Geyser Documentation
-  url: "geyser/Geyser"
+  url: "geyser/"
   links:
     - title: "Geyser Setup"
-      url: "geyser/GeyserSetup"
+      url: "geyser/setup/"
       children:
-        - title: prerequisites
-          url: "geyser/GeyserSetup#prerequisites"
-        - title: plugin-setup
-          url: "geyser/GeyserSetup#plugin-setup"
-        - title: bungeecordvelocity-setup
-          url: "geyser/GeyserSetup#bungeecordvelocity-setup"
-        - title: standalone-setup
-          url: "geyser/GeyserSetup#standalone-setup"
-        - title: gui-setup-recommended
-          url: "geyser/GeyserSetup#gui-setup-recommended"
-        - title: console-setup
-          url: "geyser/GeyserSetup#console-setup"
-        - title: standalone-setup-geyser-and-floodgate-are-not-on-the-same-server
-          url: "geyser/GeyserSetup#standalone-setup-geyser-and-floodgate-are-not-on-the-same-server"
-        - title: port-forwarding
-          url: "geyser/GeyserSetup#port-forwarding"
-        - title: termux-android
-          url: "geyser/GeyserSetup#termux-android"
-        - title: newterm-2-ios
-          url: "geyser/GeyserSetup#newterm-2-ios"
-        - title: setup-videos
-          url: "geyser/GeyserSetup#setup-videos"
+        - title: Plugin Setup
+          url: "geyser/setup/#plugin-setup"
+        - title: Standalone Setup
+          url: "geyser/setup/#standalone-setup"
+        - title: Termux (Android)
+          url: "geyser/setup/#termux-android"
+        - title: NewTerm 2 (iOS)
+          url: "geyser/setup/#newterm-2-ios"
+        - title: Videos
+          url: "geyser/setup/#setup-videos"
     - title: FAQ
-      url: geyser/FAQ
+      url: "geyser/faq/"
     - title: Common Issues
-      url: geyser/Common-Issues
+      url: "geyser/common-issues/"
       children:
-        - title: Fixing Unable to Connect to World
-          url: "geyser/Common-Issues/#see-here-for-fixing-unable-to-connect-to-world-with-no-console-errors"
+        - title: Fixing 'Unable to Connect to World'
+          url: "geyser/common-issues/#see-here-for-fixing-unable-to-connect-to-world-with-no-console-errors"
     - title: Understanding the Config
-      url: geyser/Understanding-the-Config
+      url: "geyser/understanding-the-config/"
     - title: Standalone Command Line Arguments
-      url: geyser/Standalone-Command-Line-Arguments
+      url: "geyser/standalone-command-line-arguments/"
+    - title: Creating a Startup Script
+      url: "geyser/creating-a-startup-script/"
     - title: Commands
-      url: geyser/Commands
+      url: "geyser/commands/"
     - title: Supported Hosting Providers
-      url: geyser/Supported-Hosting-Providers
+      url: "geyser/supported-hosting-providers/"
+    - title: Using Geyser with Consoles
+      url: "geyser/using-geyser-with-consoles/"
     - title: Anticheat Compatibility
-      url: geyser/Anticheat-Compatibility
+      url: "geyser/anticheat-compatibility/"
     - title: Using geyser or floodgate as a dependency
-      url: geyser/Using-Geyser-or-Floodgate-as-a-dependency
+      url: "geyser/using-geyser-or-floodgate-as-a-dependency/"
     - title: Current Limitations
-      url: geyser/Current-Limitations
+      url: "geyser/current-limitations/"
 - title: Floodgate Documentation
-  url: "floodgate/Floodgate"
+  url: "floodgate/"
   links:
-    - title: "Floodgate Setup"
-      url: "floodgate/FloodgateSetup"
+    - title: "Setup"
+      url: "floodgate/setup/"
     - title: "Issues"
-      url: "floodgate/Issues"
+      url: "floodgate/issues/"
     - title: "Features"
-      url: "floodgate/Features"
+      url: "floodgate/features/"
       children:
         - title: Whitelist command
-          url: "floodgate/Features#whitelist-command"
+          url: "floodgate/features/#whitelist-command"
         - title: Global Api
-          url: "floodgate/Features#what-is-the-global-api"
+          url: "floodgate/features/#what-is-the-global-api"
         - title: Global Linking
-          url: "floodgate/Features#what-is-global-linking"
+          url: "floodgate/features/#what-is-global-linking"
         - title: Local Linking
-          url: "floodgate/Features#local-linking"
+          url: "floodgate/features/#local-linking"
         - title: Skin Uploading
-          url: "floodgate/Features#what-is-skin-uploading"
-    - title: "FloodgateAPI"
-      url: "floodgate/FloodgateApi"
+          url: "floodgate/features/#what-is-skin-uploading"
+    - title: "Floodgate API"
+      url: "floodgate/api/"
     - title: "FloodgatePlayer"
-      url: "floodgate/FloodgatePlayer"
+      url: "floodgate/player/"
     - title: "Forms and Cumulus"
-      url: "floodgate/Forms"
+      url: "floodgate/forms/"
     - title: "Commands"
-      url: "floodgate/Commands"
+      url: "floodgate/commands/"
 - title: Other
-  url: "other/Other"
+  url: "other/"
   links:
     - title: "GeyserOptionalPack"
-      url: "other/GeyserOptionalPack"
+      url: "other/geyseroptionalpack/"
     - title: "GeyserConnect"
-      url: "other/GeyserConnect"
+      url: "other/geyserconnect/"
     - title: "Geyser-Fabric"
-      url: "other/Geyser-Fabric"
+      url: "other/geyser-fabric/"
     - title: "Test Server"
-      url: "other/TestServer"
+      url: "other/test-server/"
     - title: "Developer Guide"
-      url: "other/DeveloperGuide"
+      url: "other/developer-guide/"
     - title: "Community Geyser Projects"
-      url: "other/Community-Geyser-Projects"
+      url: "other/community-geyser-projects/"
