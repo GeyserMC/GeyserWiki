@@ -1,7 +1,7 @@
 - title: Geyser Documentation
   url: "geyser/"
   links:
-    - title: "Geyser Setup"
+    - title: "Setup"
       url: "geyser/setup/"
       children:
         - title: Plugin Setup

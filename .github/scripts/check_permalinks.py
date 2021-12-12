@@ -32,7 +32,7 @@ for tocLine in tocLines:
 	tocContents += tocLine.replace('- ', '').strip() + '\n'
 
 # Check the permalinks
-directory = './docs/'
+directory = './_docs/'
 files = glob.glob(os.path.join(directory, '**/*.md'), recursive=True)
 for file in files:
 	contents = open(file, 'r', encoding='utf-8')

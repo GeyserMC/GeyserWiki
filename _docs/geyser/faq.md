@@ -23,12 +23,12 @@ Geyser should generally work fine with plugins, as we emulate a Java client. The
 
 Floodgate can cause issues with plugins as it modifies the login process. *Please note that any offline mode authenticator plugins are only here for documentation; Geyser does not support offline mode usage.*
 
-* [DynamicBungeeAuth](https://www.spigotmc.org/resources/dynamicbungeeauth-premium-command-semi-premium-system-sessions.27480/) produces invalid credentials for Bedrock players.
-* [FastLogin](https://www.spigotmc.org/resources/fastlogin.14153/) does not let floodgate add player prefix.
-* [ExploitFixer](https://www.spigotmc.org/resources/2ls-exploitfixer-the-ultimate-antiexploit-plugin.62842/) thinks that Floodgate users are UUID spoofing - disable the `uuidspoof` setting in ExploitFixer's config.
+* [DynamicBungeeAuth](https://www.spigotmc.org/resources/27480/) produces invalid credentials for Bedrock players.
+* [FastLogin](https://www.spigotmc.org/resources/14153/) does not let floodgate add player prefix.
+* [ExploitFixer](https://www.spigotmc.org/resources/62842/) thinks that Floodgate users are UUID spoofing - disable the `uuidspoof` setting in ExploitFixer's config.
 * [JPremium](https://www.spigotmc.org/resources/27766/) alters the UUID of a player, causing Floodgate not to be able to get the Bedrock data from its map.
 * [LibHatesMods](https://www.spigotmc.org/resources/78202/) causes authentication to fail with `com.github.steveice10.mc.auth.exception.request.InvalidCredentialsException`
-* [ProtocolSupport](https://www.spigotmc.org/resources/7201/) ~~is currently incompatible with Floodgate.~~ Works with Floodgate, but we recommend using [ViaBackwards](https://www.spigotmc.org/resources/viabackwards.27448/) instead.
+* [ProtocolSupport](https://www.spigotmc.org/resources/7201/) ~~is currently incompatible with Floodgate.~~ Works with Floodgate, but we recommend using [ViaBackwards](https://www.spigotmc.org/resources/27448/) instead.
 * [ProtocolSupportBungee](https://www.spigotmc.org/resources/8733/) changes how the login process works and therefore breaks the Floodgate injection code.
 * [SayNoToMcLeaks](https://www.spigotmc.org/resources/40906/) prevents Floodgate from finishing its login system.
 
@@ -107,7 +107,7 @@ The long answer: currently, there is no way for Geyser to translate the features
 ## How can I auto-update Geyser?
 [Geyser MC Auto Updater](https://github.com/michaelwatne/geysermcupdater) is an option at this time to auto-update Geyser through the command line. Note that this project is unaffiliated with Geyser.
 
-GeyserUpdater ([GitHub page](https://github.com/YHDiamond/GeyserUpdater)/[Spigot page](https://www.spigotmc.org/resources/geyserupdater.88555/)) is a Spigot/BungeeCord plugin option for auto-updating. Please note that this plugin is also unaffiliated and unsupported by Geyser, and users should redirect support for the plugin to its [Discord](https://discord.gg/U5MC2tcCz9).
+GeyserUpdater ([GitHub page](https://github.com/YHDiamond/GeyserUpdater)/[Spigot page](https://www.spigotmc.org/resources/88555/)) is a Spigot/BungeeCord plugin option for auto-updating. Please note that this plugin is also unaffiliated and unsupported by Geyser, and users should redirect support for the plugin to its [Discord](https://discord.gg/U5MC2tcCz9).
 
 ## How can I make DiscordSRV show Floodgate 2.0 or GeyserSkinManager skins?
 Replace the `AvatarUrl` line in your DiscordSRV config with this: `AvatarUrl: https://mc-heads.net/avatar/{texture}/{size}.png`
@@ -194,9 +194,7 @@ We aim to support any of the bedrock languages; see [here](https://translate.gey
 # Questions not related to gameplay
 
 ## What is the relationship between CubeCraft and Geyser?
-
 Redned started Geyser in July 2019. In May 2020, CubeCraft acquired the GeyserMC brand. This means that they govern the project (though at this time, they govern lightly). CubeCraft does not own the code of Geyser.
 
 ## Does CubeCraft use Geyser?
-
 No.

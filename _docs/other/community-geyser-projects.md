@@ -27,14 +27,14 @@ Creator: [Camotoy](https://github.com/Camotoy)
 ## Bedrock Player Manager for Floodgate
 A Spigot plugin that is able to run certain commands when a Bedrock player joins, or have Bedrock players able to bypass the anticheat, etc. 
 
-* [Spigot page](https://www.spigotmc.org/resources/bedrock-player-managment-for-floodgate-geyser.82278/)
+* [Spigot page](https://www.spigotmc.org/resources/82278/)
 
 Creator: ofunny
 
 ## CustomCommandPrefix
 A Spigot plugin that allows users to enter commands starting with `.`, to work around Xbox achievements being disabled.
 
-* [Spigot page](https://www.spigotmc.org/resources/customcommandprefix.87224/)
+* [Spigot page](https://www.spigotmc.org/resources/87224/)
 * [GitHub](https://github.com/ChewMC/CustomCommandPrefix)
 
 Creator: [Chew](https://github.com/Chew)
@@ -98,7 +98,7 @@ Creator: [Camotoy](https://github.com/Camotoy)
 This is a Spigot/BungeeCord/Velocity plugin that can be used to automatically update Geyser.
 
 * [GitHub](https://github.com/ProjectG-Plugins/GeyserUpdater)
-* [Spigot page](https://www.spigotmc.org/resources/geyserupdater.88555/)
+* [Spigot page](https://www.spigotmc.org/resources/88555/)
 
 Creators: [Jens](https://github.com/Jens-Co), [YHDiamond](https://github.com/YHDiamond), [Konicai](https://github.com/Konicai)
 

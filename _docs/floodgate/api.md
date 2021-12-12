@@ -63,4 +63,3 @@ Click [here](Forms) to get more information about Forms.
 ### Using the API on backend servers
 
 In order to successfully use the API on backend Spigot servers when using a proxy, `send-floodgate-data` must be set to `true` on the proxy Floodgate's config, and the `key.pem` file must be identical between all Floodgate instances.
-

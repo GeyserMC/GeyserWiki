@@ -19,4 +19,4 @@ permalink: /geyser/commands/
 | `geyser statistics` | `geyser.command.statistics` | Open the Java statistics menu. |
 | `geyser version` | `geyser.command.version` | Shows the current Geyser version and checks for updates. |
 
-For Floodgate com
+For Floodgate commands, see [here](https://github.com/GeyserMC/Floodgate/wiki/Commands).
