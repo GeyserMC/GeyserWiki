@@ -28,9 +28,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://wiki.geysermc.org" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/GeyserMC/GeyserDocs"
+repo: "https://github.com/GeyserMC/GeyserWiki"
 github_user: "GeyserMC"
-github_repo: "GeyserDocs"
+github_repo: "GeyserWiki"
 github_branch: "master"
 
 # Optional
