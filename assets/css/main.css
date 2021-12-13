@@ -7475,7 +7475,7 @@ a.bg-dark:hover,
 a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-    background-color: #292830!important
+    background-color: #161b22!important
 }
 
 .bg-gradient-primary {
@@ -18136,7 +18136,7 @@ html body .md-typeset .headerlink {
 
 .td-sidebar__toggle {
     line-height: 1;
-    color: #222;
+    color: #c9d1d9;
     margin: 1rem
 }
 
