@@ -18431,12 +18431,27 @@ html body .md-typeset .headerlink {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
+
+    -webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+
+    -webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px darkgray;
+    border-radius: 10px;
+    }
+
+    -webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: gray;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+
     -ms-flex-direction: column;
     flex-direction: column;
     height: 100vh
+
 }
 
 @media(min-width:768px) {
