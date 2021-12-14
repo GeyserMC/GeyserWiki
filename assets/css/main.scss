@@ -1,0 +1,22 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$site_color: {{ site.color }};
+
+// Google font
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i";
+
+/*!* Font Awesome Free 5.1.1 by @fontawesome - https://fontawesome.com;
+* License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)*/;
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/fontawesome.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/solid.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/brands.css";
+
+@import "github";
+
+@import "bootstrap";
+
+@import "extras";
+
+@import "palette";
