@@ -260,7 +260,7 @@
 }
 
 .-text-white {
-    color: #fff;
+    color: #f0f6fc;
 }
 
 .-bg-gray {
@@ -2371,7 +2371,7 @@
 .td-content .highlight {
     margin: 2rem 0;
     padding: 1rem;
-    background-color: #f8f9fa;
+    background-color: #161b22;
 }
 
 .td-content .highlight pre,
@@ -2707,7 +2707,7 @@ html body .md-typeset .headerlink {
         position: sticky;
         top: 4rem;
         height: -webkit-calc(100vh - 10rem);
-        height: calc(100vh - 10rem);
+        height: calc(150vh - 10rem);
         overflow-y: auto;
     }
 }
@@ -3102,6 +3102,9 @@ html body .md-typeset .headerlink {
 
 footer {
     min-height: 150px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #c9d1d9;
 }
 
 @media(max-width:991.98px) {
