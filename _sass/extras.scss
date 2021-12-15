@@ -260,7 +260,7 @@
 }
 
 .-text-white {
-    color: #fff;
+    color: #f0f6fc;
 }
 
 .-bg-gray {
@@ -3102,6 +3102,9 @@ html body .md-typeset .headerlink {
 
 footer {
     min-height: 150px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #c9d1d9;
 }
 
 @media(max-width:991.98px) {
