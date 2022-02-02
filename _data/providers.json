@@ -1,4 +1,7 @@
 {
+  "description_templates": {
+    "default": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+  },
   "built_in": [
     {
       "name": "Aternos",
@@ -110,12 +113,13 @@
     {
       "name": "Clovux",
       "url": "https://clovux.net/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port. Make sure your remote address is 'auto' and your bedrock address is your server IP."
+      "description_template": "default",
+      "description": "Make sure your remote address is 'auto' and your bedrock address is your server IP."
     },
     {
       "name": "Consulhosting",
       "url": "https://consulhosting.nl/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "Craft-Hosting",
@@ -135,12 +139,13 @@
     {
       "name": "EnviroMC",
       "url": "https://enviromc.host/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "ExtraVM",
       "url": "https://extravm.com/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port. Make sure your remote address and your bedrock address is your server IP."
+      "description_template": "default",
+      "description": "Make sure your remote address and your bedrock address is your server IP."
     },
     {
       "name": "FadeHost",
@@ -155,7 +160,7 @@
     {
       "name": "FalixNodes",
       "url": "https://falixnodes.net/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "Ferox Hosting",
@@ -165,12 +170,12 @@
     {
       "name": "Fluctis Hosting",
       "url": "https://fluctishosting.com",
-      "description": "Get the Geyser plugin. Use the same port as your Java Server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "FreeMC.Host",
       "url": "https://freemc.host/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "FreeMcServer.net",
@@ -180,17 +185,18 @@
     {
       "name": "Futurehosting",
       "url": "https://futurehosting.org/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port. Make sure your `bedrock` `address` in your Geyser config is your server IP."
+      "description_template": "default",
+      "description": "Make sure your `bedrock` `address` in your Geyser config is your server IP."
     },
     {
       "name": "GameHosting.it",
       "url": "https://www.gamehosting.it/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "Google Cloud",
       "url": "https://cloud.google.com/",
-      "description": "(Not a dedicated Minecraft provider)\n- 90 day/$300 free trial\n- [Tutorial for a Minecraft server Google Cloud](https://cloud.google.com/solutions/gaming/minecraft-server)\n- Note: You'll need to also allow port 19132 on UDP, use Paper instead of vanilla, and put Geyser in the plugins folder\n- You also don't need an SSD, they're just trying to make you pay more"
+      "description": "Not a dedicated Minecraft provider\n  - 90 day/$300 free trial\n  - [Tutorial for a Minecraft server Google Cloud](https://cloud.google.com/solutions/gaming/minecraft-server)\n  - Note: You'll need to also allow port 19132 on UDP, use Paper instead of vanilla, and put Geyser in the plugins folder\n  - You also don't need an SSD, they're just trying to make you pay more"
     },
     {
       "name": "Heavynode",
@@ -210,7 +216,7 @@
     {
       "name": "hokus",
       "url": "https://hokus.me",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "HostMC4Free",
@@ -220,7 +226,7 @@
     {
       "name": "HostValues",
       "url": "https://hostvalues.net/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "HumbleServers",
@@ -230,7 +236,7 @@
     {
       "name": "Hexit",
       "url": "https://client.hexit.cc/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "MC-HOST24.de",
@@ -245,12 +251,12 @@
     {
       "name": "MineStrator",
       "url": "https://minestrator.com/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "Minecraft-Hosting.pro",
       "url": "https://www.minecraft-hosting.pro/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "Minehub",
@@ -265,7 +271,7 @@
     {
       "name": "NiCraft",
       "url": "https://www.ni-host.com/",
-      "description": "- Use the same port as your Java server for the Bedrock port in your config and connect with that port.\n- See [here](https://github.com/GeyserMC/Geyser/wiki/Fixing-%22Unable-to-Connect-to-World%22#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server).\n- So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
+      "description": "Use the same port as your Java server for the Bedrock port in your config and connect with that port.\n  - See [here](https://github.com/GeyserMC/Geyser/wiki/Fixing-%22Unable-to-Connect-to-World%22#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
     },
     {
       "name": "Nitrado",
@@ -275,7 +281,7 @@
     {
       "name": "NightNodes",
       "url": "https://nightnodes.host/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "Nodecraft",
@@ -290,7 +296,8 @@
     {
       "name": "Pebblehost",
       "url": "https://pebblehost.com/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port. See [this video](https://youtu.be/v9lC80UBZF4) for a PebbleHost-specific tutorial."
+      "description_template": "default",
+      "description": "See [this video](https://youtu.be/v9lC80UBZF4) for a PebbleHost-specific tutorial."
     },
     {
       "name": "PhoenixNodes",
@@ -300,7 +307,7 @@
     {
       "name": "PlanetNode",
       "url": "https://planetnode.net",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "PUBCS",
@@ -310,7 +317,7 @@
     {
       "name": "RamShard",
       "url": "https://ramshard.com/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "ReviveHost",
@@ -320,7 +327,7 @@
     {
       "name": "Revivenode",
       "url": "https://revivenode.com/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "ScalaCube",
@@ -350,7 +357,7 @@
     {
       "name": "Sparked Host",
       "url": "https://sparkedhost.com",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "SpawnMC",
@@ -385,12 +392,12 @@
     {
       "name": "TNAHosting",
       "url": "https://tnahosting.net/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "TurboHost",
       "url": "https://turbohost.nl/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "Vultam",
@@ -411,8 +418,7 @@
   "no_support": [
     {
       "name": "MCPEhost",
-      "url": "https://mcpehost.ru/",
-      "description": ""
+      "url": "https://mcpehost.ru/"
     },
     {
       "name": "MyArena",
