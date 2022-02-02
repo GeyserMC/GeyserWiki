@@ -190,7 +190,7 @@
     {
       "name": "Google Cloud",
       "url": "https://cloud.google.com/",
-      "description": "Not a dedicated Minecraft provider)(- 90 day/$300 free trial\n- [Tutorial for a Minecraft server Google Cloud](https://cloud.google.com/solutions/gaming/minecraft-server)\n- Note: You'll need to also allow port 19132 on UDP, use Paper instead of vanilla, and put Geyser in the plugins folder\n- You also don't need an SSD, they're just trying to make you pay more"
+      "description": "(Not a dedicated Minecraft provider)\n- 90 day/$300 free trial\n- [Tutorial for a Minecraft server Google Cloud](https://cloud.google.com/solutions/gaming/minecraft-server)\n- Note: You'll need to also allow port 19132 on UDP, use Paper instead of vanilla, and put Geyser in the plugins folder\n- You also don't need an SSD, they're just trying to make you pay more"
     },
     {
       "name": "Heavynode",
