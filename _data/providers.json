@@ -28,7 +28,7 @@
     {
       "name": "MCProHosting",
       "url": "https://mcprohosting.com/",
-      "description": "Geyser-Spigot only: Click \"Enable Bedrock Support\" on the server dashboard and follow the steps. For other versions: Add Destination Port 19132 with Protocol UDP to the [port forward mapping](https://mcprohosting.com/billing/knowledgebase/379/Firewall-and-Port-Management.html) and connect to the given source port."
+      "description": "Click \"Enable Bedrock Support\" on the server dashboard and follow the steps. For manual installation: Add Destination Port 19132 with Protocol UDP to the port forward mapping and connect to the given source port."
     },
     {
       "name": "Minehut",
