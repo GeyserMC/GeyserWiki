@@ -7,9 +7,12 @@ $site_color: {{ site.color }};
 // Google font
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i";
 
-/*!* Font Awesome Free 5.1.1 by @fontawesome - https://fontawesome.com;
-* License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)*/;
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
+/*!* Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com;
+* License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)*/
+// These are kept seperate as using 'all' breaks the search icon on the search boxes
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.css";
 
 //noinspection CssUnknownTarget
 @import "github";

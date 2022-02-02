@@ -25,6 +25,7 @@ GEM
     ethon (0.15.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
+    eventmachine (1.2.7-x64-mingw32)
     execjs (2.8.1)
     faraday (1.9.3)
       faraday-em_http (~> 1.0)
@@ -50,6 +51,7 @@ GEM
     faraday-rack (1.0.0)
     faraday-retry (1.0.3)
     ffi (1.15.5)
+    ffi (1.15.5-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
     github-pages (223)
@@ -236,6 +238,8 @@ GEM
     nokogiri (1.13.1)
       mini_portile2 (~> 2.7.0)
       racc (~> 1.4)
+    nokogiri (1.13.1-x64-mingw32)
+      racc (~> 1.4)
     octokit (4.22.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
@@ -273,17 +277,16 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8)
+    unf_ext (0.0.8-x64-mingw32)
     unicode-display_width (1.8.0)
     zeitwerk (2.5.4)
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   github-pages
 
-RUBY VERSION
-   ruby 2.7.2p137
-
 BUNDLED WITH
-   2.1.4
+   2.2.32
