@@ -123,11 +123,6 @@
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port; note that this provider appears to only provide service in Russia."
     },
     {
-      "name": "CubedHost",
-      "url": "https://cubedhost.com/",
-      "description": "Get Geyser a plugin. Use the same address as your Java server for the Bedrock address in your config. See [here](https://cubedhost.com/help/en/articles/4632618-how-can-bedrock-players-join-my-java-edition-server) for specific instructions."
-    },
-    {
       "name": "Dashflo.net",
       "url": "https://dashflo.net/",
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port, or buy a dedicated IP address to support a different port."
@@ -136,6 +131,11 @@
       "name": "DedicatedMC",
       "url": "https://dedicatedmc.io/",
       "description": "Get Geyser as a plugin. Need to ask to open the default bedrock port."
+    },
+    {
+      "name": "EnviroMC",
+      "url": "https://enviromc.host/",
+      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
     },
     {
       "name": "ExtraVM",
@@ -175,7 +175,7 @@
     {
       "name": "FreeMcServer.net",
       "url": "https://freemcserver.net",
-      "description": "Get Geyser as a plugin. (Create a UDP port in the ports tab then type it in your config and connect with that port."
+      "description": "Get Geyser as a plugin. Create a UDP port in the ports tab then type it in your config and connect with that port."
     },
     {
       "name": "Futurehosting",
@@ -208,6 +208,11 @@
       "description": "Get Geyser as a plugin. Use the one of the available ports allocated for your server, for the Bedrock port in your config and connect with that port."
     },
     {
+      "name": "hokus",
+      "url": "https://hokus.me",
+      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+    },
+    {
       "name": "HostMC4Free",
       "url": "https://hostmc4free.com",
       "description": "Order new service, choose Geyser in Bedrock section, and open a ticket to request a second port all ports support UDP"
@@ -226,11 +231,6 @@
       "name": "Hexit",
       "url": "https://client.hexit.cc/",
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
-    },
-    {
-      "name": "KolakZ Network",
-      "url": "https://kolakz.com/",
-      "description": "Get Geyser as a plugin. Need to ask to open the default bedrock port."
     },
     {
       "name": "MC-HOST24.de",
@@ -265,7 +265,7 @@
     {
       "name": "NiCraft",
       "url": "https://www.ni-host.com/",
-      "description": "- Use the same port as your Java server for the Bedrock port in your config and connect with that port.\n- See [here](https://github.com/GeyserMC/Geyser/wiki/Fixing-%22Unable-to-Connect-to-World%22#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server)\n- So if your players encounter this issue, please ask them to try to connect, even if they don't have Minecraft, from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
+      "description": "- Use the same port as your Java server for the Bedrock port in your config and connect with that port.\n- See [here](https://github.com/GeyserMC/Geyser/wiki/Fixing-%22Unable-to-Connect-to-World%22#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server).\n- So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
     },
     {
       "name": "Nitrado",
@@ -303,9 +303,19 @@
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
     },
     {
+      "name": "PUBCS",
+      "url": "https://pubcs.com",
+      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port, or upgrade to a plan that includes dedicated IP address to support a different port."
+    },
+    {
       "name": "RamShard",
       "url": "https://ramshard.com/",
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+    },
+    {
+      "name": "ReviveHost",
+      "url": "https://revivehost.com",
+      "description": "Get Geyser as a plugin. Request an additional port and put that port in your config.yml for the Bedrock server."
     },
     {
       "name": "Revivenode",
@@ -320,7 +330,7 @@
     {
       "name": "Server.pro",
       "url": "https://server.pro",
-      "description": "Get Geyser as a plugin. If you are using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with that same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). If you are using a Pro or VPS plan, you can use any port you'd like and it's recommended to leave it to the default or `19132`."
+      "description": "**Update as of December 21, 2021 - a VPS plan is recommended by server.pro; other plans will not work or be very unreliable. Geyser can't do anything about this. The following instructions are untouched from before this update**. Get Geyser as a plugin. If you are using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with that same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). If you are using a Pro or VPS plan, you can use any port you'd like and it's recommended to leave it to the default or `19132`."
     },
     {
       "name": "Shockbyte",
@@ -346,6 +356,11 @@
       "name": "SpawnMC",
       "url": "https://spawnmc.net/",
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port; note that this provider only provides service in China."
+    },
+    {
+      "name": "StellaNode",
+      "url": "https://stellanode.com/",
+      "description": "Get Geyser as a plugin. Open a support ticket on the billing panel to receive an additional UDP port to use for Geyser."
     },
     {
       "name": "STIPE",
