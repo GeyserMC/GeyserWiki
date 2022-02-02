@@ -9,14 +9,15 @@ $site_color: {{ site.color }};
 
 /*!* Font Awesome Free 5.1.1 by @fontawesome - https://fontawesome.com;
 * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)*/;
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/fontawesome.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/solid.css";
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/brands.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
 
+//noinspection CssUnknownTarget
 @import "github";
 
-@import "bootstrap";
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
 
+//noinspection CssUnknownTarget
 @import "extras";
 
+//noinspection CssUnknownTarget
 @import "palette";

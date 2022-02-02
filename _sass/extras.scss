@@ -1,3 +1,37 @@
+pre {
+    color: #c9d1d9
+}
+
+.navbar-dark .navbar-brand {
+    color: #f0f6fc
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f0f6fc
+}
+
+body {
+    margin: 0;
+    font-family: open sans, -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #c9d1d9;
+    text-align: left;
+    background-color: #0d1117
+}
+
+img {
+    vertical-align: middle;
+    border-style: none
+}
+
+.img-fluid,
+.td-content img {
+    max-width: 100%;
+    height: auto
+}
+
 .td-border-top {
     border: none;
     border-top: 1px solid #eee;
@@ -2456,7 +2490,7 @@
 
 .td-navbar .navbar-brand {
     text-transform: none;
-    text-align: middle;
+    text-align: center;
 }
 
 .td-navbar .navbar-brand .nav-link {
