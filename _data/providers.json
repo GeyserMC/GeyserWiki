@@ -9,6 +9,11 @@
       "description": "Select as a plugin in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details."
     },
     {
+      "name": "Apex Hosting",
+      "url": "https://apexminecrafthosting.com/",
+      "description": "Full auto installation. Go to the `Customizations` tab in the panel and select `Enabled` under the `Geyser Auto Installer` option then restart and connect to your server with your Java IP and port. See [Apex's article](https://apexminecrafthosting.com/geysermc/) for more details."
+    },
+    {
       "name": "CreeperHost",
       "url": "https://www.creeperhost.net/",
       "description": "Has a toggle within the control panel to automatically enable Geyser. May not be enabled by default, so you may need to toggle it and restart the server."
@@ -84,11 +89,6 @@
       "name": "Akliz",
       "url": "https://www.akliz.net/",
       "description": "Get Geyser as a plugin. They should have a port forwarding option that works."
-    },
-    {
-      "name": "Apex Hosting",
-      "url": "https://apexminecrafthosting.com/",
-      "description": "Get Geyser as a plugin. Need to set the Bedrock address in the config on the Java IP, default port may not work."
     },
     {
       "name": "Aquatis",
