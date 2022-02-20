@@ -6,7 +6,7 @@ The wiki can be accessed using [this link](https://wiki.geysermc.org).
 
 ## Contributing
 
-If you would like to contribute to the wiki, please [open a pull request](https://pull-request-url-goes-here.org/).
+If you would like to contribute to the wiki, please [open a pull request](https://github.com/GeyserMC/GeyserWiki/pulls).
 
 ### Creating a new page
 

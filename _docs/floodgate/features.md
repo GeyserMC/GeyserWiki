@@ -15,14 +15,14 @@ You can also specify a UUID: `fwhitelist add 00000000-0000-0000-0009-01f64f65c7c
 The permission node is `floodgate.command.whitelist`.
 
 ## What is the Global Api?
-The Global Api is an API that is available for every server. It currently includes: [Global Linking](#What-is-Global-Linking), [skin uploading](#What-is-skin-uploading), getting a xuid by gamertag, and getting a gamertag by xuid.
+The Global Api is an API that is available for every server. It currently includes: [Global Linking](#what-is-global-linking), [skin uploading](#what-is-skin-uploading), getting a xuid by gamertag, and getting a gamertag by xuid.
 We don't store anything else than you can access by the Global Api, except for some non-identifiable metrics. The source code of the Global Api is available [here](https://github.com/GeyserMC/global_api) and the source code of the Global Linking server is available [here](https://github.com/GeyserMC/GlobalLinkServer).
 
 ## What is Global Linking?
 Instructions and information about how to link can also be found here: https://link.geysermc.org/
 
 Before we introduced Global Linking, you always had to link your Java and Bedrock account on every individual server you visited (that has Floodgate). Global Linking is here to fix that problem. Link once, join everywhere.<br>
-Global Linking is part of the [Global Api](#What-is-the-Global-Api) and uses the GlobalLinkServer to link your account. To be able to link your account you have to do the following:
+Global Linking is part of the [Global Api](#what-is-the-global-api) and uses the GlobalLinkServer to link your account. To be able to link your account you have to do the following:
 1. Join the GlobalLinkServer with both your Java and Bedrock account  
    (IP: `link.geysermc.org`, Java port: `25565`, Bedrock port: `19132`)
 2. Start the linking process by typing `/linkaccount` on your Java **or** Bedrock account
@@ -67,7 +67,7 @@ That should be it. You can then link your accounts by following the instructions
 Skins of Bedrock player should be visible to Java players on servers with Floodgate 2.0 installed.  
 If they aren't, it's most likely that the skin uploading queue has grown too large and can take a while to upload your skin.
 
-Skin uploading is also a part of the [Global Api](#What-is-the-Global-Api). It is responsible for converting Bedrock skins to Java skins and uploading them to Mojang servers make them show up on Java Edition.
+Skin uploading is also a part of the [Global Api](#what-is-the-global-api). It is responsible for converting Bedrock skins to Java skins and uploading them to Mojang servers make them show up on Java Edition.
 
 We're using MineSkin internally. MineSkin is running on accounts donated by the community. So if you want to support MineSkin and make the upload times faster, feel free to look at [this page](https://mineskin.org/account) for more info.
 

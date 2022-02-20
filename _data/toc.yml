@@ -20,7 +20,7 @@
       url: "geyser/common-issues/"
       children:
         - title: Fixing 'Unable to Connect to World'
-          url: "geyser/common-issues/#see-here-for-fixing-unable-to-connect-to-world-with-no-console-errors"
+          url: "geyser/fixing-unable-to-connect-to-world/"
     - title: Understanding the Config
       url: "geyser/understanding-the-config/"
     - title: Standalone Command Line Arguments
@@ -63,6 +63,8 @@
       url: "floodgate/api/"
     - title: "FloodgatePlayer"
       url: "floodgate/player/"
+    - title: "Linking"
+      url: "floodgate/linking/"
     - title: "Forms and Cumulus"
       url: "floodgate/forms/"
     - title: "Commands"

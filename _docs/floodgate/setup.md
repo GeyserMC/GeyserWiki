@@ -12,13 +12,13 @@ Geyser: https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/
 ## Prerequisites
 
 - You must own/manage the server in order to add Floodgate. *If you do not own the server, Floodgate does not allow you to bypass logging into Java servers that require a Mojang Java account*.
-- You must either be running Geyser as a [plugin](https://wiki.geysermc.org/geyser/setup/), or be running [Geyser Standalone](https://wiki.geysermc.org/geyser/setup/#standalone-setup). Floodgate does not replace Geyser.
+- You must either be running Geyser as a [plugin](/geyser/setup/), or be running [Geyser Standalone](/geyser/setup/#standalone-setup). Floodgate does not replace Geyser.
 - `floodgate-spigot.jar` cannot be installed on CraftBukkit/Bukkit servers.
 
 ## Setting Up
 *Any reference to Spigot here also refers to any compatible server software such as Paper.*
 
-For BungeeCord/Velocity setups: you only are required to install Floodgate on the BungeeCord or Velocity proxy unless you want to use the Floodgate API on the backend servers - see [below](installing-floodgate-also-on-spigot-servers-behind-bungeecord-or-velocity) for the installation process.  
+For BungeeCord/Velocity setups: you only are required to install Floodgate on the BungeeCord or Velocity proxy unless you want to use the Floodgate API on the backend servers - see [below](#installing-floodgate-also-on-spigot-servers-behind-bungeecord-or-velocity) for the installation process.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Note:* Installing Floodgate on the backend servers will allow Bedrock player skins to display without the Bedrock player having to switch backend servers.
 
 - Download the Floodgate plugin from [here](https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/) and add it to your plugins folder on your frontend server.
@@ -35,7 +35,7 @@ For BungeeCord/Velocity setups: you only are required to install Floodgate on th
 
 This is only needed when you want to use the Floodgate API on your Spigot server(s) behind a proxy.
 
-- Install Floodgate on the proxy and on *all* backend servers as per the [previous instructions](https://wiki.geysermc.org/floodgate/setup/)
+- Install Floodgate on the proxy and on *all* backend servers as per the [previous instructions](/floodgate/setup/)
 - Enable `ip_forward` in your BungeeCord `config.yml` if using BungeeCord
 - Set `bungeecord` to `true` in your `spigot.yml`
 - Start the proxy server.
@@ -49,7 +49,7 @@ This is only needed when you want to use the Floodgate API on your Spigot server
 
 In your Floodgate config, change `username-prefix` to whichever prefix you desire - you can set it to `""` and there will be no prefix.
 
-On some older Paper servers (or any forks that use them), you may need to also shut down your server and delete your `usercache.json` file located in the same folder as your server jar to prevent users who already joined from having the old prefix. See [this issue](Issues#Prefix-is not-changing-on-the-server-after-changing-it in-the-config.) for more information.
+On some older Paper servers (or any forks that use them), you may need to also shut down your server and delete your `usercache.json` file located in the same folder as your server jar to prevent users who already joined from having the old prefix. See [this issue](/floodgate/issues/#prefix-is-not-changing-on-the-server-after-changing-it-in-the-config) for more information.
 
 ## Obtaining UUIDs for Floodgate players
 Check your server logs, or use [this](https://floodgate-uuid.heathmitchell1.repl.co/) page. If this doesn't work, then try this method:
@@ -57,7 +57,7 @@ Check your server logs, or use [this](https://floodgate-uuid.heathmitchell1.repl
 First, you'll need to get the XUID of the player. There are several third-party websites to find this, for example, this one (unaffiliated with Geyser). Make sure to choose "Hexidecimal." You'll need to enter the player's Xbox Gamertag, and, once submitted, and it should display the XUID in the format of `xxxxxxxxxxxxxxxx`. To turn the XUID into a UUID that Java Edition can recognize, you need to put the XUID in this format: `00000000-0000-0000-xxxx-xxxxxxxxxxxx`. If formatted right, Java Edition should accept it as a UUID.
 
 ## Using PlaceholderAPI
-If you're using the Bukkit version of Floodgate, download the Placeholder plugin [here](https://github.com/rtm516/FloodgatePlaceholders/). Using the placeholders shouldn't require additional setup other than having [PlaceholderAPI](https://www.spigotmc.org/resources/placeholderapi.6245/) installed. See the section above on installing Floodgate on backend servers if you wish to use this on BungeeCord.
+If you're using the Bukkit version of Floodgate, download the Placeholder plugin [here](https://github.com/rtm516/FloodgatePlaceholders/). Using the placeholders shouldn't require additional setup other than having [PlaceholderAPI](https://www.spigotmc.org/resources/6245/) installed. See the section above on installing Floodgate on backend servers if you wish to use this on BungeeCord.
 
 ## Using Skript
 If you're using the Bukkit version of Floodgate, there is an unofficial plugin that adds Skript support [here](https://github.com/Camotoy/floodgate-skript). 

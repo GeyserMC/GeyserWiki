@@ -35,11 +35,11 @@ permalink: /
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <iframe src="https://www.youtube.com/watch?v=JjwR-3FkvUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/U7dZZ8w7Gi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="col">
                         <h1>How do I use it?</h1>
-                        <p>Geyser can be downloaded from our Jenkins server <a href="http://ci.geysermc.org">here</a> and setup installations can be found on our <a href="https://github.com/GeyserMC/Geyser/wiki#Setup">wiki</a> or in the tutorial video. Geyser can be used to join any modern Java server and doesn't require anything extra to be done on their end.</p>
+                        <p>Geyser can be downloaded from our Jenkins server <a href="http://ci.geysermc.org">here</a> and setup installations can be found on our <a href="/geyser/setup/">wiki</a> or in the tutorial video. Geyser can be used to join any modern Java server and doesn't require anything extra to be done on their end.</p>
                     </div>
                 </div>
             </div>
@@ -63,10 +63,10 @@ permalink: /
                     <div class="col">
                         <h1>Join from anywhere</h1>
                         <p>Geyser can be joined from Windows 10, iOS, Android, and even consoles
-                            (see <a href="https://wiki.geysermc.org/geyser/using-geyser-with-consoles/">here</a>
+                            (see <a href="/geyser/using-geyser-with-consoles/">here</a>
                             for how to set this up!) Geyser is tested working with a
-                            <a href="https://wiki.geysermc.org/geyser/supported-hosting-providers/">wide array of hosting providers</a>,
-                        and, if you own the server, you aren't limited by a Java account with our <a href="https://wiki.geysermc.org/floodgate/">Floodgate</a>
+                            <a href="/geyser/supported-hosting-providers/">wide array of hosting providers</a>,
+                        and, if you own the server, you aren't limited by a Java account with our <a href="/floodgate/">Floodgate</a>
                         plugin!</p>
                     </div>
                 </div>

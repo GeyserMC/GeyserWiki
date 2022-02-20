@@ -4,10 +4,10 @@ title: Common Issues
 permalink: /geyser/common-issues/
 ---
 
-Commonly, people may have issues with Geyser not showing up in their server list or run into similar issues. This page contains a few common issues people may encounter that you might have as well as potential fixes for them. If you still can't make it work, join [our Discord](https://discord.geysermc.org) for support.
+Commonly, people may have issues with Geyser not showing up in their server list or run into similar issues. This page contains a few common issues people may encounter that you might have as well as potential fixes for them. If you still can't make it work, join [our Discord](https://discord.gg/geysermc) for support.
 
 # Floodgate
-For Floodgate issues see: [Floodgate: Known Issues/Caveats](https://github.com/GeyserMC/Floodgate/wiki/Issues).
+For Floodgate issues see: [Floodgate: Known Issues/Caveats](/floodgate/issues/).
 
 # I can't connect! (Either the server doesn't show up in the friends list or I get "Unable to connect to world")
 * If you don't use a reverse proxy such as TCPShield make sure that `enable-proxy-protocol` is set to false.
@@ -15,14 +15,14 @@ For Floodgate issues see: [Floodgate: Known Issues/Caveats](https://github.com/G
 ## If the server doesn't show up in the friends list
 
 * *If using Windows 10, iOS, or Android*: try adding the server to the Servers list in-game.
-* *If using Xbox One*: try connecting with [BedrockConnect](https://github.com/GeyserMC/Geyser/wiki/Using-Geyser-with-Consoles).
-* *If using PS4*: [try using a LAN proxy.](https://github.com/GeyserMC/Geyser/wiki/Using-Geyser-with-Consoles#playstation-4)
-* *If using Nintendo Switch*: there is currently no way for local servers to show up in the Friends tab, but you can still connect using [BedrockConnect](https://github.com/GeyserMC/Geyser/wiki/Using-Geyser-with-Consoles).
+* *If using Xbox One*: try connecting with [BedrockConnect](/geyser/using-geyser-with-consoles/).
+* *If using PS4*: [try using a LAN proxy.](/geyser/using-geyser-with-consoles/#playstation-4)
+* *If using Nintendo Switch*: there is currently no way for local servers to show up in the Friends tab, but you can still connect using [BedrockConnect](/geyser/using-geyser-with-consoles/).
 
 *If the Geyser instance is locally hosted:* try using `localhost` or `0.0.0.0` as the IP address.
 *If that doesn't work, or your Geyser instance is on another computer in the network*: use your **local** IPv4 address.
 
-## See [here](https://github.com/GeyserMC/Geyser/wiki/Fixing-%27Unable-to-Connect-to-World%27) for fixing "Unable to Connect to World" with no console errors
+## See [here](/geyser/fixing-unable-to-connect-to-world/) for fixing "Unable to Connect to World" with no console errors
 
 ### `java.net.BindException: Address already in use: bind` on startup.
 This means something (likely another instance of Geyser) is running on the port you have specified in the config. Please make sure you close all applications running on this port. If you don't recall opening anything, usually restarting your computer fixes this.
@@ -70,7 +70,7 @@ Connection Refused usually means that a Java server could not be found on that p
 If you're updating from an old build of Geyser, set your remote address to `auto` and try again.
 
 ### Floodgate Misconfiguration
-See [this page](https://github.com/GeyserMC/Floodgate/wiki/Issues) for more information.
+See [this page](/floodgate/issues/) for more information.
 
 ### Mojang Resetting Account Credentials
 This is unfortunately something we have no control over, and is most likely the case when you're running Geyser as a plugin on a server host or joining a friend far away from your location. If you're running Geyser locally, this should not happen to you, but what we recommend for servers is a plugin we make called [Floodgate](https://github.com/GeyserMC/Floodgate), which allows for Bedrock clients to join your server without needing a Java Edition account. Take a look [here](Floodgate) for more information.
