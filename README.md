@@ -1,6 +1,6 @@
 # GeyserMC Wiki
 
-This is the repository containing the wikis for GeyserMC other Geyser projects.
+This is the repository that contains the wiki for all of GeyserMCs projects.
 
 The wiki can be accessed using [this link](https://wiki.geysermc.org).
 

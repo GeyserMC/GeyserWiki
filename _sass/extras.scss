@@ -2385,3 +2385,48 @@ footer {
 .h3, h3 {
     font-size: 1.5rem;
 }
+
+.feedback--answer {
+    display: inline-block;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback--answer:hover {
+    background-color: lightgray;
+}
+
+.feedback--answer-no {
+    margin-left: 1em;
+}
+
+.feedback--response {
+    display: none;
+    margin-top: 1em;
+}
+
+.feedback--response__visible {
+    display: block;
+}
+
+#scrolltop {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: $site_color; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px 15px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    font-weight: 600;
+}
+  
+#scrolltop:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
