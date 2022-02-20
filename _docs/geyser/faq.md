@@ -32,18 +32,18 @@ Floodgate can cause issues with plugins as it modifies the login process. *Pleas
 * [ProtocolSupportBungee](https://www.spigotmc.org/resources/8733/) changes how the login process works and therefore breaks the Floodgate injection code.
 * [SayNoToMcLeaks](https://www.spigotmc.org/resources/40906/) prevents Floodgate from finishing its login system.
 
-If you come across any more, please let us know via [Discord](http://discord.geysermc.org).
+If you come across any more, please let us know via [Discord](http://discord.gg/geysermc).
 
 ## Which plugin version of Geyser do I need?
 This is a non-complete list of what platform each plugin version of Geyser is for, and the standalone version can be used for any as it isn't a plugin.
 * Geyser-Spigot works with:
-    * [Spigot](https://www.spigotmc.org/)
-    * [Paper](https://papermc.io/downloads) (recommended)
-    * Any other forks of the above
+  * [Spigot](https://www.spigotmc.org/)
+  * [Paper](https://papermc.io/downloads) (recommended)
+  * Any other forks of the above
 * Geyser-Bungee works with:
-    * [BungeeCord](https://www.spigotmc.org/wiki/bungeecord/)
-    * [Waterfall](https://papermc.io/downloads#Waterfall)
-    * Any other forks of the above
+  * [BungeeCord](https://www.spigotmc.org/wiki/bungeecord/)
+  * [Waterfall](https://papermc.io/downloads#Waterfall)
+  * Any other forks of the above
 * Geyser-Velocity works with [Velocity](https://www.velocitypowered.com/)
 * Geyser-Sponge works with [SpongeVanilla or SpongeForge](https://www.spongepowered.org/)
 
@@ -71,7 +71,7 @@ If there is a prefix on Floodgate players, you must include the prefix in the na
 Example: `/tp ".<bedrock_username>"`
 
 ## How do I add players to the whitelist when using Floodgate?
-There are three ways you can do this. The first way is to use Floodgate's built-in whitelist command, `/fwhitelist add .<bedrock_username>`. The second way is to turn off the whitelist using `/whitelist off`, then get the Geyser player to join, then run `/whitelist add ".<bedrock_username>"`, then turn the whitelist back on using `/whitelist on`. (If using this method for a Bedrock account linked to an existing, whitelisted Java account, there is no need to _also_ whitelist the Bedrock account; you may link the accounts then immediately turn the whitelist back on.) The second way is to add the player's UUID as given by Floodgate to the whitelist.json file and then run `/whitelist reload`.
+There are three ways you can do this. The first way is to use Floodgate's built-in whitelist command, `/fwhitelist add <bedrock_username>`. The second way is to turn off the whitelist using `/whitelist off`, then get the Geyser player to join, then run `/whitelist add ".<bedrock_username>"`, then turn the whitelist back on using `/whitelist on`. (If using this method for a Bedrock account linked to an existing, whitelisted Java account, there is no need to _also_ whitelist the Bedrock account; you may link the accounts then immediately turn the whitelist back on.) The third way is to add the player's UUID as given by Floodgate to the whitelist.json file and then run `/whitelist reload`.
 
 ## How do I find a player's UUID without them joining when using Floodgate?
 Use [this page.](https://floodgate-uuid.heathmitchell1.repl.co/) If this doesn't work, then try this method:
@@ -105,9 +105,9 @@ The short answer: if a vanilla client can join the server, then so can Geyser.
 The long answer: currently, there is no way for Geyser to translate the features that most mods add (blocks, items, etc.). Therefore, servers that require mods to be installed clientside are unsupportable through Geyser.
 
 ## How can I auto-update Geyser?
-[Geyser MC Auto Updater](https://github.com/michaelwatne/geysermcupdater) is an option at this time to auto-update Geyser through the command line. Note that this project is unaffiliated with Geyser.
+Geyser MC Auto Updater ([GitHub page](https://github.com/michaelwatne/geysermcupdater)) is an option at this time to auto-update Geyser through the command line. Note that this project is unaffiliated with Geyser.
 
-GeyserUpdater ([GitHub page](https://github.com/YHDiamond/GeyserUpdater)/[Spigot page](https://www.spigotmc.org/resources/88555/)) is a Spigot/BungeeCord plugin option for auto-updating. Please note that this plugin is also unaffiliated and unsupported by Geyser, and users should redirect support for the plugin to its [Discord](https://discord.gg/U5MC2tcCz9).
+GeyserUpdater ([GitHub page](https://github.com/ProjectG-Plugins/GeyserUpdater)/[Spigot page](https://www.spigotmc.org/resources/88555/)) is a Spigot/BungeeCord plugin option for auto-updating. Please note that this plugin is also unaffiliated and unsupported by Geyser, and users should redirect support for the plugin to its [Discord](https://discord.gg/U5MC2tcCz9).
 
 ## How can I make DiscordSRV show Floodgate 2.0 or GeyserSkinManager skins?
 Replace the `AvatarUrl` line in your DiscordSRV config with this: `AvatarUrl: https://mc-heads.net/avatar/{texture}/{size}.png`

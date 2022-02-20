@@ -80,6 +80,8 @@ It's currently unknown why this happens even for valid domains. Try using the IP
 
 # Bedrock clients freeze when opening up commands for the first time
 Disable `command-suggestions` in your Geyser config. This will stop the freezing at the expense of removing command suggestions from Bedrock clients.
+If you're a dedicated server admin, you can have a list of commands players should be using. This will remove any unnecessary commands from tab completion as well for Java players. It has other benefits too. Here's a plugin that can just do that: 
+[CommandWhitelist](https://www.spigotmc.org/resources/81326/)
 
 # BungeeCord freezes and crashes after bedrock player joins
 Make sure you have set `ip-forward` to `true` in your BungeeCord `config.yml` and set `bungeecord` to `true` in each connected server's `spigot.yml`.
@@ -109,7 +111,8 @@ If you use floodgate ensure that it is installed on all of your Spigot backend s
 2.  `Lobby: floodgate`
 3.  `Server-1: floodgate`
 4.  `Server-2: floodgate`
-    And so on.
+
+And so on.
 
 * Please also make sure that you have the same `key.pem` and `config.yml` on all of your servers.
 

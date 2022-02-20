@@ -44,6 +44,10 @@ Ensure that you removed the `usercache.json` file from the server root directory
 
 Set `allow-invalid-usernames` to `true` in LuckPerms' config.
 
+## Failed to verify username! (with Paper)
+
+To completely mitigate this issue, disable `perform-username-validation` in the [unsupported settings in the `paper.yml` config file](https://paper.readthedocs.io/en/latest/server/configuration.html#unsupported-settings). Using Floodgate on the backend servers will also mitigate this issue.
+
 ## Error with Forge or Fabric Bukkit Hybrid
 
 At this time, there is no way to run Floodgate on servers that mix Forge and Bukkit or Fabric and Bukkit (For example: Magma, Mohist, and Cardboard/Bukkit4Fabric) - most hybrids do not support the complicated procedures we need to do in order to allow Bedrock players to connect (for the technically minded: these server softwares typically don't support NMS). 

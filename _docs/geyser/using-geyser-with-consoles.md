@@ -43,8 +43,8 @@ If you have a PC, you can use [Phantom](https://github.com/jhead/phantom).
 
 ### Using an Android Device
 If you have an Android device, you have several options:
-- [Geyser Android app](https://github.com/GeyserMC/GeyserAndroid)
-- [MC Lan Proxy (Trial)](https://discord.com/channels/613163671870242838/613194762249437245/770699493482037310)
+- ~~[Geyser Android app](https://github.com/GeyserMC/GeyserAndroid)~~ (Currently out of date)
+- [MC Lan Proxy (Trial)](https://play.google.com/store/apps/details?id=com.luzenna.mineproxydroidtrial)
 - [MC Lan Proxy (Paid)](https://play.google.com/store/apps/details?id=com.luzenna.mineproxydroid)
 - [MC Server Connector](https://play.google.com/store/apps/details?id=com.smokiem.mcserverconnector)
 

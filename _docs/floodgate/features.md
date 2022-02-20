@@ -68,3 +68,7 @@ Skins of Bedrock player should be visible to Java players on servers with Floodg
 If they aren't, it's most likely that the skin uploading queue has grown too large and can take a while to upload your skin.
 
 Skin uploading is also a part of the [Global Api](#What-is-the-Global-Api). It is responsible for converting Bedrock skins to Java skins and uploading them to Mojang servers make them show up on Java Edition.
+
+We're using MineSkin internally. MineSkin is running on accounts donated by the community. So if you want to support MineSkin and make the upload times faster, feel free to look at [this page](https://mineskin.org/account) for more info.
+
+![Example skin upload](https://cdn.discordapp.com/attachments/613168850925649981/815969801763160104/unknown.png)

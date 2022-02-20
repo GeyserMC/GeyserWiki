@@ -40,8 +40,7 @@ After you got the instance, you have access to all the methods.<br>
 Use the documentation in the API module to see (and get info about) every single method available.  
 Most [API methods have a simple explanation](https://github.com/GeyserMC/Floodgate/tree/master/api/src/main/java/org/geysermc/floodgate/api).
 
-#### We'll highlight a few to get you started quickly:<br>
-
+#### We'll highlight a few to get you started quickly:
 `FloodgateApi#isFloodgatePlayer(UUID)`<br>
 Used to check if the given UUID of an **online** player is a Bedrock player.
 
@@ -61,5 +60,4 @@ Used to send a form to the Bedrock player with the given UUID.<br>
 Click [here](Forms) to get more information about Forms.
 
 ### Using the API on backend servers
-
 In order to successfully use the API on backend Spigot servers when using a proxy, `send-floodgate-data` must be set to `true` on the proxy Floodgate's config, and the `key.pem` file must be identical between all Floodgate instances.
