@@ -9,6 +9,11 @@
       "description": "Select as a plugin in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details."
     },
     {
+      "name": "Arry Hosting",
+      "url": "https://arry.host/",
+      "description": "After logging into the panel, click the control button on the right side of the server you'd like to add Geyser to. Then select Egg Changer on the top of the screen. Scroll down to the bottom and click on change egg under the Geyser logo. Check off reinstall server. (This will install Paper and Geyser. You can change out the server software with anything else that works with Bukkit Plugins.)"
+    },
+    {
       "name": "Apex Hosting",
       "url": "https://apexminecrafthosting.com/",
       "description": "Full auto installation. Go to the `Customizations` tab in the panel and select `Enabled` under the `Geyser Auto Installer` option then restart and connect to your server with your Java IP and port. See [Apex's article](https://apexminecrafthosting.com/geysermc/) for more details."
@@ -287,6 +292,11 @@
       "name": "Nodecraft",
       "url": "https://nodecraft.com",
       "description": "Get Geyser as a plugin. Use the default server port and 0.0.0.0 or your server IP as the host address."
+    },
+    {
+      "name": "NXYL.pro",
+      "url": "https://play.nxyl.pro",
+      "description": "Get Geyser as a plugin. Put the port provided by the host in your config.yml for the Java and bedrock sections, or create a port in the ports manager on the panel and use that for bedrock with the main one for Java, and you will be able to connect!"
     },
     {
       "name": "OVH",
