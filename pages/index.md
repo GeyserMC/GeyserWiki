@@ -35,7 +35,7 @@ permalink: /
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <iframe src="https://www.youtube.com/embed/U7dZZ8w7Gi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- <iframe src="https://www.youtube.com/embed/U7dZZ8w7Gi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     </div>
                     <div class="col">
                         <h1>How do I use it?</h1>
