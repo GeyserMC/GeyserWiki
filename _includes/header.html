@@ -4,9 +4,9 @@
             <span class="navbar-logo"></span><img src="https://geysermc.org/android-chrome-512x512.png" /><span class="text-uppercase font-weight-bold">{{ site.title }}</span>
 	</a>
 	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
-		<ul class="navbar-nav mt-2 mt-lg-0">
+		<ul class="navbar-nav mt-2 mt-md-0">
       {% for link in site.data.navigation %}
-			<li class="nav-item mr-4 mb-2 mb-lg-0">
+			<li class="nav-item mr-2 ml-2 mr-md-4 ml-md-0 mb-2 mb-lg-0 text-center">
                             <a class="nav-link" href="{% if link.url %}{{ site.baseurl }}/{{ link.url }}{% else %}{{ link.external_url }}{% endif %}" ><span>{{ link.title }}</span></a>
 			</li>{% endfor %}
 		</ul>

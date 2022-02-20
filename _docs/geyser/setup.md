@@ -88,7 +88,7 @@ curl https://gist.githubusercontent.com/rtm516/e3e07d6595ee41e05a38b03c0f4d7a80/
 2. Install [NewTerm 2](https://chariz.com/get/newterm).
 4. Download jre-16 for iOS and install it using Filza [here](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/download/v16-openjdk/openjdk-16-jre_16.0.0+git20201217.8383f41-2_iphoneos-arm.deb).
 3. Download my modified java commands, and install it using Filza [here](https://cdn.discordapp.com/attachments/558829512633090048/834014323755319306/com.letschill.java_0.1_iphoneos-arm.deb).
-4. Open NewTerm 2 and run `wget https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/standalone/target/Geyser.jar`.
+4. Open NewTerm 2 and run `wget https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/standalone/target/Geyser.jar`
 5. Run `java -jar Geyser.jar`.
 6. You can find Geyser server running in MCPE!
 

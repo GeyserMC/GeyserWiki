@@ -1897,6 +1897,10 @@ html body .md-typeset .headerlink {
     margin: 1rem;
 }
 
+.td-sidebar__toggle:hover, .td-sidebar__toggle:focus {
+    text-decoration: none;
+}
+
 .td-sidebar__search {
     padding: 1rem 15px;
     margin-right: -15px;
@@ -2102,6 +2106,7 @@ html body .md-typeset .headerlink {
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
+    overflow-wrap: anywhere;
 }
 
 .td-content p,
@@ -2393,7 +2398,7 @@ footer {
     cursor: pointer;
 }
 
-.feedback--answer:hover {
+.feedback--answer:not([disabled]):hover {
     background-color: lightgray;
 }
 
