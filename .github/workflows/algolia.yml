@@ -1,0 +1,27 @@
+name: Index Algolia
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v2
+
+      - name: Build Jekyll
+        run: |
+          jekyll build --trace --config _config.yml
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v2
+        with:
+          ruby-version: 3.0
+          bundler-cache: true
+
+      - name: Check permalinks
+        run: ruby .github/scripts/algolia.rb {{ secrets.ALGOLIA_APP_ID }} {{ secrets.ALGOLIA_API_KEY }}

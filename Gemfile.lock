@@ -9,6 +9,10 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    algolia (2.2.2)
+      faraday (>= 0.15, < 2.0)
+      multi_json (~> 1.0)
+      net-http-persistent
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -17,6 +21,7 @@ GEM
     commonmarker (0.17.13)
       ruby-enum (~> 0.5)
     concurrent-ruby (1.1.9)
+    connection_pool (2.2.5)
     dnsruby (1.61.9)
       simpleidn (~> 0.1)
     em-websocket (0.5.3)
@@ -25,7 +30,6 @@ GEM
     ethon (0.15.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
-    eventmachine (1.2.7-x64-mingw32)
     execjs (2.8.1)
     faraday (1.9.3)
       faraday-em_http (~> 1.0)
@@ -51,7 +55,6 @@ GEM
     faraday-rack (1.0.0)
     faraday-retry (1.0.3)
     ffi (1.15.5)
-    ffi (1.15.5-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
     github-pages (223)
@@ -219,6 +222,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
+    json (2.6.1)
     kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -234,11 +238,12 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.15.0)
+    multi_json (1.15.0)
     multipart-post (2.1.1)
+    net-http-persistent (4.0.1)
+      connection_pool (~> 2.2)
     nokogiri (1.13.1)
       mini_portile2 (~> 2.7.0)
-      racc (~> 1.4)
-    nokogiri (1.13.1-x64-mingw32)
       racc (~> 1.4)
     octokit (4.22.0)
       faraday (>= 0.9)
@@ -277,8 +282,8 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8)
-    unf_ext (0.0.8-x64-mingw32)
     unicode-display_width (1.8.0)
+    webrick (1.7.0)
     zeitwerk (2.5.4)
 
 PLATFORMS
@@ -286,7 +291,10 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  algolia
   github-pages
+  json
+  webrick
 
 BUNDLED WITH
    2.2.32
