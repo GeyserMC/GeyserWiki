@@ -185,7 +185,7 @@
     {
       "name": "FreeMcServer.net",
       "url": "https://freemcserver.net",
-      "description": "default"
+      "description_template": "default"
     },
     {
       "name": "Futurehosting",
