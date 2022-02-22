@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Using geyser or floodgate as a dependency
+title: Using Geyser or Floodgate as a dependency
 permalink: /geyser/using-geyser-or-floodgate-as-a-dependency/
 ---
 
