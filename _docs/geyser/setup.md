@@ -20,7 +20,7 @@ And if you still have questions, feel free to join the [Discord](https://discord
 The server itself does not have to be the latest version but does have to allow connections. If you're running the server on an older version, you can use the plugin [ViaVersion](https://www.spigotmc.org/resources/19254/), but do note that only **1.12.2 and any version above is officially supported**.
 - The device running Geyser must support Java 16 or later. If you need help installing or updating, please see [PaperMC's Java update page](https://paper.readthedocs.io/en/latest/java-update/index.html). If you're running a version of Paper that does not support Java 16 or later, you can add the flag `-DPaper.ignoreJavaVersion=true` to your startup Java arguments to allow Paper to run on Java 16. You can run Geyser standalone on another device if a server software cannot be updated to use Java 16.
 - If you are connecting to an online mode Java server, a paid Java account is required. If you are running the server, you can bypass this requirement for your server with [Floodgate](/floodgate/).
-- Your Bedrock client has to be a supported version - at this time that is Bedrock version 1.17.30 - 1.18.2.
+- Your Bedrock client has to be a supported version - at this time that is Bedrock version 1.17.41 - 1.18.2.
 - If you are running the server, you need to have a UDP port opened. See below for more instructions.
 
 ## Plugin Setup
