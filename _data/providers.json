@@ -185,7 +185,7 @@
     {
       "name": "FreeMcServer.net",
       "url": "https://freemcserver.net",
-      "description": "Get Geyser as a plugin. Create a UDP port in the ports tab then type it in your config and connect with that port."
+      "description_template": "default"
     },
     {
       "name": "Futurehosting",
