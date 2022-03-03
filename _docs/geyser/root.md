@@ -11,6 +11,6 @@ permalink: /geyser/
 
 _A bridge between Minecraft: Bedrock Edition and Minecraft: Java Edition._
 
-**Currently, supporting Minecraft Bedrock 1.17.41 - 1.18.12 and Minecraft Java 1.18/1.18.1**
+**Currently, supporting Minecraft Bedrock {{ site.data.versions.bedrock }} and Minecraft Java {{ site.data.versions.java }}**
 
 The goal of Geyser is to bridge the Minecraft: Bedrock Edition and Minecraft: Java Edition by allowing Bedrock clients to join Java Edition servers. This project is still in development and not complete yet, so expect bugs.
