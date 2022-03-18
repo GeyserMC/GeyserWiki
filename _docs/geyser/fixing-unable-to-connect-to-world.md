@@ -6,7 +6,7 @@ permalink: /geyser/fixing-unable-to-connect-to-world/
 
 *Unable to Connect to World* is by far the most common error people get when attempting to set up Geyser. Here's some steps on how to solve that.
 
-**_If you are using a hosting provider: Many providers and remote hostings have additional steps you have to perform in order to be supported; see [Supporting Hosting Providers](https://github.com/GeyserMC/Geyser/wiki/Supported-Hosting-Providers). If you're self-hosting from home, you don't need to worry about this._**
+**_If you are using a hosting provider: Many providers and remote hostings have additional steps you have to perform in order to be supported; see [Supporting Hosting Providers](https://wiki.geysermc.org/geyser/supported-hosting-providers/). If you're self-hosting from home, you don't need to worry about this._**
 
 # Before we start...
 
@@ -20,7 +20,7 @@ If this occurred after updating a plugin version of Geyser, ensure that you shut
 
 ## ...There are errors in my console!
 
-Please read through the [common issues page](https://github.com/GeyserMC/Geyser/wiki/Common-Issues). If there is another error not documented there, join us on our [Discord](https://discord.geysermc.org).
+Please read through the [common issues page](https://wiki.geysermc.org/geyser/common-issues/). If there is another error not documented there, join us on our [Discord](https://discord.geysermc.org).
 
 ## ...Have you tried restarting?
 
@@ -38,7 +38,7 @@ You should be connecting with the Java server IP and the Bedrock port. If you po
 
 ## I'm using a hosting provider or VPS!
 
-Please read [this page on supported hosting providers](https://github.com/GeyserMC/Geyser/wiki/Supported-Hosting-Providers) to see if there are extra configuration steps required for your hosting or server provider.
+Please read [this page on supported hosting providers](https://wiki.geysermc.org/geyser/supported-hosting-providers/) to see if there are extra configuration steps required for your hosting or server provider.
 
 ## Port forwarding
 
