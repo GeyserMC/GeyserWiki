@@ -11,7 +11,7 @@ Bedrock clients will join through Geyser and it will handle all the packet trans
 If you are running a server, it is highly recommended you use one of the plugin versions, and if you want to join a server that does not have Geyser installed, you can run the standalone version. If you use Pterodactyl Panel we have an egg for the standalone version, please see [here](/geyser/faq/#can-i-use-geyser-with-pterodactyl-panel) for more information.
 
 If you're still having problems with Geyser not working or giving you an "Unable to connect to world" error, see the [Common Issues](/geyser/common-issues/) page.\
-For more information, take a look at the [Understanding the Config](Understanding-the-Config) page, and the [FAQ](FAQ) page.\
+For more information, take a look at the [Understanding the Config](/geyser/understanding-the-config/) page, and the [FAQ](/geyser/faq/) page.\
 And if you still have questions, feel free to join the [Discord](https://discord.geysermc.org) if you haven't already.
 
 ## Prerequisites
