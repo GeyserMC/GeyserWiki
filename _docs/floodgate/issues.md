@@ -11,7 +11,7 @@ If an issue you're experiencing is not listed here, please consider joining the 
 In some instances, like if you have the `username-prefix` set to `*`, you may need to wrap the Bedrock player's username in quotes; for example: `/tp "*BedrockPlayer"`. Setting the prefix to `.` should also fix this.
 
 ## If you wish to use IP forwarding, please enable it in your BungeeCord config as well!
-It is likely you have enabled `send-floodgate-data` in your Floodgate config but either Floodgate isn't installed on the target server, or you floodgate key isn't the same between the installs of the plugin (please copy them so they all use the same key).
+It is likely you have enabled `send-floodgate-data` in your Floodgate config but either Floodgate isn't installed on the target server, or your floodgate key isn't the same between the installs of the plugin (please copy them so they all use the same key).
 
 ## `java.lang.IllegalStateException: Cannot reply to EncryptionRequestPacket without profile and access token.`
 
