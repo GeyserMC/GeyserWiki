@@ -39,6 +39,8 @@
       url: "geyser/using-geyser-or-floodgate-as-a-dependency/"
     - title: Current Limitations
       url: "geyser/current-limitations/"
+    - title: Using playit.gg with Geyser
+      url: "geyser/playit-gg/"
 - title: Floodgate Documentation
   url: "floodgate/"
   links:
