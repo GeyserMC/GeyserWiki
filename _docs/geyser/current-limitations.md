@@ -29,7 +29,6 @@ The following things cannot be fixed without changes to Bedrock or the Java prot
 The following changes **are supported** with the [GeyserOptionalPack](https://github.com/GeyserMC/Geyser/wiki/GeyserOptionalPack), which is a Bedrock resource pack you can install for additional functionality for features Bedrock does not natively support:
 - Custom armor stand poses
 - Illusioners
-- Iron golem cracked texture
 - Hit particles and other miscellaneous particles not natively in Bedrock
 - Offhand animations
 - Shulker invisibility
