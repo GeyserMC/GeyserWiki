@@ -19,10 +19,10 @@ Partially Compatible (Does not Check/Ignores Bedrock Players)
 
 - [AAC](https://www.spigotmc.org/resources/6442/) (Paid) - Last Updated on 19th August 2021
 - [Flappy Anticheat](https://www.spigotmc.org/resources/92180/) - Last Updated on 14th September 2021
+- [GrimAC](https://github.com/MWHunter/Grim) - Last Updated on March 24th 2022
 - [Matrix](https://matrix.rip/) (Paid) - Last updated on 2nd September 2021
 - [Spartan](https://www.spigotmc.org/resources/25638/) (Spartan Syn offers full Bedrock checks for an additional $43) (Paid) - Last Updated on 19th August 2021
 - [Vulcan](https://www.spigotmc.org/resources/83626/) (Paid) - Last Updated on 19th August 2021
-- [GrimAC](https://github.com/MWHunter/Grim) (Paid) - Last Updated on March 21st 2022
 
 Incompatible (False Positives on Bedrock Players, no Compatibility at All)
 
