@@ -24,6 +24,11 @@
       "description": "Has a toggle within the control panel to automatically enable Geyser. May not be enabled by default, so you may need to toggle it and restart the server."
     },
     {
+      "name": "Cubes Hosting",
+      "url": "https://www.cubes.host/",
+      "description": "Install Geyser as a plugin from the plugin manager configure with the correct port then restart the server and Geyser works out of the box as expected."
+    },
+    {
       "name": "exaroton",
       "url": "https://exaroton.com/",
       "description": "Select as a plugin in the exaroton plugin list and connect to your server with your Java IP and port. See [exaroton's article](https://support.exaroton.com/hc/en-us/articles/360019857918-Geyser) for more details."
