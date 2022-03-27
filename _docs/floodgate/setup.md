@@ -6,8 +6,8 @@ permalink: /floodgate/setup/
 
 ## Downloads:
 
-Floodgate: https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/  
-Geyser: https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/
+Floodgate: [https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/](https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/)  
+Geyser: [https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/](https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/)
 
 ## Prerequisites
 
