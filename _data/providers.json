@@ -420,6 +420,11 @@
       "description_template": "default"
     },
     {
+      "name": "Volcano Hosting",
+      "url": "https://www.volcanohosting.net/",
+      "description_template": "default"
+    },
+    {
       "name": "Vultam",
       "url": "https://vultam.net/",
       "description": "Get Geyser as a plugin. Use the same port as your Java server and 0.0.0.0 as the address for Bedrock, or request an additional port. The additional port can be 19132 if you buy a dedicated IP."
