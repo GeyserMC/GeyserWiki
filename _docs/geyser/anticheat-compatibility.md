@@ -14,6 +14,7 @@ Full Compatibility (Checks Bedrock Players Accurately)
 - [Themis](https://www.spigotmc.org/resources/90766/) - Last Updated on 19th August 2021
 - [LightAntiCheat](https://www.spigotmc.org/resources/96341/) - Last Updated on 4th December 2021
 - [Negativity V2](https://www.spigotmc.org/resources/86874/) (Paid) - Last Updated on 21st March 2022
+- [SoaromaSAC](https://www.spigotmc.org/resources/87702/) - Last Updated on 27th March 2022
 
 Partially Compatible (Does not Check/Ignores Bedrock Players)
 
@@ -32,5 +33,4 @@ Incompatible (False Positives on Bedrock Players, no Compatibility at All)
 - [GodsEye](https://www.spigotmc.org/resources/69595/) ([GodsEyeGeyserMC](https://github.com/TheDejavu/GodsEyeGeyserMC/releases) is an addon that enables Partial Compatibility) (Paid) - Last Updated on 21st March 2022
 - [Kauri](https://www.spigotmc.org/resources/53721/) (Paid) - Last Updated on 21st March 2022
 - [Reflex](https://www.spigotmc.org/resources/21122/) (Paid) - Last Updated on 19th August 2021
-- [SoaromaSAC](https://www.spigotmc.org/resources/87702/) - Last Updated on 19th August 2021
 - [Wraith](https://www.spigotmc.org/resources/66887/) (Paid) - Last Updated on 19th August 2021
