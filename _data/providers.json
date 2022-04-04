@@ -229,6 +229,11 @@
       "description_template": "default"
     },
     {
+      "name": "HostEZ",
+      "url": "https://hostez.io/minecraft",
+      "description": "Geyser plugin supported with self-install or installed on request with its own port. Includes firewall tested to be compatible with Geyser."
+    },
+    {
       "name": "HostMC4Free",
       "url": "https://hostmc4free.com",
       "description": "Order new service, choose Geyser in Bedrock section, and open a ticket to request a second port all ports support UDP"
