@@ -69,11 +69,6 @@
       "description": "Geyser is installed and configured on all servers by default."
     },
     {
-      "name": "Redline Hosting",
-      "url": "https://redlinehosting.net/",
-      "description_template": "default"
-    },
-    {
       "name": "SoulNode",
       "url": "https://soulnode.net/",
       "description": "Select [Plugin Pack](https://i.imgur.com/7e2QEKV.png) at checkout to auto-install Geyser. No extra setup required. Will auto bind to your default port to connect."
@@ -342,6 +337,11 @@
     {
       "name": "RamShard",
       "url": "https://ramshard.com/",
+      "description_template": "default"
+    },
+    {
+      "name": "Redline Hosting",
+      "url": "https://redlinehosting.net/",
       "description_template": "default"
     },
     {
