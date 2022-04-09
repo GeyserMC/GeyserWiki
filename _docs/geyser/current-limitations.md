@@ -26,7 +26,7 @@ The following things cannot be fixed without changes to Bedrock or the Java prot
 - Invisible item frames
 - Blocks (excluding jack-o-lantern) on entity heads (E.G. armor stands, players)
 
-The following changes **are supported** with the [GeyserOptionalPack](https://github.com/GeyserMC/Geyser/wiki/GeyserOptionalPack), which is a Bedrock resource pack you can install for additional functionality for features Bedrock does not natively support:
+The following changes **are supported** with the [GeyserOptionalPack](https://wiki.geysermc.org/other/geyseroptionalpack/), which is a Bedrock resource pack you can install for additional functionality for features Bedrock does not natively support:
 - Custom armor stand poses
 - Illusioners
 - Hit particles and other miscellaneous particles not natively in Bedrock
