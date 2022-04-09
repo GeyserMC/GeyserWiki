@@ -340,6 +340,11 @@
       "description_template": "default"
     },
     {
+      "name": "Redline Hosting",
+      "url": "https://redlinehosting.net/",
+      "description_template": "default"
+    },
+    {
       "name": "ReviveHost",
       "url": "https://revivehost.com",
       "description": "Get Geyser as a plugin. Request an additional port and put that port in your config.yml for the Bedrock server."
