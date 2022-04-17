@@ -93,6 +93,10 @@ If you get this error while using the Pterodactyl Panel, try editing the Geyser 
 
 Your firewall is likely in the way. Try adding an exception to Java, or disable the firewall for testing purposes.
 
+# As a last resort for troubleshooting...
+
+Minecraft offers a vanilla Bedrock server [here](https://www.minecraft.net/en-us/download/server/bedrock). Downloading, running, and attempting to connect to it may help isolate if the issue is on Geyser's end, or your computer/network's end.
+
 # Using Geyser on the same computer
 
 ## Windows 10

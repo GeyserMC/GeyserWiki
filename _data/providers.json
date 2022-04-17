@@ -24,6 +24,11 @@
       "description": "Has a toggle within the control panel to automatically enable Geyser. May not be enabled by default, so you may need to toggle it and restart the server."
     },
     {
+      "name": "Cubes Hosting",
+      "url": "https://www.cubes.host/",
+      "description": "Install Geyser as a plugin from the plugin manager configure with the correct port then restart the server and Geyser works out of the box as expected."
+    },
+    {
       "name": "exaroton",
       "url": "https://exaroton.com/",
       "description": "Select as a plugin in the exaroton plugin list and connect to your server with your Java IP and port. See [exaroton's article](https://support.exaroton.com/hc/en-us/articles/360019857918-Geyser) for more details."
@@ -224,6 +229,11 @@
       "description_template": "default"
     },
     {
+      "name": "HostEZ",
+      "url": "https://hostez.io/minecraft",
+      "description": "Geyser plugin supported with self-install or installed on request with its own port. Includes firewall tested to be compatible with Geyser."
+    },
+    {
       "name": "HostMC4Free",
       "url": "https://hostmc4free.com",
       "description": "Order new service, choose Geyser in Bedrock section, and open a ticket to request a second port all ports support UDP"
@@ -330,6 +340,11 @@
       "description_template": "default"
     },
     {
+      "name": "Redline Hosting",
+      "url": "https://redlinehosting.net/",
+      "description_template": "default"
+    },
+    {
       "name": "ReviveHost",
       "url": "https://revivehost.com",
       "description": "Get Geyser as a plugin. Request an additional port and put that port in your config.yml for the Bedrock server."
@@ -407,6 +422,16 @@
     {
       "name": "TurboHost",
       "url": "https://turbohost.nl/",
+      "description_template": "default"
+    },
+    {
+      "name": "UltimateSRV",
+      "url": "https://ultimatesrv.com/",
+      "description_template": "default"
+    },
+    {
+      "name": "Volcano Hosting",
+      "url": "https://www.volcanohosting.net/",
       "description_template": "default"
     },
     {
