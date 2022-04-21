@@ -4,7 +4,7 @@ title: GeyserOptionalPack
 permalink: /other/geyseroptionalpack/
 ---
 
-**Download:** https://ci.opencollab.dev/job/GeyserMC/job/GeyserOptionalPack/job/master/lastSuccessfulBuild/artifact/GeyserOptionalPack.mcpack
+**Download:** [https://ci.opencollab.dev/job/GeyserMC/job/GeyserOptionalPack/job/master/lastSuccessfulBuild/artifact/GeyserOptionalPack.mcpack](https://ci.opencollab.dev/job/GeyserMC/job/GeyserOptionalPack/job/master/lastSuccessfulBuild/artifact/GeyserOptionalPack.mcpack)
 
 GeyserOptionalPack is a Bedrock resource pack that adds more features to Geyser to bring Bedrock Edition in line with Java Edition. A resource pack allows various features and bug fixes to be implemented in Bedrock, including:
 
