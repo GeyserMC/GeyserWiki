@@ -23,7 +23,7 @@ Geyser should generally work fine with plugins, as we emulate a Java client. The
 
 Floodgate can cause issues with plugins as it modifies the login process. *Please note that any offline mode authenticator plugins are only here for documentation; Geyser does not support offline mode usage.*
 
-* [DynamicBungeeAuth](https://www.spigotmc.org/resources/27480/) produces invalid credentials for Bedrock players.
+* [DynamicBungeeAuth](https://www.spigotmc.org/resources/27480/) Currently working on latest version 10.28B+ (10.27B and older versions produces invalid credentials for Bedrock players)
 * [FastLogin](https://www.spigotmc.org/resources/14153/) does not let floodgate add player prefix.
 * [ExploitFixer](https://www.spigotmc.org/resources/62842/) thinks that Floodgate users are UUID spoofing - disable the `uuidspoof` setting in ExploitFixer's config.
 * [JPremium](https://www.spigotmc.org/resources/27766/) alters the UUID of a player, causing Floodgate not to be able to get the Bedrock data from its map.
