@@ -16,8 +16,9 @@ If you can't build/destroy/interact with the world in the test server, run `/rtp
 If you have any questions or problems be sure to join our [Discord](https://discord.gg/geysermc)!
 
 ### Commands:
+
 |Command|Desc|
-|--|--|
+|---|---|
 |`/rtp`|Teleport to a random location|
 |`/ll`|LandLord base command for managing land claims|
 |`/spawn`|Teleport to spawn|
