@@ -1,0 +1,50 @@
+---
+title: Search
+layout: none
+sitemap: false
+permalink: /search/data.json
+not_editable: true
+excluded_in_search: true
+---
+
+[
+{% for post in site.docs %}
+{% unless post.excluded_in_search %}
+{% if added %},{% endif %}
+{% assign added = false %}
+{
+"id": "{{ post.url | slugify }}",
+"title": "{{ post.title | xml_escape }}",
+"url": "{{ post.url | xml_escape }}",
+"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
+}
+{% assign added = true %}
+{% endunless %}
+{% endfor %}
+{% for post in site.posts %}
+{% unless post.excluded_in_search %}
+{% if added %},{% endif %}
+{% assign added = false %}
+{
+"id": "{{ post.url | slugify }}",
+"title": "{{ post.title | xml_escape }}",
+"url": "{{ post.url | xml_escape }}",
+"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
+}
+{% assign added = true %}
+{% endunless %}
+{% endfor %}
+{% for post in site.pages %}
+{% unless post.excluded_in_search %}
+{% if added %},{% endif %}
+{% assign added = false %}
+{
+"id": "{{ post.url | slugify }}",
+"title": "{{ post.title | xml_escape }}",
+"url": "{{ post.url | xml_escape }}",
+"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
+}
+{% assign added = true %}
+{% endunless %}
+{% endfor %}
+]
