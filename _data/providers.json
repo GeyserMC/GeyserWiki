@@ -224,11 +224,6 @@
       "description": "Get Geyser as a plugin. Use the one of the available ports allocated for your server, for the Bedrock port in your config and connect with that port."
     },
     {
-      "name": "hokus",
-      "url": "https://hokus.me",
-      "description_template": "default"
-    },
-    {
       "name": "HostEZ",
       "url": "https://hostez.io/minecraft",
       "description": "Geyser plugin supported with self-install or installed on request with its own port. Includes firewall tested to be compatible with Geyser."
