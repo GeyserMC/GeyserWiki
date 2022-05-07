@@ -41,6 +41,15 @@
       url: "geyser/current-limitations/"
     - title: Using playit.gg with Geyser
       url: "geyser/playit-gg/"
+    - title: Custom items with Geyser
+      url: "geyser/custom-items/"
+      children:
+        - title: JSON mappings
+          url: "geyser/custom-items/#json-mappings"
+        - title: Geyser extensions
+          url: "geyser/custom-items/#geyser-extensions"
+        - title: Resource pack
+          url: "geyser/custom-items/#resource-pack"
 - title: Floodgate Documentation
   url: "floodgate/"
   links:
