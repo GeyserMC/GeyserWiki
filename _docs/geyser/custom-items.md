@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Page title
+title: Custom items with Geyser
 permalink: /geyser/custom-items/
 ---
 
@@ -77,7 +77,7 @@ To setup custom items in geyser, you have to choose how you are going to registe
 
 ### Extending a vanilla item
 
-1. In your extension config file, you need to set: `startup-phase: "PRE_INITIALIZE"` so that the pre init event can be caught, and your items can be registered.
+1. In your `extension.yml` file, you need to set: `startup-phase: "PRE_INITIALIZE"` so that the pre init event can be caught, and your items can be registered.
 2. Then, create your custom item options or registrations, to which you can add any of the following. They can be stacked, so that all of the specified types need to match.
 ```java
 CustomItemOptions itemOptions = CustomItemOptions.builder()
@@ -108,9 +108,9 @@ public void onGeyserPreInitializeEvent(GeyserPreInitializeEvent event) {
 }
 ```
 
-### Non vanilla items with Geyser extensions (for example to use with Fabric)
+### Non vanilla (modded) items with Geyser extensions (for example to use with Fabric)
 
-1. In your extension config file, you need to set: `startup-phase: "PRE_INITIALIZE"` so that the pre init event can be caught, and your items can be registered.
+1. In your `extension.yml` file, you need to set: `startup-phase: "PRE_INITIALIZE"` so that the pre init event can be caught, and your items can be registered.
 2. Then, create your item data:
 ```java
 NonVanillaCustomItemData data = NonVanillaCustomItemData.builder()
