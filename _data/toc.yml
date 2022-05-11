@@ -55,10 +55,6 @@
           url: "floodgate/features/#whitelist-command"
         - title: Global Api
           url: "floodgate/features/#what-is-the-global-api"
-        - title: Global Linking
-          url: "floodgate/features/#what-is-global-linking"
-        - title: Local Linking
-          url: "floodgate/features/#local-linking"
         - title: Skin Uploading
           url: "floodgate/features/#what-is-skin-uploading"
     - title: "Floodgate API"
@@ -67,6 +63,11 @@
       url: "floodgate/player/"
     - title: "Linking"
       url: "floodgate/linking/"
+      children:
+        - title: Global Linking
+          url: "floodgate/linking/#what-is-global-linking"
+        - title: Local Linking
+          url: "floodgate/linking/#local-linking"
     - title: "Forms and Cumulus"
       url: "floodgate/forms/"
     - title: "Commands"
