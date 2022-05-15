@@ -28,7 +28,7 @@ url: "https://wiki.geysermc.org" # the base hostname & protocol for your site
 # Social (First three Required)
 repo: "https://github.com/GeyserMC/GeyserWiki"
 github_user: "GeyserMC"
-github_repo: "GeyserWiki"
+github_repo: "Geyser"
 github_branch: "master"
 
 # Optional
