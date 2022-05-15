@@ -56,12 +56,6 @@
     -webkit-animation: md-source__fact--done .4s ease-out;
     animation: md-source__fact--done .4s ease-out;
 }
-.gh-source__fact:before {
-    margin: 0 .2rem;
-    content: "\B7"}
-.gh-source__fact:first-child:before {
-    display: none;
-}
 .gh-source-file {
     display: inline-block;
     margin: 1em .5em 1em 0;
