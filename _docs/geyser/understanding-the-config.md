@@ -45,19 +45,20 @@ General Geyser options that are mostly specific to Geyser itself.
 
 **`floodgate-key-file`**: The key file path for Floodgate. Requires that you have [Floodgate](/floodgate/) installed and the `auth-type` set to `floodgate`.
 
-**`userAuths`**: A section where you can put the authentication information for your Minecraft: Java Edition account for immediate login when joining Geyser. **It is advised you ONLY use this option if you are running Geyser locally and that ONLY you have access to the config as it requires you put your Minecraft: Java Edition credentials in plain text!**
+**`saved-user-logins`**: For online mode authentication type only. 
+Stores a list of Bedrock players that should have their Java Edition account saved after login.
+This saves a token that can be reused to authenticate the player later. This does not save emails or passwords,
+but you should still be cautious when adding to this list and giving others access to this Geyser instance's files.
+Removing a name from this list will delete its cached login information on the next Geyser startup.
+The file for this is in the same folder as this config, named `saved-refresh-tokens.json`.
 
-If your Xbox account name was Notch, your Java email was `foobar2000@gmail.com` and your password was `hunter2`, you would fill this into the config:
+Format:
 
+```yml
+saved-user-logins:
+  - jeb_
+  - Dinnerbone
 ```
-userAuths:
-  Notch: # MCPE/Xbox username
-    email: foobar2000@gmail.com
-    password: "hunter2"
-    microsoft-account: true
-```
-
-Put two spaces before the username and four spaces before the email and password.
 
 **`command-suggestions`**: Bedrock clients freeze or crash when opening up the command prompt for the first time with a large amount of command suggestions. This config option disables command suggestions being sent to prevent any freezing. **Since 1.16.100:** command freezing and crashing has been largely reduced; you may no longer need this option disabled.
 
