@@ -191,6 +191,21 @@ We aim to support any of the bedrock languages; see [here](https://translate.gey
 |Hebrew                      |he_il|
 |Hindi                       |hi_in|
 
+## Adding custom Geyser translation overrides
+
+As of Geyser build #1101, you can now
+specify custom translations for Geyser strings used within the project.
+
+Please note that you cannot add strings that work in Minecraft formatting - these strings are only for
+places where Geyser uses them.
+
+To start, create a `languages` folder in the same directory as the Geyser config file.
+Inside of it, you'll need to add a file with your desired locale ending in `.properties`. You can see
+[here](https://github.com/GeyserMC/languages/tree/master/texts) for the locale files that Geyser uses - 
+you can download these as a starting point, or you can just add the strings you want to overwrite. 
+
+You must restart Geyser for the changes to apply.
+
 # Questions not related to gameplay
 
 ## What is the relationship between CubeCraft and Geyser?
