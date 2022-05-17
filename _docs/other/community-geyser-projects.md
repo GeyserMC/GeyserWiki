@@ -61,6 +61,12 @@ Plugin that blocks Java players from joining your Geyser server, so you can have
 
 Creator: [Camotoy](https://github.com/Camotoy)
 
+## GeyserHacks
+Various workarounds for Geyser players that modify the server in order to achieve their goal.
+* [GitHub](https://github.com/Camotoy/GeyserHacks)
+
+Creator: [Camotoy](https://github.com/Camotoy)
+
 ## GeyserHub
 A crossplay lobby plugin that provides server selector and command forms for both Bedrock Edition and Java Edition players. 
 
@@ -82,12 +88,6 @@ Prevent Bedrock players from joining specific sub-servers on a proxy
 
 Creator: [Camotoy](https://github.com/Camotoy)
 
-## TydiumCraft Skin API
-An API makes it easier for your Bedrock skin to be rendered and outputted!
-* [Website](https://tydiumcraft.net/docs/skinapi)
-
-Creators: [Tydium](https://github.com/Tydium), [higbead](https://github.com/higbead), [gibbon27](https://github.com/gibbon27)
-
 ## GeyserSkinManager
 Spigot and Bungee plugin to make Bedrock skins work; requires Geyser to be installed on the server.
 * [GitHub](https://github.com/Camotoy/GeyserSkinManager)
@@ -107,3 +107,9 @@ Small application that waits for a player to connect before launching actual min
 * [GitHub](https://github.com/vincss/mcsleepingserverstarter)
 
 Creator: [Vincss](https://github.com/vincss)
+
+## TydiumCraft Skin API
+An API makes it easier for your Bedrock skin to be rendered and outputted!
+* [Website](https://tydiumcraft.net/docs/skinapi)
+
+Creators: [Tydium](https://github.com/Tydium), [higbead](https://github.com/higbead), [gibbon27](https://github.com/gibbon27)
