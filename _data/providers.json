@@ -299,6 +299,11 @@
       "description": "Get Geyser as a plugin. Put the port provided by the host in your config.yml for the Java and bedrock sections, or create a port in the ports manager on the panel and use that for bedrock with the main one for Java, and you will be able to connect!"
     },
     {
+      "name": "Oracle Cloud",
+      "url": "https://www.oracle.com/cloud/",
+      "description": "Not a dedicated Minecraft provider\n  - 30 day/$300 free trial\n  - [Tutorial for a Minecraft server in Oracle Cloud](https://blogs.oracle.com/developers/post/how-to-set-up-and-run-a-really-powerful-free-minecraft-server-in-the-cloud)\n  - Note: You'll need to also allow port 19132 on UDP in both the security list and the firewall-cmd command, use Paper instead of vanilla, and put Geyser in the plugins folder.\n -- Note for Ubuntu users: Comment out `-A INPUT -j REJECT --reject-with icmp-host-prohibited` in `/etc/iptables/rules.v4` and run `sudo iptables-restore < /etc/iptables/rules.v4` to fix ufw."
+    },
+    {
       "name": "OVH",
       "url": "https://www.ovh.com/",
       "description": "See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#issues-connecting-with-ovh-or-a-subsidiary)."
