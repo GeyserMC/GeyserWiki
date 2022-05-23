@@ -31,6 +31,13 @@ A Spigot plugin that is able to run certain commands when a Bedrock player joins
 
 Creator: ofunny
 
+## CrossplatForms
+A Spigot, BungeeCord, and Velocity plugin to create custom Bedrock Edition forms and inventory menus through configurations.
+* [Spigot page](https://www.spigotmc.org/resources/101043/)
+* [GitHub](https://github.com/ProjectG-Plugins/CrossplatForms)
+
+Creators: [Konicai](https://github.com/Konicai), [Jens](https://github.com/Jens-Co)
+
 ## CustomCommandPrefix
 A Spigot plugin that allows users to enter commands starting with `.`, to work around Xbox achievements being disabled.
 
@@ -66,13 +73,6 @@ Various workarounds for Geyser players that modify the server in order to achiev
 * [GitHub](https://github.com/Camotoy/GeyserHacks)
 
 Creator: [Camotoy](https://github.com/Camotoy)
-
-## GeyserHub
-A crossplay lobby plugin that provides server selector and command forms for both Bedrock Edition and Java Edition players. 
-
-* [Github](https://github.com/ProjectG-Plugins/GeyserHub)
-
-Creators: [Jens](https://github.com/Jens-Co), [Konicai](https://github.com/Konicai)
 
 ## GeyserPlaceholders
 Placeholders support for Geyser.
