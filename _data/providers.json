@@ -350,6 +350,11 @@
       "description_template": "default"
     },
     {
+      "name": "SunriseNode",
+      "url": "https://sunrisenode.com",
+      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+    },
+    {
       "name": "ScalaCube",
       "url": "https://scalacube.com/",
       "description": "Get Geyser as a plugin. Use the same address and port as your Java server for the Bedrock address and port in your config and connect with that port."
