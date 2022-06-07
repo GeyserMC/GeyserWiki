@@ -8,7 +8,7 @@ Do note that this is a community-compiled list and is incomplete! If you wish to
 
 ### AntiCheat compatibility reports
 
-Full Compatibility (Checks Bedrock Players Accurately)
+Fully Compatible (Checks Bedrock Players Accurately)
 
 - [AntiAura](https://www.spigotmc.org/resources/1368/) (Paid) - Maintained
 - [Themis](https://www.spigotmc.org/resources/90766/) - Maintained
