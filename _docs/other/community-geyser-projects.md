@@ -34,7 +34,7 @@ Creator: ofunny
 ## CrossplatForms
 A Spigot, BungeeCord, and Velocity plugin to create custom Bedrock Edition forms and inventory menus through configurations.
 * [Spigot page](https://www.spigotmc.org/resources/101043/)
-* [GitHub](https://github.com/ProjectG-Plugins/CrossplatForms)
+* [GitHub](https://github.com/kejonaMC/CrossplatForms)
 
 Creators: [Konicai](https://github.com/Konicai), [Jens](https://github.com/Jens-Co)
 
@@ -57,14 +57,14 @@ Creator: [rtm516](https://github.com/rtm516)
 ## Floodgate-Skript
 Floodgate support for Skript.
 
-* [GitHub](https://github.com/Camotoy/floodgate-skript)
+* [GitHub](https://github.com/kejonaMC/floodgate-skript)
 
 Creator: [Camotoy](https://github.com/Camotoy)
 
 ## GeyserBlockJavaPlayers
 Plugin that blocks Java players from joining your Geyser server, so you can have a Bedrock only server that can use Spigot plugins.
 
-* [GitHub](https://github.com/Camotoy/GeyserBlockJavaPlayers)
+* [GitHub](https://github.com/kejonaMC/GeyserBlockJavaPlayers)
 
 Creator: [Camotoy](https://github.com/Camotoy)
 
@@ -84,7 +84,7 @@ Creator: [ImDaBigBoss](https://github.com/ImDaBigBoss)
 ## GeyserPreventServerSwitch
 Prevent Bedrock players from joining specific sub-servers on a proxy
 
-* [GitHub](https://github.com/Camotoy/GeyserPreventServerSwitch)
+* [GitHub](https://github.com/kejonaMC/GeyserPreventServerSwitch)
 
 Creator: [Camotoy](https://github.com/Camotoy)
 
@@ -97,7 +97,7 @@ Creator: [Camotoy](https://github.com/Camotoy)
 ## GeyserUpdater
 This is a Spigot/BungeeCord/Velocity plugin that can be used to automatically update Geyser.
 
-* [GitHub](https://github.com/ProjectG-Plugins/GeyserUpdater)
+* [GitHub](https://github.com/kejonaMC/GeyserUpdater)
 * [Spigot page](https://www.spigotmc.org/resources/88555/)
 
 Creators: [Jens](https://github.com/Jens-Co), [YHDiamond](https://github.com/YHDiamond), [Konicai](https://github.com/Konicai)
