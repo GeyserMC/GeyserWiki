@@ -37,12 +37,11 @@ To setup custom items in geyser, you have to choose how you are going to registe
     * Damage predicate: `damage_predicate` (int) This is a fractional value of damage/max damage and not a number between 0 and 1.
     * Unbreaking: `unbreaking` (boolean)
 6. You also have some extra modifiers that you can set to further customise your item. **Note that the following modifiers are NOT required.**
-    * `display_name` (string)
-    * `is_tool` (boolean)
-    * `allow_offhand` (boolean)
-    * `is_hat` (boolean)
-    * `texture_size` (int)
-    * `render_offsets` (object) It works as follows. Note that all the sub-objects are optional, except x, y and z. You can have for example only a main hand with a position, and noting else.
+    * `display_name` (string) default: item name
+    * `icon` (string) default: item name
+    * `allow_offhand` (boolean) default: false
+    * `texture_size` (int) default: 16
+    * `render_offsets` (object) It works as follows. Note that all the sub-objects are optional, except x, y and z. You can have for example only a main hand with a position, and noting else. default: no render offset
     ```json
     "render_offsets": {
         "main_hand": {
@@ -95,16 +94,17 @@ CustomItemData data = CustomItemData.builder()
 ```
 4. You have some modifiers that you can set to further customise your item. **Note that the following modifiers are NOT required.**
 ```java
-.displayName("displayName");
-.allowOffhand(false);
-.textureSize(16);
-.renderOffsets(new CustomRenderOffsets(...));
+.displayName("displayName"); //Default: item name
+.icon("my_icon"); //Default: item name
+.allowOffhand(false); //Default: false
+.textureSize(16); //Default: 16
+.renderOffsets(new CustomRenderOffsets(...)); //Default: no render offset
 ```
 5. Then, in your pre init event, you can register your item:
 ```java
 @Subscribe
-public void onGeyserPreInitializeEvent(GeyserPreInitializeEvent event) {
-    this.geyserApi().customItemManager().registerCustomItem("minecraft:JAVA_ITEM", data);
+public void onGeyserPreInitializeEvent(GeyserDefineCustomItemsEvent event) {
+    event.registerCustomItem("minecraft:JAVA_ITEM", data);
 }
 ```
 
@@ -122,8 +122,8 @@ NonVanillaCustomItemData data = NonVanillaCustomItemData.builder()
 4. Register your item in the pre init event:
 ```java
 @Subscribe
-public void onGeyserPreInitializeEvent(GeyserPreInitializeEvent event) {
-    this.geyserApi().customItemManager().registerCustomItem(data);
+public void onGeyserPreInitializeEvent(GeyserDefineCustomItemsEvent event) {
+    event.registerCustomItem(data);
 }
 ```
 
