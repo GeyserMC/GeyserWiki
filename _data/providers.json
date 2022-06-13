@@ -54,6 +54,11 @@
       "description": "Connect via `bedrock.minehut.com` and do `/join <servername>`."
     },
     {
+      "name": "MixmlHosting",
+      "url": "https://mixmlhosting.com/",
+      "description_template": "default"
+    },
+    {
       "name": "OMGServ",
       "url": "https://www.omgserv.com/en/",
       "description": "Select Geyser in [Install Menu](https://i.imgur.com/Gewpsrq.png), all is automatically installed. You can turn on/off floodgate in [server properties on the dashboard](https://i.imgur.com/jg5mzNj.png)."
