@@ -41,7 +41,7 @@ This usually has something to do on your host's end. Most commonly, it's because
 
 # Stuck on "Locating Server" with no errors
 
-You may need to update your Java version. If so, update at [AdoptOpenJDK.net](https://adoptopenjdk.net/).
+You may need to update your Java version. If so, update at [Adoptium.net](https://adoptium.net/).
 
 Sometimes this happens in poor-network environments. There is an `mtu` option in the Geyser config; lower this number slowly (in batches of 100), restart each time, and re-test joining.
 
