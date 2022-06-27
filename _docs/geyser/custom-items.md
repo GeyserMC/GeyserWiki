@@ -35,7 +35,7 @@ To setup custom items in geyser, you have to choose how you are going to registe
 5. Then, you need to set one or more item options or registrations, they can be stacked, so that all of the specified types need to match.
     * Custom model data: `custom_model_data` (int)
     * Damage predicate: `damage_predicate` (int) This is a fractional value of damage/max damage and not a number between 0 and 1.
-    * Unbreaking: `unbreaking` (boolean)
+    * Unbreakable: `unbreakable` (boolean)
 6. You also have some extra modifiers that you can set to further customise your item. **Note that the following modifiers are NOT required.**
     * `display_name` (string) default: item name
     * `icon` (string) default: item name
@@ -76,23 +76,22 @@ To setup custom items in geyser, you have to choose how you are going to registe
 
 ### Extending a vanilla item
 
-1. In your `extension.yml` file, you need to set: `startup-phase: "PRE_INITIALIZE"` so that the pre init event can be caught, and your items can be registered.
-2. Then, create your custom item options or registrations, to which you can add any of the following. They can be stacked, so that all of the specified types need to match.
+1. Create your custom item options or registrations, to which you can add any of the following. They can be stacked, so that all of the specified types need to match, but you **do NOT need all of them.**
 ```java
 CustomItemOptions itemOptions = CustomItemOptions.builder()
         .customModelData(1)
         .damagePredicate(1) //This is a fractional value of damage/max damage and not a number between 0 and 1.
-        .unbreaking(true)
+        .unbreakable(true)
         .build();
 ```
-3. Create your custom item, and store it somewhere:
+2. Create your custom item, and store it somewhere:
 ```java
 CustomItemData data = CustomItemData.builder()
         .name("my_item")
         .customItemOptions(itemOptions)
         .build();
 ```
-4. You have some modifiers that you can set to further customise your item. **Note that the following modifiers are NOT required.**
+3. You have some modifiers that you can set to further customise your item. **Note that the following modifiers are NOT required.**
 ```java
 .displayName("displayName"); //Default: item name
 .icon("my_icon"); //Default: item name
@@ -100,7 +99,7 @@ CustomItemData data = CustomItemData.builder()
 .textureSize(16); //Default: 16
 .renderOffsets(new CustomRenderOffsets(...)); //Default: no render offset
 ```
-5. Then, in your pre init event, you can register your item:
+4. Then, in your pre init event, you can register your item:
 ```java
 @Subscribe
 public void onGeyserPreInitializeEvent(GeyserDefineCustomItemsEvent event) {
@@ -110,16 +109,15 @@ public void onGeyserPreInitializeEvent(GeyserDefineCustomItemsEvent event) {
 
 ### Non vanilla (modded) items with Geyser extensions (for example to use with Fabric)
 
-1. In your `extension.yml` file, you need to set: `startup-phase: "PRE_INITIALIZE"` so that the pre init event can be caught, and your items can be registered.
-2. Then, create your item data:
+1. Create your item data:
 ```java
 NonVanillaCustomItemData data = NonVanillaCustomItemData.builder()
         .name("my_item")
         .identifier("my_mod:my_item")
         .javaId(1)
 ```
-3. There are many other options you can set to match the behavior that you require for your item. You can see them [here](https://github.com/GeyserMC/Geyser/blob/master/api/geyser/src/main/java/org/geysermc/geyser/api/item/custom/NonVanillaCustomItemData.java)
-4. Register your item in the pre init event:
+2. There are many other options you can set to match the behavior that you require for your item. You can see them [here](https://github.com/GeyserMC/Geyser/blob/master/api/geyser/src/main/java/org/geysermc/geyser/api/item/custom/NonVanillaCustomItemData.java)
+3. Register your item in the pre init event:
 ```java
 @Subscribe
 public void onGeyserPreInitializeEvent(GeyserDefineCustomItemsEvent event) {
