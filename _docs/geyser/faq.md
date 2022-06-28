@@ -59,7 +59,7 @@ Generally, the IP that Bedrock players will join with is your Java IP and the de
 
 ## How can I have Bedrock players load resource packs?
 
-You can add Bedrock resource packs to your Geyser installation in the `packs` folder of wherever the Geyser config is located. Bedrock clients will automatically download and load those resource packs. There is currently no automatic Java-to-Bedrock resource pack conversion, but you can convert any Java resource pack to Bedrock using [this](https://rtm516.github.io/ConvertJavaTextureToBedrock/) tool and add that to your server.
+You can add Bedrock resource packs to your Geyser installation in the `packs` folder of wherever the Geyser config is located. Bedrock clients will automatically download and load those resource packs. There is currently no automatic Java-to-Bedrock resource pack conversion, but you can convert any Java resource pack to Bedrock using [this tool](https://rtm516.github.io/ConvertJavaTextureToBedrock/) and add that to your server.
 
 ## How can Bedrock players hold items in their offhand?
 
