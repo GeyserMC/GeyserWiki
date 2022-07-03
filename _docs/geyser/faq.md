@@ -90,6 +90,11 @@ This is a Bedrock client issue caused by Bedrock being 32-bit and Java being 64-
 ## Can I use Geyser to allow Java players to connect to my Bedrock server?
 No, this is a translation tool to allow Bedrock players to connect to Java servers. It does not work the opposite way.
 
+## Can players join via splitscreen on Xbox/Playstation/Nintendo Switch?
+Geyser supports additional players joining via splitscreen, with the caveat that each player must have their own bedrock account.
+
+See [these docs](/geyser/understanding-the-config/#splitscreen) for the configuration settings for splitscreen.
+
 ## Can I use Geyser with Pterodactyl Panel?
 Yes, you can use Geyser as a plugin or a mod for your Minecraft server software running on Pterodactyl. There is also an official egg for the standalone version. It supports auto-updating and has all config options easily editable. You can find it [here](https://github.com/GeyserMC/pterodactyl-stuff), download the JSON egg, and import it into your panel.
 
