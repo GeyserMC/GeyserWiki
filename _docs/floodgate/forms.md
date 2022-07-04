@@ -200,3 +200,28 @@ _Modal_Form form = _Modal_Form.builder()
     .button2("translate.button2")
     .build();
 ```
+
+## Cumulus 1.1
+In Cumulus the response handling has been changed. 
+```java
+CustomForm.Builder form = CustomForm.builder()
+    .title("My epic title")
+    .toggle("A small button")
+    .slider("This thing can slide", 0, 100)
+    .label("This is a label");
+// Handle incorrect or closed responses.
+form.closedOrInvalidResultHandler(response -> {
+    response.isClosed();
+    response.isInvalid();
+});
+// get input data from form
+form.validResultHandler(response -> {
+    boolean getToggleResponse = response.asToggle(0);
+    float getSliderResponse = response.asSlider(1);
+    
+    System.out.println("Value from toggle is: " + getToggleResponse);
+    System.out.println("Value from slider is: " + getSliderResponse);
+});
+// send form to player
+FloodgateApi.getInstance().sendForm(uuid, form.build());
+```     
