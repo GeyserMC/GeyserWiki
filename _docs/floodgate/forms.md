@@ -114,53 +114,31 @@ So you can make and send forms in a pretty compact way by doing something like t
 FloodgatePlayer player = FloodgateApi.getInstance().getPlayer(uuid);
 ...
 player.sendForm(
-    new CustomForm.Builder()
+    CustomForm.builder()
         .title("My cool title")
         .content("10/10 content")
-));
+        .build()
+);
 ```
 
 ## Receiving a response from the client
 
 It's nice and all that we can send forms to a client, but we also want to be able to get a response from a client and  being able to handle them.<be>
-We can do that using the `responseHandler(BiConsumer<? extends Form, String>)` method in the FormBuilder:
-```java
-_Modal_Form.builder()
-    .title("Feedback form")
-    .content("We're asking for feedback, are you willing to enter some feedback to improve our server?")
-    .button1("Yes") // id = 0
-    .button2("No") // id = 1
-    .responseHandler((form, responseData) -> {
-        _Modal_FormResponse response = form.parseResponse(responseData);
-        if (!response.isCorrect()) {
-            // player closed the form or returned invalid info (see FormResponse)
-            return;
-        }
-        
-        // short version of getClickedButtonId == 0
-        if (response.getResult()) {
-            System.out.println("Yay, he wants to give us feedback");
-            return;
-        }
-        System.out.println("No feedback for us :(");
-    });
-```
-Or using the response handler setter of the Form (not a FormBuilder):
+We can do that using the response handler setter of the Form (not a FormBuilder):
 ```java
 _Modal_Form form = ...;
-form.setResponseHandler(responseData -> {
-    _Modal_FormResponse response = form.parseResponse(responseData);
-    if (!response.isCorrect()) {
-        // player closed the form or returned invalid info (see FormResponse)
-        return;
-    }
-        
-    // short version of getClickedButtonId == 0
-    if (response.getResult()) {
-        System.out.println("Yay, he wants to give us feedback");
-        return;
-    }
-    System.out.println("No feedback for us :(");
+
+form.closedOrInvalidResultHandler(response -> {
+    response.isClosed();
+    response.isInvalid();
+});
+
+form.validResultHandler(response -> {
+    boolean getToggleResponse = response.asToggle(0);
+    float getSliderResponse = response.asSlider(1);
+
+    System.out.println("Value from toggle is: " + getToggleResponse);
+    System.out.println("Value from slider is: " + getSliderResponse);
 });
 ```
 
@@ -200,28 +178,3 @@ _Modal_Form form = _Modal_Form.builder()
     .button2("translate.button2")
     .build();
 ```
-
-## Cumulus 1.1
-In Cumulus the response handling has been changed. 
-```java
-CustomForm.Builder form = CustomForm.builder()
-    .title("My epic title")
-    .toggle("A small button")
-    .slider("This thing can slide", 0, 100)
-    .label("This is a label");
-// Handle incorrect or closed responses.
-form.closedOrInvalidResultHandler(response -> {
-    response.isClosed();
-    response.isInvalid();
-});
-// get input data from form
-form.validResultHandler(response -> {
-    boolean getToggleResponse = response.asToggle(0);
-    float getSliderResponse = response.asSlider(1);
-    
-    System.out.println("Value from toggle is: " + getToggleResponse);
-    System.out.println("Value from slider is: " + getSliderResponse);
-});
-// send form to player
-FloodgateApi.getInstance().sendForm(uuid, form.build());
-```     
