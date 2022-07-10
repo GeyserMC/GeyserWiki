@@ -134,8 +134,8 @@ form.closedOrInvalidResultHandler(response -> {
 });
 
 form.validResultHandler(response -> {
-    boolean getToggleResponse = response.asToggle(0);
-    float getSliderResponse = response.asSlider(1);
+    boolean getToggleResponse = response.asToggle();
+    float getSliderResponse = response.asSlider();
 
     System.out.println("Value from toggle is: " + getToggleResponse);
     System.out.println("Value from slider is: " + getSliderResponse);
