@@ -4,7 +4,7 @@ title: Geyser-Fabric
 permalink: /other/geyser-fabric/
 ---
 
-# [Download here](https://ci.opencollab.dev/job/GeyserMC/job/Geyser-Fabric/job/java-1.18/)
+# [Download here](https://ci.opencollab.dev/job/GeyserMC/job/Geyser-Fabric/job/master/)
 
 For the most part, Geyser-Fabric operates the same as other Geyser platforms. There are a couple of exceptions:
 
