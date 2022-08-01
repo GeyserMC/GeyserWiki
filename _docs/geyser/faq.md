@@ -47,6 +47,9 @@ This is a non-complete list of what platform each plugin version of Geyser is fo
 * Geyser-Velocity works with [Velocity](https://www.velocitypowered.com/)
 * Geyser-Sponge works with [SpongeVanilla or SpongeForge](https://www.spongepowered.org/)
 
+## Which type of Geyser version is better, standalone or plugin?
+ Generally, plugin versions of Geyser are preferable compared to standalone Geyser, because of optimizations that hook into the plugin platforms. On Spigot, Velocity, and BungeeCord versions of Geyser, direct connections allow for faster loading times, lower latency, and accurate IP addresses without requiring Floodgate. Geyser-Spigot has further optimizations due to having direct world access, including lower memory usage and greater translation accuracy.
+
 ## What server versions does Geyser-Spigot support?
 The Geyser-Spigot plugin supports any Minecraft server version 1.12.2 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
 
