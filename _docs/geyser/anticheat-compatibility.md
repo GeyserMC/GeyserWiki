@@ -12,7 +12,6 @@ Full Compatibility (Checks Bedrock Players Accurately)
 
 - [AntiAura](https://www.spigotmc.org/resources/1368/){:target="_blank"} (Paid) - Last Updated on 19th August 2021
 - [Themis](https://www.spigotmc.org/resources/90766/){:target="_blank"} - Last Updated on 15th Jun 2022
-[comment]: <> (- [LightAntiCheat](https://www.spigotmc.org/resources/96341/){:target="_blank"} - Last Updated on 4th December 2021)
 - [Negativity V2](https://www.spigotmc.org/resources/86874/){:target="_blank"} (Paid) - Last Updated on 21st March 2022
 - [SoaromaSAC](https://www.spigotmc.org/resources/87702/){:target="_blank"} - Last Updated on 27th March 2022
 
