@@ -105,6 +105,15 @@ saved-user-logins:
 
 **`xbox-achievements-enabled`**: Allows Xbox achievements to be unlocked. **This disables certain commands so the Bedrock client can't "cheat" to get them; this cannot be worked around if you want to enable this**. Commands such as /gamemode and /give will not work from Bedrock with this enabled.
 
+## Splitscreen
+
+Options for setting up splitscreen support on consoles.
+
+**`users`**: A list of mappings of console profile usernames to their respective bedrock accounts.
+Any console profile that attempts to join via splitscreen won't be able to unless they are mapped to a bedrock account in this list.
+
+Each `users` entry requires a `bedrock-username` and `xuid` value. They are the Gamertag and Xbox ID associated with the Bedrock account. These values can be found in the server logs when a player logs in to the server normally (not via splitscreen).
+
 ## Advanced Options
 
 **`scoreboard-packet-threshold`**: Geyser updates the Scoreboard after every Scoreboard packet, but when Geyser tries to handle a lot of scoreboard packets per second can cause serious lag. This option allows you to specify after how many Scoreboard packets per seconds the Scoreboard updates will be then limited to four updates per second.

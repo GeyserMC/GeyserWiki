@@ -51,3 +51,8 @@ If you have an Android device, you have several options:
 
 ### Using an iOS device
 If you have an iOS 14+ device, you can use [BedrockTogether](https://apps.apple.com/app/bedrocktogether/id1534593376).
+
+# Splitscreen
+Geyser supports additional players joining via splitscreen, with the caveat that each player must have their own bedrock account. 
+
+See [these docs](/geyser/understanding-the-config/#splitscreen) for the configuration settings for splitscreen.
