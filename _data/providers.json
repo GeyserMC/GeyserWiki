@@ -367,7 +367,7 @@
     {
       "name": "Server.pro",
       "url": "https://server.pro",
-      "description": "**Update as of December 21, 2021 - a VPS plan is recommended by server.pro; other plans will not work or be very unreliable. Geyser can't do anything about this. The following instructions are untouched from before this update**. Get Geyser as a plugin. If you are using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with that same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). If you are using a Pro or VPS plan, you can use any port you'd like and it's recommended to leave it to the default or `19132`."
+      "description": "**Update as of August 2022 - A VPS plan is recommended. However, if you are using a PRO or a VPS plan, you can use any port you'd like, which can be opened on the Firewall tab. The following instructions are untouched from before this update**. Get Geyser as a plugin. If you are using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with the same port; for the Free plan, also enable the `clone-report-port` option; leave the IP values as default (`0.0.0.0` and `auto`)."
     },
     {
       "name": "Shockbyte",
