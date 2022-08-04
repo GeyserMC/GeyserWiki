@@ -152,6 +152,11 @@
       "description": "Get Geyser as a plugin. Need to ask to open the default bedrock port."
     },
     {
+      "name": "Eendhosting",
+      "url": "https://eendhosting.nl/",
+      "description_template": "default"
+    },
+    {
       "name": "EnviroMC",
       "url": "https://enviromc.host/",
       "description_template": "default"
