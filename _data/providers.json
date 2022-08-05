@@ -367,7 +367,7 @@
     {
       "name": "Server.pro",
       "url": "https://server.pro",
-      "description": "Get Geyser as a plugin. If you are using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with the same port; for the Free plan, also enable the `clone-report-port` option; leave the IP values as default (`0.0.0.0` and `auto`). VPS plan is recommended. However, if you are using a PRO or a VPS plan, you can use any port you'd like, which can be opened on the Firewall tab. "
+      "description": "Get Geyser as a plugin. If you are using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with the same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). VPS plan is recommended. However, if you are using a PRO or a VPS plan, you can use any port you'd like, which can be opened on the Firewall tab. "
     },
     {
       "name": "Shockbyte",
