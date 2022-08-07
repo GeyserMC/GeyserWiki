@@ -14,7 +14,7 @@ To setup custom items in geyser, you have to choose how you are going to registe
 2. Create a `.json` file, it can be any name you like and as many files as you like. You don't need to make one file per item. Here is the structure of the file:
 ```json
 {
-    "format_version": "1.0.0",
+    "format_version": 1,
     "items": {
 
     }
