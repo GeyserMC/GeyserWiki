@@ -7,8 +7,8 @@ permalink: /floodgate/forms/
 # What is Cumulus?
 
 Bedrock Edition has a cool exclusive feature called Forms.<br>
-Cumulus is the new Forms API that we use in Geyser and Floodgate. The source code is available [here](/floodgate/forms/).
-You can access the Cumulus API through the [Floodgate API](/floodgate/api/).
+Cumulus is the Forms API that we use in Geyser and Floodgate.<br>
+The source code is available [here](/floodgate/forms/). You can access the Cumulus API through the [Floodgate API](/floodgate/api/).
 
 Bedrock knows three types of Forms:
 * ModalForm
@@ -72,31 +72,6 @@ CustomForm.builder()
     .slider("Text", 0, 10, 1, 5)
 ```
 
-## Components
-
-Forms have different component types, most of them are limited to the CustomForm and some are available to everything but CustomForm.
-
-### Button
-Limited to ModalForm and SimpleForm. With SimpleForm, buttons can have image icons and there can be more than 2.
-
-### Dropdown
-Limited to CustomForm
-
-### Input
-Limited to CustomForm.
-
-### Label
-Limited to CustomForm.
-
-### Slider
-Limited to CustomForm.
-
-### Stepslider
-Limited to CustomForm.
-
-### Toggle
-Limited to CustomForm.
-
 ## Sending a form
 
 After you decided which form type you want to use and finished filling in the actual content, it's time to send the Form to the Bedrock player.<br>
@@ -114,7 +89,7 @@ So you can make and send forms in a pretty compact way by doing something like t
 FloodgatePlayer player = FloodgateApi.getInstance().getPlayer(uuid);
 ...
 player.sendForm(
-    new CustomForm.Builder()
+    CustomForm.builder()
         .title("My cool title")
         .content("10/10 content")
 ));
@@ -122,46 +97,17 @@ player.sendForm(
 
 ## Receiving a response from the client
 
-It's nice and all that we can send forms to a client, but we also want to be able to get a response from a client and  being able to handle them.<be>
-We can do that using the `responseHandler(BiConsumer<? extends Form, String>)` method in the FormBuilder:
+It's nice and all that we can send forms to a client, but we also want to be able to get a response from a client and being able to handle them.<br>
+We can do that using one (or multiple) result handers. The most used result handlers are: `validResultHandler(BiConsumer<Form, ValidFormResponseResult> | Consumer<ValidFormResponseResult>)`, `invalidResultHandler`, `closedResultHandler` and `closedOrInvalidResultHandler`.<br>
+Here follows an example that uses result handlers:
 ```java
-_Modal_Form.builder()
-    .title("Feedback form")
-    .content("We're asking for feedback, are you willing to enter some feedback to improve our server?")
-    .button1("Yes") // id = 0
-    .button2("No") // id = 1
-    .responseHandler((form, responseData) -> {
-        _Modal_FormResponse response = form.parseResponse(responseData);
-        if (!response.isCorrect()) {
-            // player closed the form or returned invalid info (see FormResponse)
-            return;
-        }
-        
-        // short version of getClickedButtonId == 0
-        if (response.getResult()) {
-            System.out.println("Yay, he wants to give us feedback");
-            return;
-        }
-        System.out.println("No feedback for us :(");
-    });
-```
-Or using the response handler setter of the Form (not a FormBuilder):
-```java
-_Modal_Form form = ...;
-form.setResponseHandler(responseData -> {
-    _Modal_FormResponse response = form.parseResponse(responseData);
-    if (!response.isCorrect()) {
-        // player closed the form or returned invalid info (see FormResponse)
-        return;
-    }
-        
-    // short version of getClickedButtonId == 0
-    if (response.getResult()) {
-        System.out.println("Yay, he wants to give us feedback");
-        return;
-    }
-    System.out.println("No feedback for us :(");
-});
+CustomForm.builder()
+    .title("geyser.auth.login.form.details.title")
+    .label("geyser.auth.login.form.details.desc")
+    .input("geyser.auth.login.form.details.email", "account@geysermc.org", "")
+    .input("geyser.auth.login.form.details.pass", "123456", "")
+    .closedOrInvalidResultHandler(() -> buildAndShowLoginDetailsWindow(session))
+    .validResultHandler(response -> session.authenticate(response.next(), response.next())));
 ```
 
 ## Advanced stuff
@@ -169,7 +115,7 @@ form.setResponseHandler(responseData -> {
 The FormBuilder also has support for translating the data used in the builder.<br>
 To add a translator, you can use the `translator(BiFunction<String, String, String>)` or the `translator(BiFunction<String, String, String>, String)` method:
 ```java
-_Modal_Form form = _Modal_Form.builder()
+ModalForm form = ModalForm.builder()
     .translator(this::translate, userLanguage)
     .title("Title")
     .content("Content")
@@ -186,7 +132,7 @@ public String translate(String key, String locale) {
 ```
 Or you can have the translate method directly in the FormBuilder instead of a separate method:
 ```java
-_Modal_Form form = _Modal_Form.builder()
+ModalForm form = ModalForm.builder()
     .translator((key, unused) -> {
         // this method will be called for every string, in this case, 4 times:
         // Title, Content, translate.button1, translate.button2
