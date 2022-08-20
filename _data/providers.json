@@ -69,6 +69,11 @@
       "description": "Geyser is installed and configured on all servers by default."
     },
     {
+      "name": "Server.pro",
+      "url": "https://server.pro",
+      "description": "On VPS, select Geyser in the [Service Type Menu](https://i.imgur.com/loSNmvu.png), Floodgate can be enabled and disabled on the dashboard configuration. For manual installation: If using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with the same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). However, if you are using a PRO or a VPS plan, you can use any port you'd like, which can be opened on the Firewall tab."
+    },
+    {
       "name": "SRKHOST",
       "url": "https://www.srkhost.eu/",
       "description": "You can enable Geyser at the Version changer page. This feature is built-in and uses the given port by the host."
@@ -338,11 +343,6 @@
       "name": "ScalaCube",
       "url": "https://scalacube.com/",
       "description": "Get Geyser as a plugin. Use the same address and port as your Java server for the Bedrock address and port in your config and connect with that port."
-    },
-    {
-      "name": "Server.pro",
-      "url": "https://server.pro",
-      "description": "Get Geyser as a plugin. If you are using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with the same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). VPS plan is recommended. However, if you are using a PRO or a VPS plan, you can use any port you'd like, which can be opened on the Firewall tab. "
     },
     {
       "name": "Shockbyte",
