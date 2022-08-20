@@ -69,6 +69,11 @@
       "description": "Geyser is installed and configured on all servers by default."
     },
     {
+      "name": "Server.pro",
+      "url": "https://server.pro",
+      "description": "Select Geyser in the [Service Type Menu](https://i.imgur.com/loSNmvu.png). You can turn floodgate on and off in the dashboard [configuration](https://i.imgur.com/PAP62BV.png)."
+    },
+    {
       "name": "SRKHOST",
       "url": "https://www.srkhost.eu/",
       "description": "You can enable Geyser at the Version changer page. This feature is built-in and uses the given port by the host."
