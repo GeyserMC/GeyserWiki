@@ -41,7 +41,7 @@ This usually has something to do on your host's end. Most commonly, it's because
 
 # Extreme lags on mobile data
 
-Check your APN - if you're using IPv6 and server don't support or isn't configured to handle IPv6 addresses you need to change APN to IPv4.
+Check your Access Point Name (APN) - if you're using IPv6 and server don't support or isn't configured to handle IPv6 addresses you need to change APN to IPv4.
 
 # Stuck on "Locating Server" with no errors
 
