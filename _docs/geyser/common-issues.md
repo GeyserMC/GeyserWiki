@@ -39,6 +39,10 @@ This usually has something to do on your host's end. Most commonly, it's because
 
 **PLEASE NOTE:** If your server automatically redownloads jars upon startup, such as with an autoupdate system, this workaround will not work. Please contact your host if this does not work for you as there is nothing we can do.
 
+# Extreme lags on mobile data
+
+Check your APN - if you're using IPv6 and server don't support or isn't configured to handle IPv6 addresses you need to change APN to IPv4.
+
 # Stuck on "Locating Server" with no errors
 
 You may need to update your Java version. If so, update at [Adoptium.net](https://adoptium.net/).
