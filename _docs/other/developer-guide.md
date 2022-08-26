@@ -45,10 +45,10 @@ pakkit is a GUI-based tool for intercepting packets between a server and client 
 ProxyPass is a tool for intercepting packets between a Bedrock server and client developed by the Cloudburst team. It can be found [here](https://github.com/NukkitX/ProxyPass) and the vanilla Bedrock server can be found [here](https://www.minecraft.net/en-us/download/server/bedrock/).
 
 ## MCC Toolchest
-MCC Toolchest is a tool for viewing and editing NBT data for Bedrock edition, this allows you to see data as it is stored in Bedrock. You can download it from [here](http://mcctoolchest.com/).
+MCC Toolchest is a tool for viewing and editing NBT data for Bedrock edition, this allows you to see data as it is stored in Bedrock.
 
 ## NBTExplorer
-NBTExplorer is a tool for viewing and editing NBT data for Java edition, this allows you to see data as it is stored in Java edition. You can download it from [here](https://github.com/jaquadro/NBTExplorer/releases).
+NBTExplorer is a tool for viewing and editing NBT data for Java edition, this allows you to see data as it is stored in Java Edition. You can download it from [here](https://github.com/jaquadro/NBTExplorer/releases).
 
 ## Windows 10 Multi-Version Launcher
 The Windows 10 Multi-Version launcher allows you to switch between release and beta versions of Minecraft Bedrock. Its GitHub repository can be viewed [here](https://github.com/MCMrARM/mc-w10-version-launcher/).
