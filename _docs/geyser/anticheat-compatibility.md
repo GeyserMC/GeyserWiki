@@ -23,6 +23,7 @@ Partially Compatible (Does not Check/Ignores Bedrock Players)
 - [Matrix](https://matrix.rip/){:target="_blank"} (Paid) - Last updated on 2nd September 2021
 - [Spartan](https://www.spigotmc.org/resources/25638/){:target="_blank"} (Spartan Syn offers full Bedrock checks for an additional $43) (Paid) - Last Updated on 19th August 2021
 - [Vulcan](https://www.spigotmc.org/resources/83626/){:target="_blank"} (Paid) - Last Updated on 19th August 2021
+- [Verus](https://verus.ac){:target="_blank"} (Paid) - Last Updated on 13th July 2022
 
 Incompatible (False Positives on Bedrock Players, no Compatibility at All)
 
