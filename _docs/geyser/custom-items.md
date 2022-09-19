@@ -21,12 +21,14 @@ To setup custom items in geyser, you have to choose how you are going to registe
 }
 ```
 3. Inside the `items` entry, you can add your java item to extend:
+
 ```json
 "minecraft:JAVA_ITEM": [
 
 ]
 ```
 4. Inside this java item, goes an array of all your custom items.
+
 ```json
 {
     "name": "my_item"
@@ -130,6 +132,7 @@ public void onGeyserPreInitializeEvent(GeyserDefineCustomItemsEvent event) {
 1. Setup a basic bedrock resource pack. If you need help, you can find it [here](https://wiki.bedrock.dev/guide/project-setup.html#rp-manifest).
 2. Make a `textures` folder.
 3. Create `item_texture.json` in the `textures`, and put this in it:
+
 ```json
 {
   "resource_pack_name": "MY_PACK_NAME_HERE",
@@ -140,6 +143,7 @@ public void onGeyserPreInitializeEvent(GeyserDefineCustomItemsEvent event) {
 }
 ```
 4. Inside texture data, you can add your items. The texture name and path must match the name that you set in your mappings.
+
 ```json
 "my_item": {
     "textures": [
