@@ -46,7 +46,8 @@ The server itself does not have to be the latest version but does have to allow 
 7. The _remote_ section in the `config.yml` determines, which Java server the bedrock players join. 
 - `address: auto` This means, that geyser configures the server's ip, port and auth-type itself. Leaving this at auto is recommended, unless otherwise instructed by a hosting provider.
 - `port: 25565` This should be the port of the Java server. By default, it is set to 25565 - your hosting provider may have assigned a different port to your java server, set that here.
-8. For further Geyser config changes, like allowing bedrock players to build on the nether roof, refer to [the config help article](/geyser/understanding-the-config/).
+8. If you wish to remove the java account requirement, set up the [floodgate](/floodgate/setup/) plugin. This will allow bedrock players to play on your server, without you having to use offline mode.
+9. For further Geyser config changes, like allowing bedrock players to build on the nether roof, refer to [the config help article](/geyser/understanding-the-config/).
 
 If you're still having problems with Geyser not working or giving you an "Unable to connect to world" error, see the [Common Issues](/geyser/common-issues/) page.\
 For more information, take a look at the [Understanding the Config](/geyser/understanding-the-config/) page, and the [FAQ](/geyser/faq/) page.\
