@@ -15,6 +15,8 @@ The server itself does not have to be the latest version but does have to allow 
 - If you are connecting to an online mode Java server, a paid Java account is required. If you are running the server, you can bypass this requirement for your server with [Floodgate](/floodgate/).
 - Your Bedrock client has to be a supported version - at this time that is Bedrock version(s) {{ site.data.versions.bedrock }}.
 - To allow Geyser Standalone to be reached outside the local network, Unlike Minecraft Java Edition, Bedrock Edition runs on port 19132 on the UDP protocol. When port forwarding, make sure to allocate to 19132 UDP or another UDP port.
+- Currently, Geyser does not support key signing. To disable it (on servers running version 1.19 and higher), follow these instructions: Spigot, Paper, & all forks: Set `enfore-secure-profile: false` in the `server.properties` file. On BungeeCord: Set `enforce_secure_profile: false` in your `config.yml`. Using Velocity: set `force-key-authentication = false` in your `velocity.toml`.
+
 
 ## Standalone Setup
 Please keep in mind, you need some sort of computer or host to run Geyser Standalone on. Applications such as Termux on Android are capable of running Geyser, but this largely depends on how powerful your Android device is. Please do so at your own risk. Instructions to run Geyser on Termux can be found [here](/geyser/setup/#termux-android).
