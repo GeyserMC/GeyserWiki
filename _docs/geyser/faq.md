@@ -94,7 +94,7 @@ This is a Bedrock client issue caused by Bedrock being 32-bit and Java being 64-
 No, this is a translation tool to allow Bedrock players to connect to Java servers. It does not work the opposite way.
 
 ## Can I use Geyser with Pterodactyl Panel?
-Yes, you can use Geyser as a plugin or a mod for your Minecraft server software running on Pterodactyl. There is also an official egg for the standalone version. It supports auto-updating and has all config options easily editable. You can find it [here](https://github.com/GeyserMC/pterodactyl-stuff), download the JSON egg, and import it into your panel.
+Yes, you can use Geyser as a plugin or a mod for your Minecraft server software running on Pterodactyl. There is also an official egg for the standalone version. It supports auto-updating and has all config options easily editable. You can find it [here](https://github.com/GeyserMC/pterodactyl-stuff), download the JSON egg, and import it into your panel. Make sure the Geyser port (using UDP) is exported out to the host. If you're using Pterodactyl panel then you need to make sure you have allocated the port to the server.
 
 ## Can I use Geyser with Ngrok?
 Unfortunately, Ngrok is TCP-only, so you will not be able to use Geyser with Ngrok. As an alternative, you can use [playit.gg](https://playit.gg), which supports both TCP and UDP.
