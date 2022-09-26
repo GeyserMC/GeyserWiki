@@ -31,8 +31,8 @@ The server itself does not have to be the latest version but does have to allow 
 - Currently, Geyser does not support key signing. To disable it (on servers running version 1.19 and higher), follow these instructions: Spigot, Paper, & all forks: Set `enfore-secure-profile: false` in the `server.properties` file. On BungeeCord: Set `enforce_secure_profile: false` in your `config.yml`. Using Velocity: set `force-key-authentication = false` in your `velocity.toml`.
 
 ## Plugin Setup
-1. Read the Prerequisites above, especially if you are setting up geyser for an older Minecraft Java Edition version!
-2. To make sure you are using the easiest way to set up geyser, please check whether your hosting provider features [built-in geyser](/supported-hosting-providers/#built-in-geyser). If you are not using a hosting provider, or your hosting provider is not featured on said list, continue with the steps below. 
+1. Read the Prerequisites above, especially if you are setting up Geyser for an older Minecraft Java Edition version!
+2. To make sure you are using the easiest way to set up Geyser, please check whether your hosting provider features [built-in Geyser](/supported-hosting-providers/#built-in-geyser). If you are not using a hosting provider, or your hosting provider is not featured on said list, continue with the steps below. 
 3. If 2. does not apply: download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/Geyser/job/master/) depending on what platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download. Keep in mind: Geyser-spigot.jar is for Spigot and it's forks, such as PaperMC or Purpur. 
 4. Put the Geyser jar file in your plugins folder and start up the server.
 5. Port-forwarding: 
@@ -41,13 +41,13 @@ The server itself does not have to be the latest version but does have to allow 
  - To check whether it is working correctly, you can use the `geyser connectiontest [yourIP]:[yourPort]` command in your server console to check if the server is reachable from the outside.
  - _Restart your server if you edited your config! Simply reloading will not work._
 6. Besides the `port` entry in the _Bedrock Section_ of Geyser's `config.yml`, you rarely need to change anything. A few examples:
- - `address: 0.0.0.0` The IP address that will listen for connections. There is no reason to change this unless you want to limit what IPs can connect to your server.
- - `port: 19132` The port bedrock players will use to connect. If the option `clone-remote-port` is set to true, this port is ignored, and you'll have to use the same port on bedrock as you would on Java to connect.
-7. The _remote_ section in the `config.yml` determines, which Java server the bedrock players join. 
+ - `address: 0.0.0.0` The IP address that will listen for connections. There is no reason to change this unless you want to limit what IPs can connect to your server or if your hosting provider instructs you to do so.
+  - `port: 19132` The port Bedrock players will use to connect. If the option `clone-remote-port` is set to true, this port is ignored, and you'll have to use the same port on bedrock as you would on Java to connect.
+7. The _remote_ section in the `config.yml` determines, which Java server the Bedrock players join. 
 - `address: auto` This means, that geyser configures the server's ip, port and auth-type itself. Leaving this at auto is recommended, unless otherwise instructed by a hosting provider.
 - `port: 25565` This should be the port of the Java server. By default, it is set to 25565 - your hosting provider may have assigned a different port to your java server, set that here.
-8. If you wish to remove the java account requirement, set up the [floodgate](/floodgate/setup/) plugin. This will allow bedrock players to play on your server, without you having to use offline mode.
-9. For further Geyser config changes, like allowing bedrock players to build on the nether roof, refer to [the config help article](/geyser/understanding-the-config/).
+8. If you wish to remove the java account requirement, set up the [floodgate](/floodgate/setup/) plugin. This will allow Bedrock players to play on your server, without you having to use offline mode.
+9. For further Geyser config changes, like allowing Bedrock players to build on the nether roof, refer to [the config help article](/geyser/understanding-the-config/).
 
 If you're still having problems with Geyser not working or giving you an "Unable to connect to world" error, see the [Common Issues](/geyser/common-issues/) page.\
 For more information, take a look at the [Understanding the Config](/geyser/understanding-the-config/) page, and the [FAQ](/geyser/faq/) page.\
@@ -60,7 +60,7 @@ You can install Floodgate (but not Geyser) on the back-end servers to improve sk
 
 The Bedrock clients, like Java clients, should connect to the proxy server, and should never directly connect to a back-end server.  You don't need to (and shouldn't) port-forward anything for the back-end servers!
 
-Setup:
+#### Setup:
 1. Make sure Velocity/BungeeCord is up-to-date. The proxy can be newer than the servers behind it (also called backend servers). If you're running the backend servers on an older version then the current {{ site.data.versions.java }}, you can use the plugin [ViaVersion](https://www.spigotmc.org/resources/19254/). It is recommended to have the plugin on all backend servers where necessary, instead to having it on the proxy. 
 2. Download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/Geyser/job/master/) depending on what platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download. 
 3. Put the Geyser jar file in your plugins folder and start up the server.
