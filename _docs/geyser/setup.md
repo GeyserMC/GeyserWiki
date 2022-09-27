@@ -28,7 +28,7 @@ The server itself does not have to be the latest version but does have to allow 
 - If you are connecting to an online mode Java server, a paid Java account is required. If you are running the server, you can bypass this requirement for your server with [Floodgate](/floodgate/).
 - Your Bedrock client has to be a supported version - at this time that is Bedrock version(s) {{ site.data.versions.bedrock }}.
 - If you are running the server, you need to have a UDP port opened. See below for more instructions.
-- Currently, Geyser does not support key signing. To disable it (on servers running version 1.19 and higher), follow these instructions: Spigot, Paper, & all forks: Set `enfore-secure-profile: false` in the `server.properties` file. On BungeeCord: Set `enforce_secure_profile: false` in your `config.yml`. Using Velocity: set `force-key-authentication = false` in your `velocity.toml`. This will disable chat signing, which Geyser currently does not support. 
+- Currently, Geyser does not support key signing. To disable it (on servers running version 1.19 and higher), follow these instructions: Spigot, Paper, & all forks: Set `enfore-secure-profile: false` in the `server.properties` file. On BungeeCord: Set `enforce_secure_profile: false` in your `config.yml`. Using Velocity: set `force-key-authentication = false` in your `velocity.toml`. This will disable chat signing, which Geyser currently does not support. Be careful though: This will allow java players who bypass chat signing with mods such as NoChatReports to join the server, and make them unreportable.
 
 ## Plugin Setup
 1. Read the Prerequisites above, especially if you are setting up Geyser for an older Minecraft Java Edition version!
