@@ -8,7 +8,9 @@ permalink: /other/discord-bot-usage/
 
 ## Server Logs
 
-If you are having console errors or Geyser isn't functioning/starting up, server logs are very useful to find the root cause of why Geyser is not running. You can safely share your server logs with this website; [mclogs](https://mclo.gs) as this website will remove all IP-Adresses from the logs. if you paste the logs url into or discord our bot will analyze the error and will give an fix if there is one present like seen below. You can also paste the lastest.log file into discord.
+If you are having console errors or Geyser isn't functioning/starting up, server logs are very useful to find the root cause of why Geyser is not running. You can safely share your server logs with [mclogs](https://mclo.gs) as it will remove all IP addresses and other sensitive information from the logs. 
+
+If you paste the logs URL into our Discord, our bot will analyze the error and will give a fix if there is one present like seen below. You can also paste the `latest.log` file into Discord.
 
 ![Example of an error](https://cdn.discordapp.com/attachments/613194762249437245/1021787041257767042/Naamloos.png)
 
