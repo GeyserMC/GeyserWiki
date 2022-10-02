@@ -34,7 +34,7 @@ Some host providers like ApexHosting/Aternos aso.. have different setup for Geys
 
 ## Download Command
 
-Sends the download link of the chosen program/plugin. /download "Geyser" or /download "ViaVersion" and so on...
+Sends the download link of the chosen program/plugin. `/download "Geyser"` or `/download "ViaVersion"` and so on.
 
 ## Leaderboard Command
 
