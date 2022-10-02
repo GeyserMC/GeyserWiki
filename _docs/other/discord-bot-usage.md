@@ -28,7 +28,7 @@ If the bot returns; Unable to find Java/bedrock server at the requested address,
 
 ## Provider List
 
-Some host providers like ApexHosting/Aternos aso.. have different setup for Geyser. If you do not know how to setup Geyser on your provider you can either chechout manually here [Geyser HostProvider List](/geyser/supported-hosting-providers/) or use our bot command /provider "providername" as seen below.
+Some hosting providers have unique setup methods for Geyser. If you do not know how to setup Geyser on your provider you can either checkout the [Geyser Host Provider List](/geyser/supported-hosting-providers/) manually, or use our bot command `/provider "providername"` as seen below.
 
 ![Example of the provider command](https://cdn.discordapp.com/attachments/613194762249437245/1021791367585857587/unknown.png)
 
