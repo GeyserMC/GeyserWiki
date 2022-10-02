@@ -38,7 +38,7 @@ Sends the download link of the chosen program/plugin. /download "Geyser" or /dow
 
 ## Leaderboard Command
 
-Provides a link to the website Where we are tracking levels top 100. 
+Provides a link to the Geyser Bot XP leaderboards.
 
 ## Rank Command
 
