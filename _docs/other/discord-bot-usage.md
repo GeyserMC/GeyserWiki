@@ -22,7 +22,8 @@ OCR or Optical Character Recognition is something that our discord bot can proce
 ## Ping Server
 
 If you are not sure if your server is reachable from the outside you can use our ping tool. Using the ping command in #bot-spam; /ping "serverip" as seen below, The bot will check if your server is online/reachable. When you are not running your server on default port: java 25565 and bedrock 19132 you will need to specify the port like /ping "serverip:serverport".
-If the bot returns; Unable to find Java/bedrock server at the requested address, Your server either is not running/setup properly or your firewall is blocking the connection. more info on how to setup Geyser can be found here [Geyser Setup](/geyser/setup/)
+
+If the bot returns `Unable to find Java/Bedrock server at the requested address`, your server either is not running/setup properly or your firewall is blocking the connection. More info on how to setup Geyser can be found on the [Geyser Setup page](/geyser/setup/).
 
 ![Example of the ping command](https://cdn.discordapp.com/attachments/613194762249437245/1021790089367535697/unknown.png)
 
