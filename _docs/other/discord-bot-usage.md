@@ -42,7 +42,7 @@ Provides a link to the website Where we are tracking levels top 100.
 
 ## Rank Command
 
-You can give yourself 2 types of role on our discord "GeyserNews" & "Testers". you can use the command /rank "chosen rank"
+You can give yourself two types of roles on our discord, "GeyserNews" and "Testers". You can use the command `/rank "chosen rank"` to give one to yourself.
 
 ## Queue Command
 
