@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Geyser Setup
-permalink: /geyser/setup/
+title: Geyser Standalone 
+permalink: /geyser/standalone/
 ---
 
 # Setup of Geyser Standalone
