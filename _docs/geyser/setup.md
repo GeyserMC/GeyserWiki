@@ -44,9 +44,9 @@ The server itself does not have to be the latest version but does have to allow 
  - `address: 0.0.0.0` The IP address that will listen for connections. There is no reason to change this unless you want to limit what IPs can connect to your server or if your hosting provider instructs you to do so.
   - `port: 19132` The port Bedrock players will use to connect. If the option `clone-remote-port` is set to true, this port is ignored, and you'll have to use the same port on bedrock as you would on Java to connect.
 7. The _remote_ section in the `config.yml` determines, which Java server the Bedrock players join. 
-- `address: auto` This means, that Geyser configures the server's ip, port and auth-type of the java server by itself, leave this at auto.
-- `port: 25565` This should be the port of the Java server. By default, it is set to 25565 - your hosting provider may have assigned a different port to your java server, set that here.
-8. If you wish to remove the java account requirement, set up the [Floodgate](/floodgate/setup/) plugin. This will allow Bedrock players to play on your server, without you having to use offline mode.
+- `address: auto` This means, that Geyser configures the server's IP, port and auth-type of the java server by itself, leave this at auto.
+- `port: 25565` This should be the port of the Java server. By default, it is set to 25565 - your hosting provider may have assigned a different port to your Java server, set that here.
+8. If you wish to remove the Java account requirement, set up the [Floodgate](/floodgate/setup/) plugin. This will allow Bedrock players to play on your server, without you having to use offline mode.
 9. For further Geyser config changes, like allowing Bedrock players to build on the nether roof, refer to [the config help article](/geyser/understanding-the-config/).
 
 If you're still having problems with Geyser not working or giving you an "Unable to connect to world" error, see the [Common Issues](/geyser/common-issues/) page.\
