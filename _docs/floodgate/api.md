@@ -21,7 +21,7 @@ Floodgate uses the open collaboration repo. The following example is for Maven, 
 <dependency>
   <groupId>org.geysermc.floodgate</groupId>
   <artifactId>api</artifactId>
-  <version>2.0-SNAPSHOT</version>
+  <version>2.2.0-SNAPSHOT</version>
   <scope>provided</scope>
 </dependency>
 ```
