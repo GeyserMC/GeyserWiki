@@ -73,6 +73,3 @@ curl https://gist.githubusercontent.com/rtm516/e3e07d6595ee41e05a38b03c0f4d7a80/
 
 **Note:**
 Due to the iOS environment, if your device has low specs, iOS might end up killing NewTerm 2 while you're playing, stopping the server. There is no fix for that because of how iOS works.
-
-You may encounter some issues. If you do, run `su` then enter the root password (default is `alpine`) for root access. Then, run the server like you normally would, and it should work just fine.
-
