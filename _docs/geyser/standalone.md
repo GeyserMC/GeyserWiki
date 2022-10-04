@@ -9,12 +9,12 @@ permalink: /geyser/standalone/
 
 ## Prerequisites
 
-- The server you are connecting to has to support the latest version of Minecraft Java Edition (at this time this is Minecraft {{ site.data.versions.java }})
+- The server you are connecting to has to support the latest version of Minecraft: Java Edition (at this time this is Minecraft {{ site.data.versions.java }})
 The server itself does not have to be the latest version but does have to allow connections. If you're running the server on an older version, you can use the plugin [ViaVersion](https://www.spigotmc.org/resources/19254/).
 - The device running Geyser must support Java 16 or later. If you need help installing or updating, please see [PaperMC's Java update page](https://paper.readthedocs.io/en/latest/java-update/index.html).
 - If you are connecting to an online mode Java server, a paid Java account is required. If you are running the server, you can bypass this requirement for your server with [Floodgate](/floodgate/).
 - Your Bedrock client has to be a supported version - at this time that is Bedrock version(s) {{ site.data.versions.bedrock }}.
-- To allow Geyser Standalone to be reached outside the local network, Unlike Minecraft Java Edition, Bedrock Edition runs on port 19132 on the UDP protocol. When port forwarding, make sure to allocate to 19132 UDP or another UDP port.
+- To allow Geyser Standalone to be reached outside the local network, Unlike Minecraft: Java Edition, Bedrock Edition runs on port 19132 on the UDP protocol. When port forwarding, make sure to allocate to 19132 UDP or another UDP port.
 - Currently, Geyser does not support key signing. To disable it (on servers running version 1.19 and higher), follow these instructions: Spigot, Paper, & all forks: Set `enfore-secure-profile: false` in the `server.properties` file. On BungeeCord: Set `enforce_secure_profile: false` in your `config.yml`. Using Velocity: set `force-key-authentication = false` in your `velocity.toml`.
 
 
@@ -44,7 +44,7 @@ See the [Floodgate](/floodgate/) wiki page for more details.
 
 ## Port Forwarding
 
-Unlike Minecraft Java Edition, Bedrock Edition runs on port 19132 on the UDP protocol. When port forwarding, make sure to allocate to 19132 UDP or another UDP port. For many server hosting providers, you will simply need to change your Bedrock listening port (see [here](/geyser/supported-hosting-providers/) for a list of supported providers).
+Unlike Minecraft: Java Edition, Bedrock Edition runs on port 19132 on the UDP protocol. When port forwarding, make sure to allocate to 19132 UDP or another UDP port. For many server hosting providers, you will simply need to change your Bedrock listening port (see [here](/geyser/supported-hosting-providers/) for a list of supported providers).
 
 ## Termux (Android)
 Please read the disclaimer [here](/geyser/setup/#standalone-setup) before continuing.
@@ -65,14 +65,14 @@ curl https://gist.githubusercontent.com/rtm516/e3e07d6595ee41e05a38b03c0f4d7a80/
 **Note:** A jailbreak is required. You can find what jailbreak to use for your device [here](https://docs.google.com/spreadsheets/d/11DABHIIqwYQKj1L83AK9ywk_hYMjEkcaxpIg6phbTf0/edit?usp=sharing).
 1. Install [Filza File Manager](http://cydia.saurik.com/package/com.tigisoftware.filza/).
 2. Install [NewTerm 2](https://chariz.com/get/newterm).
-4. Download jre-16 for iOS and install it using Filza [here](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/download/v16-openjdk/openjdk-16-jre_16.0.0+git20201217.8383f41-2_iphoneos-arm.deb).
-3. Download my modified java commands, and install it using Filza [here](https://cdn.discordapp.com/attachments/558829512633090048/834014323755319306/com.letschill.java_0.1_iphoneos-arm.deb).
+4. Download PojavLauncher's Java 16 JRE for iOS and install it using Filza [here](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/download/v16-openjdk/openjdk-16-jre_16.0.0+git20201217.8383f41-2_iphoneos-arm.deb).
+3. Download this package containing modified java commands, and install it using Filza [here](https://cdn.discordapp.com/attachments/558829512633090048/834014323755319306/com.letschill.java_0.1_iphoneos-arm.deb) (Note: Not an official GeyserMC project, install at your own risk).
 4. Open NewTerm 2 and run `wget https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/standalone/build/libs/Geyser-Standalone.jar`
 5. Run `java -jar Geyser-Standalone.jar`.
-6. You can find Geyser server running in MCPE!
+6. Geyser should show up in the Friends tab inside Minecraft.
 
 **Note:**
-Due to iOS's environment, if your device has low specs, iOS might end up killing NewTerm 2 while you're playing, stopping the server. There is no fix for that because of how iOS works.
+Due to the iOS environment, if your device has low specs, iOS might end up killing NewTerm 2 while you're playing, stopping the server. There is no fix for that because of how iOS works.
 
 You may encounter some issues. If you do, run `su` then enter the root password (default is `alpine`) for root access. Then, run the server like you normally would, and it should work just fine.
 
