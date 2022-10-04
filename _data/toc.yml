@@ -6,14 +6,15 @@
       children:
         - title: Plugin Setup
           url: "geyser/setup/#plugin-setup"
-        - title: Standalone Setup
-          url: "geyser/setup/#standalone-setup"
+        - title: Videos
+          url: "geyser/setup/#setup-videos"
+    - title: "Standalone"
+      url: "geyser/standalone/"
+      children:
         - title: Termux (Android)
           url: "geyser/setup/#termux-android"
         - title: NewTerm 2 (iOS)
           url: "geyser/setup/#newterm-2-ios"
-        - title: Videos
-          url: "geyser/setup/#setup-videos"
     - title: FAQ
       url: "geyser/faq/"
     - title: Common Issues
