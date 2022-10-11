@@ -39,7 +39,9 @@ A Spigot, BungeeCord, and Velocity plugin to create custom Bedrock Edition forms
 Creators: [Konicai](https://github.com/Konicai), [Jens](https://github.com/Jens-Co)
 
 ## CreeperNation Skin API
-An API that supports Java and bedrock skins!!
+
+An API to show java or floodgate bedrock skins depending on uuid or username
+
 * [Website](https://api-docs.creepernation.xyz)
 
 Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
