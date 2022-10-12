@@ -46,7 +46,6 @@ An API to show Java or Bedrock skins depending on UUID or username
 
 Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
 
-
 ## CustomCommandPrefix
 A Spigot plugin that allows users to enter commands starting with `.`, to work around Xbox achievements being disabled.
 
