@@ -40,7 +40,7 @@ Creators: [Konicai](https://github.com/Konicai), [Jens](https://github.com/Jens-
 
 ## CreeperNation Skin API
 
-An API to show java or floodgate bedrock skins depending on uuid or username
+An API to show Java or Bedrock skins depending on UUID or username
 
 * [Website](https://api-docs.creepernation.xyz)
 
