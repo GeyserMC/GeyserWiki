@@ -17,6 +17,13 @@ A list of other utilities that are useful with Geyser or for developing Geyser-l
 
 Maintainer: [bundabrg](https://github.com/bundabrg)
 
+## BedrockFormShop
+A spigot shop plugin that uses bedrock forms.
+
+* [GitHub](https://github.com/kejonaMC/BedrockFormShop)
+
+Creator: [KejonaMC](https://github.com/kejonaMC)
+
 ## BedrockSkinUtility
 This is a Fabric mod that allows you to view Bedrock capes from Java.
 
