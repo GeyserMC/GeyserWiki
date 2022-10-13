@@ -18,7 +18,8 @@ A list of other utilities that are useful with Geyser or for developing Geyser-l
 Maintainer: [bundabrg](https://github.com/bundabrg)
 
 ## BedrockFormShop
-A spigot shop plugin that uses bedrock forms.
+
+A Spigot shop plugin that uses Bedrock forms.
 
 * [GitHub](https://github.com/kejonaMC/BedrockFormShop)
 
