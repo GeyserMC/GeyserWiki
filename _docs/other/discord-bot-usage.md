@@ -14,7 +14,6 @@ If you paste the logs URL into our Discord, our bot will analyze the error and w
 
 ![Example of an error](https://cdn.discordapp.com/attachments/613194762249437245/1021787041257767042/Naamloos.png)
 
-
 ## OCR
 
 OCR or Optical Character Recognition is something that our discord bot can process, which means if you upload a picture/image into our discord that contains an error like seen below the bot might be able to help you out with our issue.
