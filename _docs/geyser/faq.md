@@ -19,7 +19,7 @@ No, Geyser and all related projects are completely free and open-source, license
 
 Geyser should generally work fine with plugins, as we emulate a Java client. There are exceptions, though:
 
-* [TCPShield](https://tcpshield.com/) requires `only-allow-proxy-connections` disabled without a paid plan. However, their "Premium" plan will allow the support of Geyser - please contact their support for help setting this up. An alternative that works with Geyser is [Cosmic Guard](https://cosmicguard.com/)
+* [TCPShield](https://tcpshield.com/) requires `only-allow-proxy-connections` disabled without a paid plan. However, their "Premium" plan will allow the support of Geyser - please contact their support for help setting this up.
 
 Floodgate can cause issues with plugins as it modifies the login process. *Please note that any offline mode authenticator plugins are only here for documentation; Geyser does not support offline mode usage.*
 
@@ -104,7 +104,7 @@ Unfortunately, Ngrok is TCP-only, so you will not be able to use Geyser with Ngr
 2) Setup a "Guard" select gaming then Minecraft: Bedrock edition.
 3) Click setup for linux and run the guardian installer and start the service.
 4) Run "guardian status" and take note of the "Local IP" it starts with "10.31.x.x".
-5) Go to the Geyser spigot config.yml and update the Bedrock address to the Local IP which you found above.
+5) Go to the Geyser config.yml and update the Bedrock address to the Local IP which you found above.
 6) Restart the mc server and test it out, it should work for both Java and Bedrock.
 
 ## Can I connect Geyser to an older server?
