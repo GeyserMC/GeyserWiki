@@ -104,7 +104,7 @@ Unfortunately, Ngrok is TCP-only, so you will not be able to use Geyser with Ngr
 2) Setup a "Guard" select gaming then Minecraft: Bedrock edition.
 3) Click setup for linux and run the guardian installer and start the service.
 4) Run "guardian status" and take note of the "Local IP" it starts with "10.31.x.x".
-5) Go to the Geyser spigot config.yml and update the address to the Local IP which you found above.
+5) Go to the Geyser spigot config.yml and update the Bedrock address to the Local IP which you found above.
 6) Restart the mc server and test it out, it should work for both Java and Bedrock.
 
 ## Can I connect Geyser to an older server?
