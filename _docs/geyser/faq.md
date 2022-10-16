@@ -19,7 +19,7 @@ No, Geyser and all related projects are completely free and open-source, license
 
 Geyser should generally work fine with plugins, as we emulate a Java client. There are exceptions, though:
 
-* [TCPShield](https://tcpshield.com/) requires `only-allow-proxy-connections` disabled without a paid plan. However, their "Premium" plan will allow the support of Geyser - please contact their support for help setting this up.
+* [TCPShield](https://tcpshield.com/) requires `only-allow-proxy-connections` disabled without a paid plan. However, their "Premium" plan will allow the support of Geyser - please contact their support for help setting this up. An alternative that works with Geyser is [Cosmic Guard](https://cosmicguard.com/)
 
 Floodgate can cause issues with plugins as it modifies the login process. *Please note that any offline mode authenticator plugins are only here for documentation; Geyser does not support offline mode usage.*
 
@@ -98,6 +98,14 @@ Yes, you can use Geyser as a plugin or a mod for your Minecraft server software 
 
 ## Can I use Geyser with Ngrok?
 Unfortunately, Ngrok is TCP-only, so you will not be able to use Geyser with Ngrok. As an alternative, you can use [playit.gg](https://playit.gg), which supports both TCP and UDP.
+
+## How do I setup [Cosmic Guard](https://cosmicguard.com/)?
+1) You will need access to the host systems terminal. Note: This guide is for Linux systems only!
+2) Setup a "Guard" select gaming then Minecraft: Bedrock edition.
+3) Click setup for linux and run the guardian installer and start the service.
+4) Run "guardian status" and take note of the "Local IP" it starts with "10.31.x.x".
+5) Go to the Geyser spigot config.yml and update the address to the Local IP which you found above.
+6) Restart the mc server and test it out, it should work for both Java and Bedrock.
 
 ## Can I connect Geyser to an older server?
 If the server has ViaVersion and/or supports the latest Minecraft version, yes. However, we are unable to support older versions of Minecraft due to a limitation in our Java support library.
