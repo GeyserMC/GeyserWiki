@@ -13,7 +13,7 @@ Bedrock clients will join through Geyser, and it will handle all the packet tran
 2. Geyser for BungeeCord (also works on Waterfall), 
 3. Geyser for Velocity,
 4. Geyser for Sponge, 
-5. Geyser for Fabric (does not support client required mods, and more info about that can be found [here](/other/geyser-fabric/)),
+5. Geyser for Fabric (for setups that support vanilla Java clients; requires [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)),
 6. Geyser Standalone (Standalone Setup instructions are [here](/geyser/standalone/)).
 
 The first five versions run as plugins/mods and can be installed directly onto the server. The standalone version can be used in a similar way, except you run it separately.
