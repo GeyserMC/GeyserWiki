@@ -317,7 +317,7 @@
     {
       "name": "Revivenode",
       "url": "https://revivenode.com/",
-      "description_template": "Get Geyser as a plugin, as in the [setup guide](https://wiki.geysermc.org/geyser/setup/). Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\". Connect with the same IP and port as you would on Java. \n  - See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
+      "description": "Get Geyser as a plugin, as in the [setup guide](https://wiki.geysermc.org/geyser/setup/). Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\". Connect with the same IP and port as you would on Java. \n  - See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
     },
     {
       "name": "SunriseNode",
