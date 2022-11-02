@@ -6,14 +6,15 @@
       children:
         - title: Plugin Setup
           url: "geyser/setup/#plugin-setup"
-        - title: Standalone Setup
-          url: "geyser/setup/#standalone-setup"
+        - title: Videos
+          url: "geyser/setup/#setup-videos"
+    - title: "Standalone"
+      url: "geyser/standalone/"
+      children:
         - title: Termux (Android)
           url: "geyser/setup/#termux-android"
         - title: NewTerm 2 (iOS)
           url: "geyser/setup/#newterm-2-ios"
-        - title: Videos
-          url: "geyser/setup/#setup-videos"
     - title: FAQ
       url: "geyser/faq/"
     - title: Common Issues
@@ -41,6 +42,15 @@
       url: "geyser/current-limitations/"
     - title: Using playit.gg with Geyser
       url: "geyser/playit-gg/"
+    - title: Custom items with Geyser
+      url: "geyser/custom-items/"
+      children:
+        - title: JSON mappings
+          url: "geyser/custom-items/#json-mappings"
+        - title: Geyser extensions
+          url: "geyser/custom-items/#geyser-extensions"
+        - title: Resource pack
+          url: "geyser/custom-items/#resource-pack"
 - title: Floodgate Documentation
   url: "floodgate/"
   links:
@@ -79,8 +89,6 @@
       url: "other/geyseroptionalpack/"
     - title: "GeyserConnect"
       url: "other/geyserconnect/"
-    - title: "Geyser-Fabric"
-      url: "other/geyser-fabric/"
     - title: "Test Server"
       url: "other/test-server/"
     - title: "Developer Guide"

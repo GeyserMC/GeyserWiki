@@ -17,6 +17,14 @@ A list of other utilities that are useful with Geyser or for developing Geyser-l
 
 Maintainer: [bundabrg](https://github.com/bundabrg)
 
+## BedrockFormShop
+
+A Spigot shop plugin that uses Bedrock forms.
+
+* [GitHub](https://github.com/kejonaMC/BedrockFormShop)
+
+Creator: [KejonaMC](https://github.com/kejonaMC)
+
 ## BedrockSkinUtility
 This is a Fabric mod that allows you to view Bedrock capes from Java.
 
@@ -37,6 +45,14 @@ A Spigot, BungeeCord, and Velocity plugin to create custom Bedrock Edition forms
 * [GitHub](https://github.com/kejonaMC/CrossplatForms)
 
 Creators: [Konicai](https://github.com/Konicai), [Jens](https://github.com/Jens-Co)
+
+## CreeperNation Skin API
+
+An API to show Java or Bedrock skins depending on UUID or username
+
+* [Website](https://api-docs.creepernation.xyz)
+
+Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
 
 ## CustomCommandPrefix
 A Spigot plugin that allows users to enter commands starting with `.`, to work around Xbox achievements being disabled.

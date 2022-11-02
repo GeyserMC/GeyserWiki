@@ -9,11 +9,6 @@
       "description": "Select as a plugin in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details."
     },
     {
-      "name": "Arry Hosting",
-      "url": "https://arry.host/",
-      "description": "After logging into the panel, click the control button on the right side of the server you'd like to add Geyser to. Then select Egg Changer on the top of the screen. Scroll down to the bottom and click on change egg under the Geyser logo. Check off reinstall server. (This will install Paper and Geyser. You can change out the server software with anything else that works with Bukkit Plugins.)"
-    },
-    {
       "name": "Apex Hosting",
       "url": "https://apexminecrafthosting.com/",
       "description": "Full auto installation. Go to the `Customizations` tab in the panel and select `Enabled` under the `Geyser Auto Installer` option then restart and connect to your server with your Java IP and port. See [Apex's article](https://apexminecrafthosting.com/geysermc/) for more details."
@@ -74,9 +69,9 @@
       "description": "Geyser is installed and configured on all servers by default."
     },
     {
-      "name": "SoulNode",
-      "url": "https://soulnode.net/",
-      "description": "Select [Plugin Pack](https://i.imgur.com/7e2QEKV.png) at checkout to auto-install Geyser. No extra setup required. Will auto bind to your default port to connect."
+      "name": "Server.pro",
+      "url": "https://server.pro",
+      "description": "On VPS, select Geyser in the [Service Type Menu](https://i.imgur.com/loSNmvu.png), Floodgate can be enabled and disabled on the dashboard configuration. For manual installation: If using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with the same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). However, if you are using a PRO or a VPS plan, you can use any port you'd like, which can be opened on the Firewall tab."
     },
     {
       "name": "SRKHOST",
@@ -142,14 +137,14 @@
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port; note that this provider appears to only provide service in Russia."
     },
     {
-      "name": "Dashflo.net",
-      "url": "https://dashflo.net/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port, or buy a dedicated IP address to support a different port."
-    },
-    {
       "name": "DedicatedMC",
       "url": "https://dedicatedmc.io/",
       "description": "Get Geyser as a plugin. Need to ask to open the default bedrock port."
+    },
+    {
+      "name": "Eendhosting",
+      "url": "https://eendhosting.nl/",
+      "description_template": "default"
     },
     {
       "name": "EnviroMC",
@@ -244,11 +239,6 @@
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config, or one of the two extra ports, and connect with that port. If the subdomain doesn't work, use your regular IP address with numbers."
     },
     {
-      "name": "Hexit",
-      "url": "https://client.hexit.cc/",
-      "description_template": "default"
-    },
-    {
       "name": "MC-HOST24.de",
       "url": "https://mc-host24.de/",
       "description": "Get Geyser as a plugin. Use the same address as your Java server for the Bedrock address in your config."
@@ -290,7 +280,7 @@
     },
     {
       "name": "NightNodes",
-      "url": "https://nightnodes.host/",
+      "url": "https://nightnodes.com/",
       "description_template": "default"
     },
     {
@@ -320,11 +310,6 @@
       "description": "See [this video](https://youtu.be/v9lC80UBZF4) for a PebbleHost-specific tutorial."
     },
     {
-      "name": "PhoenixNodes",
-      "url": "https://phoenixnodes.com",
-      "description": "Get Geyser as a plugin. Open a ticket to request an additional port for Geyser."
-    },
-    {
       "name": "PlanetNode",
       "url": "https://planetnode.net",
       "description_template": "default"
@@ -345,11 +330,6 @@
       "description_template": "default"
     },
     {
-      "name": "ReviveHost",
-      "url": "https://revivehost.com",
-      "description": "Get Geyser as a plugin. Request an additional port and put that port in your config.yml for the Bedrock server."
-    },
-    {
       "name": "Revivenode",
       "url": "https://revivenode.com/",
       "description_template": "default"
@@ -363,11 +343,6 @@
       "name": "ScalaCube",
       "url": "https://scalacube.com/",
       "description": "Get Geyser as a plugin. Use the same address and port as your Java server for the Bedrock address and port in your config and connect with that port."
-    },
-    {
-      "name": "Server.pro",
-      "url": "https://server.pro",
-      "description": "**Update as of December 21, 2021 - a VPS plan is recommended by server.pro; other plans will not work or be very unreliable. Geyser can't do anything about this. The following instructions are untouched from before this update**. Get Geyser as a plugin. If you are using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with that same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). If you are using a Pro or VPS plan, you can use any port you'd like and it's recommended to leave it to the default or `19132`."
     },
     {
       "name": "Shockbyte",
