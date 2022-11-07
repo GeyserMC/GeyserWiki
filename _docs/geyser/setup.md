@@ -32,7 +32,7 @@ The server itself does not have to be the latest version but does have to allow 
 
 ## Plugin Setup
 1. Read the Prerequisites above, especially if you are setting up Geyser for an older Minecraft Java Edition version!
-2. To make sure you are using the easiest way to set up Geyser, please check whether your hosting provider features [built-in Geyser](/supported-hosting-providers/#built-in-geyser). If you are not using a hosting provider, or your hosting provider is not featured on said list, continue with the steps below. 
+2. To make sure you are using the easiest way to set up Geyser, please check whether your hosting provider features [built-in Geyser](/geyser/supported-hosting-providers/#built-in-geyser). If you are not using a hosting provider, or your hosting provider is not featured on said list, continue with the steps below. 
 3. If 2. does not apply: download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/Geyser/job/master/) depending on what platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download. Keep in mind: Geyser-Spigot.jar is for Spigot and its forks, such as PaperMC or Purpur. 
 4. Put the Geyser jar file in your plugins folder and start up the server.
 5. Port-forwarding: 
