@@ -8,6 +8,9 @@ permalink: /floodgate/linking/
 Instructions and information about how to link can also be found here: https://link.geysermc.org/
 
 Before we introduced Global Linking, you always had to link your Java and Bedrock account on every individual server you visited (that has Floodgate). Global Linking is here to fix that problem. Link once, join everywhere.<br>
+
+Keep in mind: While having your accounts linked, you will use the Java accounts' location, inventory data, and achievements etc. regardless of which platform you signs in from (therefore, "synchronising" the player data). The player data from the Bedrock account will not be accessible until you unlink again - therefore, you should transfer everything (enderchest contents, items, armor) to the Java account before linking to not "lose" your Bedrock progress. If you forgot to do this, you can unlink, transfer everything over, and link again. 
+
 Global Linking is part of the [Global Api](https://wiki.geysermc.org/floodgate/features/#what-is-the-global-api) and uses the GlobalLinkServer to link your account. To be able to link your account you have to do the following:
 1. Join the GlobalLinkServer with both your Java and Bedrock account  
    (IP: `link.geysermc.org`, Java port: `25565`, Bedrock port: `19132`)
@@ -15,6 +18,8 @@ Global Linking is part of the [Global Api](https://wiki.geysermc.org/floodgate/f
 3. You'll get a message with a random number that you have to enter on the account that you did not start the linking process on.
 4. Enter the random number on the other account by typing `/linkaccount <code>`
 5. You should get kicked from the server on both your Bedrock and Java account with the message that it had successfully linked your accounts.
+
+To unlink your accounts, join the GlobalLinkServer (as described above for linking) on either Java or Bedrock, and use the /unlinkaccount command. 
 
 Global Linking should be enabled by default on every server running Floodgate 2.0, but in the case that you disabled it, you can enable it again by opening your Floodgate config and make sure that the `player-link` section looks similar to this:
 ```yml
