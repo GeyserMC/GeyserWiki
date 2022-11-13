@@ -206,7 +206,7 @@
     {
       "name": "GPortal",
       "url": "https://www.g-portal.com/",
-      "description": "Get Geyser as a plugin. Need to ask to open a UDP port."
+      "description": "Get Geyser as a plugin. Need to ask to open a UDP port. Also, make sure your `bedrock` `address` in your Geyser config is your server IP."
     },
     {
       "name": "Heavynode",
