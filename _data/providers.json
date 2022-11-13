@@ -170,7 +170,7 @@
     {
       "name": "FalixNodes",
       "url": "https://falixnodes.net/",
-      "description_template": "default"
+      "description": "Get Geyser as a plugin. Need to ask to open a UDP port."
     },
     {
       "name": "Ferox Hosting",
@@ -202,6 +202,11 @@
       "name": "Google Cloud",
       "url": "https://cloud.google.com/",
       "description": "Not a dedicated Minecraft provider\n  - 90 day/$300 free trial\n  - \n  - Note: You'll need to also allow port 19132 on UDP, use Paper instead of vanilla, and put Geyser in the plugins folder\n  - You also don't need an SSD, they're just trying to make you pay more"
+    },
+    {
+      "name": "GPortal",
+      "url": "https://www.g-portal.com/",
+      "description": "Get Geyser as a plugin. Need to ask to open a UDP port."
     },
     {
       "name": "Heavynode",
