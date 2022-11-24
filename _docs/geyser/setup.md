@@ -13,7 +13,7 @@ Bedrock clients will join through Geyser, and it will handle all the packet tran
 2. Geyser for BungeeCord (also works on Waterfall), 
 3. Geyser for Velocity,
 4. Geyser for Sponge, 
-5. Geyser for Fabric (does not support client required mods, and more info about that can be found [here](/other/geyser-fabric/)),
+5. Geyser for Fabric (for setups that support vanilla Java clients; requires [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)),
 6. Geyser Standalone (Standalone Setup instructions are [here](/geyser/standalone/)).
 
 The first five versions run as plugins/mods and can be installed directly onto the server. The standalone version can be used in a similar way, except you run it separately.
@@ -32,7 +32,7 @@ The server itself does not have to be the latest version but does have to allow 
 
 ## Plugin Setup
 1. Read the Prerequisites above, especially if you are setting up Geyser for an older Minecraft Java Edition version!
-2. To make sure you are using the easiest way to set up Geyser, please check whether your hosting provider features [built-in Geyser](/supported-hosting-providers/#built-in-geyser). If you are not using a hosting provider, or your hosting provider is not featured on said list, continue with the steps below. 
+2. To make sure you are using the easiest way to set up Geyser, please check whether your hosting provider features [built-in Geyser](/geyser/supported-hosting-providers/#built-in-geyser). If you are not using a hosting provider, or your hosting provider is not featured on said list, continue with the steps below. 
 3. If 2. does not apply: download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/Geyser/job/master/) depending on what platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download. Keep in mind: Geyser-Spigot.jar is for Spigot and its forks, such as PaperMC or Purpur. 
 4. Put the Geyser jar file in your plugins folder and start up the server.
 5. Port-forwarding: 
