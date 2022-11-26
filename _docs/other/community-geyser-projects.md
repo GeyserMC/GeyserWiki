@@ -50,7 +50,7 @@ Creators: [Konicai](https://github.com/Konicai), [Jens](https://github.com/Jens-
 
 An API to show Java or Bedrock skins depending on UUID or username
 
-* [Website](https://api-docs.creepernation.xyz)
+* [Website](https://api-docs.creepernation.net)
 
 Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
 
