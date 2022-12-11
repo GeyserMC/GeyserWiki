@@ -39,20 +39,20 @@ A Spigot plugin that is able to run certain commands when a Bedrock player joins
 
 Creator: ofunny
 
+## CreeperNation Skin API
+
+an SkinAPI that displays Java or Bedrock skins based on the UUID or username
+
+* [Website](https://api-docs.creepernation.net)
+
+Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
+
 ## CrossplatForms
 A Spigot, BungeeCord, and Velocity plugin to create custom Bedrock Edition forms and inventory menus through configurations.
 * [Spigot page](https://www.spigotmc.org/resources/101043/)
 * [GitHub](https://github.com/kejonaMC/CrossplatForms)
 
 Creators: [Konicai](https://github.com/Konicai), [Jens](https://github.com/Jens-Co)
-
-## CreeperNation Skin API
-
-An API to show Java or Bedrock skins depending on UUID or username
-
-* [Website](https://api-docs.creepernation.net)
-
-Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
 
 ## CustomCommandPrefix
 A Spigot plugin that allows users to enter commands starting with `.`, to work around Xbox achievements being disabled.
