@@ -14,7 +14,6 @@ Geyser: [https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/](https://
 - You must own/manage the server in order to add Floodgate. *If you do not own the server, Floodgate does not allow you to bypass logging into Java servers that require a Mojang Java account*.
 - You must either be running Geyser as a [plugin](/geyser/setup/), or be running [Geyser Standalone](/geyser/standalone/). Floodgate does not replace Geyser.
 - `floodgate-spigot.jar` cannot be installed on CraftBukkit/Bukkit servers.
-- `floodgate-fabric.jar` can be downloaded here: [floodgate-fabric downlaod](https://ci.opencollab.dev/job/GeyserMC/job/Floodgate-Fabric/job/master/)
 
 ## Setting Up
 *Any reference to Spigot here also refers to any compatible server software such as Paper. For the proxy setup, backend server implies all the servers that are behind the proxy.*
@@ -24,7 +23,7 @@ For BungeeCord/Velocity setups: you only are required to install Floodgate on th
 
 - Download the Floodgate plugin from [here](https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/) and add it to your plugins folder on your frontend server.
   - `floodgate-spigot.jar` for Spigot, Paper, etc
-  - `floodgate-fabric.jar` for Fabric (requires FabricAPI)
+  - `floodgate-fabric.jar` for Fabric, can be downloaded [here](https://ci.opencollab.dev/job/GeyserMC/job/Floodgate-Fabric/job/master/). (Requires [FabricAPI](https://www.curseforge.com/minecraft/mc-mods/fabric-api))
   - `floodgate-bungee.jar` for BungeeCord, Waterfall, etc
   - `floodgate-velocity.jar` for Velocity
 - Change the `auth-type` in the Geyser config to `floodgate`.
