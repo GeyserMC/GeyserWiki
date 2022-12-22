@@ -25,13 +25,6 @@ A Spigot shop plugin that uses Bedrock forms.
 
 Creator: [KejonaMC](https://github.com/kejonaMC)
 
-## BedrockSkinUtility
-This is a Fabric mod that allows you to view Bedrock capes from Java.
-
-* [GitHub](https://github.com/Camotoy/BedrockSkinUtility)
-
-Creator: [Camotoy](https://github.com/Camotoy)
-
 ## Bedrock Player Manager for Floodgate
 A Spigot plugin that is able to run certain commands when a Bedrock player joins, or have Bedrock players able to bypass the anticheat, etc. 
 
@@ -39,20 +32,27 @@ A Spigot plugin that is able to run certain commands when a Bedrock player joins
 
 Creator: ofunny
 
+## BedrockSkinUtility
+This is a Fabric mod that allows you to view Bedrock capes from Java.
+
+* [GitHub](https://github.com/Camotoy/BedrockSkinUtility)
+
+Creator: [Camotoy](https://github.com/Camotoy)
+
+## CreeperNation Skin API
+
+An SkinAPI that displays Java or Bedrock skins based on the UUID or username.
+
+* [Website](https://docs.creepernation.net/skinapi)
+
+Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
+
 ## CrossplatForms
 A Spigot, BungeeCord, and Velocity plugin to create custom Bedrock Edition forms and inventory menus through configurations.
 * [Spigot page](https://www.spigotmc.org/resources/101043/)
 * [GitHub](https://github.com/kejonaMC/CrossplatForms)
 
 Creators: [Konicai](https://github.com/Konicai), [Jens](https://github.com/Jens-Co)
-
-## CreeperNation Skin API
-
-An API to show Java or Bedrock skins depending on UUID or username
-
-* [Website](https://api-docs.creepernation.net)
-
-Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
 
 ## CustomCommandPrefix
 A Spigot plugin that allows users to enter commands starting with `.`, to work around Xbox achievements being disabled.
