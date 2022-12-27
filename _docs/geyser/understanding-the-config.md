@@ -122,6 +122,8 @@ saved-user-logins:
 
 **`notify-on-new-bedrock-update`**: Whether to alert the console and operators that a new Geyser version is available that supports a Bedrock version that this Geyser version does not support. It's recommended to keep this option enabled, as many Bedrock platforms auto-update.
 
+**`unusable-space-block`**: Which item to use to mark unavailable slots in a Bedrock player inventory. Examples of this are the 2x2 crafting grid while in creative, or custom inventory menus with sizes different from the usual 3x9. A barrier block is the default item (minecraft:barrier is therefore the default value). Takes any Java Minecraft identifier, e.g. "minecraft:apple".
+
 ## Metrics
 
 bStats is a stat tracker that is entirely anonymous and tracks only basic information about Geyser, such as how many people are online, how many servers are using Geyser, what OS is being used, etc. You can learn more about bStats [here](https://bstats.org/). To see Geyser Stats, see [here](https://bstats.org/plugin/server-implementation/GeyserMC/).
