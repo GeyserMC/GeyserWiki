@@ -74,17 +74,7 @@ See [this page](/floodgate/issues/) for more information.
 
 ### Missing profile key. This server requires secure profiles.
 
-*Vanilla, Spigot/Paper/forks, Fabric*
-
-Set `enforce-secure-profile: false` in [server.properties](https://minecraft.fandom.com/wiki/Server.properties)
-
-*BungeeCord and forks*
-
-Set `enforce_secure_profile: false` in [config.yml](https://www.spigotmc.org/wiki/bungeecord-configuration-guide/)
-
-*Velocity*
-
-Set `force-key-authentication = false` in [velocity.toml](https://github.com/PaperMC/Velocity/blob/dev/3.0.0/proxy/src/main/resources/default-velocity.toml#L19)
+See [this page](/geyser/secure-chat/).
 
 ### Mojang Resetting Account Credentials
 This is unfortunately something we have no control over, and is most likely the case when you're running Geyser as a plugin on a server host or joining a friend far away from your location. If you're running Geyser locally, this should not happen to you, but what we recommend for servers is a plugin we make called [Floodgate](https://github.com/GeyserMC/Floodgate), which allows for Bedrock clients to join your server without needing a Java Edition account. Take a look [here](Floodgate) for more information.
