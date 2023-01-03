@@ -21,7 +21,7 @@ Partially Compatible (Does not Check/Ignores Bedrock Players)
 
 - [AAC](https://www.spigotmc.org/resources/6442/){:target="_blank"} (Paid) - Last Updated on 19th August 2021
 - [Flappy Anticheat](https://www.spigotmc.org/resources/92180/){:target="_blank"} - Last Updated on 14th September 2021
-- [GrimAC](https://github.com/MWHunter/Grim){:target="_blank"} (Unsupported/Abandoned) - Last Updated on 3rd January 2022
+- [GrimAC](https://www.spigotmc.org/resources/99923/){:target="_blank"} (Unsupported/Abandoned) - Last Updated on 3rd January 2022
 - [Matrix](https://matrix.rip/){:target="_blank"} (Paid) - Last updated on 2nd September 2021
 - [Vulcan](https://www.spigotmc.org/resources/83626/){:target="_blank"} (Paid) - Last Updated on 19th August 2021
 - [Verus](https://verus.ac){:target="_blank"} (Paid) - Last Updated on 13th July 2022
