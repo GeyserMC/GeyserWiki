@@ -5,7 +5,7 @@ permalink: /floodgate/linking/
 ---
 
 ## What is Global Linking?
-Instructions and information about how to link can also be found here: https://link.geysermc.org/
+Instructions and information about how to link can also be found here: [GeyserMC Link page](https://link.geysermc.org/)
 
 Before we introduced Global Linking, you always had to link your Java and Bedrock account on every individual server you visited (that has Floodgate). Global Linking is here to fix that problem. Link once, join everywhere.<br>
 
