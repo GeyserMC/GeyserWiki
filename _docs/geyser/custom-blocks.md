@@ -33,8 +33,8 @@ Custom mappings files that register blocks or items should be placed in the `cus
 	"format_version": 1,
 	"blocks": {
 		"minecraft:granite_wall": {
-            "name": "my_block",
-            "display_name": "Custom Granite Wall",
+			"name": "my_block",
+			"display_name": "Custom Granite Wall",
 			"geometry": "geometry.blocks.my_block_geo",
 			"material_instances": {
 				"*": {
@@ -44,31 +44,32 @@ Custom mappings files that register blocks or items should be placed in the `cus
 					"ambient_occlusion": true
 				}
 			},
-            "tags": ["stone", "wall"],
-            "state_overrides": {
-                "[east=none,north=none,south=none,up=true,waterlogged=true,west=none]": {
-                    "geometry": "geometry.blocks.my_other_block_geo",
-                    "destructible_by_mining": 10,
-                    "place_air": false
-                },
-                "[east=none,north=none,south=none,up=false,waterlogged=true,west=tall]": {
-                    "friction": 0.6,
-                    "light_emission": 7,
-                    "light_dampening": 8,
-                    "rotation": [0, 90, 0]
-                },
-                "[east=none,north=none,south=low,up=true,waterlogged=true,west=tall]": {
-                    "placement_filter": {
-                        "conditions": [
-                            "allowed_faces": [ "up", "down" ],
-                            "block_filter": [
-                                { "tags": "!query.any_tag('stone')" },
-                                "minecraft:dirt"
-                            ]
-                        ]
-                    } 
-                }
-            }
+			"tags": ["stone", "wall"],
+			"state_overrides": {
+				"[east=none,north=none,south=none,up=true,waterlogged=true,west=none]": {
+					"geometry": "geometry.blocks.my_other_block_geo",
+					"destructible_by_mining": 10,
+					"place_air": false
+				},
+				"[east=none,north=none,south=none,up=false,waterlogged=true,west=tall]": {
+					"friction": 0.6,
+					"light_emission": 7,
+					"light_dampening": 8,
+					"rotation": [0, 90, 0]
+				},
+				"[east=none,north=none,south=low,up=true,waterlogged=true,west=tall]": {
+					"placement_filter": {
+						"conditions": [{
+							"allowed_faces": ["up", "down"],
+							"block_filter": [{
+									"tags": "!query.any_tag('stone')"
+								},
+								"minecraft:dirt"
+							]
+						}]
+					}
+				}
+			}
 		}
 	}
 }
