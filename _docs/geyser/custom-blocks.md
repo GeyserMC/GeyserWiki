@@ -6,7 +6,7 @@ permalink: /geyser/custom-blocks/
 
 # Custom blocks with Geyser
 
-To setup custom items in geyser, you have to choose how you are going to register your items. The easiest is [using a json file](#json-mappings) but you can also [use a Geyser extension](#geyser-extensions).
+To setup custom blocks in geyser, you have to choose how you are going to register your blocks. The easiest is [using a json file](#json-mappings) but you can also [use a Geyser extension](#geyser-extensions).
 
 It should be noted that blocks and their associated components are not very stable. Mojang tends to make changes to these much more often than they do for items. This means that any components Geyser allows you to register are liable to break in future versions of Bedrock.
 
