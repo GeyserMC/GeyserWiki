@@ -51,6 +51,22 @@
           url: "geyser/custom-items/#geyser-extensions"
         - title: Resource pack
           url: "geyser/custom-items/#resource-pack"
+    - title: Custom blocks with Geyser
+      url: "geyser/custom-blocks/"
+      children:
+        - title: Enabling custom blocks
+          url: "geyser/custom-blocks/#enabling-custom-blocks"
+        - title: JSON mappings
+          url: "geyser/custom-blocks/#json-mappings"
+        - title: Geyser extensions
+          url: "geyser/custom-blocks/#geyser-extensions"
+    - title: Custom skulls with Geyser
+      url: "geyser/custom-skulls/"
+      children:
+        - title: Enabling custom skulls
+          url: "geyser/custom-skulls/#enabling-custom-skulls"
+        - title: custom-skulls.yml
+          url: "geyser/custom-skulls/#custom-skulls.yml"
 - title: Floodgate Documentation
   url: "floodgate/"
   links:
