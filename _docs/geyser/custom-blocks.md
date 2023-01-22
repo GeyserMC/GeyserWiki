@@ -12,12 +12,15 @@ It should be noted that blocks and their associated components are not very stab
 
 ## Enabling custom blocks
 
-Before beginning, ensure that `add-custom-blocks` is set to `true` in your `config.yml` file.
+Before beginning, ensure that `add-non-bedrock-items` is set to `true` in your `config.yml` file.
 
 ```yml
-# Whether to allow custom blocks to be added.
+# Whether to add any items and blocks which normally does not exist in Bedrock Edition.
 # This should only need to be disabled if using a proxy that does not use the "transfer packet" style of server switching.
-add-custom-blocks: true
+# If this is disabled, furnace minecart items will be mapped to hopper minecart items.
+# Geyser's block, item, and skull mappings systems will also be disabled.
+# This option requires a restart of Geyser in order to change its setting.
+add-non-bedrock-items: true
 ```
 
 ## JSON mappings
@@ -287,7 +290,7 @@ public class RedstoneDot implements Extension {
 }
 ```
 
-Next, create a method to register your blocks in the `onDefineCustomBlocksEvent`:
+Next, create a method to register your blocks in the `GeyserDefineCustomBlocksEvent`:
 
 ```java
 public class RedstoneDot implements Extension {
