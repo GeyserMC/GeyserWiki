@@ -170,7 +170,7 @@
     {
       "name": "FalixNodes",
       "url": "https://falixnodes.net/",
-      "description": "Get Geyser as a plugin. Need to ask to open a UDP port."
+      "description": "Get Geyser as a plugin. Open a port yourself on the network page in the game panel, then change the port in the geyser config"
     },
     {
       "name": "Ferox Hosting",
