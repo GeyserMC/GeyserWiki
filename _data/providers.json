@@ -246,7 +246,7 @@
     {
       "name": "MC-HOST24.de",
       "url": "https://mc-host24.de/",
-      "description": "Get Geyser as a plugin. Use the same address as your Java server for the Bedrock address in your config."
+      "description_template": "default"
     },
     {
       "name": "Meloncube",
