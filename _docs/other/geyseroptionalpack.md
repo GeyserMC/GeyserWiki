@@ -9,7 +9,6 @@ GeyserOptionalPack is a Bedrock resource pack that adds more features to Geyser 
 
 - Armor stand poses and arm/baseplate visibility
 - Illusioner texture
-- Iron golem cracked texture
 - Missing particles, like sweep attack
 - Spectral arrow entity texture
 
