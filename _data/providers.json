@@ -51,7 +51,7 @@
     {
       "name": "Minehut",
       "url": "https://minehut.com/",
-      "description": "Connect via `bedrock.minehut.com` and do `/join <servername>`. Or connect directly via `<servername>.bedrock.minehut.gg`."
+      "description": "Connect via `bedrock.minehut.com` and do `/join <servername>`, or connect directly via `<servername>.bedrock.minehut.gg`."
     },
     {
       "name": "MixmlHosting",
