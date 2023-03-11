@@ -21,7 +21,7 @@ The server itself does not have to be the latest version but does have to allow 
 ## Standalone Setup
 Please keep in mind, you need some sort of computer or host to run Geyser Standalone on. Applications such as Termux on Android are capable of running Geyser, but this largely depends on how powerful your Android device is. Please do so at your own risk. Instructions to run Geyser on Termux can be found [here](/geyser/setup/#termux-android).
 
-1. Download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/Geyser/job/master/).
+1. Download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/).
 2. Create a new folder for Geyser, and drop the jar in there.
 
 ### GUI Setup (Recommended)
