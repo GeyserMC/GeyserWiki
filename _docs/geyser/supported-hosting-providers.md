@@ -26,4 +26,3 @@ It should also be noted that these providers may not be verified by the Geyser t
 {% for provider in site.data.providers.no_support %}
 * [{{ provider.name}}]({{ provider.url }}){% if provider.description != nil or provider.description_template != nil %} - {{ site.data.providers.description_templates[provider.description_template] }} {{ provider.description }}{% endif %}
 {% endfor %}
-
