@@ -271,7 +271,7 @@
     {
       "name": "Netbela",
       "url": "https://netbela.nl/store/minecraft",
-      "description": "Install Geyser as a plugin with the dedicated Plugin installer. Use the same port as your Java server for the Bedrock address and port in your config and connect with that specific address and port."
+      "description": "Install Geyser as a plugin with the dedicated Plugin installer. Use the same port as your Java server in your config. Connect using the same address and port as your Java server."
     },
     {
       "name": "NFOservers",
