@@ -269,6 +269,11 @@
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port, or buy a dedicated IP address to support a different port."
     },
     {
+      "name": "Netbela",
+      "url": "https://netbela.nl/store/minecraft",
+      "description": "Install Geyser as a plugin with the dedicated Plugin installer. Use the same port as your Java server for the Bedrock address and port in your config and connect with that specific address and port."
+    },
+    {
       "name": "NFOservers",
       "url": "https://nfoservers.com/",
       "description": "Get Geyser as a plugin. Make sure your remote address and your bedrock address are your server IP in the Geyser config file. As an alternative, you can run Geyser standalone separately on an Unmanaged VDS."
