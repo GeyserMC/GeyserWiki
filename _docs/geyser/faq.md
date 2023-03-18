@@ -46,12 +46,13 @@ This is a non-complete list of what platform each plugin version of Geyser is fo
   * Any other forks of the above
 * Geyser-Velocity works with [Velocity](https://www.velocitypowered.com/)
 * Geyser-Sponge works with [SpongeVanilla or SpongeForge](https://www.spongepowered.org/)
+* Geyser-Fabric works with [Fabric](https://www.fabricmc.net/)
 
 ## Which type of Geyser version is better, standalone or plugin?
 Because of optimizations that hook into the plugin platforms, plugin versions of Geyser are preferable compared to standalone Geyser. On Spigot, Velocity, and BungeeCord versions of Geyser, direct connections allow for faster loading times, lower latency, and accurate IP addresses without requiring Floodgate. Geyser-Spigot has further optimizations due to having direct world access, including lower memory usage and greater translation accuracy. However, large server networks might prefer standalone Geyser because it can be updated without needing to restart any other proxies or servers, and can offload resource usage onto seperate machines.
 
 ## What server versions does Geyser-Spigot support?
-The Geyser-Spigot plugin supports any Minecraft server version 1.12.2 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
+The Geyser-Spigot plugin supports any Minecraft server version 1.13.2 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
 
 ## If using BungeeCord or another fork, where do I need to put Geyser/Floodgate?
 You only need Geyser and/or Floodgate on the BungeeCord server, as long as not using the Floodgate API. In this case, Floodgate is needed on the "backend" servers as well.
@@ -62,7 +63,7 @@ Generally, the IP that Bedrock players will join with is your Java IP and the de
 
 ## How can I have Bedrock players load resource packs?
 
-You can add Bedrock resource packs to your Geyser installation in the `packs` folder of wherever the Geyser config is located. Bedrock clients will automatically download and load those resource packs. There is currently no automatic Java-to-Bedrock resource pack conversion, but you can convert any Java resource pack to Bedrock using [this tool](https://rtm516.github.io/ConvertJavaTextureToBedrock/) and add that to your server.
+You can add Bedrock resource packs to your Geyser installation in the `packs` folder of wherever the Geyser config is located. Bedrock clients will automatically download and load those resource packs. There is currently no automatic Java-to-Bedrock resource pack conversion, but you can convert any Java resource pack to Bedrock using [this tool](https://rtm516.github.io/ConvertJavaTextureToBedrock/) and add that to your server. The converter currently only works with packs up until 1.17; you will need to use another converter, or, [convert the pack yourself](https://learn.microsoft.com/en-us/minecraft/creator/documents/convertingtexturepacks).
 
 ## How can Bedrock players hold items in their offhand?
 
@@ -77,7 +78,7 @@ Example: `/tp ".<bedrock_username>"`
 There are three ways you can do this. The first way is to use Floodgate's built-in whitelist command, `/fwhitelist add <bedrock_username>`. The second way is to turn off the whitelist using `/whitelist off`, then get the Geyser player to join, then run `/whitelist add ".<bedrock_username>"`, then turn the whitelist back on using `/whitelist on`. (If using this method for a Bedrock account linked to an existing, whitelisted Java account, there is no need to _also_ whitelist the Bedrock account; you may link the accounts then immediately turn the whitelist back on.) The third way is to add the player's UUID as given by Floodgate to the whitelist.json file and then run `/whitelist reload`.
 
 ## How do I find a player's UUID without them joining when using Floodgate?
-Use [this page.](https://floodgate-uuid.heathmitchell1.repl.co/) If this doesn't work, then try this method:
+Use [this page.](https://uuid.kejona.dev/) If this doesn't work, then try this method:
 <br><br>
 First, you'll need to get the XUID of the player. There are several third-party websites to find this, for example, [this one](https://cxkes.me/xbox/xuid) (unaffiliated with Geyser). Make sure to choose "Hexidecimal." You'll need to enter the player's Xbox Gamertag, and, once submitted, it should display the XUID in the format of `xxxxxxxxxxxxxxxx`. To turn the XUID into a UUID that Java Edition can recognize, you need to put the XUID in this format: `00000000-0000-0000-xxxx-xxxxxxxxxxxx`. If formatted right, Java Edition should accept it as a UUID.
 
