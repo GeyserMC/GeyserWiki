@@ -49,6 +49,11 @@
       "description": "Click \"Enable Bedrock Support\" on the server dashboard and follow the steps. For manual installation: Add Destination Port 19132 with Protocol UDP to the port forward mapping and connect to the given source port."
     },
     {
+      "name": "Minefort",
+      "url": "https://minefort.com/",
+      "description": "On the server dashboard under \"Connect Support\", make sure \"Allow Bedrock\" is enabled. Then simply connect via `play.minefort.com` and join using `/server <servername>`, or connect via `<servername>.minefort.com`."
+    },
+    {
       "name": "Minehut",
       "url": "https://minehut.com/",
       "description": "Connect via `bedrock.minehut.com` and do `/join <servername>`, or connect directly via `<servername>.bedrock.minehut.gg`."
