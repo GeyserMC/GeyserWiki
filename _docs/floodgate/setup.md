@@ -6,8 +6,7 @@ permalink: /floodgate/setup/
 
 ## Downloads:
 
-Floodgate: [https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/](https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/)  
-Geyser: [https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/](https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/)
+Download Geyser and Floodgate from the [Geyser download page](https://geysermc.org/download).
 
 ## Prerequisites
 
@@ -21,11 +20,9 @@ Geyser: [https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/](https://
 For BungeeCord/Velocity setups: you only are required to install Floodgate on the BungeeCord or Velocity proxy unless you want to use the Floodgate API on the backend servers - see [below](#installing-floodgate-also-on-spigot-servers-behind-bungeecord-or-velocity) for the installation process.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Note:* Installing Floodgate on the backend servers will allow Bedrock player skins to display without the Bedrock player having to switch backend servers.
 
-- Download the Floodgate plugin from [here](https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/) and add it to your plugins folder on your frontend server.
-  - `floodgate-spigot.jar` for Spigot, Paper, etc
-  - `floodgate-fabric.jar` for Fabric, can be downloaded [here](https://ci.opencollab.dev/job/GeyserMC/job/Floodgate-Fabric/job/master/). (Requires [FabricAPI](https://www.curseforge.com/minecraft/mc-mods/fabric-api))
-  - `floodgate-bungee.jar` for BungeeCord, Waterfall, etc
-  - `floodgate-velocity.jar` for Velocity
+- Download the Floodgate plugin and add it to your plugins folder on your frontend server.
+  - Select your platform on the download page linked above and click "Download Floodgate"
+  - If you are using Floodgate on Fabric, you will need to download the [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api).
 - Change the `auth-type` in the Geyser config to `floodgate`.
 - Restart/start up the server.
 

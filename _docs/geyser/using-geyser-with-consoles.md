@@ -45,7 +45,7 @@ If you have a PC, you can use [Phantom](https://github.com/jhead/phantom).
 
 ### Using an Android Device
 If you have an Android device, you have several options:
-- ~~[Geyser Android app](https://github.com/GeyserMC/GeyserAndroid)~~ (Currently out of date)
+- ~~[Geyser Android app](https://github.com/GeyserMC/GeyserAndroid)~~ (Discontinued)
 - [BedrockTogether](https://play.google.com/store/apps/details?id=pl.extollite.bedrocktogetherapp)
 - [MC Lan Proxy (Trial)](https://play.google.com/store/apps/details?id=com.luzenna.mineproxydroidtrial)
 - [MC Lan Proxy (Paid)](https://play.google.com/store/apps/details?id=com.luzenna.mineproxydroid)

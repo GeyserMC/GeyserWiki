@@ -49,9 +49,14 @@
       "description": "Click \"Enable Bedrock Support\" on the server dashboard and follow the steps. For manual installation: Add Destination Port 19132 with Protocol UDP to the port forward mapping and connect to the given source port."
     },
     {
+      "name": "Minefort",
+      "url": "https://minefort.com/",
+      "description": "On the server dashboard under \"Connect Support\", make sure \"Allow Bedrock\" is enabled. Then simply connect via `play.minefort.com` and join using `/server <servername>`, or connect via `<servername>.minefort.com`."
+    },
+    {
       "name": "Minehut",
       "url": "https://minehut.com/",
-      "description": "Connect via `bedrock.minehut.com` and do `/join <servername>`."
+      "description": "Connect via `bedrock.minehut.com` and do `/join <servername>`, or connect directly via `<servername>.bedrock.minehut.gg`."
     },
     {
       "name": "MixmlHosting",
@@ -175,7 +180,7 @@
     {
       "name": "FalixNodes",
       "url": "https://falixnodes.net/",
-      "description": "Get Geyser as a plugin. Need to ask to open a UDP port."
+      "description": "Get Geyser as a plugin. Open a port yourself on the network page in the game panel, then change the port under the bedrock section of the Geyser config."
     },
     {
       "name": "Ferox Hosting",
@@ -267,6 +272,11 @@
       "name": "Minehub",
       "url": "https://minehub.de/",
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port, or buy a dedicated IP address to support a different port."
+    },
+    {
+      "name": "Netbela",
+      "url": "https://netbela.nl/store/minecraft",
+      "description": "Install Geyser as a plugin with the dedicated Plugin installer. Use the same port as your Java server in your config. Connect using the same address and port as your Java server."
     },
     {
       "name": "NFOservers",

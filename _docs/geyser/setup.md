@@ -33,7 +33,7 @@ The server itself does not have to be the latest version but does have to allow 
 ## Plugin Setup
 1. Read the Prerequisites above, especially if you are setting up Geyser for an older Minecraft Java Edition version!
 2. To make sure you are using the easiest way to set up Geyser, please check whether your hosting provider features [built-in Geyser](/geyser/supported-hosting-providers/#built-in-geyser). If you are not using a hosting provider, or your hosting provider is not featured on said list, continue with the steps below. 
-3. If 2. does not apply: download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/Geyser/job/master/) depending on what platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download. Keep in mind: Geyser-Spigot.jar is for Spigot and its forks, such as PaperMC or Purpur. 
+3. If 2. does not apply: download Geyser [here](https://geysermc.org/download) for the platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download.
 4. Put the Geyser jar file in your plugins folder and start up the server.
 5. Port-forwarding: 
  - If you are using a hosting provider, you will likely need to change your Bedrock port in `config.yml`. Information on your hosting provider might be available on the [Supported Hosting Providers](/geyser/supported-hosting-providers/) page. If there is no information on your hosting provider and you are unable to assign/open ports yourself, try enabling `clone-remote-port` in Geyser's `config.yml`file and connecting with the same IP/port as you would with Java Edition.
@@ -62,7 +62,7 @@ The Bedrock clients, like Java clients, should connect to the proxy server, and 
 
 #### Setup:
 1. Make sure Velocity/BungeeCord is up-to-date. The proxy can be newer than the servers behind it (also called backend servers). If you're running the backend servers on an older version then the current {{ site.data.versions.java }}, you can use the plugin [ViaVersion](https://www.spigotmc.org/resources/19254/). It is recommended to have the plugin on all backend servers where necessary, instead to having it on the proxy. 
-2. Download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/Geyser/job/master/) depending on what platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download. 
+2. Download Geyser [here](https://geysermc.org/download) for the platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download. 
 3. Put the Geyser jar file in your plugins folder and start up the server.
 4. Port-forwarding:
 - If you are using a hosting provider, you will likely need to change your Bedrock port in the `config.yml` file. Information on your hosting provider might be available on the [Supported Hosting Providers](/geyser/supported-hosting-providers/) page. If your hosting provider is not listed there, and you are unable to port forward the default 19132 port on UDP, try setting `clone-remote-port` to true and connecting with the Java IP and port. Any port will work, as long as the UDP protocol is not blocked or already in use by the query feature (see `server.properties`) or another mod. 
@@ -86,7 +86,7 @@ Please read [Standalone Setup](/geyser/standalone/) to set up Geyser Standalone.
 Unlike Minecraft Java Edition, Bedrock Edition runs on port 19132 on the UDP protocol. When port forwarding, make sure to allocate to 19132 UDP or another UDP port. For many server hosting providers, you will simply need to change your Bedrock listening port (see [here](/geyser/supported-hosting-providers/) for a list of supported providers).
 
 ## Setup Videos
-Setup tutorials in a variety of languages.
+Setup tutorials in a variety of languages. Do note: Some might be outdated - but the written guide above is up-to-date.
 
 ### English
 **Connect to Java servers from Bedrock Edition! | GeyserMC Proxy Tutorial by [raimuakuna](https://www.youtube.com/channel/UCIMZsNCD_-prDETwRypAqmQ)**
