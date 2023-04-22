@@ -32,7 +32,7 @@ player-link:
   # accounts, allowing people to link once, join everywhere (on servers with global linking).
   use-global-linking: true
 ```
-([see the default config](https://github.com/GeyserMC/Floodgate/blob/master/common/src/main/resources/config.yml))
+([see the default config](https://github.com/GeyserMC/Floodgate/blob/master/core/src/main/resources/config.yml))
 
 Once you saved the config and restarted your server you should be using Global Linking.
 
