@@ -92,7 +92,7 @@ player.sendForm(
     CustomForm.builder()
         .title("My cool title")
         .content("10/10 content")
-));
+);
 ```
 
 ## Receiving a response from the client
