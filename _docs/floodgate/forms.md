@@ -91,7 +91,7 @@ FloodgatePlayer player = FloodgateApi.getInstance().getPlayer(uuid);
 player.sendForm(
     CustomForm.builder()
         .title("My cool title")
-        .content("10/10 content")
+        .label("10/10 content")
 );
 ```
 
