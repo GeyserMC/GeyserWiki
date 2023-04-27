@@ -84,6 +84,11 @@
       "description": "On VPS, select Geyser in the [Service Type Menu](https://i.imgur.com/loSNmvu.png), Floodgate can be enabled and disabled on the dashboard configuration. For manual installation: If using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with the same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). However, if you are using a PRO or a VPS plan, you can use any port you'd like, which can be opened on the Firewall tab."
     },
     {
+      "name": "Snakecraft Hosting",
+      "url": "https://snakecrafthosting.com/",
+      "description": "Select \"Paper + Geyser with Floodgate\" under the Jar Type at checkout to install the Geyser plugin. Players will Connect with the same IP and port as you would on Java."
+    },
+    {
       "name": "SRKHOST",
       "url": "https://www.srkhost.eu/",
       "description": "You can enable Geyser at the Version changer page. This feature is built-in and uses the given port by the host."
@@ -338,11 +343,6 @@
       "name": "Revivenode",
       "url": "https://revivenode.com/",
       "description": "Get Geyser as a plugin, as in the [setup guide](https://wiki.geysermc.org/geyser/setup/). Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\". Connect with the same IP and port as you would on Java. \n  - See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
-    },
-    {
-      "name": "Snakecraft Hosting",
-      "url": "https://snakecrafthosting.com/",
-      "description": "To install the Geyser plugin select \"Paper + Geyser with Floodgate\" under the Jar Type at checkout."
     },
     {
       "name": "SunriseNode",
