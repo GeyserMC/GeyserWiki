@@ -257,6 +257,7 @@
       "name": "MC-HOST24.de",
       "url": "https://mc-host24.de/",
       "description_template": "default"
+      "description": "Make sure your remote address is 'auto' and your bedrock address is your server IP."
     },
     {
       "name": "Meloncube",
