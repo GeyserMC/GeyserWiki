@@ -134,3 +134,7 @@ public class RegisterCustomSkull implements Extension {
     }
 }
 ```
+
+## Scraping custom skulls from a world
+
+Custom skulls can be extracted from an existing world for easy implementation via mappings or API using the tool [HeadExtractor](https://github.com/davchoo/HeadExtractor) made by Amberichu. See the linked repository for usage instructions.

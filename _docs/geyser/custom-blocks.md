@@ -58,7 +58,11 @@ Custom mappings files that register blocks or items should be placed in the `cus
 					"friction": 0.6,
 					"light_emission": 7,
 					"light_dampening": 8,
-					"rotation": [0, 90, 0]
+					"transformation": {
+            "scale": [0.5, 0.5, 0.5],
+            "translation": [1, 0, 0],
+            "rotation": [0, 90, 0]
+          }
 				},
 				"[east=none,north=none,south=low,up=true,waterlogged=true,west=tall]": {
 					"placement_filter": {
@@ -177,6 +181,34 @@ The following details the schema for the mappings file. Only the `name` field is
           - Description: An array of tags associated with the block.
             - `items`: 
               - Type: `string`
+        - `transformation`:
+          - Type: `object`
+          - Description: Translation, scale, and rotation values to apply to the block.
+            - `scale`
+              - Type: `array`
+              - Default: `[1, 1, 1]`
+              - Description: An array of x, y, and z scale values
+                - `items`:
+                  - Type: `float`
+                  - Default: `1`
+                  - Description: A scale value for a single axis
+            - `translation`
+              - Type: `array`
+              - Default: `[0, 0, 0]`
+              - Description: An array of x, y, and z translation values
+                - `items`:
+                  - Type: `float`
+                  - Default: `0`
+                  - Description: A translation value for a single axis
+            - `rotation`
+              - Type: `array`
+              - Default: `[0, 0, 0]`
+              - Description: An array of x, y, and z rotation values in increments of 90 degrees (e.g. `[90, -180, 0]`)
+                - `items`:
+                  - Type: `integer`
+                  - Range: `0`, `90`, `180`, & `270`
+                  - Default: `0`
+                  - Description: A rotation value for a single axis
         - `unit_cube`:
           - Type: `boolean`
           - Default: none
@@ -273,6 +305,34 @@ The following details the schema for the mappings file. Only the `name` field is
                   - Description: An array of tags associated with the overridden block.
                     - `items`: 
                       - Type: `string`
+                - `transformation`:
+                  - Type: `object`
+                  - Description: Translation, scale, and rotation values to apply to the block.
+                    - `scale`
+                      - Type: `array`
+                      - Default: `[1, 1, 1]`
+                      - Description: An array of x, y, and z scale values
+                        - `items`:
+                          - Type: `float`
+                          - Default: `1`
+                          - Description: A scale value for a single axis
+                    - `translation`
+                      - Type: `array`
+                      - Default: `[0, 0, 0]`
+                      - Description: An array of x, y, and z translation values
+                        - `items`:
+                          - Type: `float`
+                          - Default: `0`
+                          - Description: A translation value for a single axis
+                    - `rotation`
+                      - Type: `array`
+                      - Default: `[0, 0, 0]`
+                      - Description: An array of x, y, and z rotation values in increments of 90 degrees (e.g. `[90, -180, 0]`)
+                        - `items`:
+                          - Type: `integer`
+                          - Range: `0`, `90`, `180`, & `270`
+                          - Default: `0`
+                          - Description: A rotation value for a single axis
                 - `unit_cube`:
                   - Type: `boolean`
                   - Default: none
