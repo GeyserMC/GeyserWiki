@@ -21,7 +21,7 @@ The server itself does not have to be the latest version but does have to allow 
 ## Standalone Setup
 Please keep in mind, you need some sort of computer or host to run Geyser Standalone on. Applications such as Termux on Android are capable of running Geyser, but this largely depends on how powerful your Android device is. Please do so at your own risk. Instructions to run Geyser on Termux can be found [here](/geyser/setup/#termux-android).
 
-1. Download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/Geyser/job/master/).
+1. Download [Geyser Standalone](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone).
 2. Create a new folder for Geyser, and drop the jar in there.
 
 ### GUI Setup (Recommended)
@@ -67,7 +67,7 @@ curl https://gist.githubusercontent.com/rtm516/e3e07d6595ee41e05a38b03c0f4d7a80/
 2. Install [NewTerm 2](https://chariz.com/get/newterm).
 4. Download PojavLauncher's Java 16 JRE for iOS and install it using Filza [here](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/download/v16-openjdk/openjdk-16-jre_16.0.0+git20201217.8383f41-2_iphoneos-arm.deb).
 3. Download this package containing modified java commands, and install it using Filza [here](https://cdn.discordapp.com/attachments/558829512633090048/834014323755319306/com.letschill.java_0.1_iphoneos-arm.deb) (Note: Not an official GeyserMC project, install at your own risk).
-4. Open NewTerm 2 and run `wget https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/standalone/build/libs/Geyser-Standalone.jar`
+4. Open NewTerm 2 and run `wget https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone`
 5. Run `java -jar Geyser-Standalone.jar`.
 6. Geyser should show up in the Friends tab inside Minecraft.
 

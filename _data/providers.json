@@ -14,6 +14,11 @@
       "description": "Full auto installation. Go to the `Customizations` tab in the panel and select `Enabled` under the `Geyser Auto Installer` option then restart and connect to your server with your Java IP and port. See [Apex's article](https://apexminecrafthosting.com/geysermc/) for more details."
     },
     {
+      "name": "Cloud Nord",
+      "url": "https://cloudnord.net/",
+      "description": "Go to their [Crossplay Server](https://cloudnord.net/minecraftcrossplay-server-hosting/) hosting section and simply order your server. Instructions on how to join are provided."
+    },
+    {
       "name": "CreeperHost",
       "url": "https://www.creeperhost.net/",
       "description": "Has a toggle within the control panel to automatically enable Geyser. May not be enabled by default, so you may need to toggle it and restart the server."
@@ -44,9 +49,14 @@
       "description": "Click \"Enable Bedrock Support\" on the server dashboard and follow the steps. For manual installation: Add Destination Port 19132 with Protocol UDP to the port forward mapping and connect to the given source port."
     },
     {
+      "name": "Minefort",
+      "url": "https://minefort.com/",
+      "description": "On the server dashboard under \"Connect Support\", make sure \"Allow Bedrock\" is enabled. Then simply connect via `play.minefort.com` and join using `/server <servername>`, or connect via `<servername>.minefort.com`."
+    },
+    {
       "name": "Minehut",
       "url": "https://minehut.com/",
-      "description": "Connect via `bedrock.minehut.com` and do `/join <servername>`."
+      "description": "Connect via `bedrock.minehut.com` and do `/join <servername>`, or connect directly via `<servername>.bedrock.minehut.gg`."
     },
     {
       "name": "MixmlHosting",
@@ -72,6 +82,11 @@
       "name": "Server.pro",
       "url": "https://server.pro",
       "description": "On VPS, select Geyser in the [Service Type Menu](https://i.imgur.com/loSNmvu.png), Floodgate can be enabled and disabled on the dashboard configuration. For manual installation: If using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with the same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). However, if you are using a PRO or a VPS plan, you can use any port you'd like, which can be opened on the Firewall tab."
+    },
+    {
+      "name": "Snakecraft Hosting",
+      "url": "https://snakecrafthosting.com/",
+      "description": "Select \"Paper + Geyser with Floodgate\" under the Jar Type at checkout to install the Geyser plugin. Players will Connect with the same IP and port as you would on Java."
     },
     {
       "name": "SRKHOST",
@@ -170,7 +185,7 @@
     {
       "name": "FalixNodes",
       "url": "https://falixnodes.net/",
-      "description": "Get Geyser as a plugin. Need to ask to open a UDP port."
+      "description": "Get Geyser as a plugin. Open a port yourself on the network page in the game panel, then change the port under the bedrock section of the Geyser config."
     },
     {
       "name": "Ferox Hosting",
@@ -241,7 +256,7 @@
     {
       "name": "MC-HOST24.de",
       "url": "https://mc-host24.de/",
-      "description": "Get Geyser as a plugin. Use the same address as your Java server for the Bedrock address in your config."
+      "description_template": "default"
     },
     {
       "name": "Meloncube",
@@ -262,6 +277,11 @@
       "name": "Minehub",
       "url": "https://minehub.de/",
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port, or buy a dedicated IP address to support a different port."
+    },
+    {
+      "name": "Netbela",
+      "url": "https://netbela.nl/store/minecraft",
+      "description": "Install Geyser as a plugin with the dedicated Plugin installer. Use the same port as your Java server in your config. Connect using the same address and port as your Java server."
     },
     {
       "name": "NFOservers",

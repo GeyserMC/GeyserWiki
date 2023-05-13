@@ -14,6 +14,7 @@ Full Compatibility (Checks Bedrock Players Accurately)
 - [Themis](https://www.spigotmc.org/resources/90766/){:target="_blank"} - Last Updated on 15th Jun 2022
 - [Negativity V2](https://www.spigotmc.org/resources/86874/){:target="_blank"} (Paid) - Last Updated on 21st March 2022
 - [SoaromaSAC](https://www.spigotmc.org/resources/87702/){:target="_blank"} - Last Updated on 27th March 2022
+- [Spartan](https://www.spigotmc.org/resources/25638/){:target="_blank"} (Paid) - Last Updated on 8th February 2023
 
 Partially Compatible (Does not Check/Ignores Bedrock Players)
 
@@ -21,7 +22,6 @@ Partially Compatible (Does not Check/Ignores Bedrock Players)
 - [Flappy Anticheat](https://www.spigotmc.org/resources/92180/){:target="_blank"} - Last Updated on 14th September 2021
 - [GrimAC](https://github.com/MWHunter/Grim){:target="_blank"} - Last Updated on 24th March 2022
 - [Matrix](https://matrix.rip/){:target="_blank"} (Paid) - Last updated on 2nd September 2021
-- [Spartan](https://www.spigotmc.org/resources/25638/){:target="_blank"} (Spartan Syn offers full Bedrock checks for an additional $43) (Paid) - Last Updated on 19th August 2021
 - [Vulcan](https://www.spigotmc.org/resources/83626/){:target="_blank"} (Paid) - Last Updated on 19th August 2021
 - [Verus](https://verus.ac){:target="_blank"} (Paid) - Last Updated on 13th July 2022
 

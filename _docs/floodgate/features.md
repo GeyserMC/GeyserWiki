@@ -12,7 +12,7 @@ Floodgate 2.0 has a whitelist command, `fwhitelist`, that should be used for add
 
 You can also specify a UUID: `fwhitelist add 00000000-0000-0000-0009-01f64f65c7c3`
 
-The permission node is `floodgate.command.whitelist`.
+The permission node is `floodgate.command.fwhitelist`.
 
 ## What is the Global Api?
 The Global Api is an API that is available for every server. It currently includes: [Global Linking](#what-is-global-linking), [skin uploading](#what-is-skin-uploading), getting a xuid by gamertag, and getting a gamertag by xuid.

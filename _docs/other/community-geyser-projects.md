@@ -84,12 +84,6 @@ Plugin that blocks Java players from joining your Geyser server, so you can have
 
 Creator: [Camotoy](https://github.com/Camotoy)
 
-## GeyserHacks
-Various workarounds for Geyser players that modify the server in order to achieve their goal.
-* [GitHub](https://github.com/Camotoy/GeyserHacks)
-
-Creator: [Camotoy](https://github.com/Camotoy)
-
 ## GeyserPlaceholders
 Placeholders support for Geyser.
 
@@ -118,6 +112,12 @@ This is a Spigot/BungeeCord/Velocity plugin that can be used to automatically up
 
 Creators: [Jens](https://github.com/Jens-Co), [YHDiamond](https://github.com/YHDiamond), [Konicai](https://github.com/Konicai)
 
+## Hurricane
+Various workarounds for Geyser players that modify the server in order to achieve their goal.
+* [GitHub](https://github.com/GeyserMC/Hurricane)
+
+Creator: [Camotoy](https://github.com/Camotoy)
+
 ## SleepingServerStarter
 Small application that waits for a player to connect before launching actual minecraft server.
 * [GitHub](https://github.com/vincss/mcsleepingserverstarter)
@@ -126,6 +126,6 @@ Creator: [Vincss](https://github.com/vincss)
 
 ## TydiumCraft Skin API
 An API makes it easier for your Bedrock skin to be rendered and outputted!
-* [Website](https://tydiumcraft.net/docs/skinapi)
+* [Website](https://tydiumcraft.net/)
 
-Creators: [Tydium](https://github.com/Tydium), [higbead](https://github.com/higbead), [gibbon27](https://github.com/gibbon27)
+Creators: [Tydium](https://github.com/Tydium)
