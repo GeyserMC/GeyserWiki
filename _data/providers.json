@@ -256,7 +256,7 @@
     {
       "name": "MC-HOST24.de",
       "url": "https://mc-host24.de/",
-      "description_template": "default"
+      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\"). Set remote address to auto, and bedrock address to the server IP. Connect with the Java IP and port."
     },
     {
       "name": "Meloncube",
