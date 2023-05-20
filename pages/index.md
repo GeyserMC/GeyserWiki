@@ -3,7 +3,10 @@ layout: page
 permalink: /
 ---
 
-<img class="logoimg" src="https://geysermc.org/img/geyser.png" alt="geyser logo">
+<div style="text-align: center;">
+  <img class="logoimg" src="https://geysermc.org/img/geyser.png" alt="geyser logo">
+</div>
+<br>
 
 # GeyserMC Wiki
 
