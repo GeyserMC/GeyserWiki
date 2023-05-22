@@ -80,7 +80,8 @@ There are three ways you can do this.
 
 1. Use Floodgate’s built-in whitelist command: `/fwhitelist add <bedrock_username>`.
 
-2. Turn off the whitelist using `/whitelist off`, then get the Geyser player to join. After that, run `/whitelist add ".<bedrock_username>"`, and finally, turn the whitelist back on using `/whitelist on`. If you're linking a Bedrock account to an existing whitelisted Java account, you don't need to whitelist the Bedrock account separately. You can link the accounts and immediately turn the whitelist back on.
+2. Turn off the whitelist using `/whitelist off`, then get the Geyser player to join. After that, run `/whitelist add ".<bedrock_username>"`, and finally, turn the whitelist back on using `/whitelist on`. 
+When using Local Linking: If you're linking a Bedrock account to an existing whitelisted Java account, you don't need to whitelist the Bedrock account separately. You can link the accounts and immediately turn the whitelist back on.
 
 3. Add the player’s UUID, as given by Floodgate, to the `whitelist.json` file. Then, run `/whitelist reload` to update the whitelist.
 
