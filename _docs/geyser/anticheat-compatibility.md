@@ -4,7 +4,7 @@ title: Anticheat Compatibility
 permalink: /geyser/anticheat-compatibility/
 ---
 
-Do note that this is a community-compiled list and is incomplete! If you wish to update or add to this list, feel free.
+<h3>The AntiCheats listed below have been categorized based on their compatibility with Geyser. This is a community-compiled list and does not indicate any endorsement from GeyserMC. Use them at your own risk!</h3>
 
 ### AntiCheat compatibility reports
 
