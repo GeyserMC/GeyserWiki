@@ -444,6 +444,11 @@
       "name": "MyArena",
       "url": "https://www.myarena.ru/",
       "description": "Does seem to be working, but the Java version is too old in order for Geyser to run properly."
+    },
+    {
+      "name": "Feather",
+      "url": "https://feathermc.com/",
+      "description": "Their proxy network doesnt support UDP therefor Geyser isn't supported"
     }
   ]
 }
