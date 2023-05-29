@@ -433,6 +433,11 @@
       "name": "WitherHosting",
       "url": "https://witherhosting.com/",
       "description": "Get Geyser as a plugin. Put the port provided by the host in your config.yml for the Java and bedrock sections, or create a port in the ports manager on the panel and use that for bedrock with the main one for Java, and you will be able to connect! Refer to the hosts [support article](https://support.witherhosting.com/en/article/how-to-install-and-use-geysermc-1xn5l6v/) for more"
+    },
+    {
+      "name": "FREAKHOSTING",
+      "url": "https://freakhosting.com",
+      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
     }
   ],
   "no_support": [
