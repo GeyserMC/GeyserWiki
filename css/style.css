@@ -45,3 +45,13 @@ h1 {
 	padding-bottom: 0.5rem;
 	border-bottom: 1px solid var(--bs-secondary-color);
 }
+
+div.highlight {
+	margin: 1rem;
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+.highlight pre {
+	margin: 0;
+}
