@@ -58,21 +58,23 @@
 			</div>
 		</nav>
 	</header>
-	<div id="page-content" class="container-fluid row">
-		<div class="col-12 col-md-3 col-xl-2">
-			<div class="sticky-top">
-				<div class="sidebar py-2 text-break">
-					{% include sidebar-nav.html %}
+	<div id="page-content" class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-3 col-xl-2">
+				<div class="sticky-top">
+					<div class="sidebar py-2 text-break">
+						{% include sidebar-nav.html %}
+					</div>
 				</div>
 			</div>
-		</div>
-		<main class="col-12 col-md-9 col-xl-8" role="main">
-			{{ content }}
-		</main>
-		<div class="col-2 d-none d-xl-block">
-			<div class="sticky-top">
-				<div class="sidebar py-2">
-					{% include sidebar-page.html %}
+			<main class="col-12 col-md-9 col-xl-8" role="main">
+				{{ content }}
+			</main>
+			<div class="col-2 d-none d-xl-block">
+				<div class="sticky-top">
+					<div class="sidebar py-2">
+						{% include sidebar-page.html %}
+					</div>
 				</div>
 			</div>
 		</div>
