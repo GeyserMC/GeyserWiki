@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Floodgate Setup
-permalink: /floodgate/setup/
 ---
 
 ## Downloads:

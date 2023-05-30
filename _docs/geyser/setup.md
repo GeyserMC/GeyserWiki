@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Geyser Setup
-permalink: /geyser/setup/
 ---
 
 # Setup
@@ -36,7 +34,7 @@ The server itself does not have to be the latest version but does have to allow 
 3. If 2. does not apply: download Geyser [here](https://geysermc.org/download) for the platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download.
 4. Put the Geyser jar file in your plugins folder and start up the server.
 5. Port-forwarding: 
- - If you are using a hosting provider, you will likely need to change your Bedrock port in `config.yml`. Information on your hosting provider might be available on the [Supported Hosting Providers](/geyser/supported-hosting-providers/) page. If there is no information on your hosting provider and you are unable to assign/open ports yourself, try enabling `clone-remote-port` in Geyser's `config.yml`file and connecting with the same IP/port as you would with Java Edition.
+ - If you are using a hosting provider, you will likely need to change your Bedrock port in `config.yml`. Information on your hosting provider might be available on the [Supported Hosting Providers](/geyser/supported-hosting-providers/) page. If there is no information on your hosting provider and you are unable to assign/open ports yourself, try enabling `clone-remote-port` in Geyser's `config.yml` file and connecting with the same IP/port as you would with Java Edition.
  - If not using a hosting provider, you will need to use port forwarding to allow people outside your LAN to connect. You want to port forward 19132 UDP, instructions to do that for most routers can be found [here](https://www.lifewire.com/how-to-port-forward-4163829). If you are trying to join from the same LAN, the server should show up in the friends tab.
  - To check whether it is working correctly, you can use the `geyser connectiontest [yourIP]:[yourPort]` command in your server console to check if the server is reachable from the outside.
  - _Restart your server if you edited your config! Simply reloading will not work._

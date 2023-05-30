@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Test Server
-permalink: /other/test-server/
 ---
 
 ### Details

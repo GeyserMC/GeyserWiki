@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Features
-permalink: /floodgate/features/
 ---
 
 ## Whitelist command

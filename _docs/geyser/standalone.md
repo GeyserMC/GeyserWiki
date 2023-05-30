@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Geyser Standalone 
-permalink: /geyser/standalone/
 ---
 
 # Setup of Geyser Standalone

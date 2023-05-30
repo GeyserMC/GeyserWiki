@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Standalone Command Line Arguments
-permalink: /geyser/standalone-command-line-arguments/
 ---
 
 # General command-line arguments

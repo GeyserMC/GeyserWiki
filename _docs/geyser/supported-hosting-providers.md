@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Supported Hosting Providers
-permalink: /geyser/supported-hosting-providers/
 ---
 
 This list is incomplete. Please open a [PR](https://github.com/GeyserMC/GeyserWiki/pulls) or contact us on [Discord](https://discord.gg/geysermc) if the information is incorrect or you want to add a new hosting provider!

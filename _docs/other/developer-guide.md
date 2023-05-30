@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Developer Guide
-permalink: /other/developer-guide/
 ---
 
 ## Compiling

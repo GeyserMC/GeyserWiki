@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Geyser
-permalink: /geyser/
 ---
 
 # Geyser

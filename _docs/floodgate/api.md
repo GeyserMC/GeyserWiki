@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Floodgate API
-permalink: /floodgate/api/
 ---
 
 ### Floodgate has an API to extend what is possible and allow servers to get information about the Bedrock client. It also allows other plugins access to [Cumulus](/floodgate/forms/)
@@ -27,7 +25,6 @@ Floodgate uses the open collaboration repo. The following example is for Maven, 
 ```
 
 The Floodgate API has changed in Floodgate 2.0. The most important change is that the API methods are no longer static and instead instance-based, as shown below.
-
 ---
 
 The class FloodgateApi is the base class of the API and you need to use it to access any part of the API.<br>

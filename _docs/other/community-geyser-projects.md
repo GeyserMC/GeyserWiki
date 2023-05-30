@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Community Geyser Projects
-permalink: /other/community-geyser-projects/
 ---
 
 Below is a list of community-compiled plugins, extensions and tools that work with Geyser. 

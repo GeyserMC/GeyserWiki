@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Floodgate
-permalink: /floodgate/
 ---
 
 # Floodgate

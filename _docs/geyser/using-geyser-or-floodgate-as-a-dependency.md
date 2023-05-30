@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Using Geyser or Floodgate as a dependency
-permalink: /geyser/using-geyser-or-floodgate-as-a-dependency/
 ---
 
 To start, add the Open Collaboration repository to your project:

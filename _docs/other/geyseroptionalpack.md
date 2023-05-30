@@ -1,7 +1,5 @@
 ---
-layout: page
 title: GeyserOptionalPack
-permalink: /other/geyseroptionalpack/
 ---
 # [Download here](https://ci.opencollab.dev/job/GeyserMC/job/GeyserOptionalPack/job/master/lastSuccessfulBuild/artifact/GeyserOptionalPack.mcpack)
 

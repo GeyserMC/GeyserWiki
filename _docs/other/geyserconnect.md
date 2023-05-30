@@ -1,7 +1,5 @@
 ---
-layout: page
 title: GeyserConnect
-permalink: /other/geyserconnect/
 ---
 
 GeyserConnect is a extension for Geyser that allows you to join multiple servers using a single GeyserMC proxy.

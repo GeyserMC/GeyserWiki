@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Fixing 'Unable to Connect to World'
-permalink: /geyser/fixing-unable-to-connect-to-world/
 ---
 
 *Unable to Connect to World* is by far the most common error people get when attempting to set up Geyser. Here's some steps on how to solve that.

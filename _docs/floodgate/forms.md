@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Forms and Cumulus
-permalink: /floodgate/forms/
 ---
 
 # What is Cumulus?
