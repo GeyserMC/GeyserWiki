@@ -1,5 +1,6 @@
 ---
 title: Floodgate
+permalink: /floodgate/
 ---
 
 # Floodgate
