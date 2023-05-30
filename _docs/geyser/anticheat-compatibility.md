@@ -2,7 +2,9 @@
 title: Anticheat Compatibility
 ---
 
-<h3>The AntiCheats listed below have been categorized based on their compatibility with Geyser. This is a community-compiled list and does not indicate any endorsement from GeyserMC. Use them at your own risk!</h3>
+<div class="alert alert-warning" role="alert">
+	The AntiCheats listed below have been categorized based on their compatibility with Geyser. This is a community-compiled list and does not indicate any endorsement from GeyserMC. Use them at your own risk!
+</div>
 
 ### AntiCheat compatibility reports
 
