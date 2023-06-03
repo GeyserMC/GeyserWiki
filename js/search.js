@@ -66,7 +66,7 @@
         if (item.title) {
           const contentPreview = getPreview(query, item.content, 170)
           const titlePreview = getPreview(query, item.title)
-          resultsHTML += "<li><h4><a href='{{ site.baseurl }}" + item.url.trim() + "'>" + titlePreview + '</a></h4><p><small>' + contentPreview + '</small></p></li>'
+          resultsHTML += "<li><h4><a href='" + item.url.trim() + "'>" + titlePreview + '</a></h4><p><small>' + contentPreview + '</small></p></li>'
         }
       })
 
@@ -81,7 +81,6 @@
   window.index = lunr(function () {
     this.field('id')
     this.field('title', { boost: 10 })
-    this.field('categories')
     this.field('url')
     this.field('content')
   })
