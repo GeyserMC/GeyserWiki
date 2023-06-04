@@ -44,7 +44,7 @@ Since the Geyser API extends the Base API that is shared across Floodgate and Ge
 `GeyserApi#isBedrockPlayer(UUID)`<br>
 Used to check if the given UUID of an **online** player is a Bedrock player.
 
-`GeyserApi#getPlayer(UUID)`<br>
+`GeyserApi#connectionByUuid(UUID)`<br>
 Used to get the [Connection](https://github.com/GeyserMC/api/blob/master/base/src/main/java/org/geysermc/api/connection/Connection.java) of an **online** player.<br>
 This method will return null if the player is not a Bedrock player.
 

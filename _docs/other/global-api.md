@@ -3,8 +3,10 @@ title: Geyser Global API
 ---
 
 ### Geyser Global API
+The Global Api is available for every server. It currently includes: [Global Linking](#what-is-global-linking), [skin uploading](#what-is-skin-uploading), getting a xuid by gamertag, and getting a gamertag by xuid.
+We don't store anything else than you can access by the Global Api, except for some non-identifiable metrics. The source code of the Global Api is available [here](https://github.com/GeyserMC/global_api) and the source code of the Global Linking server is available [here](https://github.com/GeyserMC/GlobalLinkServer).
 
-The Global API is a web API, where you can get various info about Geyser (or specifically, Floodgate players) that joined any Geyser + Floodgate server before. This includes:
+As a user of the API, you can get various info about Geyser (or specifically, Floodgate players) that joined any Geyser + Floodgate server before. This includes:
 - Conversion methods from a Bedrock gamertag to Bedrock xuid, and vice-versa. Only provides info for players who are in Geyser's cache. <br>
   If you need them for all players, you can use a third-party API, https://mcprofile.io/endpoints, which also provides info from the Geyser Global API.
 - Skin info: Whenever a Bedrock player joins via Floodgate, their skin gets converted & uploaded to mineskin. If you want to grab that converted skin, use the xuid of the Bedrock player in this endpoint to get a texture id, or a base64 encoded "value", which you could use directly in e.g. player heads.
