@@ -1,10 +1,9 @@
 ---
-layout: page
 permalink: /
 ---
 
-<div style="text-align: center;">
-  <img class="logoimg" src="https://geysermc.org/img/geyser.png" alt="geyser logo">
+<div class="my-3 text-center">
+  <img src="https://geysermc.org/img/geyser.png" alt="geyser logo">
 </div>
 <br>
 

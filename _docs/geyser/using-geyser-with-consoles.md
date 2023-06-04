@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Using Geyser with Consoles
-permalink: /geyser/using-geyser-with-consoles/
 ---
 
 All consoles can join third-party servers - including Geyser servers - with workarounds. Xbox One, Nintendo Switch, and PS4 systems can join third-party servers using a third-party program called BedrockConnect. For technical information about the program, including how to run your own setup, see [their GitHub repository](https://github.com/Pugmatt/BedrockConnect) (*This program is not affiliated with GeyserMC*). Other methods are also available for use.

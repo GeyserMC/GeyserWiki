@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Linking
-permalink: /floodgate/linking/
 ---
 
 ## What is Global Linking?

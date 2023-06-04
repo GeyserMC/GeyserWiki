@@ -1,7 +1,5 @@
 ---
-layout: page
 title: playit.gg Setup
-permalink: /geyser/playit-gg/
 ---
 
 ## Prerequisites

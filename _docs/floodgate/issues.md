@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Issues
-permalink: /floodgate/issues/
 ---
 
 # Known Issues & Caveats

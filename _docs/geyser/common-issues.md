@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Common Issues
-permalink: /geyser/common-issues/
 ---
 
 Commonly, people may have issues with Geyser not showing up in their server list or run into similar issues. This page contains a few common issues people may encounter that you might have as well as potential fixes for them. If you still can't make it work, join [our Discord](https://discord.gg/geysermc) for support.

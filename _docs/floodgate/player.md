@@ -1,7 +1,5 @@
 ---
-layout: page
 title: FloodgatePlayer
-permalink: /floodgate/player/
 ---
 
 FloodgatePlayer is something that every player who's connect through Floodgate has.<br>

@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Geyser and Secure Chat
-permalink: /geyser/secure-chat/
 ---
 
 In the 1.19 Java Edition updates, a mechanism for reporting player chat messages to Mojang was implemented. 
