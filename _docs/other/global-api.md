@@ -12,8 +12,10 @@ The Global API is a web API, where you can get various info about Geyser (or spe
 See the [Global API docs](https://api.geysermc.org/docs) for more info, and detailed usage.
 
 ### Examples
-Here are a few examples of how you could use the Global API.
+Here are a few examples of how you could use the Global API. <br>
+
 [GeyserDiscordBot](https://github.com/GeyserMC/GeyserDiscordBot/blob/master/src/main/java/org/geysermc/discordbot/commands/FloodgateUuidCommand.java) 
-- GeyserMC's discord bot has a /uuid command to get a floodgate uuid from a bedrock username.
+- GeyserMC's discord bot has a /uuid command to get a floodgate uuid from a bedrock username. <br>
+
 [FabricGeyserPlayerHeads](https://github.com/onebeastchris/fabricgeyserplayerheads/blob/master/src/main/java/net/onebeastofchris/geyserplayerheads/utils/PlayerUtils.java#L57-L75)
 - A fabric mod that uses the Global API to get a Bedrock player's skin, and then uses that to create a player head.

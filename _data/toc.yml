@@ -90,6 +90,7 @@
   url: "other/"
   links:
     - title: "Global API"
+      url: "other/global-api/"
     - title: "GeyserOptionalPack"
       url: "other/geyseroptionalpack/"
     - title: "GeyserConnect"
