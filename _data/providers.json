@@ -198,6 +198,11 @@
       "description_template": "default"
     },
     {
+      "name": "FREAKHOSTING",
+      "url": "https://freakhosting.com/",
+      "description_template": "default"
+    },
+    {
       "name": "FreeMcServer.net",
       "url": "https://freemcserver.net",
       "description_template": "default"
