@@ -3,12 +3,3 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-.idea/vcs.xml
-.idea/modules.xml
-.idea/misc.xml
-.idea/markdown.xml
-.idea/gwiki.iml
-.idea/discord.xml
-.idea/compiler.xml
-.idea/.gitignore
-.gitignore
