@@ -54,7 +54,6 @@ GeyserConnection connection = GeyserApi.api().connectionByUuid(uuid);
 
 
 ## Using Floodgate
-
 This page has a very simple primer for the Floodgate API. For a full breakdown, see [here](/floodgate/floodgate-api/).
 
 Add Floodgate's API as a dependency:

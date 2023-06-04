@@ -6,7 +6,7 @@ title: Geyser Extensions
 Geyser Extensions are the equivalent of "plugins", but specifically for the Geyser platform. This brings the advantage of them being platform-agnostic, meaning that you won't have to worry about supporting all platforms individually. Additionally, they will be, by design, only applied for Bedrock players joining via Geyser.
 
 ### What can Geyser Extensions do?
-Extensions can fully utilize the Geyser API to add additional functionality to Geyser. See [Geyser API docs](/geyser/geyser-apigit /) for info on what is currently possible. To name a few examples:
+Extensions can fully utilize the Geyser API to add additional functionality to Geyser. See [Geyser API docs](/geyser/geyser-api/) for info on what is currently possible. To name a few examples:
 - Register custom items
 - Hide commands from being suggested
 - Change the MOTD
@@ -49,7 +49,7 @@ That way, Geyser recognizes the extension, and gives you access to important met
 To see all the methods provided by that interface, see [here](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/extension/Extension.java).
 
 If you wish to register custom items, global resource packs (or soon, custom blocks and entities), you would need to subscribe to the event using the @Subscribe annotation, 
-and register them in the event. You can find an example for custom items [here](https://wiki.geysermc.org/geyser/custom-items/#geyser-extensions).
+and register them in the event. You can find an example for custom items [here](/geyser/custom-items/#geyser-extensions).
 
 The bulk of your code would go into the PostInitializeEvent, when Geyser is ready to accept & handle players. See below for an example:
 
