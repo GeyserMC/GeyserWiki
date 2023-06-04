@@ -4,17 +4,28 @@ title: Using Geyser or Floodgate as a dependency
 
 To start, add the Open Collaboration repository to your project:
 
+**Maven**
 ```xml
 <repository>
-    <id>opencollab-snapshot-repo</id>
-    <url>https://repo.opencollab.dev/main/</url>
+    <id>opencollab-snapshot</id>
+    <url>https://repo.opencollab.dev/maven-snapshots/</url>
 </repository>
+```
+
+**Gradle**
+```groovy
+repositories {
+    maven {
+        url = uri("https://repo.opencollab.dev/maven-snapshots/")
+    }
+}
 ```
 
 ## Using Geyser
 
 Add Geyser's API codebase as a dependency:
 
+**Maven**
 ```xml
 <dependency>
     <groupId>org.geysermc.geyser</groupId>
@@ -22,6 +33,13 @@ Add Geyser's API codebase as a dependency:
     <version>2.1.0-SNAPSHOT</version>
     <scope>provided</scope>
 </dependency>
+```
+
+**Gradle**
+```groovy
+dependencies {
+    compileOnly('org.geysermc.geyser:api:2.1.0-SNAPSHOT')
+}
 ```
 
 To get a Geyser player, or check if a player is from Bedrock:
@@ -37,16 +55,25 @@ GeyserConnection connection = GeyserApi.api().connectionByUuid(uuid);
 
 ## Using Floodgate
 
-This page has a very simple primer for the Floodgate API. For a full breakdown, see [here](/floodgate/api/).
+This page has a very simple primer for the Floodgate API. For a full breakdown, see [here](/floodgate/floodgate-api/).
 
 Add Floodgate's API as a dependency:
+
+**Maven**
 ```xml
 <dependency>
     <groupId>org.geysermc.floodgate</groupId>
     <artifactId>api</artifactId>
-    <version>2.0-SNAPSHOT</version>
+    <version>2.2.0-SNAPSHOT</version>
     <scope>provided</scope>
 </dependency>
+```
+
+**Gradle**
+```groovy
+dependencies {
+    compileOnly('org.geysermc.floodgate:api:2.2.0-SNAPSHOT')
+}
 ```
 
 Get the Floodgate API using:

@@ -8,21 +8,7 @@ This page will contain information about class FloodgateApi.<br>
 See the sidebar for more information about other parts of the API.
 
 ### Accessing the Floodgate API
-
-Floodgate uses the open collaboration repo. The following example is for Maven, but the same concept applies for Gradle etc.
-```xml
-<repository>
-  <id>opencollab-snapshot</id>
-  <url>https://repo.opencollab.dev/maven-snapshots/</url>
-</repository>
-
-<dependency>
-  <groupId>org.geysermc.floodgate</groupId>
-  <artifactId>api</artifactId>
-  <version>2.2.0-SNAPSHOT</version>
-  <scope>provided</scope>
-</dependency>
-```
+See [here](/geyser/using-geyser-or-floodgate-as-a-dependency) for how to include the Floodgate API in your project.
 
 The Floodgate API has changed in Floodgate 2.0. The most important change is that the API methods are no longer static and instead instance-based, as shown below.
 ---
