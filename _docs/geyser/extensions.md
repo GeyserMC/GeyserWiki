@@ -17,13 +17,13 @@ The underlying Geyser API is steadily expanding, creating more and more opportun
 
 ### Which Geyser Extensions exist?
 At the moment, not a lot. This is due to Extensions being quite new, and that most stuff can already be done with "normal" plugins/mods.
-There is an [unofficial list](https://github.com/onebeastchris/GeyserExtensionList) of available extensions you can check out.
+There is an [unofficial list](https://github.com/GeyserMC/GeyserExtensionList) of available extensions you can check out.
 
 ### Installing Extensions
 To install an extension, simply put the extension .jar file into Geyser's 'extensions' folder. Then, restart Geyser (or the server Geyser runs on).
 
 ### Creating Geyser Extensions
-The easiest way to create an extension would be using [this unofficial template](https://github.com/onebeastchris/GeyserExampleExtension/). Simply create a new repository from the template, customize the 'extension.yml' & 'settings.gradle' files, and get started making the extension.
+The easiest way to create an extension would be using [this official template](https://github.com/GeyserMC/GeyserExampleExtension/). Simply create a new repository from the template, customize the 'extension.yml' & 'settings.gradle' files, and get started making the extension.
 
 Geyser recognizes extensions when they have a file called 'extension.yml' in the jars 'resources' folder.
 
@@ -44,7 +44,7 @@ Explanations for the individual fields:
 - api: The api version your Extension targets.
 - authors: The author(s) of the extension. To add more than one entry, seperate entries with a comma.
 
-The main class, the entrypoint for the extension, needs to [implement the 'Extension' interface provided by Geyser](https://github.com/onebeastchris/GeyserExampleExtension/blob/47614575a69bddecb241676215f3c9f9113db304/src/main/java/org/geyser/extension/exampleid/ExampleExtension.java#L10). 
+The main class, the entrypoint for the extension, needs to [implement the 'Extension' interface provided by Geyser](https://github.com/GeyserMC/GeyserExampleExtension/blob/47614575a69bddecb241676215f3c9f9113db304/src/main/java/org/geyser/extension/exampleid/ExampleExtension.java#L10). 
 That way, Geyser recognizes the extension, and gives you access to important methods - such as 'logger()', to get your extensions logger. <br>
 To see all the methods provided by that interface, see [here](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/extension/Extension.java).
 
