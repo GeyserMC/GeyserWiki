@@ -65,8 +65,9 @@ programmatically. <br>
 To use events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener and then subscribe to the events you want to listen to. 
 Extensions can use the @Subscribe annotation.
 
-Examples:
+##### Examples:
 
+Each method that you want to subscribe to an event needs to be annotated with the @Subscribe annotation (from the GeyserMC events package).
 ```java
 @Subscribe
 public void onGeyserLoadResourcePacksEvent(GeyserLoadResourcePacksEvent event) {
@@ -74,12 +75,37 @@ public void onGeyserLoadResourcePacksEvent(GeyserLoadResourcePacksEvent event) {
         // you could add a resource pack with event.resourcePacks().add(path-to-pack)
 }
 ```
+If you wish to listen to events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener first.
+Extensions do not need to do that - they are automatically registered, so a simple @Subscribe annotation is enough.
 
-To use Events in e.g. a Spigot/Paper plugin, or a fabric mod, you need to register the Geyser Event Bus as a listener, and then subscribe to the events you want to listen to.
-Note: Extensions can just use the `@Subscribe` annotation.
-
+Fabric mod example:
 ```java
-// TODO: add example for spigot/paper
+public class ExampleMod implements ModInitializer, EventRegistrar {
+    // mod logger
+	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
+
+	@Override
+	public void onInitialize() {
+        // we cannot directly register the event bus in the mod initializer, 
+        // since the Geyser API would not be loaded yet -
+        // so we register it in the server starting event provided by the Fabric API
+		ServerLifecycleEvents.SERVER_STARTING.register((server) -> {
+			GeyserApi.api().eventBus().register(this, this);
+		});
+		LOGGER.info("Example mod started!");
+	}
+
+    // here an event, we subscribe as usual with the @Subscribe annotation
+	@Subscribe
+	public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent eventad {
+		LOGGER.info("Geyser started!");
+	}
+}
+```
+
+Spigot/Paper plugin example:
+// TODO!
+```java
 ```
 
 #### [Command](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/command)
