@@ -17,7 +17,7 @@ The underlying Geyser API is steadily expanding, creating more and more opportun
 
 ### Which Geyser Extensions exist?
 At the moment, not a lot. This is due to Extensions being quite new, and that most stuff can already be done with "normal" plugins/mods.
-There is an [unofficial list](https://github.com/GeyserMC/GeyserExtensionList) of available extensions you can check out.
+There is an [official list](https://github.com/GeyserMC/GeyserExtensionList) of available extensions you can check out.
 
 ### Installing Extensions
 To install an extension, simply put the extension .jar file into Geyser's 'extensions' folder. Then, restart Geyser (or the server Geyser runs on).
