@@ -122,8 +122,8 @@ public class ExamplePlugin extends JavaPlugin implements EventRegistrar {
 
     // here an event, we subscribe as usual with the @Subscribe annotation
     @Subscribe
-    public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent eventad {
-        LOGGER.info("Geyser started!");
+    public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent event) {
+        getLogger().info("Geyser started!");
     }
 }
 ```
