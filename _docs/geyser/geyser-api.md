@@ -90,7 +90,7 @@ public class ExampleMod implements ModInitializer, EventRegistrar {
         // since the Geyser API would not be loaded yet -
         // so we register it in the server starting event provided by the Fabric API
 		ServerLifecycleEvents.SERVER_STARTING.register((server) -> {
-			GeyserApi.api().eventBus().register(this, this);
+			GeyserApi.api().eventBus().register(this, ExampleMod.class);
 		});
 		LOGGER.info("Example mod started!");
 	}
@@ -104,8 +104,32 @@ public class ExampleMod implements ModInitializer, EventRegistrar {
 ```
 
 Spigot/Paper plugin example:
-// TODO!
+
+1. In your plugin.yml, add the following lines:
+```yaml
+  depend: ["Geyser-Spigot"]
+```
+
+2. In your main class, implement the EventRegistrar interface and register the event bus in the onEnable method:
 ```java
+public class ExamplePlugin extends JavaPlugin implements EventRegistrar {
+    
+    @Override
+    public void onEnable(){
+        getLogger().info("Registering Geyser event bus!");
+        GeyserApi.api().eventBus().register(this, ExamplePlugin.class); // register your plugin & this class as a listener
+    }
+
+    // here an event, we subscribe as usual with the @Subscribe annotation
+    @Subscribe
+    public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent eventad {
+        LOGGER.info("Geyser started!");
+    }
+}
+```
+3. In case the '@Subscribe' annotation didn't work, you can also manually subscribe your method to the event bus:
+```java
+GeyserApi.api().eventBus().subscribe(this, GeyserEvent.class, this::yourMethod); // replace GeyserEvent.class with the event class you want to listen to
 ```
 
 #### [Command](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/command)
