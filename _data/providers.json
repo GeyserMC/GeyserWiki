@@ -128,7 +128,7 @@
     {
       "name": "BisectHosting",
       "url": "https://www.bisecthosting.com/",
-      "description": "Get Geyser as a plugin. Need to ask to open a UDP port, and set the Bedrock address in the config to the Java IP. To open a UDP port, you need to have a dedicated IP."
+      "description": "You must have a plan with a dedicated IP. Get Geyser as a plugin. In Geyser's config, uncomment the bedrock address field and set it to the public IP of your server (e.g. `address: 51.79.129.18`). Leave the port as `19132`. Under the home tab, select 'Enable UDP Network' and restart the server. See Bisect's [article](https://www.bisecthosting.com/clients/index.php?rp=/knowledgebase/193/How-to-install-Geyser-and-Floodgate-on-a-Minecraft-Java-server.html) for full instructions."
     },
     {
       "name": "Bloom.Host",
