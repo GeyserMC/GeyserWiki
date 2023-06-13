@@ -55,3 +55,7 @@ div.highlight {
 .highlight pre {
 	margin: 0;
 }
+
+main img {
+    max-width: 100%;
+}
