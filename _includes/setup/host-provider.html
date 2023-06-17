@@ -1,13 +1,11 @@
-<div class="search-container">
-	<select id="provider-select" class="form-select" onchange="selectProvider()">
-    <option value="">Select a provider</option>
-    {% for provider in site.data.providers.support %}
-      {% assign urlParts = provider.url | split: "/" %}
-      <option value="{{ provider.name }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
-    {% endfor %}
-  </select>
-</div>
-<div class="search-result-container mt-2"></div>
+<select id="provider-select" class="form-select" onchange="selectProvider()">
+  <option value="">Select a provider</option>
+  {% for provider in site.data.providers.support %}
+    {% assign urlParts = provider.url | split: "/" %}
+    <option value="{{ provider.name }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
+  {% endfor %}
+</select>
+<div id="search-result" class="mt-2"></div>
 
 <script>
   window.provider_data = {
@@ -22,12 +20,12 @@
   }
 
   function showSearchResult(provider) {
-    var searchResultContainer = document.querySelector(".search-result-container");
-    searchResultContainer.innerHTML = '<div class="search-result"><p>' + window.provider_data[provider] + '</p></div>';
+    var searchResultContainer = document.querySelector("#search-result");
+    searchResultContainer.innerHTML = window.provider_data[provider];
 
-    var selfHostOptionsContainer = document.getElementById('self-host-options');
-    var clone = selfHostOptionsContainer.cloneNode(true);
-    clone.style.display = 'flex';
-    searchResultContainer.appendChild(clone);
+    // var selfHostOptionsContainer = document.getElementById('self-host-options');
+    // var clone = selfHostOptionsContainer.cloneNode(true);
+    // clone.style.display = 'flex';
+    // searchResultContainer.appendChild(clone);
   }
 </script>
