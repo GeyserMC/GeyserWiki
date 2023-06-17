@@ -1,11 +1,13 @@
-<select id="provider-select" class="form-select" onchange="selectProvider()">
-  <option value="">Select a provider</option>
-  {% for provider in site.data.providers.support %}
-    {% assign urlParts = provider.url | split: "/" %}
-    <option value="{{ provider.name }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
-  {% endfor %}
-</select>
-<div id="search-result" class="mt-2"></div>
+<div class="mx-4 d-flex flex-column">
+  <select id="provider-select" class="form-select" onchange="selectProvider()">
+    <option value="">Select a provider</option>
+    {% for provider in site.data.providers.support %}
+      {% assign urlParts = provider.url | split: "/" %}
+      <option value="{{ provider.name }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
+    {% endfor %}
+  </select>
+  <div id="search-result" class="mt-2"></div>
+</div>
 
 <script>
   window.provider_data = {

@@ -6,7 +6,7 @@ title: Setup
     <a class="col btn btn-outline-primary" href="#" data-bs-toggle="tab" data-bs-target="#host-provider-options" type="button" role="tab" aria-controls="host-provider-options" aria-selected="false">Host Provider</a>
 </div>
 
-<div class="tab-content mt-2">
+<div class="tab-content mt-4">
   <div id="self-host-options" class="tab-pane fade" role="tabpanel">
     {% include setup/self-host.html %}
   </div>
