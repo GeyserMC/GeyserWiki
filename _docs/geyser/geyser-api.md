@@ -65,6 +65,16 @@ programmatically. <br>
 To use events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener and then subscribe to the events you want to listen to. 
 Extensions can use the @Subscribe annotation.
 
+Events are categorized into the following categories:
+- [Bedrock](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/bedrock): Events that are sent for each connecting Bedrock client, 
+for example the ClientEmoteEvent that is sent when a Bedrock player uses an emote - or the SessionLoginEvent that is sent when a Bedrock player logged in and is about to join a server.
+- [Java](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/java): Events that are sent for the java server, for example
+the ServerDefineCommandsEvent - it is fired when the Java sends the commands to show for Bedrock players.
+- [Connection](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/connection): Connection-related events, such as a ping event to return e.g. a custom MOTD.
+- [Lifecycle](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle): Events that are sent during Geyser's lifecycle, such as the loading of custom items, resource packs, or Geyser commands.
+
+To see all the events in the respective categories, click on the links above.
+
 ##### Examples:
 
 Each method that you want to subscribe to an event needs to be annotated with the @Subscribe annotation (from the GeyserMC events package).
@@ -78,37 +88,37 @@ public void onGeyserLoadResourcePacksEvent(GeyserLoadResourcePacksEvent event) {
 If you wish to listen to events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener first.
 Extensions do not need to do that - they are automatically registered, so a simple @Subscribe annotation is enough.
 
-Fabric mod example:
+**Fabric mod example:**
 ```java
 public class ExampleMod implements ModInitializer, EventRegistrar {
-    // mod logger
-	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
-
-	@Override
-	public void onInitialize() {
-        // we cannot directly register the event bus in the mod initializer, 
-        // since the Geyser API would not be loaded yet -
-        // so we register it in the server starting event provided by the Fabric API
-		ServerLifecycleEvents.SERVER_STARTING.register((server) -> {
-			GeyserApi.api().eventBus().register(this, ExampleMod.class);
-		});
-		LOGGER.info("Example mod started!");
-	}
-
+    public static final Logger LOGGER = LoggerFactory.getLogger("modid");
+    
+    @Override 
+    public void onInitialize() {
+        ServerLifecycleEvents.SERVER_STARTING.register((server) -> {
+            GeyserApi.api().eventBus().register(this, ExampleMod.class); // register your mod & this class as a listener
+        });
+        
+        LOGGER.info("Geyser is cool!");
+    }
+    
     // here an event, we subscribe as usual with the @Subscribe annotation
-	@Subscribe
-	public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent eventad {
-		LOGGER.info("Geyser started!");
-	}
+    @Subscribe 
+    public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent eventad {
+        LOGGER.info("Geyser started!");
+    }
 }
 ```
+Do note: We cannot directly register the event but in the mod initializer, since the Geyser API would not be loaded yet.
+Therefore, we register it in the server starting event provided by the Fabric API.
 
-Spigot/Paper plugin example:
+**Spigot/Paper plugin example:**
 
 1. In your plugin.yml, add the following lines:
 ```yaml
   depend: ["Geyser-Spigot"]
 ```
+This ensures that your plugin loads after Geyser has, so the Geyser API would be available.
 
 2. In your main class, implement the EventRegistrar interface and register the event bus in the onEnable method:
 ```java
@@ -129,7 +139,8 @@ public class ExamplePlugin extends JavaPlugin implements EventRegistrar {
 ```
 3. In case the '@Subscribe' annotation didn't work, you can also manually subscribe your method to the event bus:
 ```java
-GeyserApi.api().eventBus().subscribe(this, GeyserEvent.class, this::yourMethod); // replace GeyserEvent.class with the event class you want to listen to
+// replace GeyserEvent.class with the event class you want to listen to
+GeyserApi.api().eventBus().subscribe(this, GeyserEvent.class, this::yourMethod);
 ```
 
 #### [Command](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/command)
@@ -145,10 +156,20 @@ The item package contains classes and interfaces related to items in Geyser. You
 See [here](/geyser/custom-items) for detailed information on how to register custom items.
 
 #### [Network](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/network)
-The org.geysermc.geyser.api.network package contains basic information about the remote server via the 
+The network package contains basic information about the remote server via the 
 [RemoteServer](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/network/RemoteServer.java)
 interface, such as the server's IP address and port, and the protocol version of the remote server. Or the auth type.
 You can also get the port/IP that Geyser listens to via the [BedrockListener](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/network/BedrockListener.java) interface.
+
+#### [Pack](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/pack)
+The pack package contains classes and interfaces related to resource packs in Geyser. You can create custom resource packs and send them to individual sessions before they log in using the [SessionLoadResourcePacksEvent](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/event/bedrock/SessionLoadResourcePacksEvent.java).
+If you wish to send a resource pack to all sessions, you can use the [GeyserLoadResourcePacksEvent](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle/GeyserLoadResourcePacksEvent.java).
+
+Packs can be created using a [PackCodec](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/pack/PackCodec.java), such as the provided [PathPackCodec](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/pack/PathPackCodec.java).
+This allows you to load a Bedrock resource pack from a file path:
+```java
+ResourcePack pack = ResourcePack.create(PackCodec.path(path));
+```
 
 #### [Extension](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/extensions)
 This package provides the necessary components to create and manage extensions.

@@ -32,7 +32,7 @@ extension.yml:
 id: exampleid
 name: ExampleExtension
 main: org.geyser.extension.exampleid.ExampleExtension
-api: 1.0.0
+api: 2.1.1
 version: 1.0.0
 authors: [ExampleAuthor]
 ```
@@ -41,8 +41,8 @@ Explanations for the individual fields:
 - id: The id of the extension. Every extension needs to have their unique id - all lowercase letters. If you e.g. register a command for your extension, it will have the id as a prefix: e.g. '/exampleid command'.
 - name: The name of the extension.
 - main: The main class of your extension.
-- api: The api version your Extension targets.
-- authors: The author(s) of the extension. To add more than one entry, seperate entries with a comma.
+- api: The Geyser api version your extension targets.
+- authors: The author(s) of the extension. To add more than one entry, separate entries with a comma.
 
 The main class, the entrypoint for the extension, needs to [implement the 'Extension' interface provided by Geyser](https://github.com/GeyserMC/GeyserExampleExtension/blob/47614575a69bddecb241676215f3c9f9113db304/src/main/java/org/geyser/extension/exampleid/ExampleExtension.java#L10). 
 That way, Geyser recognizes the extension, and gives you access to important methods - such as 'logger()', to get your extensions logger. <br>
@@ -100,13 +100,13 @@ public void onDefineCommands(GeyserDefineCommandsEvent event) {
     event.registerCommand(command);
 }
 ```
-If everything went right, you should be able to execute the command in-game by running "/extesionid <command>" - in our case, "/exampleid examplecommand".
-Here, it would send "Hello World" to the source that executed the command.
-Since we also set aliases, you can also run "/exampleid example" or "/exampleid ex" for the same command.
-To provide args, simple run "/exampleid examplecommand <args>".
+If everything went right, you should be able to execute the command in-game by running "/extesionid [command]" - in our case, "/exampleid examplecommand".
+Here, it would send "Hello World" to the source that ran the command.
+Since we also set aliases, you could also run "/exampleid example" or "/exampleid ex" for the same command.
+To provide args, simple run "/exampleid examplecommand [args]" - replacing [args] with the arguments you want to pass to the command.
 
 ### Listening to events
-See [here](/geyser/geyser-api#events) for documentation. 
+See [here](/geyser/geyser-api#events) for documentation. You do not need to register the event listener, Geyser will do that for you.
 
 ---
 
