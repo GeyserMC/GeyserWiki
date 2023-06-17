@@ -3,13 +3,19 @@
     <option value="">Select a provider</option>
     {% for provider in site.data.providers.support %}
       {% assign urlParts = provider.url | split: "/" %}
-      <option value="{{ provider.description }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
+      <option value="{{ provider.name }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
     {% endfor %}
   </select>
 </div>
 <div class="search-result-container mt-2"></div>
 
 <script>
+  window.provider_data = {
+    {% for provider in site.data.providers.support %}
+      "{{ provider.name }}": {{ site.data.providers.description_templates[provider.description_template] | append: " " | append: provider.description | markdownify | strip | jsonify }},
+    {% endfor %}
+  }
+
   function selectProvider() {
     var provider = document.getElementById("provider-select").value;
     showSearchResult(provider);
@@ -17,7 +23,7 @@
 
   function showSearchResult(provider) {
     var searchResultContainer = document.querySelector(".search-result-container");
-    searchResultContainer.innerHTML = '<div class="search-result"><p>' + provider + '</p></div>';
+    searchResultContainer.innerHTML = '<div class="search-result"><p>' + window.provider_data[provider] + '</p></div>';
 
     var selfHostOptionsContainer = document.getElementById('self-host-options');
     var clone = selfHostOptionsContainer.cloneNode(true);
