@@ -1,0 +1,27 @@
+<div class="search-container">
+	<select id="provider-select" class="form-select" onchange="selectProvider()">
+    <option value="">Select a provider</option>
+    {% for provider in site.data.providers.support %}
+      {% assign urlParts = provider.url | split: "/" %}
+      <option value="{{ provider.description }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
+    {% endfor %}
+  </select>
+</div>
+<div class="search-result-container mt-2"></div>
+
+<script>
+  function selectProvider() {
+    var provider = document.getElementById("provider-select").value;
+    showSearchResult(provider);
+  }
+
+  function showSearchResult(provider) {
+    var searchResultContainer = document.querySelector(".search-result-container");
+    searchResultContainer.innerHTML = '<div class="search-result"><p>' + provider + '</p></div>';
+
+    var selfHostOptionsContainer = document.getElementById('self-host-options');
+    var clone = selfHostOptionsContainer.cloneNode(true);
+    clone.style.display = 'flex';
+    searchResultContainer.appendChild(clone);
+  }
+</script>

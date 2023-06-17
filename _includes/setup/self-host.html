@@ -1,0 +1,98 @@
+<div class="btn-group w-100" role="tablist" aria-label="Self Host Options">
+	<a class="btn btn-primary" href="#" data-bs-toggle="tab" data-bs-target="#spigot-option" type="button" role="tab" aria-controls="spigot-option" aria-selected="false">Spigot/Paper</a>
+	<a class="btn btn-primary" href="#" data-bs-toggle="tab" data-bs-target="#proxy-option" type="button" role="tab" aria-controls="proxy-option" aria-selected="false">Proxy Servers</a>
+	<a class="btn btn-primary" href="#" data-bs-toggle="tab" data-bs-target="#standalone-option" type="button" role="tab" aria-controls="standalone-option" aria-selected="false">Standalone</a>
+	<a class="btn btn-primary" href="#" data-bs-toggle="tab" data-bs-target="#floodgate-option" type="button" role="tab" aria-controls="floodgate-option" aria-selected="false">Floodgate</a>
+</div>
+
+<div class="tab-content mt-2">
+  <div id="spigot-option" class="tab-pane fade" role="tabpanel">
+    <h2>Spigot/Paper Setup</h2>
+    <ol>
+    <li>Download Geyser <a href="https://geysermc.org/download">here</a>. Make sure you download the Spigot/Paper Geyser
+      plugin.</li>
+    <li>Put the Geyser jar file in your plugins folder and start up the server.</li>
+    <li>Besides the `port` entry in the *Bedrock Section* of Geyser's `config.yml`, note:
+      <ul>
+      <li>`address: 0.0.0.0` - The IP address that will listen for connections. There is no reason to change this.
+      </li>
+      <li>`port: 19132` - The port Bedrock players will use to connect. If the option `clone-remote-port` is set to
+        true, this port is ignored, and you'll have to use the same port on bedrock as you would on Java to connect.
+      </li>
+      </ul>
+    </li>
+    <li>The *remote* section in the `config.yml` determines how the Java server will connect to the Bedrock server. The
+      main options are:
+      <ul>
+      <li>`address: localhost` - The IP address to connect to. Unless you are running BungeeCord or some other kind of
+        server that proxies the connection, this should be left as `localhost`.</li>
+      <li>`port: 25565` - The port to connect to. If the option `clone-remote-port` is set to true, this port is
+        ignored, and you'll have to use the same port on bedrock as you would on Java to connect.</li>
+      <li>`auth-type: offline` - How Geyser should authenticate with the server. By default, Geyser is set to
+        authenticate offline. If you want to use online mode, set this to `online`.</li>
+      </ul>
+    </li>
+    <li>For the most part, that is the basic setup of Geyser. For more advanced configurations, please read our full
+      documentation <a href="https://github.com/GeyserMC/Geyser/wiki">here</a>.</li>
+    </ol>
+  </div>
+
+  <div id="proxy-option" class="tab-pane fade" role="tabpanel">
+    <h2>Proxy Servers Setup</h2>
+    <ol>
+    <li>Download Geyser <a href="https://geysermc.org/download">here</a> for the platform your server runs on. See the
+      <a href="/geyser/faq/#which-plugin-version-of-geyser-do-i-need">FAQ</a> if you're confused about which build to
+      download.</li>
+    <li>Put the Geyser jar file in your plugins folder and start up the server.</li>
+    <li>The <em>remote</em> section in the <code>config.yml</code> determines which Java proxy the Bedrock players join.
+      The proxy then configures which server the players are sent to.
+      <ul>
+      <li><code>address: auto</code> - Leaving this at auto is recommended because it means that Geyser configures the
+        proxy's IP, port, and auth-type itself.</li>
+      <li><code>port: 25565</code> - This should be the port of the Java server. By default, it is set to 25565. Your
+        hosting provider may have assigned a different port to your proxy, so set that here.</li>
+      </ul>
+    </li>
+    <li>For further Geyser config changes, like allowing Bedrock players to build on the nether roof, refer to <a
+      href="/geyser/understanding-the-config/">the config help article</a>.</li>
+    </ol>
+  </div>
+
+  <div id="standalone-option" class="tab-pane fade" role="tabpanel">
+    <h2>Standalone Setup</h2>
+    <ol>
+    <li>Download <a href="https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone">Geyser Standalone</a>.</li>
+    <li>Create a new folder for Geyser, and drop the jar in there.</li>
+    </ol>
+
+    <h3>GUI Setup (Recommended)</h3>
+    <ol>
+    <li>Double-click the jar file and all the necessary files for Geyser will be created.</li>
+    <li>
+      Configure options such as the server you want to join in the Geyser config. A description of all options of the config can be found on the <a href="/geyser/understanding-the-config/">Understanding the Config</a> page.
+    </li>
+    <li>Stop the current instance of Geyser and re-run it.</li>
+    </ol>
+
+    <h3>Console Setup</h3>
+    <ol>
+    <li>Create a new bat or startup script, similar to the one you'd use for a Spigot or Paper server, and take a look
+      at <a href="/geyser/creating-a-startup-script/">this</a> page for what to put into it.</li>
+    <li>Run the startup script/bat, and all the necessary files for Geyser will be created.</li>
+    <li>Configure options such as the server you want to join in the Geyser config. A description of all options of the
+      config can be found on the <a href="/geyser/understanding-the-config/">Understanding the Config</a> page.</li>
+    <li>Stop the current instance of Geyser and re-run it.</li>
+    </ol>
+  </div>
+
+  <div id="floodgate-option" class="tab-pane fade" role="tabpanel">
+    {% include setup/floodgate.html %}
+  </div>
+</div>
+
+<!-- This is ugly but not sure how to do it without duplicating it a bunch -->
+<ul>
+  <li><a href="https://wiki.geysermc.org/geyser/setup/">Full Geyser setup page</a></li>
+  <li><a href="https://wiki.geysermc.org/geyser/current-limitations/">Current Limitations</a></li>
+  <li><a href="https://wiki.geysermc.org/geyser/common-issues/">Common Issues</a></li>
+</ul>
