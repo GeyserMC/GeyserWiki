@@ -24,8 +24,8 @@
           url: "geyser/fixing-unable-to-connect-to-world/"
     - title: Understanding the Config
       url: "geyser/understanding-the-config/"
-    - title: Standalone Command Line Arguments
-      url: "geyser/standalone-command-line-arguments/"
+    - title: Geyser Command Line Arguments and System Properties
+      url: "geyser/geyser-command-line-arguments-and-system-properties/"
     - title: Creating a Startup Script
       url: "geyser/creating-a-startup-script/"
     - title: Commands
