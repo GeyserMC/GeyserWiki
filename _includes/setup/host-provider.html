@@ -1,4 +1,4 @@
-<div class="mx-4 d-flex flex-column">
+<div class="mx-4 mb-4 d-flex flex-column">
   <select id="provider-select" class="form-select" onchange="selectProvider()">
     <option value="">Select a provider</option>
     {% for provider in site.data.providers.support %}
@@ -17,17 +17,12 @@
   }
 
   function selectProvider() {
-    var provider = document.getElementById("provider-select").value;
-    showSearchResult(provider);
+    var provider = document.getElementById("provider-select").value
+    showSearchResult(provider)
   }
 
   function showSearchResult(provider) {
-    var searchResultContainer = document.querySelector("#search-result");
-    searchResultContainer.innerHTML = window.provider_data[provider];
-
-    // var selfHostOptionsContainer = document.getElementById('self-host-options');
-    // var clone = selfHostOptionsContainer.cloneNode(true);
-    // clone.style.display = 'flex';
-    // searchResultContainer.appendChild(clone);
+    var searchResultContainer = document.querySelector("#search-result")
+    searchResultContainer.innerHTML = provider in window.provider_data ? '<div class="alert alert-info no-p-margin mb-0" role="alert">' + window.provider_data[provider] + '</div>' : ""
   }
 </script>
