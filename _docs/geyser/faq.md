@@ -73,7 +73,17 @@ If there is a prefix on Floodgate players, you must include the prefix in the na
 Example: `/tp ".<bedrock_username>"`
 
 ## How do I add players to the whitelist when using Floodgate?
-There are three ways you can do this. The first way is to use Floodgate's built-in whitelist command, `/fwhitelist add <bedrock_username>`. The second way is to turn off the whitelist using `/whitelist off`, then get the Geyser player to join, then run `/whitelist add ".<bedrock_username>"`, then turn the whitelist back on using `/whitelist on`. (If using this method for a Bedrock account linked to an existing, whitelisted Java account, there is no need to _also_ whitelist the Bedrock account; you may link the accounts then immediately turn the whitelist back on.) The third way is to add the player's UUID as given by Floodgate to the whitelist.json file and then run `/whitelist reload`.
+
+There are three ways you can do this.
+
+1. Use Floodgate’s built-in whitelist command: `/fwhitelist add <bedrock_username>`. This will only work if the player has joined any Geyser server already.
+
+2. Turn off the whitelist using `/whitelist off`, then get the Geyser player to join. After that, run `/whitelist add ".<bedrock_username>"`, and finally, turn the whitelist back on using `/whitelist on`. 
+When using Local Linking: If you're linking a Bedrock account to an existing whitelisted Java account, you don't need to whitelist the Bedrock account separately. You can link the accounts and immediately turn the whitelist back on.
+
+3. Add the player’s UUID, as given by Floodgate, to the `whitelist.json` file. Then, run `/whitelist reload` to update the whitelist.
+
+Choose the method that suits your preferences and server setup.
 
 ## How do I find a player's UUID without them joining when using Floodgate?
 Use [this page.](https://uuid.kejona.dev/) If this doesn't work, then try this method:

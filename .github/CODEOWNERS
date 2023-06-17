@@ -1,3 +1,4 @@
-_docs/ @GeyserMC/Moderators @GeyserMC/WikiAdmin @GeyserMC/Triage @GeyserMC/GeyserTeam
-_data/ @GeyserMC/Moderators @GeyserMC/WikiAdmin @GeyserMC/Triage @GeyserMC/GeyserTeam
 * @GeyserMC/WikiAdmin @GeyserMC/GeyserTeam
+/_docs/ @GeyserMC/Moderators @GeyserMC/WikiAdmin @GeyserMC/Triage @GeyserMC/GeyserTeam
+/_data/ @GeyserMC/Moderators @GeyserMC/WikiAdmin @GeyserMC/Triage @GeyserMC/GeyserTeam
+*.md @GeyserMC/Moderators @GeyserMC/WikiAdmin @GeyserMC/Triage @GeyserMC/GeyserTeam
