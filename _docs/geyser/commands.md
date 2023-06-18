@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Commands
-permalink: /geyser/commands/
 ---
 
 # Commands and Permissions

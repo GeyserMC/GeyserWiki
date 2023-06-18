@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Geyser Setup
-permalink: /geyser/setup/
 ---
 
 # Setup
@@ -24,19 +22,19 @@ If you are running a server, it is highly recommended you use one of the plugin 
 ## Prerequisites
 - The server you are connecting to has to support the latest version of Minecraft Java Edition (at this time this is Minecraft {{ site.data.versions.java }})
 The server itself does not have to be the latest version but does have to allow connections. If you're running the server on an older version, you can use the plugin [ViaVersion](https://www.spigotmc.org/resources/19254/), but do note that only **1.13.2 and any version above is officially supported**. For older versions, use Geyser Standalone, or Geyser on a proxy like Velocity or BungeeCord.
-- The device running Geyser must support Java 16 or later. If you need help installing or updating, please see [PaperMC's Java update page](https://paper.readthedocs.io/en/latest/java-update/index.html). If you're running a version of Paper that does not support Java 16 or later, you can add the flag `-DPaper.ignoreJavaVersion=true` to your startup Java arguments to allow Paper to run on Java 16. You can run Geyser standalone on another device if a server software cannot be updated to use Java 16.
+- The device running Geyser must support Java 16 or later. If you need help installing or updating, please see [PaperMC's Java update page](https://docs.papermc.io/misc/java-install). If you're running a version of Paper that does not support Java 16 or later, you can add the flag `-DPaper.IgnoreJavaVersion=true` to your startup Java arguments to allow Paper to run on Java 16. You can run Geyser standalone on another device if a server software cannot be updated to use Java 16.
 - If you are connecting to an online mode Java server, a paid Java account is required. If you are running the server, you can bypass this requirement for your server with [Floodgate](/floodgate/).
 - Your Bedrock client has to be a supported version - at this time that is Bedrock version(s) {{ site.data.versions.bedrock }}.
 - If you are running the server, you need to have a UDP port opened. See below for more instructions.
-- Currently, Geyser does not support key signing. To disable it (on servers running version 1.19 and higher), follow these instructions: Spigot, Paper, & all forks: Set `enfore-secure-profile: false` in the `server.properties` file. On BungeeCord: Set `enforce_secure_profile: false` in your `config.yml`. Using Velocity: set `force-key-authentication = false` in your `velocity.toml`. This will disable chat signing, which Geyser currently does not support. Be careful though: This will allow Java players who bypass chat signing with mods such as NoChatReports to join the server, and make them unreportable. For more info on chat reporting, see this [article](https://gist.github.com/kennytv/ed783dd244ca0321bbd882c347892874).
+- In order for Bedrock players to chat (1.19.3+) or join (1.19.1/1.19.2), you need to disable chat signing. More information about that can be read on the [chat signing page](/geyser/secure-chat/).
 
 ## Plugin Setup
 1. Read the Prerequisites above, especially if you are setting up Geyser for an older Minecraft Java Edition version!
 2. To make sure you are using the easiest way to set up Geyser, please check whether your hosting provider features [built-in Geyser](/geyser/supported-hosting-providers/#built-in-geyser). If you are not using a hosting provider, or your hosting provider is not featured on said list, continue with the steps below. 
-3. If 2. does not apply: download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/Geyser/job/master/) depending on what platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download. Keep in mind: Geyser-Spigot.jar is for Spigot and its forks, such as PaperMC or Purpur. 
+3. If 2. does not apply: download Geyser [here](https://geysermc.org/download) for the platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download.
 4. Put the Geyser jar file in your plugins folder and start up the server.
 5. Port-forwarding: 
- - If you are using a hosting provider, you will likely need to change your Bedrock port in `config.yml`. Information on your hosting provider might be available on the [Supported Hosting Providers](/geyser/supported-hosting-providers/) page. If there is no information on your hosting provider and you are unable to assign/open ports yourself, try enabling `clone-remote-port` in Geyser's `config.yml`file and connecting with the same IP/port as you would with Java Edition.
+ - If you are using a hosting provider, you will likely need to change your Bedrock port in `config.yml`. Information on your hosting provider might be available on the [Supported Hosting Providers](/geyser/supported-hosting-providers/) page. If there is no information on your hosting provider and you are unable to assign/open ports yourself, try enabling `clone-remote-port` in Geyser's `config.yml` file and connecting with the same IP/port as you would with Java Edition.
  - If not using a hosting provider, you will need to use port forwarding to allow people outside your LAN to connect. You want to port forward 19132 UDP, instructions to do that for most routers can be found [here](https://www.lifewire.com/how-to-port-forward-4163829). If you are trying to join from the same LAN, the server should show up in the friends tab.
  - To check whether it is working correctly, you can use the `geyser connectiontest [yourIP]:[yourPort]` command in your server console to check if the server is reachable from the outside.
  - _Restart your server if you edited your config! Simply reloading will not work._
@@ -62,7 +60,7 @@ The Bedrock clients, like Java clients, should connect to the proxy server, and 
 
 #### Setup:
 1. Make sure Velocity/BungeeCord is up-to-date. The proxy can be newer than the servers behind it (also called backend servers). If you're running the backend servers on an older version then the current {{ site.data.versions.java }}, you can use the plugin [ViaVersion](https://www.spigotmc.org/resources/19254/). It is recommended to have the plugin on all backend servers where necessary, instead to having it on the proxy. 
-2. Download a jar of Geyser from the [build server](https://ci.opencollab.dev/job/Geyser/job/master/) depending on what platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download. 
+2. Download Geyser [here](https://geysermc.org/download) for the platform your server runs on. See the [FAQ](/geyser/faq/#which-plugin-version-of-geyser-do-i-need) if you're confused about which build to download. 
 3. Put the Geyser jar file in your plugins folder and start up the server.
 4. Port-forwarding:
 - If you are using a hosting provider, you will likely need to change your Bedrock port in the `config.yml` file. Information on your hosting provider might be available on the [Supported Hosting Providers](/geyser/supported-hosting-providers/) page. If your hosting provider is not listed there, and you are unable to port forward the default 19132 port on UDP, try setting `clone-remote-port` to true and connecting with the Java IP and port. Any port will work, as long as the UDP protocol is not blocked or already in use by the query feature (see `server.properties`) or another mod. 
@@ -86,7 +84,7 @@ Please read [Standalone Setup](/geyser/standalone/) to set up Geyser Standalone.
 Unlike Minecraft Java Edition, Bedrock Edition runs on port 19132 on the UDP protocol. When port forwarding, make sure to allocate to 19132 UDP or another UDP port. For many server hosting providers, you will simply need to change your Bedrock listening port (see [here](/geyser/supported-hosting-providers/) for a list of supported providers).
 
 ## Setup Videos
-Setup tutorials in a variety of languages.
+Setup tutorials in a variety of languages. Do note: Some might be outdated - but the written guide above is up-to-date.
 
 ### English
 **Connect to Java servers from Bedrock Edition! | GeyserMC Proxy Tutorial by [raimuakuna](https://www.youtube.com/channel/UCIMZsNCD_-prDETwRypAqmQ)**

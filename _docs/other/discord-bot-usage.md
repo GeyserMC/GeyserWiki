@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Discord Bot Usage
-permalink: /other/discord-bot-usage/
 ---
 
 Our discord bot provides some very useful toos to debug/issue track your server. We will go in-depth on how to use the bot commands and its tools.

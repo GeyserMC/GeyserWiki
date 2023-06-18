@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Understanding the Config
-permalink: /geyser/understanding-the-config/
 ---
 
 This page covers basic information about the Geyser config and what each option does. Though they are explained in the configuration itself, this explains what each option does in more detail.
@@ -112,7 +110,7 @@ saved-user-logins:
 
 **`add-non-bedrock-items`**: Whether to add (at this time, only) the furnace minecart as a separate item in the game, which normally does not exist in Bedrock Edition. This should only need to be disabled if using a proxy that does not use the "transfer packet" style of server switching. If this is disabled, furnace minecart items will be mapped to hopper minecart items. This option requires a restart of Geyser in order to change its setting.
 
-**`above-nether-bedrock-building`**: Bedrock prevents building and displaying blocks above Y127 in the Nether - enabling this config option works around that by changing the Nether dimension ID to the End ID. The main downside to this is that the sky will resemble that of the End sky in the Nether, but ultimately it's the only way for this feature to work.
+**`above-bedrock-nether-building`**: Bedrock prevents building and displaying blocks above Y127 in the Nether - enabling this config option works around that by changing the Nether dimension ID to the End ID. The main downside to this is that the sky will resemble that of the End sky in the Nether, but ultimately it's the only way for this feature to work.
 
 **`force-resource-packs`**: Force clients to load all resource packs if there are any. If set to false, it allows the user to disconnect from the server if they don't want to download the resource packs.
 
@@ -121,6 +119,8 @@ saved-user-logins:
 **`log-player-ip-addresses`**: Whether player IP addresses will be logged by the server.
 
 **`notify-on-new-bedrock-update`**: Whether to alert the console and operators that a new Geyser version is available that supports a Bedrock version that this Geyser version does not support. It's recommended to keep this option enabled, as many Bedrock platforms auto-update.
+
+**`unusable-space-block`**: Which item to use to mark unavailable slots in a Bedrock player inventory. Examples of this are the 2x2 crafting grid while in creative, or custom inventory menus with sizes different from the usual 3x9. A barrier block is the default item (minecraft:barrier is therefore the default value). Takes any Java Minecraft identifier, e.g. "minecraft:apple".
 
 ## Metrics
 

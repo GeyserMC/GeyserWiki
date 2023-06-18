@@ -1,7 +1,5 @@
 ---
-layout: page
 title: GeyserOptionalPack
-permalink: /other/geyseroptionalpack/
 ---
 # [Download here](https://ci.opencollab.dev/job/GeyserMC/job/GeyserOptionalPack/job/master/lastSuccessfulBuild/artifact/GeyserOptionalPack.mcpack)
 
@@ -9,7 +7,6 @@ GeyserOptionalPack is a Bedrock resource pack that adds more features to Geyser 
 
 - Armor stand poses and arm/baseplate visibility
 - Illusioner texture
-- Iron golem cracked texture
 - Missing particles, like sweep attack
 - Spectral arrow entity texture
 

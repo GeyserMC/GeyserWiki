@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Custom items with Geyser
-permalink: /geyser/custom-items/
 ---
 
 # Custom items with Geyser

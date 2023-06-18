@@ -12,9 +12,9 @@
       url: "geyser/standalone/"
       children:
         - title: Termux (Android)
-          url: "geyser/setup/#termux-android"
+          url: "geyser/standalone/#termux-android"
         - title: NewTerm 2 (iOS)
-          url: "geyser/setup/#newterm-2-ios"
+          url: "geyser/standalone/#newterm-2-ios"
     - title: FAQ
       url: "geyser/faq/"
     - title: Common Issues
@@ -87,6 +87,8 @@
   links:
     - title: "GeyserOptionalPack"
       url: "other/geyseroptionalpack/"
+    - title: "Hurricane"
+      url: "other/hurricane/"
     - title: "GeyserConnect"
       url: "other/geyserconnect/"
     - title: "Test Server"

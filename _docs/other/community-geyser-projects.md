@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Community Geyser Projects
-permalink: /other/community-geyser-projects/
 ---
 
 Below is a list of community-compiled plugins, extensions and tools that work with Geyser. 
@@ -9,13 +7,6 @@ Below is a list of community-compiled plugins, extensions and tools that work wi
 Please note that, as these are unofficial, the main Geyser Discord will likely be unable to help with any bugs or issues you run into. Please check the linked pages for their support systems.
 
 If you wish to add your own plugin to this list, please reach out in the #development channel of Geyser first!
-
-## Awesome Geyser Resources
-A list of other utilities that are useful with Geyser or for developing Geyser-like projects. Contains plugins, standalone resources, and Geyser Extensions.
-
-* [GitHub](https://github.com/bundabrg/awesome-geyser-resources#geyser-extensions)
-
-Maintainer: [bundabrg](https://github.com/bundabrg)
 
 ## BedrockFormShop
 
@@ -25,13 +16,6 @@ A Spigot shop plugin that uses Bedrock forms.
 
 Creator: [KejonaMC](https://github.com/kejonaMC)
 
-## BedrockSkinUtility
-This is a Fabric mod that allows you to view Bedrock capes from Java.
-
-* [GitHub](https://github.com/Camotoy/BedrockSkinUtility)
-
-Creator: [Camotoy](https://github.com/Camotoy)
-
 ## Bedrock Player Manager for Floodgate
 A Spigot plugin that is able to run certain commands when a Bedrock player joins, or have Bedrock players able to bypass the anticheat, etc. 
 
@@ -39,20 +23,27 @@ A Spigot plugin that is able to run certain commands when a Bedrock player joins
 
 Creator: ofunny
 
+## BedrockSkinUtility
+This is a Fabric mod that allows you to view Bedrock capes from Java.
+
+* [GitHub](https://github.com/Camotoy/BedrockSkinUtility)
+
+Creator: [Camotoy](https://github.com/Camotoy)
+
+## CreeperNation Skin API
+
+An SkinAPI that displays Java or Bedrock skins based on the UUID or username.
+
+* [Website](https://docs.creepernation.net/skinapi)
+
+Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
+
 ## CrossplatForms
 A Spigot, BungeeCord, and Velocity plugin to create custom Bedrock Edition forms and inventory menus through configurations.
 * [Spigot page](https://www.spigotmc.org/resources/101043/)
 * [GitHub](https://github.com/kejonaMC/CrossplatForms)
 
 Creators: [Konicai](https://github.com/Konicai), [Jens](https://github.com/Jens-Co)
-
-## CreeperNation Skin API
-
-An API to show Java or Bedrock skins depending on UUID or username
-
-* [Website](https://api-docs.creepernation.net)
-
-Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
 
 ## CustomCommandPrefix
 A Spigot plugin that allows users to enter commands starting with `.`, to work around Xbox achievements being disabled.
@@ -81,12 +72,6 @@ Creator: [Camotoy](https://github.com/Camotoy)
 Plugin that blocks Java players from joining your Geyser server, so you can have a Bedrock only server that can use Spigot plugins.
 
 * [GitHub](https://github.com/kejonaMC/GeyserBlockJavaPlayers)
-
-Creator: [Camotoy](https://github.com/Camotoy)
-
-## GeyserHacks
-Various workarounds for Geyser players that modify the server in order to achieve their goal.
-* [GitHub](https://github.com/Camotoy/GeyserHacks)
 
 Creator: [Camotoy](https://github.com/Camotoy)
 
@@ -126,6 +111,6 @@ Creator: [Vincss](https://github.com/vincss)
 
 ## TydiumCraft Skin API
 An API makes it easier for your Bedrock skin to be rendered and outputted!
-* [Website](https://tydiumcraft.net/docs/skinapi)
+* [Website](https://tydiumcraft.net/)
 
-Creators: [Tydium](https://github.com/Tydium), [higbead](https://github.com/higbead), [gibbon27](https://github.com/gibbon27)
+Creators: [Tydium](https://github.com/Tydium)
