@@ -1,7 +1,7 @@
+{% assign all_providers = site.data.providers.support | concat: site.data.providers.built_in | sort: 'name' %}
 <div class="mb-4">
   <select id="provider-select" class="form-select" onchange="selectProvider()">
     <option value="">Select a provider</option>
-    {% assign all_providers = site.data.providers.support | concat: site.data.providers.built_in | sort: 'name' %}
     {% for provider in all_providers %}
       {% assign urlParts = provider.url | split: "/" %}
       <option value="{{ provider.name }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
@@ -12,7 +12,6 @@
 
 <script>
   window.provider_data = {
-    {% assign all_providers = site.data.providers.support | concat: site.data.providers.built_in | sort: 'name' %}
     {% for provider in all_providers %}
       "{{ provider.name }}": {{ site.data.providers.description_templates[provider.description_template] | append: " " | append: provider.description | markdownify | strip | jsonify }},
     {% endfor %}
