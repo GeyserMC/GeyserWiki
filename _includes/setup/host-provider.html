@@ -11,12 +11,12 @@
 </div>
 
 <script>
-window.provider_data = {
-  {% assign all_providers = site.data.providers.support | concat: site.data.providers.built_in | sort: 'name' %}
-  {% for provider in all_providers %}
-    "{{ provider.name }}": {{ site.data.providers.description_templates[provider.description_template] | append: " " | append: provider.description | markdownify | strip | jsonify }},
-  {% endfor %}
-}
+  window.provider_data = {
+    {% assign all_providers = site.data.providers.support | concat: site.data.providers.built_in | sort: 'name' %}
+    {% for provider in all_providers %}
+      "{{ provider.name }}": {{ site.data.providers.description_templates[provider.description_template] | append: " " | append: provider.description | markdownify | strip | jsonify }},
+    {% endfor %}
+  }
 
   function selectProvider() {
     var provider = document.getElementById("provider-select").value
