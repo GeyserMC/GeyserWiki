@@ -7,20 +7,20 @@ This page outlines how to include the dependency for the Geyser API, and how to 
 
 #### Where can I use the Geyser API?
 You could use the Geyser API in:
-- a plugin for Spigot/Paper, Velocity, Sponge, BungeeCord, etc.
-- a mod for Fabric/Forge
-- a Geyser Extension
+- A plugin for Paper/Spigot, Velocity, Waterfall/BungeeCord, etc.
+- A mod for Fabric or Forge
+- A Geyser Extension
 
 ### Accessing the Geyser API
 See [here](/geyser/using-geyser-or-floodgate-as-a-dependency) for how to include the Geyser API in your project.
 
 ### Documentation
 
-The Geyser API offers events to subscribe to, or information on whether a player is joining through Geyser, and gives you the ability to e.g. register custom items 
+The Geyser API offers events to subscribe to, or information on whether a player is joining through Geyser, and gives you the ability to enhance what is possible with Geyser (i.e. register custom items).
 (soon, blocks and entities too).
 It can be used easily in Geyser Extensions, see [here](/other/extensions) for details on those.
 
-Quick overview:
+**Quick overview:**
 
 Note: To see full, detailed documentation, see the linked sources with javadocs.
 
@@ -28,7 +28,7 @@ Note: To see full, detailed documentation, see the linked sources with javadocs.
 The GeyserApi interface serves as a central access point to various functionalities provided by the Geyser API, providing methods to e.g. interact with player connections.
 It extends the [BaseAPI](https://github.com/GeyserMC/api/blob/master/base/src/main/java/org/geysermc/api/GeyserApiBase.java) interface, which provides basic information about individual players.
 
-The class GeyserAPI is the base class of the API and you need to use it to access any part of the API.<br>
+The class GeyserApi is the base class of the API and you need to use it to access any part of the API.<br>
 To access it, you simply type:
 ```java
 GeyserApi.api();
@@ -112,7 +112,7 @@ public class ExampleMod implements ModInitializer, EventRegistrar {
 Do note: We cannot directly register the event but in the mod initializer, since the Geyser API would not be loaded yet.
 Therefore, we register it in the server starting event provided by the Fabric API.
 
-**Spigot/Paper plugin example:**
+**Paper/Spigot plugin example:**
 
 1. In your plugin.yml, add the following lines:
 ```yaml
@@ -127,7 +127,7 @@ public class ExamplePlugin extends JavaPlugin implements EventRegistrar {
     @Override
     public void onEnable(){
         getLogger().info("Registering Geyser event bus!");
-        GeyserApi.api().eventBus().register(this, ExamplePlugin.class); // register your plugin & this class as a listener
+        GeyserApi.api().eventBus().register(this, this); // register your plugin & this class as a listener
     }
 
     // here an event, we subscribe as usual with the @Subscribe annotation
@@ -137,7 +137,7 @@ public class ExamplePlugin extends JavaPlugin implements EventRegistrar {
     }
 }
 ```
-3. In case the '@Subscribe' annotation didn't work, you can also manually subscribe your method to the event bus:
+3. If you want to provide your event with a consumer, rather than annotating it, you can also manually subscribe your method to the event bus:
 ```java
 // replace GeyserEvent.class with the event class you want to listen to
 GeyserApi.api().eventBus().subscribe(this, GeyserEvent.class, this::yourMethod);

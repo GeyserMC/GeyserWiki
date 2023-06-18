@@ -16,7 +16,7 @@ Extensions can fully utilize the Geyser API to add additional functionality to G
 The underlying Geyser API is steadily expanding, creating more and more opportunities.
 
 ### Which Geyser Extensions exist?
-At the moment, not a lot. This is due to Extensions being quite new, and that most stuff can already be done with "normal" plugins/mods.
+At the moment, extensions are still a new system, so there is only a small list of known extensions for Geyser. However, new extensions are always being created!
 There is an [official list](https://github.com/GeyserMC/GeyserExtensionList) of available extensions you can check out.
 
 ### Installing Extensions
@@ -51,7 +51,7 @@ To see all the methods provided by that interface, see [here](https://github.com
 If you wish to register custom items, global resource packs (or soon, custom blocks and entities), you would need to subscribe to the event using the @Subscribe annotation, 
 and register them in the event. You can find an example for custom items [here](/geyser/custom-items/#geyser-extensions).
 
-The bulk of your code would go into the PostInitializeEvent, when Geyser is ready to accept & handle players. See below for an example:
+The bulk of your code would go into the `GeyserPostInitializeEvent`, when Geyser is ready to accept & handle players. See below for an example:
 
 ```java
 @Subscribe
@@ -61,7 +61,7 @@ public void onPostInitialize(GeyserPostInitializeEvent event) {
 }
 ```
 
-To build your extension, run gradle build task, and install the extension.
+To build your extension, run Gradle build task, and install the extension.
 
 ### Creating commands with Geyser Extensions
 To create a command, you would need to use the "Commands" package in the Geyser API. Brief rundown:
@@ -97,15 +97,15 @@ To register the command, you would need to subscribe to the GeyserDefineCommands
 ```java
 @Subscribe
 public void onDefineCommands(GeyserDefineCommandsEvent event) {
-    event.registerCommand(command);
+    event.register(command);
 }
 ```
-If everything went right, you should be able to execute the command in-game by running "/extesionid [command]" - in our case, "/exampleid examplecommand".
+If everything went right, you should be able to execute the command in-game by running "/extesionid [command]" - in our case, "/<exampleid> examplecommand".
 Here, it would send "Hello World" to the source that ran the command.
 Since we also set aliases, you could also run "/exampleid example" or "/exampleid ex" for the same command.
 To provide args, simple run "/exampleid examplecommand [args]" - replacing [args] with the arguments you want to pass to the command.
 
-### Listening to events
+### Listening to Events
 See [here](/geyser/geyser-api#events) for documentation. You do not need to register the event listener, Geyser will do that for you.
 
 ---
@@ -113,4 +113,4 @@ See [here](/geyser/geyser-api#events) for documentation. You do not need to regi
 Facing troubles with extensions?
 - Make sure you are using the latest version of Geyser - older versions might not have the latest API changes.
 - Add debug prints.
-- Ask in Geyser's discord server's #development channel for help.
+- Ask in the #development channel in the [Geyser Discord server](https://discord.gg/geysermc).

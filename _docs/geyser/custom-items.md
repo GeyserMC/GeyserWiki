@@ -121,7 +121,7 @@ NonVanillaCustomItemData data = NonVanillaCustomItemData.builder()
 ```java
 @Subscribe
 public void onGeyserDefineCustomItemsEvent(GeyserDefineCustomItemsEvent event) {
-    event.registerCustomItem(data);
+    event.register(data);
 }
 ```
 
