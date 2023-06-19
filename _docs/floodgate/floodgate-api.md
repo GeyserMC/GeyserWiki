@@ -2,7 +2,7 @@
 title: Floodgate API
 ---
 
-### Floodgate has an API to extend what is possible and allow servers to get information about the Bedrock client. It also allows other plugins access to [Cumulus](/floodgate/forms/)
+### Floodgate has an API to extend what is possible and allow servers to get information about the Bedrock client. It also allows other plugins access to [Cumulus](/geyser/forms/)
 
 This page will contain information about class FloodgateApi.<br>
 See the sidebar for more information about other parts of the API.
@@ -40,7 +40,7 @@ Click [here](/floodgate/linking/) to get more information about the PlayerLink c
 
 `FloodgateApi#sendForm(UUID, Form(Builder))`<br>
 Used to send a form to the Bedrock player with the given UUID.<br>
-Click [here](/floodgate/forms/) to get more information about Forms.
+Click [here](/geyser/forms/) to get more information about Forms.
 
 ### Using the API on backend servers
 In order to successfully use the API on backend Spigot servers when using a proxy, `send-floodgate-data` must be set to `true` on the proxy Floodgate's config, and the `key.pem` file must be identical between all Floodgate instances.

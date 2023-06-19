@@ -1,5 +1,5 @@
 ---
-title: Using Geyser or Floodgate as a dependency
+title: Getting Started with Geyser's and Floodgate's API
 ---
 
 To start, add the Open Collaboration repository to your project:
@@ -52,6 +52,7 @@ GeyserConnection connection = GeyserApi.api().connectionByUuid(uuid);
 
 `GeyserApi.api()` may be null until after the Geyser plugin enables.
 
+For more information on the Geyser API, see [here](/geyser/geyser-api/).
 
 ## Using Floodgate
 This page has a very simple primer for the Floodgate API. For a full breakdown, see [here](/floodgate/floodgate-api/).
@@ -80,3 +81,5 @@ Get the Floodgate API using:
 FloodgateApi api = FloodgateApi.getInstance();
 api.isFloodgatePlayer(uuid);
 ```
+
+For more information on the Floodgate API, see [here](/floodgate/floodgate-api/).

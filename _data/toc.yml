@@ -1,47 +1,41 @@
 - title: Geyser Documentation
   url: "geyser/"
   links:
-    - title: "Setup"
+    - title: Setting up Geyser
       url: "geyser/setup/"
       children:
         - title: Plugin Setup
           url: "geyser/setup/#plugin-setup"
-        - title: Videos
-          url: "geyser/setup/#setup-videos"
-    - title: "Standalone"
+        - title: Supported Hosting Providers
+          url: "geyser/supported-hosting-providers/"
+        - title: Using Geyser with Consoles
+          url: "geyser/using-geyser-with-consoles/"
+        - title: Using playit.gg with Geyser
+          url: "geyser/playit-gg/"
+    - title: Setting up Geyser-Standalone
       url: "geyser/standalone/"
       children:
-        - title: Termux (Android)
-          url: "geyser/standalone/#termux-android"
-        - title: NewTerm 2 (iOS)
-          url: "geyser/standalone/#newterm-2-ios"
-    - title: FAQ
-      url: "geyser/faq/"
+        - title: Creating a Startup Script
+          url: "geyser/creating-a-startup-script/"
     - title: Common Issues
       url: "geyser/common-issues/"
       children:
         - title: Fixing 'Unable to Connect to World'
           url: "geyser/fixing-unable-to-connect-to-world/"
-    - title: Understanding the Config
+    - title: Configuring Geyser
       url: "geyser/understanding-the-config/"
-    - title: Geyser Command Line Arguments and System Properties
-      url: "geyser/geyser-command-line-arguments-and-system-properties/"
-    - title: Creating a Startup Script
-      url: "geyser/creating-a-startup-script/"
-    - title: Commands
-      url: "geyser/commands/"
-    - title: Supported Hosting Providers
-      url: "geyser/supported-hosting-providers/"
-    - title: Using Geyser with Consoles
-      url: "geyser/using-geyser-with-consoles/"
-    - title: Anticheat Compatibility
-      url: "geyser/anticheat-compatibility/"
-    - title: Using Geyser or Floodgate as a dependency
-      url: "geyser/using-geyser-or-floodgate-as-a-dependency/"
-    - title: Current Limitations
-      url: "geyser/current-limitations/"
-    - title: Using playit.gg with Geyser
-      url: "geyser/playit-gg/"
+      children:
+        - title: Commands
+          url: "geyser/commands/"
+        - title: Geyser Command Line Arguments and System Properties
+          url: "geyser/geyser-command-line-arguments-and-system-properties/"
+    - title: FAQ
+      url: "geyser/faq/"
+      children:
+        - title: Anticheat Compatibility
+          url: "geyser/anticheat-compatibility/"
+        - title: Current Limitations
+          url: "geyser/current-limitations/"
     - title: Custom items with Geyser
       url: "geyser/custom-items/"
       children:
@@ -51,10 +45,27 @@
           url: "geyser/custom-items/#geyser-extensions"
         - title: Resource pack
           url: "geyser/custom-items/#resource-pack"
-    - title: Geyser Extensions
-      url: "geyser/extensions/"
     - title: Geyser API
       url: "geyser/geyser-api/"
+      children:
+        - title: Getting Started
+          url: "geyser/getting-started-with-api/"
+        - title: Overview
+          url: "geyser/geyser-api/#short-overview-of-the-api"
+        - title: Events
+          url: "geyser/events/"
+        - title: Forms and Cumulus
+          url: "geyser/forms/"
+    - title: Geyser Extensions
+      url: "geyser/extensions/"
+      children:
+        - title: Main class
+          url: "geyser/extensions/#creating-the-main-class"
+        - title: Creating Commands
+          url: "geyser/extensions/#creating-commands-with-geyser-extensions"
+    - title: Global API
+      url: "geyser/global-api/"
+
 - title: Floodgate Documentation
   url: "floodgate/"
   links:
@@ -67,14 +78,17 @@
       children:
         - title: Whitelist command
           url: "floodgate/features/#whitelist-command"
-        - title: Global Api
-          url: "floodgate/features/#what-is-the-global-api"
+        - title: "Commands"
+          url: "floodgate/commands/"
         - title: Skin Uploading
           url: "floodgate/features/#what-is-skin-uploading"
     - title: "Floodgate API"
       url: "floodgate/floodgate-api/"
-    - title: "FloodgatePlayer"
-      url: "floodgate/player/"
+      children:
+        - title: "FloodgatePlayer"
+          url: "floodgate/player/"
+        - title: "Forms and Cumulus"
+          url: "geyser/forms/"
     - title: "Linking"
       url: "floodgate/linking/"
       children:
@@ -82,15 +96,11 @@
           url: "floodgate/linking/#what-is-global-linking"
         - title: Local Linking
           url: "floodgate/linking/#local-linking"
-    - title: "Forms and Cumulus"
-      url: "floodgate/forms/"
-    - title: "Commands"
-      url: "floodgate/commands/"
 - title: Other
   url: "other/"
   links:
-    - title: "Global API"
-      url: "other/global-api/"
+    - title: "Community Geyser Projects"
+      url: "other/community-geyser-projects/"
     - title: "GeyserOptionalPack"
       url: "other/geyseroptionalpack/"
     - title: "Hurricane"
@@ -101,7 +111,5 @@
       url: "other/test-server/"
     - title: "Developer Guide"
       url: "other/developer-guide/"
-    - title: "Community Geyser Projects"
-      url: "other/community-geyser-projects/"
     - title: "Geyser Discord Bot Usage"
       url: "other/discord-bot-usage/"

@@ -2,17 +2,16 @@
 title: Geyser API
 ---
 
-### Geyser has an API to extend what is possible and allow to listen to Geyser events. It also allows access to [Cumulus](/floodgate/forms/)
-This page outlines how to include the dependency for the Geyser API, and how to use the API.
+Geyser has an API to extend what is possible with Geyser, and to allow you to interact with Geyser in your own plugins, mods, or extensions.
 
-#### Where can I use the Geyser API?
+### Where can I use the Geyser API?
 You could use the Geyser API in:
 - A plugin for Paper/Spigot, Velocity, Waterfall/BungeeCord, etc.
 - A mod for Fabric or Forge
 - A Geyser Extension
 
 ### Accessing the Geyser API
-See [here](/geyser/using-geyser-or-floodgate-as-a-dependency) for how to include the Geyser API in your project.
+See [here](/geyser/getting-started-with-api) for how to include the Geyser API dependency in your project.
 
 ### Documentation
 
@@ -20,9 +19,10 @@ The Geyser API offers events to subscribe to, or information on whether a player
 (soon, blocks and entities too).
 It can be used easily in Geyser Extensions, see [here](/other/extensions) for details on those.
 
-**Quick overview:**
-
-Note: To see full, detailed documentation, see the linked sources with javadocs.
+**Quick overview:** <br>
+<div class="alert alert-info" role="alert">
+	Note: To see full, detailed documentation, see the linked sources with javadocs.
+</div>
 
 #### [GeyserAPI](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/GeyserApi.java):
 The GeyserApi interface serves as a central access point to various functionalities provided by the Geyser API, providing methods to e.g. interact with player connections.
@@ -48,8 +48,10 @@ Used to check if the given UUID of an **online** player is a Bedrock player.
 Used to get the [Connection](https://github.com/GeyserMC/api/blob/master/base/src/main/java/org/geysermc/api/connection/Connection.java) of an **online** player.<br>
 This method will return null if the player is not a Bedrock player.
 
-**Note**: You don't need to wait until the Bedrock player is online to use the getPlayer and isBedrockPlayer methods.<br>
-You can even use them in the pre-login events.
+<div class="alert alert-info" role="alert">
+	You don't need to wait until the Bedrock player is online to use the getPlayer and isBedrockPlayer methods.<br>
+    You can even use them in the pre-login events.
+</div>
 
 `GeyserApi#sendForm(UUID, Form(Builder))`<br>
 Used to send a form to the Bedrock player with the given UUID.<br>
@@ -58,90 +60,14 @@ Click [here](/floodgate/forms/) to get more information about Forms.
 `GeyserApi#onlineConnectionsCount()`<br>
 Used to get the amount of online Bedrock players.
 
+### Short Overview of the API
 
-#### [Events](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event):
-The event package contains all the events sent by Geyser. These events can be subscribed to in order to perform actions or register custom items 
-programmatically. <br>
-To use events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener and then subscribe to the events you want to listen to. 
-Extensions can use the @Subscribe annotation.
+#### [Cumulus](https://github.com/GeyserMC/Cumulus/tree/master/src/main/java/org/geysermc/cumulus)
+While technically not directly in the Geyser API, the Cumulus library is also provided by the Geyser API. 
+It allows you to send Bedrock edition forms to players. See [Cumulus](/floodgate/forms/) for more information.
 
-Events are categorized into the following categories:
-- [Bedrock](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/bedrock): Events that are sent for each connecting Bedrock client, 
-for example the ClientEmoteEvent that is sent when a Bedrock player uses an emote - or the SessionLoginEvent that is sent when a Bedrock player logged in and is about to join a server.
-- [Java](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/java): Events that are sent for the java server, for example
-the ServerDefineCommandsEvent - it is fired when the Java sends the commands to show for Bedrock players.
-- [Connection](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/connection): Connection-related events, such as a ping event to return e.g. a custom MOTD.
-- [Lifecycle](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle): Events that are sent during Geyser's lifecycle, such as the loading of custom items, resource packs, or Geyser commands.
-
-To see all the events in the respective categories, click on the links above.
-
-##### Examples:
-
-Each method that you want to subscribe to an event needs to be annotated with the @Subscribe annotation (from the GeyserMC events package).
-```java
-@Subscribe
-public void onGeyserLoadResourcePacksEvent(GeyserLoadResourcePacksEvent event) {
-        logger().info("Loading: " + event.resourcePacks().size() + " resource packs.");
-        // you could add a resource pack with event.resourcePacks().add(path-to-pack)
-}
-```
-If you wish to listen to events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener first.
-Extensions do not need to do that - they are automatically registered, so a simple @Subscribe annotation is enough.
-
-**Fabric mod example:**
-```java
-public class ExampleMod implements ModInitializer, EventRegistrar {
-    public static final Logger LOGGER = LoggerFactory.getLogger("modid");
-    
-    @Override 
-    public void onInitialize() {
-        ServerLifecycleEvents.SERVER_STARTING.register((server) -> {
-            GeyserApi.api().eventBus().register(this, ExampleMod.class); // register your mod & this class as a listener
-        });
-        
-        LOGGER.info("Geyser is cool!");
-    }
-    
-    // here an event, we subscribe as usual with the @Subscribe annotation
-    @Subscribe 
-    public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent eventad {
-        LOGGER.info("Geyser started!");
-    }
-}
-```
-Do note: We cannot directly register the event but in the mod initializer, since the Geyser API would not be loaded yet.
-Therefore, we register it in the server starting event provided by the Fabric API.
-
-**Paper/Spigot plugin example:**
-
-1. In your plugin.yml, add the following lines:
-```yaml
-  depend: ["Geyser-Spigot"]
-```
-This ensures that your plugin loads after Geyser has, so the Geyser API would be available.
-
-2. In your main class, implement the EventRegistrar interface and register the event bus in the onEnable method:
-```java
-public class ExamplePlugin extends JavaPlugin implements EventRegistrar {
-    
-    @Override
-    public void onEnable(){
-        getLogger().info("Registering Geyser event bus!");
-        GeyserApi.api().eventBus().register(this, this); // register your plugin & this class as a listener
-    }
-
-    // here an event, we subscribe as usual with the @Subscribe annotation
-    @Subscribe
-    public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent event) {
-        getLogger().info("Geyser started!");
-    }
-}
-```
-3. If you want to provide your event with a consumer, rather than annotating it, you can also manually subscribe your method to the event bus:
-```java
-// replace GeyserEvent.class with the event class you want to listen to
-GeyserApi.api().eventBus().subscribe(this, GeyserEvent.class, this::yourMethod);
-```
+#### [Events](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event)
+The event package contains all the events that Geyser fires. See [here](/geyser/events) for detailed information on how to listen to Geyser events.
 
 #### [Command](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/command)
 This package contains classes and interfaces related to commands in Geyser, which allows [Geyser Extensions](/geyser/extensions) to register custom commands.
