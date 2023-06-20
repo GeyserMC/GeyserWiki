@@ -20,7 +20,7 @@ You can set Geyser to bind to a specific address and port by using the following
   - ```server``` means to match the bind address of the TCP server
   - any other string will be used as-is for the bind address.
 
-### Disabling warnings
+### Disabling warnings and Advanced configuration
 You may disable some warnings that may be printed to the console by using the following command line arguments:
 <h3>Warning: Disabling Geyser warnings from being logged will not fix the root issue! Only do this if you know what you are doing. </h3>
 
@@ -35,6 +35,8 @@ You may disable some warnings that may be printed to the console by using the fo
   - Allows you to disable the warning about pings being printed to the console when debug mode is enabled.
 - ```-DGeyser.UseDirectAdapters=true```
   - Allows you to disable the usage of NMS adapters.
+- ```-DGeyser.BedrockNetworkThreads=8```
+  - Allows you to set the number of threads used for the Bedrock networking. This is not set to a specific number by default, but is instead calculated based on the available resources.
 
 ## Geyser-Standalone specific options:
 
