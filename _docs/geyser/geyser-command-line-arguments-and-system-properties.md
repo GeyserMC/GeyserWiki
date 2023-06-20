@@ -6,9 +6,9 @@ title: Geyser Command Line Arguments and System Properties
 Geyser offers a few command line arguments/system properties to allow you to configure Geyser without editing the config files.
 Additionally, you can suppress some warnings that may be printed to the console.
 
-
-### Configuration
-You can set Geyser to bind to a specific address and port by using the following command line arguments. <br>
+### Configuration system properties
+You can set Geyser to automatically bind to a specific address and port by using the following command line arguments. <br>
+This is primarily aimed at server hosting providers to automatically configure servers for users.
 
 <div class="alert alert-info" role="alert">
 	Note: the Geyser specific properties are prioritized over the plugin properties!
