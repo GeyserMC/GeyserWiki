@@ -31,16 +31,17 @@ You may disable some warnings that may be printed to the console by using the fo
 </div>
 
 - ```-DGeyser.PrintSecureChatInformation=true```
-  - Allows you to disable the warning about secure chat being disabled.
+  - Allows you to disable the warning about secure chat being disabled. 
+  Since the warning is sent when the server sends the warning, this option does not do much anymore.
 - ```-DGeyser.ShowScoreboardLogs=true```
   - Allows you to disable warnings related to scoreboards, such as "Tried to update score without the existence of its requested objective".
 - ```-DGeyser.ShowResourcePackLengthWarning=true```
   - Allows you to disable the warning about a resource pack having too long paths. Disabling this warning will not fix the underlying issue! 
   Console players might not be able to join your server at all if you have a resource pack with paths exceeding the 80 character limit.
 - ```-DGeyser.PrintPingsInDebugMode=true```
-  - Allows you to disable the warning about pings being printed to the console when debug mode is enabled.
+  - Controls if pings are being logged in debug mode.
 - ```-DGeyser.UseDirectAdapters=true```
-  - Allows you to disable the usage of NMS adapters.
+  - Allows you to disable the usage of NMS adapters. This is spigot-only and will not work on other platforms.
 - ```-DGeyser.BedrockNetworkThreads=8```
   - Allows you to set the number of threads used for the Bedrock networking. This is not set to a specific number by default, but is instead calculated based on the available resources.
 
