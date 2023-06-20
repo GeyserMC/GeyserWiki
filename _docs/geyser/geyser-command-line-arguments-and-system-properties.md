@@ -9,7 +9,10 @@ Additionally, you can suppress some warnings that may be printed to the console.
 
 ### Configuration
 You can set Geyser to bind to a specific address and port by using the following command line arguments. <br>
-**Note: the Geyser specific properties are prioritized over the plugin properties!**
+
+<div class="alert alert-info" role="alert">
+	Note: the Geyser specific properties are prioritized over the plugin properties!
+</div>
 
 - ```-DgeyserUdpPort=server``` or ```-DpluginUdpPort=server```
   - ```-1``` means UDP is not supported and will forcibly stop Geyser.
@@ -20,9 +23,12 @@ You can set Geyser to bind to a specific address and port by using the following
   - ```server``` means to match the bind address of the TCP server
   - any other string will be used as-is for the bind address.
 
-### Disabling warnings and Advanced configuration
+### Disabling warnings and advanced configuration
 You may disable some warnings that may be printed to the console by using the following command line arguments:
-<h3>Warning: Disabling Geyser warnings from being logged will not fix the root issue! Only do this if you know what you are doing. </h3>
+
+<div class="alert alert-danger" role="alert">
+	Warning: Disabling Geyser warnings from being logged will not fix the real issue! Only disable them if you know what you are doing. 
+</div>
 
 - ```-DGeyser.PrintSecureChatInformation=true```
   - Allows you to disable the warning about secure chat being disabled.
