@@ -41,7 +41,8 @@ You may disable some warnings that may be printed to the console by using the fo
 - ```-DGeyser.PrintPingsInDebugMode=true```
   - Controls if pings are being logged in debug mode.
 - ```-DGeyser.UseDirectAdapters=true```
-  - Allows you to disable the usage of NMS adapters. This is spigot-only and will not work on other platforms.
+  - Allows you to disable the usage of NMS adapters. Disabling will result in a performance penalty and should only be used for debugging.
+  This is Spigot-only and will not work on other platforms.
 - ```-DGeyser.BedrockNetworkThreads=8```
   - Allows you to set the number of threads used for the Bedrock networking. This is not set to a specific number by default, but is instead calculated based on the available resources.
 
