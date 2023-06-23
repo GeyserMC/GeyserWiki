@@ -105,6 +105,4 @@ To (optionally) set the priority of your event listener, you can add the priorit
 ```java
 @Subscribe(postOrder = PostOrder.EARLY)
 ```
-
-
 If you do not specify a priority, the default priority is used.
