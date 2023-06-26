@@ -43,3 +43,15 @@ Once you have added the file you can add an sidebar link, All sidebar links + su
         - title: PageChild sub link
           url: "page/pagetitle/#headerLink"
 ```
+
+### GeyserWiki  development setup locally
+
+* Download Ruby and Take the Ruby+Devkit from this page; https://rubyinstaller.org/downloads/
+
+* Once installed you will have to Run 'ridk install', this will open the RubyInstaller console.
+Recommend choosing option 3; MSYS and MINGW after that ruby has been installed.
+
+* Open the GeyserWiki folder in VScode, in terminal you will have to install the bundle first 'bundle install' command.
+installing for the first time can take a while.
+
+* Once installed you can now start the server locally with command 'bundle exec jekyll serve'
