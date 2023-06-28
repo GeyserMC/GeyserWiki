@@ -8,7 +8,7 @@ To start, add the Open Collaboration repository to your project:
 ```xml
 <repository>
     <id>opencollab-snapshot</id>
-    <url>https://repo.opencollab.dev/maven-snapshots/</url>
+    <url>https://repo.opencollab.dev/main/</url>
 </repository>
 ```
 
@@ -16,7 +16,7 @@ To start, add the Open Collaboration repository to your project:
 ```groovy
 repositories {
     maven {
-        url = uri("https://repo.opencollab.dev/maven-snapshots/")
+        url = uri("https://repo.opencollab.dev/main/")
     }
 }
 ```
@@ -64,7 +64,7 @@ Add Floodgate's API as a dependency:
 <dependency>
     <groupId>org.geysermc.floodgate</groupId>
     <artifactId>api</artifactId>
-    <version>2.2.0-SNAPSHOT</version>
+    <version>2.2.2-SNAPSHOT</version>
     <scope>provided</scope>
 </dependency>
 ```
@@ -72,7 +72,7 @@ Add Floodgate's API as a dependency:
 **Gradle**
 ```groovy
 dependencies {
-    compileOnly('org.geysermc.floodgate:api:2.2.0-SNAPSHOT')
+    compileOnly('org.geysermc.floodgate:api:2.2.2-SNAPSHOT')
 }
 ```
 
