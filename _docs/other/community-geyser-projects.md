@@ -8,13 +8,6 @@ Please note that, as these are unofficial, the main Geyser Discord will likely b
 
 If you wish to add your own plugin to this list, please reach out in the #development channel of Geyser first!
 
-## Awesome Geyser Resources
-A list of other utilities that are useful with Geyser or for developing Geyser-like projects. Contains plugins, standalone resources, and Geyser Extensions.
-
-* [GitHub](https://github.com/bundabrg/awesome-geyser-resources#geyser-extensions)
-
-Maintainer: [bundabrg](https://github.com/bundabrg)
-
 ## BedrockFormShop
 
 A Spigot shop plugin that uses Bedrock forms.
@@ -109,12 +102,6 @@ This is a Spigot/BungeeCord/Velocity plugin that can be used to automatically up
 * [Spigot page](https://www.spigotmc.org/resources/88555/)
 
 Creators: [Jens](https://github.com/Jens-Co), [YHDiamond](https://github.com/YHDiamond), [Konicai](https://github.com/Konicai)
-
-## Hurricane
-Various workarounds for Geyser players that modify the server in order to achieve their goal.
-* [GitHub](https://github.com/GeyserMC/Hurricane)
-
-Creator: [Camotoy](https://github.com/Camotoy)
 
 ## SleepingServerStarter
 Small application that waits for a player to connect before launching actual minecraft server.

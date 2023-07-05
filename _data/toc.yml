@@ -87,6 +87,8 @@
   links:
     - title: "GeyserOptionalPack"
       url: "other/geyseroptionalpack/"
+    - title: "Hurricane"
+      url: "other/hurricane/"
     - title: "GeyserConnect"
       url: "other/geyserconnect/"
     - title: "Test Server"

@@ -63,3 +63,7 @@ div.highlight {
 .list-disc {
 	list-style: disc;
 }
+
+main img {
+    max-width: 100%;
+}
