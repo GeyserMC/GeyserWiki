@@ -2,6 +2,7 @@
   <h5>Select which version of floodgate you want to install</h5>
   <div class="btn-group text-center" role="tablist">
     <a class="btn btn-primary" href="#" data-bs-toggle="tab" data-bs-target="#floodgate-spigot-option" type="button" role="tab" aria-controls="floodgate-spigot-option" aria-selected="false">Floodgate Spigot</a>
+    <a class="btn btn-primary" href="#" data-bs-toggle="tab" data-bs-target="#floodgate-fabric-option" type="button" role="tab" aria-controls="floodgate-fabric-option" aria-selected="false">Floodgate Fabric</a>
     <a class="btn btn-primary" href="#" data-bs-toggle="tab" data-bs-target="#floodgate-proxy-option" type="button" role="tab" aria-controls="floodgate-proxy-option" aria-selected="false">Floodgate Proxy</a>
     <a class="btn btn-primary" href="#" data-bs-toggle="tab" data-bs-target="#floodgate-standalone-option" type="button" role="tab" aria-controls="floodgate-standalone-option" aria-selected="false">Floodgate Standalone</a>
   </div>
@@ -9,82 +10,27 @@
   
 <div class="tab-content mt-2">
   <div id="floodgate-spigot-option" class="tab-pane fade" role="tabpanel">
-    <h2>Floodgate Spigot</h2>
-    <ol>
-      <li>Download the Floodgate plugin and add it to your plugins folder on your frontend server.</li>
-      <li>Select your platform on the download page linked above and click "Download Floodgate".</li>
-      <li>If you are using Floodgate on Fabric, you will need to download the <a
-        href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">Fabric API</a>.</li>
-      <li>Change the `auth-type` in the Geyser config to `floodgate`.</li>
-      <li>Restart/start up the server.</li>
-    </ol>  
+    {% capture my_include %}{% include setup/instructions/floodgate/floodgate-spigot.md %}{% endcapture %}
+    {{ my_include | markdownify }}
+  </div>
+
+  <div id="floodgate-fabric-option" class="tab-pane fade" role="tabpanel">
+    {% capture my_include %}{% include setup/instructions/floodgate/floodgate-fabric.md %}{% endcapture %}
+    {{ my_include | markdownify }}
   </div>
     
   <div id="floodgate-proxy-option" class="tab-pane fade" role="tabpanel">
-    <h2>For BungeeCord/Velocity setups:</h2>
-    <p>You only need to install Floodgate on the BungeeCord or Velocity proxy server, unless you want to use the Floodgate
-      API on the backend servers. See below for the installation process.</p>
-    
-    <p><strong>Note:</strong> Installing Floodgate on the backend servers will allow Bedrock player skins to display
-      without the Bedrock player having to switch backend servers.</p>
-    
-    <h3>Frontend Server Setup</h3>
-    <ol>
-      <li>Download the Floodgate plugin and add it to your plugins folder on your frontend server.</li>
-      <ul>
-      <li>Select your platform on the download page linked above and click "Download Floodgate".</li>
-      <li>If you are using Floodgate on Fabric, you will need to download the <a
-        href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">Fabric API</a>.</li>
-      </ul>
-      <li>Change the <code>auth-type</code> in the Geyser config to <code>floodgate</code>.</li>
-      <li>Restart or start up the server.</li>
-    </ol>
-    
-    <h3>Backend Server Setup (optional)</h3>
-    <p>This step is only needed if you want to use the Floodgate API on your backend server(s) behind a proxy.</p>
-    <ol>
-      <li>Install Floodgate on the proxy and on <strong>all</strong> backend servers following the previous instructions.
-      </li>
-      <li>Enable <code>ip_forward</code> in your BungeeCord <code>config.yml</code> if using BungeeCord. For Velocity, set
-      up "player-info-forwarding".</li>
-      <li>Set <code>bungeecord</code> to <code>true</code> in your <code>spigot.yml</code>. When using Velocity, refer to
-      their <a href="https://docs.papermc.io/velocity/player-information-forwarding">guide</a> for different setup
-      options.</li>
-      <li>Start the proxy server.</li>
-      <li>Edit the Floodgate config on your proxy server and set <code>send-floodgate-data</code> to <code>true</code>.
-      </li>
-      <li>Copy the <code>key.pem</code> file from the proxy Floodgate config folder to all backend servers' Floodgate
-      config folders. <strong>DO NOT DISTRIBUTE THIS KEY TO ANYBODY!</strong> This key allows Bedrock accounts to bypass
-      the Java Edition authentication, and if compromised, it can cause havoc on your server.</li>
-      <li>Restart the backend servers and proxy server.</li>
-    </ol>  
+    {% capture my_include %}{% include setup/instructions/floodgate/floodgate-proxy.md %}{% endcapture %}
+    {{ my_include | markdownify }}
   </div>
     
   <div id="floodgate-standalone-option" class="tab-pane fade" role="tabpanel">
-    <h2>Floodgate Standalone</h2>
-    <ol>
-      <li>Download the Floodgate plugin and add it to your plugins folder on your frontend server.</li>
-      <ul>
-      <li>Select your platform on the download page linked above and click "Download Floodgate".</li>
-      <li>If you are using Floodgate on Fabric, you will need to download the <a
-        href="https://www.curseforge.com/minecraft/mc-mods/fabric-api">Fabric API</a>.</li>
-      </ul>
-      <li>Change the <code>auth-type</code> in the Geyser config to <code>floodgate</code>.</li>
-      <li>Restart or start up the server.</li>
-    </ol>
-    
-    <p><strong>Geyser Standalone:</strong></p>
-    <ol>
-      <li><em>Copy</em> the <code>key.pem</code> file in the Floodgate config folder to the same directory as Geyser
-      Standalone. <strong>DO NOT DISTRIBUTE THIS KEY TO ANYBODY!</strong> This key allows Bedrock accounts to bypass the
-      Java Edition authentication, and if compromised, it can cause havoc on your server.</li>
-    </ol>
-  </div>
+    {% capture my_include %}{% include setup/instructions/floodgate/floodgate-standalone.md %}{% endcapture %}
+    {{ my_include | markdownify }}
 </div>
 
 <!-- This is ugly but not sure how to do it without duplicating it a bunch -->
 <ul>
-  <li><a href="https://wiki.geysermc.org/floodgate/setup/">Full Floodgate setup page</a></li>
   <li><a href="https://wiki.geysermc.org/floodgate/features/">Features</a></li>
   <li><a href="https://wiki.geysermc.org/floodgate/api/">Floodgate API</a></li>
 </ul>
