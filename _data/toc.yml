@@ -99,14 +99,14 @@
 - title: Other
   url: "other/"
   links:
-    - title: "Community Geyser Projects"
-      url: "other/community-geyser-projects/"
     - title: "GeyserOptionalPack"
       url: "other/geyseroptionalpack/"
     - title: "Hurricane"
       url: "other/hurricane/"
     - title: "GeyserConnect"
       url: "other/geyserconnect/"
+    - title: "Community Geyser Projects"
+      url: "other/community-geyser-projects/"
     - title: "Test Server"
       url: "other/test-server/"
     - title: "Developer Guide"

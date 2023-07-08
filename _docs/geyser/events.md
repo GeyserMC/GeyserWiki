@@ -94,15 +94,9 @@ GeyserApi.api().eventBus().subscribe(this, GeyserEvent.class, this::yourMethod);
 
 ## Event Priority
 Events can have a priority, which is used to determine the order in which the listeners are called. The default priority is NORMAL.
-The [following priorities](https://github.com/GeyserMC/Events/blob/master/src/main/java/org/geysermc/event/PostOrder.java) are available:
-- ```FIRST``` - called first, before all other listeners
-- ```EARLY``` - called early, before the NORMAL listeners
-- ```NORMAL``` - The normal/default priority
-- ```LATE``` - called late, after the NORMAL listeners
-- ```LAST``` - called last, after all other priority listeners. Generally reserved to monitor the event outcome.
-
-To (optionally) set the priority of your event listener, you can add the priority to the @Subscribe annotation:
+To (optionally) set the priority of your event listener, you can add the priority to the `@Subscribe` annotation:
 ```java
 @Subscribe(postOrder = PostOrder.EARLY)
 ```
-If you do not specify a priority, the default priority is used.
+If you do not specify a priority, the default priority is used. For all available priorities, see
+[here](https://github.com/GeyserMC/Events/blob/master/src/main/java/org/geysermc/event/PostOrder.java).
