@@ -82,22 +82,22 @@ To create a command, you would need to use the "Commands" package in the Geyser 
 
 ```java
 Command command = Command.builder(this) // "this" is the extension's main class
-                .name("ExampleCommand")
-                .bedrockOnly(true) // only allow bedrock players to execute this command
-                .source(CommandSource.class) // set the source of the command
-                .aliases(List.of("example", "ex")) // set aliases for the command
-                .description("An example command") // set the description of the command
-                .executableOnConsole(false) 
-                .suggestedOpOnly(false)
-                .permission("example.command") // set the permission for the command
-                .executor((source, cmd, args) -> {
-                    // this is the command executor - this is where you would put your code to execute the command.
-                    // source is the source that executed the command
-                    // cmd is the command that was executed
-                    // args are the arguments passed to the command
-                    source.sendMessage("Hello World");
-                })
-                .build();
+        .name("ExampleCommand")
+        .bedrockOnly(true) // only allow bedrock players to execute this command
+        .source(CommandSource.class) // set the source of the command
+        .aliases(List.of("example", "ex")) // set aliases for the command
+        .description("An example command") // set the description of the command
+        .executableOnConsole(false) 
+        .suggestedOpOnly(false)
+        .permission("example.command") // set the permission for the command
+        .executor((source, cmd, args) -> {
+            // this is the command executor - this is where you would put your code to execute the command.
+            // source is the source that executed the command
+            // cmd is the command that was executed
+            // args are the arguments passed to the command
+            source.sendMessage("Hello World");
+        })
+        .build();
 ```
 
 To register the command, you would need to subscribe to the GeyserDefineCommandsEvent, and register the command there:
