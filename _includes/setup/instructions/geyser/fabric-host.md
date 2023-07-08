@@ -22,10 +22,7 @@
     ``` 
     The vital part is the port. This is the port that Bedrock players will use to connect to your server. 
     Follow the instructions in the blue box - change the port, and if necessary, clone-remote-port & address.
-    If clone-remote-port is enabled, the bedrock port will be overwritten with the Java port!
+    If clone-remote-port is enabled, the bedrock port will be overwritten with the Java port! <br>
+    **Important**: Other services/mods that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
  
 5. Verify whether connections are possible by running `geyser connectiontest <ip>:<port>` in the console.
-
-
-
-

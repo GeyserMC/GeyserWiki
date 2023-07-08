@@ -26,7 +26,7 @@ See the [Floodgate](/floodgate/) wiki page for more details.
 
 ## Port Forwarding
 
-Unlike Minecraft: Java Edition, Bedrock Edition runs on port 19132 on the UDP protocol. When port forwarding, make sure to allocate to 19132 UDP or another UDP port. For many server hosting providers, you will simply need to change your Bedrock listening port (see [here](/geyser/supported-hosting-providers/) for a list of supported providers).
+Unlike Minecraft: Java Edition, Bedrock Edition runs on port 19132 on the UDP protocol. When port forwarding, make sure to allocate to 19132 UDP or another UDP port. For many server hosting providers, you will simply need to change your Bedrock listening port (see [here](/geyser/supported-hosting-providers/) for a list of supported providers). Alternatively, use [playit.gg](/geyser/playit-gg/).
 
 ## Termux (Android)
 Please read the disclaimer [here](/geyser/setup/#standalone-setup) before continuing.

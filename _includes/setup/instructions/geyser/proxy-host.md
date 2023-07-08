@@ -1,10 +1,15 @@
 
 # Proxy setup with server hosting provider
 
+<div class="alert alert-info" role="alert">
+       Install Geyser only on the proxy server! You can install Floodgate on all servers for better skin support & 
+       network-wide Floodgate api availability.
+</div>
+
 1. Select your server hosting provider in the dropdown above.
 2. Download the Geyser jar for your proxy software from [the download page](https://geysermc.org/download).
-3. Place the Geyser-Fabric.jar in the `mods` folder, and restart the server. **You also need [FabricAPI](https://modrinth.com/mod/fabric-api) installed.**
-4. Open your Geyser config, located in `/config/Geyser-Fabric/config.yml`, and find the following:
+3. Place the Geyser jar in the `plugins` folder, and restart the server.
+4. Open your Geyser config, located in `/plugins/Geyser-xyz/config.yml`, and find the following:
 
     ```yaml
     bedrock: 
@@ -22,6 +27,7 @@
     ``` 
     The vital part is the port. This is the port that Bedrock players will use to connect to your server. 
     Follow the instructions in the blue box - change the port, and if necessary, clone-remote-port & address.
-    If clone-remote-port is enabled, the bedrock port will be overwritten with the Java port!
- 
+    If clone-remote-port is enabled, the bedrock port will be overwritten with the Java port! <br>
+    **Important**: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
+
 5. Verify whether connections are possible by running `geyser connectiontest <ip>:<port>` in the console.

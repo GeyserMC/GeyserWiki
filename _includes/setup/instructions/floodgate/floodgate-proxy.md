@@ -20,9 +20,8 @@ This is only needed when you want to use the Floodgate API on your backend serve
 4. Start the proxy server.
 5. Edit the Floodgate config on your proxy server and set send-floodgate-data to true.
 6. Copy the key.pem file in the proxy Floodgate config folder to all backend servers’ Floodgate config folder.
-
-    <div class="alert alert-warning" role="alert">
-        DO NOT DISTRIBUTE THIS KEY TO ANYBODY! This key is what allows for Bedrock accounts to bypass the Java Edition authentication, and if anyone gets ahold of this, they can wreak havoc on your server.
-    </div>
-
 7. Restart the backend servers and proxy server.
+
+<div class="alert alert-warning" role="alert">
+    DO NOT DISTRIBUTE THIS KEY TO ANYBODY! This key is what allows for Bedrock accounts to bypass the Java Edition authentication, and if anyone gets ahold of this, they can wreak havoc on your server.
+</div>
