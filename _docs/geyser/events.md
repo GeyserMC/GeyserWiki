@@ -31,7 +31,7 @@ public void onGeyserLoadResourcePacksEvent(GeyserLoadResourcePacksEvent event) {
     // you could add a resource pack with event.resourcePacks().add(path-to-pack)
 }
 ```
-If you wish to listen to events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener first.
+If you wish to listen to events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener first. Just make sure you implement `EventRegistrar` in the main class of your mod or plugin.
 Extensions do not need to do that - they are automatically registered, so a simple @Subscribe annotation is enough.
 
 **Fabric mod example:**
@@ -56,7 +56,7 @@ public class ExampleMod implements ModInitializer, EventRegistrar {
 }
 ```
 <div class="alert alert-info" role="alert">
-    Do note: We cannot directly register the event but in the mod initializer, since the Geyser API would not be loaded yet.
+    Do note: We cannot directly register the event bus in the mod initializer, since the Geyser API would not be loaded yet.
 </div>
 
 Therefore, we register it in the server starting event provided by the Fabric API.
