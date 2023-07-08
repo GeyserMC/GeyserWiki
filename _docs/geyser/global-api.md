@@ -1,5 +1,5 @@
 ---
-title: Geyser Global API
+title: Global API
 ---
 
 ### Geyser Global API

@@ -11,7 +11,7 @@ You can set Geyser to automatically bind to a specific address and port by using
 This is primarily aimed at server hosting providers to automatically configure servers for users.
 
 <div class="alert alert-info" role="alert">
-	Note: the Geyser specific properties are prioritized over the plugin properties!
+    Note: the Geyser specific properties are prioritized over the plugin properties!
 </div>
 
 - ```-DgeyserUdpPort=server``` or ```-DpluginUdpPort=server```
@@ -27,7 +27,7 @@ This is primarily aimed at server hosting providers to automatically configure s
 You may disable some warnings that may be printed to the console by using the following command line arguments:
 
 <div class="alert alert-danger" role="alert">
-	Warning: Disabling Geyser warnings from being logged will not fix the real issue! Only disable them if you know what you are doing. 
+    Warning: Disabling Geyser warnings from being logged will not fix the real issue! Only disable them if you know what you are doing. 
 </div>
 
 - ```-DGeyser.PrintSecureChatInformation=true```

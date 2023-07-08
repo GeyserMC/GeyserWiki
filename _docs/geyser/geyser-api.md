@@ -21,7 +21,7 @@ It can be used easily in Geyser Extensions, see [here](/other/extensions) for de
 
 **Quick overview:** <br>
 <div class="alert alert-info" role="alert">
-	Note: To see full, detailed documentation, see the linked sources with javadocs.
+    Note: To see full, detailed documentation, see the linked sources with javadocs.
 </div>
 
 #### [GeyserAPI](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/GeyserApi.java):
@@ -49,7 +49,7 @@ Used to get the [Connection](https://github.com/GeyserMC/api/blob/master/base/sr
 This method will return null if the player is not a Bedrock player.
 
 <div class="alert alert-info" role="alert">
-	You don't need to wait until the Bedrock player is online to use the getPlayer and isBedrockPlayer methods.<br>
+    You don't need to wait until the Bedrock player is online to use the getPlayer and isBedrockPlayer methods.<br>
     You can even use them in the pre-login events.
 </div>
 

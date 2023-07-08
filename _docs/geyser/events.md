@@ -27,8 +27,8 @@ Each method that you want to subscribe to an event needs to be annotated with th
 ```java
 @Subscribe
 public void onGeyserLoadResourcePacksEvent(GeyserLoadResourcePacksEvent event) {
-        logger().info("Loading: " + event.resourcePacks().size() + " resource packs.");
-        // you could add a resource pack with event.resourcePacks().add(path-to-pack)
+    logger().info("Loading: " + event.resourcePacks().size() + " resource packs.");
+    // you could add a resource pack with event.resourcePacks().add(path-to-pack)
 }
 ```
 If you wish to listen to events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener first.
@@ -56,7 +56,7 @@ public class ExampleMod implements ModInitializer, EventRegistrar {
 }
 ```
 <div class="alert alert-info" role="alert">
-	Do note: We cannot directly register the event but in the mod initializer, since the Geyser API would not be loaded yet.
+    Do note: We cannot directly register the event but in the mod initializer, since the Geyser API would not be loaded yet.
 </div>
 
 Therefore, we register it in the server starting event provided by the Fabric API.
