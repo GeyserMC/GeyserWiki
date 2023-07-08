@@ -60,7 +60,7 @@ Click [here](/floodgate/forms/) to get more information about Forms.
 `GeyserApi#onlineConnectionsCount()`<br>
 Used to get the amount of online Bedrock players.
 
-### Short Overview of the API
+### Short Overview of the Geyser API
 
 #### [Cumulus](https://github.com/GeyserMC/Cumulus/tree/master/src/main/java/org/geysermc/cumulus)
 While technically not directly in the Geyser API, the Cumulus library is also provided by the Geyser API. 
