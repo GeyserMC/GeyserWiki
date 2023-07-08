@@ -17,7 +17,7 @@ The underlying Geyser API is steadily expanding, creating more and more opportun
 
 ### Which Geyser Extensions exist?
 At the moment, extensions are still a new system, so there is only a small list of known extensions for Geyser. However, new extensions are always being created!
-There is an [official list](https://github.com/GeyserMC/GeyserExtensionList) of available extensions you can check out.
+There is an [official list](https://github.com/GeyserMC/GeyserExtensionList) of available extensions you can check out. If you have an extension you'd like to see on this list, feel free to open a PR!
 
 ### Installing Extensions
 To install an extension, simply put the extension .jar file into Geyser's 'extensions' folder. Then, restart Geyser (or the server Geyser runs on).
@@ -50,7 +50,7 @@ The main class, the entrypoint for the extension, needs to [implement the 'Exten
 That way, Geyser recognizes the extension, and gives you access to important methods - such as 'logger()', to get your extensions logger. <br>
 To see all the methods provided by that interface, see [here](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/extension/Extension.java).
 
-Unlike plugins, extensions do not have a 'onEnable' or 'onDisable' method. Instead, most actions are done in events at different stages during Geyser's lifecycle.
+Unlike plugins, extensions do not have a 'onEnable' or 'onDisable' method. Instead, most actions are done in events at different stages during Geyser's lifecycle using events.
 Some important ones are:
 - `GeyserPreInitializeEvent`: This event is fired when Geyser starts to initialize. If you e.g. need to register extension commands that are configured in your config, 
 you would need to load the config here to ensure that your config is ready before the GeyserDefineCommandsEvent is fired. 
@@ -65,7 +65,7 @@ public void onPostInitialize(GeyserPostInitializeEvent event) {
     this.logger().info("Loading example extension...");
 }
 ```
-If you wish to register custom items, global resource packs (or soon, custom blocks and entities), you would need to subscribe to the event using the @Subscribe annotation,
+If you wish to register custom items, global resource packs (or soon, custom blocks and entities), you will need to subscribe to the event using the @Subscribe annotation,
 and register them in the event. You can find an example for custom items [here](/geyser/custom-items/#geyser-extensions). For other events, see [here](/geyser/events) for documentation.
 
 To build your extension, run the Gradle build task, and install the extension.

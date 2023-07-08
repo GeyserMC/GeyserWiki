@@ -24,9 +24,9 @@ It can be used easily in Geyser Extensions, see [here](/other/extensions) for de
     Note: To see full, detailed documentation, see the linked sources with javadocs.
 </div>
 
-#### [GeyserAPI](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/GeyserApi.java):
+#### [GeyserApi](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/GeyserApi.java):
 The GeyserApi interface serves as a central access point to various functionalities provided by the Geyser API, providing methods to e.g. interact with player connections.
-It extends the [BaseAPI](https://github.com/GeyserMC/api/blob/master/base/src/main/java/org/geysermc/api/GeyserApiBase.java) interface, which provides basic information about individual players.
+It extends the [Base API](https://github.com/GeyserMC/api/blob/master/base/src/main/java/org/geysermc/api/GeyserApiBase.java) interface, which provides basic information about individual players.
 
 The class GeyserApi is the base class of the API and you need to use it to access any part of the API.<br>
 To access it, you simply type:
