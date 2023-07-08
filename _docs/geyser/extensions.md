@@ -57,7 +57,7 @@ you would need to load the config here to ensure that your config is ready befor
 - `GeyserPostInitializeEvent`: It is called when Geyser has completed initializing. The bulk of your code should go here, as the GeyserAPI is fully available at this stage.
 - `GeyserShutdownEvent`: Called when Geyser is shutting down. You can use this to e.g. save data, or clean up resources.
 
-The bulk of your code would go into the `GeyserPostInitializeEvent`, when Geyser is ready to accept & handle players. See below for an example:
+See below for an example:
 ```java
 @Subscribe
 public void onPostInitialize(GeyserPostInitializeEvent event) {
