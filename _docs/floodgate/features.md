@@ -12,11 +12,6 @@ You can also specify a UUID: `fwhitelist add 00000000-0000-0000-0009-01f64f65c7c
 
 The permission node is `floodgate.command.fwhitelist`.
 
-## What is the Global Api?
-The Global Api is an API that is available for every server. It currently includes: [Global Linking](#what-is-global-linking), [skin uploading](#what-is-skin-uploading), getting a xuid by gamertag, and getting a gamertag by xuid.
-We don't store anything else than you can access by the Global Api, except for some non-identifiable metrics. The source code of the Global Api is available [here](https://github.com/GeyserMC/global_api) and the source code of the Global Linking server is available [here](https://github.com/GeyserMC/GlobalLinkServer).
-
-
 ## What is skin uploading?
 Skins of Bedrock player should be visible to Java players on servers with Floodgate 2.0 installed.  
 If they aren't, it's most likely that the skin uploading queue has grown too large and can take a while to upload your skin.
