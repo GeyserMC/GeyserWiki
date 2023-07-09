@@ -8,7 +8,7 @@ This page will contain information about class FloodgateApi.<br>
 See the sidebar for more information about other parts of the API.
 
 ### Accessing the Floodgate API
-See [here](/geyser/using-geyser-or-floodgate-as-a-dependency) for how to include the Floodgate API in your project.
+See [here](/geyser/getting-started-with-the-api) for how to include the Floodgate API in your project.
 
 The Floodgate API has changed in Floodgate 2.0. The most important change is that the API methods are no longer static and instead instance-based, as shown below.
 ---
@@ -22,6 +22,10 @@ FloodgateApi.getInstance();
 After you got the instance, you have access to all the methods.<br>
 Use the documentation in the API module to see (and get info about) every single method available.  
 Most [API methods have a simple explanation](https://github.com/GeyserMC/Floodgate/tree/master/api/src/main/java/org/geysermc/floodgate/api).
+
+<div class="alert alert-info" role="alert">
+    Note: To see full, detailed documentation, see the <a href="https://repo.opencollab.dev/javadoc/maven-snapshots/org/geysermc/floodgate/api/2.2.2-SNAPSHOT">javadocs</a>.
+</div>
 
 #### We'll highlight a few to get you started quickly:
 `FloodgateApi#isFloodgatePlayer(UUID)`<br>

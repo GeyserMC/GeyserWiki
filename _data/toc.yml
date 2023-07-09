@@ -46,12 +46,12 @@
         - title: Resource pack
           url: "geyser/custom-items/#resource-pack"
     - title: Geyser API
-      url: "geyser/geyser-api/"
+      url: "geyser/api/"
       children:
         - title: Getting Started
-          url: "geyser/getting-started-with-api/"
+          url: "geyser/getting-started-with-the-api/"
         - title: Overview
-          url: "geyser/geyser-api/#short-overview-of-the-api"
+          url: "geyser/api/#short-overview-of-the-api"
         - title: Events
           url: "geyser/events/"
         - title: Forms and Cumulus
@@ -83,7 +83,7 @@
         - title: Skin Uploading
           url: "floodgate/features/#what-is-skin-uploading"
     - title: "Floodgate API"
-      url: "floodgate/floodgate-api/"
+      url: "floodgate/api/"
       children:
         - title: "FloodgatePlayer"
           url: "floodgate/player/"

@@ -8,7 +8,7 @@ We don't store anything else than you can access by the Global API, except for s
 
 As a user of the API, you can get various info about Geyser (or specifically, Floodgate players) that joined any Geyser + Floodgate server before. This includes:
 - Conversion methods from a Bedrock gamertag to Bedrock xuid, and vice-versa. Only provides info for players who are in Geyser's cache. <br>
-  If you need them for all players, you can use a third-party API, https://mcprofile.io/endpoints, which also provides info from the Geyser Global API.
+  If you need them for all players, you can use a third-party API, e.g. https://mcprofile.io/endpoints, which also provides info from the Geyser Global API.
 - Skin info: Whenever a Bedrock player joins via Floodgate, their skin gets converted & uploaded to mineskin. If you want to grab that converted skin, use the xuid of the Bedrock player in this endpoint to get a texture id, or a base64 encoded "value", which you could use directly in e.g. player heads.
 
 See the [Global API docs](https://api.geysermc.org/docs) for more info, and detailed usage.

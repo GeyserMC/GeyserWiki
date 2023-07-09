@@ -6,7 +6,7 @@ title: Geyser Extensions
 Geyser Extensions are the equivalent of "plugins", but specifically for the Geyser platform. This brings the advantage of them being platform-agnostic, meaning that you won't have to worry about supporting all platforms individually. Additionally, they will be, by design, only applied for Bedrock players joining via Geyser.
 
 ### What can Geyser Extensions do?
-Extensions can fully utilize the Geyser API to add additional functionality to Geyser. See [Geyser API docs](/geyser/geyser-api/) for info on what is currently possible. To name a few examples:
+Extensions can fully utilize the Geyser API to add additional functionality to Geyser. See [Geyser API docs](/geyser/api/) for info on what is currently possible. To name a few examples:
 - Register custom items
 - Hide commands from being suggested
 - Change the MOTD
