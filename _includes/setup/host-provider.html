@@ -6,6 +6,7 @@
       {% assign urlParts = provider.url | split: "/" %}
       <option value="{{ provider.name }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
     {% endfor %}
+    <option value="Not listed">Not listed</option>
   </select>
   <div id="search-result" class="mt-2"></div>
 </div>
@@ -15,6 +16,7 @@
     {% for provider in all_providers %}
       "{{ provider.name }}": {{ site.data.providers.description_templates[provider.description_template] | append: " " | append: provider.description | markdownify | strip | jsonify }},
     {% endfor %}
+    "Not listed": "If your hosting provider is not listed and is a game server provider please try xxx. If its not a dedicated game server provider and is a VPS then please follow the self hosting steps."
   }
 
   function selectProvider() {

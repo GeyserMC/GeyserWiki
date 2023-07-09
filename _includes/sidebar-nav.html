@@ -8,6 +8,9 @@
 			{% for section in site.data.toc %}
 			{% assign section_size = section.url | size %}
 			{% assign current_section = page.url | remove_first: "/" | | truncate: section_size, "" %}
+			{% if current_section == "" %}
+				{% assign current_section = "geyser/" %}
+			{% endif %}
 			<div class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle fw-bold{% if current_section == section.url %} show{% endif %}" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">{{ section.title }}</a>
 				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc{% if current_section == section.url %} show{% endif %}">

@@ -1,5 +1,6 @@
 ---
 title: Setup
+page_sidebar: false
 ---
 <div class="row gap-4 mx-0" role="tablist">
     <a class="col btn btn-outline-primary active" href="#" data-bs-toggle="tab" data-bs-target="#self-host-options" type="button" role="tab" aria-controls="self-host-options" aria-selected="true">Self Host</a>
