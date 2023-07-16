@@ -1,6 +1,12 @@
 
 # Spigot/Paper setup with server hosting provider
 
+
+<div class="alert alert-info" role="alert">
+    If your server is not running {{ site.data.versions.java }}, you will need to install <a href="https://www.spigotmc.org/resources/viaversion.19254/">ViaVersion</a>.
+    See also our FAQ for supported versions: <a href="/geyser/faq/#what-server-versions-does-geyser-support">here</a>
+</div>
+
 1. Select your server hosting provider in the dropdown above.
 2. Download the Geyser-Spigot.jar from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot).
 3. Place the Geyser-Spigot.jar in the `plugins` folder, and restart the server.
@@ -26,3 +32,7 @@
     **Important**: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
  
 5. Verify whether connections are possible by running `geyser connectiontest <ip>:<port>` in the console.
+
+<div class="alert alert-info" role="alert">
+    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+</div>

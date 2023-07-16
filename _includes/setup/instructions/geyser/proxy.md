@@ -2,8 +2,10 @@
 # Proxy setup - self-hosting
 
 <div class="alert alert-info" role="alert">
-       Install Geyser **only** on the proxy server! You can install Floodgate on all servers for better skin support & 
-       network-wide Floodgate api availability.
+    NOTE: <br>
+    - Install Geyser <b>only</b> on the proxy server! You can install Floodgate on all servers for better skin support & 
+        network-wide Floodgate API availability for other plugins. <br>
+    - All servers on the network must accept {{ site.data.versions.java }} Java clients, as Geyser imitates one.  
 </div>
 
 1. Download the Geyser jar for your proxy software from [the download page](https://geysermc.org/download).
@@ -45,3 +47,7 @@
    Ngrok will not work since it is TCP-only. <br>
 
 5. Verify whether connections from other networks are possible by running `geyser connectiontest <ip>:<port>` in the console.
+
+<div class="alert alert-info" role="alert">
+    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+</div>

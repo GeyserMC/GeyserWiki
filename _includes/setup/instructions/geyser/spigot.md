@@ -1,6 +1,12 @@
 
 # Spigot/Paper setup - self-hosting
 
+
+<div class="alert alert-info" role="alert">
+    If your server is not running {{ site.data.versions.java }}, you will need to install <a href="https://www.spigotmc.org/resources/viaversion.19254/">ViaVersion</a>.
+    See also our FAQ for supported versions: <a href="/geyser/faq/#what-server-versions-does-geyser-support">here</a>
+</div>
+
 1. Download the Geyser-Spigot.jar from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot).
 2. Place the Geyser-Spigot.jar in the `plugins` folder, and restart the server.
 3. Open your Geyser config, located in `/plugins/Geyser-Spigot/config.yml`, and find the following:
@@ -40,3 +46,7 @@
    Ngrok will not work since it is TCP-only. <br>
 
 5. Verify whether connections from other networks are possible by running `geyser connectiontest <ip>:<port>` in the console.
+
+<div class="alert alert-info" role="alert">
+    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+</div>

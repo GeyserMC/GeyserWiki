@@ -16,7 +16,7 @@
     {% for provider in all_providers %}
       "{{ provider.name }}": {{ site.data.providers.description_templates[provider.description_template] | append: " " | append: provider.description | markdownify | strip | jsonify }},
     {% endfor %}
-    "Not listed": "If your hosting provider is not listed and is a game server provider please try xxx. If its not a dedicated game server provider and is a VPS then please follow the self hosting steps."
+    "Not listed": "If your hosting provider is not listed, try enabling the \"clone-remote-port\" option in the config. Then, restart the server, and try connecting with the same IP and port as on Java Edition. <br> If this does not work, ask your server hosting provider for a UDP port, and use that. For VPS/KVM servers please follow the self-hosting steps."
   }
 
   function selectProvider() {

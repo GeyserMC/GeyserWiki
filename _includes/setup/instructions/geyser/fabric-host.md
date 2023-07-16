@@ -1,6 +1,11 @@
 
 # Fabric setup with server hosting provider
 
+<div class="alert alert-warning" role="alert">
+	Geyser-Fabric <b>ONLY</b> runs only on the latest Minecraft: Java Edition version, which is {{ site.data.versions.java }}. <br>
+You can use Geyser on a BungeeCord/Velocity proxy, or Geyser Standalone instead. 
+ </div>
+
 1. Select your server hosting provider in the dropdown above.
 2. Download the Geyser-Fabric.jar from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/fabric).
 3. Place the Geyser-Fabric.jar in the `mods` folder, and restart the server. **You also need [FabricAPI](https://modrinth.com/mod/fabric-api) installed.**
@@ -26,3 +31,7 @@
     **Important**: Other services/mods that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
  
 5. Verify whether connections are possible by running `geyser connectiontest <ip>:<port>` in the console.
+
+<div class="alert alert-info" role="alert">
+    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+</div>

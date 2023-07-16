@@ -2,6 +2,8 @@
 title: Creating a Startup Script
 ---
 
+# Creating a Startup Script for Geyser-Standalone
+
 **In order for this to work, you MUST have Java 16 (or higher) installed!**
 
 Once you have downloaded and placed Geyser into its own folder, you will need to create a startup script; similar to how you'd run a Bukkit/Spigot/Paper server.
