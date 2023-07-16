@@ -117,11 +117,11 @@ NonVanillaCustomItemData data = NonVanillaCustomItemData.builder()
         .javaId(1)
 ```
 2. There are many other options you can set to match the behavior that you require for your item. You can see them [here](https://github.com/GeyserMC/Geyser/blob/master/api/geyser/src/main/java/org/geysermc/geyser/api/item/custom/NonVanillaCustomItemData.java)
-3. Register your item in the pre init event:
+3. Register your item in the GeyserDefineCustomItems event:
 ```java
 @Subscribe
-public void onGeyserPreInitializeEvent(GeyserDefineCustomItemsEvent event) {
-    event.registerCustomItem(data);
+public void onGeyserDefineCustomItemsEvent(GeyserDefineCustomItemsEvent event) {
+    event.register(data);
 }
 ```
 
