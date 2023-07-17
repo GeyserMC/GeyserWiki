@@ -2,12 +2,12 @@
 # Fabric setup - self-hosting
 
 <div class="alert alert-warning" role="alert">
-	Geyser-Fabric <b>ONLY</b> runs only on the latest Minecraft: Java Edition version, which is {{ site.data.versions.java }}. <br>
-To use Geyser with an older Fabric server, you can use Geyser on a BungeeCord/Velocity proxy, or Geyser Standalone instead. 
+	Geyser-Fabric runs <b>only</b> on a {{ site.data.versions.java }} Fabric server. <br>
+To use Geyser on an older Fabric server, you can use Geyser on a BungeeCord/Velocity proxy, or Geyser Standalone instead. 
  </div>
 
-1. Download the Geyser-Fabric.jar from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/fabric).
-2. Place the Geyser-Fabric.jar in the `mods` folder, and restart the server. **You also need [FabricAPI](https://modrinth.com/mod/fabric-api) installed.**
+1. Download the mod from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/fabric).
+2. Place the Geyser-Fabric.jar in the `mods` folder, and restart the server. **You also need [FabricAPI](https://modrinth.com/mod/fabric-api).**
 3. Open your Geyser config, located in `/config/Geyser-Fabric/config.yml`, and find the following: 
 
     ```yaml

@@ -7,7 +7,7 @@
 </div>
 
 1. Select your server hosting provider in the dropdown above.
-2. Download the Geyser-Spigot.jar from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot).
+2. Download the plugin from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot).
 3. Place the Geyser-Spigot.jar in the `plugins` folder, and restart the server.
 4. Open your Geyser config, located in `/plugins/Geyser-Spigot/config.yml`, and find the following:
 
@@ -26,7 +26,7 @@
         clone-remote-port: false 
     ``` 
     The vital part is the port. This is the port that Bedrock players will use to connect to your server. 
-    Follow the instructions in the blue box - change the port, and if necessary, `clone-remote-port` & `address`.
+    Follow the instructions in the provider selector - change the port, and if necessary, `clone-remote-port` & `address`.
     If `clone-remote-port` is enabled, the bedrock port will be overwritten with the Java port! <br>
     **Important**: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
  

@@ -9,7 +9,7 @@
 </div>
 
 1. Select your server hosting provider in the dropdown above.
-2. Download the Geyser jar for your proxy software from [the download page](https://geysermc.org/download).
+2. Download the plugin for your proxy software from [the download page](https://geysermc.org/download).
 3. Place the Geyser jar in the `plugins` folder, and restart the server.
 4. Open your Geyser config, located in `/plugins/Geyser-xyz/config.yml`, and find the following:
 
@@ -28,7 +28,7 @@
         clone-remote-port: false 
     ``` 
     The vital part is the port. This is the port that Bedrock players will use to connect to your server. 
-    Follow the instructions in the blue box - change the port, and if necessary, `clone-remote-port` & `address`.
+    Follow the instructions in the provider selector - change the port, and if necessary, `clone-remote-port` & `address`.
     If `clone-remote-port` is enabled, the bedrock port will be overwritten with the Java port! <br>
     **Important**: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
 

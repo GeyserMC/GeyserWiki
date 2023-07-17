@@ -8,7 +8,7 @@
     - All servers on the network must accept {{ site.data.versions.java }} Java clients, as Geyser imitates one.  
 </div>
 
-1. Download the Geyser jar for your proxy software from [the download page](https://geysermc.org/download).
+1. Download the plugin for your proxy software from [the download page](https://geysermc.org/download).
 2. Place the Geyser jar in the `plugins` folder, and restart the server.
 3. Open your Geyser config, located in `/plugins/Geyser-xyz/config.yml`, and find the following:
 

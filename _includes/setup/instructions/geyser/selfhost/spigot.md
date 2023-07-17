@@ -6,7 +6,7 @@
     See also our <a href="/geyser/faq/#what-server-versions-does-geyser-support">FAQ article</a> on supported versions.
 </div>
 
-1. Download the Geyser-Spigot.jar from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot).
+1. Download the plugin from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot).
 2. Place the Geyser-Spigot.jar in the `plugins` folder, and restart the server.
 3. Open your Geyser config, located in `/plugins/Geyser-Spigot/config.yml`, and find the following:
 
