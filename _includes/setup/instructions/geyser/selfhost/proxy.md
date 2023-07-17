@@ -14,12 +14,12 @@
 
     ```yaml
     bedrock: 
-    # The IP address that will listen for connections. 
-    # Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server. 
-    #address: 0.0.0.0 
+        # The IP address that will listen for connections. 
+        # Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server. 
+        #address: 0.0.0.0 
 
-    # The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.
-    port: 19132 
+        # The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.
+        port: 19132 
     ```
     The vital part is the port. This is the port that Bedrock players will use to connect to your server!
     If you enable `clone-remote-port`, the port will be overridden and the Java port is used.
