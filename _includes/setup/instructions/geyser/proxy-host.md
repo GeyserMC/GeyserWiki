@@ -1,7 +1,6 @@
 
 # Proxy setup with server hosting provider
 
-
 <div class="alert alert-info" role="alert">
     NOTE: <br>
     - Install Geyser <b>only</b> on the proxy server! You can install Floodgate on all servers for better skin support & 

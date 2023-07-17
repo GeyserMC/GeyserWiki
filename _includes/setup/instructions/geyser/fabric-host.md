@@ -3,7 +3,7 @@
 
 <div class="alert alert-warning" role="alert">
 	Geyser-Fabric <b>ONLY</b> runs only on the latest Minecraft: Java Edition version, which is {{ site.data.versions.java }}. <br>
-You can use Geyser on a BungeeCord/Velocity proxy, or Geyser Standalone instead. 
+To use Geyser with an older Fabric server, you can use Geyser on a BungeeCord/Velocity proxy, or Geyser Standalone instead. 
  </div>
 
 1. Select your server hosting provider in the dropdown above.

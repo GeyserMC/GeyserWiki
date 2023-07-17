@@ -1,10 +1,9 @@
 
 # Spigot/Paper setup - self-hosting
 
-
 <div class="alert alert-info" role="alert">
     If your server is not running {{ site.data.versions.java }}, you will need to install <a href="https://www.spigotmc.org/resources/viaversion.19254/">ViaVersion</a>.
-    See also our FAQ for supported versions: <a href="/geyser/faq/#what-server-versions-does-geyser-support">here</a>
+    See also our <a href="/geyser/faq/#what-server-versions-does-geyser-support">FAQ article</a> on supported versions.
 </div>
 
 1. Download the Geyser-Spigot.jar from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot).
