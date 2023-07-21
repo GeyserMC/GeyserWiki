@@ -2,11 +2,11 @@
 <div class="mb-4">
   <select id="provider-select" class="form-select" onchange="selectProvider()">
     <option value="">Select a provider</option>
+    <option value="Not listed">Not listed</option>
     {% for provider in all_providers %}
       {% assign urlParts = provider.url | split: "/" %}
       <option value="{{ provider.name }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
     {% endfor %}
-    <option value="Not listed">Not listed</option>
   </select>
   <div id="search-result" class="mt-2"></div>
 </div>
