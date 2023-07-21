@@ -19,9 +19,15 @@ page_sidebar: false
   </div>
 </div>
 
+<div class="alert alert-warning" role="alert">
+  <b>Experiencing issues?</b> <br>
+  Start with the <a href="/geyser/common-issues/">Common Issues</a> page.
+  If your issue is not included there, join our <a href="https://discord.gg/geysermc">Discord server</a> for support.
+</div>
+
 <h4 class="mt-4">Further information:</h4>
 <ul>
-  <li><a href="/geyser/understanding-the-config/">Full Geyser configuration page</a></li>
+  <li><a href="/geyser/understanding-the-config/">Full config documentation</a></li>
   <li><a href="/geyser/current-limitations/">Current Limitations</a></li>
-  <li><a href="/geyser/common-issues/">Common Issues</a></li>
+  <li><a href="/geyser/faq/">Frequently asked questions</a></li>
 </ul>

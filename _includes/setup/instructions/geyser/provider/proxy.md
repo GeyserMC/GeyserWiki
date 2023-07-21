@@ -17,15 +17,15 @@
     bedrock: 
         # The IP address that will listen for connections. 
         # Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server. 
-        #address: 0.0.0.0 
+        #address: 0.0.0.0
 
         # The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.
-        port: 19132 
+        port: 19132
 
         # Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock. 
         # This option makes the Bedrock port the same as the Java port every time you start the server. 
         # This option is for the plugin version only. 
-        clone-remote-port: false 
+        clone-remote-port: false
     ``` 
     The vital part is the port. This is the port that Bedrock players will use to connect to your server. 
     Follow the instructions in the provider selector - change the port, and if necessary, `clone-remote-port` & `address`.
