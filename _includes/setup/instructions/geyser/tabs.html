@@ -1,0 +1,37 @@
+<div class="nav nav-tabs setup-tabs" role="tablist" aria-label="Setup Options">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" href="#" data-bs-toggle="tab" data-bs-target="#spigot-option-{{include.type}}" type="button" role="tab" aria-controls="spigot-option-{{include.type}}" aria-selected="false"><img src="{{ '/img/icons/paper.png' | relative_url }}" alt="paper icon"> Paper / Spigot</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#fabric-option-{{include.type}}" type="button" role="tab" aria-controls="fabric-option-{{include.type}}" aria-selected="false"><img src="{{ '/img/icons/fabric.png' | relative_url }}" alt="fabric icon"> Fabric</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#proxy-option-{{include.type}}" type="button" role="tab" aria-controls="proxy-option-{{include.type}}" aria-selected="false"><img src="{{ '/img/icons/velocity.svg' | relative_url }}" alt="velocity icon"> Proxy Servers</a>
+    </li>
+    {% if include.show_standalone != nil %}
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#standalone-option-{{include.type}}" type="button" role="tab" aria-controls="standalone-option-{{include.type}}" aria-selected="false"><img src="{{ '/img/icons/geyser.png' | relative_url }}" alt="geyser icon"> Standalone</a>
+    </li>
+    {% endif %}
+  </div>
+
+  <div class="tab-content mt-4">
+    <div id="spigot-option-{{include.type}}" class="tab-pane fade show active" role="tabpanel">
+        {% capture my_include %}{% include setup/instructions/geyser/{{include.type}}/spigot.md %}{% endcapture %}
+        {{ my_include | markdownify }}
+    </div>
+    <div id="fabric-option-{{include.type}}" class="tab-pane fade" role="tabpanel">
+        {% capture my_include %}{% include setup/instructions/geyser/{{include.type}}/fabric.md %}{% endcapture %}
+        {{ my_include | markdownify }}
+    </div>
+    <div id="proxy-option-{{include.type}}" class="tab-pane fade" role="tabpanel">
+        {% capture my_include %}{% include setup/instructions/geyser/{{include.type}}/proxy.md %}{% endcapture %}
+        {{ my_include | markdownify }}
+    </div>
+    {% if include.show_standalone != nil %}
+    <div id="standalone-option-{{include.type}}" class="tab-pane fade" role="tabpanel">
+        {% capture my_include %}{% include setup/instructions/geyser/{{include.type}}/standalone.md %}{% endcapture %}
+        {{ my_include | markdownify }}
+    </div>
+    {% endif %}
+</div>

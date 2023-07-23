@@ -6,10 +6,16 @@
 		</button>
 		<div class="collapse navbar-collapse flex-column align-items-start" id="sidebarNav">
 			{% for section in site.data.toc %}
-				<a class="fw-bold" href="{% if section.url %}{{ site.baseurl }}/{{ section.url }}{% else %}{{ section.external_url }}{% endif %}">{{ section.title }}</a>
-				<ul class="pe-3">
+			{% assign section_size = section.url | size %}
+			{% assign current_section = page.url | remove_first: "/" | | truncate: section_size, "" %}
+			{% if current_section == "" %}
+				{% assign current_section = "geyser/" %}
+			{% endif %}
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold{% if current_section == section.url %} show{% endif %}" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">{{ section.title }}</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc{% if current_section == section.url %} show{% endif %}">
 					{% for entry in section.links %}
-						<li>
+						<li class="ms-4">
 							<a href="{% if entry.url %}{{ site.baseurl }}/{{ entry.url }}{% else %}{{ entry.external_url }}{% endif %}">{{ entry.title }}</a>
 							{% if entry.children %}
 								<ul>
@@ -23,6 +29,7 @@
 						</li>
 					{% endfor %}
 				</ul>
+			</div>
 			{% endfor %}
 		</div>
 	</div>

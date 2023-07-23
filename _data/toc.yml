@@ -4,17 +4,12 @@
     - title: Setting up Geyser
       url: "geyser/setup/"
       children:
-        - title: Plugin Setup
-          url: "geyser/setup/#plugin-setup"
         - title: Supported Hosting Providers
           url: "geyser/supported-hosting-providers/"
         - title: Using Geyser with Consoles
           url: "geyser/using-geyser-with-consoles/"
         - title: Using playit.gg with Geyser
           url: "geyser/playit-gg/"
-    - title: Setting up Geyser-Standalone
-      url: "geyser/standalone/"
-      children:
         - title: Creating a Startup Script
           url: "geyser/creating-a-startup-script/"
     - title: Common Issues
@@ -73,6 +68,8 @@
       url: "floodgate/setup/"
     - title: "Issues"
       url: "floodgate/issues/"
+    - title: "FAQ"
+      url: "floodgate/faq/"
     - title: "Features"
       url: "floodgate/features/"
       children:

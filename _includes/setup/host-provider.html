@@ -1,0 +1,31 @@
+{% assign all_providers = site.data.providers.support | concat: site.data.providers.built_in | sort: 'name' %}
+<div class="mb-4">
+  <select id="provider-select" class="form-select" onchange="selectProvider()">
+    <option value="">Select a provider</option>
+    <option value="Not listed">Not listed</option>
+    {% for provider in all_providers %}
+      {% assign urlParts = provider.url | split: "/" %}
+      <option value="{{ provider.name }}">{{ provider.name }} - {{ urlParts[2] | remove_first: "www." }}</option>
+    {% endfor %}
+  </select>
+  <div id="search-result" class="mt-2"></div>
+</div>
+
+<script>
+  window.provider_data = {
+    "Not listed": {{ "If your hosting provider is not listed, try enabling the `clone-remote-port` option in the config. Then, restart the server, and try connecting with the same IP and port as on Java Edition. <br> If this does not work, ask your server hosting provider for a UDP port, and use that. For VPS/KVM servers please follow the self-hosting steps." | markdownify | jsonify }},
+    {% for provider in all_providers %}
+      "{{ provider.name }}": {{ site.data.providers.description_templates[provider.description_template] | append: " " | append: provider.description | markdownify | strip | jsonify }},
+    {% endfor %}
+  }
+
+  function selectProvider() {
+    var provider = document.getElementById("provider-select").value
+    showSearchResult(provider)
+  }
+
+  function showSearchResult(provider) {
+    var searchResultContainer = document.querySelector("#search-result")
+    searchResultContainer.innerHTML = provider in window.provider_data ? '<div class="alert alert-info no-p-margin mb-0" role="alert">' + window.provider_data[provider] + '</div>' : ""
+  }
+</script>

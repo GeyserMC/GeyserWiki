@@ -2,6 +2,9 @@
 title: FAQ
 ---
 
+# Frequently Asked Questions
+Here you can find answers to frequently asked questions about Geyser - if you have a question that isn't answered here, feel free to ask in our [Discord](https://discord.gg/GeyserMC)!
+
 ## How Does it Work?
 Geyser works as a translator, translating both the incoming and outgoing packets to a format both the client and server can understand. With this being said, it emulates a Minecraft: Java Edition client, so the server actually thinks you're joining from Java Edition. Regardless of the server or what plugins it has installed, you can join it with Geyser (as long as the server supports the latest vanilla (unmodified) Minecraft version).
 
@@ -32,6 +35,16 @@ Floodgate can cause issues with plugins as it modifies the login process. *Pleas
 
 If you come across any more, please let us know via [Discord](http://discord.gg/geysermc).
 
+## What server versions does Geyser support?
+The Geyser-Spigot plugin supports any Minecraft server version 1.13.2 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
+Since Geyser emulates a {{ site.data.versions.java }} Java Edition client, you need to [install ViaVersion](https://www.spigotmc.org/resources/viaversion.19254/) on your server
+if it is not running the latest version of Minecraft. <br>
+
+In order for Bedrock players to chat (1.19.3+) or join (1.19.1/1.19.2), you need to disable chat signing. More information about that can be read on the [chat signing page](geyser/secure-chat/). <br>
+
+You will also need to run at least Java 16 or later to use Geyser. See [here](https://docs.papermc.io/misc/java-install) for more info on updating Java.
+Paper versions not supporting Java 16 can add `-DPaper.IgnoreJavaVersion=true` flag to the Java startup arguments to allow Paper to run on Java 16.
+
 ## Which plugin version of Geyser do I need?
 This is a non-complete list of what platform each plugin version of Geyser is for, and the standalone version can be used for any as it isn't a plugin.
 * Geyser-Spigot works with:
@@ -44,13 +57,10 @@ This is a non-complete list of what platform each plugin version of Geyser is fo
   * Any other forks of the above
 * Geyser-Velocity works with [Velocity](https://www.velocitypowered.com/)
 * Geyser-Sponge works with [SpongeVanilla or SpongeForge](https://www.spongepowered.org/)
-* Geyser-Fabric works with [Fabric](https://www.fabricmc.net/)
+* Geyser-Fabric works with [Fabric](https://www.fabricmc.net/), and requires FabricAPI to be installed on the server as well.
 
 ## Which type of Geyser version is better, standalone or plugin?
 Because of optimizations that hook into the plugin platforms, plugin versions of Geyser are preferable compared to standalone Geyser. On Spigot, Velocity, and BungeeCord versions of Geyser, direct connections allow for faster loading times, lower latency, and accurate IP addresses without requiring Floodgate. Geyser-Spigot has further optimizations due to having direct world access, including lower memory usage and greater translation accuracy. However, large server networks might prefer standalone Geyser because it can be updated without needing to restart any other proxies or servers, and can offload resource usage onto seperate machines.
-
-## What server versions does Geyser-Spigot support?
-The Geyser-Spigot plugin supports any Minecraft server version 1.13.2 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
 
 ## If using BungeeCord or another fork, where do I need to put Geyser/Floodgate?
 You only need Geyser and/or Floodgate on the BungeeCord server, as long as not using the Floodgate API. In this case, Floodgate is needed on the "backend" servers as well.

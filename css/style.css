@@ -56,6 +56,23 @@ div.highlight {
 	margin: 0;
 }
 
+.no-p-margin p {
+	margin: 0;
+}
+
+.list-disc {
+	list-style: disc;
+}
+
 main img {
     max-width: 100%;
+}
+
+.setup-tabs .nav-link {
+	color: var(--bs-white) !important;
+}
+
+.setup-tabs .nav-link img {
+	width: 1.5em;
+	height: 1.5em;
 }
