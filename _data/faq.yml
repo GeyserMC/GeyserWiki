@@ -124,7 +124,7 @@
   content: |
     Unfortunately, Ngrok is TCP-only, so you will not be able to use Geyser with Ngrok. As an alternative, you can use [playit.gg](https://playit.gg), which supports both TCP and UDP.
 
-- title: How do I setup [Cosmic Guard](https://cosmicguard.com/)?
+- title: How do I setup Cosmic Guard?
   content: |
     1) You will need access to the host systems terminal. Note: This guide is for Linux systems only!
     2) Setup a "Guard" select gaming then Minecraft: Bedrock edition.

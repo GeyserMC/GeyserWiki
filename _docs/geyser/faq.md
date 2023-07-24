@@ -25,7 +25,7 @@ Here you can find answers to frequently asked questions about Geyser - if you ha
 
 # Questions not related to gameplay
 
-<div class="accordion mb-5" id="accordionFaq">
+<div class="accordion mb-5" id="accordionFaqOther">
   {% for question in site.data.faq-other %}
     {% assign id = question.title | slugify %}
     <div class="accordion-item">
@@ -34,7 +34,7 @@ Here you can find answers to frequently asked questions about Geyser - if you ha
           {{ question.title }}
         </button>
       </h2>
-      <div id="{{ id }}" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+      <div id="{{ id }}" class="accordion-collapse collapse" data-bs-parent="#accordionFaqOther">
         <div class="accordion-body">
           {{ question.content | markdownify }}
         </div>
