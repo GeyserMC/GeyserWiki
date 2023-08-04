@@ -231,7 +231,7 @@
     {
       "name": "Heavynode",
       "url": "https://www.heavynode.com/",
-      "description": "Get Geyser as a plugin. Use default port and 0.0.0.0 as the address. 19132 is blocked for DDOS reasons so your best bet is to use the same port as your Java server for the Bedrock port in your config and connect with that port. Also, see [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)"
+      "description": "Get Geyser as a plugin. Use 0.0.0.0 as the address and open a port on the network section of the control panel. Port 19132 is only available if your server has a dedicated IP (contact support), otherwise you will need to use a random port as assigned by the control panel. For servers in Canada and the UK a support ticket is needed to also open UDP traffic for Bedrock due to the OVH game firewall, see [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)."
     },
     {
       "name": "Hetzner",
