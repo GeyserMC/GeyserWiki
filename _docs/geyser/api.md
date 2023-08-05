@@ -17,7 +17,7 @@ See [here](/geyser/getting-started-with-the-api) for how to include the Geyser A
 
 The Geyser API offers events to subscribe to, or information on whether a player is joining through Geyser, and gives you the ability to enhance what is possible with Geyser (i.e. register custom items).
 (soon, blocks and entities too).
-It can be used easily in Geyser Extensions, see [here](/other/extensions) for details on those.
+It can be used easily in Geyser Extensions, see [here](/geyser/extensions) for details on those.
 
 **Quick overview:** <br>
 <div class="alert alert-info" role="alert">
