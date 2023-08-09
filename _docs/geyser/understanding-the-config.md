@@ -91,8 +91,6 @@ saved-user-logins:
 
 **`disable-bedrock-scaffolding`**: Whether Bedrock players are blocked from performing their scaffolding-style bridging.
 
-**`always-quick-change-armor`**: Whether Bedrock players can right-click outside their inventory to replace armor in their inventory, even if the armor slot is already occupied (which Java Edition doesn't allow).
-
 **`emote-offhand-workaround`**: Since Java Edition 1.9, clients have had the ability to switch the item in their mainhand and offhand with a keybind. Bedrock Edition does not have this ability, so this config option makes up for it, If set, when a Bedrock player performs any emote, it will swap the offhand and mainhand items, just like the Java Edition keybind. There are three options this can be set to:
 - `disabled` - the default/fallback, which doesn't apply this workaround
 - `no-emotes` - emotes will NOT be sent to other Bedrock clients and offhand will be swapped. This effectively disables all emotes from being seen.
@@ -120,7 +118,7 @@ saved-user-logins:
 
 **`notify-on-new-bedrock-update`**: Whether to alert the console and operators that a new Geyser version is available that supports a Bedrock version that this Geyser version does not support. It's recommended to keep this option enabled, as many Bedrock platforms auto-update.
 
-**`unusable-space-block`**: Which item to use to mark unavailable slots in a Bedrock player inventory. Examples of this are the 2x2 crafting grid while in creative, or custom inventory menus with sizes different from the usual 3x9. A barrier block is the default item (minecraft:barrier is therefore the default value). Takes any Java Minecraft identifier, e.g. "minecraft:apple".
+**`unusable-space-block`**: Which item to use to mark unavailable slots in a Bedrock player inventory. Examples of this are the 2x2 crafting grid while in creative, or custom inventory menus with sizes different from the usual 3x9. A barrier block is the default item (minecraft:barrier is therefore the default value). Takes any Minecraft Bedrock identifier, e.g. `minecraft:apple`. To set this to a custom item, you will need to add the `geyser_custom:` namespace.
 
 ## Metrics
 
