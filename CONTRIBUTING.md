@@ -13,7 +13,7 @@ Make sure that the file extension is .md - in this case `pagetitle.md`.
 ```md
 ---
 title: Page title
-page_sidebar: false "optional"
+page_sidebar: false (optional)
 ---
 
 # Page title
