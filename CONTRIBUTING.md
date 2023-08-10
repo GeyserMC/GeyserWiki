@@ -12,9 +12,8 @@ Make sure that the file extension is .md in this case pagetitle.md
 
 ```md
 ---
-layout: page
 title: Page title
-permalink: /page/pagetitle/
+page_sidebar: false "optional"
 ---
 
 # Page title
