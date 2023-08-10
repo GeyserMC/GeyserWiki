@@ -13,7 +13,7 @@ There are also guides for specific configurations, such as Docker/Pterodactyl, o
 ## Portforwarding on Linux/Windows
 These are (limited) examples of how to open a port under Windows and Linux. 
 Additionally, you will need to portforward the port on your router/modem - see [here](https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/) or [here](https://www.lifewire.com/how-to-port-forward-4163829) for helpful guides.
-Additionally, if you do not have a static IP address, your IP address may change over time. 
+Do note: if you do not have a static IP address, your IP address may change over time. 
 
 <div class="alert alert-info" role="alert">
 	Some ISPs (Internet Service Providers) block certain ports, or don't allow you to open ports (e.g. by using CGNAT, which doesn't allow you to open a port with a dynamic IP).
@@ -22,7 +22,7 @@ As an alternative to portforwarding, you could use <a href="/geyser/playit-gg/">
 </div>
 
 ### Windows
-To open a port on Windows, you will need to open the port in the Windows Firewall. There are multiple ways to do this:
+To open a port on Windows, you will need to open the port through the Windows Firewall. There are multiple ways to do this:
 
 **Powershell** <br>
 To open a port on UDP (in our example, port 19132), run the following command in an administrator Powershell: <br>
