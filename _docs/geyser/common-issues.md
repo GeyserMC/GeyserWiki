@@ -48,6 +48,22 @@ Sometimes this happens in poor-network environments. There is an `mtu` option in
 
 This option will most likely not help if you are getting "Unable to Connect to World" with no console logs indicating a connection.
 
+# Login Failed
+
+***If you are using a plugin version:*** in your Geyser config, set your remote address to `127.0.0.1`. If that does not work, check your startup log for a message about Docker, and use that address in the remote address
+
+### Cannot reply to EncryptionRequestPacket without profile and access token
+
+There are two causes of this message:
+
+*Floodgate issue*:
+
+This message can occur with a Floodgate setup. Usually, it means that a misconfiguration occurred, or another plugin is conflicting. If you copied the Floodgate key from its folder to the Geyser folder on the same server, this is now unnecessary and you can safely remove the Geyser copy, restart, and try again.
+
+*Server is in Online Mode while Geyser is in Offline Mode*:
+
+If you have your configuration set up like this, put simply, it won't work. If authentication for the Java server is set to online, it is expected Geyser is configured the same way. The server requires a valid Minecraft: Java Edition account, and if you aren't logging into one with Geyser, then you will be unable to join the server. If your configuration is set up properly and you're still getting this issue, it could be that your credentials are invalid.
+
 ### Connection Refused: <INSERT IP AND/OR DOMAIN>
 
 Connection Refused usually means that a Java server could not be found on that port, or the server denied access to the connection on a network level. 
