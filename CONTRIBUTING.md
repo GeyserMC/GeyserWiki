@@ -38,14 +38,14 @@ Once you have added the file you can add an sidebar link, All sidebar links + su
           url: "page/pagetitle/#headerLink"
 ```
 
-### GeyserWiki  development setup locally on Windows.
+### GeyserWiki development - Local deployment on Windows.
 
-* Download Ruby and Take the Ruby+Devkit from this page; https://rubyinstaller.org/downloads/
+* Download and install Ruby using the Ruby+Devkit from https://rubyinstaller.org/downloads/.
 
-* Once installed you will have to Run 'ridk install', this will open the RubyInstaller console.
-Recommend choosing option 3; MSYS and MINGW after that ruby has been installed.
+* Once installed, run 'ridk install' in console to open the RubyInstaller.
+For this usecase, it is recommended to choose the third option, "MSYS and MINGW". After that, the Ruby installation is completed.
 
 * Open the GeyserWiki folder in VScode, in terminal you will have to install the bundle first 'bundle install' command.
 installing for the first time can take a while.
 
-* Once installed you can now start the server locally with command 'bundle exec jekyll serve'
+* Once installed, you can start the webserver locally with the 'bundle exec jekyll serve' command in the VSC terminal. 
