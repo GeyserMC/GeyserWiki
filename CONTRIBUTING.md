@@ -4,7 +4,7 @@ If you would like to contribute to the wiki, please [open a pull request](https:
 
 ### Creating a new page
 
-Most documentation is in the docs folder where you can add new page's or edit the current ones.
+Most documentation is in the docs folder where you can add new pages or edit the current ones.
 If a new page is being added make sure you add its page properties at the beginning of the file.
 Make sure that the file extension is .md in this case pagetitle.md
 
