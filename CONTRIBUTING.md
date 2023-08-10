@@ -22,7 +22,7 @@ This is an example page
 
 ### Adding page to sidebar 
 
-Once you have added the file you can add an sidebar link, All sidebar links + sub links are in the _data/toc.yml file
+Once you have added the file you can add a sidebar link. All sidebar links + sub links are in the _data/toc.yml file.
 
 ### Example sidebar structure 
 
