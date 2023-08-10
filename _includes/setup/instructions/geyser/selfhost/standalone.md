@@ -4,6 +4,12 @@
    You need to have Java 16 or higher installed to run Geyser. To run Geyser Standalone on Android or iOS, see the bottom of this page.
 </div>
 
+<div class="alert alert-warning" role="alert">
+   Geyser-Standalone is NOT a plugin or mod! It is a standalone Java program that you would run separately to your Java Edition server.
+</div>
+
+# General Setup & Configuration
+
 1. Download Geyser Standalone from [here](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone).
 2. Create a new folder for Geyser, and drop the jar in there.
 3. Start Geyser Standalone:
@@ -59,7 +65,7 @@ set it to either `online` for an online mode server, or `offline` for an offline
 
     - Portforwarding: Open the Geyser port (e.g. 19132) on the UDP protocol in your router/modem, and in the Windows/Linux firewall.
       After doing this, players can connect with your public IPv4 + port to your server.
-      See [here](https://www.lifewire.com/how-to-port-forward-4163829) for a helpful guide. <br>
+      See [here](/geyser/portforwarding/) for a helpful guide. <br>
 
     - playit.gg: Instead of opening a port (which might not be an option/if you do not want to expose your home ip), you can use
       the playit.gg service to create a tunnel for you to route the traffic through. See our [playit.gg guide](/geyser/playit-gg).
