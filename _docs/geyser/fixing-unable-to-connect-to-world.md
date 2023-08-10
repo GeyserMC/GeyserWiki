@@ -32,7 +32,7 @@ Incase you reset your configuration file, check out the [setup guide](/geyser/se
 
 Please read through the [common issues page](https://wiki.geysermc.org/geyser/common-issues/). If there is another error not documented there, join us on our [Discord](https://discord.geysermc.org).
 
-### Try restarting the server, and the game
+### Try restarting the server and game
 
 Especially on mobile devices, sometimes just restarting Minecraft fixes the issue.
 
@@ -52,7 +52,7 @@ You should be connecting with the Java server IP and the Bedrock port (set in th
 ### I'm using a hosting provider or VPS!
 
 Please read [this page on supported hosting providers](https://wiki.geysermc.org/geyser/supported-hosting-providers/) to see if there are extra configuration steps required for your hosting or server provider.
-Some VPS/KVM providers may require further setup, such as OVH, SoYouStart, and Oracle Cloud. Please read this [note](/geyser/portforwarding/#issues-with-specific-vpskvm-providers) for more information.
+Some VPS/KVM providers require further setup, such as OVH, SoYouStart, and Oracle Cloud. Please read this [note](/geyser/portforwarding/#issues-with-specific-vpskvm-providers) for more information.
 
 ### Issues using Docker or Pterodactyl
 Make sure you assign the port to pterodactyl, and on docker, to the docker compose file. See our [portforwarding](/geyser/portforwarding/#using-docker-or-pterodactyl) page for fixes.
@@ -61,7 +61,7 @@ Make sure you assign the port to pterodactyl, and on docker, to the docker compo
 
 Your server does need to be port forwarded to allow connections from outside the local network. See [our portforwarding guide](/geyser/portforwarding/) for more information.
 
-### Using TCP in DNS options/port forwarding Instead of UDP
+### Using TCP in DNS options/port forwarding instead of UDP
 
 Minecraft: Java Edition uses TCP for connecting; Minecraft: Bedrock Edition uses UDP. Port forwarding your Bedrock Edition port with only TCP will not work, it has to be UDP. Forwarding your Bedrock Edition port with `TCP/UDP` (both protocols) should also work but is not recommended unless Java Edition and Bedrock Edition is sharing the same port.
 
@@ -74,12 +74,13 @@ Historically, having a Bedrock port that is a lower number will cause issues. Se
 This is likely a firewall issue on your server. Try the following workaround:
 Attempt to connect to the Bedrock IP and port through a web browser - for example, `http://test.geysermc.org:19132`. It won't work, but then try connecting through Bedrock, and it should work.
 
-Specific host fixes for OVH/SoYouStart can be found on the [portforwarding](/geyser/portforwarding/) page.
+Specific host fixes for OVH/SoYouStart can be found [here](/geyser/portforwarding/#issues-with-specific-vpskvm-providers).
 
 ### Changing the `bedrock` `address` in the Geyser config.
 
 Except for a few specific hosting providers, you generally do not need to change this part of the Geyser config. 
-However, in rare instances, it does fix issues - for example, when Windows has multiple network adapters, it can help to set the `address` to the IP of the adapter you want to use.
+However, in rare instances, it does fix issues - for example, when Windows has multiple network adapters (check by running `ipconfig` in cmd), 
+it can help to set the `address` to the local IP of the adapter you want to use.
 
 # Using a hosting provider or other location
 
@@ -87,7 +88,7 @@ However, in rare instances, it does fix issues - for example, when Windows has m
 
 If you get this error while using the Pterodactyl Panel, try editing the Geyser config and changing the port to something besides `19132` (e.g. `25566`).
 
-### Hosting Geyser on another computer on the same network
+# Hosting Geyser on another computer on the same network
 
 ### Can only connect from the same computer and not anywhere else
 

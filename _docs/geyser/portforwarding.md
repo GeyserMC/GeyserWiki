@@ -11,7 +11,8 @@ There are also guides for specific configurations, such as Docker/Pterodactyl, o
 </div>
 
 ## Portforwarding on Linux/Windows
-These are (limited) examples of how to open a port under Windows and Linux. Additionally, you will need to portforward the port on your router.
+These are (limited) examples of how to open a port under Windows and Linux. 
+Additionally, you will need to portforward the port on your router/modem - see [here](https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/) or [here](https://www.lifewire.com/how-to-port-forward-4163829) for helpful guides.
 Additionally, if you do not have a static IP address, your IP address may change over time. 
 
 <div class="alert alert-info" role="alert">
@@ -89,11 +90,15 @@ Alternatively, add another port with the `-p 19132:19132/udp` flag to the docker
 ## Issues with specific VPS/KVM providers
 Some providers, such as OVH, Oracle Cloud, and SoYouStart, have a firewall that blocks UDP ports by default/in most cases.
 
-### OVH/SoYouStart
+### OVH and SoYouStart
 By default, OVHs firewall requires a TCP ping to the server before allowing UDP connections. This is not possible with Geyser, so you will need to disable the firewall.
 
+<div class="alert alert-warning" role="alert">
+    If you do not have access to these firewall settings, but got linked to this page, please contact your server host and provide them with this link - they are likely using OVH internally.	
+</div>
+
 **To verify/temporary work around it:** <br>
-Attempt to connect to the Bedrock IP and port through a web browser - for example, `http://test.geysermc.org:19132`. Connecting won't work, but then try connecting through Bedrock on that same device, and it should work.
+Attempt to connect to your servers IP and port through a web browser - for example, `http://test.geysermc.org:19132`. Connecting won't work, but then try connecting through Bedrock on that same device, and it should work.
 Alternatively, try connecting to the server first on Java edition, then on Bedrock with the same device.
 
 **To resolve it:** <br>
@@ -103,16 +108,12 @@ OVH:
 2. Click on the `...` button on the table for your IP -> then `...` and `Configure the GAME firewall` -> `Add rule` -> `Other protocol` (or `minecraftPocketEdition` if available)
 3. Add your Geyser port into `outgoing port`.
 
-SoYouStart:
+SoYouStart (subsidary of OVH):
 1. Click the IP tab.
 2. Click the gear at the right of the public IP address; select "Game mitigation".
 3. Pick "Add a rule".
 4. Select "minecraftPocketEdition" in the dropdown list and enter the target UDP ports.
 5. Save and wait a few seconds for the changes to come into effect.
-
-<div class="alert alert-warning" role="alert">
-    If you do not have access to these firewall settings, but got linked to this page anyway, please contact your server host - they are likely using OVH internally.	
-</div>
 
 ### Oracle Cloud/OCI
 You'll need to allow port 19132 on UDP in both the security list and the firewall-cmd command.

@@ -211,7 +211,7 @@
     {
       "name": "Heavynode",
       "url": "https://www.heavynode.com/",
-      "description": "Set the Bedrock port to the Java server's port and connect with that port. To resolve further connection issues, see [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)"
+      "description": "Set the Bedrock port to the Java server's port and connect with that port. To resolve further connection issues, see [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
     },
     {
       "name": "Hicoria",
@@ -261,7 +261,7 @@
     {
       "name": "NiCraft",
       "url": "https://www.ni-host.com/",
-      "description": "Use the same port as your Java server for the Bedrock port in your config and connect with that port.\n  - To fix connection issues, [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
+      "description": "Use the same port as your Java server for the Bedrock port in your config and connect with that port.\n  - To fix seemingly random connection issues, [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
     },
     {
       "name": "Nitrado",
@@ -312,12 +312,7 @@
     {
       "name": "Revivenode",
       "url": "https://revivenode.com/",
-      "description": "Set the Bedrock port to the Java server's port (either by setting it yourself, or enabling \"clone-remote-port\". Connect with the same IP and port as you would on Java. \n  - To fix random `Unable to Connect` issues, see [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - Alternatively, if your players encounter this issue, please ask them to try to connect from Java Edition first while in the same network, and after, they should be able to join on Bedrock Edition."
-    },
-    {
-      "name": "SunriseNode - TODO",
-      "url": "https://sunrisenode.com",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description": "Set the Bedrock port to the Java server's port (either by setting it yourself, or enabling \"clone-remote-port\". Connect with the same IP and port as you would on Java. \n  - To fix random `Unable to Connect` issues, see [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
     },
     {
       "name": "ScalaCube",
@@ -337,7 +332,7 @@
     {
       "name": "SoYouStart",
       "url": "https://www.soyoustart.com",
-      "description": "Please see [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser) to fix Bedrock edition connections."
+      "description": "Please see [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart) to fix Bedrock edition connections."
     },
     {
       "name": "Sparked Host",

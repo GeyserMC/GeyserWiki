@@ -2,7 +2,9 @@
 title: Common Issues
 ---
 
-Commonly, people may have issues with Geyser not showing up in their server list or run into similar issues. This page contains a few common issues people may encounter that you might have as well as potential fixes for them. If you still can't make it work, join [our Discord](https://discord.gg/geysermc) for support.
+Commonly, people may have issues with Geyser not showing up in their server list or run into similar issues. 
+This page contains a few common issues people may encounter that you might have as well as potential fixes for them. 
+If you still can't make it work, join [our Discord](https://discord.gg/geysermc) for support.
 
 # Floodgate
 For Floodgate issues see: [Floodgate: Known Issues/Caveats](/floodgate/issues/).
@@ -64,8 +66,8 @@ See [this page](/geyser/secure-chat/).
 This is unfortunately something we have no control over, and is most likely the case when you're running Geyser as a plugin on a server host or joining a friend far away from your location. If you're running Geyser locally, this should not happen to you, but what we recommend for servers is a plugin we make called [Floodgate](https://github.com/GeyserMC/Floodgate), which allows for Bedrock clients to join your server without needing a Java Edition account. Take a look [here](Floodgate) for more information.
 
 # "Invalid IP address!" from Bedrock
-It's currently unknown why this happens even for valid domains. Try using the IPv4 address.
-Additionally, this can happen when trying to connect to 
+This can happen if the domain you are entering resolves to a SRV record, which Bedrock does not support. Try using the IPv4 address instead.
+Additionally, this can happen when trying to specify both the ip and port in the ip tab - in which case, see [here](https://cdn.discordapp.com/attachments/914971721612808222/1139316467054170253/image.png) for how to properly connect to "test.geysermc.org:19132".
 
 # Bedrock clients freeze when opening up commands for the first time
 Disable `command-suggestions` in your Geyser config. This will stop the freezing at the expense of removing command suggestions from Bedrock clients.
@@ -104,5 +106,6 @@ And so on.
 * Please also make sure that you have the same `key.pem` and `config.yml` on all of your servers.
 
 If your players can't connect from the lobby to another backend server, check console.
+
 ### Plugins that can cause issues
 * `HamsterAPI`
