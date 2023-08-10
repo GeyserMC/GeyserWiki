@@ -453,7 +453,7 @@
     {
       "name": "Feather",
       "url": "https://feathermc.com/",
-      "description": "Their proxy network doesnt support UDP therefor Geyser isn't supported"
+      "description": "Their proxy network doesn't support UDP and therefore Geyser isn't supported"
     }
   ]
 }
