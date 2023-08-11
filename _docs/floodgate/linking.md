@@ -16,7 +16,7 @@ Before we introduced Global Linking, you always had to link your Java and Bedroc
 
 Global Linking is part of the [Global Api](/geyser/global-api).
 
-So far, there are two more ways to link accounts。
+So far, there are two more ways to link accounts:
 
 #### Uses the GlobalLinkServer to link your account:
 To be able to link your account you have to do the following:
