@@ -46,7 +46,7 @@
         - title: Getting Started
           url: "geyser/getting-started-with-the-api/"
         - title: Overview
-          url: "geyser/api/#short-overview-of-the-api"
+          url: "geyser/api/#short-overview-of-the-geyser-api"
         - title: Events
           url: "geyser/events/"
         - title: Forms and Cumulus
