@@ -34,7 +34,7 @@ Creator: [Camotoy](https://github.com/Camotoy)
 
 An SkinAPI that displays Java or Bedrock skins based on the UUID or username.
 
-* [Website](https://docs.creepernation.net/skinapi)
+* [Website](https://docs.creepernation.net)
 
 Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
 
