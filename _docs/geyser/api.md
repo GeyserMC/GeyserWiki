@@ -55,7 +55,7 @@ This method will return null if the player is not a Bedrock player.
 
 `GeyserApi#sendForm(UUID, Form(Builder))`<br>
 Used to send a form to the Bedrock player with the given UUID.<br>
-Click [here](/floodgate/forms/) to get more information about Forms.
+Click [here](/geyser/forms/) to get more information about Forms.
 
 `GeyserApi#onlineConnectionsCount()`<br>
 Used to get the amount of online Bedrock players.
@@ -64,7 +64,7 @@ Used to get the amount of online Bedrock players.
 
 #### [Cumulus](https://github.com/GeyserMC/Cumulus/tree/master/src/main/java/org/geysermc/cumulus)
 While technically not directly in the Geyser API, the Cumulus library is also provided by the Geyser API. 
-It allows you to send Bedrock edition forms to players. See [Cumulus](/floodgate/forms/) for more information.
+It allows you to send Bedrock edition forms to players. See [Cumulus](/geyser/forms/) for more information.
 
 #### [Events](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event)
 The event package contains all the events that Geyser fires. See [here](/geyser/events) for detailed information on how to listen to Geyser events.
@@ -97,6 +97,6 @@ This allows you to load a Bedrock resource pack from a file path:
 ResourcePack pack = ResourcePack.create(PackCodec.path(path));
 ```
 
-#### [Extension](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/extensions)
+#### [Extension](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/extension)
 This package provides the necessary components to create and manage extensions.
 For a more detailed explanation of extensions, see [here](/geyser/extensions).
