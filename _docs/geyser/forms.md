@@ -36,8 +36,8 @@ ModalForm.builder()
 
 ## SimpleForm
 
-While this one is less easy then ModalForm is, it also has more customizability.<br>
-It's still limited to title, content and buttons, but these buttons can also have images and do not have a minimum and maximum of two.
+While this one is less easy than ModalForm is, it also has more customizability.<br>
+It's still limited to a title, content and buttons, but these buttons can also have images and do not have a minimum and maximum of two.
 
 ![Example of a SimpleForm](https://i.imgur.com/3rj2OQ2.png)
 
