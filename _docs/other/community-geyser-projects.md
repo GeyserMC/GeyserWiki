@@ -75,7 +75,7 @@ Plugin that blocks Java players from joining your Geyser server, so you can have
 
 Creator: [Camotoy](https://github.com/Camotoy)
 
-## GeyserPlaceholders
+## ~~GeyserPlaceholders~~(Discontinued)
 Placeholders support for Geyser.
 
 * [GitHub](https://github.com/ImDaBigBoss/GeyserPlaceholders)
