@@ -1,6 +1,6 @@
 {
   "description_templates": {
-    "default": "Get Geyser as a plugin, as in the [setup guide](https://wiki.geysermc.org/geyser/setup/). Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\") and connect with the same IP and port as you would on Java."
+    "default": "Get Geyser as a plugin, as in the [setup guide](/geyser/setup/). Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\") and connect with the same IP and port as you would on Java."
   },
   "built_in": [
     {
@@ -231,7 +231,7 @@
     {
       "name": "Heavynode",
       "url": "https://www.heavynode.com/",
-      "description": "Get Geyser as a plugin. Use 0.0.0.0 as the address and open a port on the network section of the control panel. Port 19132 is only available if your server has a dedicated IP (contact support), otherwise you will need to use a random port as assigned by the control panel. For servers in Canada and the UK a support ticket is needed to also open UDP traffic for Bedrock due to the OVH game firewall, see [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)."
+      "description": "Get Geyser as a plugin. Use 0.0.0.0 as the address and open a port on the network section of the control panel. Port 19132 is only available if your server has a dedicated IP (contact support), otherwise you will need to use a random port as assigned by the control panel. For servers in Canada and the UK a support ticket is needed to also open UDP traffic for Bedrock due to the OVH game firewall, see [here](/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)."
     },
     {
       "name": "Hetzner",
@@ -296,7 +296,7 @@
     {
       "name": "NiCraft",
       "url": "https://www.ni-host.com/",
-      "description": "Use the same port as your Java server for the Bedrock port in your config and connect with that port.\n  - See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
+      "description": "Use the same port as your Java server for the Bedrock port in your config and connect with that port.\n  - See [here](/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
     },
     {
       "name": "Nitrado",
@@ -316,7 +316,7 @@
     {
       "name": "OVH",
       "url": "https://www.ovh.com/",
-      "description": "See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#issues-connecting-with-ovh-or-a-subsidiary)."
+      "description": "See [here](/geyser/fixing-unable-to-connect-to-world/#issues-connecting-with-ovh-or-a-subsidiary)."
     },
     {
       "name": "Pebblehost",
@@ -347,7 +347,7 @@
     {
       "name": "Revivenode",
       "url": "https://revivenode.com/",
-      "description": "Get Geyser as a plugin, as in the [setup guide](https://wiki.geysermc.org/geyser/setup/). Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\". Connect with the same IP and port as you would on Java. \n  - See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
+      "description": "Get Geyser as a plugin, as in the [setup guide](/geyser/setup/). Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\". Connect with the same IP and port as you would on Java. \n  - See [here](/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
     },
     {
       "name": "SunriseNode",
@@ -372,7 +372,7 @@
     {
       "name": "SoYouStart",
       "url": "https://www.soyoustart.com",
-      "description": "See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)."
+      "description": "See [here](/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)."
     },
     {
       "name": "Sparked Host",
