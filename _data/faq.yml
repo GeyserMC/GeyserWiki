@@ -31,7 +31,7 @@
         * [ProtocolSupportBungee](https://www.spigotmc.org/resources/8733/) changes how the login process works and therefore breaks the Floodgate injection code.
         * [SayNoToMcLeaks](https://www.spigotmc.org/resources/40906/) prevents Floodgate from finishing its login system.
 
-        If you come across any more, please let us know via [Discord](http://discord.gg/geysermc).
+        If you come across any more, please let us know via [Discord](https://discord.gg/geysermc).
 
     - title: What server versions does Geyser support?
       content: |
