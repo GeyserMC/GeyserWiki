@@ -60,9 +60,6 @@
           url: "geyser/extensions/#creating-commands-with-geyser-extensions"
     - title: Global API
       url: "geyser/global-api/"
-    - title: Geyser and Secure ChatGeyser and Secure Chat
-      url: "geyser/secure-chat/"
-
 - title: Floodgate Documentation
   url: "floodgate/"
   links:
