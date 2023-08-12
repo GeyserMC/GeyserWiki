@@ -24,6 +24,7 @@ The following things cannot be fixed without changes to Bedrock or the Java prot
 - Dolphin's Grace potion effect visuals (effects should still work correctly)
 - Invisible item frames
 - Blocks (excluding jack-o-lantern) on entity heads (E.G. armor stands, players)
+- Saddled camels unmoveable/unrideable on bedrock.
 
 The following changes **are supported** with the [GeyserOptionalPack](/other/geyseroptionalpack/), which is a Bedrock resource pack you can install for additional functionality for features Bedrock does not natively support:
 - Custom armor stand poses
