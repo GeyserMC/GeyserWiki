@@ -90,7 +90,7 @@
 		<script>
 			const regex = /\{\{ site.data.([^\}]+) \}\}/
 			let match
-			let str = document.getElementById("content").innerHTML;
+			let str = document.getElementById("content").innerHTML
 			while ((match = regex.exec(str)) !== null) {
 				str = str.replace(`${match[0]}`,document.getElementById(`${match[1]}`).innerHTML)
 				document.getElementById("content").innerHTML = str
