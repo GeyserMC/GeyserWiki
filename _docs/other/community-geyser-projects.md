@@ -75,13 +75,6 @@ Plugin that blocks Java players from joining your Geyser server, so you can have
 
 Creator: [Camotoy](https://github.com/Camotoy)
 
-## ~~GeyserPlaceholders~~(Discontinued)
-Placeholders support for Geyser.
-
-* [GitHub](https://github.com/ImDaBigBoss/GeyserPlaceholders)
-
-Creator: [ImDaBigBoss](https://github.com/ImDaBigBoss)
-
 ## GeyserPreventServerSwitch
 Prevent Bedrock players from joining specific sub-servers on a proxy
 
