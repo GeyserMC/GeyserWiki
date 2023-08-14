@@ -52,7 +52,7 @@ At this time, there is no way to run Floodgate on servers that mix Forge and Buk
 
 If you wish to use Floodgate in combination with hybrid servers, we recommend putting these servers behind a BungeeCord or Velocity proxy, and running Floodgate on the proxy.
 
-## After enabling global linking, player data is not consistent.
+## After enabling global linking in offline mode, player data is not synced between Java and Bedrock players.
 
 This occurs in offline mode because the UUID of the Java account linked to the Bedrock account does not match the online mode UUID returned by Floodgate's global linking server.
 
