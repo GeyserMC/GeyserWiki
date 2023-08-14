@@ -51,3 +51,9 @@ To completely mitigate this issue, disable `perform-username-validation` in the 
 At this time, there is no way to run Floodgate on servers that mix Forge and Bukkit or Fabric and Bukkit (For example: Magma, Mohist, and Cardboard/Bukkit4Fabric) - most hybrids do not support the complicated procedures we need to do in order to allow Bedrock players to connect (for the technically minded: these server softwares typically don't support NMS). 
 
 If you wish to use Floodgate in combination with hybrid servers, we recommend putting these servers behind a BungeeCord or Velocity proxy, and running Floodgate on the proxy.
+
+## After enabling global linking, player data is not consistent.
+
+This occurs because the UUID of the Java account linked to the Bedrock account be different from the UUID of Java.
+
+Please have  the `online-mode` in `server.properties` set to `true`. Otherwise, the UUID of the online player on the server will not be consistent with Mojang's server, causing the UUID to become different.Or use  local linking.
