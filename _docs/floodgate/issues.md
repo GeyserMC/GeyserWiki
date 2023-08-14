@@ -56,4 +56,4 @@ If you wish to use Floodgate in combination with hybrid servers, we recommend pu
 
 This occurs in offline mode because the UUID of the Java account linked to the Bedrock account does not match the online mode UUID returned by Floodgate's global linking server.
 
-Please have  the `online-mode` in `server.properties` set to `true`. Otherwise, the UUID of the online player on the server will not be consistent with Mojang's server, causing the UUID to become different.Or use  local linking.
+When using global linking, ensure `online-mode` in `server.properties` is set to `true`. Otherwise, Bedrock players will not be authenticated with the same UUID they receive when playing on Java Edition, resulting in lost progress. This does not occur with local linking.
