@@ -291,6 +291,20 @@ The following details the schema for the mappings file. Only the `name` field is
                         - Type: `boolean`
                             - Default: `false`
                             - Description: Whether a unit cube is to be used with tessellation.
+                    - `creative_category`: 
+                        - Type: `string`
+                            - Default: `building_blocks`
+                            - Description: The creative category to place the block in.
+                            - Range: See [Creative Categories](https://wiki.bedrock.dev/documentation/creative-categories.html#list-of-creative-categories) on the Bedrock Wiki.
+                    - `creative_group`:
+                        - Type: `string`
+                            - Default: none
+                            - Description: The creative group to place the block in.
+                            - Range: See [Creative Tabs](https://wiki.bedrock.dev/documentation/creative-categories.html#list-of-creative-tabs) on the Bedrock Wiki.
+                    - `included_in_creative_inventory`:
+                        - Type: `boolean`
+                            - Default: `true`
+                            - Description: Whether the block is included in the creative inventory.
                     - `only_override_states`:
                         - Type: `boolean`
                             - Default: `false`
@@ -301,7 +315,7 @@ The following details the schema for the mappings file. Only the `name` field is
                                 - `property1=value1,property2=value2,...`:
                                     - Type: `object`
                                         - Description: An override for a specific block state. Possible states are listed in Geyser's [Block Mappings](https://raw.githubusercontent.com/GeyserMC/mappings/master/blocks.json)
-                                        - Accepts all of the same properties as a block definition except `only_override_states` and `state_overrides`.
+                                        - Accepts all of the same properties as a block definition except `creative_category`, `creative_group`, `included_in_creative_inventory`, `only_override_states`, and `state_overrides`.
 
 </div>
 
