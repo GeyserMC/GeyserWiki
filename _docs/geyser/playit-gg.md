@@ -21,7 +21,7 @@ title: playit.gg Setup
    If you have Geyser running on a port that is not 19132, update the port there. The "Local Address" does not need to be changed unless you are not running playit.gg and Geyser on the same device.
 5. Connect to your server - use the IP and Port from the "Allocation" tab. In our example - "180.ip.ply.gg" as the IP, and "17019" as the port. Alternatively, use the Domain it gives you instead of the IP.
 6. If you join successfully, then you are done! Make sure to leave the playit.gg program running as closing it will close the tunnel. You also may want to ratelimit individual connections - use the "Per Connection Rate Limit" option to do so.
-   (If you failed to join, check out the [troubleshooting](/geyser/setting-up-playit-gg/#troubleshooting) section of the page.) 
+   (If you failed to join, check out the [troubleshooting](#troubleshooting) section of the page.) 
 
 ## Troubleshooting
 
