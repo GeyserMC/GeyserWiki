@@ -54,7 +54,13 @@ div.highlight {
 
 .highlight pre {
 	margin: 0;
+    tab-size: 4;
 }
+
+.long-list ul {
+    padding-left: 15px;
+}
+
 
 .no-p-margin p {
 	margin: 0;

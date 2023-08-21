@@ -49,22 +49,22 @@ Custom mappings files that register blocks or items should be placed in the `cus
 			},
 			"tags": ["stone", "wall"],
 			"state_overrides": {
-				"[east=none,north=none,south=none,up=true,waterlogged=true,west=none]": {
+				"east=none,north=none,south=none,up=true,waterlogged=true,west=none": {
 					"geometry": "geometry.blocks.my_other_block_geo",
 					"destructible_by_mining": 10,
 					"place_air": false
 				},
-				"[east=none,north=none,south=none,up=false,waterlogged=true,west=tall]": {
+				"east=none,north=none,south=none,up=false,waterlogged=true,west=tall": {
 					"friction": 0.6,
 					"light_emission": 7,
 					"light_dampening": 8,
 					"transformation": {
-            "scale": [0.5, 0.5, 0.5],
-            "translation": [1, 0, 0],
-            "rotation": [0, 90, 0]
-          }
+                        "scale": [0.5, 0.5, 0.5],
+                        "translation": [1, 0, 0],
+                        "rotation": [0, 90, 0]
+                    }
 				},
-				"[east=none,north=none,south=low,up=true,waterlogged=true,west=tall]": {
+				"east=none,north=none,south=low,up=true,waterlogged=true,west=tall": {
 					"placement_filter": {
 						"conditions": [{
 							"allowed_faces": ["up", "down"],
@@ -86,257 +86,224 @@ Custom mappings files that register blocks or items should be placed in the `cus
 
 The following details the schema for the mappings file. Only the `name` field is strictly required. All other fields are optional.
 
+<div class="long-list" markdown="1">
+
 - `format_version`: 
   - Type: `integer`
-  - Description: The version of the format of the mappings file.
+    - Description: The version of the format of the mappings file.
 - `blocks`:
   - Type: `object`
-  - Description: An object containing a list of block definitions.
-    - `minecraft:some_block`:
-      - Type: `object`
-      - Description: A block definition to be used to override the specified java block.
-        - `name`: 
-          - Type: `string`
-          - Default: none
-          - Description: The name of the custom block.
-        - `destructible_by_mining`:
-          - Type: `integer`
-          - Default: specific to java block
-          - Description: The time in seconds to mine the block with base tools.
-        - `display_name`: 
-          - Type: `string`
-          - Default: the name of the custom block
-          - Description: The display name of the block.
-        - `friction`:
-          - Type: `float`
-          - Range: `0.0` to `1.0`
-          - Default: `0.4`
-          - Description: The friction value for entities traversing the block.
-        - `geometry`: 
-          - Type: `string`
-          - Default: none
-          - Description: The geometry identifier of the block.
-        - `light_emission`:
-          - Type: `integer`
-          - Range: `0` to `15`
-          - Default: `0`
-          - Description: The amount of light emitted by the block.
-        - `light_dampening`:
-          - Type: `integer`
-          - Range: `0` to `15`
-          - Default: `15`
-          - Description: The amount of light dampened by the block as it passes through.
-        - `material_instances`:
-          - Type: `object`
-          - Description: An object containing the material instances for the block.
-            - `*`:
-              - Type: `object`
-              - Description: The default material instance for the block. Other globs or specific instances can be used.
-                - `texture`:
-                  - Type: `string`
-                  - Default: the name of the custom block
-                  - Description: The texture resource path of the block.
-                - `render_method`:
-                  - Type: `string`
-                  - Default: `alpha_test`
-                  - Description: The render method used for the block.
-                - `face_dimming`:
-                  - Type: `boolean`
-                  - Default: `false`
-                  - Description: Whether face dimming is enabled for the block.
-                - `ambient_occlusion`:
-                  - Type: `boolean`
-                  - Default: `false`
-                  - Description: Whether ambient occlusion is enabled for the block.
-        - `place_air`:
-          - Type: `boolean`
-          - Default: `true`
-          - Description: Whether the block should place air to prevent double placement.
-        - `placement_filter`:
-          - Type: `object`
-          - Description: An object containing the placement filter for the block.
-            - `conditions`:
-              - Type: `array`
-              - Description: An array of conditions that must be met for the block to be placed.
-                - `allowed_faces`:
-                  - Type: `array`
-                  - Description: An array of faces that the block can be placed on.
-                    - `items`:
-                      - Type: `string`
-                      - Range: `up`, `down`, `north`, `south`, `east`, `west`
-                      - Description: A face that the block can be placed on.
-                - `block_filter`:
-                  - Type: `array`
-                  - Description: An array of blocks or true molang queries that the block can be placed on.
-                    - `items`:
-                      - Type: `string`
-                      - Description: A block that the block can be placed on.
-                      - Type `object`
-                        - Description: Holds a true molang query that the block can be placed on.
-                            - `tags`:
-                            - Type: `array`
-                            - Description: A true molang query that the block can be placed on.
-        - `tags`:
-          - Type: `array`
-          - Description: An array of tags associated with the block.
-            - `items`: 
-              - Type: `string`
-        - `transformation`:
-          - Type: `object`
-          - Description: Translation, scale, and rotation values to apply to the block.
-            - `scale`
-              - Type: `array`
-              - Default: `[1, 1, 1]`
-              - Description: An array of x, y, and z scale values
-                - `items`:
-                  - Type: `float`
-                  - Default: `1`
-                  - Description: A scale value for a single axis
-            - `translation`
-              - Type: `array`
-              - Default: `[0, 0, 0]`
-              - Description: An array of x, y, and z translation values
-                - `items`:
-                  - Type: `float`
-                  - Default: `0`
-                  - Description: A translation value for a single axis
-            - `rotation`
-              - Type: `array`
-              - Default: `[0, 0, 0]`
-              - Description: An array of x, y, and z rotation values in increments of 90 degrees (e.g. `[90, -180, 0]`)
-                - `items`:
-                  - Type: `integer`
-                  - Range: `0`, `90`, `180`, & `270`
-                  - Default: `0`
-                  - Description: A rotation value for a single axis
-        - `unit_cube`:
-          - Type: `boolean`
-          - Default: none
-          - Description: Whether a unit cube is to be used with tessellation.
-        - `only_override_states`:
-          - Type: `boolean`
-          - Default: `false`
-          - Description: Whether the block should only override the states specified in `state_overrides`.
-        - `state_overrides`:
-          - Type: `object`
-          - Description: An object containing state overrides for the block.
-            - `[property1=value1,property2=value2,...]`:
-              - Type: `object`
-              - Description: An override for a specific block state. Possible states are listed in Geyser's [Block Mappings](https://raw.githubusercontent.com/GeyserMC/mappings/master/blocks.json)
-                - `destructible_by_mining`:
-                  - Type: `integer`
-                  - Default: specific to java block
-                  - Description: The overridden time in seconds to mine the block with base tools.
-                - `display_name`: 
-                  - Type: `string`
-                  - Default: the name of the custom block
-                  - Description: The overridden display name of the block.
-                - `friction`:
-                  - Type: `float`
-                  - Range: `0.0` to `1.0`
-                  - Default: `0.4`
-                  - Description: The overridden friction value for entities traversing the block.
-                - `geometry`: 
-                  - Type: `string`
-                  - Default: none
-                  - Description: The overridden geometry identifier of the block.
-                - `light_emission`:
-                  - Type: `integer`
-                  - Range: `0` to `15`
-                  - Default: `0`
-                  - Description: The overridden amount of light emitted by the block.
-                - `light_dampening`:
-                  - Type: `integer`
-                  - Range: `0` to `15`
-                  - Default: `15`
-                  - Description: The overridden amount of light dampened by the block as it passes through.
-                - `material_instances`:
-                  - Type: `object`
-                  - Description: An object containing the overridden material instances for the block.
-                    - `*`:
-                      - Type: `object`
-                      - Description: The overridden default material instance for the block. Other globs or specific instances can be used.
-                        - `texture`:
-                          - Type: `string`
-                          - Default: the name of the custom block
-                          - Description: The overridden texture resource path of the block.
-                        - `render_method`:
-                          - Type: `string`
-                          - Default: `alpha_test`
-                          - Description: The overridden render method used for the block.
-                        - `face_dimming`:
-                          - Type: `boolean`
-                          - Default: `false`
-                          - Description: Whether face dimming is enabled for the overridden block.
-                        - `ambient_occlusion`:
-                          - Type: `boolean`
-                          - Default: `false`
-                          - Description: Whether ambient occlusion is enabled for the overridden block.
-                - `place_air`:
-                  - Type: `boolean`
-                  - Default: `true`
-                  - Description: Whether the block should place air to prevent double placement of the overridden block.
-                - `placement_filter`:
-                  - Type: `object`
-                  - Description: An object containing the placement filter for the overridden block.
-                    - `conditions`:
-                      - Type: `array`
-                      - Description: An array of conditions that must be met for the overridden block to be placed.
-                        - `allowed_faces`:
-                          - Type: `array`
-                          - Description: An array of faces that the overridden block can be placed on.
-                            - `items`:
-                              - Type: `string`
-                              - Range: `up`, `down`, `north`, `south`, `east`, `west`
-                              - Description: A face that the block can be placed on.
-                        - `block_filter`:
-                          - Type: `array`
-                          - Description: An array of blocks or true molang queries that the overridden block can be placed on.
-                            - `items`:
-                              - Type: `string`
-                              - Description: A block that the overridden block can be placed on.
-                              - Type `object`
-                                - Description: Holds a true molang query that the overridden block can be placed on.
-                                    - `tags`:
+    - Description: An object containing a list of block definitions.
+        - `minecraft:some_block`:
+            - Type: `object`
+                - Description: A block definition to be used to override the specified java block.
+                    - `name`: 
+                        - Type: `string`
+                            - Default: none
+                            - Description: The name of the custom block.
+                    - `collision_box`:
+                        - Type: `object`
+                            - `origin`: 
+                                - Type: `array`
+                                    - Default: Inferred from overridden block
+                                    - Description: An array of x, y, and z origin values
+                                    - Range: Must be in range `[-8, 0, -8]` to `[8, 16, 8]`, inclusive
+                                        - `items`:
+                                            - Type: `float`
+                                                - Default: Inferred from overridden block
+                                                - Description: An origin value for a single axis
+                            - `size`: 
+                                - Type: `array`
+                                    - Default: Inferred from overridden block
+                                    - Description: An array of x, y, and z size values
+                                        - `items`:
+                                            - Type: `float`
+                                                - Default: Inferred from overridden block
+                                                - Description: An size value for a single axis
+                            - Range: Addittion of `origin` and `size` must be in range `[-8, 0, -8]` to `[8, 16, 8]`, inclusive.
+                    - `destructible_by_mining`:
+                        - Type: `integer`
+                            - Default: Inferred from overridden block
+                            - Description: The time in seconds to mine the block with base tools.
+                    - `display_name`: 
+                        - Type: `string`
+                            - Default: the name of the custom block
+                            - Description: The display name of the block.
+                    - `extended_collision_box`:
+                        - Type: `object`
+                            - `origin`: 
+                                - Type: `array`
+                                    - Default: Inferred from overridden block
+                                    - Description: An array of x, y, and z origin values
+                                    - Range: Must be in range `[-8, 0, -8]` to `[8, 16, 8]`, inclusive
+                                        - `items`:
+                                            - Type: `float`
+                                                - Default: Inferred from overridden block
+                                                - Description: An origin value for a single axis
+                            - `size`: 
+                                - Type: `array`
+                                    - Default: Inferred from overridden block
+                                    - Description: An array of x, y, and z size values
+                                        - `items`:
+                                            - Type: `float`
+                                                - Default: Inferred from overridden block
+                                                - Description: An size value for a single axis
+                            - Range: Addittion of `origin` and `size` must be in range `[-8, 0, -8]` to `[8, 16, 8]`, inclusive.
+                    - `friction`:
+                        - Type: `float`
+                            - Range: `0.0` to `1.0`
+                            - Default: `0.4`
+                            - Description: The friction value for entities traversing the block.
+                    - `geometry`: 
+                        - Type: `string`
+                            - Default: none
+                            - Description: The geometry identifier of the block.
+                        - Type: `object`
+                            - Description: The geometry of the block with bone visbility filters
+                                - `identifier`
+                                    - Type: `string`
+                                        - Default: none
+                                        - Description: The geometry identifier of the block.
+                                - `bone_visibility`:
+                                    - Type: `object`
+                                        - Description: An object containing the bone visibility filters for the block.
+                                            - `bone_name`:
+                                                - Type: `string`
+                                                    - Default: none
+                                                    - Description: A molang string dictating whether the bone is visible.
+                                                - Type: `boolean`
+                                                    - Default: none
+                                                    - Description: Whether the bone is visible.
+                    - `light_emission`:
+                        - Type: `integer`
+                            - Range: `0` to `15`
+                            - Default: `0`
+                            - Description: The amount of light emitted by the block.
+                    - `light_dampening`:
+                        - Type: `integer`
+                            - Range: `0` to `15`
+                            - Default: `15`
+                            - Description: The amount of light dampened by the block as it passes through.
+                    - `material_instances`:
+                        - Type: `object`
+                            - Description: An object containing the material instances for the block.
+                                - `key`:
+                                    - Type: `object`
+                                        - Description: The default material instance for the block. Other globs or specific instances can be used.
+                                            - `texture`:
+                                                - Type: `string`
+                                                    - Default: the name of the custom block
+                                                    - Description: The texture resource path of the block.
+                                            - `render_method`:
+                                                - Type: `string`
+                                                    - Default: `alpha_test`
+                                                    - Description: The render method used for the block.
+                                            - `face_dimming`:
+                                                - Type: `boolean`
+                                                    - Default: `false`
+                                                    - Description: Whether face dimming is enabled for the block.
+                                            - `ambient_occlusion`:
+                                                - Type: `boolean`
+                                                    - Default: `false`
+                                                    - Description: Whether ambient occlusion is enabled for the block.
+                    - `place_air`:
+                        - Type: `boolean`
+                            - Default: `true`
+                            - Description: Whether the block should place air to prevent double placement.
+                    - `placement_filter`:
+                        - Type: `object`
+                            - Description: An object containing the placement filter for the block.
+                                - `conditions`:
                                     - Type: `array`
-                                    - Description: A true molang query that the overridden block can be placed on.
-                - `tags`:
-                  - Type: `array`
-                  - Description: An array of tags associated with the overridden block.
-                    - `items`: 
-                      - Type: `string`
-                - `transformation`:
-                  - Type: `object`
-                  - Description: Translation, scale, and rotation values to apply to the block.
-                    - `scale`
-                      - Type: `array`
-                      - Default: `[1, 1, 1]`
-                      - Description: An array of x, y, and z scale values
-                        - `items`:
-                          - Type: `float`
-                          - Default: `1`
-                          - Description: A scale value for a single axis
-                    - `translation`
-                      - Type: `array`
-                      - Default: `[0, 0, 0]`
-                      - Description: An array of x, y, and z translation values
-                        - `items`:
-                          - Type: `float`
-                          - Default: `0`
-                          - Description: A translation value for a single axis
-                    - `rotation`
-                      - Type: `array`
-                      - Default: `[0, 0, 0]`
-                      - Description: An array of x, y, and z rotation values in increments of 90 degrees (e.g. `[90, -180, 0]`)
-                        - `items`:
-                          - Type: `integer`
-                          - Range: `0`, `90`, `180`, & `270`
-                          - Default: `0`
-                          - Description: A rotation value for a single axis
-                - `unit_cube`:
-                  - Type: `boolean`
-                  - Default: none
-                  - Description: Whether a unit cube is to be used with tessellation for the overridden block.
+                                        - Description: An array of conditions that must be met for the block to be placed.
+                                            - `allowed_faces`:
+                                                - Type: `array`
+                                                    - Description: An array of faces that the block can be placed on.
+                                                        - `items`:
+                                                            - Type: `string`
+                                                                - Range: `up`, `down`, `north`, `south`, `east`, `west`
+                                                                - Description: A face that the block can be placed on.
+                                                        - `block_filter`:
+                                                            - Type: `array`
+                                                                - Description: An array of blocks or true molang queries that the block can be placed on.
+                                                                    - `items`:
+                                                                        - Type: `string`
+                                                                            - Description: A block that the block can be placed on.
+                                                                                - Type `object`
+                                                                                    - Description: Holds a true molang query that the block can be placed on.
+                                                                                        - `tags`:
+                                                                                            - Type: `array`
+                                                                                                - Description: A true molang query that the block can be placed on.
+                    - `selection_box`:
+                        - Type: `object`
+                            - `origin`: 
+                                - Type: `array`
+                                    - Default: Inferred from overridden block
+                                    - Description: An array of x, y, and z origin values
+                                    - Range: Must be in range `[-8, 0, -8]` to `[8, 16, 8]`, inclusive
+                                        - `items`:
+                                            - Type: `float`
+                                                - Default: Inferred from overridden block
+                                                - Description: An origin value for a single axis
+                            - `size`: 
+                                - Type: `array`
+                                    - Default: Inferred from overridden block
+                                    - Description: An array of x, y, and z size values
+                                        - `items`:
+                                            - Type: `float`
+                                                - Default: Inferred from overridden block
+                                                - Description: An size value for a single axis
+                            - Range: Addittion of `origin` and `size` must be in range `[-8, 0, -8]` to `[8, 16, 8]`, inclusive.
+                    - `tags`:
+                        - Type: `array`
+                            - Description: An array of tags associated with the block.
+                                - `items`: 
+                                    - Type: `string`
+                    - `transformation`:
+                        - Type: `object`
+                            - Description: Translation, scale, and rotation values to apply to the block.
+                                - `scale`
+                                    - Type: `array`
+                                        - Default: `[1, 1, 1]`
+                                        - Description: An array of x, y, and z scale values
+                                            - `items`:
+                                                - Type: `float`
+                                                    - Default: `1`
+                                                    - Description: A scale value for a single axis
+                                - `translation`:
+                                    - Type: `array`
+                                        - Default: `[0, 0, 0]`
+                                        - Description: An array of x, y, and z translation values
+                                            - `items`:
+                                                - Type: `float`
+                                                    - Default: `0`
+                                                    - Description: A translation value for a single axis
+                                - `rotation`
+                                    - Type: `array`
+                                        - Default: `[0, 0, 0]`
+                                        - Description: An array of x, y, and z rotation values in increments of 90 degrees (e.g. `[90, -180, 0]`)
+                                            - `items`:
+                                                - Type: `integer`
+                                                    - Range: `0`, `90`, `180`, & `270`
+                                                    - Default: `0`
+                                                    - Description: A rotation value for a single axis
+                    - `unit_cube`:
+                        - Type: `boolean`
+                            - Default: `false`
+                            - Description: Whether a unit cube is to be used with tessellation.
+                    - `only_override_states`:
+                        - Type: `boolean`
+                            - Default: `false`
+                            - Description: Whether the block should only override the states specified in `state_overrides`.
+                    - `state_overrides`:
+                        - Type: `object`
+                            - Description: An object containing state overrides for the block.
+                                - `property1=value1,property2=value2,...`:
+                                    - Type: `object`
+                                        - Description: An override for a specific block state. Possible states are listed in Geyser's [Block Mappings](https://raw.githubusercontent.com/GeyserMC/mappings/master/blocks.json)
+                                        - Accepts all of the same properties as a block definition except `only_override_states` and `state_overrides`.
+
+</div>
 
 ## Geyser extensions
 
@@ -372,7 +339,9 @@ public class RedstoneDot implements Extension {
         CustomBlockComponents components = GeyserApi.api().provider(CustomBlockComponents.Builder.class)
                 .collisionBox(BoxComponent.EMPTY_BOX)
                 .selectionBox(selectionBox)
-                .geometry("geometry.amberichu.redstone_dot")
+                .geometry(new GeometryComponentBuilder()
+                    .identifier("geometry.amberichu.redstone_dot")
+                    .build())
                 .destroyTime(0f)
                 .lightEmission(0)
                 .lightDampening(0)
@@ -393,13 +362,24 @@ public class RedstoneDot implements Extension {
         List<CustomBlockPermutation> permutations = new ArrayList<>();
         for (int power = 0; power < 16; power++) {
             String texture = "amberichu.redstone_dot" + power;
+            MaterialInstance invisMaterialInstance = new MaterialInstanceBuilder()
+                        .texture("amberichu.invisible")
+                        .renderMethod("alpha_test")
+                        .faceDimming(false)
+                        .ambientOcclusion(false)
+                        .build();
             CustomBlockComponents components = GeyserApi.api().provider(CustomBlockComponents.Builder.class)
-                    .materialInstance("up", new MaterialInstance(texture, "alpha_test", false, false))
-                    .materialInstance("down", new MaterialInstance("amberichu.invisible", "alpha_test", false, false))
-                    .materialInstance("north", new MaterialInstance("amberichu.invisible", "alpha_test", false, false))
-                    .materialInstance("south", new MaterialInstance("amberichu.invisible", "alpha_test", false, false))
-                    .materialInstance("east", new MaterialInstance("amberichu.invisible", "alpha_test", false, false))
-                    .materialInstance("west", new MaterialInstance("amberichu.invisible", "alpha_test", false, false))
+                    .materialInstance("up", new MaterialInstanceBuilder()
+                        .texture(texture)
+                        .renderMethod("alpha_test")
+                        .faceDimming(false)
+                        .ambientOcclusion(false)
+                        .build())
+                    .materialInstance("down", invisMaterialInstance)
+                    .materialInstance("north", invisMaterialInstance)
+                    .materialInstance("south", invisMaterialInstance)
+                    .materialInstance("east", invisMaterialInstance)
+                    .materialInstance("west", invisMaterialInstance)
                     .build();
             String condition = String.format("query.block_property('%s') == %d", POWER_PROPERTY, power);
             permutations.add(new CustomBlockPermutation(components, condition));
@@ -420,7 +400,9 @@ public class RedstoneDot implements Extension {
         CustomBlockComponents components = GeyserApi.api().provider(CustomBlockComponents.Builder.class)
                 .collisionBox(BoxComponent.EMPTY_BOX)
                 .selectionBox(selectionBox)
-                .geometry("geometry.amberichu.redstone_dot")
+                .geometry(new GeometryComponentBuilder()
+                    .identifier("geometry.amberichu.redstone_dot")
+                    .build())
                 .destroyTime(0f)
                 .lightEmission(0)
                 .lightDampening(0)
@@ -449,13 +431,24 @@ public class RedstoneDot implements Extension {
         List<CustomBlockPermutation> permutations = new ArrayList<>();
         for (int power = 0; power < 16; power++) {
             String texture = "amberichu.redstone_dot" + power;
+            MaterialInstance invisMaterialInstance = new MaterialInstanceBuilder()
+                        .texture("amberichu.invisible")
+                        .renderMethod("alpha_test")
+                        .faceDimming(false)
+                        .ambientOcclusion(false)
+                        .build();
             CustomBlockComponents components = GeyserApi.api().provider(CustomBlockComponents.Builder.class)
-                    .materialInstance("up", new MaterialInstance(texture, "alpha_test", false, false))
-                    .materialInstance("down", new MaterialInstance("amberichu.invisible", "alpha_test", false, false))
-                    .materialInstance("north", new MaterialInstance("amberichu.invisible", "alpha_test", false, false))
-                    .materialInstance("south", new MaterialInstance("amberichu.invisible", "alpha_test", false, false))
-                    .materialInstance("east", new MaterialInstance("amberichu.invisible", "alpha_test", false, false))
-                    .materialInstance("west", new MaterialInstance("amberichu.invisible", "alpha_test", false, false))
+                    .materialInstance("up", new MaterialInstanceBuilder()
+                        .texture(texture)
+                        .renderMethod("alpha_test")
+                        .faceDimming(false)
+                        .ambientOcclusion(false)
+                        .build())
+                    .materialInstance("down", invisMaterialInstance)
+                    .materialInstance("north", invisMaterialInstance)
+                    .materialInstance("south", invisMaterialInstance)
+                    .materialInstance("east", invisMaterialInstance)
+                    .materialInstance("west", invisMaterialInstance)
                     .build();
             String condition = String.format("query.block_property('%s') == %d", POWER_PROPERTY, power);
             permutations.add(new CustomBlockPermutation(components, condition));
