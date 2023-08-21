@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Commands
-permalink: /geyser/commands/
 ---
 
 # Commands and Permissions
@@ -18,5 +16,7 @@ permalink: /geyser/commands/
 | `geyser shutdown` <br> `geyser stop` | `geyser.command.shutdown` | Shuts down Geyser.<br>*This command only works on Standalone.* |
 | `geyser statistics` | `geyser.command.statistics` | Open the Java statistics menu. |
 | `geyser version` | `geyser.command.version` | Shows the current Geyser version and checks for updates. |
+| `geyser tooltips` | `geyser.command.tooltips`| Toggle showing Advanced Tooltips (F3 + H on Java) |
+
 
 For Floodgate commands, see [here](/floodgate/commands/).

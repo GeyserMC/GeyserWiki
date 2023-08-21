@@ -1,58 +1,89 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-  <!-- Copyright 2019-2021 Vanessa Sochat-->
-  {% include head.html %}
-  {% include google-analytics.html %}
-  <body class="td-section">
-    {% include header.html %}
-    <div class="container-fluid td-outer">
-      <div class="td-main">
-        <div class="row flex-xl-nowrap">
-          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
-          {% include sidebar.html %}
-          </div>
-          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
-              <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
-                  {% include editable.html %}
-              </div>
-              <nav id="TableOfContents"><ul>
-              <li><ul id="TOC">
-                <!-- Links will be appended here-->
-              </ul></li>
-              </ul></nav>
-          </div>
-          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
-            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
-	      <ol class="breadcrumb spb-1">
-              {% assign crumbs = page.url | append: "/"  | replace: '//', '/' | split: '/' %}
-              {% for crumb in crumbs offset: 1 %}{% if crumb != "index" %}{% if forloop.last %}
-                <li class="breadcrumb-item active" aria-current="page">
-	          <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
-                </li>{% else %}
-                {% if page.url != "/docs/" %}<li class="breadcrumb-item">
-                  <a href="{{ site.url }}{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{% if crumb == "docs" %}Documentation{% else %}{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}{% endif %}</a>
-                </li>{% endif %}{% endif %}
-                {% endif %}{% endfor %}
-	      </ol>
-           </nav>
-           <div class="td-content">
-	      {{ content }}	
-              {% if section.links %}<div class="section-index">
-               <hr class="panel-line">{% for child in section.links %}
-                 <div class="entry">
-                    <h5>
-                        <a href="{% if child.url %}{{ site.baseurl }}{{ child.url }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>
-                    </h5>
-                    <p>{{ child.description }}</p>
-                 </div>{% endfor %}
-              </div>{% endif %}
-              {% include feedback.html %}
-           </div>
-          </main>
-        </div>
-      </div>
-      {% include footer.html %}
-    </div>
-    {% include scripts.html %}
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.title }}{% if page.title %}: {{ page.title }}{% endif %}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/css/darcula.css' | relative_url }}">
+
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="{{ site.description }}">
+	<meta name="theme-color" content="#2b3035">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ site.url }}">
+	<meta property="og:title" content="{{ site.title }}{% if page.title %}: {{ page.title }}{% endif %}">
+	<meta property="og:description" content="{{ site.description }}">
+	<meta property="og:image" content="{{ '/android-chrome-192x192.png' | relative_url }}">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="{{ 'favicon.ico' | relative_url }}">
+	<link rel="icon" type="image/x-icon" href="{{ 'favicon.ico' | relative_url }}">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | relative_url }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | relative_url }}">
+	<link rel="icon" type="image/png" sizes="192x192" href="{{ 'android-chrome-192x192.png' | relative_url }}">
+	<link rel="apple-touch-icon" href="{{ 'apple-touch-icon.png' | relative_url }}">
+	<link rel="mask-icon" href="{{ 'safari-pinned-tab.svg' | relative_url }}" color="#248f00">
+  </head>
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/"><img src="{{ 'android-chrome-512x512.png' | relative_url }}" alt="geyser logo" height="32"> {{ site.title }}</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarLinks">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/"><i class="bi bi-house pe-1"></i> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/download"><i class="bi bi-download pe-1"></i> Download</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search" action="/search/">
+						<div class="input-group">
+							<button class="btn btn-outline-secondary" type="submit" id="button-search"><i class="bi bi-search"></i></button>
+							<input type="text" name="q" class="form-control" placeholder="Search the site..." aria-label="Search the site..." aria-describedby="button-search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="page-content" class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-3 col-xl-2">
+				<div class="sticky-top">
+					<div class="sidebar py-2 text-break">
+						{% include sidebar-nav.html %}
+					</div>
+				</div>
+			</div>
+			<main class="col-12 col-md-9 col-xl-8" role="main">
+				{{ content }}
+			</main>
+			<div class="col-2 d-none d-xl-block">
+				<div class="sticky-top">
+					<div class="sidebar py-2">
+						{% include sidebar-page.html %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <footer class="p-4 text-center bg-body-tertiary">
+		&copy; {{ 'now' | date: "%Y" }} {{ site.author }}
+	</footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="{{ '/js/page-nav.js' | relative_url }}"></script>
   </body>
 </html>

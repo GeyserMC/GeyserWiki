@@ -1,8 +1,8 @@
 ---
-layout: page
 title: Creating a Startup Script
-permalink: /geyser/creating-a-startup-script/
 ---
+
+# Creating a Startup Script for Geyser-Standalone
 
 **In order for this to work, you MUST have Java 16 (or higher) installed!**
 

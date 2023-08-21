@@ -1,0 +1,5 @@
+<a class="d-block text-decoration-none" href="{{ site.repo }}/edit/{% if site.github_branch %}{{ site.github_branch }}{% else %}master{% endif %}/{{ page.path }}" target="_blank"><i class="bi bi-pencil"></i> Edit this page</a>
+<a class="d-block text-decoration-none" href="{{ site.repo }}/issues/new?labels={% if page.editable %}{{ page.editable }}{% else %}question{% endif %}&title=Question:&body=Question on: {{ page.path }}" target="_blank"><i class="bi bi-github"></i> Create Wiki issue/bug report</a>
+<a class="d-block text-decoration-none" href="{{ page.repo }}/issues/new" target="_blank"><i class="bi bi-list-check"></i> Create Geyser issue/bug report</a>
+
+<div id="page-nav" class="py-3 {% if page.page_sidebar == false %}d-none{% endif %}"></div>

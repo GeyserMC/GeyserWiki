@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Linking
-permalink: /floodgate/linking/
 ---
 
 ## What is Global Linking?
@@ -11,7 +9,7 @@ Before we introduced Global Linking, you always had to link your Java and Bedroc
 
 Keep in mind: While having your accounts linked, you will use the Java account's location, inventory data, and achievements etc. regardless of which platform you sign in from (therefore, "synchronising" the player data). The player data from the Bedrock account will not be accessible until you unlink again. As a result, you should transfer everything (ender chest contents, items, armor) to the Java account before linking to not "lose" your Bedrock progress. If you forgot to do this, you can unlink, transfer everything over, and link again.
 
-Global Linking is part of the [Global Api](https://wiki.geysermc.org/floodgate/features/#what-is-the-global-api) and uses the GlobalLinkServer to link your account. To be able to link your account you have to do the following:
+Global Linking is part of the [Global Api](/geyser/global-api) and uses the GlobalLinkServer to link your account. To be able to link your account you have to do the following:
 1. Join the GlobalLinkServer with both your Java and Bedrock account  
    (IP: `link.geysermc.org`, Java port: `25565`, Bedrock port: `19132`)
 2. Start the linking process by typing `/linkaccount` on your Java **or** Bedrock account

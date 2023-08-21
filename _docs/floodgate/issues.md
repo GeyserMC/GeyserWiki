@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Issues
-permalink: /floodgate/issues/
 ---
 
 # Known Issues & Caveats
@@ -46,10 +44,16 @@ Set `allow-invalid-usernames` to `true` in LuckPerms' config.
 
 ## Failed to verify username! (with Paper)
 
-To completely mitigate this issue, disable `perform-username-validation` in the [unsupported settings of the `config/paper-global.yml` file](https://paper.readthedocs.io/en/latest/server/configuration.html#unsupported-settings) (`paper.yml` in the root server folder on servers below 1.19). Using Floodgate on the backend servers will also mitigate this issue.
+To completely mitigate this issue, disable `perform-username-validation` in the [unsupported settings of the `config/paper-global.yml` file](https://paper.readthedocs.io/en/latest/server/configuration.html#unsupported_settings) (`paper.yml` in the root server folder on servers below 1.19). Using Floodgate on the backend servers will also mitigate this issue.
 
 ## Error with Forge or Fabric Bukkit Hybrid
 
 At this time, there is no way to run Floodgate on servers that mix Forge and Bukkit or Fabric and Bukkit (For example: Magma, Mohist, and Cardboard/Bukkit4Fabric) - most hybrids do not support the complicated procedures we need to do in order to allow Bedrock players to connect (for the technically minded: these server softwares typically don't support NMS). 
 
 If you wish to use Floodgate in combination with hybrid servers, we recommend putting these servers behind a BungeeCord or Velocity proxy, and running Floodgate on the proxy.
+
+## After enabling global linking in offline mode, player data is not synced between Java and Bedrock players.
+
+This occurs in offline mode because the UUID of the Java account linked to the Bedrock account does not match the online mode UUID returned by Floodgate's global linking server.
+
+When using global linking, ensure `online-mode` in `server.properties` is set to `true`. Otherwise, Bedrock players will not be authenticated with the same UUID they receive when playing on Java Edition, resulting in lost progress. This does not occur with local linking.

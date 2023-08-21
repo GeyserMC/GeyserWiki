@@ -1,12 +1,13 @@
 ---
-layout: page
 title: playit.gg Setup
-permalink: /geyser/playit-gg/
 ---
 
 ## Prerequisites
 
-- You must be able to connect to your Geyser instance locally.
+<div class="alert alert-info" role="alert">
+   You must be able to connect to your Geyser instance locally!
+</div>
+
 - If you already have playit.gg running & set up (for e.g. Minecraft Java edition), skip steps 1 and 2 and proceed with step 3.
 
 ## Setup

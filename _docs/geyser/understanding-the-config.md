@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Understanding the Config
-permalink: /geyser/understanding-the-config/
 ---
 
 This page covers basic information about the Geyser config and what each option does. Though they are explained in the configuration itself, this explains what each option does in more detail.

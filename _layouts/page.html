@@ -1,7 +1,18 @@
 ---
 layout: default
 ---
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {% assign crumbs = page.url | append: "/"  | replace: '//', '/' | split: '/' %}
+        {% for crumb in crumbs offset: 1 %}
+            {% assign i = forloop.index | plus: 1 %}
+            {% if i == crumbs.size %}
+                <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+            {% else %}
+                <li class="breadcrumb-item"><a href="{{ site.url }}{{ site.baseurl }}{% for crumb in crumbs limit: i %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace: '-', ' ' | capitalize }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+</nav>
+
 {{ content }}
-{% include toc.html %}
-{% include permalinks.html %}
-{% include tags.html %}

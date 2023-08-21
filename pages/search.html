@@ -1,12 +1,17 @@
 ---
 title: Search
-sitemap: false
 permalink: /search/
-not_editable: true
 excluded_in_search: true
+layout: page
 ---
 
-<input class="form-control td-search-input" type="search" name="q" id="search-input" placeholder="&#xf002 Search this site…"  style="margin-top:5px" autofocus>
+<form class="d-flex" role="search" action="/search/">
+	<div class="input-group">
+		<button class="btn btn-outline-secondary" type="submit" id="button-search"><i class="bi bi-search"></i></button>
+		<input type="text" name="q" class="form-control" placeholder="Search the site..." aria-label="Search the site..." aria-describedby="button-search">
+	</div>
+</form>
+
 <br />
 
 <p><span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span></p>
@@ -22,36 +27,7 @@ excluded_in_search: true
 					"{{ post.url | slugify }}": {
 						"id": "{{ post.url | slugify }}",
 						"title": "{{ post.title | xml_escape }}",
-						"categories": "{{ post.categories | join: ", " | xml_escape }}",
-						"url": " {{ post.url | xml_escape }}",
-						"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
-					}
-					{% assign added = true %}
-				{% endunless %}
-		{% endfor %}
-		{% for post in site.posts %}
-				{% unless post.excluded_in_search %}
-					{% if added %},{% endif %}
-					{% assign added = false %}
-					"{{ post.url | slugify }}": {
-						"id": "{{ post.url | slugify }}",
-						"title": "{{ post.title | xml_escape }}",
-						"categories": "{{ post.categories | join: ", " | xml_escape }}",
-						"url": " {{ post.url | xml_escape }}",
-						"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
-					}
-					{% assign added = true %}
-				{% endunless %}
-		{% endfor %}
-		{% for post in site.pages %}
-				{% unless post.excluded_in_search %}
-					{% if added %},{% endif %}
-					{% assign added = false %}
-					"{{ post.url | slugify }}": {
-						"id": "{{ post.url | slugify }}",
-						"title": "{{ post.title | xml_escape }}",
-						"categories": "{{ post.categories | join: ", " | xml_escape }}",
-						"url": " {{ post.url | xml_escape }}",
+						"url": "{{ post.url | xml_escape | relative_url }}",
 						"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
 					}
 					{% assign added = true %}
@@ -62,4 +38,4 @@ excluded_in_search: true
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.0/lunr.min.js"
         integrity="sha512-eWBLTdGT/I5jd80U2J0TyF2G+Fja6TiTYR6Ymeva7QgGUCy9EA/qhoppa4B/wYn7yWXZ8azgremVGtBi3EFDvg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="{{ site.baseurl }}/assets/js/search.js"></script>
+<script src="{{ '/js/search.js' | relative_url }}"></script>

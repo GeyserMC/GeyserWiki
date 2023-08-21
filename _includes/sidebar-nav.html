@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-md">
+	<div class="container-fluid">
+		<div class="d-block d-md-none">Wiki Navigation</div>
+		<button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse flex-column align-items-start" id="sidebarNav">
+			{% for section in site.data.toc %}
+			{% assign section_size = section.url | size %}
+			{% assign current_section = page.url | remove_first: "/" | | truncate: section_size, "" %}
+			{% if current_section == "" %}
+				{% assign current_section = "geyser/" %}
+			{% endif %}
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold{% if current_section == section.url %} show{% endif %}" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">{{ section.title }}</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc{% if current_section == section.url %} show{% endif %}">
+					{% for entry in section.links %}
+						<li class="ms-4">
+							<a href="{% if entry.url %}{{ site.baseurl }}/{{ entry.url }}{% else %}{{ entry.external_url }}{% endif %}">{{ entry.title }}</a>
+							{% if entry.children %}
+								<ul>
+									{% for child in entry.children %}
+										<li>
+											<a href="{% if child.url %}{{ site.baseurl }}/{{ child.url }}{% else %}{{ child.external_url }}{% endif %}">{{ child.title }}</a>
+										</li>
+									{% endfor %}
+								</ul>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</nav>

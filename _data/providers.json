@@ -128,7 +128,7 @@
     {
       "name": "BisectHosting",
       "url": "https://www.bisecthosting.com/",
-      "description": "Get Geyser as a plugin. Need to ask to open a UDP port, and set the Bedrock address in the config to the Java IP. To open a UDP port, you need to have a dedicated IP."
+      "description": "You must have a plan with a dedicated IP. Get Geyser as a plugin. In Geyser's config, uncomment the bedrock address field and set it to the public IP of your server (e.g. `address: 51.79.129.18`). Leave the port as `19132`. Under the home tab, select 'Enable UDP Network' and restart the server. See Bisect's [article](https://www.bisecthosting.com/clients/index.php?rp=/knowledgebase/193/How-to-install-Geyser-and-Floodgate-on-a-Minecraft-Java-server.html) for full instructions."
     },
     {
       "name": "Bloom.Host",
@@ -198,6 +198,11 @@
       "description_template": "default"
     },
     {
+      "name": "FREAKHOSTING",
+      "url": "https://freakhosting.com/",
+      "description_template": "default"
+    },
+    {
       "name": "FreeMcServer.net",
       "url": "https://freemcserver.net",
       "description_template": "default"
@@ -226,7 +231,7 @@
     {
       "name": "Heavynode",
       "url": "https://www.heavynode.com/",
-      "description": "Get Geyser as a plugin. Use default port and 0.0.0.0 as the address. 19132 is blocked for DDOS reasons so your best bet is to use the same port as your Java server for the Bedrock port in your config and connect with that port. Also, see [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)"
+      "description": "Get Geyser as a plugin. Use 0.0.0.0 as the address and open a port on the network section of the control panel. Port 19132 is only available if your server has a dedicated IP (contact support), otherwise you will need to use a random port as assigned by the control panel. For servers in Canada and the UK a support ticket is needed to also open UDP traffic for Bedrock due to the OVH game firewall, see [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)."
     },
     {
       "name": "Hetzner",
@@ -256,7 +261,7 @@
     {
       "name": "MC-HOST24.de",
       "url": "https://mc-host24.de/",
-      "description_template": "default"
+      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\"). Set remote address to auto, and bedrock address to the server IP. Connect with the Java IP and port."
     },
     {
       "name": "Meloncube",
@@ -444,6 +449,11 @@
       "name": "MyArena",
       "url": "https://www.myarena.ru/",
       "description": "Does seem to be working, but the Java version is too old in order for Geyser to run properly."
+    },
+    {
+      "name": "Feather",
+      "url": "https://feathermc.com/",
+      "description": "Their proxy network doesn't support UDP and therefore Geyser isn't supported"
     }
   ]
 }

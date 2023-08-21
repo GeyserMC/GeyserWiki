@@ -1,4 +1,5 @@
-vendor
 _site
-.idea/
-*.iml
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

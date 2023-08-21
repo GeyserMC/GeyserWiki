@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Current Limitations
-permalink: /geyser/current-limitations/
 ---
 
 With Geyser being a protocol translator between two different games with two different codebases, there are a handful of limitations that Geyser is unfortunately unable to handle. Despite Minecraft Bedrock and Java being quite close in comparison, there are some vast differences in many areas.

@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Commands
-permalink: /floodgate/commands/
 ---
 
 | Command | Permission | Description |

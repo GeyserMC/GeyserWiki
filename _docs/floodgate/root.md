@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Floodgate
 permalink: /floodgate/
 ---
@@ -11,5 +10,5 @@ This is something you install in addition to Geyser. Unlike Geyser, Floodgate ca
 
 ## What has Floodgate 2.0 to offer?
 Floodgate 2.0 is a rewrite of Floodgate 1.0, with various bugfixes and improvements. It also introduces new features: being able to [see Bedrock player skins on Java edition](/floodgate/features/#what-is-skin-uploading),
-being able to [use Bedrock forms](/floodgate/forms/), link your account once and login on every server that has [Global Linking](/floodgate/features/#what-is-global-linking) enabled,
-and the [Global Api](/floodgate/features/#what-is-the-global-api).
+being able to [use Bedrock forms](/geyser/forms/), link your account once and login on every server that has [Global Linking](/floodgate/linking/#what-is-global-linking) enabled,
+and the [Global Api](/geyser/global-api).

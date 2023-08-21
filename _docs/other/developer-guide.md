@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Developer Guide
-permalink: /other/developer-guide/
 ---
 
 ## Compiling
@@ -41,6 +39,10 @@ The Bedrock Edition protocol is documented [here](https://wiki.vg/Bedrock_Protoc
 ## pakkit
 pakkit is a GUI-based tool for intercepting packets between a server and client developed by Geyser contributor [circuit10/Heath123](https://github.com/Heath123/) built using Electron. It works for both Java Edition (using node-minecraft-protocol) and Bedrock (as a GUI wrapper for ProxyPass adding extra features). It supports features such as viewing packet data in JSON format, Edit and Resend and a hex view for raw packet data. You can download it from [here](https://github.com/Heath123/pakkit/releases/). It's currently WIP, so expect bugs.
 
+## Gadget
+Gadget is a fabric client mod to inspect & log, amongst other things, packets sent between a java server and a java client. It can be useful to determine java behavior.
+You can download it from [here](https://modrinth.com/mod/gadget).
+
 ## ProxyPass
 ProxyPass is a tool for intercepting packets between a Bedrock server and client developed by the Cloudburst team. It can be found [here](https://github.com/NukkitX/ProxyPass) and the vanilla Bedrock server can be found [here](https://www.minecraft.net/en-us/download/server/bedrock/).
 
@@ -52,3 +54,5 @@ NBTExplorer is a tool for viewing and editing NBT data for Java edition, this al
 
 ## Windows 10 Multi-Version Launcher
 The Windows 10 Multi-Version launcher allows you to switch between release and beta versions of Minecraft Bedrock. Its GitHub repository can be viewed [here](https://github.com/MCMrARM/mc-w10-version-launcher/).
+Alternatively, use FoxyNoTail's Version Switcher, found [here](https://foxynotail.com/software/mcbe-switcher).
+Note: To apply the [loopback fix](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#windows-1011) for Minecraft Preview, use the following loopback restriction lifting command with the different app ID: `CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe"`
