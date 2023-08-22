@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Custom blocks with Geyser
-permalink: /geyser/custom-blocks/
 ---
 
 # Custom blocks with Geyser

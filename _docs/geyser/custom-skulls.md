@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Custom skulls with Geyser
-permalink: /geyser/custom-skulls/
 ---
 
 # Custom skulls with Geyser
