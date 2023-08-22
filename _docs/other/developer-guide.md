@@ -44,10 +44,10 @@ Gadget is a fabric client mod to inspect & log, amongst other things, packets se
 You can download it from [here](https://modrinth.com/mod/gadget).
 
 ## ProxyPass
-ProxyPass is a tool for intercepting packets between a Bedrock server and client developed by the Cloudburst team. It can be found [here](https://github.com/NukkitX/ProxyPass) and the vanilla Bedrock server can be found [here](https://www.minecraft.net/en-us/download/server/bedrock/).
+ProxyPass is a tool for intercepting packets between a Bedrock server and client developed by the Cloudburst team. It can be found [here](https://github.com/CloudburstMC/ProxyPass) and the vanilla Bedrock server can be found [here](https://www.minecraft.net/download/server/bedrock/).
 
 ## MCC Toolchest
-MCC Toolchest is a tool for viewing and editing NBT data for Bedrock edition, this allows you to see data as it is stored in Bedrock. You can download it from [here](http://mcctoolchest.com/).
+MCC Toolchest is a tool for viewing and editing NBT data for Bedrock edition, this allows you to see data as it is stored in Bedrock. You can download it from [here](https://mcctoolchest.weebly.com/).
 
 ## NBTExplorer
 NBTExplorer is a tool for viewing and editing NBT data for Java edition, this allows you to see data as it is stored in Java edition. You can download it from [here](https://github.com/jaquadro/NBTExplorer/releases).
@@ -55,4 +55,4 @@ NBTExplorer is a tool for viewing and editing NBT data for Java edition, this al
 ## Windows 10 Multi-Version Launcher
 The Windows 10 Multi-Version launcher allows you to switch between release and beta versions of Minecraft Bedrock. Its GitHub repository can be viewed [here](https://github.com/MCMrARM/mc-w10-version-launcher/).
 Alternatively, use FoxyNoTail's Version Switcher, found [here](https://foxynotail.com/software/mcbe-switcher).
-Note: To apply the [loopback fix](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#windows-1011) for Minecraft Preview, use the following loopback restriction lifting command with the different app ID: `CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe"`
+Note: To apply the [loopback fix](/geyser/fixing-unable-to-connect-to-world/#windows-1011) for Minecraft Preview, use the following loopback restriction lifting command with the different app ID: `CheckNetIsolation LoopbackExempt -a -n="Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe"`
