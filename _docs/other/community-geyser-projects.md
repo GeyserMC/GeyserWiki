@@ -34,7 +34,7 @@ Creator: [Camotoy](https://github.com/Camotoy)
 
 An SkinAPI that displays Java or Bedrock skins based on the UUID or username.
 
-* [Website](https://docs.creepernation.net/skinapi)
+* [Website](https://docs.creepernation.net)
 
 Creators: [creeperz653](https://github.com/creeperz653), [BlueTree242](https://github.com/BlueTree242)
 
@@ -74,13 +74,6 @@ Plugin that blocks Java players from joining your Geyser server, so you can have
 * [GitHub](https://github.com/kejonaMC/GeyserBlockJavaPlayers)
 
 Creator: [Camotoy](https://github.com/Camotoy)
-
-## GeyserPlaceholders
-Placeholders support for Geyser.
-
-* [GitHub](https://github.com/ImDaBigBoss/GeyserPlaceholders)
-
-Creator: [ImDaBigBoss](https://github.com/ImDaBigBoss)
 
 ## GeyserPreventServerSwitch
 Prevent Bedrock players from joining specific sub-servers on a proxy

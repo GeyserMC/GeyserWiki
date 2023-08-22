@@ -18,7 +18,7 @@ Make sure the server has Floodgate installed and started up correctly. Otherwise
 ## `javax.crypto.AEADBadTagException: Tag mismatch!`
 
 If Geyser and Floodgate are on the same server, shut down your server, delete the `floodgate` plugin folder, delete any key file in the Geyser folder, and restart your server.
-If Geyser and Floodgate are not on the same server and you had to copy the key file, this could also be an error related to uploading through FTP. Using ASCII will not work here, and you need to make sure you're on binary when uploading. We recommend using [WinSCP](https://winscp.net/eng/index.php) if you need to use FTP.
+If Geyser and Floodgate are not on the same server and you had to copy the key file, this could also be an error related to uploading through FTP. Using ASCII will not work here, and you need to make sure you're on binary when uploading. We recommend using [WinSCP](https://winscp.net) if you need to use FTP.
 
 ## java.lang.NumberFormatException: For input string: ""
 

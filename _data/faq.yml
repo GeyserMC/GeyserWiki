@@ -31,7 +31,7 @@
         * [ProtocolSupportBungee](https://www.spigotmc.org/resources/8733/) changes how the login process works and therefore breaks the Floodgate injection code.
         * [SayNoToMcLeaks](https://www.spigotmc.org/resources/40906/) prevents Floodgate from finishing its login system.
 
-        If you come across any more, please let us know via [Discord](http://discord.gg/geysermc).
+        If you come across any more, please let us know via [Discord](https://discord.gg/geysermc).
 
     - title: What server versions does Geyser support?
       content: |
@@ -39,7 +39,7 @@
         Since Geyser emulates a {{ site.data.versions.java }} Java Edition client, you need to [install ViaVersion](https://www.spigotmc.org/resources/viaversion.19254/) on your server
         if it is not running the latest version of Minecraft. <br>
 
-        In order for Bedrock players to chat (1.19.3+) or join (1.19.1/1.19.2), you need to disable chat signing. More information about that can be read on the [chat signing page](geyser/secure-chat/). <br>
+        In order for Bedrock players to chat (1.19.3+) or join (1.19.1/1.19.2), you need to disable chat signing. More information about that can be read on the [chat signing page](/geyser/secure-chat/). <br>
 
         You will also need to run at least Java 16 or later to use Geyser. See [here](https://docs.papermc.io/misc/java-install) for more info on updating Java.
         Paper versions not supporting Java 16 can add `-DPaper.IgnoreJavaVersion=true` flag to the Java startup arguments to allow Paper to run on Java 16.
@@ -49,11 +49,11 @@
         This is a non-complete list of what platform each plugin version of Geyser is for, and the standalone version can be used for any as it isn't a plugin.
         * Geyser-Spigot works with:
           * [Spigot](https://www.spigotmc.org/)
-          * [Paper](https://papermc.io/downloads) (recommended)
+          * [Paper](https://papermc.io/downloads/paper) (recommended)
           * Any other forks of the above
         * Geyser-Bungee works with:
           * [BungeeCord](https://www.spigotmc.org/wiki/bungeecord/)
-          * [Waterfall](https://papermc.io/downloads#Waterfall)
+          * [Waterfall](https://papermc.io/downloads/Waterfall)
           * Any other forks of the above
         * Geyser-Velocity works with [Velocity](https://www.velocitypowered.com/)
         * Geyser-Sponge works with [SpongeVanilla or SpongeForge](https://www.spongepowered.org/)
@@ -149,7 +149,7 @@
 
     - title: How can I auto-update Geyser?
       content: |
-        GeyserUpdater ([GitHub page](https://github.com/ProjectG-Plugins/GeyserUpdater)/[Spigot page](https://www.spigotmc.org/resources/88555/)) is a Spigot/BungeeCord plugin option for auto-updating. Please note that this plugin is also unaffiliated and unsupported by Geyser, and users should redirect support for the plugin to its [Discord](https://discord.gg/U5MC2tcCz9).
+        GeyserUpdater ([GitHub page](https://github.com/kejonaMC/GeyserUpdater)/[Spigot page](https://www.spigotmc.org/resources/88555/)) is a Spigot/BungeeCord plugin option for auto-updating. Please note that this plugin is also unaffiliated and unsupported by Geyser, and users should redirect support for the plugin to its [Discord](https://discord.gg/U5MC2tcCz9).
 
     - title: How can I make DiscordSRV show Floodgate 2.0 or GeyserSkinManager skins?
       content: |
