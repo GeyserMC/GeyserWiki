@@ -34,6 +34,11 @@
       "description": "Select as a plugin in the exaroton plugin list and connect to your server with your Java IP and port. See [exaroton's article](https://support.exaroton.com/hc/en-us/articles/360019857918-Geyser) for more details."
     },
     {
+      "name": "Fusion Hosting",
+      "url": "https://fusionhostingltd.co.uk",
+      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling “clone-remote-port”) and connect with the same IP and port as you would on Java or create a port in the Network tab on the panel & use this for Geyser."
+    },
+    {
       "name": "FreeMcServer.net",
       "url": "https://freemcserver.net",
       "description": "Can be selected from the reinstall tab of the control panel."
