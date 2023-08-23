@@ -21,7 +21,7 @@ It can be used easily in Geyser Extensions, see [here](/geyser/extensions) for d
 
 **Quick overview:** <br>
 <div class="alert alert-info" role="alert">
-    Note: To see full, detailed documentation, see the <a href="https://repo.opencollab.dev/javadoc/maven-snapshots/org/geysermc/geyser/api/2.1.2-SNAPSHOT">javadocs</a>.
+    Note: To see full, detailed documentation, see the <a href="https://repo.opencollab.dev/javadoc/maven-snapshots/org/geysermc/geyser/api/latest">javadocs</a>.
 </div>
 
 #### [GeyserApi](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/GeyserApi.java):
