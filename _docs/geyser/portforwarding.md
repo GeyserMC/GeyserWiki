@@ -10,15 +10,16 @@ There are also guides for specific configurations, such as Docker/Pterodactyl, o
 	If you are using a Minecraft server hosting provider (e.g. Aternos, or Apex Hosting), you should refer to the hosting provider setup on the <a href="/geyser/setup/">setup</a> page instead.
 </div>
 
-## Portforwarding on Linux/Windows
-These are (limited) examples of how to open a port under Windows and Linux. 
-Additionally, you will need to portforward the port on your router/modem - see [here](https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/) or [here](https://www.lifewire.com/how-to-port-forward-4163829) for helpful guides.
+## Portforwarding on Linux/Windows/macOS
+To allow others to play on your server, you will need to set up portforwarding on the device hosting Geyser.
+Additionally, you will need to portforward the port on your router/modem if you want the server to be accessible outside your own home network. 
+See [here](https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/) or [here](https://www.lifewire.com/how-to-port-forward-4163829) for helpful guides.
 Do note: if you do not have a static IP address, your IP address may change over time. 
 
 <div class="alert alert-info" role="alert">
 	Some ISPs (Internet Service Providers) block certain ports, or don't allow you to open ports (e.g. by using CGNAT, which doesn't allow you to open a port with a dynamic IP).
 Other ISPs may require you to pay extra for a static IP address. <br>
-As an alternative to portforwarding, you could use <a href="/geyser/playit-gg/">playit.gg</a> to create a tunnel.
+As an alternative to portforwarding, you can use <a href="/geyser/playit-gg/">playit.gg</a> to create a tunnel.
 </div>
 
 ### Windows
@@ -56,6 +57,11 @@ Further helpful guides: [DigitalOcean](https://www.digitalocean.com/community/tu
 `sudo iptables -A INPUT -p udp --dport 19132 -j ACCEPT` <br>
 Then, save the firewall with `sudo iptables-save`, and see all open rules with `sudo iptables -L`. <br>
 Further helpful guides for iptables: [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-14-04), [Ubuntu](https://help.ubuntu.com/community/IptablesHowTo)
+
+### macOS
+You will need to disable `Block all incoming connections` in your Firewall settings, as that will block any connections and won't allow you to make exceptions. 
+To allow incoming connections, click `Allow` when getting [these prompts](https://cdn.discordapp.com/attachments/744287608217272351/1139735660417265684/image.png).
+If you are still facing issues, see Apple's official guide [here](https://support.apple.com/guide/mac-help/MH11783) to open a port on macOS.
 
 ## Using Docker or Pterodactyl
 In addition to port forwarding the port in your server's firewall (and, if applicable, your router/modem), you will need to assign the port in Docker/Pterodactyl.
@@ -121,3 +127,4 @@ You'll need to allow port 19132 on UDP in both the security list and the firewal
 Additional step for Ubuntu users: 
 1. Remove/comment out `-A INPUT -j REJECT --reject-with icmp-host-prohibited` in the `/etc/iptables/rules.v4` file.
 2. Then, run `sudo iptables-restore < /etc/iptables/rules.v4` to fix ufw.
+
