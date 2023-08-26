@@ -81,6 +81,10 @@ like currently, showing emotes.
 The item package contains classes and interfaces related to items in Geyser. You can create custom items and register them using the Geyser API.
 See [here](/geyser/custom-items) for detailed information on how to register custom items.
 
+#### [Block](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/block)
+The item package contains classes and interfaces related to blocks in Geyser. You can create custom blocks and register them using the Geyser API.
+See [here](/geyser/custom-blocks) for detailed information on how to register custom blocks.
+
 #### [Network](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/network)
 The network package contains basic information about the remote server via the 
 [RemoteServer](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/network/RemoteServer.java)
