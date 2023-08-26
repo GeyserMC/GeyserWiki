@@ -244,6 +244,11 @@
       "description": "Get Geyser as a plugin. Use the one of the available ports allocated for your server, for the Bedrock port in your config and connect with that port."
     },
     {
+      "name": "Hosterfy",
+      "url": "https://www.hosterfy.com/",
+      "description": "Get Geyser as a plugin, as in the setup guide. Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling “clone-remote-port”) and connect with the same IP and port as you would on Java. You can also ask for a new port."
+    },
+    {
       "name": "HostEZ",
       "url": "https://hostez.io/minecraft",
       "description": "Geyser plugin supported with self-install or installed on request with its own port. Includes firewall tested to be compatible with Geyser."
