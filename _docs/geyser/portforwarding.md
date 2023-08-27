@@ -72,7 +72,7 @@ Make sure to allocate the port to the server in the Pterodactyl panel, additiona
 There are also different Geyser eggs for Pterodactyl, which can be found [here](https://github.com/GeyserMC/pterodactyl-stuff).
 
 <div class="alert alert-warning" role="alert">
-    If you are not able to allocate the port in the Pterodactyl panel, you will need to contact your server host to allocate one for you or try to use an existing port allocation.
+    If you are not able to allocate ports in the Pterodactyl panel, you will need to contact your server host to allocate one for you or try to use an existing port allocation.
 </div>
 
 ### Docker
@@ -114,7 +114,7 @@ OVH:
 2. Click on the `...` button on the table for your IP -> then `...` and `Configure the GAME firewall` -> `Add rule` -> `Other protocol` (or `minecraftPocketEdition` if available)
 3. Add your Geyser port into `outgoing port`.
 
-SoYouStart (subsidary of OVH):
+SoYouStart (subsidiary of OVH):
 1. Click the IP tab.
 2. Click the gear at the right of the public IP address; select "Game mitigation".
 3. Pick "Add a rule".
