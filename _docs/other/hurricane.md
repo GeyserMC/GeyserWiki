@@ -17,9 +17,9 @@ Supported Versions:
 - 1.17.x & above for pig riding
 
 ### Download
-Spigot/Paper: [GitHub releases](https://github.com/GeyserMC/Hurricane/releases) <br>
-Fabric: [Modrinth](https://modrinth.com/mod/hurricane)
+- Spigot/Paper: [GitHub releases](https://github.com/GeyserMC/Hurricane/releases)
+- Fabric: [Modrinth](https://modrinth.com/mod/hurricane)
 
 ### Source
-Main: [GeyserMC/Hurricane](https://github.com/GeyserMC/Hurricane) <br>
-Unofficial fabric fork: [onebeastchris/Hurricane-fabric](https://github.com/onebeastchris/hurricane-fabric)
+- Main: [GeyserMC/Hurricane](https://github.com/GeyserMC/Hurricane)
+- Unofficial fabric fork: [onebeastchris/Hurricane-fabric](https://github.com/onebeastchris/hurricane-fabric)
