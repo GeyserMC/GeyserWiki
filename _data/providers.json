@@ -9,7 +9,7 @@
     {
       "name": "Aternos",
       "url": "https://aternos.org/",
-      "description": "Install Geyser in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details. \n Do note: Aternos automatically installs the latest version of the plugin, but does not auto update it. To update Geyser on Aternos, simply reinstall the plugin (no need to uninstall the plugin/deleting the plugin files)."
+      "description": "Install Geyser in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details. Do note: Aternos automatically installs the latest version of the plugin, but does not auto update it. To update Geyser on Aternos, simply reinstall the plugin (no need to uninstall the plugin/deleting the plugin files)."
     },
     {
       "name": "Apex Hosting",
@@ -44,7 +44,7 @@
     {
       "name": "MCProHosting",
       "url": "https://mcprohosting.com/",
-      "description": "Click \"Enable Bedrock Support\" on the server dashboard and follow the steps. \n For manual installation: Add Destination Port 19132 with Protocol UDP to the port forward mapping and connect to the given source port."
+      "description": "Click \"Enable Bedrock Support\" on the server dashboard and follow the steps. For manual installation: Add Destination Port 19132 with Protocol UDP to the port forward mapping and connect to the given source port."
     },
     {
       "name": "Minefort",
@@ -79,7 +79,7 @@
     {
       "name": "Server.pro",
       "url": "https://server.pro",
-      "description": "Different instructions for different plans: On VPS, select Geyser in the [Service Type Menu](https://i.imgur.com/loSNmvu.png), Floodgate can be enabled on the dashboard configuration. \n For manual installation: Using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect that; for the Free plan, also enable the `clone-remote-port` option. \n If you are using a PRO or a VPS plan, you can use any port, which can be opened on the Firewall tab."
+      "description": "Different instructions for different plans: On VPS, select Geyser in the [Service Type Menu](https://i.imgur.com/loSNmvu.png), Floodgate can be enabled on the dashboard configuration. For manual installation: Using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect that; for the Free plan, also enable the `clone-remote-port` option. If you are using a PRO or a VPS plan, you can use any port, which can be opened on the Firewall tab."
     },
     {
       "name": "Snakecraft Hosting",
@@ -264,11 +264,6 @@
       "description": "Uncomment and set `bedrock address` to the server IP in the Geyser config file. As an alternative, you can run Geyser standalone separately on an Unmanaged VDS."
     },
     {
-      "name": "NiCraft", // TODO: OVH? -> contact
-      "url": "https://www.ni-host.com/",
-      "description": "Use the same port as your Java server for the Bedrock port in your config and connect with that port.\n  - To fix seemingly random connection issues, [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
-    },
-    {
       "name": "Nitrado",
       "url": "https://nitrado.net",
       "description": "Get Geyser as a plugin. Add 4 to the Port of the Java server. See [here](https://wiki.nitrado.net/en/How_to_install_GeyserMC_and_Floodgate) for specific instructions."
@@ -305,9 +300,9 @@
       "description_template": "default"
     },
     {
-      "name": "Revivenode", // TODO OVH? -> contact
+      "name": "Revivenode",
       "url": "https://revivenode.com/",
-      "description": "Set `bedrock port` to the Java server's port (either by setting it yourself, or enabling \"clone-remote-port\"). You can also create a secondary port in the `network tab` and use that. \n  To fix random `Unable to Connect` issues, see [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
+      "description": "Set `bedrock port` to the Java server's port (either by setting it yourself, or enabling \"clone-remote-port\"). You can also create a secondary port in the `network tab` and use that. To fix random `Unable to Connect` issues, see [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
     },
     {
       "name": "ScalaCube",
@@ -394,6 +389,11 @@
       "name": "MyArena",
       "url": "https://www.myarena.ru/",
       "description": "Does seem to be working, but the Java version is too old in order for Geyser to run properly."
+    },
+    {
+      "name": "NiCraft",
+      "url": "https://www.ni-host.com/",
+      "description": "Does not provide Bedrock support, and are affected by a [firewall configuration issue](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart), which prohibits most players from joining."
     },
     {
       "name": "Feather",
