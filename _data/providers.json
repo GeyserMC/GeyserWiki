@@ -44,7 +44,7 @@
     {
       "name": "MCProHosting",
       "url": "https://mcprohosting.com/",
-      "description": "Click 'Enable Bedrock Support' on the server dashboard and follow the steps. For manual installation: Add 'Destination Port' 19132 with 'Protocol UDP' to the port forward mapping and connect to the given source port."
+      "description": "Click 'Enable Bedrock Support' on the server dashboard and follow the steps. For manual installation: Add 'Destination Port' `19132` with 'Protocol UDP' to the port forward mapping and connect to the given source port."
     },
     {
       "name": "Minefort",
@@ -342,7 +342,7 @@
     {
       "name": "The Minecraft Hosting",
       "url": "https://theminecrafthosting.com/",
-      "description": "Try using 19132 as the Bedrock port, if that does not work, use the same Java server's port for the `bedrock port` in your config and connect with that port and the Java server's IP."
+      "description": "Try using `19132` as the Bedrock port, if that does not work, use the same Java server's port for the `bedrock port` in your config and connect with that port and the Java server's IP."
     },
     {
       "name": "TNAHosting",
