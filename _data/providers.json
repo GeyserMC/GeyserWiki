@@ -49,7 +49,7 @@
     {
       "name": "Minefort",
       "url": "https://minefort.com/",
-      "description": "On the server dashboard under \"Connect Support\", make sure \"Allow Bedrock\" is enabled. Then connect via `play.minefort.com` and join using `/server <servername>`, or connect via `<servername>.minefort.com`."
+      "description": "On the server dashboard under 'Connect Support', make sure 'Allow Bedrock' is enabled. Then connect via `play.minefort.com` and join using `/server <servername>`, or connect via `<servername>.minefort.com`."
     },
     {
       "name": "Minehut",
@@ -211,7 +211,7 @@
     {
       "name": "Heavynode",
       "url": "https://www.heavynode.com/",
-      "description": "Open a port yourself in the networking section of the control panel. Port 19132 is only available with a dedicated IP (contact support), otherwise you will need to use a randomly assigned port. To resolve further connection issues for servers located in Canada and the UK, contact their support with the info found [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
+      "description": "Open a port yourself in the networking section of the control panel. Port `19132` is only available with a dedicated IP (contact support), otherwise you will need to use a randomly assigned port. To resolve further connection issues for servers located in Canada and the UK, contact their support with the info found [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
     },
     {
       "name": "Hicoria",
@@ -221,7 +221,7 @@
     {
       "name": "Hosterfy",
       "url": "https://www.hosterfy.com/",
-      "description": "Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling “clone-remote-port”) and connect with the same IP and port as you would on Java. You can also ask for a new port."
+      "description": "Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling `clone-remote-port`) and connect with the same IP and port as you would on Java. You can also ask for a new port."
     },
     {
       "name": "HostEZ",
@@ -271,7 +271,7 @@
     {
       "name": "Nodecraft",
       "url": "https://nodecraft.com",
-      "description": "Use the default server port and 0.0.0.0 or your server IP as the host address."
+      "description": "Use the default server port and `0.0.0.0` or your server IP as the host address."
     },
     {
       "name": "Pebblehost",
@@ -317,7 +317,7 @@
     {
       "name": "Skynode.pro",
       "url": "https://skynode.pro/",
-      "description": "Go to \"Server Details\", add a new port, and set the `bedrock port` in your config to that port. Connect with it and the Java server's address.."
+      "description": "Go to \"Server Details\", add a new port, and set the `bedrock port` in your config to that port. Connect with it and the Java server's address."
     },
     {
       "name": "Sparked Host",
@@ -367,7 +367,7 @@
     {
       "name": "Vultam",
       "url": "https://vultam.net/",
-      "description": "Set the `bedrock port` to the Java server's port, or request an additional port. The additional port can be 19132 if you buy a dedicated IP."
+      "description": "Set the `bedrock port` to the Java server's port, or request an additional port. The additional port can be `19132` if you buy a dedicated IP."
     },
     {
       "name": "WinterNode",
