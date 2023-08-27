@@ -44,7 +44,7 @@
     {
       "name": "MCProHosting",
       "url": "https://mcprohosting.com/",
-      "description": "Click \"Enable Bedrock Support\" on the server dashboard and follow the steps. For manual installation: Add Destination Port 19132 with Protocol UDP to the port forward mapping and connect to the given source port."
+      "description": "Click 'Enable Bedrock Support' on the server dashboard and follow the steps. For manual installation: Add 'Destination Port' 19132 with 'Protocol UDP' to the port forward mapping and connect to the given source port."
     },
     {
       "name": "Minefort",
@@ -84,7 +84,7 @@
     {
       "name": "Snakecraft Hosting",
       "url": "https://snakecrafthosting.com/",
-      "description": "Select \"Paper + Geyser with Floodgate\" under the Jar Type at checkout to install the Geyser plugin. Players will Connect with the same IP and port as you would on Java."
+      "description": "Select 'Paper + Geyser with Floodgate' under the Jar Type at checkout to install the Geyser plugin. Players will Connect with the same IP and port as you would on Java."
     },
     {
       "name": "SRKHOST",
@@ -94,7 +94,7 @@
     {
       "name": "Virtual Gladiators",
       "url": "https://virtualgladiators.com/",
-      "description": "Find the plugin in the control panel under the \"VG Recommended\" category and restart your server. IP and port are the same as Java."
+      "description": "Find the plugin in the control panel under the 'VG Recommended' category and restart your server. IP and port are the same as Java."
     },
     {
       "name": "ZapHosting",
@@ -302,7 +302,7 @@
     {
       "name": "Revivenode",
       "url": "https://revivenode.com/",
-      "description": "Set `bedrock port` to the Java server's port (either by setting it yourself, or enabling \"clone-remote-port\"). You can also create a secondary port in the `network tab` and use that. To fix random `Unable to Connect` issues, see [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
+      "description": "Set `bedrock port` to the Java server's port (either by setting it yourself, or enabling `clone-remote-port`). You can also create a secondary port in the `network tab` and use that. To fix random `Unable to Connect` issues, see [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
     },
     {
       "name": "ScalaCube",
@@ -317,7 +317,7 @@
     {
       "name": "Skynode.pro",
       "url": "https://skynode.pro/",
-      "description": "Go to \"Server Details\", add a new port, and set the `bedrock port` in your config to that port. Connect with it and the Java server's address."
+      "description": "Go to 'Server Details', add a new port, and set the `bedrock port` in your config to that port. Connect with it and the Java server's address."
     },
     {
       "name": "Sparked Host",
