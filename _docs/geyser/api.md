@@ -83,7 +83,11 @@ See [here](/geyser/custom-items) for detailed information on how to register cus
 
 #### [Block](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/block)
 The block package contains classes and interfaces related to blocks in Geyser. You can create custom blocks, and register them in using the [GeyserDefineCustomBlocksEvent](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle/GeyserDefineCustomBlocksEvent.java).
-See [here](/geyser/custom-blocks) for detailed information on how to register custom blocks.
+See [here](/geyser/custom-blocks) for detailed information.
+
+#### Skull
+The custom skulls don't have a separate package for it in the API. You can register them in using the [GeyserDefineCustomSkullsEvent](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle/GeyserDefineCustomSkullsEvent.java).
+See [here](/geyser/custom-skulls/) for more information.
 
 #### [Network](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/network)
 The network package contains basic information about the remote server via the 
