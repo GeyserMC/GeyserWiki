@@ -162,6 +162,11 @@
       "description_template": "default"
     },
     {
+      "name": "ElfIDC",
+      "url": "https://www.elfidc.com/",
+      "description": "When placing an order, you can choose Paper/Spigot + Geyser, he will automatically install the Geyser plugin, and the player will connect through the Java IP and port, which is built-in."
+    },
+    {
       "name": "EnviroMC",
       "url": "https://enviromc.host/",
       "description_template": "default"
