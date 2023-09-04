@@ -50,6 +50,15 @@ Minecraft: Java Edition uses TCP for connecting; Minecraft: Bedrock Edition uses
 
 Historically, having a Bedrock port that is a lower number will cause issues. Setting it to 10000 or above seems safe.
 
+## `passthrough-motd` is Enabled
+
+If you are having difficulties, try setting `passthrough-motd` to `false`, if this fixes your problem just go ahead and leave `passthrough-motd` off.
+
+If you need to have `passthrough-motd` set to `true` verify the following
+* You do not have any special characters i.e. Emojis or other Unicode characters
+* Your MOTD is a reasonable length
+* You do not overuse colors in your MOTD
+
 ## Bedrock players can connect *after* hitting the server on a TCP port (e.g. on Java or a website on the same server), OR only people who also play on Java Edition can join from Geyser
 
 This is likely a firewall issue on your server. Try the following workaround:
