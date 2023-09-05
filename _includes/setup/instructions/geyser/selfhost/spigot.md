@@ -36,8 +36,8 @@
     You will need to expose the port Geyser runs on to the Internet if you want players from outside your network to join.
     To achieve that, you have two options: <br>
 
-    - Portforwarding: Open the Geyser port (e.g. 19132) on the UDP protocol in your router/modem, and in the Windows/Linux firewall. 
-   [Our portforwarding guide](/geyser/portforwarding) explains how to do this in detail.
+    - Port forwarding: Open the Geyser port (e.g. 19132) on the UDP protocol in your router/modem, and in the Windows/Linux firewall. 
+   [Our port forwarding guide](/geyser/port-forwarding) explains how to do this in detail.
    After doing this, players can connect with your public IPv4 + port to your server. <br>
 
     - playit.gg: Instead of opening a port (which might not be an option/if you do not want to expose your home ip), you can use

@@ -52,14 +52,14 @@ You should be connecting with the Java server IP and the Bedrock port (set in th
 ### I'm using a hosting provider or VPS!
 
 Please read [this page on supported hosting providers](/geyser/supported-hosting-providers/) to see if there are extra configuration steps required for your hosting or server provider.
-Some VPS/KVM providers may require further setup, such as OVH, SoYouStart, and Oracle Cloud. Please read this [note](/geyser/portforwarding/#issues-with-specific-vpskvm-providers) for more information.
+Some VPS/KVM providers may require further setup, such as OVH, SoYouStart, and Oracle Cloud. Please read this [note](/geyser/port-forwarding/#issues-with-specific-vpskvm-providers) for more information.
 
 ### Issues using Docker or Pterodactyl
-Make sure you assign the port to pterodactyl, and on docker, to the docker compose file. See our [portforwarding](/geyser/portforwarding/#using-docker-or-pterodactyl) page for fixes.
+Make sure you assign the port to pterodactyl, and on docker, to the docker compose file. See our [port-forwarding](/geyser/port-forwarding/#using-docker-or-pterodactyl) page for fixes.
 
 # Port forwarding issues
 
-Your server does need to be port forwarded to allow connections from outside the local network. See [our portforwarding guide](/geyser/portforwarding/) for more information.
+Your server does need to be port forwarded to allow connections from outside the local network. See [our port-forwarding guide](/geyser/port-forwarding/) for more information.
 
 ### Using TCP in DNS options/port forwarding instead of UDP
 
@@ -74,7 +74,7 @@ Historically, having a Bedrock port that is a lower number will cause issues. Se
 This is likely a firewall issue on your server. Try the following workaround:
 Attempt to connect to the Bedrock IP and port through a web browser - for example, `http://test.geysermc.org:19132`. It won't work, but then try connecting through Bedrock, and it should work.
 
-Specific host fixes for OVH/SoYouStart can be found [here](/geyser/portforwarding/#issues-with-specific-vpskvm-providers).
+Specific host fixes for OVH/SoYouStart can be found [here](/geyser/port-forwarding/#issues-with-specific-vpskvm-providers).
 
 ### Changing the `bedrock` `address` in the Geyser config.
 

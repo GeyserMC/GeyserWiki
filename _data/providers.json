@@ -2,7 +2,7 @@
   "description_templates": {
     "default": "Enable `clone-remote-port` (or manually set `bedrock port` to the Java port), and connect with the Java IP and port.",
     "ip_and_port": "Enable `clone-remote-port` (or manually set `bedrock port` to the Java port), uncomment `bedrock address`, and change `0.0.0.0` to your Java server's IP. Connect with the Java IP and port.",
-    "forwarding_option": "Offers a working portforwarding option.",
+    "forwarding_option": "Offers a working port forwarding option.",
     "java_ip": "Make sure your remote address is 'auto', uncomment `bedrock address`, and change `0.0.0.0` to your Java server's IP."
   },
   "built_in": [
@@ -211,7 +211,7 @@
     {
       "name": "Heavynode",
       "url": "https://www.heavynode.com/",
-      "description": "Open a port yourself in the networking section of the control panel. Port `19132` is only available with a dedicated IP (contact support), otherwise you will need to use a randomly assigned port. To resolve further connection issues for servers located in Canada and the UK, contact their support with the info found [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
+      "description": "Open a port yourself in the networking section of the control panel. Port `19132` is only available with a dedicated IP (contact support), otherwise you will need to use a randomly assigned port. To resolve further connection issues for servers located in Canada and the UK, contact their support with the info found [here](https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart)."
     },
     {
       "name": "Hicoria",
@@ -302,7 +302,7 @@
     {
       "name": "Revivenode",
       "url": "https://revivenode.com/",
-      "description": "Set `bedrock port` to the Java server's port (either by setting it yourself, or enabling `clone-remote-port`). You can also create a secondary port in the `network tab` and use that. To fix random `Unable to Connect` issues, see [here](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart)."
+      "description": "Set `bedrock port` to the Java server's port (either by setting it yourself, or enabling `clone-remote-port`). You can also create a secondary port in the `network tab` and use that. To fix random `Unable to Connect` issues, see [here](https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart)."
     },
     {
       "name": "ScalaCube",
@@ -393,7 +393,7 @@
     {
       "name": "NiCraft",
       "url": "https://www.ni-host.com/",
-      "description": "Does not provide Bedrock support, and are affected by a [firewall configuration issue](https://wiki.geysermc.org/geyser/portforwarding/#ovh-and-soyoustart), which prohibits most players from joining."
+      "description": "Does not provide Bedrock support, and are affected by a [firewall configuration issue](https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart), which prohibits most players from joining."
     },
     {
       "name": "Feather",
