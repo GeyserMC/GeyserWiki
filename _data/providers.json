@@ -99,6 +99,11 @@
       "description": "Find the plugin in the control panel under the \"VG Recommended\" category and restart your server. IP and port are the same as Java."
     },
     {
+      "name": "WiseHosting",
+      "url": "https://wisehosting.com",
+      "description": "Both auto and manual installation available. Find the GeyserMC presets from `Properties` tab in the Game Panel. Just click Install and Restart your server!  See [Crossplay FAQ](https://wisehosting.com/knowledgebase/how-to-install-geysermc-java-bedrock-crossplay-to-your-server) for additional details."
+    },
+    {
       "name": "ZapHosting",
       "url": "https://zap-hosting.com/en/",
       "description": "Find the plugin in the control panel and restart your server. IP and port is the same as Java."
@@ -438,11 +443,6 @@
       "name": "WinterNode",
       "url": "https://winternode.com",
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port, request an additional port, or buy a dedicated IP address."
-    },
-    {
-      "name": "WiseHosting",
-      "url": "https://wisehosting.com",
-      "description": "Both auto and manual installation available. Find the GeyserMC presets from `Properties` tab in the Game Panel. Just click Install and Restart your server!  See [Crossplay FAQ](https://wisehosting.com/knowledgebase/how-to-install-geysermc-java-bedrock-crossplay-to-your-server) for additional details."
     },
     {
       "name": "WitherHosting",
