@@ -1,22 +1,25 @@
 {
   "description_templates": {
-    "default": "Get Geyser as a plugin, as in the [setup guide](https://wiki.geysermc.org/geyser/setup/). Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\") and connect with the same IP and port as you would on Java."
+    "default": "Enable `clone-remote-port` (or manually set `bedrock port` to the Java port), and connect with the Java IP and port.",
+    "ip_and_port": "Enable `clone-remote-port` (or manually set `bedrock port` to the Java port), uncomment `bedrock address`, and change `0.0.0.0` to your Java server's IP. Connect with the Java IP and port.",
+    "forwarding_option": "Offers a working port forwarding option.",
+    "java_ip": "Make sure your remote address is 'auto', uncomment `bedrock address`, and change `0.0.0.0` to your Java server's IP."
   },
   "built_in": [
     {
       "name": "Aternos",
       "url": "https://aternos.org/",
-      "description": "Select as a plugin in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details. \n Do note: Aternos automatically installs the latest version of the plugin, but does not auto update it. To update Geyser on aternos, simply reinstall the plugin (no need to uninstall the plugin/deleting the plugin files)."
+      "description": "Install Geyser in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details. Do note: Aternos automatically installs the latest version of the plugin, but does not auto update it. To update Geyser on Aternos, simply reinstall the plugin (no need to uninstall the plugin/deleting the plugin files)."
     },
     {
       "name": "Apex Hosting",
       "url": "https://apexminecrafthosting.com/",
-      "description": "Full auto installation. Go to the `Customizations` tab in the panel and select `Enabled` under the `Geyser Auto Installer` option then restart and connect to your server with your Java IP and port. See [Apex's article](https://apexminecrafthosting.com/geysermc/) for more details."
+      "description": "Full auto installation. Go to the Customizations tab in the panel and select 'Enabled' under the 'Geyser Auto Installer' option. Then, restart and connect to your server with your Java IP and port. See [Apex's article](https://apexminecrafthosting.com/geysermc/) for more details."
     },
     {
       "name": "Cloud Nord",
       "url": "https://cloudnord.net/",
-      "description": "Go to their [Crossplay Server](https://cloudnord.net/minecraftcrossplay-server-hosting/) hosting section and simply order your server. Instructions on how to join are provided."
+      "description": "Go to their [Crossplay Server](https://cloudnord.net/minecraftcrossplay-server-hosting/) hosting section and order your server. Instructions on how to join are provided."
     },
     {
       "name": "CreeperHost",
@@ -26,32 +29,27 @@
     {
       "name": "Cubes Hosting",
       "url": "https://www.cubes.host/",
-      "description": "Install Geyser as a plugin from the plugin manager configure with the correct port then restart the server and Geyser works out of the box as expected."
+      "description": "Install Geyser using the plugin manager. Then restart the server and Geyser will run on an additional port - you can check it in the server console. Geyser-Standalone can be set up through a support ticket."
     },
     {
       "name": "exaroton",
       "url": "https://exaroton.com/",
-      "description": "Select as a plugin in the exaroton plugin list and connect to your server with your Java IP and port. See [exaroton's article](https://support.exaroton.com/hc/en-us/articles/360019857918-Geyser) for more details."
-    },
-    {
-      "name": "FreeMcServer.net",
-      "url": "https://freemcserver.net",
-      "description": "Can be selected from the reinstall tab of the control panel."
+      "description": "Install Geyser in the exaroton plugin list and connect to your server with your Java IP and port. See [exaroton's article](https://support.exaroton.com/hc/en-us/articles/360019857918-Geyser) for more details."
     },
     {
       "name": "GGServers",
       "url": "https://ggservers.com",
-      "description": "Can easily be installed to any server in just one click from their auto plugin setups. No configuration needed."
+      "description": "Can be installed to any server from their auto plugin setups. No further configuration needed."
     },
     {
       "name": "MCProHosting",
       "url": "https://mcprohosting.com/",
-      "description": "Click \"Enable Bedrock Support\" on the server dashboard and follow the steps. For manual installation: Add Destination Port 19132 with Protocol UDP to the port forward mapping and connect to the given source port."
+      "description": "Click 'Enable Bedrock Support' on the server dashboard and follow the steps. For manual installation: Add 'Destination Port' `19132` with 'Protocol UDP' to the port forward mapping and connect to the given source port."
     },
     {
       "name": "Minefort",
       "url": "https://minefort.com/",
-      "description": "On the server dashboard under \"Connect Support\", make sure \"Allow Bedrock\" is enabled. Then simply connect via `play.minefort.com` and join using `/server <servername>`, or connect via `<servername>.minefort.com`."
+      "description": "On the server dashboard under 'Connect Support', make sure 'Allow Bedrock' is enabled. Then connect via `play.minefort.com` and join using `/server <servername>`, or connect via `<servername>.minefort.com`."
     },
     {
       "name": "Minehut",
@@ -59,14 +57,14 @@
       "description": "Connect via `bedrock.minehut.com` and do `/join <servername>`, or connect directly via `<servername>.bedrock.minehut.gg`."
     },
     {
-      "name": "MixmlHosting",
-      "url": "https://mixmlhosting.com/",
+      "name": "Physgun",
+      "url": "https://physgun.com/",
       "description_template": "default"
     },
     {
       "name": "OMGServ",
       "url": "https://www.omgserv.com/en/",
-      "description": "Select Geyser in [Install Menu](https://i.imgur.com/Gewpsrq.png), all is automatically installed. You can turn on/off floodgate in [server properties on the dashboard](https://i.imgur.com/jg5mzNj.png)."
+      "description": "Select Geyser in the [Install Menu](https://i.imgur.com/Gewpsrq.png), it will be automatically installed. You can enable floodgate in the [server properties on the dashboard](https://i.imgur.com/jg5mzNj.png)."
     },
     {
       "name": "PloudOS",
@@ -81,65 +79,64 @@
     {
       "name": "Server.pro",
       "url": "https://server.pro",
-      "description": "On VPS, select Geyser in the [Service Type Menu](https://i.imgur.com/loSNmvu.png), Floodgate can be enabled and disabled on the dashboard configuration. For manual installation: If using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect with the same port; for the Free plan, also enable the `clone-remote-port` option; leave the IP values as default (`0.0.0.0` and `auto`). However, if you are using a PRO or a VPS plan, you can use any port you'd like, which can be opened on the Firewall tab."
+      "description": "Different instructions for different plans: On VPS, select Geyser in the [Service Type Menu](https://i.imgur.com/loSNmvu.png), Floodgate can be enabled on the dashboard configuration. For manual installation: Using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect that; for the Free plan, also enable the `clone-remote-port` option. If you are using a PRO or a VPS plan, you can use any port, which can be opened on the Firewall tab."
     },
     {
       "name": "Snakecraft Hosting",
       "url": "https://snakecrafthosting.com/",
-      "description": "Select \"Paper + Geyser with Floodgate\" under the Jar Type at checkout to install the Geyser plugin. Players will Connect with the same IP and port as you would on Java."
+      "description": "Select 'Paper + Geyser with Floodgate' under the Jar Type at checkout to install the Geyser plugin. Players will Connect with the same IP and port as you would on Java."
     },
     {
       "name": "SRKHOST",
       "url": "https://www.srkhost.eu/",
-      "description": "You can enable Geyser at the Version changer page. This feature is built-in and uses the given port by the host."
+      "description": "You can enable Geyser on the version changer page. Geyser will run on the given port by the host."
     },
     {
       "name": "Virtual Gladiators",
       "url": "https://virtualgladiators.com/",
-      "description": "Find the plugin in the control panel under the \"VG Recommended\" category and restart your server. IP and port are the same as Java."
+      "description": "Find the plugin in the control panel under the 'VG Recommended' category and restart your server. IP and port are the same as Java."
+    },
+    {
+      "name": "WiseHosting",
+      "url": "https://wisehosting.com",
+      "description": "Both auto and manual installation available. Find the GeyserMC presets from the `Properties` tab in the Game Panel. There, click `Install` and restart your server. See [Crossplay FAQ](https://wisehosting.com/knowledgebase/how-to-install-geysermc-java-bedrock-crossplay-to-your-server) for additional details."
     },
     {
       "name": "ZapHosting",
       "url": "https://zap-hosting.com/en/",
-      "description": "Find the plugin in the control panel and restart your server. IP and port is the same as Java."
+      "description": "Find the plugin in the control panel and restart your server. IP and port are the same as Java."
     },
     {
       "name": "365Hosts",
       "url": "https://365hosts.com",
-      "description": "Go to their [Minecraft: Crossplay](https://www.365hosts.com/gaming/crossplayminecraft) hosting section and simply order your server. Instructions on how to join are provided."
+      "description": "Go to their [Minecraft: Crossplay](https://www.365hosts.com/gaming/crossplayminecraft) hosting section and order your server. Instructions on how to join are provided."
     }
   ],
   "support": [
     {
       "name": "Akliz",
       "url": "https://www.akliz.net/",
-      "description": "Get Geyser as a plugin. They should have a port forwarding option that works."
+      "description_template": "forwarding_option"
     },
     {
       "name": "Aquatis",
       "url": "https://aquatis.host/",
-      "description": "Get Geyser as a plugin. Need to open a support ticket to get UDP ports and then update the config to reflect your new Bedrock port."
-    },
-    {
-      "name": "Azure",
-      "url": "https://azure.microsoft.com/",
-      "description": "Get Geyser as a plugin. Not a dedicated Minecraft service provider."
+      "description": "Need to open a support ticket to get a UDP port, then use that as the `bedrock port`."
     },
     {
       "name": "BisectHosting",
       "url": "https://www.bisecthosting.com/",
-      "description": "You must have a plan with a dedicated IP. Get Geyser as a plugin. In Geyser's config, uncomment the bedrock address field and set it to the public IP of your server (e.g. `address: 51.79.129.18`). Leave the port as `19132`. Under the home tab, select 'Enable UDP Network' and restart the server. See Bisect's [article](https://www.bisecthosting.com/clients/index.php?rp=/knowledgebase/193/How-to-install-Geyser-and-Floodgate-on-a-Minecraft-Java-server.html) for full instructions."
+      "description": "You must have a plan with a dedicated IP. In Geyser's config, uncomment the `bedrock address` and set it to the public IP of your server (e.g. `address: 51.79.129.18`). Leave the port as `19132`. Under the home tab, select 'Enable UDP Network' and restart the server. See Bisect's [article](https://www.bisecthosting.com/clients/index.php?rp=/knowledgebase/193/How-to-install-Geyser-and-Floodgate-on-a-Minecraft-Java-server.html) for full instructions."
     },
     {
       "name": "Bloom.Host",
       "url": "https://www.bloom.host/",
-      "description": "Get Geyser as a plugin. They have a port forwarding option that works."
+      "description_template": "forwarding_option"
     },
     {
       "name": "Clovux",
       "url": "https://clovux.net/",
-      "description_template": "default",
-      "description": "Make sure your remote address is 'auto' and your bedrock address is your server IP."
+      "description_template": "java_ip"
     },
     {
       "name": "Consulhosting",
@@ -149,17 +146,12 @@
     {
       "name": "Craft-Hosting",
       "url": "https://craft-hosting.ru/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port; note that this provider appears to only provide service in Russia."
+      "description": "Set the Bedrock port to the Java server's port and connect with that port; note that this provider appears to only provide service in Russia."
     },
     {
       "name": "DedicatedMC",
       "url": "https://dedicatedmc.io/",
-      "description": "Get Geyser as a plugin. Need to ask to open the default bedrock port."
-    },
-    {
-      "name": "Eendhosting",
-      "url": "https://eendhosting.nl/",
-      "description_template": "default"
+      "description": "Contact the support to open the default Bedrock port, which Geyser is configured to use by default."
     },
     {
       "name": "ElfIDC",
@@ -174,28 +166,27 @@
     {
       "name": "ExtraVM",
       "url": "https://extravm.com/",
-      "description_template": "default",
-      "description": "Make sure your remote address and your bedrock address is your server IP."
+      "description_template": "java_ip"
     },
     {
       "name": "FadeHost",
       "url": "https://fadehost.com/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port or buy a dedicated IP address to support a different port."
+      "description": "Set the Bedrock port to the Java server's port and connect with that port. Alternatively, buy a dedicated IP address to support a different port."
     },
     {
       "name": "FakaHeda",
       "url": "https://fakaheda.eu/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server or use one of the available ports allocated for your server, for the Bedrock port in your config and connect with that port."
+      "description": "Set the `bedrock port` in the config to the Java server's port or use one of the available ports allocated to your server, and connect with that port."
     },
     {
       "name": "FalixNodes",
       "url": "https://falixnodes.net/",
-      "description": "Get Geyser as a plugin. Open a port yourself on the network page in the game panel, then change the port under the bedrock section of the Geyser config."
+      "description": "Open a port yourself on the network page in the game panel, then use that port in the bedrock section of the Geyser config."
     },
     {
       "name": "Ferox Hosting",
       "url": "https://feroxhosting.nl",
-      "description": "Get Geyser as a plugin. Open a port yourself in our panel and check out the [knowledgebase](https://feroxhosting.nl/kb/) for how to install and configure the plugin."
+      "description": "Open a port yourself in their panel and check out the [knowledgebase article](https://feroxhosting.nl/kb/) for how to install and configure Geyser."
     },
     {
       "name": "Fluctis Hosting",
@@ -213,10 +204,9 @@
       "description_template": "default"
     },
     {
-      "name": "Futurehosting",
-      "url": "https://futurehosting.org/",
-      "description_template": "default",
-      "description": "Make sure your `bedrock` `address` in your Geyser config is your server IP."
+      "name": "FreeMcServer.net",
+      "url": "https://freemcserver.net",
+      "description_template": "default"
     },
     {
       "name": "GameHosting.it",
@@ -224,59 +214,44 @@
       "description_template": "default"
     },
     {
-      "name": "Google Cloud",
-      "url": "https://cloud.google.com/",
-      "description": "Not a dedicated Minecraft provider\n  - 90 day/$300 free trial\n  - \n  - Note: You'll need to also allow port 19132 on UDP, use Paper instead of vanilla, and put Geyser in the plugins folder\n  - You also don't need an SSD, they're just trying to make you pay more"
-    },
-    {
       "name": "GPortal",
       "url": "https://www.g-portal.com/",
-      "description": "Get Geyser as a plugin. Need to ask to open a UDP port. Also, make sure your `bedrock` `address` in your Geyser config is your server IP."
+      "description": "Need to contact support to open a UDP port, then use that as the `bedrock port` in the config. Also, uncomment `bedrock` `address` and make sure it is set to your Java server IP."
     },
     {
       "name": "Heavynode",
       "url": "https://www.heavynode.com/",
-      "description": "Get Geyser as a plugin. Use 0.0.0.0 as the address and open a port on the network section of the control panel. Port 19132 is only available if your server has a dedicated IP (contact support), otherwise you will need to use a random port as assigned by the control panel. For servers in Canada and the UK a support ticket is needed to also open UDP traffic for Bedrock due to the OVH game firewall, see [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)."
-    },
-    {
-      "name": "Hetzner",
-      "url": "https://hetzner.com",
-      "description": "Not a dedicated Minecraft provider."
+      "description": "Open a port yourself in the networking section of the control panel. Port `19132` is only available with a dedicated IP (contact support), otherwise you will need to use a randomly assigned port. To resolve further connection issues for servers located in Canada and the UK, contact their support with the info found [here](https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart)."
     },
     {
       "name": "Hicoria",
       "url": "https://hicoria.com/en/",
-      "description": "Get Geyser as a plugin. Use the one of the available ports allocated for your server, for the Bedrock port in your config and connect with that port."
+      "description": "Use one of the available ports allocated for your server for the Bedrock port in your config and connect with that port."
     },
     {
       "name": "Hosterfy",
       "url": "https://www.hosterfy.com/",
-      "description": "Get Geyser as a plugin, as in the setup guide. Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling “clone-remote-port”) and connect with the same IP and port as you would on Java. You can also ask for a new port."
+      "description": "Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling `clone-remote-port`) and connect with the same IP and port as you would on Java. You can also ask for a new port."
     },
     {
       "name": "HostEZ",
       "url": "https://hostez.io/minecraft",
-      "description": "Geyser plugin supported with self-install or installed on request with its own port. Includes firewall tested to be compatible with Geyser."
-    },
-    {
-      "name": "HostValues",
-      "url": "https://hostvalues.net/",
-      "description_template": "default"
+      "description": "Geyser plugin supported with self-install or installed on request with its own port."
     },
     {
       "name": "HumbleServers",
       "url": "https://humbleservers.com/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config, or one of the two extra ports, and connect with that port. If the subdomain doesn't work, use your regular numbered IP address."
+      "description": "Set the Bedrock port to the Java server's port, or to one of the two extra ports, and connect with that port. If the subdomain doesn't work, use your regular numbered IP address."
     },
     {
       "name": "MC-HOST24.de",
       "url": "https://mc-host24.de/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\"). Set remote address to auto, and bedrock address to the server IP. Connect with the Java IP and port."
+      "description_template": "ip_and_port"
     },
     {
       "name": "Meloncube",
       "url": "https://www.meloncube.net/",
-      "description": "Get Geyser as a plugin. Need to ask to open a UDP port."
+      "description": "Contact the support for a UDP port to use for Geyser. Set that port as the `bedrock port`, and connect with it."
     },
     {
       "name": "MineStrator",
@@ -289,24 +264,14 @@
       "description_template": "default"
     },
     {
-      "name": "Minehub",
-      "url": "https://minehub.de/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port, or buy a dedicated IP address to support a different port."
-    },
-    {
       "name": "Netbela",
       "url": "https://netbela.nl/store/minecraft",
-      "description": "Install Geyser as a plugin with the dedicated Plugin installer. Use the same port as your Java server in your config. Connect using the same address and port as your Java server."
+      "description": "Install Geyser with the dedicated Plugin installer. Use the same port as your Java server in your config. Connect with the same address and port as your Java server."
     },
     {
       "name": "NFOservers",
       "url": "https://nfoservers.com/",
-      "description": "Get Geyser as a plugin. Make sure your remote address and your bedrock address are your server IP in the Geyser config file. As an alternative, you can run Geyser standalone separately on an Unmanaged VDS."
-    },
-    {
-      "name": "NiCraft",
-      "url": "https://www.ni-host.com/",
-      "description": "Use the same port as your Java server for the Bedrock port in your config and connect with that port.\n  - See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
+      "description": "Uncomment and set `bedrock address` to the server IP in the Geyser config file. As an alternative, you can run Geyser standalone separately on an Unmanaged VDS."
     },
     {
       "name": "Nitrado",
@@ -316,17 +281,7 @@
     {
       "name": "Nodecraft",
       "url": "https://nodecraft.com",
-      "description": "Get Geyser as a plugin. Use the default server port and 0.0.0.0 or your server IP as the host address."
-    },
-    {
-      "name": "Oracle Cloud / OCI",
-      "url": "https://www.oracle.com/cloud/",
-      "description": "Not a dedicated Minecraft provider\n  - 30 day/$300 free trial\n  - [Tutorial for a Minecraft server in Oracle Cloud](https://blogs.oracle.com/developers/post/how-to-set-up-and-run-a-really-powerful-free-minecraft-server-in-the-cloud)\n  - Note: You'll need to also allow port 19132 on UDP in both the security list and the firewall-cmd command, use Paper instead of vanilla, and put Geyser in the plugins folder.\n -- Note for Ubuntu users: Comment out `-A INPUT -j REJECT --reject-with icmp-host-prohibited` in `/etc/iptables/rules.v4` and run `sudo iptables-restore < /etc/iptables/rules.v4` to fix ufw."
-    },
-    {
-      "name": "OVH",
-      "url": "https://www.ovh.com/",
-      "description": "See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#issues-connecting-with-ovh-or-a-subsidiary)."
+      "description": "Use the default server port and `0.0.0.0` or your server IP as the host address."
     },
     {
       "name": "Pebblehost",
@@ -342,7 +297,7 @@
     {
       "name": "PUBCS",
       "url": "https://pubcs.com",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port, or upgrade to a plan that includes dedicated IP address to support a different port."
+      "description": "Set the Bedrock port to the Java server's port and connect with that port, or upgrade to a plan that includes dedicated IP address to support a different port."
     },
     {
       "name": "RamShard",
@@ -357,32 +312,22 @@
     {
       "name": "Revivenode",
       "url": "https://revivenode.com/",
-      "description": "Get Geyser as a plugin, as in the [setup guide](https://wiki.geysermc.org/geyser/setup/). Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling \"clone-remote-port\". Connect with the same IP and port as you would on Java. \n  - See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser).\n  - So if your players encounter this issue, please ask them to try to connect (even if they don't have Minecraft) from Java Edition first while their Bedrock client is opened, and after they should be able to join on Bedrock Edition."
-    },
-    {
-      "name": "SunriseNode",
-      "url": "https://sunrisenode.com",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port."
+      "description": "Set `bedrock port` to the Java server's port (either by setting it yourself, or enabling `clone-remote-port`). You can also create a secondary port in the `network tab` and use that. To fix random `Unable to Connect` issues, see [here](https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart)."
     },
     {
       "name": "ScalaCube",
       "url": "https://scalacube.com/",
-      "description": "Get Geyser as a plugin. Use the same address and port as your Java server for the Bedrock address and port in your config and connect with that port."
+      "description_template": "ip_and_port"
     },
     {
       "name": "Shockbyte",
       "url": "https://shockbyte.com/",
-      "description": "For Plugin install: use the same address and port as your Java server for the Bedrock address and port in your config and connect with that port. For Geyser Standalone installation instructions, see [here](https://shockbyte.com/billing/knowledgebase/173/Introduction-to-GeyserMCorDragonProxy-How-GeyserMC-Works.html)."
+      "description": "Uncomment and set `bedrock address` to the Java server's IP, and `bedrock port` to the Java server' port. Connect with the same IP and port as on Java. For Geyser Standalone installation instructions, see [here](https://shockbyte.com/billing/knowledgebase/173/Introduction-to-GeyserMCorDragonProxy-How-GeyserMC-Works.html)."
     },
     {
       "name": "Skynode.pro",
       "url": "https://skynode.pro/",
-      "description": "Get Geyser as a plugin. Go to \"Server Details\", add a new port, and change the port in your config. Connect with that, using the address from your main port."
-    },
-    {
-      "name": "SoYouStart",
-      "url": "https://www.soyoustart.com",
-      "description": "See [here](https://wiki.geysermc.org/geyser/fixing-unable-to-connect-to-world/#bedrock-players-can-connect-after-hitting-the-server-on-a-tcp-port-eg-on-java-or-a-website-on-the-same-server-or-only-people-who-also-play-on-java-edition-can-join-from-geyser)."
+      "description": "Go to 'Server Details', add a new port, and set the `bedrock port` in your config to that port. Connect with it and the Java server's address."
     },
     {
       "name": "Sparked Host",
@@ -392,27 +337,22 @@
     {
       "name": "StellaNode",
       "url": "https://stellanode.com/",
-      "description": "Get Geyser as a plugin. Open a support ticket on the billing panel to receive an additional UDP port to use for Geyser."
+      "description": "Open a support ticket on the billing panel to receive an additional UDP port for Geyser, then set that as the `bedrock port`."
     },
     {
       "name": "STIPE",
       "url": "https://stipe.com.au/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port; note that this provider only provides service in Australia."
+      "description": "Set the Bedrock port to the Java server's port and connect with that port; note that this provider only provides service in Australia."
     },
     {
       "name": "SyntexHosting",
       "url": "https://syntexhosting.com/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in the config and connect with that port, or request a (free) additional port for your bedrock clients."
+      "description": "Set the Bedrock port to the Java server's port and connect with that port, or request a (free) additional port."
     },
     {
       "name": "The Minecraft Hosting",
       "url": "https://theminecrafthosting.com/",
-      "description": "Get Geyser as a plugin. 19132 should work as a Bedrock port, if not use the same port as your Java server for the Bedrock port in your config and connect with that port."
-    },
-    {
-      "name": "Titan Nodes",
-      "url": "https://titannodes.com/",
-      "description": "Get Geyser as a plugin. Use the default server port and 0.0.0.0 as the host address."
+      "description": "Try using `19132` as the Bedrock port, if that does not work, use the same Java server's port for the `bedrock port` in your config and connect with that port and the Java server's IP."
     },
     {
       "name": "TNAHosting",
@@ -437,17 +377,17 @@
     {
       "name": "Vultam",
       "url": "https://vultam.net/",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server and 0.0.0.0 as the address for Bedrock, or request an additional port. The additional port can be 19132 if you buy a dedicated IP."
+      "description": "Set the `bedrock port` to the Java server's port, or request an additional port. The additional port can be `19132` if you buy a dedicated IP."
     },
     {
       "name": "WinterNode",
       "url": "https://winternode.com",
-      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config and connect with that port, request an additional port, or buy a dedicated IP address."
+      "description": "Set the Bedrock port to the Java server's port and connect with that port. Alternatively, request an additional port, or buy a dedicated IP address."
     },
     {
       "name": "WitherHosting",
       "url": "https://witherhosting.com/",
-      "description": "Get Geyser as a plugin. Put the port provided by the host in your config.yml for the Java and bedrock sections, or create a port in the ports manager on the panel and use that for bedrock with the main one for Java, and you will be able to connect! Refer to the hosts [support article](https://support.witherhosting.com/en/article/how-to-install-and-use-geysermc-1xn5l6v/) for more"
+      "description": "Either use the Java server's port, or create a port in the ports manager on the panel and use that for Bedrock. Refer to the hosts [support article](https://support.witherhosting.com/en/article/how-to-install-and-use-geysermc-1xn5l6v/) for further info."
     }
   ],
   "no_support": [
@@ -461,9 +401,14 @@
       "description": "Does seem to be working, but the Java version is too old in order for Geyser to run properly."
     },
     {
+      "name": "NiCraft",
+      "url": "https://www.ni-host.com/",
+      "description": "Does not provide Bedrock support, and are affected by a [firewall configuration issue](https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart), which prohibits most players from joining."
+    },
+    {
       "name": "Feather",
       "url": "https://feathermc.com/",
-      "description": "Their proxy network doesn't support UDP and therefore Geyser isn't supported"
+      "description": "Their proxy network does not support UDP. Therefore, Geyser is not supported. As an alternative, set up a paper server with e.g. playit.gg instead of port forwarding."
     }
   ]
 }
