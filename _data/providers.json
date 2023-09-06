@@ -101,7 +101,7 @@
     {
       "name": "WiseHosting",
       "url": "https://wisehosting.com",
-      "description": "Both auto and manual installation available. Find the GeyserMC presets from `Properties` tab in the Game Panel. Just click Install and Restart your server!  See [Crossplay FAQ](https://wisehosting.com/knowledgebase/how-to-install-geysermc-java-bedrock-crossplay-to-your-server) for additional details."
+      "description": "Both auto and manual installation available. Find the GeyserMC presets from the `Properties` tab in the Game Panel. There, click `Install` and restart your server. See [Crossplay FAQ](https://wisehosting.com/knowledgebase/how-to-install-geysermc-java-bedrock-crossplay-to-your-server) for additional details."
     },
     {
       "name": "ZapHosting",
