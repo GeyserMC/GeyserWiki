@@ -154,6 +154,11 @@
       "description": "Contact the support to open the default Bedrock port, which Geyser is configured to use by default."
     },
     {
+      "name": "ElfIDC",
+      "url": "https://www.elfidc.com/",
+      "description": "When placing an order, choose Paper/Spigot + Geyser, which will automatically install the Geyser plugin. Connect with the Java server's IP and port. Note: This provider only provides service in China."
+    },
+    {
       "name": "EnviroMC",
       "url": "https://enviromc.host/",
       "description_template": "default"
