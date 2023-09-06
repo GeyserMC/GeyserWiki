@@ -156,7 +156,7 @@
     {
       "name": "ElfIDC",
       "url": "https://www.elfidc.com/",
-      "description": "When placing an order, you can choose Paper/Spigot + Geyser, he will automatically install the Geyser plugin, and the player will connect through the Java IP and port, which is built-in."
+      "description": "When placing an order, choose Paper/Spigot + Geyser, which will automatically install the Geyser plugin. Connect with the Java server's IP and port. Note: This provider only provides service in China."
     },
     {
       "name": "EnviroMC",
