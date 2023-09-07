@@ -82,7 +82,7 @@ The item package contains classes and interfaces related to items in Geyser. You
 See [here](/geyser/custom-items) for detailed information on how to register custom items.
 
 #### [Block](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/block)
-The block package contains classes and interfaces related to blocks in Geyser. You can create custom blocks in this package, and register them in using the [GeyserDefineCustomBlocksEvent](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle/GeyserDefineCustomBlocksEvent.java).
+The block package contains classes and interfaces related to blocks in Geyser. You can create custom blocks using this package, and register them in using the [GeyserDefineCustomBlocksEvent](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle/GeyserDefineCustomBlocksEvent.java).
 See [here](/geyser/custom-blocks) for detailed information.
 
 #### [Network](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/network)
