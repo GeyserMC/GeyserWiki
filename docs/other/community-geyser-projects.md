@@ -2,7 +2,7 @@
 title: Community Geyser Projects
 ---
 
-Below is a list of community-compiled plugins, extensions and tools that work with Geyser. 
+Below is a list of community-compiled plugins, extensions and tools that work with Geyser.
 
 Please note that, as these are unofficial, the main Geyser Discord will likely be unable to help with any bugs or issues you run into. Please check the linked pages for their support systems.
 
@@ -17,7 +17,7 @@ A Spigot shop plugin that uses Bedrock forms.
 Creator: [KejonaMC](https://github.com/kejonaMC)
 
 ## Bedrock Player Manager for Floodgate
-A Spigot plugin that is able to run certain commands when a Bedrock player joins, or have Bedrock players able to bypass the anticheat, etc. 
+A Spigot plugin that is able to run certain commands when a Bedrock player joins, or have Bedrock players able to bypass the anticheat, etc.
 
 * [Spigot page](https://www.spigotmc.org/resources/82278/)
 
