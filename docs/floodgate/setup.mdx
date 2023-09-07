@@ -1,0 +1,100 @@
+---
+title: Floodgate Setup
+page_sidebar: false
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# Floodgate Setup
+
+<div class="alert alert-warning" role="alert">
+	Floodgate does <b>NOT</b> replace Geyser! It allows Geyser players to join servers without needing to log into a paid Java Edition account. <br/>
+</div>
+
+<Tabs>
+<TabItem value="spigot" label="Paper / Spigot">
+
+## Floodgate-Spigot setup
+
+1. Download Floodgate-Spigot from the [download page](https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot).
+2. Place the Floodgate-Spigot.jar in the `plugins` folder, and restart the server.
+3. Change `auth-type` in Geyser's config to `floodgate`.
+4. Restart the server.
+
+</TabItem>
+<TabItem value="fabric" label="Fabric">
+
+## Floodgate-Fabric setup
+
+1. Download Floodgate-Fabric from the [modrinth page](https://modrinth.com/mod/floodgate).
+2. Place the Floodgate-Fabric.jar in the `mods` folder, and restart the server. **You also need [FabricAPI](https://modrinth.com/mod/fabric-api) installed.**
+3. Change `auth-type` in Geyser's config to `floodgate`.
+4. Restart the server.
+
+
+**Note for Fabric behind a Velocity proxy:**
+You will need to configure FabricProxyLite to allow the Fabric server to receive data from Velocity.
+
+</TabItem>
+<TabItem value="proxy" label="Proxy Servers">
+
+## Floodgate setup on a BungeeCord/Velocity proxy
+
+:::info
+You only need to install Floodgate on the BungeeCord or Velocity proxy server, unless you want to use the Floodgate API on the backend servers.
+Additionally, it will display Bedrock edition skins properly.
+:::
+
+1. Download Floodgate for your proxy software from the [download page](https://geysermc.org/download).
+2. Place the Floodgate jar in the `plugins` folder, and restart the proxy server.
+3. Change `auth-type` in Geyser's config to `floodgate`.
+4. Restart the server.
+
+## Installing Floodgate on servers behind the proxy
+
+This is only needed when you want to use the Floodgate API on your backend server(s) behind a proxy.
+
+1. After installing Floodgate on the proxy, install Floodgate on the backend servers (either Floodgate-Spigot, or Floodgate-Fabric).
+2. Enable `ip_forward` in your BungeeCord `config.yml` if using BungeeCord. For Velocity, set up [player information forwarding](https://docs.papermc.io/velocity/player-information-forwarding).
+3. Set bungeecord to true in your spigot.yml. When using Velocity, see their guide, as they have multiple options that require different setups.
+4. Start the proxy server.
+5. Edit the Floodgate config on your proxy server and set send-floodgate-data to true.
+6. Copy the `key.pem` file in the proxy Floodgate config folder to all backend servers’ Floodgate config folder.
+7. Restart the backend servers and proxy server.
+
+:::danger
+**DO NOT DISTRIBUTE THIS KEY TO ANYBODY!**
+
+This key is what allows for Bedrock accounts to bypass the Java Edition authentication, and if anyone gets ahold of this, they can wreak havoc on your server.
+:::
+
+</TabItem>
+<TabItem value="standalone" label="Standalone">
+
+## Floodgate setup with Geyser-Standalone
+
+:::info
+To be able to use Floodgate authentication, you need to be able to install Floodgate on the server you are connecting to.
+:::
+
+1. Download Floodgate from the [download page](https://geysermc.org/download).
+2. Install the Floodgate jar - see the platform instructions for detailed info.
+3. Change `auth-type` in Geyser Standalone's config to `floodgate`.
+4. Copy the `key.pem` file in the Floodgate config folder to the same directory as Geyser Standalone.
+5. Restart Geyser-Standalone.
+
+:::danger
+**DO NOT DISTRIBUTE THIS KEY TO ANYBODY!**
+
+This key is what allows for Bedrock accounts to bypass the Java Edition authentication, and if anyone gets ahold of this, they can wreak havoc on your server.
+:::
+
+</TabItem>
+</Tabs>
+
+<h4 class="mt-4">Further information:</h4>
+<ul>
+  <li><a href="/floodgate/features/">Floodgate Features</a></li>
+  <li><a href="/floodgate/api/">Floodgate API</a></li>
+</ul>
