@@ -7,7 +7,7 @@ Geyser Extensions are the equivalent of "plugins", but specifically for the Geys
 
 ### What can Geyser Extensions do?
 Extensions can fully utilize the Geyser API to add additional functionality to Geyser. See [Geyser API docs](/geyser/api/) for info on what is currently possible. To name a few examples:
-- Register custom items
+- Register custom items and blocks
 - Hide commands from being suggested
 - Change the MOTD
 - Register your own commands
