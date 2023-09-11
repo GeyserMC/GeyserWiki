@@ -204,9 +204,15 @@
       "description_template": "default"
     },
     {
-      "name": "FreeMcServer.net",
-      "url": "https://freemcserver.net",
-      "description_template": "default"
+      "name": "Fusion Hosting",
+      "url": "https://fusionhostingltd.co.uk",
+      "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling “clone-remote-port”) and connect with the same IP and port as you would on Java or create a port in the Network tab on the panel & use this for Geyser."
+    },
+    {
+      "name": "Futurehosting",
+      "url": "https://futurehosting.org/",
+      "description_template": "default",
+      "description": "Make sure your `bedrock` `address` in your Geyser config is your server IP."
     },
     {
       "name": "GameHosting.it",
