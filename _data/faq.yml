@@ -56,7 +56,6 @@
           * [Waterfall](https://papermc.io/downloads/Waterfall)
           * Any other forks of the above
         * Geyser-Velocity works with [Velocity](https://www.velocitypowered.com/)
-        * Geyser-Sponge works with [SpongeVanilla or SpongeForge](https://www.spongepowered.org/)
         * Geyser-Fabric works with [Fabric](https://www.fabricmc.net/), and requires FabricAPI to be installed on the server as well.
 
     - title: Which type of Geyser version is better, standalone or plugin?
