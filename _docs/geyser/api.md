@@ -21,7 +21,7 @@ It can be used easily in Geyser Extensions, see [here](/geyser/extensions) for d
 
 **Quick overview:** <br>
 <div class="alert alert-info" role="alert">
-    Note: To see full, detailed documentation, see the <a href="https://repo.opencollab.dev/javadoc/maven-snapshots/org/geysermc/geyser/api/2.1.2-SNAPSHOT">javadocs</a>.
+    Note: To see full, detailed documentation, see the <a href="https://repo.opencollab.dev/javadoc/maven-snapshots/org/geysermc/geyser/api/latest">javadocs</a>.
 </div>
 
 #### [GeyserApi](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/GeyserApi.java):
@@ -80,6 +80,10 @@ like currently, showing emotes.
 #### [Item](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/item)
 The item package contains classes and interfaces related to items in Geyser. You can create custom items and register them using the Geyser API.
 See [here](/geyser/custom-items) for detailed information on how to register custom items.
+
+#### [Block](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/block)
+The block package contains classes and interfaces related to blocks in Geyser. You can create custom blocks using this package, and register them in using the [GeyserDefineCustomBlocksEvent](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle/GeyserDefineCustomBlocksEvent.java).
+See [here](/geyser/custom-blocks) for detailed information.
 
 #### [Network](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/network)
 The network package contains basic information about the remote server via the 

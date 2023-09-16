@@ -19,5 +19,5 @@ Here are a few examples of how you could use the Global API. <br>
 [GeyserDiscordBot](https://github.com/GeyserMC/GeyserDiscordBot/blob/master/src/main/java/org/geysermc/discordbot/commands/FloodgateUuidCommand.java) 
 - GeyserMC's discord bot has a /uuid command to get a floodgate uuid from a bedrock username. <br>
 
-[FabricGeyserPlayerHeads](https://github.com/onebeastchris/customplayerheads/blob/master/src/main/java/net/onebeastofchris/customplayerheads/utils/PlayerUtils.java#L54-L72)
+[CustomPlayerHeads](https://github.com/onebeastchris/customplayerheads/blob/master/src/main/java/net/onebeastofchris/customplayerheads/utils/PlayerUtils.java#L54-L72)
 - A fabric mod that uses the Global API to get a Bedrock player's skin, and then uses that to create a player head.

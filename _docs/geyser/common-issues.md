@@ -2,13 +2,16 @@
 title: Common Issues
 ---
 
-Commonly, people may have issues with Geyser not showing up in their server list or run into similar issues. This page contains a few common issues people may encounter that you might have as well as potential fixes for them. If you still can't make it work, join [our Discord](https://discord.gg/geysermc) for support.
+Commonly, people may have issues with Geyser not showing up in their server list or run into similar issues. 
+This page contains a few common issues people may encounter that you might have as well as potential fixes for them. 
+If you still can't make it work, join [our Discord](https://discord.gg/geysermc) for support.
 
 # Floodgate
 For Floodgate issues see: [Floodgate: Known Issues/Caveats](/floodgate/issues/).
 
 # I can't connect! (Either the server doesn't show up in the friends list or I get "Unable to connect to world")
 * If you don't use a reverse proxy such as TCPShield make sure that `enable-proxy-protocol` is set to false.
+To fix "Unable to connect to world" with no console errors, see [here](/geyser/fixing-unable-to-connect-to-world/).
 
 ## If the server doesn't show up in the friends list
 
@@ -32,8 +35,8 @@ See this link for updating to Java 16: https://paper.readthedocs.io/en/latest/ja
 ### Hosting provider will not immediately open up UDP.
 
 These steps only apply for the standalone version of Geyser.
-
-This usually has something to do on your host's end. Most commonly, it's because they do not open up ports over the UDP protocol, which is what Minecraft: Bedrock Edition uses, opposed to Minecraft: Java Edition using TCP. One way to get around this (if you're using an online host) is to shut down your server, and when asking for a server jar, select Nukkit (you won't actually be switching to Nukkit). Afterward, open up your FTP file manager and find the Nukkit jar. Then, replace this jar with the server software you're using. Upon starting up the server, it should open up ports over UDP whilst still allowing you to use the server jar you desire.
+This usually has something to do on your host's end. Most commonly, it's because they do not open up ports over the UDP protocol, which is what Minecraft: Bedrock Edition uses, opposed to Minecraft: Java Edition using TCP. 
+One way to get around this (if you're using an online host) is to shut down your server, and when asking for a server jar, select Nukkit, or any other Bedrock edition server software (you won't actually be switching to Nukkit). Afterward, open up your FTP file manager and find the Nukkit jar. Then, replace this jar with the server software you're using. Upon starting up the server, it should open up ports over UDP whilst still allowing you to use the server jar you desire.
 
 **PLEASE NOTE:** If your server automatically redownloads jars upon startup, such as with an autoupdate system, this workaround will not work. Please contact your host if this does not work for you as there is nothing we can do.
 
@@ -63,12 +66,13 @@ If you have your configuration set up like this, put simply, it won't work. If a
 
 ### Connection Refused: <INSERT IP AND/OR DOMAIN>
 
-Connection Refused usually means that a Java server could not be found on that port, or the server denied access to the connection on a network level. The latter can happen with anti-DDOS plugins such as TCPShield, but otherwise ensure that the server you're trying to connect to is spelled correctly in the config, is up and is port forwarded correctly.
+Connection Refused usually means that a Java server could not be found on that port, or the server denied access to the connection on a network level. 
+The latter can happen with anti-DDOS plugins such as TCPShield, but otherwise ensure that the server you're trying to connect to is spelled correctly in the config, is up and is port forwarded correctly.
 
 If you're updating from an old build of Geyser, set your remote address to `auto` and try again.
 
 ### Floodgate Misconfiguration
-See [this page](/floodgate/issues/) for more information.
+See [this page](/floodgate/setup/) for more information.
 
 ### Missing profile key. This server requires secure profiles.
 
@@ -78,15 +82,14 @@ See [this page](/geyser/secure-chat/).
 This is unfortunately something we have no control over, and is most likely the case when you're running Geyser as a plugin on a server host or joining a friend far away from your location. If you're running Geyser locally, this should not happen to you, but what we recommend for servers is a plugin we make called [Floodgate](https://github.com/GeyserMC/Floodgate), which allows for Bedrock clients to join your server without needing a Java Edition account. Take a look [here](Floodgate) for more information.
 
 # "Invalid IP address!" from Bedrock
-It's currently unknown why this happens even for valid domains. Try using the IPv4 address.
+This can happen if the domain you are entering resolves to a SRV record, which Bedrock does not support. Try using the IPv4 address instead.
+Additionally, this can happen when trying to specify both the ip and port in the ip tab - in which case, see [here](https://cdn.discordapp.com/attachments/914971721612808222/1139316467054170253/image.png) for how to properly connect to "test.geysermc.org:19132".
 
 # Bedrock clients freeze when opening up commands for the first time
 Disable `command-suggestions` in your Geyser config. This will stop the freezing at the expense of removing command suggestions from Bedrock clients.
-If you're a dedicated server admin, you can have a list of commands players should be using. This will remove any unnecessary commands from tab completion as well for Java players. It has other benefits too. Here's a plugin that can just do that: 
-[CommandWhitelist](https://www.spigotmc.org/resources/81326/)
-
-# BungeeCord freezes and crashes after bedrock player joins
-Make sure you have set `ip-forward` to `true` in your BungeeCord `config.yml` and set `bungeecord` to `true` in each connected server's `spigot.yml`.
+If you're a dedicated server admin, you can have a list of commands players should be using. This will remove any unnecessary commands from tab completion as well for Java players. 
+It has other benefits too. Here's a plugin that can just do that: 
+[CommandWhitelist](https://www.spigotmc.org/resources/81326/). Alternatively, use the [HideCommands](https://github.com/Redned235/HideCommands) Geyser extension to hide commands just for Bedrock players.
 
 # Failed to load locale asset cache: Unrecognized token 'Cannot'
 This or anything else related to failing to download a locale file on startup is usually caused by java trying to connect using IPv6 and Mojang only use IPv4, so start Geyser or the server up with this flag `-Djava.net.preferIPv4Stack=true`, EG: `java -Xms1024M -Djava.net.preferIPv4Stack=true -jar Geyser.jar`
@@ -119,5 +122,6 @@ And so on.
 * Please also make sure that you have the same `key.pem` and `config.yml` on all of your servers.
 
 If your players can't connect from the lobby to another backend server, check console.
+
 ### Plugins that can cause issues
 * `HamsterAPI`
