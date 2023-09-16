@@ -25,6 +25,7 @@ The following things cannot be fixed without changes to Bedrock or the Java prot
 - Invisible item frames
 - Blocks (excluding jack-o-lantern) on entity heads (E.G. armor stands, players)
 - Saddled camels unmoveable/unrideable on bedrock.
+- Bedrock edition players cannot see the changes to fence block states made by the Java Debug Stick.
 
 The following changes **are supported** with the [GeyserOptionalPack](/other/geyseroptionalpack/), which is a Bedrock resource pack you can install for additional functionality for features Bedrock does not natively support:
 - Custom armor stand poses

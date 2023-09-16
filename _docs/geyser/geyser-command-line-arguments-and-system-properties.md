@@ -30,21 +30,24 @@ You may disable some warnings that may be printed to the console by using the fo
     Warning: Disabling Geyser warnings from being logged will not fix the real issue! Only disable them if you know what you are doing. 
 </div>
 
-- ```-DGeyser.PrintSecureChatInformation=true```
+- `-DGeyser.PrintSecureChatInformation=true`
   - Allows you to disable the warning about secure chat being disabled. 
   Since the warning is sent when the server sends the warning, this option does not do much anymore.
-- ```-DGeyser.ShowScoreboardLogs=true```
+- `-DGeyser.ShowScoreboardLogs=true`
   - Allows you to disable warnings related to scoreboards, such as "Tried to update score without the existence of its requested objective".
-- ```-DGeyser.ShowResourcePackLengthWarning=true```
+- `-DGeyser.ShowResourcePackLengthWarning=true`
   - Allows you to disable the warning about a resource pack having too long paths. Disabling this warning will not fix the underlying issue! 
   Console players might not be able to join your server at all if you have a resource pack with paths exceeding the 80 character limit.
-- ```-DGeyser.PrintPingsInDebugMode=true```
+- `-DGeyser.PrintPingsInDebugMode=true`
   - Controls if pings are being logged in debug mode.
-- ```-DGeyser.UseDirectAdapters=true```
+- `-DGeyser.UseDirectAdapters=true`
   - Allows you to disable the usage of NMS adapters. Disabling will result in a performance penalty and should only be used for debugging.
   This is Spigot-only and will not work on other platforms.
-- ```-DGeyser.BedrockNetworkThreads=8```
+- `-DGeyser.BedrockNetworkThreads=8`
   - Allows you to set the number of threads used for the Bedrock networking. This is not set to a specific number by default, but is instead calculated based on the available resources.
+- `-DGeyser.AddTeamSuggestions=true`
+  - Allows you to turn off suggestions for teams in the scoreboard command. This is enabled by default, disabling this can help with performance if there are a lot of teams defined. 
+  Setting "command-suggestions" to false in the config will also disable this.
 
 ## Geyser-Standalone specific options:
 

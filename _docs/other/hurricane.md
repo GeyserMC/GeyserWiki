@@ -13,13 +13,13 @@ Issues with each workaround are listed in the plugin's config. **Please take you
 - https://github.com/GeyserMC/Geyser/issues/638 by implementing the control server-side.
 
 Supported Versions:
-- 1.14.x - 1.19.x
+- 1.14.x - 1.20.x
 - 1.17.x & above for pig riding
 
 ### Download
-Spigot/Paper: [GitHub releases](https://github.com/GeyserMC/Hurricane/releases) 
-Fabric: [Modrinth](https://modrinth.com/mod/hurricane)
+- Spigot/Paper: [GitHub releases](https://github.com/GeyserMC/Hurricane/releases)
+- Fabric: [Modrinth](https://modrinth.com/mod/hurricane)
 
 ### Source
-Main: [GeyserMC/Hurricane](https://github.com/GeyserMC/Hurricane)
-Unofficial fabric fork: [onebeastchris/Hurricane-fabric](https://github.com/onebeastchris/hurricane-fabric)
+- Main: [GeyserMC/Hurricane](https://github.com/GeyserMC/Hurricane)
+- Unofficial fabric fork: [onebeastchris/Hurricane-fabric](https://github.com/onebeastchris/hurricane-fabric)
