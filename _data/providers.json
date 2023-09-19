@@ -250,6 +250,11 @@
       "description": "Set the Bedrock port to the Java server's port, or to one of the two extra ports, and connect with that port. If the subdomain doesn't work, use your regular numbered IP address."
     },
     {
+      "name": "Kinetic Hosting",
+      "url": "https://kinetichosting.net/",
+      "description": "Open a port in the Network and Ports page, and set the port in the Geyser config. You can then connect with your server IP and set `bedrock port`. You can also use the `clone-remote-port` option in the config. For more info see the hosts [support article](https://www.kinetichosting.net/articles/minecraft-java/plugins/geyser)"
+    },
+    {
       "name": "MC-HOST24.de",
       "url": "https://mc-host24.de/",
       "description_template": "ip_and_port"
