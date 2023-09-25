@@ -113,7 +113,7 @@
 
     - title: Sometimes, when I go really far out, the world starts to experience very odd visual bugs...
       content: |
-        This is a Bedrock client issue caused by Bedrock being 32-bit and Java being 64-bit. For more information read [here](https://minecraft.gamepedia.com/Bedrock_Edition_distance_effects).
+        This is a Bedrock client issue caused by Bedrock being 32-bit and Java being 64-bit. For more information read [here](https://minecraft.wiki/w/Bedrock_Edition_distance_effects).
 
     - title: Can I use Geyser to allow Java players to connect to my Bedrock server?
       content: |
