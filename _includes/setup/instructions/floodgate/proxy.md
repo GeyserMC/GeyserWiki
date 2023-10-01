@@ -16,9 +16,9 @@ This is only needed when you want to use the Floodgate API on your backend serve
 
 1. After installing Floodgate on the proxy, install Floodgate on the backend servers (either Floodgate-Spigot, or Floodgate-Fabric).
 2. Enable `ip_forward` in your BungeeCord `config.yml` if using BungeeCord. For Velocity, set up [player information forwarding](https://docs.papermc.io/velocity/player-information-forwarding).
-3. Set bungeecord to true in your spigot.yml. When using Velocity, see their guide, as they have multiple options that require different setups.
+3. Set `bungeecord` to `true` in your spigot.yml. When using Velocity, see their guide, as they have multiple options that require different setups.
 4. Start the proxy server.
-5. Edit the Floodgate config on your proxy server and set send-floodgate-data to true.
+5. Edit the Floodgate config on your proxy server and set `send-floodgate-data` to `true`.
 6. Copy the `key.pem` file in the proxy Floodgate config folder to all backend servers’ Floodgate config folder.
 7. Restart the backend servers and proxy server.
 
