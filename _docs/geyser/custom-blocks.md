@@ -348,7 +348,7 @@ public class RedstoneDot implements Extension {
     public void onDefineCustomBlocks(GeyserDefineCustomBlocksEvent event) {
         BoxComponent selectionBox = new BoxComponent(-5, 0, -5, 10, 1f, 10);
 
-        CustomBlockComponents components = GeyserApi.api().provider(CustomBlockComponents.Builder.class)
+        CustomBlockComponents components = CustomBlockComponents.builder()
                 .collisionBox(BoxComponent.EMPTY_BOX)
                 .selectionBox(selectionBox)
                 .geometry(new GeometryComponentBuilder()
@@ -360,7 +360,7 @@ public class RedstoneDot implements Extension {
                 .friction(1f)
                 .build();
 
-        CustomBlockData redstoneDot = GeyserApi.api().provider(CustomBlockData.Builder.class)
+        CustomBlockData redstoneDot = CustomBlockData.builder()
                 .name("redstone_dot")
                 .intProperty(POWER_PROPERTY, IntStream.range(0, 16).boxed().toList())
                 .components(components)
@@ -374,14 +374,14 @@ public class RedstoneDot implements Extension {
         List<CustomBlockPermutation> permutations = new ArrayList<>();
         for (int power = 0; power < 16; power++) {
             String texture = "amberichu.redstone_dot" + power;
-            MaterialInstance invisMaterialInstance = new MaterialInstanceBuilder()
+            MaterialInstance invisMaterialInstance = MaterialInstance.builder()
                         .texture("amberichu.invisible")
                         .renderMethod("alpha_test")
                         .faceDimming(false)
                         .ambientOcclusion(false)
                         .build();
-            CustomBlockComponents components = GeyserApi.api().provider(CustomBlockComponents.Builder.class)
-                    .materialInstance("up", new MaterialInstanceBuilder()
+            CustomBlockComponents components = CustomBlockComponents.builder()
+                    .materialInstance("up", MaterialInstance.builder()
                         .texture(texture)
                         .renderMethod("alpha_test")
                         .faceDimming(false)
@@ -409,7 +409,7 @@ public class RedstoneDot implements Extension {
     public void onDefineCustomBlocks(GeyserDefineCustomBlocksEvent event) {
         BoxComponent selectionBox = new BoxComponent(-5, 0, -5, 10, 1f, 10);
 
-        CustomBlockComponents components = GeyserApi.api().provider(CustomBlockComponents.Builder.class)
+        CustomBlockComponents components = CustomBlockComponents.builder()
                 .collisionBox(BoxComponent.EMPTY_BOX)
                 .selectionBox(selectionBox)
                 .geometry(new GeometryComponentBuilder()
@@ -421,7 +421,7 @@ public class RedstoneDot implements Extension {
                 .friction(1f)
                 .build();
 
-        CustomBlockData redstoneDot = GeyserApi.api().provider(CustomBlockData.Builder.class)
+        CustomBlockData redstoneDot = CustomBlockData.builder()
                 .name("redstone_dot")
                 .intProperty(POWER_PROPERTY, IntStream.range(0, 16).boxed().toList())
                 .components(components)
@@ -443,14 +443,14 @@ public class RedstoneDot implements Extension {
         List<CustomBlockPermutation> permutations = new ArrayList<>();
         for (int power = 0; power < 16; power++) {
             String texture = "amberichu.redstone_dot" + power;
-            MaterialInstance invisMaterialInstance = new MaterialInstanceBuilder()
+            MaterialInstance invisMaterialInstance = MaterialInstance.builder()
                         .texture("amberichu.invisible")
                         .renderMethod("alpha_test")
                         .faceDimming(false)
                         .ambientOcclusion(false)
                         .build();
-            CustomBlockComponents components = GeyserApi.api().provider(CustomBlockComponents.Builder.class)
-                    .materialInstance("up", new MaterialInstanceBuilder()
+            CustomBlockComponents components = CustomBlockComponents.builder()
+                    .materialInstance("up", MaterialInstance.builder()
                         .texture(texture)
                         .renderMethod("alpha_test")
                         .faceDimming(false)
