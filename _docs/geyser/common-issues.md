@@ -83,7 +83,7 @@ This is unfortunately something we have no control over, and is most likely the 
 
 # "Invalid IP address!" from Bedrock
 This can happen if the domain you are entering resolves to a SRV record, which Bedrock does not support. Try using the IPv4 address instead.
-Additionally, this can happen when trying to specify both the ip and port in the ip tab - in which case, see [here](https://cdn.discordapp.com/attachments/914971721612808222/1139316467054170253/image.png) for how to properly connect to "test.geysermc.org:19132".
+Additionally, this can happen when trying to specify both the ip and port in the ip tab - in which case, see [here]({{ '/img/wiki/edit_server_form.png' | relative_url }}) for how to properly connect to "test.geysermc.org:19132".
 
 # Bedrock clients freeze when opening up commands for the first time
 Disable `command-suggestions` in your Geyser config. This will stop the freezing at the expense of removing command suggestions from Bedrock clients.
