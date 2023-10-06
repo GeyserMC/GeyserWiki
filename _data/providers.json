@@ -222,7 +222,11 @@
     {
       "name": "GPortal",
       "url": "https://www.g-portal.com/",
-      "description": "Need to contact support to open a UDP port, then use that as the `bedrock port` in the config. Also, uncomment `bedrock` `address` and make sure it is set to your Java server IP."
+      "description": "You have to adjust the port according to your query port. Scheme: Query port: xxx65. The ports from xxx66 to xxx70 are available.
+            Example:
+        If your query port is 12365. Then your Geyser can only run under 12366-12370.
+        Furthermore you have to change the 'Bedrock' 'address' to your IP address.
+        You can find it above your query port. Don't forget to delete the # in front of `address'."
     },
     {
       "name": "Heavynode",
