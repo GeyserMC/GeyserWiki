@@ -222,7 +222,7 @@
     {
       "name": "GPortal",
       "url": "https://www.g-portal.com/",
-      "description": "You have to adjust the port according to your query port. Scheme: Query port: xxx65. The ports from xxx66 to xxx70 are available. Example: If your query port is 12365. Then your Geyser can only run under 12366-12370. Furthermore you have to change the 'Bedrock' 'address' to your IP address. You can find it above your query port. Don't forget to delete the # in front of `address'."
+      "description": "You have to adjust the port according to your query port. Scheme: Query port: xxx65. The ports from xxx66 to xxx70 are available. For example, if your query port is 12365, then Geyser can only run under the port range 12366-12370. Furthermore, you have to change the 'Bedrock' 'address' in the Geyser config to your IP address. You can find it above your query port. Don't forget to delete the # in front of `address'."
     },
     {
       "name": "Heavynode",
