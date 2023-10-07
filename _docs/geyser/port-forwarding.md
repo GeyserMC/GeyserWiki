@@ -35,14 +35,14 @@ To open a port on Windows, you will need to open the port through the Windows Fi
 
 
 - Windows Defender Firewall with Advanced Security (GUI)
-  1. Search for "Windows Defender Firewall with Advanced Security" in the start menu, and open it. ([Image](/img/guides/port-forwarding/windows-1.png))
-  2. Click on "Inbound Rules" in the left sidebar. ([Image](/img/guides/port-forwarding/windows-2.png))
-  3. Click on "New Rule..." in the right sidebar. ([Image](/img/guides/port-forwarding/windows-2.png))
-  4. Select "Port" as the rule type and click "Next". ([Example](/img/guides/port-forwarding/windows-3.png))
-  5. Select "UDP" and "Specific local ports", and enter the port you want to open (in our example, 19132). Click "Next". ([Example](/img/guides/port-forwarding/windows-4.png))
-  6. Select "Allow the connection" and click "Next". ([Example](/img/guides/port-forwarding/windows-5.png))
-  7. Select the profiles you want to apply the rule to (e.g. "Domain", "Private", "Public"), and click "Next". ([Example](/img/guides/port-forwarding/windows-6.png))
-  8. Enter a name for the rule (e.g. "Geyser"), and click "Finish". ([Image](/img/guides/port-forwarding/windows-7.png))
+  1. Search for "Windows Defender Firewall with Advanced Security" in the start menu, and open it. ([Image]({{ '/img/wiki/port-forwarding/windows-1.png' | relative_url }}))
+  2. Click on "Inbound Rules" in the left sidebar. ([Image]({{ '/img/wiki/port-forwarding/windows-2.png' | relative_url }}))
+  3. Click on "New Rule..." in the right sidebar. ([Image]({{ '/img/wiki/port-forwarding/windows-2.png' | relative_url }}))
+  4. Select "Port" as the rule type and click "Next". ([Example]({{ '/img/wiki/port-forwarding/windows-3.png' | relative_url }}))
+  5. Select "UDP" and "Specific local ports", and enter the port you want to open (in our example, 19132). Click "Next". ([Example]({{ '/img/wiki/port-forwarding/windows-4.png' | relative_url }}))
+  6. Select "Allow the connection" and click "Next". ([Example]({{ '/img/wiki/port-forwarding/windows-5.png' | relative_url }}))
+  7. Select the profiles you want to apply the rule to (e.g. "Domain", "Private", "Public"), and click "Next". ([Example]({{ '/img/wiki/port-forwarding/windows-6.png' | relative_url }}))
+  8. Enter a name for the rule (e.g. "Geyser"), and click "Finish". ([Image]({{ '/img/wiki/port-forwarding/windows-7.png' | relative_url }}))
 
 ### Linux
 Different Linux distributions, even different VPS providers ship and configure different firewalls. In the following examples, we will use `19132` as the port to open, but you should replace this with the port you are using for Geyser.
@@ -70,7 +70,7 @@ Different Linux distributions, even different VPS providers ship and configure d
 
 ### macOS
 You will need to disable `Block all incoming connections` in your Firewall settings, as that will block any connections and won't allow you to make exceptions. 
-To allow incoming connections, click `Allow` when getting [these prompts](https://cdn.discordapp.com/attachments/744287608217272351/1139735660417265684/image.png).
+To allow incoming connections, click `Allow` when getting [these prompts]({{ '/img/wiki/port-forwarding/macos_warning.png' | relative_url }}).
 If you are still facing issues, see Apple's official guide [here](https://support.apple.com/guide/mac-help/MH11783) to open a port on macOS.
 
 ## Using Docker or Pterodactyl
@@ -80,7 +80,7 @@ In addition to port forwarding the port in your server's firewall (and, if appli
 Make sure to allocate the port to the server in the Pterodactyl panel's `Network` tab, additionally to port forwarding the port. 
 See [here](https://pterodactyl.io/community/games/minecraft.html#allocations-in-the-panel) for more information.
 
-<img src="{{ '/img/guides/port-forwarding/pterodactyl-1.png' | relative_url }}" alt="Pterodactyl panel, Network section">
+<img src="{{ '/img/wiki/port-forwarding/pterodactyl-1.png' | relative_url }}" alt="Pterodactyl panel, Network section">
 
 There are also different Geyser eggs for Pterodactyl, which can be found [here](https://github.com/GeyserMC/pterodactyl-stuff).
 

@@ -20,4 +20,4 @@ Skin uploading is also a part of the [Global Api](/geyser/global-api). It is res
 
 We're using MineSkin internally. MineSkin is running on accounts donated by the community. So if you want to support MineSkin and make the upload times faster, feel free to look at [this page](https://mineskin.org/account) for more info.
 
-![Example skin upload](https://cdn.discordapp.com/attachments/613168850925649981/815969801763160104/unknown.png)
+![Example skin upload]({{ '/img/wiki/skin_upload_example.png' | relative_url }})
