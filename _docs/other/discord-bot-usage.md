@@ -10,13 +10,13 @@ If you are having console errors or Geyser isn't functioning/starting up, server
 
 If you paste the logs URL into our Discord, our bot will analyze the error and will give a fix if there is one present like seen below. You can also paste the `latest.log` file into Discord.
 
-![Example of an error](https://cdn.discordapp.com/attachments/613194762249437245/1021787041257767042/Naamloos.png)
+![Example of an error]({{ '/img/wiki/discord-bot/logs.png' | relative_url }})
 
 ## OCR
 
 OCR or Optical Character Recognition is something that our discord bot can process, which means if you upload a picture/image into our discord that contains an error like seen below the bot might be able to help you out with our issue.
 
-![Example of an error](https://cdn.discordapp.com/attachments/613194762249437245/1021784112878600263/unknown.png)
+![Example of an error]({{ '/img/wiki/discord-bot/ocr.png' | relative_url }})
 
 ## Ping Server
 
@@ -24,13 +24,13 @@ If you are not sure if your server is reachable from the outside you can use our
 
 If the bot returns `Unable to find Java/Bedrock server at the requested address`, your server either is not running/setup properly or your firewall is blocking the connection. More info on how to setup Geyser can be found on the [Geyser Setup page](/geyser/setup/).
 
-![Example of the ping command](https://cdn.discordapp.com/attachments/613194762249437245/1021790089367535697/unknown.png)
+![Example of the ping command]({{ '/img/wiki/discord-bot/ping.png' | relative_url }})
 
 ## Provider List
 
 Some hosting providers have unique setup methods for Geyser. If you do not know how to setup Geyser on your provider you can either checkout the [Geyser Host Provider List](/geyser/supported-hosting-providers/) manually, or use our bot command `/provider "providername"` as seen below.
 
-![Example of the provider command](https://cdn.discordapp.com/attachments/613194762249437245/1021791367585857587/unknown.png)
+![Example of the provider command]({{ '/img/wiki/discord-bot/provider.png' | relative_url }})
 
 ## Download Command
 
