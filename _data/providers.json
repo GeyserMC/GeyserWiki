@@ -250,6 +250,11 @@
       "description": "Set the Bedrock port to the Java server's port, or to one of the two extra ports, and connect with that port. If the subdomain doesn't work, use your regular numbered IP address."
     },
     {
+      "name": "KeKsHost",
+      "url": "https://kekshost.com/en/",
+      "description": "Get Geyser as a plugin, as in the setup guide. Use the 19131 port and the server ip and connect with the same IP and port as you would on Java. You can also ask for a new port."
+    },
+    {
       "name": "MC-HOST24.de",
       "url": "https://mc-host24.de/",
       "description_template": "ip_and_port"
