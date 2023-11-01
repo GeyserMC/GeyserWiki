@@ -15,7 +15,7 @@ If you are not using a Minecraft server hosting provider, carry on.
 
 <div class="alert alert-info" role="alert">
 	To check if your server is (theoretically) reachable on Bedrock edition, try running the following command in your server console:
-    <code>geyser connectiontest &lt;ip&gt;:&lt;port&gt;</code>, and see what it suggests to try.
+    <code>geyser connectiontest &lt;ip&gt; &lt;port&gt;</code>, and see what it suggests to try.
 </div>
 
 ### Java Edition players can't connect!

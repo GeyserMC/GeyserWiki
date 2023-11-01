@@ -44,7 +44,7 @@ To use Geyser on an older Fabric server, you can use Geyser on a BungeeCord/Velo
       the playit.gg service to create a tunnel for you to route the traffic through. See our [playit.gg guide](/geyser/playit-gg).
       Ngrok will not work since it is TCP-only. <br>
 
-5. Verify whether connections from other networks are possible by running `geyser connectiontest <ip>:<port>` in the console.
+5. Verify whether connections from other networks are possible by running `geyser connectiontest <ip> <port>` in the console.
 
 <div class="alert alert-info" role="alert">
     To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.

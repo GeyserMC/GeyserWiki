@@ -71,7 +71,7 @@ set it to either `online` for an online mode server, or `offline` for an offline
       the playit.gg service to create a tunnel for you to route the traffic through. See our [playit.gg guide](/geyser/playit-gg).
       Ngrok will not work since it is TCP-only. <br>
 
-6. Verify whether connections from other networks are possible by running `geyser connectiontest <ip>:<port>` in the console.
+6. Verify whether connections from other networks are possible by running `geyser connectiontest <ip> <port>` in the console.
 
 # Running Geyser-Standalone on Android/iOS
 

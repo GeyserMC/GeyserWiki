@@ -30,7 +30,7 @@ To use Geyser on an older Fabric server, you can use Geyser on a BungeeCord/Velo
     If `clone-remote-port` is enabled, the bedrock port will be overwritten with the Java port! <br>
     **Important**: Other services/mods that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
  
-5. Verify whether connections are possible by running `geyser connectiontest <ip>:<port>` in the console.
+5. Verify whether connections are possible by running `geyser connectiontest <ip> <port>` in the console.
 
 <div class="alert alert-info" role="alert">
     To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
