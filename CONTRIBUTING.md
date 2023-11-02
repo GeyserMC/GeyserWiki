@@ -17,7 +17,7 @@ page_sidebar: false (optional)
 ---
 
 # Page title
-This is an example page
+This is an example page.
 ```
 
 ### Adding page to the sidebar 
