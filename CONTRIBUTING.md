@@ -44,7 +44,7 @@ Once you have added the file you can add a sidebar link. All sidebar links + sub
 * Once installed, run 'ridk install' in console to open the RubyInstaller.
 For this usecase, it is recommended to choose the third option, "MSYS and MINGW". After that, the Ruby installation is completed.
 
-* Open the GeyserWiki folder in VScode, in terminal you will have to install the bundle first 'bundle install' command.
+* Open the GeyserWiki folder in VScode. There, open a terminal to install the bundle using the 'bundle install' command.
 Installing it for the first time can take a while.
 
 * Once installed, you can start the webserver locally with the 'bundle exec jekyll serve' command in the VSC terminal. 
