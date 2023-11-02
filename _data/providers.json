@@ -257,7 +257,7 @@
     {
       "name": "MCPEhost.ru",
       "url": "https://mcpehost.ru",
-      "description_template": "Need to create in server settings a additional port with enabled UDP protocol, then use that as the bedrock port."
+      "description_template": "Create an additional port in the server settings and enable UDP protocol, then use that as the `bedrock port` in the config. Connect with the Java IP and that new port."
     },
     {
       "name": "Meloncube",
