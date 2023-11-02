@@ -20,7 +20,7 @@ page_sidebar: false (optional)
 This is an example page
 ```
 
-### Adding page to sidebar 
+### Adding page to the sidebar 
 
 Once you have added the file you can add a sidebar link. All sidebar links + sub links are in the _data/toc.yml file.
 
