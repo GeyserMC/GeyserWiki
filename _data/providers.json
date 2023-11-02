@@ -252,7 +252,7 @@
     {
       "name": "KeKsHost",
       "url": "https://kekshost.com/en/",
-      "description": "Use the 19132 port and the server ip and connect with the same IP and port 19132. You can also ask for a new port."
+      "description": "Use the default bedrock port (19132) and the server ip to connect on Bedrock edition. No changes to the Geyser config are needed. You can also ask for a new port and use it instead."
     },
     {
       "name": "MC-HOST24.de",
