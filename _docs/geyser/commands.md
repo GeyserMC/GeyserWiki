@@ -17,7 +17,13 @@ title: Commands
 | `geyser statistics` | `geyser.command.statistics` | Open the Java statistics menu. |
 | `geyser version` | `geyser.command.version` | Shows the current Geyser version and checks for updates. |
 | `geyser tooltips` | `geyser.command.tooltips`| Toggle showing Advanced Tooltips (F3 + H on Java) |
-| `none` | `geyser.settings.server`| Allow players to use the gameplay menu. (Also requires player to have op.) |
 
+# Other Permissions
+
+| Permission | Description |
+|:---:|:---:|
+| `geyser.settings.server` | Allow players to use the game menu. (Also requires player to have op.) |
+
+![img]({{ '/img/wiki/game_menu.png' | relative_url }})
 
 For Floodgate commands, see [here](/floodgate/commands/).
