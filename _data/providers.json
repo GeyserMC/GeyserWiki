@@ -252,7 +252,7 @@
     {
       "name": "Kinetic Hosting",
       "url": "https://kinetichosting.net/",
-      "description": "Open a port in the Network and Ports page, and set the port in the Geyser config. You can then connect with your server IP and set `bedrock port`. You can also use the `clone-remote-port` option in the config. For more info see the hosts [support article](https://www.kinetichosting.net/articles/minecraft-java/plugins/geyser)"
+      "description": "Open a port in the Network and Ports page, and set that port as the `bedrock port` in the Geyser config. Alternatively, use the Java server's port by enabling the `clone-remote-port` option in the config. Connect with the same IP as on Java, and the port that you have chosen. For more info see the hosts [support article](https://www.kinetichosting.net/articles/minecraft-java/plugins/geyser)."
     },
     {
       "name": "MC-HOST24.de",
