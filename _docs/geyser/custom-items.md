@@ -42,6 +42,7 @@ To setup custom items in geyser, you have to choose how you are going to registe
     * `allow_offhand` (boolean) default: false
     * `texture_size` (int) default: 16
     * `render_offsets` (object) It works as follows. Note that all the sub-objects are optional, except x, y and z. You can have for example only a main hand with a position, and noting else. default: no render offset
+    * `tags` (array) default: no tags. Allows defining tags that can be used in Molang queries. Example value: ["test:tag_one", "test:tag_two"].
     ```json
     "render_offsets": {
         "main_hand": {
