@@ -255,9 +255,19 @@
       "description": "Use the default bedrock port (19132) and the server ip to connect on Bedrock edition. No changes to the Geyser config are needed. You can also ask for a new port and use it instead."
     },
     {
+      "name": "Kinetic Hosting",
+      "url": "https://kinetichosting.net/",
+      "description": "Open a port in the Network and Ports page, and set that port as the `bedrock port` in the Geyser config. Alternatively, use the Java server's port by enabling the `clone-remote-port` option in the config. Connect with the same IP as on Java, and the port that you have chosen. For more info see the hosts [support article](https://www.kinetichosting.net/articles/minecraft-java/plugins/geyser)."
+    },
+    {
       "name": "MC-HOST24.de",
       "url": "https://mc-host24.de/",
       "description_template": "ip_and_port"
+    },
+    {
+      "name": "MCPEhost.ru",
+      "url": "https://mcpehost.ru",
+      "description_template": "Create an additional port in the server settings and enable UDP protocol, then use that as the `bedrock port` in the config. Connect with the Java IP and that new port."
     },
     {
       "name": "Meloncube",
@@ -402,10 +412,6 @@
     }
   ],
   "no_support": [
-    {
-      "name": "MCPEhost",
-      "url": "https://mcpehost.ru/"
-    },
     {
       "name": "MyArena",
       "url": "https://www.myarena.ru/",
