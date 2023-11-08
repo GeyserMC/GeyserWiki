@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GeyserMC Wiki: Geyser Events</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/darcula.css">
+
+	<meta name="author" content="GeyserMC">
+	<meta name="description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta name="theme-color" content="#2b3035">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://localhost:4000">
+	<meta property="og:title" content="GeyserMC Wiki: Geyser Events">
+	<meta property="og:description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta property="og:image" content="/android-chrome-192x192.png">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#248f00">
+  </head>
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/"><img src="/android-chrome-512x512.png" alt="geyser logo" height="32"> GeyserMC Wiki</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarLinks">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/"><i class="bi bi-house pe-1"></i> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/download"><i class="bi bi-download pe-1"></i> Download</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search" action="/search/">
+						<div class="input-group">
+							<button class="btn btn-outline-secondary" type="submit" id="button-search"><i class="bi bi-search"></i></button>
+							<input type="text" name="q" class="form-control" placeholder="Search the site..." aria-label="Search the site..." aria-describedby="button-search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="page-content" class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-3 col-xl-2">
+				<div class="sticky-top">
+					<div class="sidebar py-2 text-break">
+						<nav class="navbar navbar-expand-md">
+	<div class="container-fluid">
+		<div class="d-block d-md-none">Wiki Navigation</div>
+		<button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse flex-column align-items-start" id="sidebarNav">
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold show" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Geyser Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc show">
+
+						<li class="ms-4">
+							<a href="/geyser/setup/">Setting up Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/supported-hosting-providers/">Supported Hosting Providers</a>
+										</li>
+
+										<li>
+											<a href="/geyser/using-geyser-with-consoles/">Using Geyser with Consoles</a>
+										</li>
+
+										<li>
+											<a href="/geyser/playit-gg/">Using playit.gg with Geyser</a>
+										</li>
+
+										<li>
+											<a href="/geyser/creating-a-startup-script/">Creating a Startup Script</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/common-issues/">Common Issues</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/fixing-unable-to-connect-to-world/">Fixing 'Unable to Connect to World'</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/understanding-the-config/">Configuring Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/geyser/geyser-command-line-arguments-and-system-properties/">Geyser Command Line Arguments and System Properties</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/faq/">FAQ</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/anticheat-compatibility/">Anticheat Compatibility</a>
+										</li>
+
+										<li>
+											<a href="/geyser/current-limitations/">Current Limitations</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-items/">Custom items with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-items/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#resource-pack">Resource pack</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-blocks/">Custom blocks with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-blocks/#enabling-custom-blocks">Enabling custom blocks</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-skulls/">Custom skulls with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-skulls/#enabling-custom-skulls">Enabling custom skulls</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-skulls/#custom-skullsyml">custom-skulls.yml</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/api/">Geyser API</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/getting-started-with-the-api/">Getting Started</a>
+										</li>
+
+										<li>
+											<a href="/geyser/api/#short-overview-of-the-geyser-api">Overview</a>
+										</li>
+
+										<li>
+											<a href="/geyser/events/">Events</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/extensions/">Geyser Extensions</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/extensions/#creating-the-main-class">Main class</a>
+										</li>
+
+										<li>
+											<a href="/geyser/extensions/#creating-commands-with-geyser-extensions">Creating Commands</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/global-api/">Global API</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Floodgate Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/floodgate/setup/">Setup</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/issues/">Issues</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/faq/">FAQ</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/features/">Features</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/features/#whitelist-command">Whitelist command</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/features/#what-is-skin-uploading">Skin Uploading</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/api/">Floodgate API</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/player/">FloodgatePlayer</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/linking/">Linking</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/linking/#what-is-global-linking">Global Linking</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/linking/#local-linking">Local Linking</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Other</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/other/geyseroptionalpack/">GeyserOptionalPack</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/hurricane/">Hurricane</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/geyserconnect/">GeyserConnect</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/community-geyser-projects/">Community Geyser Projects</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/test-server/">Test Server</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/developer-guide/">Developer Guide</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/discord-bot-usage/">Geyser Discord Bot Usage</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</nav>
+					</div>
+				</div>
+			</div>
+			<main class="col-12 col-md-9 col-xl-8" role="main">
+				<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+
+
+
+
+                <li class="breadcrumb-item"><a href="http://localhost:4000/geyser/">Geyser</a></li>
+
+
+
+
+                <li class="breadcrumb-item active" aria-current="page">Geyser Events</li>
+
+
+    </ol>
+</nav>
+
+<h1 id="geyser-events">Geyser Events</h1>
+<p>Geyser has a powerful event system that allows you to listen to events that are sent by Geyser. Events are at the heart of Geyser Extensions, and can be used by plugins and mods as well.</p>
+
+<p>Full documentation can be found <a href="https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event">here</a>.</p>
+
+<h2 id="event-categories">Event Categories</h2>
+<p>To use events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener and then subscribe to the events you want to listen to.
+Extensions can use the @Subscribe annotation.</p>
+
+<p>Events are categorized into the following categories:</p>
+<ul>
+  <li><a href="https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/bedrock">Bedrock</a>: Events that are sent for each connecting Bedrock client,
+for example the ClientEmoteEvent that is sent when a Bedrock player uses an emote - or the SessionLoginEvent that is sent when a Bedrock player logged in and is about to join a server.</li>
+  <li><a href="https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/java">Java</a>: Events that are sent for the java server, for example
+the ServerDefineCommandsEvent - it is fired when the Java sends the commands to show for Bedrock players.</li>
+  <li><a href="https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/connection">Connection</a>: Connection-related events, such as a ping event to return e.g. a custom MOTD.</li>
+  <li><a href="https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle">Lifecycle</a>: Events that are sent during Geyser’s lifecycle, such as the loading of custom items, resource packs, or Geyser commands.</li>
+</ul>
+
+<p>To see all the events in the respective categories, click on the links above.</p>
+
+<h2 id="usage-examples">Usage Examples:</h2>
+
+<p>Each method that you want to subscribe to an event needs to be annotated with the @Subscribe annotation (from the GeyserMC events package).</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Subscribe</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onGeyserLoadResourcePacksEvent</span><span class="o">(</span><span class="nc">GeyserLoadResourcePacksEvent</span> <span class="n">event</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">logger</span><span class="o">().</span><span class="na">info</span><span class="o">(</span><span class="s">"Loading: "</span> <span class="o">+</span> <span class="n">event</span><span class="o">.</span><span class="na">resourcePacks</span><span class="o">().</span><span class="na">size</span><span class="o">()</span> <span class="o">+</span> <span class="s">" resource packs."</span><span class="o">);</span>
+    <span class="c1">// you could add a resource pack with event.resourcePacks().add(path-to-pack)</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>If you wish to listen to events in a Spigot/Paper plugin or a Fabric mod, you need to register the Geyser Event Bus as a listener first. Just make sure you implement <code class="language-plaintext highlighter-rouge">EventRegistrar</code> in the main class of your mod or plugin.
+Extensions do not need to do that - they are automatically registered, so a simple @Subscribe annotation is enough.</p>
+
+<p><strong>Fabric mod example:</strong></p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ExampleMod</span> <span class="kd">implements</span> <span class="nc">ModInitializer</span><span class="o">,</span> <span class="nc">EventRegistrar</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="nc">Logger</span> <span class="no">LOGGER</span> <span class="o">=</span> <span class="nc">LoggerFactory</span><span class="o">.</span><span class="na">getLogger</span><span class="o">(</span><span class="s">"modid"</span><span class="o">);</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onInitialize</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nc">ServerLifecycleEvents</span><span class="o">.</span><span class="na">SERVER_STARTING</span><span class="o">.</span><span class="na">register</span><span class="o">((</span><span class="n">server</span><span class="o">)</span> <span class="o">-&gt;</span> <span class="o">{</span>
+            <span class="nc">GeyserApi</span><span class="o">.</span><span class="na">api</span><span class="o">().</span><span class="na">eventBus</span><span class="o">().</span><span class="na">register</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="nc">ExampleMod</span><span class="o">.</span><span class="na">class</span><span class="o">);</span> <span class="c1">// register your mod &amp; this class as a listener</span>
+        <span class="o">});</span>
+
+        <span class="no">LOGGER</span><span class="o">.</span><span class="na">info</span><span class="o">(</span><span class="s">"Geyser is cool!"</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="c1">// here an event, we subscribe as usual with the @Subscribe annotation</span>
+    <span class="nd">@Subscribe</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onGeyserPostInitializeEvent</span><span class="o">(</span><span class="nc">GeyserPostInitializeEvent</span> <span class="n">eventad</span> <span class="o">{</span>
+        <span class="no">LOGGER</span><span class="o">.</span><span class="na">info</span><span class="o">(</span><span class="s">"Geyser started!"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<div class="alert alert-info" role="alert">
+    Do note: We cannot directly register the event bus in the mod initializer, since the Geyser API would not be loaded yet.
+</div>
+
+<p>Therefore, we register it in the server starting event provided by the Fabric API.</p>
+
+<p><strong>Paper/Spigot plugin example:</strong></p>
+
+<ol>
+  <li>In your plugin.yml, add the following lines:
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">depend</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">Geyser-Spigot"</span><span class="pi">]</span>
+</code></pre></div>    </div>
+    <p>This ensures that your plugin loads after Geyser has, so the Geyser API would be available.</p>
+  </li>
+  <li>In your main class, implement the EventRegistrar interface and register the event bus in the onEnable method:
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ExamplePlugin</span> <span class="kd">extends</span> <span class="nc">JavaPlugin</span> <span class="kd">implements</span> <span class="nc">EventRegistrar</span> <span class="o">{</span>
+
+ <span class="nd">@Override</span>
+ <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onEnable</span><span class="o">(){</span>
+     <span class="n">getLogger</span><span class="o">().</span><span class="na">info</span><span class="o">(</span><span class="s">"Registering Geyser event bus!"</span><span class="o">);</span>
+     <span class="nc">GeyserApi</span><span class="o">.</span><span class="na">api</span><span class="o">().</span><span class="na">eventBus</span><span class="o">().</span><span class="na">register</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="k">this</span><span class="o">);</span> <span class="c1">// register your plugin &amp; this class as a listener</span>
+ <span class="o">}</span>
+
+ <span class="c1">// here an event, we subscribe as usual with the @Subscribe annotation</span>
+ <span class="nd">@Subscribe</span>
+ <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onGeyserPostInitializeEvent</span><span class="o">(</span><span class="nc">GeyserPostInitializeEvent</span> <span class="n">event</span><span class="o">)</span> <span class="o">{</span>
+     <span class="n">getLogger</span><span class="o">().</span><span class="na">info</span><span class="o">(</span><span class="s">"Geyser started!"</span><span class="o">);</span>
+ <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>If you want to provide your event with a consumer, rather than annotating it, you can also manually subscribe your method to the event bus:
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// replace GeyserEvent.class with the event class you want to listen to</span>
+<span class="nc">GeyserApi</span><span class="o">.</span><span class="na">api</span><span class="o">().</span><span class="na">eventBus</span><span class="o">().</span><span class="na">subscribe</span><span class="o">(</span><span class="k">this</span><span class="o">,</span> <span class="nc">GeyserEvent</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="k">this</span><span class="o">::</span><span class="n">yourMethod</span><span class="o">);</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="event-priority">Event Priority</h2>
+<p>Events can have a priority, which is used to determine the order in which the listeners are called. The default priority is NORMAL.
+To (optionally) set the priority of your event listener, you can add the priority to the <code class="language-plaintext highlighter-rouge">@Subscribe</code> annotation:</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@Subscribe</span><span class="o">(</span><span class="n">postOrder</span> <span class="o">=</span> <span class="nc">PostOrder</span><span class="o">.</span><span class="na">EARLY</span><span class="o">)</span>
+</code></pre></div></div>
+<p>If you do not specify a priority, the default priority is used. For all available priorities, see
+<a href="https://github.com/GeyserMC/Events/blob/master/src/main/java/org/geysermc/event/PostOrder.java">here</a>.</p>
+
+
+			</main>
+			<div class="col-2 d-none d-xl-block">
+				<div class="sticky-top">
+					<div class="sidebar py-2">
+						<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/edit/master/_docs/geyser/events.md" target="_blank"><i class="bi bi-pencil"></i> Edit this page</a>
+<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/issues/new?labels=question&title=Question:&body=Question on: _docs/geyser/events.md" target="_blank"><i class="bi bi-github"></i> Create Wiki issue/bug report</a>
+<a class="d-block text-decoration-none" href="/issues/new" target="_blank"><i class="bi bi-list-check"></i> Create Geyser issue/bug report</a>
+
+<div id="page-nav" class="py-3 "></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <footer class="p-4 text-center bg-body-tertiary">
+		&copy; 2023 GeyserMC
+	</footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="/js/page-nav.js"></script>
+  </body>
+</html>

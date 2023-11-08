@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GeyserMC Wiki: Port forwarding</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/darcula.css">
+
+	<meta name="author" content="GeyserMC">
+	<meta name="description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta name="theme-color" content="#2b3035">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://localhost:4000">
+	<meta property="og:title" content="GeyserMC Wiki: Port forwarding">
+	<meta property="og:description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta property="og:image" content="/android-chrome-192x192.png">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#248f00">
+  </head>
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/"><img src="/android-chrome-512x512.png" alt="geyser logo" height="32"> GeyserMC Wiki</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarLinks">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/"><i class="bi bi-house pe-1"></i> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/download"><i class="bi bi-download pe-1"></i> Download</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search" action="/search/">
+						<div class="input-group">
+							<button class="btn btn-outline-secondary" type="submit" id="button-search"><i class="bi bi-search"></i></button>
+							<input type="text" name="q" class="form-control" placeholder="Search the site..." aria-label="Search the site..." aria-describedby="button-search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="page-content" class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-3 col-xl-2">
+				<div class="sticky-top">
+					<div class="sidebar py-2 text-break">
+						<nav class="navbar navbar-expand-md">
+	<div class="container-fluid">
+		<div class="d-block d-md-none">Wiki Navigation</div>
+		<button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse flex-column align-items-start" id="sidebarNav">
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold show" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Geyser Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc show">
+
+						<li class="ms-4">
+							<a href="/geyser/setup/">Setting up Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/supported-hosting-providers/">Supported Hosting Providers</a>
+										</li>
+
+										<li>
+											<a href="/geyser/using-geyser-with-consoles/">Using Geyser with Consoles</a>
+										</li>
+
+										<li>
+											<a href="/geyser/playit-gg/">Using playit.gg with Geyser</a>
+										</li>
+
+										<li>
+											<a href="/geyser/creating-a-startup-script/">Creating a Startup Script</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/common-issues/">Common Issues</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/fixing-unable-to-connect-to-world/">Fixing 'Unable to Connect to World'</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/understanding-the-config/">Configuring Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/geyser/geyser-command-line-arguments-and-system-properties/">Geyser Command Line Arguments and System Properties</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/faq/">FAQ</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/anticheat-compatibility/">Anticheat Compatibility</a>
+										</li>
+
+										<li>
+											<a href="/geyser/current-limitations/">Current Limitations</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-items/">Custom items with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-items/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#resource-pack">Resource pack</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-blocks/">Custom blocks with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-blocks/#enabling-custom-blocks">Enabling custom blocks</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-skulls/">Custom skulls with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-skulls/#enabling-custom-skulls">Enabling custom skulls</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-skulls/#custom-skullsyml">custom-skulls.yml</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/api/">Geyser API</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/getting-started-with-the-api/">Getting Started</a>
+										</li>
+
+										<li>
+											<a href="/geyser/api/#short-overview-of-the-geyser-api">Overview</a>
+										</li>
+
+										<li>
+											<a href="/geyser/events/">Events</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/extensions/">Geyser Extensions</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/extensions/#creating-the-main-class">Main class</a>
+										</li>
+
+										<li>
+											<a href="/geyser/extensions/#creating-commands-with-geyser-extensions">Creating Commands</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/global-api/">Global API</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Floodgate Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/floodgate/setup/">Setup</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/issues/">Issues</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/faq/">FAQ</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/features/">Features</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/features/#whitelist-command">Whitelist command</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/features/#what-is-skin-uploading">Skin Uploading</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/api/">Floodgate API</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/player/">FloodgatePlayer</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/linking/">Linking</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/linking/#what-is-global-linking">Global Linking</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/linking/#local-linking">Local Linking</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Other</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/other/geyseroptionalpack/">GeyserOptionalPack</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/hurricane/">Hurricane</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/geyserconnect/">GeyserConnect</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/community-geyser-projects/">Community Geyser Projects</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/test-server/">Test Server</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/developer-guide/">Developer Guide</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/discord-bot-usage/">Geyser Discord Bot Usage</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</nav>
+					</div>
+				</div>
+			</div>
+			<main class="col-12 col-md-9 col-xl-8" role="main">
+				<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+
+
+
+
+                <li class="breadcrumb-item"><a href="http://localhost:4000/geyser/">Geyser</a></li>
+
+
+
+
+                <li class="breadcrumb-item active" aria-current="page">Port forwarding</li>
+
+
+    </ol>
+</nav>
+
+<h1 id="port-forwarding">Port forwarding</h1>
+<p>This page contains information on how to set up port forwarding required for Geyser to work when self-hosting.
+There are also guides for specific configurations, such as Docker/Pterodactyl, or on specific VPS/KVM providers, such as OVH or Oracle Cloud.</p>
+
+<div class="alert alert-warning" role="alert">
+	If you are using a Minecraft server hosting provider (e.g. Aternos, or Apex Hosting), you should refer to the hosting provider setup on the <a href="/geyser/setup/">setup</a> page instead.
+</div>
+
+<h2 id="port-forwarding-on-linuxwindowsmacos">Port forwarding on Linux/Windows/macOS</h2>
+<p>To allow others to play on your server, you will need to set up port forwarding on the device hosting Geyser.
+Additionally, you will need to port forward the port on your router/modem (in other words, allow and route traffic on that port to the proper machine) if you want the server to be accessible outside your own home network.
+See <a href="https://www.howtogeek.com/66214/how-to-forward-ports-on-your-router/">here</a> or <a href="https://www.lifewire.com/how-to-port-forward-4163829">here</a> for helpful guides.
+Do note: if you do not have a static IP address, your IP address may change over time.</p>
+
+<div class="alert alert-info" role="alert">
+	Some ISPs (Internet Service Providers) block certain ports, or don't allow you to open ports (e.g. by using CGNAT, which doesn't allow you to open a port with a dynamic IP).
+Other ISPs may require you to pay extra for a static IP address. <br />
+As an alternative to port forwarding, you can use <a href="/geyser/playit-gg/">playit.gg</a> to create a tunnel.
+</div>
+
+<h3 id="windows">Windows</h3>
+<p>To open a port on Windows, you will need to open the port through the Windows Firewall. There are multiple ways to do this:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Powershell</code> (recommended)</p>
+
+    <p>To open a port on UDP (in our example, port 19132), run the following command in an administrator Powershell:</p>
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">New-NetFirewallRule</span><span class="w"> </span><span class="nt">-DisplayName</span><span class="w"> </span><span class="s2">"Geyser"</span><span class="w"> </span><span class="nt">-Direction</span><span class="w"> </span><span class="nx">Inbound</span><span class="w"> </span><span class="nt">-Protocol</span><span class="w"> </span><span class="nx">UDP</span><span class="w"> </span><span class="nt">-LocalPort</span><span class="w"> </span><span class="nx">19132</span><span class="w"> </span><span class="nt">-Action</span><span class="w"> </span><span class="nx">Allow</span><span class="w">
+</span></code></pre></div>    </div>
+    <p>Running this command creates a rule named “Geyser” that allows UDP traffic on port 19132.</p>
+  </li>
+  <li>
+    <p>Windows Defender Firewall with Advanced Security (GUI)</p>
+    <ol>
+      <li>Search for “Windows Defender Firewall with Advanced Security” in the start menu, and open it. (<a href="/img/wiki/port-forwarding/windows-1.png">Image</a>)</li>
+      <li>Click on “Inbound Rules” in the left sidebar. (<a href="/img/wiki/port-forwarding/windows-2.png">Image</a>)</li>
+      <li>Click on “New Rule…” in the right sidebar. (<a href="/img/wiki/port-forwarding/windows-2.png">Image</a>)</li>
+      <li>Select “Port” as the rule type and click “Next”. (<a href="/img/wiki/port-forwarding/windows-3.png">Example</a>)</li>
+      <li>Select “UDP” and “Specific local ports”, and enter the port you want to open (in our example, 19132). Click “Next”. (<a href="/img/wiki/port-forwarding/windows-4.png">Example</a>)</li>
+      <li>Select “Allow the connection” and click “Next”. (<a href="/img/wiki/port-forwarding/windows-5.png">Example</a>)</li>
+      <li>Select the profiles you want to apply the rule to (e.g. “Domain”, “Private”, “Public”), and click “Next”. (<a href="/img/wiki/port-forwarding/windows-6.png">Example</a>)</li>
+      <li>Enter a name for the rule (e.g. “Geyser”), and click “Finish”. (<a href="/img/wiki/port-forwarding/windows-7.png">Image</a>)</li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="linux">Linux</h3>
+<p>Different Linux distributions, even different VPS providers ship and configure different firewalls. In the following examples, we will use <code class="language-plaintext highlighter-rouge">19132</code> as the port to open, but you should replace this with the port you are using for Geyser.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ufw</code> is a simple firewall front-end for iptables that is commonly used on Ubuntu and Debian. To open a port on UDP, run the following command:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>ufw allow 19132/udp
+</code></pre></div>    </div>
+    <p>Then, reload the firewall with <code class="language-plaintext highlighter-rouge">sudo ufw reload</code>, and see all open rules with <code class="language-plaintext highlighter-rouge">sudo ufw status</code>. <br />
+Further helpful guides: <a href="https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server">DigitalOcean</a>, <a href="https://www.baeldung.com/linux/uncomplicated-firewall">Baeldung</a></p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">firewalld</code> Add a port on UDP by running:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>firewall-cmd <span class="nt">--zone</span><span class="o">=</span>public <span class="nt">--permanent</span> <span class="nt">--add-port</span><span class="o">=</span>19132/udp
+</code></pre></div>    </div>
+    <p>Then, reload the firewall with <code class="language-plaintext highlighter-rouge">sudo firewall-cmd --reload</code>, and see all open rules with <code class="language-plaintext highlighter-rouge">sudo firewall-cmd --list-all</code>. <br />
+Further helpful guides: <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7">DigitalOcean</a></p>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">iptables</code> is a common firewall that is used on many Linux distributions. To open a port on UDP, run the following command:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>iptables <span class="nt">-A</span> INPUT <span class="nt">-p</span> udp <span class="nt">--dport</span> 19132 <span class="nt">-j</span> ACCEPT
+</code></pre></div>    </div>
+    <p>Then, save the firewall with <code class="language-plaintext highlighter-rouge">sudo iptables-save</code>, and see all open rules with <code class="language-plaintext highlighter-rouge">sudo iptables -L</code>. <br />
+Further helpful guides for iptables: <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-14-04">DigitalOcean</a>, <a href="https://help.ubuntu.com/community/IptablesHowTo">Ubuntu</a></p>
+  </li>
+</ul>
+
+<h3 id="macos">macOS</h3>
+<p>You will need to disable <code class="language-plaintext highlighter-rouge">Block all incoming connections</code> in your Firewall settings, as that will block any connections and won’t allow you to make exceptions.
+To allow incoming connections, click <code class="language-plaintext highlighter-rouge">Allow</code> when getting <a href="/img/wiki/port-forwarding/macos_warning.png">these prompts</a>.
+If you are still facing issues, see Apple’s official guide <a href="https://support.apple.com/guide/mac-help/MH11783">here</a> to open a port on macOS.</p>
+
+<h2 id="using-docker-or-pterodactyl">Using Docker or Pterodactyl</h2>
+<p>In addition to port forwarding the port in your server’s firewall (and, if applicable, your router/modem), you will need to assign the port in Docker/Pterodactyl.</p>
+
+<h3 id="pterodactyl">Pterodactyl</h3>
+<p>Make sure to allocate the port to the server in the Pterodactyl panel’s <code class="language-plaintext highlighter-rouge">Network</code> tab, additionally to port forwarding the port.
+See <a href="https://pterodactyl.io/community/games/minecraft.html#allocations-in-the-panel">here</a> for more information.</p>
+
+<p><img src="/img/wiki/port-forwarding/pterodactyl-1.png" alt="Pterodactyl panel, Network section" /></p>
+
+<p>There are also different Geyser eggs for Pterodactyl, which can be found <a href="https://github.com/GeyserMC/pterodactyl-stuff">here</a>.</p>
+
+<div class="alert alert-warning" role="alert">
+    If you are not able to allocate ports in the Pterodactyl panel, you will need to contact your server host to allocate one for you or try to use an existing port allocation.
+</div>
+
+<h3 id="docker">Docker</h3>
+<p>For Geyser to work under Docker (e.g. using <a href="https://github.com/itzg/docker-minecraft-server">Itzg’s Docker image</a>), you will need to add the Geyser port on UDP to the docker-compose file. This is done by adding the following to the <code class="language-plaintext highlighter-rouge">ports</code> section:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">ports</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">25565:25565"</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">19132:19132/udp"</span>
+</code></pre></div></div>
+<p>The additional <code class="language-plaintext highlighter-rouge">/udp</code> suffix is required so that the port is exposed on UDP. If you want to run the Java server and Geyser on the same port, the following would work:</p>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">ports</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">25565:25565"</span>
+    <span class="pi">-</span> <span class="s2">"</span><span class="s">25565:25565/udp"</span>
+</code></pre></div></div>
+<p>Alternatively, add another port with the <code class="language-plaintext highlighter-rouge">-p 19132:19132/udp</code> flag to the docker run command.</p>
+
+<h2 id="issues-with-specific-vpskvm-providers">Issues with specific VPS/KVM providers</h2>
+<p>Some providers, such as OVH, Oracle Cloud, and SoYouStart, have a firewall that blocks UDP ports by default/in most cases.</p>
+
+<h3 id="ovh-and-soyoustart">OVH and SoYouStart</h3>
+<p>By default, OVHs firewall requires a TCP ping to the server before allowing UDP connections. This is not possible with Geyser, so you will need to disable the firewall.</p>
+
+<div class="alert alert-warning" role="alert">
+    If you do not have access to these firewall settings, but got linked to this page, please contact your server host and provide them with this link - they are likely using OVH internally.
+</div>
+
+<p><strong>To verify/temporary work around it:</strong></p>
+
+<p>Attempt to connect to your servers IP and port through a web browser - for example, <code class="language-plaintext highlighter-rouge">http://test.geysermc.org:19132</code>. Connecting won’t work, but then try connecting through Bedrock on that same device, and it should work.
+Alternatively, try connecting to the server first on Java edition, then on Bedrock with the same device.</p>
+
+<p><strong>To resolve it:</strong></p>
+
+<p>OVH:</p>
+<ol>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">Network interfaces</code></li>
+  <li>Click on the <code class="language-plaintext highlighter-rouge">...</code> button on the table for your IP -&gt; then <code class="language-plaintext highlighter-rouge">...</code> and <code class="language-plaintext highlighter-rouge">Configure the GAME firewall</code> -&gt; <code class="language-plaintext highlighter-rouge">Add rule</code> -&gt; <code class="language-plaintext highlighter-rouge">Other protocol</code> (or <code class="language-plaintext highlighter-rouge">minecraftPocketEdition</code> if available)</li>
+  <li>Add your Geyser port into <code class="language-plaintext highlighter-rouge">outgoing port</code>.</li>
+</ol>
+
+<p>SoYouStart (subsidiary of OVH):</p>
+<ol>
+  <li>Click the IP tab.</li>
+  <li>Click the gear at the right of the public IP address; select “Game mitigation”.</li>
+  <li>Pick “Add a rule”.</li>
+  <li>Select “minecraftPocketEdition” in the dropdown list and enter the target UDP ports.</li>
+  <li>Save and wait a few seconds for the changes to come into effect.</li>
+</ol>
+
+<h3 id="oracle-cloudoci">Oracle Cloud/OCI</h3>
+<p>You’ll need to allow port 19132 on UDP in both the security list and the firewall-cmd command.</p>
+
+<p>Additional step for Ubuntu users:</p>
+<ol>
+  <li>Remove/comment out <code class="language-plaintext highlighter-rouge">-A INPUT -j REJECT --reject-with icmp-host-prohibited</code> in the <code class="language-plaintext highlighter-rouge">/etc/iptables/rules.v4</code> file.</li>
+  <li>Then, run the following command to fix ufw:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>iptables-restore &lt; /etc/iptables/rules.v4
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+
+
+			</main>
+			<div class="col-2 d-none d-xl-block">
+				<div class="sticky-top">
+					<div class="sidebar py-2">
+						<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/edit/master/_docs/geyser/port-forwarding.md" target="_blank"><i class="bi bi-pencil"></i> Edit this page</a>
+<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/issues/new?labels=question&title=Question:&body=Question on: _docs/geyser/port-forwarding.md" target="_blank"><i class="bi bi-github"></i> Create Wiki issue/bug report</a>
+<a class="d-block text-decoration-none" href="/issues/new" target="_blank"><i class="bi bi-list-check"></i> Create Geyser issue/bug report</a>
+
+<div id="page-nav" class="py-3 "></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <footer class="p-4 text-center bg-body-tertiary">
+		&copy; 2023 GeyserMC
+	</footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="/js/page-nav.js"></script>
+  </body>
+</html>

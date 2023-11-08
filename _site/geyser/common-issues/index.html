@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GeyserMC Wiki: Common Issues</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/darcula.css">
+
+	<meta name="author" content="GeyserMC">
+	<meta name="description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta name="theme-color" content="#2b3035">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://localhost:4000">
+	<meta property="og:title" content="GeyserMC Wiki: Common Issues">
+	<meta property="og:description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta property="og:image" content="/android-chrome-192x192.png">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#248f00">
+  </head>
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/"><img src="/android-chrome-512x512.png" alt="geyser logo" height="32"> GeyserMC Wiki</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarLinks">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/"><i class="bi bi-house pe-1"></i> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/download"><i class="bi bi-download pe-1"></i> Download</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search" action="/search/">
+						<div class="input-group">
+							<button class="btn btn-outline-secondary" type="submit" id="button-search"><i class="bi bi-search"></i></button>
+							<input type="text" name="q" class="form-control" placeholder="Search the site..." aria-label="Search the site..." aria-describedby="button-search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="page-content" class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-3 col-xl-2">
+				<div class="sticky-top">
+					<div class="sidebar py-2 text-break">
+						<nav class="navbar navbar-expand-md">
+	<div class="container-fluid">
+		<div class="d-block d-md-none">Wiki Navigation</div>
+		<button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse flex-column align-items-start" id="sidebarNav">
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold show" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Geyser Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc show">
+
+						<li class="ms-4">
+							<a href="/geyser/setup/">Setting up Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/supported-hosting-providers/">Supported Hosting Providers</a>
+										</li>
+
+										<li>
+											<a href="/geyser/using-geyser-with-consoles/">Using Geyser with Consoles</a>
+										</li>
+
+										<li>
+											<a href="/geyser/playit-gg/">Using playit.gg with Geyser</a>
+										</li>
+
+										<li>
+											<a href="/geyser/creating-a-startup-script/">Creating a Startup Script</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/common-issues/">Common Issues</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/fixing-unable-to-connect-to-world/">Fixing 'Unable to Connect to World'</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/understanding-the-config/">Configuring Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/geyser/geyser-command-line-arguments-and-system-properties/">Geyser Command Line Arguments and System Properties</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/faq/">FAQ</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/anticheat-compatibility/">Anticheat Compatibility</a>
+										</li>
+
+										<li>
+											<a href="/geyser/current-limitations/">Current Limitations</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-items/">Custom items with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-items/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#resource-pack">Resource pack</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-blocks/">Custom blocks with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-blocks/#enabling-custom-blocks">Enabling custom blocks</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-skulls/">Custom skulls with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-skulls/#enabling-custom-skulls">Enabling custom skulls</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-skulls/#custom-skullsyml">custom-skulls.yml</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/api/">Geyser API</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/getting-started-with-the-api/">Getting Started</a>
+										</li>
+
+										<li>
+											<a href="/geyser/api/#short-overview-of-the-geyser-api">Overview</a>
+										</li>
+
+										<li>
+											<a href="/geyser/events/">Events</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/extensions/">Geyser Extensions</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/extensions/#creating-the-main-class">Main class</a>
+										</li>
+
+										<li>
+											<a href="/geyser/extensions/#creating-commands-with-geyser-extensions">Creating Commands</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/global-api/">Global API</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Floodgate Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/floodgate/setup/">Setup</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/issues/">Issues</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/faq/">FAQ</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/features/">Features</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/features/#whitelist-command">Whitelist command</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/features/#what-is-skin-uploading">Skin Uploading</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/api/">Floodgate API</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/player/">FloodgatePlayer</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/linking/">Linking</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/linking/#what-is-global-linking">Global Linking</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/linking/#local-linking">Local Linking</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Other</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/other/geyseroptionalpack/">GeyserOptionalPack</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/hurricane/">Hurricane</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/geyserconnect/">GeyserConnect</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/community-geyser-projects/">Community Geyser Projects</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/test-server/">Test Server</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/developer-guide/">Developer Guide</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/discord-bot-usage/">Geyser Discord Bot Usage</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</nav>
+					</div>
+				</div>
+			</div>
+			<main class="col-12 col-md-9 col-xl-8" role="main">
+				<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+
+
+
+
+                <li class="breadcrumb-item"><a href="http://localhost:4000/geyser/">Geyser</a></li>
+
+
+
+
+                <li class="breadcrumb-item active" aria-current="page">Common Issues</li>
+
+
+    </ol>
+</nav>
+
+<p>Commonly, people may have issues with Geyser not showing up in their server list or run into similar issues.
+This page contains a few common issues people may encounter that you might have as well as potential fixes for them.
+If you still can’t make it work, join <a href="https://discord.gg/geysermc">our Discord</a> for support.</p>
+
+<h1 id="floodgate">Floodgate</h1>
+<p>For Floodgate issues see: <a href="/floodgate/issues/">Floodgate: Known Issues/Caveats</a>.</p>
+
+<h1 id="i-cant-connect-either-the-server-doesnt-show-up-in-the-friends-list-or-i-get-unable-to-connect-to-world">I can’t connect! (Either the server doesn’t show up in the friends list or I get “Unable to connect to world”)</h1>
+<ul>
+  <li>If you don’t use a reverse proxy such as TCPShield make sure that <code class="language-plaintext highlighter-rouge">enable-proxy-protocol</code> is set to false.
+To fix “Unable to connect to world” with no console errors, see <a href="/geyser/fixing-unable-to-connect-to-world/">here</a>.</li>
+</ul>
+
+<h2 id="if-the-server-doesnt-show-up-in-the-friends-list">If the server doesn’t show up in the friends list</h2>
+
+<ul>
+  <li><em>If using Windows 10, iOS, or Android</em>: try adding the server to the Servers list in-game.</li>
+  <li><em>If using Xbox One</em>: try connecting with <a href="/geyser/using-geyser-with-consoles/">BedrockConnect</a>.</li>
+  <li><em>If using PS4</em>: <a href="/geyser/using-geyser-with-consoles/#playstation-4">try using a LAN proxy.</a></li>
+  <li><em>If using Nintendo Switch</em>: there is currently no way for local servers to show up in the Friends tab, but you can still connect using <a href="/geyser/using-geyser-with-consoles/">BedrockConnect</a>.</li>
+</ul>
+
+<p><em>If the Geyser instance is locally hosted:</em> try using <code class="language-plaintext highlighter-rouge">localhost</code> or <code class="language-plaintext highlighter-rouge">0.0.0.0</code> as the IP address.
+<em>If that doesn’t work, or your Geyser instance is on another computer in the network</em>: use your <strong>local</strong> IPv4 address.</p>
+
+<h2 id="see-here-for-fixing-unable-to-connect-to-world-with-no-console-errors">See <a href="/geyser/fixing-unable-to-connect-to-world/">here</a> for fixing “Unable to Connect to World” with no console errors</h2>
+
+<h3 id="javanetbindexception-address-already-in-use-bind-on-startup"><code class="language-plaintext highlighter-rouge">java.net.BindException: Address already in use: bind</code> on startup.</h3>
+<p>This means something (likely another instance of Geyser) is running on the port you have specified in the config. Please make sure you close all applications running on this port. If you don’t recall opening anything, usually restarting your computer fixes this.</p>
+
+<h3 id="-has-been-compiled-by-a-more-recent-version-of-the-java-runtime-class-file-version-600">[…]<code class="language-plaintext highlighter-rouge"> has been compiled by a more recent version of the Java Runtime (class file version 60.0)</code></h3>
+
+<p>See this link for updating to Java 16: https://paper.readthedocs.io/en/latest/java-update/index.html.</p>
+
+<h3 id="hosting-provider-will-not-immediately-open-up-udp">Hosting provider will not immediately open up UDP.</h3>
+
+<p>These steps only apply for the standalone version of Geyser.
+This usually has something to do on your host’s end. Most commonly, it’s because they do not open up ports over the UDP protocol, which is what Minecraft: Bedrock Edition uses, opposed to Minecraft: Java Edition using TCP.
+One way to get around this (if you’re using an online host) is to shut down your server, and when asking for a server jar, select Nukkit, or any other Bedrock edition server software (you won’t actually be switching to Nukkit). Afterward, open up your FTP file manager and find the Nukkit jar. Then, replace this jar with the server software you’re using. Upon starting up the server, it should open up ports over UDP whilst still allowing you to use the server jar you desire.</p>
+
+<p><strong>PLEASE NOTE:</strong> If your server automatically redownloads jars upon startup, such as with an autoupdate system, this workaround will not work. Please contact your host if this does not work for you as there is nothing we can do.</p>
+
+<h1 id="stuck-on-locating-server-with-no-errors">Stuck on “Locating Server” with no errors</h1>
+
+<p>You may need to update your Java version. If so, update at <a href="https://adoptium.net/">Adoptium.net</a>.</p>
+
+<p>Sometimes this happens in poor-network environments. There is an <code class="language-plaintext highlighter-rouge">mtu</code> option in the Geyser config; lower this number slowly (in batches of 100), restart each time, and re-test joining.</p>
+
+<p>This option will most likely not help if you are getting “Unable to Connect to World” with no console logs indicating a connection.</p>
+
+<h1 id="login-failed">Login Failed</h1>
+
+<p><strong><em>If you are using a plugin version:</em></strong> in your Geyser config, set your remote address to <code class="language-plaintext highlighter-rouge">127.0.0.1</code>. If that does not work, check your startup log for a message about Docker, and use that address in the remote address</p>
+
+<h3 id="cannot-reply-to-encryptionrequestpacket-without-profile-and-access-token">Cannot reply to EncryptionRequestPacket without profile and access token</h3>
+
+<p>There are two causes of this message:</p>
+
+<p><em>Floodgate issue</em>:</p>
+
+<p>This message can occur with a Floodgate setup. Usually, it means that a misconfiguration occurred, or another plugin is conflicting. If you copied the Floodgate key from its folder to the Geyser folder on the same server, this is now unnecessary and you can safely remove the Geyser copy, restart, and try again.</p>
+
+<p><em>Server is in Online Mode while Geyser is in Offline Mode</em>:</p>
+
+<p>If you have your configuration set up like this, put simply, it won’t work. If authentication for the Java server is set to online, it is expected Geyser is configured the same way. The server requires a valid Minecraft: Java Edition account, and if you aren’t logging into one with Geyser, then you will be unable to join the server. If your configuration is set up properly and you’re still getting this issue, it could be that your credentials are invalid.</p>
+
+<h3 id="connection-refused-insert-ip-andor-domain">Connection Refused: &lt;INSERT IP AND/OR DOMAIN&gt;</h3>
+
+<p>Connection Refused usually means that a Java server could not be found on that port, or the server denied access to the connection on a network level.
+The latter can happen with anti-DDOS plugins such as TCPShield, but otherwise ensure that the server you’re trying to connect to is spelled correctly in the config, is up and is port forwarded correctly.</p>
+
+<p>If you’re updating from an old build of Geyser, set your remote address to <code class="language-plaintext highlighter-rouge">auto</code> and try again.</p>
+
+<h3 id="floodgate-misconfiguration">Floodgate Misconfiguration</h3>
+<p>See <a href="/floodgate/setup/">this page</a> for more information.</p>
+
+<h3 id="missing-profile-key-this-server-requires-secure-profiles">Missing profile key. This server requires secure profiles.</h3>
+
+<p>See <a href="/geyser/secure-chat/">this page</a>.</p>
+
+<h3 id="mojang-resetting-account-credentials">Mojang Resetting Account Credentials</h3>
+<p>This is unfortunately something we have no control over, and is most likely the case when you’re running Geyser as a plugin on a server host or joining a friend far away from your location. If you’re running Geyser locally, this should not happen to you, but what we recommend for servers is a plugin we make called <a href="https://github.com/GeyserMC/Floodgate">Floodgate</a>, which allows for Bedrock clients to join your server without needing a Java Edition account. Take a look <a href="Floodgate">here</a> for more information.</p>
+
+<h1 id="invalid-ip-address-from-bedrock">“Invalid IP address!” from Bedrock</h1>
+<p>This can happen if the domain you are entering resolves to a SRV record, which Bedrock does not support. Try using the IPv4 address instead.
+Additionally, this can happen when trying to specify both the ip and port in the ip tab - in which case, see <a href="/img/wiki/edit_server_form.png">here</a> for how to properly connect to “test.geysermc.org:19132”.</p>
+
+<h1 id="bedrock-clients-freeze-when-opening-up-commands-for-the-first-time">Bedrock clients freeze when opening up commands for the first time</h1>
+<p>Disable <code class="language-plaintext highlighter-rouge">command-suggestions</code> in your Geyser config. This will stop the freezing at the expense of removing command suggestions from Bedrock clients.
+If you’re a dedicated server admin, you can have a list of commands players should be using. This will remove any unnecessary commands from tab completion as well for Java players.
+It has other benefits too. Here’s a plugin that can just do that:
+<a href="https://www.spigotmc.org/resources/81326/">CommandWhitelist</a>. Alternatively, use the <a href="https://github.com/Redned235/HideCommands">HideCommands</a> Geyser extension to hide commands just for Bedrock players.</p>
+
+<h1 id="failed-to-load-locale-asset-cache-unrecognized-token-cannot">Failed to load locale asset cache: Unrecognized token ‘Cannot’</h1>
+<p>This or anything else related to failing to download a locale file on startup is usually caused by java trying to connect using IPv6 and Mojang only use IPv4, so start Geyser or the server up with this flag <code class="language-plaintext highlighter-rouge">-Djava.net.preferIPv4Stack=true</code>, EG: <code class="language-plaintext highlighter-rouge">java -Xms1024M -Djava.net.preferIPv4Stack=true -jar Geyser.jar</code></p>
+
+<h1 id="outdated-client-please-use-1xx">Outdated client! Please use 1.x.x</h1>
+
+<p>The server is too new or Geyser is outdated. Make sure you’re on the latest Geyser.</p>
+
+<h1 id="outdated-server-im-still-on-1xx">Outdated server! I’m still on 1.x.x</h1>
+
+<p>Update the server or ask them to install <a href="https://viaversion.com/">ViaVersion</a>. You can also try <a href="https://github.com/ViaVersion/VIAaaS">VIAaaS</a> (ViaVersion as a Service).</p>
+
+<h1 id="query-incorrect-magic">Query: Incorrect Magic!</h1>
+
+<p>See here: https://www.spigotmc.org/threads/query-incorrect-magic-and-high-cpu-usage.159386/#post-2709057</p>
+
+<ul>
+  <li>If you don’t use a reverse proxy such as TCPShield make sure that <code class="language-plaintext highlighter-rouge">enable-proxy-protocol</code> is set to false.</li>
+</ul>
+
+<h1 id="only-for-bungeecord-with-floodgate">Only for BungeeCord with floodgate</h1>
+
+<p>If you use floodgate ensure that it is installed on all of your Spigot backend servers as following:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">Bungee: Geyser and Floodgate</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Lobby: floodgate</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Server-1: floodgate</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Server-2: floodgate</code></li>
+</ol>
+
+<p>And so on.</p>
+
+<ul>
+  <li>Please also make sure that you have the same <code class="language-plaintext highlighter-rouge">key.pem</code> and <code class="language-plaintext highlighter-rouge">config.yml</code> on all of your servers.</li>
+</ul>
+
+<p>If your players can’t connect from the lobby to another backend server, check console.</p>
+
+<h3 id="plugins-that-can-cause-issues">Plugins that can cause issues</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">HamsterAPI</code></li>
+</ul>
+
+
+			</main>
+			<div class="col-2 d-none d-xl-block">
+				<div class="sticky-top">
+					<div class="sidebar py-2">
+						<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/edit/master/_docs/geyser/common-issues.md" target="_blank"><i class="bi bi-pencil"></i> Edit this page</a>
+<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/issues/new?labels=question&title=Question:&body=Question on: _docs/geyser/common-issues.md" target="_blank"><i class="bi bi-github"></i> Create Wiki issue/bug report</a>
+<a class="d-block text-decoration-none" href="/issues/new" target="_blank"><i class="bi bi-list-check"></i> Create Geyser issue/bug report</a>
+
+<div id="page-nav" class="py-3 "></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <footer class="p-4 text-center bg-body-tertiary">
+		&copy; 2023 GeyserMC
+	</footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="/js/page-nav.js"></script>
+  </body>
+</html>

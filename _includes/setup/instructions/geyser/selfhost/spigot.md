@@ -21,28 +21,28 @@
     ```
     The vital part is the port. This is the port that Bedrock players will use to connect to your server!
     If you enable `clone-remote-port`, the port will be overridden and the Java port is used.
-    Since you are self-hosting, you can choose the port freely - the default port is 19132. <br>
+    Since you are self-hosting, you can choose the port freely - the default port is 19132.   
     **Important**: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
-   <br>
+     
 
 4. Connecting to your server
-   <br> <br>
-    **Connecting locally in the same network** <br>
+        
+    **Connecting locally in the same network**   
     On the same device as the server, you can connect using `localhost`, or `127.0.0.1` as the address.
     Do note: When hosting and playing on the same Windows device, you will need the [loopback fix](/geyser/fixing-unable-to-connect-to-world/#Using-Geyser-on-the-same-computer).
     Other devices in the same local network can use your local IPv4 to connect - it starts with `10.` or `192.168.`.
-   <br> <br>
-    **Connecting from a different network**<br>
+        
+    **Connecting from a different network**  
     You will need to expose the port Geyser runs on to the Internet if you want players from outside your network to join.
-    To achieve that, you have two options: <br>
+    To achieve that, you have two options:   
 
     - Port forwarding: Open the Geyser port (e.g. 19132) on the UDP protocol in your router/modem, and in the Windows/Linux firewall. 
    [Our port forwarding guide](/geyser/port-forwarding) explains how to do this in detail.
-   After doing this, players can connect with your public IPv4 + port to your server. <br>
+   After doing this, players can connect with your public IPv4 + port to your server.   
 
     - playit.gg: Instead of opening a port (which might not be an option/if you do not want to expose your home ip), you can use
    the playit.gg service to create a tunnel for you to route the traffic through. See our [playit.gg guide](/geyser/playit-gg).
-   Ngrok will not work since it is TCP-only. <br>
+   Ngrok will not work since it is TCP-only.   
 
 5. Verify whether connections from other networks are possible by running `geyser connectiontest <ip>:<port>` in the console.
 

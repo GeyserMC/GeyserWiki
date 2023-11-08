@@ -2,9 +2,9 @@
 # Proxy setup with server hosting provider
 
 <div class="alert alert-info" role="alert">
-    NOTE: <br>
+    NOTE:   
     - Install Geyser <b>only</b> on the proxy server! You can install Floodgate on all servers for better skin support & 
-        network-wide Floodgate API availability for other plugins. <br>
+        network-wide Floodgate API availability for other plugins.   
     - All servers on the network must accept {{ site.data.versions.java }} Java clients, as Geyser imitates one.  
 </div>
 
@@ -29,7 +29,7 @@
     ``` 
     The vital part is the port. This is the port that Bedrock players will use to connect to your server. 
     Follow the instructions in the provider selector - change the port, and if necessary, `clone-remote-port` & `address`.
-    If `clone-remote-port` is enabled, the bedrock port will be overwritten with the Java port! <br>
+    If `clone-remote-port` is enabled, the bedrock port will be overwritten with the Java port!   
     **Important**: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
 
 5. Verify whether connections are possible by running `geyser connectiontest <ip>:<port>` in the console.

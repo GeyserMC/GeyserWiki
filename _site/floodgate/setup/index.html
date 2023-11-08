@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GeyserMC Wiki: Floodgate Setup</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/darcula.css">
+
+	<meta name="author" content="GeyserMC">
+	<meta name="description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta name="theme-color" content="#2b3035">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://localhost:4000">
+	<meta property="og:title" content="GeyserMC Wiki: Floodgate Setup">
+	<meta property="og:description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta property="og:image" content="/android-chrome-192x192.png">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#248f00">
+  </head>
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/"><img src="/android-chrome-512x512.png" alt="geyser logo" height="32"> GeyserMC Wiki</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarLinks">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/"><i class="bi bi-house pe-1"></i> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/download"><i class="bi bi-download pe-1"></i> Download</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search" action="/search/">
+						<div class="input-group">
+							<button class="btn btn-outline-secondary" type="submit" id="button-search"><i class="bi bi-search"></i></button>
+							<input type="text" name="q" class="form-control" placeholder="Search the site..." aria-label="Search the site..." aria-describedby="button-search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="page-content" class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-3 col-xl-2">
+				<div class="sticky-top">
+					<div class="sidebar py-2 text-break">
+						<nav class="navbar navbar-expand-md">
+	<div class="container-fluid">
+		<div class="d-block d-md-none">Wiki Navigation</div>
+		<button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse flex-column align-items-start" id="sidebarNav">
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Geyser Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/geyser/setup/">Setting up Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/supported-hosting-providers/">Supported Hosting Providers</a>
+										</li>
+
+										<li>
+											<a href="/geyser/using-geyser-with-consoles/">Using Geyser with Consoles</a>
+										</li>
+
+										<li>
+											<a href="/geyser/playit-gg/">Using playit.gg with Geyser</a>
+										</li>
+
+										<li>
+											<a href="/geyser/creating-a-startup-script/">Creating a Startup Script</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/common-issues/">Common Issues</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/fixing-unable-to-connect-to-world/">Fixing 'Unable to Connect to World'</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/understanding-the-config/">Configuring Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/geyser/geyser-command-line-arguments-and-system-properties/">Geyser Command Line Arguments and System Properties</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/faq/">FAQ</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/anticheat-compatibility/">Anticheat Compatibility</a>
+										</li>
+
+										<li>
+											<a href="/geyser/current-limitations/">Current Limitations</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-items/">Custom items with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-items/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#resource-pack">Resource pack</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-blocks/">Custom blocks with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-blocks/#enabling-custom-blocks">Enabling custom blocks</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-skulls/">Custom skulls with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-skulls/#enabling-custom-skulls">Enabling custom skulls</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-skulls/#custom-skullsyml">custom-skulls.yml</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/api/">Geyser API</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/getting-started-with-the-api/">Getting Started</a>
+										</li>
+
+										<li>
+											<a href="/geyser/api/#short-overview-of-the-geyser-api">Overview</a>
+										</li>
+
+										<li>
+											<a href="/geyser/events/">Events</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/extensions/">Geyser Extensions</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/extensions/#creating-the-main-class">Main class</a>
+										</li>
+
+										<li>
+											<a href="/geyser/extensions/#creating-commands-with-geyser-extensions">Creating Commands</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/global-api/">Global API</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold show" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Floodgate Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc show">
+
+						<li class="ms-4">
+							<a href="/floodgate/setup/">Setup</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/issues/">Issues</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/faq/">FAQ</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/features/">Features</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/features/#whitelist-command">Whitelist command</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/features/#what-is-skin-uploading">Skin Uploading</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/api/">Floodgate API</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/player/">FloodgatePlayer</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/linking/">Linking</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/linking/#what-is-global-linking">Global Linking</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/linking/#local-linking">Local Linking</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Other</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/other/geyseroptionalpack/">GeyserOptionalPack</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/hurricane/">Hurricane</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/geyserconnect/">GeyserConnect</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/community-geyser-projects/">Community Geyser Projects</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/test-server/">Test Server</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/developer-guide/">Developer Guide</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/discord-bot-usage/">Geyser Discord Bot Usage</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</nav>
+					</div>
+				</div>
+			</div>
+			<main class="col-12 col-md-9 col-xl-8" role="main">
+				<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+
+
+
+
+                <li class="breadcrumb-item"><a href="http://localhost:4000/floodgate/">Floodgate</a></li>
+
+
+
+
+                <li class="breadcrumb-item active" aria-current="page">Floodgate Setup</li>
+
+
+    </ol>
+</nav>
+
+<h1 id="floodgate-setup">Floodgate Setup</h1>
+
+<div class="alert alert-warning" role="alert">
+	Floodgate does <b>NOT</b> replace Geyser! It allows Geyser players to join servers without needing to log into a paid Java Edition account. <br />
+</div>
+
+<div class="nav nav-tabs setup-tabs" role="tablist" aria-label="Setup Options">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" href="#" data-bs-toggle="tab" data-bs-target="#spigot-option" type="button" role="tab" aria-controls="spigot-option" aria-selected="false"><img src="/img/icons/paper.png" alt="paper icon" /> Paper / Spigot</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#fabric-option" type="button" role="tab" aria-controls="fabric-option" aria-selected="false"><img src="/img/icons/fabric.png" alt="fabric icon" /> Fabric</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#proxy-option" type="button" role="tab" aria-controls="proxy-option" aria-selected="false"><img src="/img/icons/velocity.svg" alt="velocity icon" /> Proxy Servers</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#standalone-option" type="button" role="tab" aria-controls="standalone-option" aria-selected="false"><img src="/img/icons/geyser.png" alt="geyser icon" /> Standalone</a>
+    </li>
+  </div>
+
+<div class="tab-content mt-4">
+    <div id="spigot-option" class="tab-pane fade show active" role="tabpanel">
+
+        <h1 id="floodgate-spigot-setup">Floodgate-Spigot setup</h1>
+
+<ol>
+  <li>Download Floodgate-Spigot from the <a href="https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot">download page</a>.</li>
+  <li>Place the Floodgate-Spigot.jar in the <code class="language-plaintext highlighter-rouge">plugins</code> folder, and restart the server.</li>
+  <li>Change <code class="language-plaintext highlighter-rouge">auth-type</code> in Geyser’s config to <code class="language-plaintext highlighter-rouge">floodgate</code>.</li>
+  <li>Restart the server.</li>
+</ol>
+
+    </div>
+    <div id="fabric-option" class="tab-pane fade" role="tabpanel">
+
+
+<h1 id="floodgate-fabric-setup">Floodgate-Fabric setup</h1>
+
+<ol>
+  <li>Download Floodgate-Fabric from the <a href="https://modrinth.com/mod/floodgate">modrinth page</a>.</li>
+  <li>Place the Floodgate-Fabric.jar in the <code class="language-plaintext highlighter-rouge">mods</code> folder, and restart the server. <strong>You also need <a href="https://modrinth.com/mod/fabric-api">FabricAPI</a> installed.</strong></li>
+  <li>Change <code class="language-plaintext highlighter-rouge">auth-type</code> in Geyser’s config to <code class="language-plaintext highlighter-rouge">floodgate</code>.</li>
+  <li>Restart the server.</li>
+</ol>
+
+<p><strong>Note for Fabric behind a Velocity proxy:</strong>
+You will need to configure FabricProxyLite to allow the Fabric server to receive data from Velocity.</p>
+
+    </div>
+    <div id="proxy-option" class="tab-pane fade" role="tabpanel">
+
+        <h1 id="floodgate-setup-on-a-bungeecordvelocity-proxy">Floodgate setup on a BungeeCord/Velocity proxy</h1>
+
+<div class="alert alert-info" role="alert">
+	You only need to install Floodgate on the BungeeCord or Velocity proxy server, unless you want to use the Floodgate API on the backend servers.
+    Additionally, it will display Bedrock edition skins properly.
+</div>
+
+<ol>
+  <li>Download Floodgate for your proxy software from the <a href="https://geysermc.org/download">download page</a>.</li>
+  <li>Place the Floodgate jar in the <code class="language-plaintext highlighter-rouge">plugins</code> folder, and restart the proxy server.</li>
+  <li>Change <code class="language-plaintext highlighter-rouge">auth-type</code> in Geyser’s config to <code class="language-plaintext highlighter-rouge">floodgate</code>.</li>
+  <li>Restart the server.</li>
+</ol>
+
+<h2 id="installing-floodgate-on-servers-behind-the-proxy">Installing Floodgate on servers behind the proxy</h2>
+
+<p>This is only needed when you want to use the Floodgate API on your backend server(s) behind a proxy.</p>
+
+<ol>
+  <li>After installing Floodgate on the proxy, install Floodgate on the backend servers (either Floodgate-Spigot, or Floodgate-Fabric).</li>
+  <li>Enable <code class="language-plaintext highlighter-rouge">ip_forward</code> in your BungeeCord <code class="language-plaintext highlighter-rouge">config.yml</code> if using BungeeCord. For Velocity, set up <a href="https://docs.papermc.io/velocity/player-information-forwarding">player information forwarding</a>.</li>
+  <li>Set <code class="language-plaintext highlighter-rouge">bungeecord</code> to <code class="language-plaintext highlighter-rouge">true</code> in your spigot.yml. When using Velocity, see their guide, as they have multiple options that require different setups.</li>
+  <li>Start the proxy server.</li>
+  <li>Edit the Floodgate config on your proxy server and set <code class="language-plaintext highlighter-rouge">send-floodgate-data</code> to <code class="language-plaintext highlighter-rouge">true</code>.</li>
+  <li>Copy the <code class="language-plaintext highlighter-rouge">key.pem</code> file in the proxy Floodgate config folder to all backend servers’ Floodgate config folder.</li>
+  <li>Restart the backend servers and proxy server.</li>
+</ol>
+
+<div class="alert alert-warning" role="alert">
+    DO NOT DISTRIBUTE THIS KEY TO ANYBODY! This key is what allows for Bedrock accounts to bypass the Java Edition authentication, and if anyone gets ahold of this, they can wreak havoc on your server.
+</div>
+
+    </div>
+    <div id="standalone-option" class="tab-pane fade" role="tabpanel">
+
+        <h1 id="floodgate-setup-with-geyser-standalone">Floodgate setup with Geyser-Standalone</h1>
+
+<div class="alert alert-info" role="alert">
+	To be able to use Floodgate authentication, you need to be able to install Floodgate on the server you are connecting to.
+</div>
+
+<ol>
+  <li>Download Floodgate from the <a href="https://geysermc.org/download">download page</a>.</li>
+  <li>Install the Floodgate jar - see the platform instructions for detailed info.</li>
+  <li>Change <code class="language-plaintext highlighter-rouge">auth-type</code> in Geyser Standalone’s config to <code class="language-plaintext highlighter-rouge">floodgate</code>.</li>
+  <li>Copy the <code class="language-plaintext highlighter-rouge">key.pem</code> file in the Floodgate config folder to the same directory as Geyser Standalone.</li>
+  <li>Restart Geyser-Standalone.</li>
+</ol>
+
+<div class="alert alert-warning" role="alert">
+	DO NOT DISTRIBUTE THIS KEY TO ANYBODY! This key is what allows for Bedrock accounts to bypass the Java Edition authentication, and if anyone gets ahold of this, they can wreak havoc on your server.
+</div>
+
+    </div>
+</div>
+
+<h4 class="mt-4">Further information:</h4>
+<ul>
+  <li><a href="/floodgate/features/">Floodgate Features</a></li>
+  <li><a href="/floodgate/api/">Floodgate API</a></li>
+</ul>
+
+
+			</main>
+			<div class="col-2 d-none d-xl-block">
+				<div class="sticky-top">
+					<div class="sidebar py-2">
+						<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/edit/master/_docs/floodgate/setup.md" target="_blank"><i class="bi bi-pencil"></i> Edit this page</a>
+<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/issues/new?labels=question&title=Question:&body=Question on: _docs/floodgate/setup.md" target="_blank"><i class="bi bi-github"></i> Create Wiki issue/bug report</a>
+<a class="d-block text-decoration-none" href="/issues/new" target="_blank"><i class="bi bi-list-check"></i> Create Geyser issue/bug report</a>
+
+<div id="page-nav" class="py-3 d-none"></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <footer class="p-4 text-center bg-body-tertiary">
+		&copy; 2023 GeyserMC
+	</footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="/js/page-nav.js"></script>
+  </body>
+</html>

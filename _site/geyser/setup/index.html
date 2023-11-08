@@ -1,0 +1,1355 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GeyserMC Wiki: Setup</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/darcula.css">
+
+	<meta name="author" content="GeyserMC">
+	<meta name="description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta name="theme-color" content="#2b3035">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://localhost:4000">
+	<meta property="og:title" content="GeyserMC Wiki: Setup">
+	<meta property="og:description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta property="og:image" content="/android-chrome-192x192.png">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#248f00">
+  </head>
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/"><img src="/android-chrome-512x512.png" alt="geyser logo" height="32"> GeyserMC Wiki</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarLinks">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/"><i class="bi bi-house pe-1"></i> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/download"><i class="bi bi-download pe-1"></i> Download</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search" action="/search/">
+						<div class="input-group">
+							<button class="btn btn-outline-secondary" type="submit" id="button-search"><i class="bi bi-search"></i></button>
+							<input type="text" name="q" class="form-control" placeholder="Search the site..." aria-label="Search the site..." aria-describedby="button-search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="page-content" class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-3 col-xl-2">
+				<div class="sticky-top">
+					<div class="sidebar py-2 text-break">
+						<nav class="navbar navbar-expand-md">
+	<div class="container-fluid">
+		<div class="d-block d-md-none">Wiki Navigation</div>
+		<button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse flex-column align-items-start" id="sidebarNav">
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold show" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Geyser Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc show">
+
+						<li class="ms-4">
+							<a href="/geyser/setup/">Setting up Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/supported-hosting-providers/">Supported Hosting Providers</a>
+										</li>
+
+										<li>
+											<a href="/geyser/using-geyser-with-consoles/">Using Geyser with Consoles</a>
+										</li>
+
+										<li>
+											<a href="/geyser/playit-gg/">Using playit.gg with Geyser</a>
+										</li>
+
+										<li>
+											<a href="/geyser/creating-a-startup-script/">Creating a Startup Script</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/common-issues/">Common Issues</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/fixing-unable-to-connect-to-world/">Fixing 'Unable to Connect to World'</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/understanding-the-config/">Configuring Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/geyser/geyser-command-line-arguments-and-system-properties/">Geyser Command Line Arguments and System Properties</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/faq/">FAQ</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/anticheat-compatibility/">Anticheat Compatibility</a>
+										</li>
+
+										<li>
+											<a href="/geyser/current-limitations/">Current Limitations</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-items/">Custom items with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-items/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#resource-pack">Resource pack</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-blocks/">Custom blocks with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-blocks/#enabling-custom-blocks">Enabling custom blocks</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-skulls/">Custom skulls with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-skulls/#enabling-custom-skulls">Enabling custom skulls</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-skulls/#custom-skullsyml">custom-skulls.yml</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/api/">Geyser API</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/getting-started-with-the-api/">Getting Started</a>
+										</li>
+
+										<li>
+											<a href="/geyser/api/#short-overview-of-the-geyser-api">Overview</a>
+										</li>
+
+										<li>
+											<a href="/geyser/events/">Events</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/extensions/">Geyser Extensions</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/extensions/#creating-the-main-class">Main class</a>
+										</li>
+
+										<li>
+											<a href="/geyser/extensions/#creating-commands-with-geyser-extensions">Creating Commands</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/global-api/">Global API</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Floodgate Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/floodgate/setup/">Setup</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/issues/">Issues</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/faq/">FAQ</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/features/">Features</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/features/#whitelist-command">Whitelist command</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/features/#what-is-skin-uploading">Skin Uploading</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/api/">Floodgate API</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/player/">FloodgatePlayer</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/linking/">Linking</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/linking/#what-is-global-linking">Global Linking</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/linking/#local-linking">Local Linking</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Other</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/other/geyseroptionalpack/">GeyserOptionalPack</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/hurricane/">Hurricane</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/geyserconnect/">GeyserConnect</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/community-geyser-projects/">Community Geyser Projects</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/test-server/">Test Server</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/developer-guide/">Developer Guide</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/discord-bot-usage/">Geyser Discord Bot Usage</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</nav>
+					</div>
+				</div>
+			</div>
+			<main class="col-12 col-md-9 col-xl-8" role="main">
+				<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+
+
+
+
+                <li class="breadcrumb-item"><a href="http://localhost:4000/geyser/">Geyser</a></li>
+
+
+
+
+                <li class="breadcrumb-item active" aria-current="page">Setup</li>
+
+
+    </ol>
+</nav>
+
+<div class="row gap-4 mx-0" role="tablist">
+  <a class="col btn btn-outline-primary active" href="#" data-bs-toggle="tab" data-bs-target="#host-provider-options" type="button" role="tab" aria-controls="host-provider-options" aria-selected="true">Host Provider</a>
+  <a class="col btn btn-outline-primary" href="#" data-bs-toggle="tab" data-bs-target="#self-host-options" type="button" role="tab" aria-controls="self-host-options" aria-selected="false">Self Host</a>
+</div>
+
+<div class="tab-content mt-4">
+  <div id="host-provider-options" class="tab-pane fade show active" role="tabpanel">
+
+<div class="mb-4">
+  <select id="provider-select" class="form-select" onchange="selectProvider()">
+    <option value="">Select a provider</option>
+    <option value="Not listed">Not listed</option>
+
+
+      <option value="365Hosts">365Hosts - 365hosts.com</option>
+
+
+      <option value="Akliz">Akliz - akliz.net</option>
+
+
+      <option value="Apex Hosting">Apex Hosting - apexminecrafthosting.com</option>
+
+
+      <option value="Aquatis">Aquatis - aquatis.host</option>
+
+
+      <option value="Aternos">Aternos - aternos.org</option>
+
+
+      <option value="BisectHosting">BisectHosting - bisecthosting.com</option>
+
+
+      <option value="Bloom.Host">Bloom.Host - bloom.host</option>
+
+
+      <option value="Cloud Nord">Cloud Nord - cloudnord.net</option>
+
+
+      <option value="Clovux">Clovux - clovux.net</option>
+
+
+      <option value="Consulhosting">Consulhosting - consulhosting.nl</option>
+
+
+      <option value="Craft-Hosting">Craft-Hosting - craft-hosting.ru</option>
+
+
+      <option value="CreeperHost">CreeperHost - creeperhost.net</option>
+
+
+      <option value="Cubes Hosting">Cubes Hosting - cubes.host</option>
+
+
+      <option value="DedicatedMC">DedicatedMC - dedicatedmc.io</option>
+
+
+      <option value="ElfIDC">ElfIDC - elfidc.com</option>
+
+
+      <option value="EnviroMC">EnviroMC - enviromc.host</option>
+
+
+      <option value="ExtraVM">ExtraVM - extravm.com</option>
+
+
+      <option value="FREAKHOSTING">FREAKHOSTING - freakhosting.com</option>
+
+
+      <option value="FadeHost">FadeHost - fadehost.com</option>
+
+
+      <option value="FakaHeda">FakaHeda - fakaheda.eu</option>
+
+
+      <option value="FalixNodes">FalixNodes - falixnodes.net</option>
+
+
+      <option value="Ferox Hosting">Ferox Hosting - feroxhosting.nl</option>
+
+
+      <option value="Fluctis Hosting">Fluctis Hosting - fluctishosting.com</option>
+
+
+      <option value="FreeMcServer.net">FreeMcServer.net - freemcserver.net</option>
+
+
+      <option value="Fusion Hosting">Fusion Hosting - fusionhostingltd.co.uk</option>
+
+
+      <option value="Futurehosting">Futurehosting - futurehosting.org</option>
+
+
+      <option value="GGServers">GGServers - ggservers.com</option>
+
+
+      <option value="GPortal">GPortal - g-portal.com</option>
+
+
+      <option value="GameHosting.it">GameHosting.it - gamehosting.it</option>
+
+
+      <option value="Heavynode">Heavynode - heavynode.com</option>
+
+
+      <option value="Hicoria">Hicoria - hicoria.com</option>
+
+
+      <option value="HostEZ">HostEZ - hostez.io</option>
+
+
+      <option value="Hosterfy">Hosterfy - hosterfy.com</option>
+
+
+      <option value="HumbleServers">HumbleServers - humbleservers.com</option>
+
+
+      <option value="MC-HOST24.de">MC-HOST24.de - mc-host24.de</option>
+
+
+      <option value="MCProHosting">MCProHosting - mcprohosting.com</option>
+
+
+      <option value="Meloncube">Meloncube - meloncube.net</option>
+
+
+      <option value="MineStrator">MineStrator - minestrator.com</option>
+
+
+      <option value="Minecraft-Hosting.pro">Minecraft-Hosting.pro - minecraft-hosting.pro</option>
+
+
+      <option value="Minefort">Minefort - minefort.com</option>
+
+
+      <option value="Minehut">Minehut - minehut.com</option>
+
+
+      <option value="NFOservers">NFOservers - nfoservers.com</option>
+
+
+      <option value="Netbela">Netbela - netbela.nl</option>
+
+
+      <option value="Nitrado">Nitrado - nitrado.net</option>
+
+
+      <option value="Nodecraft">Nodecraft - nodecraft.com</option>
+
+
+      <option value="OMGServ">OMGServ - omgserv.com</option>
+
+
+      <option value="PUBCS">PUBCS - pubcs.com</option>
+
+
+      <option value="Pebblehost">Pebblehost - pebblehost.com</option>
+
+
+      <option value="Physgun">Physgun - physgun.com</option>
+
+
+      <option value="PlanetNode">PlanetNode - planetnode.net</option>
+
+
+      <option value="PloudOS">PloudOS - ploudos.com</option>
+
+
+      <option value="Pufferfish Host">Pufferfish Host - pufferfish.host</option>
+
+
+      <option value="RamShard">RamShard - ramshard.com</option>
+
+
+      <option value="Redline Hosting">Redline Hosting - redlinehosting.net</option>
+
+
+      <option value="Revivenode">Revivenode - revivenode.com</option>
+
+
+      <option value="SRKHOST">SRKHOST - srkhost.eu</option>
+
+
+      <option value="STIPE">STIPE - stipe.com.au</option>
+
+
+      <option value="ScalaCube">ScalaCube - scalacube.com</option>
+
+
+      <option value="Server.pro">Server.pro - server.pro</option>
+
+
+      <option value="Shockbyte">Shockbyte - shockbyte.com</option>
+
+
+      <option value="Skynode.pro">Skynode.pro - skynode.pro</option>
+
+
+      <option value="Snakecraft Hosting">Snakecraft Hosting - snakecrafthosting.com</option>
+
+
+      <option value="Sparked Host">Sparked Host - sparkedhost.com</option>
+
+
+      <option value="StellaNode">StellaNode - stellanode.com</option>
+
+
+      <option value="SyntexHosting">SyntexHosting - syntexhosting.com</option>
+
+
+      <option value="TNAHosting">TNAHosting - tnahosting.net</option>
+
+
+      <option value="The Minecraft Hosting">The Minecraft Hosting - theminecrafthosting.com</option>
+
+
+      <option value="TurboHost">TurboHost - turbohost.nl</option>
+
+
+      <option value="UltimateSRV">UltimateSRV - ultimatesrv.com</option>
+
+
+      <option value="Virtual Gladiators">Virtual Gladiators - virtualgladiators.com</option>
+
+
+      <option value="Volcano Hosting">Volcano Hosting - volcanohosting.net</option>
+
+
+      <option value="Vultam">Vultam - vultam.net</option>
+
+
+      <option value="WinterNode">WinterNode - winternode.com</option>
+
+
+      <option value="WiseHosting">WiseHosting - wisehosting.com</option>
+
+
+      <option value="WitherHosting">WitherHosting - witherhosting.com</option>
+
+
+      <option value="ZapHosting">ZapHosting - zap-hosting.com</option>
+
+
+      <option value="exaroton">exaroton - exaroton.com</option>
+
+  </select>
+  <div id="search-result" class="mt-2"></div>
+</div>
+
+<script>
+  window.provider_data = {
+    "Not listed": "<p>If your hosting provider is not listed, try enabling the <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> option in the config. Then, restart the server, and try connecting with the same IP and port as on Java Edition. <br /> If this does not work, ask your server hosting provider for a UDP port, and use that. For VPS/KVM servers please follow the self-hosting steps.</p>\n",
+
+      "365Hosts": "<p>Go to their <a href=\"https://www.365hosts.com/gaming/crossplayminecraft\">Minecraft: Crossplay</a> hosting section and order your server. Instructions on how to join are provided.</p>",
+
+      "Akliz": "<p>Offers a working port forwarding option.</p>",
+
+      "Apex Hosting": "<p>Full auto installation. Go to the Customizations tab in the panel and select &#8216;Enabled&#8217; under the &#8216;Geyser Auto Installer&#8217; option. Then, restart and connect to your server with your Java IP and port. See <a href=\"https://apexminecrafthosting.com/geysermc/\">Apex&#8217;s article</a> for more details.</p>",
+
+      "Aquatis": "<p>Need to open a support ticket to get a UDP port, then use that as the <code class=\"language-plaintext highlighter-rouge\">bedrock port</code>.</p>",
+
+      "Aternos": "<p>Install Geyser in the Aternos plugin list and connect to your server with your Java IP and port. See <a href=\"https://support.aternos.org/hc/en-us/articles/360051047631\">Aternos&#8217;s article</a> for more details. Do note: Aternos automatically installs the latest version of the plugin, but does not auto update it. To update Geyser on Aternos, simply reinstall the plugin (no need to uninstall the plugin/deleting the plugin files).</p>",
+
+      "BisectHosting": "<p>You must have a plan with a dedicated IP. In Geyser&#8217;s config, uncomment the <code class=\"language-plaintext highlighter-rouge\">bedrock address</code> and set it to the public IP of your server (e.g. <code class=\"language-plaintext highlighter-rouge\">address: 51.79.129.18</code>). Leave the port as <code class=\"language-plaintext highlighter-rouge\">19132</code>. Under the home tab, select &#8216;Enable UDP Network&#8217; and restart the server. See Bisect&#8217;s <a href=\"https://www.bisecthosting.com/clients/index.php?rp=/knowledgebase/193/How-to-install-Geyser-and-Floodgate-on-a-Minecraft-Java-server.html\">article</a> for full instructions.</p>",
+
+      "Bloom.Host": "<p>Offers a working port forwarding option.</p>",
+
+      "Cloud Nord": "<p>Go to their <a href=\"https://cloudnord.net/minecraftcrossplay-server-hosting/\">Crossplay Server</a> hosting section and order your server. Instructions on how to join are provided.</p>",
+
+      "Clovux": "<p>Make sure your remote address is ‘auto’, uncomment <code class=\"language-plaintext highlighter-rouge\">bedrock address</code>, and change <code class=\"language-plaintext highlighter-rouge\">0.0.0.0</code> to your Java server’s IP.</p>",
+
+      "Consulhosting": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "Craft-Hosting": "<p>Set the Bedrock port to the Java server&#8217;s port and connect with that port; note that this provider appears to only provide service in Russia.</p>",
+
+      "CreeperHost": "<p>Has a toggle within the control panel to automatically enable Geyser. May not be enabled by default, so you may need to toggle it and restart the server.</p>",
+
+      "Cubes Hosting": "<p>Install Geyser using the plugin manager. Then restart the server and Geyser will run on an additional port - you can check it in the server console. Geyser-Standalone can be set up through a support ticket.</p>",
+
+      "DedicatedMC": "<p>Contact the support to open the default Bedrock port, which Geyser is configured to use by default.</p>",
+
+      "ElfIDC": "<p>When placing an order, choose Paper/Spigot + Geyser, which will automatically install the Geyser plugin. Connect with the Java server&#8217;s IP and port. Note: This provider only provides service in China.</p>",
+
+      "EnviroMC": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "ExtraVM": "<p>Make sure your remote address is ‘auto’, uncomment <code class=\"language-plaintext highlighter-rouge\">bedrock address</code>, and change <code class=\"language-plaintext highlighter-rouge\">0.0.0.0</code> to your Java server’s IP.</p>",
+
+      "FREAKHOSTING": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "FadeHost": "<p>Set the Bedrock port to the Java server&#8217;s port and connect with that port. Alternatively, buy a dedicated IP address to support a different port.</p>",
+
+      "FakaHeda": "<p>Set the <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> in the config to the Java server&#8217;s port or use one of the available ports allocated to your server, and connect with that port.</p>",
+
+      "FalixNodes": "<p>Open a port yourself on the network page in the game panel, then use that port in the bedrock section of the Geyser config.</p>",
+
+      "Ferox Hosting": "<p>Open a port yourself in their panel and check out the <a href=\"https://feroxhosting.nl/kb/\">knowledgebase article</a> for how to install and configure Geyser.</p>",
+
+      "Fluctis Hosting": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "FreeMcServer.net": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "Fusion Hosting": "<p>Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling “clone-remote-port”) and connect with the same IP and port as you would on Java or create a port in the Network tab on the panel &amp; use this for Geyser.</p>",
+
+      "Futurehosting": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port. Make sure your <code class=\"language-plaintext highlighter-rouge\">bedrock</code> <code class=\"language-plaintext highlighter-rouge\">address</code> in your Geyser config is your server IP.</p>",
+
+      "GGServers": "<p>Can be installed to any server from their auto plugin setups. No further configuration needed.</p>",
+
+      "GPortal": "<p>You have to adjust the port according to your query port. Scheme: Query port: xxx65. The ports from xxx66 to xxx70 are available. For example, if your query port is 12365, then Geyser can only run under the port range 12366-12370. Furthermore, you have to change the &#8216;Bedrock&#8217; &#8216;address&#8217; in the Geyser config to your IP address. You can find it above your query port. Don&#8217;t forget to delete the # in front of `address&#8217;.</p>",
+
+      "GameHosting.it": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "Heavynode": "<p>Open a port yourself in the networking section of the control panel. Port <code class=\"language-plaintext highlighter-rouge\">19132</code> is only available with a dedicated IP (contact support), otherwise you will need to use a randomly assigned port. To resolve further connection issues for servers located in Canada and the UK, contact their support with the info found <a href=\"https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart\">here</a>.</p>",
+
+      "Hicoria": "<p>Use one of the available ports allocated for your server for the Bedrock port in your config and connect with that port.</p>",
+
+      "HostEZ": "<p>Geyser plugin supported with self-install or installed on request with its own port.</p>",
+
+      "Hosterfy": "<p>Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code>) and connect with the same IP and port as you would on Java. You can also ask for a new port.</p>",
+
+      "HumbleServers": "<p>Set the Bedrock port to the Java server&#8217;s port, or to one of the two extra ports, and connect with that port. If the subdomain doesn&#8217;t work, use your regular numbered IP address.</p>",
+
+      "MC-HOST24.de": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), uncomment <code class=\"language-plaintext highlighter-rouge\">bedrock address</code>, and change <code class=\"language-plaintext highlighter-rouge\">0.0.0.0</code> to your Java server’s IP. Connect with the Java IP and port.</p>",
+
+      "MCProHosting": "<p>Click &#8216;Enable Bedrock Support&#8217; on the server dashboard and follow the steps. For manual installation: Add &#8216;Destination Port&#8217; <code class=\"language-plaintext highlighter-rouge\">19132</code> with &#8216;Protocol UDP&#8217; to the port forward mapping and connect to the given source port.</p>",
+
+      "Meloncube": "<p>Contact the support for a UDP port to use for Geyser. Set that port as the <code class=\"language-plaintext highlighter-rouge\">bedrock port</code>, and connect with it.</p>",
+
+      "MineStrator": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "Minecraft-Hosting.pro": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "Minefort": "<p>On the server dashboard under &#8216;Connect Support&#8217;, make sure &#8216;Allow Bedrock&#8217; is enabled. Then connect via <code class=\"language-plaintext highlighter-rouge\">play.minefort.com</code> and join using <code class=\"language-plaintext highlighter-rouge\">/server &lt;servername&gt;</code>, or connect via <code class=\"language-plaintext highlighter-rouge\">&lt;servername&gt;.minefort.com</code>.</p>",
+
+      "Minehut": "<p>Connect via <code class=\"language-plaintext highlighter-rouge\">bedrock.minehut.com</code> and do <code class=\"language-plaintext highlighter-rouge\">/join &lt;servername&gt;</code>, or connect directly via <code class=\"language-plaintext highlighter-rouge\">&lt;servername&gt;.bedrock.minehut.gg</code>.</p>",
+
+      "NFOservers": "<p>Uncomment and set <code class=\"language-plaintext highlighter-rouge\">bedrock address</code> to the server IP in the Geyser config file. As an alternative, you can run Geyser standalone separately on an Unmanaged VDS.</p>",
+
+      "Netbela": "<p>Install Geyser with the dedicated Plugin installer. Use the same port as your Java server in your config. Connect with the same address and port as your Java server.</p>",
+
+      "Nitrado": "<p>Get Geyser as a plugin. Add 4 to the Port of the Java server. See <a href=\"https://wiki.nitrado.net/en/How_to_install_GeyserMC_and_Floodgate\">here</a> for specific instructions.</p>",
+
+      "Nodecraft": "<p>Use the default server port and <code class=\"language-plaintext highlighter-rouge\">0.0.0.0</code> or your server IP as the host address.</p>",
+
+      "OMGServ": "<p>Select Geyser in the <a href=\"https://i.imgur.com/Gewpsrq.png\">Install Menu</a>, it will be automatically installed. You can enable floodgate in the <a href=\"https://i.imgur.com/jg5mzNj.png\">server properties on the dashboard</a>.</p>",
+
+      "PUBCS": "<p>Set the Bedrock port to the Java server&#8217;s port and connect with that port, or upgrade to a plan that includes dedicated IP address to support a different port.</p>",
+
+      "Pebblehost": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port. See <a href=\"https://youtu.be/v9lC80UBZF4\">this video</a> for a PebbleHost-specific tutorial.</p>",
+
+      "Physgun": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "PlanetNode": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "PloudOS": "<p>Connect via <code class=\"language-plaintext highlighter-rouge\">geyser.ploudos.com</code> and enter the with your Java IP and port. See <a href=\"https://ploudos.com/faq/#How-do-I-connect-from-Bedrock-to-a-Java-server\">PloudOS&#8217;s article</a> for more details.</p>",
+
+      "Pufferfish Host": "<p>Geyser is installed and configured on all servers by default.</p>",
+
+      "RamShard": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "Redline Hosting": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "Revivenode": "<p>Set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java server&#8217;s port (either by setting it yourself, or enabling <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code>). You can also create a secondary port in the <code class=\"language-plaintext highlighter-rouge\">network tab</code> and use that. To fix random <code class=\"language-plaintext highlighter-rouge\">Unable to Connect</code> issues, see <a href=\"https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart\">here</a>.</p>",
+
+      "SRKHOST": "<p>You can enable Geyser on the version changer page. Geyser will run on the given port by the host.</p>",
+
+      "STIPE": "<p>Set the Bedrock port to the Java server&#8217;s port and connect with that port; note that this provider only provides service in Australia.</p>",
+
+      "ScalaCube": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), uncomment <code class=\"language-plaintext highlighter-rouge\">bedrock address</code>, and change <code class=\"language-plaintext highlighter-rouge\">0.0.0.0</code> to your Java server’s IP. Connect with the Java IP and port.</p>",
+
+      "Server.pro": "<p>Different instructions for different plans: On VPS, select Geyser in the <a href=\"https://i.imgur.com/loSNmvu.png\">Service Type Menu</a>, Floodgate can be enabled on the dashboard configuration. For manual installation: Using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect that; for the Free plan, also enable the <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> option. If you are using a PRO or a VPS plan, you can use any port, which can be opened on the Firewall tab.</p>",
+
+      "Shockbyte": "<p>Uncomment and set <code class=\"language-plaintext highlighter-rouge\">bedrock address</code> to the Java server&#8217;s IP, and <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java server&#8217; port. Connect with the same IP and port as on Java. For Geyser Standalone installation instructions, see <a href=\"https://shockbyte.com/billing/knowledgebase/173/Introduction-to-GeyserMCorDragonProxy-How-GeyserMC-Works.html\">here</a>.</p>",
+
+      "Skynode.pro": "<p>Go to &#8216;Server Details&#8217;, add a new port, and set the <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> in your config to that port. Connect with it and the Java server&#8217;s address.</p>",
+
+      "Snakecraft Hosting": "<p>Select &#8216;Paper + Geyser with Floodgate&#8217; under the Jar Type at checkout to install the Geyser plugin. Players will Connect with the same IP and port as you would on Java.</p>",
+
+      "Sparked Host": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "StellaNode": "<p>Open a support ticket on the billing panel to receive an additional UDP port for Geyser, then set that as the <code class=\"language-plaintext highlighter-rouge\">bedrock port</code>.</p>",
+
+      "SyntexHosting": "<p>Set the Bedrock port to the Java server&#8217;s port and connect with that port, or request a (free) additional port.</p>",
+
+      "TNAHosting": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "The Minecraft Hosting": "<p>Try using <code class=\"language-plaintext highlighter-rouge\">19132</code> as the Bedrock port, if that does not work, use the same Java server&#8217;s port for the <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> in your config and connect with that port and the Java server&#8217;s IP.</p>",
+
+      "TurboHost": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "UltimateSRV": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "Virtual Gladiators": "<p>Find the plugin in the control panel under the &#8216;VG Recommended&#8217; category and restart your server. IP and port are the same as Java.</p>",
+
+      "Volcano Hosting": "<p>Enable <code class=\"language-plaintext highlighter-rouge\">clone-remote-port</code> (or manually set <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java port), and connect with the Java IP and port.</p>",
+
+      "Vultam": "<p>Set the <code class=\"language-plaintext highlighter-rouge\">bedrock port</code> to the Java server&#8217;s port, or request an additional port. The additional port can be <code class=\"language-plaintext highlighter-rouge\">19132</code> if you buy a dedicated IP.</p>",
+
+      "WinterNode": "<p>Set the Bedrock port to the Java server&#8217;s port and connect with that port. Alternatively, request an additional port, or buy a dedicated IP address.</p>",
+
+      "WiseHosting": "<p>Both auto and manual installation available. Find the GeyserMC presets from the <code class=\"language-plaintext highlighter-rouge\">Properties</code> tab in the Game Panel. There, click <code class=\"language-plaintext highlighter-rouge\">Install</code> and restart your server. See <a href=\"https://wisehosting.com/knowledgebase/how-to-install-geysermc-java-bedrock-crossplay-to-your-server\">Crossplay FAQ</a> for additional details.</p>",
+
+      "WitherHosting": "<p>Either use the Java server&#8217;s port, or create a port in the ports manager on the panel and use that for Bedrock. Refer to the hosts <a href=\"https://support.witherhosting.com/en/article/how-to-install-and-use-geysermc-1xn5l6v/\">support article</a> for further info.</p>",
+
+      "ZapHosting": "<p>Find the plugin in the control panel and restart your server. IP and port are the same as Java.</p>",
+
+      "exaroton": "<p>Install Geyser in the exaroton plugin list and connect to your server with your Java IP and port. See <a href=\"https://support.exaroton.com/hc/en-us/articles/360019857918-Geyser\">exaroton&#8217;s article</a> for more details.</p>",
+
+  }
+
+  function selectProvider() {
+    var provider = document.getElementById("provider-select").value
+    showSearchResult(provider)
+  }
+
+  function showSearchResult(provider) {
+    var searchResultContainer = document.querySelector("#search-result")
+    searchResultContainer.innerHTML = provider in window.provider_data ? '<div class="alert alert-info no-p-margin mb-0" role="alert">' + window.provider_data[provider] + '</div>' : ""
+  }
+</script>
+
+
+    <div class="nav nav-tabs setup-tabs" role="tablist" aria-label="Setup Options">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" href="#" data-bs-toggle="tab" data-bs-target="#spigot-option-provider" type="button" role="tab" aria-controls="spigot-option-provider" aria-selected="false"><img src="/img/icons/paper.png" alt="paper icon" /> Paper / Spigot</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#fabric-option-provider" type="button" role="tab" aria-controls="fabric-option-provider" aria-selected="false"><img src="/img/icons/fabric.png" alt="fabric icon" /> Fabric</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#proxy-option-provider" type="button" role="tab" aria-controls="proxy-option-provider" aria-selected="false"><img src="/img/icons/velocity.svg" alt="velocity icon" /> Proxy Servers</a>
+    </li>
+
+  </div>
+
+  <div class="tab-content mt-4">
+    <div id="spigot-option-provider" class="tab-pane fade show active" role="tabpanel">
+
+
+<h1 id="paper--spigot-setup-with-server-hosting-provider">Paper / Spigot setup with server hosting provider</h1>
+
+<div class="alert alert-info" role="alert">
+    If your server is not running 1.20.2, you will need to install <a href="https://www.spigotmc.org/resources/viaversion.19254/">ViaVersion</a>.
+    See also our <a href="/geyser/faq/#what-server-versions-does-geyser-support">FAQ article</a> on supported versions.
+</div>
+
+<ol>
+  <li>Select your server hosting provider in the dropdown above.</li>
+  <li>Download the plugin from <a href="https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot">the download page</a>.</li>
+  <li>Place the Geyser-Spigot.jar in the <code class="language-plaintext highlighter-rouge">plugins</code> folder, and restart the server.</li>
+  <li>
+    <p>Open your Geyser config, located in <code class="language-plaintext highlighter-rouge">/plugins/Geyser-Spigot/config.yml</code>, and find the following:</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">bedrock</span><span class="pi">:</span>
+     <span class="c1"># The IP address that will listen for connections. </span>
+     <span class="c1"># Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server. </span>
+     <span class="c1">#address: 0.0.0.0 </span>
+
+     <span class="c1"># The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.</span>
+     <span class="na">port</span><span class="pi">:</span> <span class="s">19132</span>
+
+     <span class="c1"># Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock. </span>
+     <span class="c1"># This option makes the Bedrock port the same as the Java port every time you start the server. </span>
+     <span class="c1"># This option is for the plugin version only. </span>
+     <span class="na">clone-remote-port</span><span class="pi">:</span> <span class="no">false</span>
+</code></pre></div>    </div>
+    <p>The vital part is the port. This is the port that Bedrock players will use to connect to your server.
+ Follow the instructions in the provider selector - change the port, and if necessary, <code class="language-plaintext highlighter-rouge">clone-remote-port</code> &amp; <code class="language-plaintext highlighter-rouge">address</code>.
+ If <code class="language-plaintext highlighter-rouge">clone-remote-port</code> is enabled, the bedrock port will be overwritten with the Java port! <br />
+ <strong>Important</strong>: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.</p>
+  </li>
+  <li>Verify whether connections are possible by running <code class="language-plaintext highlighter-rouge">geyser connectiontest &lt;ip&gt;:&lt;port&gt;</code> in the console.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+</div>
+
+    </div>
+    <div id="fabric-option-provider" class="tab-pane fade" role="tabpanel">
+
+
+<h1 id="fabric-setup-with-server-hosting-provider">Fabric setup with server hosting provider</h1>
+
+<div class="alert alert-warning" role="alert">
+	Geyser-Fabric runs <b>only</b> on a 1.20.2 Fabric server. <br />
+To use Geyser on an older Fabric server, you can use Geyser on a BungeeCord/Velocity proxy, or Geyser Standalone instead.
+ </div>
+
+<ol>
+  <li>Select your server hosting provider in the dropdown above.</li>
+  <li>Download the mod from <a href="https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/fabric">the download page</a>.</li>
+  <li>Place the Geyser-Fabric.jar in the <code class="language-plaintext highlighter-rouge">mods</code> folder, and restart the server. <strong>You also need <a href="https://modrinth.com/mod/fabric-api">FabricAPI</a>.</strong></li>
+  <li>
+    <p>Open your Geyser config, located in <code class="language-plaintext highlighter-rouge">/config/Geyser-Fabric/config.yml</code>, and find the following:</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">bedrock</span><span class="pi">:</span>
+     <span class="c1"># The IP address that will listen for connections. </span>
+     <span class="c1"># Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server. </span>
+     <span class="c1">#address: 0.0.0.0 </span>
+
+     <span class="c1"># The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.</span>
+     <span class="na">port</span><span class="pi">:</span> <span class="s">19132</span>
+
+     <span class="c1"># Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock. </span>
+     <span class="c1"># This option makes the Bedrock port the same as the Java port every time you start the server. </span>
+     <span class="c1"># This option is for the plugin version only. </span>
+     <span class="na">clone-remote-port</span><span class="pi">:</span> <span class="no">false</span>
+</code></pre></div>    </div>
+    <p>The vital part is the port. This is the port that Bedrock players will use to connect to your server.
+ Follow the instructions in the provider selector - change the port, and if necessary, <code class="language-plaintext highlighter-rouge">clone-remote-port</code> &amp; <code class="language-plaintext highlighter-rouge">address</code>.
+ If <code class="language-plaintext highlighter-rouge">clone-remote-port</code> is enabled, the bedrock port will be overwritten with the Java port! <br />
+ <strong>Important</strong>: Other services/mods that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.</p>
+  </li>
+  <li>Verify whether connections are possible by running <code class="language-plaintext highlighter-rouge">geyser connectiontest &lt;ip&gt;:&lt;port&gt;</code> in the console.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+</div>
+
+    </div>
+    <div id="proxy-option-provider" class="tab-pane fade" role="tabpanel">
+
+
+<h1 id="proxy-setup-with-server-hosting-provider">Proxy setup with server hosting provider</h1>
+
+<div class="alert alert-info" role="alert">
+    NOTE: <br />
+    - Install Geyser <b>only</b> on the proxy server! You can install Floodgate on all servers for better skin support &amp;
+        network-wide Floodgate API availability for other plugins. <br />
+    - All servers on the network must accept 1.20.2 Java clients, as Geyser imitates one.
+</div>
+
+<ol>
+  <li>Select your server hosting provider in the dropdown above.</li>
+  <li>Download the plugin for your proxy software from <a href="https://geysermc.org/download">the download page</a>.</li>
+  <li>Place the Geyser jar in the <code class="language-plaintext highlighter-rouge">plugins</code> folder, and restart the server.</li>
+  <li>
+    <p>Open your Geyser config, located in <code class="language-plaintext highlighter-rouge">/plugins/Geyser-xyz/config.yml</code>, and find the following:</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">bedrock</span><span class="pi">:</span>
+     <span class="c1"># The IP address that will listen for connections. </span>
+     <span class="c1"># Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server. </span>
+     <span class="c1">#address: 0.0.0.0</span>
+
+     <span class="c1"># The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.</span>
+     <span class="na">port</span><span class="pi">:</span> <span class="m">19132</span>
+
+     <span class="c1"># Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock. </span>
+     <span class="c1"># This option makes the Bedrock port the same as the Java port every time you start the server. </span>
+     <span class="c1"># This option is for the plugin version only. </span>
+     <span class="na">clone-remote-port</span><span class="pi">:</span> <span class="no">false</span>
+</code></pre></div>    </div>
+    <p>The vital part is the port. This is the port that Bedrock players will use to connect to your server.
+ Follow the instructions in the provider selector - change the port, and if necessary, <code class="language-plaintext highlighter-rouge">clone-remote-port</code> &amp; <code class="language-plaintext highlighter-rouge">address</code>.
+ If <code class="language-plaintext highlighter-rouge">clone-remote-port</code> is enabled, the bedrock port will be overwritten with the Java port! <br />
+ <strong>Important</strong>: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.</p>
+  </li>
+  <li>Verify whether connections are possible by running <code class="language-plaintext highlighter-rouge">geyser connectiontest &lt;ip&gt;:&lt;port&gt;</code> in the console.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+</div>
+
+    </div>
+
+</div>
+  </div>
+
+  <div id="self-host-options" class="tab-pane fade" role="tabpanel">
+    <div class="nav nav-tabs setup-tabs" role="tablist" aria-label="Setup Options">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" href="#" data-bs-toggle="tab" data-bs-target="#spigot-option-selfhost" type="button" role="tab" aria-controls="spigot-option-selfhost" aria-selected="false"><img src="/img/icons/paper.png" alt="paper icon" /> Paper / Spigot</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#fabric-option-selfhost" type="button" role="tab" aria-controls="fabric-option-selfhost" aria-selected="false"><img src="/img/icons/fabric.png" alt="fabric icon" /> Fabric</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#proxy-option-selfhost" type="button" role="tab" aria-controls="proxy-option-selfhost" aria-selected="false"><img src="/img/icons/velocity.svg" alt="velocity icon" /> Proxy Servers</a>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#standalone-option-selfhost" type="button" role="tab" aria-controls="standalone-option-selfhost" aria-selected="false"><img src="/img/icons/geyser.png" alt="geyser icon" /> Standalone</a>
+    </li>
+
+  </div>
+
+  <div class="tab-content mt-4">
+    <div id="spigot-option-selfhost" class="tab-pane fade show active" role="tabpanel">
+
+
+<h1 id="paper--spigot-setup---self-hosting">Paper / Spigot setup - self-hosting</h1>
+
+<div class="alert alert-info" role="alert">
+    If your server is not running 1.20.2, you will need to install <a href="https://www.spigotmc.org/resources/viaversion.19254/">ViaVersion</a>.
+    See also our <a href="/geyser/faq/#what-server-versions-does-geyser-support">FAQ article</a> on supported versions.
+</div>
+
+<ol>
+  <li>Download the plugin from <a href="https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot">the download page</a>.</li>
+  <li>Place the Geyser-Spigot.jar in the <code class="language-plaintext highlighter-rouge">plugins</code> folder, and restart the server.</li>
+  <li>
+    <p>Open your Geyser config, located in <code class="language-plaintext highlighter-rouge">/plugins/Geyser-Spigot/config.yml</code>, and find the following:</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">bedrock</span><span class="pi">:</span>
+     <span class="c1"># The IP address that will listen for connections. </span>
+     <span class="c1"># Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server. </span>
+     <span class="c1">#address: 0.0.0.0 </span>
+
+     <span class="c1"># The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.</span>
+     <span class="na">port</span><span class="pi">:</span> <span class="s">19132</span>
+</code></pre></div>    </div>
+    <p>The vital part is the port. This is the port that Bedrock players will use to connect to your server!
+ If you enable <code class="language-plaintext highlighter-rouge">clone-remote-port</code>, the port will be overridden and the Java port is used.
+ Since you are self-hosting, you can choose the port freely - the default port is 19132. <br />
+ <strong>Important</strong>: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
+<br /></p>
+  </li>
+  <li>
+    <p>Connecting to your server
+<br /> <br />
+ <strong>Connecting locally in the same network</strong> <br />
+ On the same device as the server, you can connect using <code class="language-plaintext highlighter-rouge">localhost</code>, or <code class="language-plaintext highlighter-rouge">127.0.0.1</code> as the address.
+ Do note: When hosting and playing on the same Windows device, you will need the <a href="/geyser/fixing-unable-to-connect-to-world/#Using-Geyser-on-the-same-computer">loopback fix</a>.
+ Other devices in the same local network can use your local IPv4 to connect - it starts with <code class="language-plaintext highlighter-rouge">10.</code> or <code class="language-plaintext highlighter-rouge">192.168.</code>.
+<br /> <br />
+ <strong>Connecting from a different network</strong><br />
+ You will need to expose the port Geyser runs on to the Internet if you want players from outside your network to join.
+ To achieve that, you have two options: <br /></p>
+
+    <ul>
+      <li>
+        <p>Port forwarding: Open the Geyser port (e.g. 19132) on the UDP protocol in your router/modem, and in the Windows/Linux firewall.
+<a href="/geyser/port-forwarding">Our port forwarding guide</a> explains how to do this in detail.
+After doing this, players can connect with your public IPv4 + port to your server. <br /></p>
+      </li>
+      <li>
+        <p>playit.gg: Instead of opening a port (which might not be an option/if you do not want to expose your home ip), you can use
+the playit.gg service to create a tunnel for you to route the traffic through. See our <a href="/geyser/playit-gg">playit.gg guide</a>.
+Ngrok will not work since it is TCP-only. <br /></p>
+      </li>
+    </ul>
+  </li>
+  <li>Verify whether connections from other networks are possible by running <code class="language-plaintext highlighter-rouge">geyser connectiontest &lt;ip&gt;:&lt;port&gt;</code> in the console.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+</div>
+
+    </div>
+    <div id="fabric-option-selfhost" class="tab-pane fade" role="tabpanel">
+
+
+<h1 id="fabric-setup---self-hosting">Fabric setup - self-hosting</h1>
+
+<div class="alert alert-warning" role="alert">
+	Geyser-Fabric runs <b>only</b> on a 1.20.2 Fabric server. <br />
+To use Geyser on an older Fabric server, you can use Geyser on a BungeeCord/Velocity proxy, or Geyser Standalone instead.
+ </div>
+
+<ol>
+  <li>Download the mod from <a href="https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/fabric">the download page</a>.</li>
+  <li>Place the Geyser-Fabric.jar in the <code class="language-plaintext highlighter-rouge">mods</code> folder, and restart the server. <strong>You also need <a href="https://modrinth.com/mod/fabric-api">FabricAPI</a>.</strong></li>
+  <li>
+    <p>Open your Geyser config, located in <code class="language-plaintext highlighter-rouge">/config/Geyser-Fabric/config.yml</code>, and find the following:</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">bedrock</span><span class="pi">:</span>
+   <span class="c1"># The IP address that will listen for connections. </span>
+   <span class="c1"># Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server. </span>
+   <span class="c1">#address: 0.0.0.0 </span>
+
+   <span class="c1"># The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.</span>
+   <span class="na">port</span><span class="pi">:</span> <span class="s">19132</span>
+</code></pre></div>    </div>
+    <p>The vital part is the port. This is the port that Bedrock players will use to connect to your server!
+If you enable <code class="language-plaintext highlighter-rouge">clone-remote-port</code>, the port will be overridden and the Java port is used.
+Since you are self-hosting, you can choose the port freely - the default port is 19132. <br />
+<strong>Important</strong>: Other services/mods that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
+<br /></p>
+  </li>
+  <li>
+    <p>Connecting to your server
+<br /> <br />
+<strong>Connecting locally in the same network</strong> <br />
+On the same device as the server, you can connect using <code class="language-plaintext highlighter-rouge">localhost</code>, or <code class="language-plaintext highlighter-rouge">127.0.0.1</code> as the address.
+Do note: When hosting and playing on the same Windows device, you will need the <a href="/geyser/fixing-unable-to-connect-to-world/#Using-Geyser-on-the-same-computer">loopback fix</a>.
+Other devices in the same local network can use your local IPv4 to connect - it starts with <code class="language-plaintext highlighter-rouge">10.</code> or <code class="language-plaintext highlighter-rouge">192.168.</code>.
+<br /> <br />
+<strong>Connecting from a different network</strong><br />
+You will need to expose the port Geyser runs on to the Internet if you want players from outside your network to join.
+To achieve that, you have two options: <br /></p>
+
+    <ul>
+      <li>
+        <p>Port forwarding: Open the Geyser port (e.g. 19132) on the UDP protocol in your router/modem, and in the Windows/Linux firewall.
+<a href="/geyser/port-forwarding">Our port forwarding guide</a> explains how to do this in detail.
+Then, players can connect with your public IPv4 + port to your server. <br /></p>
+      </li>
+      <li>
+        <p>playit.gg: Instead of opening a port (which might not be an option/if you do not want to expose your home ip), you can use
+the playit.gg service to create a tunnel for you to route the traffic through. See our <a href="/geyser/playit-gg">playit.gg guide</a>.
+Ngrok will not work since it is TCP-only. <br /></p>
+      </li>
+    </ul>
+  </li>
+  <li>Verify whether connections from other networks are possible by running <code class="language-plaintext highlighter-rouge">geyser connectiontest &lt;ip&gt;:&lt;port&gt;</code> in the console.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+</div>
+
+    </div>
+    <div id="proxy-option-selfhost" class="tab-pane fade" role="tabpanel">
+
+
+<h1 id="proxy-setup---self-hosting">Proxy setup - self-hosting</h1>
+
+<div class="alert alert-info" role="alert">
+    NOTE: <br />
+    - Install Geyser <b>only</b> on the proxy server! You can install Floodgate on all servers for better skin support &amp;
+        network-wide Floodgate API availability for other plugins. <br />
+    - All servers on the network must accept 1.20.2 Java clients, as Geyser imitates one.
+</div>
+
+<ol>
+  <li>Download the plugin for your proxy software from <a href="https://geysermc.org/download">the download page</a>.</li>
+  <li>Place the Geyser jar in the <code class="language-plaintext highlighter-rouge">plugins</code> folder, and restart the server.</li>
+  <li>
+    <p>Open your Geyser config, located in <code class="language-plaintext highlighter-rouge">/plugins/Geyser-xyz/config.yml</code>, and find the following:</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="na">bedrock</span><span class="pi">:</span>
+     <span class="c1"># The IP address that will listen for connections. </span>
+     <span class="c1"># Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server. </span>
+     <span class="c1">#address: 0.0.0.0 </span>
+
+     <span class="c1"># The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.</span>
+     <span class="na">port</span><span class="pi">:</span> <span class="s">19132</span>
+</code></pre></div>    </div>
+    <p>The vital part is the port. This is the port that Bedrock players will use to connect to your server!
+ If you enable <code class="language-plaintext highlighter-rouge">clone-remote-port</code>, the port will be overridden and the Java port is used.
+ Since you are self-hosting, you can choose the port freely - the default port is 19132. <br />
+<strong>Important</strong>: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
+<br /></p>
+  </li>
+  <li>
+    <p>Connecting to your server
+<br /> <br />
+ <strong>Connecting locally in the same network</strong> <br />
+ On the same device as the server, you can connect using <code class="language-plaintext highlighter-rouge">localhost</code>, or <code class="language-plaintext highlighter-rouge">127.0.0.1</code> as the address.
+ Do note: When hosting and playing on the same Windows device, you will need the <a href="/geyser/fixing-unable-to-connect-to-world/#Using-Geyser-on-the-same-computer">loopback fix</a>.
+ Other devices in the same local network can use your local IPv4 to connect - it starts with <code class="language-plaintext highlighter-rouge">10.</code> or <code class="language-plaintext highlighter-rouge">192.168.</code>.
+<br /> <br />
+ <strong>Connecting from a different network</strong><br />
+ You will need to expose the port Geyser runs on to the Internet if you want players from outside your network to join.
+ To achieve that, you have two options: <br /></p>
+
+    <ul>
+      <li>
+        <p>Port forwarding: Open the Geyser port (e.g. 19132) on the UDP protocol in your router/modem, and in the Windows/Linux firewall.
+<a href="/geyser/port-forwarding">Our port forwarding guide</a> explains how to do this in detail.
+Then, players can connect with your public IPv4 + port to your server. <br /></p>
+      </li>
+      <li>
+        <p>playit.gg: Instead of opening a port (which might not be an option/if you do not want to expose your home ip), you can use
+the playit.gg service to create a tunnel for you to route the traffic through. See our <a href="/geyser/playit-gg">playit.gg guide</a>.
+Ngrok will not work since it is TCP-only. <br /></p>
+      </li>
+    </ul>
+  </li>
+  <li>Verify whether connections from other networks are possible by running <code class="language-plaintext highlighter-rouge">geyser connectiontest &lt;ip&gt;:&lt;port&gt;</code> in the console.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+</div>
+
+    </div>
+
+    <div id="standalone-option-selfhost" class="tab-pane fade" role="tabpanel">
+
+        <h1 id="geyser-standalone-setup">Geyser-Standalone Setup</h1>
+
+<div class="alert alert-info" role="alert">
+   You need to have Java 16 or higher installed to run Geyser. To run Geyser Standalone on Android or iOS, see the bottom of this page.
+</div>
+
+<div class="alert alert-warning" role="alert">
+   Geyser-Standalone is NOT a plugin or mod! It is a standalone Java program that you would run separately to your Java Edition server.
+</div>
+
+<h1 id="general-setup--configuration">General Setup &amp; Configuration</h1>
+
+<ol>
+  <li>Download Geyser Standalone from <a href="https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone">here</a>.</li>
+  <li>Create a new folder for Geyser, and drop the jar in there.</li>
+  <li>Start Geyser Standalone:
+    <ul>
+      <li><strong>GUI</strong> (Recommended): <br />
+Double-click the jar file and all the necessary files for Geyser will be created.</li>
+      <li>Or use the <strong>console setup</strong>: <br />
+Create a new bat or startup script, similar to the one you’d use for a Spigot/Paper server, and take a look at <a href="/geyser/creating-a-startup-script/">this</a> page for what to put into it. <br />
+Run the startup script/bat, and all the necessary files for Geyser will be created.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Open your Geyser config (<code class="language-plaintext highlighter-rouge">config.yml</code>), and find the following:</p>
+
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">bedrock</span><span class="pi">:</span>
+   <span class="c1"># The IP address that will listen for connections. </span>
+   <span class="c1"># Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server. </span>
+   <span class="c1">#address: 0.0.0.0 </span>
+
+   <span class="c1"># The port that will listen for connections. This is the port that Bedrock players will use to connect to your server.</span>
+   <span class="na">port</span><span class="pi">:</span> <span class="s">19132</span>
+</code></pre></div>    </div>
+    <p>The <code class="language-plaintext highlighter-rouge">port</code> is the port Bedrock players will enter to connect to the server. <br />
+Uncommenting and changing <code class="language-plaintext highlighter-rouge">address</code> here is only needed if you need to limit connections to a specific IP address.
+<br /></p>
+
+    <p>To configure which Java Edition server Geyser Standalone will send players to, find the remote section:</p>
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">remote</span><span class="pi">:</span>
+   <span class="c1"># The IP address of the remote (Java Edition) server</span>
+   <span class="c1"># If it is "auto", for standalone version the remote address will be set to 127.0.0.1.</span>
+   <span class="na">address</span><span class="pi">:</span> <span class="s">auto</span>
+
+   <span class="c1"># The port of the remote (Java Edition) server</span>
+   <span class="na">port</span><span class="pi">:</span> <span class="m">25565</span>
+
+   <span class="c1"># Authentication type. Can be offline, online, or floodgate (see https://github.com/GeyserMC/Geyser/wiki/Floodgate).</span>
+   <span class="na">auth-type</span><span class="pi">:</span> <span class="s">online</span>
+</code></pre></div>    </div>
+    <p>Here, change <code class="language-plaintext highlighter-rouge">address</code> to the Java server’s address, or to <code class="language-plaintext highlighter-rouge">auto</code> if the server is on the same machine as Geyser-Standalone.
+Then, change <code class="language-plaintext highlighter-rouge">port</code> to the Java server’s port. If you have set up Floodgate on the remote Java server, you can set auth-type to “floodgate” - otherwise,
+set it to either <code class="language-plaintext highlighter-rouge">online</code> for an online mode server, or <code class="language-plaintext highlighter-rouge">offline</code> for an offline mode server. To install and set up Floodgate with a Standalone server, see <a href="/floodgate/setup">here</a>. <br /></p>
+  </li>
+  <li>
+    <p>Connecting to your server
+<br /> <br />
+<strong>Connecting locally in the same network</strong> <br />
+On the same device as the server, you can connect using <code class="language-plaintext highlighter-rouge">localhost</code>, or <code class="language-plaintext highlighter-rouge">127.0.0.1</code> as the address.
+Do note: When hosting and playing on the same Windows device, you will need the <a href="/geyser/fixing-unable-to-connect-to-world/#Using-Geyser-on-the-same-computer">loopback fix</a>.
+Other devices in the same local network can use your local IPv4 to connect - it starts with <code class="language-plaintext highlighter-rouge">10.</code> or <code class="language-plaintext highlighter-rouge">192.168.</code>.
+Alternatively, open Minecraft: Bedrock edition, and join the LAN-Server in the <strong>Friends</strong> tab.
+<br /> <br />
+<strong>Connecting from a different network</strong><br />
+You will need to expose the port Geyser runs on to the Internet if you want players from outside your network to join.
+To achieve that, you have two options: <br /></p>
+
+    <ul>
+      <li>
+        <p>Port forwarding: Open the Geyser port (e.g. 19132) on the UDP protocol in your router/modem, and in the Windows/Linux firewall.
+After doing this, players can connect with your public IPv4 + port to your server.
+See <a href="/geyser/port-forwarding/">here</a> for a helpful guide. <br /></p>
+      </li>
+      <li>
+        <p>playit.gg: Instead of opening a port (which might not be an option/if you do not want to expose your home ip), you can use
+the playit.gg service to create a tunnel for you to route the traffic through. See our <a href="/geyser/playit-gg">playit.gg guide</a>.
+Ngrok will not work since it is TCP-only. <br /></p>
+      </li>
+    </ul>
+  </li>
+  <li>Verify whether connections from other networks are possible by running <code class="language-plaintext highlighter-rouge">geyser connectiontest &lt;ip&gt;:&lt;port&gt;</code> in the console.</li>
+</ol>
+
+<h1 id="running-geyser-standalone-on-androidios">Running Geyser-Standalone on Android/iOS</h1>
+
+<div class="alert alert-warning" role="alert">
+   Applications such as Termux on Android are capable of running Geyser, but this largely depends on how powerful your Android device is. Please do so at your own risk.
+</div>
+
+<h2 id="termux-android">Termux (Android)</h2>
+<ol>
+  <li>Download and install <a href="https://termux.com/">Termux</a></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">pkg install openjdk-17</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">wget https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/standalone/build/libs/Geyser-Standalone.jar</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">java -jar Geyser-Standalone.jar</code></li>
+</ol>
+
+<p>OR</p>
+
+<p>We have an automated setup script for clean Termux installs, which might not work for all users. If the manual guide above does not work, try this.
+Run this to start the download/install:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://gist.githubusercontent.com/rtm516/e3e07d6595ee41e05a38b03c0f4d7a80/raw/install.sh | bash
+</code></pre></div></div>
+
+<h2 id="newterm-2-ios">NewTerm 2 (iOS)</h2>
+<p><strong>Note:</strong> A jailbreak is required. You can find what jailbreak to use for your device <a href="https://docs.google.com/spreadsheets/d/11DABHIIqwYQKj1L83AK9ywk_hYMjEkcaxpIg6phbTf0/edit?usp=sharing">here</a>.</p>
+<ol>
+  <li>Install <a href="http://cydia.saurik.com/package/com.tigisoftware.filza/">Filza File Manager</a>.</li>
+  <li>Install <a href="https://chariz.com/get/newterm">NewTerm 2</a>.</li>
+  <li>Download PojavLauncher’s Java 16 JRE for iOS and install it using Filza <a href="https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/download/v16-openjdk/openjdk-16-jre_16.0.0+git20201217.8383f41-2_iphoneos-arm.deb">here</a>.</li>
+  <li>Download this package containing modified java commands, and install it using Filza <a href="https://cdn.discordapp.com/attachments/558829512633090048/834014323755319306/com.letschill.java_0.1_iphoneos-arm.deb">here</a> (Note: Not an official GeyserMC project, install at your own risk).</li>
+  <li>Open NewTerm 2 and run <code class="language-plaintext highlighter-rouge">wget https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone</code></li>
+  <li>Run <code class="language-plaintext highlighter-rouge">java -jar Geyser-Standalone.jar</code>.</li>
+  <li>Geyser should show up in the Friends tab inside Minecraft.</li>
+</ol>
+
+<p><strong>Note:</strong>
+Due to the iOS environment, if your device has low specs, iOS might end up killing NewTerm 2 while you’re playing, stopping the server. There is no fix for that because of how iOS works.</p>
+
+    </div>
+
+</div>
+  </div>
+</div>
+
+<div class="alert alert-warning" role="alert">
+  <b>Experiencing issues?</b> <br />
+  Start with the <a href="/geyser/common-issues/">Common Issues</a> page.
+  If your issue is not included there, join our <a href="https://discord.gg/geysermc">Discord server</a> for support.
+</div>
+
+<h4 class="mt-4">Further information:</h4>
+<ul>
+  <li><a href="/geyser/understanding-the-config/">Full config documentation</a></li>
+  <li><a href="/geyser/current-limitations/">Current Limitations</a></li>
+  <li><a href="/geyser/faq/">Frequently asked questions</a></li>
+</ul>
+
+
+			</main>
+			<div class="col-2 d-none d-xl-block">
+				<div class="sticky-top">
+					<div class="sidebar py-2">
+						<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/edit/master/_docs/geyser/setup.md" target="_blank"><i class="bi bi-pencil"></i> Edit this page</a>
+<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/issues/new?labels=question&title=Question:&body=Question on: _docs/geyser/setup.md" target="_blank"><i class="bi bi-github"></i> Create Wiki issue/bug report</a>
+<a class="d-block text-decoration-none" href="/issues/new" target="_blank"><i class="bi bi-list-check"></i> Create Geyser issue/bug report</a>
+
+<div id="page-nav" class="py-3 d-none"></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <footer class="p-4 text-center bg-body-tertiary">
+		&copy; 2023 GeyserMC
+	</footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="/js/page-nav.js"></script>
+  </body>
+</html>

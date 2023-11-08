@@ -5,7 +5,7 @@ permalink: /
 <div class="my-3 text-center">
   <img src="https://geysermc.org/img/geyser.png" alt="geyser logo">
 </div>
-<br>
+  
 
 # GeyserMC Wiki
 

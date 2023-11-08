@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GeyserMC Wiki: Understanding the Config</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/darcula.css">
+
+	<meta name="author" content="GeyserMC">
+	<meta name="description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta name="theme-color" content="#2b3035">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://localhost:4000">
+	<meta property="og:title" content="GeyserMC Wiki: Understanding the Config">
+	<meta property="og:description" content="This is the wiki for all of GeyserMC's projects.">
+	<meta property="og:image" content="/android-chrome-192x192.png">
+
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#248f00">
+  </head>
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/"><img src="/android-chrome-512x512.png" alt="geyser logo" height="32"> GeyserMC Wiki</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarLinks">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/"><i class="bi bi-house pe-1"></i> Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://geysermc.org/download"><i class="bi bi-download pe-1"></i> Download</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search" action="/search/">
+						<div class="input-group">
+							<button class="btn btn-outline-secondary" type="submit" id="button-search"><i class="bi bi-search"></i></button>
+							<input type="text" name="q" class="form-control" placeholder="Search the site..." aria-label="Search the site..." aria-describedby="button-search">
+						</div>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="page-content" class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-3 col-xl-2">
+				<div class="sticky-top">
+					<div class="sidebar py-2 text-break">
+						<nav class="navbar navbar-expand-md">
+	<div class="container-fluid">
+		<div class="d-block d-md-none">Wiki Navigation</div>
+		<button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse flex-column align-items-start" id="sidebarNav">
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold show" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Geyser Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc show">
+
+						<li class="ms-4">
+							<a href="/geyser/setup/">Setting up Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/supported-hosting-providers/">Supported Hosting Providers</a>
+										</li>
+
+										<li>
+											<a href="/geyser/using-geyser-with-consoles/">Using Geyser with Consoles</a>
+										</li>
+
+										<li>
+											<a href="/geyser/playit-gg/">Using playit.gg with Geyser</a>
+										</li>
+
+										<li>
+											<a href="/geyser/creating-a-startup-script/">Creating a Startup Script</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/common-issues/">Common Issues</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/fixing-unable-to-connect-to-world/">Fixing 'Unable to Connect to World'</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/understanding-the-config/">Configuring Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/geyser/geyser-command-line-arguments-and-system-properties/">Geyser Command Line Arguments and System Properties</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/faq/">FAQ</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/anticheat-compatibility/">Anticheat Compatibility</a>
+										</li>
+
+										<li>
+											<a href="/geyser/current-limitations/">Current Limitations</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-items/">Custom items with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-items/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-items/#resource-pack">Resource pack</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-blocks/">Custom blocks with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-blocks/#enabling-custom-blocks">Enabling custom blocks</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#json-mappings">JSON mappings</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-blocks/#geyser-extensions">Geyser extensions</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/custom-skulls/">Custom skulls with Geyser</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/custom-skulls/#enabling-custom-skulls">Enabling custom skulls</a>
+										</li>
+
+										<li>
+											<a href="/geyser/custom-skulls/#custom-skullsyml">custom-skulls.yml</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/api/">Geyser API</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/getting-started-with-the-api/">Getting Started</a>
+										</li>
+
+										<li>
+											<a href="/geyser/api/#short-overview-of-the-geyser-api">Overview</a>
+										</li>
+
+										<li>
+											<a href="/geyser/events/">Events</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/extensions/">Geyser Extensions</a>
+
+								<ul>
+
+										<li>
+											<a href="/geyser/extensions/#creating-the-main-class">Main class</a>
+										</li>
+
+										<li>
+											<a href="/geyser/extensions/#creating-commands-with-geyser-extensions">Creating Commands</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/geyser/global-api/">Global API</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Floodgate Documentation</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/floodgate/setup/">Setup</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/issues/">Issues</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/faq/">FAQ</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/features/">Features</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/features/#whitelist-command">Whitelist command</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/commands/">Commands</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/features/#what-is-skin-uploading">Skin Uploading</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/api/">Floodgate API</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/player/">FloodgatePlayer</a>
+										</li>
+
+										<li>
+											<a href="/geyser/forms/">Forms and Cumulus</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/floodgate/linking/">Linking</a>
+
+								<ul>
+
+										<li>
+											<a href="/floodgate/linking/#what-is-global-linking">Global Linking</a>
+										</li>
+
+										<li>
+											<a href="/floodgate/linking/#local-linking">Local Linking</a>
+										</li>
+
+								</ul>
+
+						</li>
+
+				</ul>
+			</div>
+
+
+
+
+			<div class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">Other</a>
+				<ul class="pe-3 pt-0 dropdown-menu position-relative border-0 list-disc">
+
+						<li class="ms-4">
+							<a href="/other/geyseroptionalpack/">GeyserOptionalPack</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/hurricane/">Hurricane</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/geyserconnect/">GeyserConnect</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/community-geyser-projects/">Community Geyser Projects</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/test-server/">Test Server</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/developer-guide/">Developer Guide</a>
+
+						</li>
+
+						<li class="ms-4">
+							<a href="/other/discord-bot-usage/">Geyser Discord Bot Usage</a>
+
+						</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</nav>
+					</div>
+				</div>
+			</div>
+			<main class="col-12 col-md-9 col-xl-8" role="main">
+				<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+
+
+
+
+                <li class="breadcrumb-item"><a href="http://localhost:4000/geyser/">Geyser</a></li>
+
+
+
+
+                <li class="breadcrumb-item active" aria-current="page">Understanding the Config</li>
+
+
+    </ol>
+</nav>
+
+<p>This page covers basic information about the Geyser config and what each option does. Though they are explained in the configuration itself, this explains what each option does in more detail.</p>
+
+<h2 id="bedrock-section">Bedrock Section</h2>
+<p>The options for Geyser on the Bedrock-facing end. Mostly contains options for how Bedrock edition will see the server.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">address</code></strong>: The address of Geyser on the Bedrock end. In most all scenarios, this should not need to be changed, unless you want to limit what IPs can connect to your server. Leave it at 0.0.0.0 (default), unless otherwise instructed in the setup guide.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">port</code></strong>: The port Geyser will run on. By default, it is 19132 in Bedrock. If you are using a server hosting provider, you may not have this port available to you - in which case, read the setup guide to proceed.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">clone-remote-port</code></strong>: Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock/UDP connections. This option makes the Bedrock port the same as the Java port every time you start the server. This option does not do anything on the Standalone version of Geyser.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">motd1</code></strong>: The first line of the MOTD for Geyser.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">motd2</code></strong>: The second line of the MOTD for Geyser. <strong>Please keep in mind, this option will only work if Geyser is shown in the Friends tab!</strong></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">server-name</code></strong>: The world name that is shown in the top-right area of the pause menu and the settings menu.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">compression-level</code></strong>: An number value that represents how much to compress outgoing traffic. Can be any number from -1 to 9; any other value will be replaced with the nearest acceptable value. The higher the number, the more CPU processing that is used but with less bandwidth used. Default is 6.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">enable-proxy-protocol</code></strong>:  Whether to enable PROXY protocol or not for clients. You DO NOT WANT this feature unless you run UDP reverse proxy in front of your Geyser instance. You do NOT need this for BungeeCord (and forks), Velocity, or Waterfall.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">proxy-protocol-whitelisted-ips</code></strong>: Disabled by default, and only enable this if you use “enable-proxy-protocol”. A list of allowed PROXY protocol speaking proxy IP addresses/subnets. Should really only be used when you are not able to use a proper firewall (usually true with shared hosting providers etc.). Keeping this list empty means there is no IP address whitelist. Both IP addresses and subnets are supported.</p>
+
+<h2 id="remote-section">Remote Section</h2>
+<p>Options for the remote (Java) server.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">address</code></strong>: The address of the Minecraft: Java Edition server you want to join. By default, this value is <code class="language-plaintext highlighter-rouge">auto</code>. By keeping it as <code class="language-plaintext highlighter-rouge">auto</code>, the address, port, and Floodgate support will be automatically configured. In standalone, keeping this as <code class="language-plaintext highlighter-rouge">auto</code> sets the remote address to 127.0.0.1.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">port</code></strong>: The port of the Minecraft: Java Edition server you specified in the <code class="language-plaintext highlighter-rouge">address</code> section. For plugin versions, if address has been set to “auto”, the port will also follow the server’s listening port.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">auth-type</code></strong>: The authentication type of the Minecraft: Java Edition server. Valid options are <code class="language-plaintext highlighter-rouge">online</code>, <code class="language-plaintext highlighter-rouge">offline</code>, and <code class="language-plaintext highlighter-rouge">floodgate</code>.</p>
+
+<p><strong>Please keep in mind, what you specify in the Geyser <code class="language-plaintext highlighter-rouge">auth-type</code> option MUST be the same as what the remote server has (with the exception of Geyser being in online mode and remote being in offline mode). You simply cannot join an online mode server without a genuine account. If you want to allow Minecraft: Bedrock Edition accounts to join without a Minecraft: Java Edition account, see the <a href="/floodgate/">Floodgate</a> wiki page.</strong></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">use-proxy-protocol</code></strong>: Whether to enable PROXY/HAProxy protocol or not while connecting to the server. This is useful only when:</p>
+<ul>
+  <li>Your server supports PROXY protocol (it probably doesn’t)</li>
+  <li>You run Velocity or BungeeCord with its respective option enabled.</li>
+  <li>IF YOU DON’T KNOW WHAT THIS IS, DON’T TOUCH IT!</li>
+</ul>
+
+<p><strong><code class="language-plaintext highlighter-rouge">forward-hostname</code></strong>: Forwards the hostname/IP address that the Bedrock client used to connect over to the Java server. This is designed to be used for forced hosts on proxies.</p>
+
+<h2 id="general-options">General Options</h2>
+<p>General Geyser options that are mostly specific to Geyser itself.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">floodgate-key-file</code></strong>:  Floodgate uses encryption to ensure use from authorised sources. This should point to the public key generated by Floodgate (BungeeCord, Spigot or Velocity). You can ignore this when not using Floodgate. If you’re using a plugin version of Floodgate on the same server, the key will automatically be picked up from Floodgate.The key file path for Floodgate. Requires that you have <a href="/floodgate/">Floodgate</a> installed and the <code class="language-plaintext highlighter-rouge">auth-type</code> set to <code class="language-plaintext highlighter-rouge">floodgate</code>.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">saved-user-logins</code></strong>: For online mode authentication type only.
+Stores a list of Bedrock players that should have their Java Edition account saved after login.
+This saves a token that can be reused to authenticate the player later. This does not save emails or passwords,
+but you should still be cautious when adding to this list and giving others access to this Geyser instance’s files.
+Removing a name from this list will delete its cached login information on the next Geyser startup.
+The file that tokens will be saved in is in the same folder as this config, named <code class="language-plaintext highlighter-rouge">saved-refresh-tokens.json</code>.</p>
+
+<p>Format:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">saved-user-logins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jeb_</span>
+  <span class="pi">-</span> <span class="s">Dinnerbone</span>
+</code></pre></div></div>
+
+<p><strong><code class="language-plaintext highlighter-rouge">command-suggestions</code></strong>: Bedrock clients freeze or crash when opening up the command prompt for the first time with a large amount of command suggestions. This config option disables command suggestions being sent to prevent any freezing. <strong>Since 1.16.100:</strong> command freezing and crashing has been largely reduced; you may no longer need this option disabled.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">passthrough-motd</code></strong>: If the MOTD should be relayed from the remote server. Causes the <code class="language-plaintext highlighter-rouge">motd1</code> and <code class="language-plaintext highlighter-rouge">motd2</code> options in the bedrock section to no longer have a use.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">passthrough-protocol-name</code></strong>: Relay the protocol name (e.g. BungeeCord [X.X], Paper 1.X) - this is only really useful when using a custom protocol name! This will also show up on sites like MCSrvStatus. <mcsrvstat.us></mcsrvstat.us></p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">passthrough-player-count</code></strong>: If the current and max player counts should be relayed from the remote server.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">legacy-ping-passthrough</code></strong>: If enabled, manually pings the server by impersonating a Minecraft client instead of using the server’s API. <strong>This option should <em>only</em> be enabled if your MOTD or player count is not accurate,</strong> as it can cause errors especially on BungeeCord. This option does nothing on Geyser Standalone.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">ping-passthrough-interval</code></strong>: How often the fake Minecraft client should attempt to ping the remote server to update information, in seconds (a setting of 1 will ping the server every second; a setting of 3 will ping the server every three seconds). Only relevant for standalone and legacy ping passthrough. Increase the number if you’re getting timeout or BrokenPipe exceptions.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">forward-player-ping</code></strong>: Whether to forward player ping to the server. While enabling this will allow Bedrock players to have more accurate ping, it may also cause players to time out more easily.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">max-players</code></strong>: The maximum amount of players shown when pinging the server. This does not actually cap how many players can join the Geyser instance at this time. The number will visually increase when pinging if the amount of players is greater, as Bedrock clients will not even attempt to join a full server.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">debug-mode</code></strong>: If debug messages should be printed in console. Useful if you run into an error and need more context. Yes, this will cause more messages, warnings or even errors in console - some packets aren’t translated.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">allow-third-party-capes</code></strong>: If third party (Optifine, 5zig, LabyMod, etc.) capes should be displayed to the bedrock player.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">allow-third-party-ears</code></strong>: If third party Deadmau5-style ears should be enabled. Currently only supports MinecraftCapes.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">show-cooldown</code></strong>: Bedrock Edition currently does not have Java Edition 1.9+ combat mechanics. In order to get around this, Geyser sends a fake cooldown by sending a title message. This cooldown should not show if 1.8 combat mechanics are in use. The options available for this setting are <code class="language-plaintext highlighter-rouge">false</code> (no cooldown is sent), <code class="language-plaintext highlighter-rouge">title</code>/<code class="language-plaintext highlighter-rouge">true</code> (a cooldown indication is shown in the title), or <code class="language-plaintext highlighter-rouge">actionbar</code> (a cooldown indication is shown in the action bar). All other options default to <code class="language-plaintext highlighter-rouge">false</code>.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">show-coordinates</code></strong>: Bedrock Edition has an option to show coordinates in the top-left part of your screen. This setting enables or disables this.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">disable-bedrock-scaffolding</code></strong>: Whether Bedrock players are blocked from performing their scaffolding-style bridging.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">emote-offhand-workaround</code></strong>: Since Java Edition 1.9, clients have had the ability to switch the item in their mainhand and offhand with a keybind. Bedrock Edition does not have this ability, so this config option makes up for it, If set, when a Bedrock player performs any emote, it will swap the offhand and mainhand items, just like the Java Edition keybind. There are three options this can be set to:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">disabled</code> - the default/fallback, which doesn’t apply this workaround</li>
+  <li><code class="language-plaintext highlighter-rouge">no-emotes</code> - emotes will NOT be sent to other Bedrock clients and offhand will be swapped. This effectively disables all emotes from being seen.</li>
+  <li><code class="language-plaintext highlighter-rouge">emotes-and-offhand</code> - emotes will be sent to Bedrock clients and offhand will be swapped</li>
+</ul>
+
+<p><strong><code class="language-plaintext highlighter-rouge">default-locale</code></strong>: The default locale to send to players if their locale could not be found. Check <a href="/geyser/faq/#what-languages-does-geyser-support">this</a> page to find the code corresponding to your language. This option is disabled by default - to enable it, remove the “#” in front of the option.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">cache-images</code></strong>: Specify how many days images will be cached to disk to save downloading them from the internet. A value of 0 is disabled. (Default: 0)</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">allow-custom-skulls</code></strong>: Allows custom skulls to be displayed when placed. Keeping them enabled may cause a performance decrease on older/weaker devices.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">max-visible-custom-skulls</code></strong>: The maximum number of custom skulls to be displayed per player. Increasing this may decrease performance on weaker devices. Setting this to -1 will cause all custom skulls to be displayed regardless of distance or number.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">custom-skull-render-distance</code></strong>: A number value specifying the radius in blocks around the player in which custom skulls are displayed. 32 by default.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">add-non-bedrock-items</code></strong>: Whether to add (at this time, only) the furnace minecart as a separate item in the game, which normally does not exist in Bedrock Edition. This should only need to be disabled if using a proxy that does not use the “transfer packet” style of server switching. If this is disabled, furnace minecart items will be mapped to hopper minecart items. This option requires a restart of Geyser in order to change its setting.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">above-bedrock-nether-building</code></strong>: Bedrock prevents building and displaying blocks above Y127 in the Nether - enabling this config option works around that by changing the Nether dimension ID to the End ID. The main downside to this is that the sky will resemble that of the End sky in the Nether, but ultimately it’s the only way for this feature to work.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">force-resource-packs</code></strong>: Force clients to load all resource packs if there are any. If set to false, it allows the user to disconnect from the server if they don’t want to download the resource packs.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">xbox-achievements-enabled</code></strong>: Allows Xbox achievements to be unlocked. <strong>This disables certain commands so the Bedrock client can’t “cheat” to get them; this cannot be worked around if you want to enable this</strong>. Commands such as /gamemode and /give will not work from Bedrock with this enabled.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">log-player-ip-addresses</code></strong>: Whether player IP addresses will be logged by the server.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">notify-on-new-bedrock-update</code></strong>: Whether to alert the console and operators that a new Geyser version is available that supports a Bedrock version that this Geyser version does not support. It’s recommended to keep this option enabled, as many Bedrock platforms auto-update.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">unusable-space-block</code></strong>: Which item to use to mark unavailable slots in a Bedrock player inventory. Examples of this are the 2x2 crafting grid while in creative, or custom inventory menus with sizes different from the usual 3x9. A barrier block is the default item (minecraft:barrier is therefore the default value). Takes any Minecraft Bedrock identifier, e.g. <code class="language-plaintext highlighter-rouge">minecraft:apple</code>. To set this to a custom item, you will need to add the <code class="language-plaintext highlighter-rouge">geyser_custom:</code> namespace.</p>
+
+<h2 id="metrics">Metrics</h2>
+
+<p>bStats is a stat tracker that is entirely anonymous and tracks only basic information about Geyser, such as how many people are online, how many servers are using Geyser, what OS is being used, etc. You can learn more about bStats <a href="https://bstats.org/">here</a>. To see Geyser Stats, see <a href="https://bstats.org/plugin/server-implementation/GeyserMC/">here</a>.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">enabled</code></strong>: If metrics are enabled</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">uuid</code></strong>: UUID of the server, don’t change this!</p>
+
+<h2 id="advanced-options">Advanced Options</h2>
+
+<p><strong><code class="language-plaintext highlighter-rouge">scoreboard-packet-threshold</code></strong>: Geyser updates the Scoreboard after every Scoreboard packet, but when Geyser tries to handle a lot of scoreboard packets per second can cause serious lag. This option allows you to specify after how many Scoreboard packets per seconds the Scoreboard updates will be then limited to four updates per second.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">enable-proxy-connections</code></strong>: Allow connections from ProxyPass and Waterdog. See https://www.spigotmc.org/wiki/firewall-guide/ for assistance - use UDP instead of TCP. <strong>This option does not need to be enabled in instances like BungeeCord or Velocity</strong>.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">mtu</code></strong>: https://en.wikipedia.org/wiki/Maximum_transmission_unit - The internet supports a maximum MTU of 1492 but could cause issues with packet fragmentation. 1400 is the default.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">use-direct-connection</code></strong>: Whether to connect directly into the Java server without creating a TCP connection. This should only be disabled if a plugin that interfaces with packets or the network does not work correctly with Geyser. If enabled on plugin versions, the remote address and port sections are ignored. If disabled on plugin versions, expect performance decrease and latency increase.</p>
+
+<p>Default Geyser Config: <a href="https://github.com/GeyserMC/Geyser/blob/master/core/src/main/resources/config.yml">config.yml</a></p>
+
+
+			</main>
+			<div class="col-2 d-none d-xl-block">
+				<div class="sticky-top">
+					<div class="sidebar py-2">
+						<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/edit/master/_docs/geyser/understanding-the-config.md" target="_blank"><i class="bi bi-pencil"></i> Edit this page</a>
+<a class="d-block text-decoration-none" href="https://github.com/GeyserMC/GeyserWiki/issues/new?labels=question&title=Question:&body=Question on: _docs/geyser/understanding-the-config.md" target="_blank"><i class="bi bi-github"></i> Create Wiki issue/bug report</a>
+<a class="d-block text-decoration-none" href="/issues/new" target="_blank"><i class="bi bi-list-check"></i> Create Geyser issue/bug report</a>
+
+<div id="page-nav" class="py-3 "></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <footer class="p-4 text-center bg-body-tertiary">
+		&copy; 2023 GeyserMC
+	</footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="/js/page-nav.js"></script>
+  </body>
+</html>
