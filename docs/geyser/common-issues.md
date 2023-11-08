@@ -79,7 +79,7 @@ See [this page](/floodgate/setup/) for more information.
 See [this page](/geyser/secure-chat/).
 
 ### Mojang Resetting Account Credentials
-This is unfortunately something we have no control over, and is most likely the case when you're running Geyser as a plugin on a server host or joining a friend far away from your location. If you're running Geyser locally, this should not happen to you, but what we recommend for servers is a plugin we make called [Floodgate](https://github.com/GeyserMC/Floodgate), which allows for Bedrock clients to join your server without needing a Java Edition account. Take a look [here](Floodgate) for more information.
+This is unfortunately something we have no control over, and is most likely the case when you're running Geyser as a plugin on a server host or joining a friend far away from your location. If you're running Geyser locally, this should not happen to you, but what we recommend for servers is a plugin we make called [Floodgate](https://github.com/GeyserMC/Floodgate), which allows for Bedrock clients to join your server without needing a Java Edition account. Take a look [here](/floodgate) for more information.
 
 # "Invalid IP address!" from Bedrock
 This can happen if the domain you are entering resolves to a SRV record, which Bedrock does not support. Try using the IPv4 address instead.

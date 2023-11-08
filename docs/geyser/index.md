@@ -4,7 +4,8 @@ permalink: /geyser/
 ---
 
 # Geyser
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?label=License)](LICENSE)
+
+[//]: # ([![License: MIT]&#40;https://img.shields.io/badge/license-MIT-blue.svg?label=License&#41;]&#40;LICENSE&#41;)
 [![Build Status](https://github.com/GeyserMC/Geyser/actions/workflows/build.yml/badge.svg)](https://github.com/GeyserMC/Geyser/actions/workflows/build.yml)
 [![Discord](https://img.shields.io/discord/613163671870242838?color=cornflowerblue&label=Discord&logo=Discord&logoColor=white)](https://discord.geysermc.org)
 

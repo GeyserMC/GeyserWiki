@@ -39,6 +39,8 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/GeyserMC/Geyser/tree/main/',
+
+          routeBasePath: '/', // Serve the docs at the site's root
         },
         blog: false,
         theme: {
@@ -87,15 +89,6 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
@@ -116,12 +109,8 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/GeyserMC/Geyser',
             },
           ],
         },
