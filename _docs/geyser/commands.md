@@ -3,9 +3,17 @@ title: Commands
 ---
 
 # Commands and Permissions
+Geyser features many built-in commands that can be used by players or server owners.
+
+<div class="alert alert-info" role="alert">
+   When using BungeeCord and Velocity, you will need to use a permission plugin such as <a href="https://luckperms.net/">LuckPerms</a>
+on the proxy server to assign permissions to players. Assigning permissions on the backend servers will not work.
+</div>
+
+## Geyser commands & their permissions <br>
 
 | Command | Permission | Description |
-|:---:|:---:|:---:|
+| :--- | :--- | :--- |
 | `geyser help` <br> `geyser ?` | `geyser.command.help` | Shows help for all registered commands. |
 | `geyser advancements` | `geyser.command.advancements` | Open the Java advancements menu. |
 | `geyser dump` | `geyser.command.dump` | Dumps Geyser debug information for bug reports. |
@@ -18,12 +26,13 @@ title: Commands
 | `geyser version` | `geyser.command.version` | Shows the current Geyser version and checks for updates. |
 | `geyser tooltips` | `geyser.command.tooltips`| Toggle showing Advanced Tooltips (F3 + H on Java) |
 
-# Other Permissions
+<br>
+## Other Permissions <br>
+Besides commands, there are other permissions that are used to guard specific Geyser features.
 
 | Permission | Description |
-|:---:|:---:|
-| `geyser.settings.server` | Allow players to use the game menu. (Also requires player to have op.) |
+| `geyser.settings.server` | Allow players to use the [game settings menu](/img/wiki/game_menu.png). (Also requires player to have op.) |
 
-![img]({{ '/img/wiki/game_menu.png' | relative_url }})
-
+<br>
+## Floodgate commands and permissions <br>
 For Floodgate commands, see [here](/floodgate/commands/).
