@@ -260,6 +260,11 @@
       "description_template": "ip_and_port"
     },
     {
+      "name": "MCPEhost.ru",
+      "url": "https://mcpehost.ru",
+      "description_template": "Create an additional port in the server settings and enable UDP protocol, then use that as the `bedrock port` in the config. Connect with the Java IP and that new port."
+    },
+    {
       "name": "Meloncube",
       "url": "https://www.meloncube.net/",
       "description": "Contact the support for a UDP port to use for Geyser. Set that port as the `bedrock port`, and connect with it."
@@ -402,10 +407,6 @@
     }
   ],
   "no_support": [
-    {
-      "name": "MCPEhost",
-      "url": "https://mcpehost.ru/"
-    },
     {
       "name": "MyArena",
       "url": "https://www.myarena.ru/",
