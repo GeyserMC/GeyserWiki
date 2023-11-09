@@ -104,6 +104,6 @@ Creator: [Vincss](https://github.com/vincss)
 
 ## TydiumCraft Skin API
 An API makes it easier for your Bedrock skin to be rendered and outputted!
-* [Website](https://tydiumcraft.net/)
+* [Website](https://tydiumcraft.net/api)
 
 Creators: [Tydium](https://github.com/Tydium)
