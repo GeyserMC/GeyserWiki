@@ -349,12 +349,11 @@ public class RedstoneDot implements Extension {
         BoxComponent selectionBox = new BoxComponent(-5, 0, -5, 10, 1f, 10);
 
         CustomBlockComponents components = CustomBlockComponents.builder()
-                .collisionBox(BoxComponent.EMPTY_BOX)
+                .collisionBox(BoxComponent.emptyBox())
                 .selectionBox(selectionBox)
                 .geometry(new GeometryComponentBuilder()
                     .identifier("geometry.amberichu.redstone_dot")
                     .build())
-                .destroyTime(0f)
                 .lightEmission(0)
                 .lightDampening(0)
                 .friction(1f)
@@ -362,7 +361,7 @@ public class RedstoneDot implements Extension {
 
         CustomBlockData redstoneDot = CustomBlockData.builder()
                 .name("redstone_dot")
-                .intProperty(POWER_PROPERTY, IntStream.range(0, 16).boxed().toList())
+                .intProperty("POWER_PROPERTY", IntStream.range(0, 16).boxed().toList())
                 .components(components)
                 .permutations(createRedstoneDotPermutations())
                 .build();
@@ -410,12 +409,11 @@ public class RedstoneDot implements Extension {
         BoxComponent selectionBox = new BoxComponent(-5, 0, -5, 10, 1f, 10);
 
         CustomBlockComponents components = CustomBlockComponents.builder()
-                .collisionBox(BoxComponent.EMPTY_BOX)
+                .collisionBox(BoxComponent.emptyBox())
                 .selectionBox(selectionBox)
                 .geometry(new GeometryComponentBuilder()
                     .identifier("geometry.amberichu.redstone_dot")
                     .build())
-                .destroyTime(0f)
                 .lightEmission(0)
                 .lightDampening(0)
                 .friction(1f)
@@ -423,18 +421,18 @@ public class RedstoneDot implements Extension {
 
         CustomBlockData redstoneDot = CustomBlockData.builder()
                 .name("redstone_dot")
-                .intProperty(POWER_PROPERTY, IntStream.range(0, 16).boxed().toList())
+                .intProperty("POWER_PROPERTY", IntStream.range(0, 16).boxed().toList())
                 .components(components)
                 .permutations(createRedstoneDotPermutations())
                 .build();
         
-        event.registerCustomBlock(redstoneDot);
-        event.registerBlockItemOverride("minecraft:redstone_wire", redstoneDot);
+        event.register(redstoneDot);
+        event.registerItemOverride("minecraft:redstone_wire", redstoneDot);
 
         for (int power = 0; power < 16; power++) {
             String javaIdentifier = String.format("minecraft:redstone_wire[east=none,north=none,power=%d,south=none,west=none]", power);
-            event.registerBlockStateOverride(javaIdentifier, redstoneDot.blockStateBuilder()
-                    .intProperty(POWER_PROPERTY, power)
+            event.registerOverride(javaIdentifier, redstoneDot.blockStateBuilder()
+                    .intProperty("POWER_PROPERTY", power)
                     .build());
         }
     }
