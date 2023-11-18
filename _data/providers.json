@@ -246,8 +246,8 @@
     },
     {
       "name": "Hosting-Minecraft",
-      "url:": "https://hosting-minecraft.pro/",
-      "description": "Create a new port and use that port in config. If You have plan from category \"Boost\", you need to open [support ticket](https://my.hosting-minecraft.pro/submitticket.php) to get port with UDP protocol enabled"
+      "url": "https://hosting-minecraft.pro/",
+      "description": "Create a new port and use that port in the config. If you have a plan from the \"Boost\" category, you will need to open a [support ticket](https://my.hosting-minecraft.pro/submitticket.php) to get a port with UDP protocol enabled."
     },
     {
       "name": "HumbleServers",
