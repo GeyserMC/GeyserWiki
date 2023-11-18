@@ -246,7 +246,7 @@
     },
     {
       "name": "Hosting-Minecraft",
-      "url:": "https://hosting-minecraft.pro/",
+      "url": "https://hosting-minecraft.pro/",
       "description": "Create a new port and use that port in config. If You have plan from category \"Boost\", you need to open [support ticket](https://my.hosting-minecraft.pro/submitticket.php) to get port with UDP protocol enabled"
     },
     {
