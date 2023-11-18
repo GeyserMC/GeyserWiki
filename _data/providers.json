@@ -245,6 +245,11 @@
       "description": "Geyser plugin supported with self-install or installed on request with its own port."
     },
     {
+      "name": "Hosting-Minecraft",
+      "url:": "https://hosting-minecraft.pro/",
+      "description": "Create a new port and use that port in config. If You have plan from category \"Boost\", you need to open [support ticket](https://my.hosting-minecraft.pro/submitticket.php) to get port with UDP protocol enabled"
+    },
+    {
       "name": "HumbleServers",
       "url": "https://humbleservers.com/",
       "description": "Set the Bedrock port to the Java server's port, or to one of the two extra ports, and connect with that port. If the subdomain doesn't work, use your regular numbered IP address."
@@ -409,12 +414,7 @@
       "name": "WitherHosting",
       "url": "https://witherhosting.com/",
       "description": "Either use the Java server's port, or create a port in the ports manager on the panel and use that for Bedrock. Refer to the hosts [support article](https://support.witherhosting.com/en/article/how-to-install-and-use-geysermc-1xn5l6v/) for further info."
-    },
-    {
-      "name": "Hosting-Minecraft",
-      "url:": "https://hosting-minecraft.pro/",
-      "description": "Create a new port and use that port in config. If You have plan from category \"Boost\", you need to open [support ticket](https://my.hosting-minecraft.pro/submitticket.php) to get port with UDP protocol enabled"
-    }
+    }    
   ],
   "no_support": [
     {
