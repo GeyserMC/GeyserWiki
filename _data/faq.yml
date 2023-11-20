@@ -35,7 +35,7 @@
 
     - title: What server versions does Geyser support?
       content: |
-        The Geyser-Spigot plugin supports any Minecraft server version 1.13.2 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
+        The Geyser-Spigot plugin supports any Minecraft server version 1.16.5 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
         Since Geyser emulates a {{ site.data.versions.java }} Java Edition client, you need to [install ViaVersion](https://www.spigotmc.org/resources/viaversion.19254/) on your server
         if it is not running the latest version of Minecraft.   
 
