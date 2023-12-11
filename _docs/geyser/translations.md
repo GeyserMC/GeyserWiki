@@ -41,7 +41,7 @@ We aim to support any of the Bedrock languages - below is a list of them and all
 |Chinese Traditional (Taiwan)|zh_tw|
 
 ### Additional languages
-These languages are also supported, and are available in the Bedrock client using [this](https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft) resource pack.
+These languages are also supported, and are available in the Bedrock client using [the Translations for Minecraft resource pack](https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft).
 
 |Name                        |Code |
 |----------------------------|-----|
