@@ -41,6 +41,7 @@ We aim to support any of the Bedrock languages - below is a list of them and all
 |Chinese Traditional (Taiwan)|zh_tw|
 
 ### Additional languages
+These languages are also supported, and are available in the Bedrock client using [this](https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft) resource pack.
 
 |Name                        |Code |
 |----------------------------|-----|
@@ -51,8 +52,8 @@ We aim to support any of the Bedrock languages - below is a list of them and all
 
 ## How can I help translate Geyser?
 We use [Crowdin](https://crowdin.com/project/geyser) to manage our translations.
-We also can add support for more languages, and please request them in the Discord server if you are willing to translate them. 
-(Enabled clientside via [https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft](https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft))
+We also can add support for more languages, and please request them in the Discord server if you are willing to translate them.
+(Those can be enabled clientside via [https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft](https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft))
 
 ## Adding custom Geyser translation overrides
 These strings are only for places where Geyser uses them. To edit Minecraft Java translations, see the section below.
