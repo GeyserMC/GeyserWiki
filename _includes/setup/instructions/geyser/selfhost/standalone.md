@@ -93,15 +93,3 @@ Run this to start the download/install:
 curl https://gist.githubusercontent.com/rtm516/e3e07d6595ee41e05a38b03c0f4d7a80/raw/install.sh | bash
 ```
 
-## NewTerm 2 (iOS)
-**Note:** A jailbreak is required. You can find what jailbreak to use for your device [here](https://docs.google.com/spreadsheets/d/11DABHIIqwYQKj1L83AK9ywk_hYMjEkcaxpIg6phbTf0/edit?usp=sharing).
-1. Install [Filza File Manager](http://cydia.saurik.com/package/com.tigisoftware.filza/).
-2. Install [NewTerm 2](https://chariz.com/get/newterm).
-3. Download PojavLauncher's Java 16 JRE for iOS and install it using Filza [here](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/download/v16-openjdk/openjdk-16-jre_16.0.0+git20201217.8383f41-2_iphoneos-arm.deb).
-4. Download this package containing modified java commands, and install it using Filza [here](https://cdn.discordapp.com/attachments/558829512633090048/834014323755319306/com.letschill.java_0.1_iphoneos-arm.deb) (Note: Not an official GeyserMC project, install at your own risk).
-5. Open NewTerm 2 and run `wget https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone`
-6. Run `java -jar Geyser-Standalone.jar`.
-7. Geyser should show up in the Friends tab inside Minecraft.
-
-**Note:**
-Due to the iOS environment, if your device has low specs, iOS might end up killing NewTerm 2 while you're playing, stopping the server. There is no fix for that because of how iOS works.
