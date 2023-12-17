@@ -1,7 +1,7 @@
 # Geyser-Standalone Setup
 
 <div class="alert alert-info" role="alert">
-   You need to have Java 16 or higher installed to run Geyser. To run Geyser Standalone on Android or iOS, see the bottom of this page.
+   You need to have Java 17 or higher installed to run Geyser. To run Geyser Standalone on Android or iOS, see the bottom of this page.
 </div>
 
 <div class="alert alert-warning" role="alert">
@@ -82,7 +82,7 @@ set it to either `online` for an online mode server, or `offline` for an offline
 ## Termux (Android)
 1. Download and install [Termux](https://termux.com/)
 2. Run `pkg install openjdk-17`
-3. Run `wget https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/standalone/build/libs/Geyser-Standalone.jar`
+3. Run `wget https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone'
 4. Run `java -jar Geyser-Standalone.jar`
 
 OR
