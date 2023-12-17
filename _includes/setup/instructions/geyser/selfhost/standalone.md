@@ -82,7 +82,7 @@ set it to either `online` for an online mode server, or `offline` for an offline
 ## Termux (Android)
 1. Download and install [Termux](https://termux.com/)
 2. Run `pkg install openjdk-17`
-3. Run `wget https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone'
+3. Run `wget https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone`
 4. Run `java -jar Geyser-Standalone.jar`
 
 OR
