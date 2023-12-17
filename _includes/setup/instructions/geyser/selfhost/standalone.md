@@ -1,7 +1,7 @@
 # Geyser-Standalone Setup
 
 <div class="alert alert-info" role="alert">
-   You need to have Java 17 or higher installed to run Geyser. To run Geyser Standalone on Android or iOS, see the bottom of this page.
+   You need to have Java 17 or higher installed to run Geyser. To run Geyser Standalone on Android, see the bottom of this page.
 </div>
 
 <div class="alert alert-warning" role="alert">
@@ -73,7 +73,7 @@ set it to either `online` for an online mode server, or `offline` for an offline
 
 6. Verify whether connections from other networks are possible by running `geyser connectiontest <ip>:<port>` in the console.
 
-# Running Geyser-Standalone on Android/iOS
+# Running Geyser-Standalone on Android
 
 <div class="alert alert-warning" role="alert">
    Applications such as Termux on Android are capable of running Geyser, but this largely depends on how powerful your Android device is. Please do so at your own risk.
