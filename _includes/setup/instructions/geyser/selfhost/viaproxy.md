@@ -6,7 +6,7 @@
 
 1. [Setup ViaProxy](https://github.com/ViaVersion/ViaProxy?tab=readme-ov-file#usage-for-players-gui).
 2. Download the plugin from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/viaproxy).
-3. Place the Geyser-ViaProxy.jar in the `plugins` folder, and restart the proxy.
+3. Place the Geyser-ViaProxy.jar in the `plugins` folder, and restart ViaProxy.
 4. Open your Geyser config, located in `/plugins/Geyser/config.yml`, and find the following:
 
     ```yaml
@@ -24,7 +24,9 @@
     **Important**: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
    <br>
 
-    To install and set up Floodgate with ViaProxy, see [here](/floodgate/setup). <br>
+    If you use the ViaProxy GUI you can use its account management system to join online mode servers with Bedrock Edition. If you want to use ViaProxy infront of a regular server you most likely want to install and [set up Floodgate](/floodgate/setup). <br>
+
+    NOTE: The value of the `auth-type` field is ignored and managed by ViaProxy automatically.
 
 5. Connecting to your server
    <br> <br>
