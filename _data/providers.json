@@ -29,7 +29,7 @@
     {
       "name": "Cubes Hosting",
       "url": "https://www.cubes.host/",
-      "description": "Order a Minecraft Cross-Play (GeyserMC) plan and directly have access to a paper server with GeyserMC pre-installed. Geyser-Standalone can be set up through a support ticket."
+      "description": "Order a Minecraft Cross-Play (GeyserMC) plan and directly have access to a paper server with GeyserMC pre-installed. Configure the second port in the GeyserMC config that came with the service and restart the service. Now you can connect through both the Java and Bedrock Editions of Minecraft. Geyser-Standalone can be set up through a support ticket"
     },
     {
       "name": "exaroton",
@@ -49,7 +49,7 @@
     {
       "name": "Minecraft Host",
       "url": "https://minecraft-host.com/",
-      "description": "Order a Minecraft Cross-Play (GeyserMC) plan and directly have access to a paper server with GeyserMC pre-installed. Geyser-Standalone can be set up through a support ticket."
+      "description": "Order a Minecraft Cross-Play (GeyserMC) plan and directly have access to a paper server with GeyserMC pre-installed. Configure the second port in the GeyserMC config that came with the service and restart the service. Now you can connect through both the Java and Bedrock Editions of Minecraft. Geyser-Standalone can be set up through a support ticket"
     },
     {
       "name": "Minefort",
