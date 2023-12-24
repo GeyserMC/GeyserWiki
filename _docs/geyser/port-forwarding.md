@@ -143,12 +143,15 @@ The steps below assume that you are using the default ports for the Java server 
 3. On the left-hand side, select "Security Lists"
 4. Select one of the security lists. By default only one security list will exist. It doesn't matter which security list we add the rules to.
 5. Select "Add Ingress Rules"
-6. Set "Source CIDR" to `0.0.0.0/0`
-7. Set "Destination Port Range" to `25565-25565`
-8. Select "Another Ingress Rule"
-9. Repeat steps 6 and 7, but with a "Destination Port Range" of `19132-19132`
-10. Set "IP Protocol" to UDP
-11. Select "Add Ingress Rules"
+6. Configure rules for Java (optional)
+   - Set "Source CIDR" to `0.0.0.0/0`
+   - Set "Destination Port Range" to `25565-25565`
+   - Select "Another Ingress Rule"
+7. Configure rules for Geyser
+   - Set "Source CIDR" to `0.0.0.0/0`
+   - Set "Destination Port Range" to `19132-19132`
+   - Set "IP Protocol" to UDP
+8. Select "Add Ingress Rules"
 
 #### Oracle Linux
 
