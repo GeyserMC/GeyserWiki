@@ -145,7 +145,7 @@ The steps below assume that you are using the default ports for the Java server 
 5. Select "Add Ingress Rules"
 6. Set "Source CIDR" to `0.0.0.0/0`
 7. Set "Destination Port Range" to `25565-25565`
-8. Select "Add Another Ingress Rule"
+8. Select "Another Ingress Rule"
 9. Repeat steps 6 and 7, but with a "Destination Port Range" of `19132-19132`
 10. Set "IP Protocol" to UDP
 11. Select "Add Ingress Rules"
