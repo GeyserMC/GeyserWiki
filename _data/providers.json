@@ -7,11 +7,6 @@
   },
   "built_in": [
     {
-      "name": "GameProHost",
-      "url": "https://gameprohost.com/",
-      "description_template": "default"
-    },
-    {
       "name": "Aternos",
       "url": "https://aternos.org/",
       "description": "Install Geyser in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details. Do note: Aternos automatically installs the latest version of the plugin, but does not auto update it. To update Geyser on Aternos, simply reinstall the plugin (no need to uninstall the plugin/deleting the plugin files)."
@@ -211,6 +206,11 @@
     {
       "name": "GameHosting.it",
       "url": "https://www.gamehosting.it/",
+      "description_template": "default"
+    },
+    {
+      "name": "GameProHost",
+      "url": "https://gameprohost.com/",
       "description_template": "default"
     },
     {
