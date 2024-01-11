@@ -9,7 +9,7 @@
     {
       "name": "GameProHost",
       "url": "https://gameprohost.com/",
-      "description": "To install Geyser on GameProHost is very simple, you just need to install the plugin and set true in the port cloning "clone-remote-port: true" in the Geyser configuration. As an optional step, you can install the "Floodgate" plugin."
+      "description_template": "default"
     },
     {
       "name": "Aternos",
