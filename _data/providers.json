@@ -67,11 +67,6 @@
       "description": "Select Geyser in the [Install Menu](https://i.imgur.com/Gewpsrq.png), it will be automatically installed. You can enable floodgate in the [server properties on the dashboard](https://i.imgur.com/jg5mzNj.png)."
     },
     {
-      "name": "PloudOS",
-      "url": "https://ploudos.com/",
-      "description": "Connect via `geyser.ploudos.com` and enter the with your Java IP and port. See [PloudOS's article](https://ploudos.com/faq/#How-do-I-connect-from-Bedrock-to-a-Java-server) for more details."
-    },
-    {
       "name": "Pufferfish Host",
       "url": "https://pufferfish.host/",
       "description": "Geyser is installed and configured on all servers by default."
@@ -209,14 +204,13 @@
       "description": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling “clone-remote-port”) and connect with the same IP and port as you would on Java or create a port in the Network tab on the panel & use this for Geyser."
     },
     {
-      "name": "Futurehosting",
-      "url": "https://futurehosting.org/",
-      "description_template": "default",
-      "description": "Make sure your `bedrock` `address` in your Geyser config is your server IP."
-    },
-    {
       "name": "GameHosting.it",
       "url": "https://www.gamehosting.it/",
+      "description_template": "default"
+    },
+    {
+      "name": "GameProHost",
+      "url": "https://gameprohost.com/",
       "description_template": "default"
     },
     {
@@ -359,11 +353,6 @@
       "name": "Sparked Host",
       "url": "https://sparkedhost.com",
       "description_template": "default"
-    },
-    {
-      "name": "StellaNode",
-      "url": "https://stellanode.com/",
-      "description": "Open a support ticket on the billing panel to receive an additional UDP port for Geyser, then set that as the `bedrock port`."
     },
     {
       "name": "STIPE",
