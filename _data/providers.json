@@ -390,6 +390,11 @@
       "description_template": "default"
     },
     {
+      "name": "VoltHosting",
+      "url": "https://www.volthosting.co.uk/",
+      "description": "Enable clone-remote-port (or manually set bedrock port to the Java port), and connect with the Java IP and port. Alternatively, request an additional port, or buy a dedicated IP address. If you continue to have issues, please [contact VoltHosting support](https://volthosting.co.uk/contact.html) for further assistance."
+    },
+    {
       "name": "Vultam",
       "url": "https://vultam.net/",
       "description": "Set the `bedrock port` to the Java server's port, or request an additional port. The additional port can be `19132` if you buy a dedicated IP."
