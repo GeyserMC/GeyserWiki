@@ -21,6 +21,8 @@ The options for Geyser on the Bedrock-facing end. Mostly contains options for ho
 
 **`compression-level`**: An number value that represents how much to compress outgoing traffic. Can be any number from -1 to 9; any other value will be replaced with the nearest acceptable value. The higher the number, the more CPU processing that is used but with less bandwidth used. Default is 6.
 
+**`broadcast-port`: On some setups, the port Geyser runs on might not be the same as the one players use to connect with. In that rare case, you need to set this broadcast port to the port that Bedrock players should use to connect.
+
 **`enable-proxy-protocol`**:  Whether to enable PROXY protocol or not for clients. You DO NOT WANT this feature unless you run UDP reverse proxy in front of your Geyser instance. You do NOT need this for BungeeCord (and forks), Velocity, or Waterfall.
 
 **`proxy-protocol-whitelisted-ips`**: Disabled by default, and only enable this if you use "enable-proxy-protocol". A list of allowed PROXY protocol speaking proxy IP addresses/subnets. Should really only be used when you are not able to use a proper firewall (usually true with shared hosting providers etc.). Keeping this list empty means there is no IP address whitelist. Both IP addresses and subnets are supported.

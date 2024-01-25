@@ -23,6 +23,10 @@ This is primarily aimed at server hosting providers to automatically configure s
   - ```server``` means to match the bind address of the TCP server
   - any other string will be used as-is for the bind address.
 
+- ```-DgeyserBroadcastPort=19132```
+  - This can be used in cases where the port Geyser runs on does not match the port players use to connect to (e.g. due to port forwarding routings).
+  - When not set or set to 0, it defaults to the same port that Geyser runs on
+
 ### Disabling warnings and advanced configuration
 You may disable some warnings that may be printed to the console by using the following command line arguments:
 

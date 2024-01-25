@@ -56,6 +56,8 @@
           url: "geyser/custom-skulls/#enabling-custom-skulls"
         - title: custom-skulls.yml
           url: "geyser/custom-skulls/#custom-skullsyml"
+    - title: Resource Packs
+      url: "geyser/packs/"
     - title: Geyser API
       url: "geyser/api/"
       children:
