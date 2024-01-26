@@ -41,8 +41,8 @@
 
         In order for Bedrock players to chat (1.19.3+) or join (1.19.1/1.19.2), you need to disable chat signing. More information about that can be read on the [chat signing page](/geyser/secure-chat/).   
 
-        You will also need to run at least Java 16 or later to use Geyser. See [here](https://docs.papermc.io/misc/java-install) for more info on updating Java.
-        Paper versions not supporting Java 16 can add `-DPaper.IgnoreJavaVersion=true` flag to the Java startup arguments to allow Paper to run on Java 16.
+        You will also need to run at least Java 17 or later to use Geyser. See [here](https://docs.papermc.io/misc/java-install) for more info on updating Java.
+        Paper versions not supporting Java 17 can add `-DPaper.IgnoreJavaVersion=true` flag to the Java startup arguments to allow Paper to run on Java 17.
 
     - title: Which plugin version of Geyser do I need?
       content: |

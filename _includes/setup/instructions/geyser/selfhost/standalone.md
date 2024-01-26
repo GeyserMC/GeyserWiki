@@ -1,7 +1,7 @@
 # Geyser-Standalone Setup
 
 <div class="alert alert-info" role="alert">
-   You need to have Java 16 or higher installed to run Geyser. To run Geyser Standalone on Android or iOS, see the bottom of this page.
+   You need to have Java 17 or higher installed to run Geyser. To run Geyser Standalone on Android, see the bottom of this page.
 </div>
 
 <div class="alert alert-warning" role="alert">
@@ -73,7 +73,7 @@ set it to either `online` for an online mode server, or `offline` for an offline
 
 6. Verify whether connections from other networks are possible by running `geyser connectiontest <ip>:<port>` in the console.
 
-# Running Geyser-Standalone on Android/iOS
+# Running Geyser-Standalone on Android
 
 <div class="alert alert-warning" role="alert">
    Applications such as Termux on Android are capable of running Geyser, but this largely depends on how powerful your Android device is. Please do so at your own risk.
@@ -82,7 +82,7 @@ set it to either `online` for an online mode server, or `offline` for an offline
 ## Termux (Android)
 1. Download and install [Termux](https://termux.com/)
 2. Run `pkg install openjdk-17`
-3. Run `wget https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/standalone/build/libs/Geyser-Standalone.jar`
+3. Run `wget https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone`
 4. Run `java -jar Geyser-Standalone.jar`
 
 OR
@@ -93,15 +93,3 @@ Run this to start the download/install:
 curl https://gist.githubusercontent.com/rtm516/e3e07d6595ee41e05a38b03c0f4d7a80/raw/install.sh | bash
 ```
 
-## NewTerm 2 (iOS)
-**Note:** A jailbreak is required. You can find what jailbreak to use for your device [here](https://docs.google.com/spreadsheets/d/11DABHIIqwYQKj1L83AK9ywk_hYMjEkcaxpIg6phbTf0/edit?usp=sharing).
-1. Install [Filza File Manager](http://cydia.saurik.com/package/com.tigisoftware.filza/).
-2. Install [NewTerm 2](https://chariz.com/get/newterm).
-3. Download PojavLauncher's Java 16 JRE for iOS and install it using Filza [here](https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases/download/v16-openjdk/openjdk-16-jre_16.0.0+git20201217.8383f41-2_iphoneos-arm.deb).
-4. Download this package containing modified java commands, and install it using Filza [here](https://cdn.discordapp.com/attachments/558829512633090048/834014323755319306/com.letschill.java_0.1_iphoneos-arm.deb) (Note: Not an official GeyserMC project, install at your own risk).
-5. Open NewTerm 2 and run `wget https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone`
-6. Run `java -jar Geyser-Standalone.jar`.
-7. Geyser should show up in the Friends tab inside Minecraft.
-
-**Note:**
-Due to the iOS environment, if your device has low specs, iOS might end up killing NewTerm 2 while you're playing, stopping the server. There is no fix for that because of how iOS works.

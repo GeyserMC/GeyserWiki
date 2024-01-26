@@ -142,12 +142,39 @@ SoYouStart (subsidiary of OVH):
 5. Save and wait a few seconds for the changes to come into effect.
 
 ### Oracle Cloud/OCI
-You'll need to allow port 19132 on UDP in both the security list and the firewall-cmd command.
+By default, Oracle Cloud will block all incoming traffic except for SSH and RDP. This must be resolved within Oracle Cloud itself and the Compute Instance running Geyser.
 
-Additional step for Ubuntu users: 
+The steps below assume that you are using the default ports for the Java server and Geyser, and should be adjusted accordingly.
+
+1. Find your Compute Instance in the OCI Console
+2. Click on the instances Virtual Cloud Network (this will be under "Instance details")
+3. On the left-hand side, select "Security Lists"
+4. Select one of the security lists. By default only one security list will exist. It doesn't matter which security list we add the rules to.
+5. Select "Add Ingress Rules"
+6. Configure rules for Java (optional)
+   - Set "Source CIDR" to `0.0.0.0/0`
+   - Set "Destination Port Range" to `25565-25565`
+   - Select "Another Ingress Rule"
+7. Configure rules for Geyser
+   - Set "Source CIDR" to `0.0.0.0/0`
+   - Set "Destination Port Range" to `19132-19132`
+   - Set "IP Protocol" to UDP
+8. Select "Add Ingress Rules"
+
+#### Oracle Linux
+
+Run the following commands to allow Minecraft and Geyser through the OS firewall:
+
+```bash
+sudo firewall-cmd --add-port=25565/tcp --permanent
+sudo firewall-cmd --add-port=19132/udp --permanent
+sudo firewall-cmd --reload
+```
+
+#### Ubuntu
+
 1. Remove/comment out `-A INPUT -j REJECT --reject-with icmp-host-prohibited` in the `/etc/iptables/rules.v4` file.
-2. Then, run the following command to fix ufw:
+2. Run the following command to fix `ufw`:
 ```bash 
 sudo iptables-restore < /etc/iptables/rules.v4
 ```
-
