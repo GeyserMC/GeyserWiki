@@ -1,0 +1,51 @@
+---
+title: Setup
+page_sidebar: false
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+import Fabric from './setup/provider/fabric.mdx';
+import ProxyServers from './setup/provider/proxy-servers.mdx';
+import PaperSpigot from './setup/provider/paper-spigot.mdx';
+
+import FabricSelf from './setup/self/fabric.mdx';
+import ProxyServersSelf from './setup/self/proxy-servers.mdx';
+import PaperSpigotSelf from './setup/self/paper-spigot.mdx';
+import Standalone from './setup/self/standalone.mdx';
+
+import { ProviderSelector } from "../../src/components/Provider";
+
+<Tabs>
+    <TabItem value="host-provider" label="Host Provider" default>
+        <ProviderSelector/>
+        <Tabs>
+            <TabItem value="paper-spigot" label="Paper / Spigot" default>
+                <PaperSpigot/>
+            </TabItem>
+            <TabItem value="fabric" label="Fabric">
+                <Fabric/>
+            </TabItem>
+            <TabItem value="proxy-servers" label="Proxy Servers">
+                <ProxyServers/>
+            </TabItem>
+        </Tabs>
+    </TabItem>
+    <TabItem value="self-host" label="Self Host">
+        <Tabs>
+            <TabItem value="paper-spigot-self" label="Paper / Spigot" default>
+                <PaperSpigotSelf/>
+            </TabItem>
+            <TabItem value="fabric-self" label="Fabric">
+                <FabricSelf/>
+            </TabItem>
+            <TabItem value="proxy-servers-self" label="Proxy Servers">
+                <ProxyServersSelf/>
+            </TabItem>
+            <TabItem value="standalone" label="Standalone">
+                <Standalone/>
+            </TabItem>
+        </Tabs>
+    </TabItem>
+</Tabs>

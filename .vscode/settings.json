@@ -1,0 +1,25 @@
+{
+    "typescript.experimental.tsserver.web.enableProjectWideIntellisense": true,
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true
+    },
+    "editor.detectIndentation": false,
+    "editor.autoIndent": "full",
+    "editor.indentSize": "tabSize",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.tabSize": 4
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.tabSize": 4
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.tabSize": 4
+    },
+    "typescript.referencesCodeLens.enabled": false,
+    "typescript.referencesCodeLens.showOnAllFunctions": false
+}
