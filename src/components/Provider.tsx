@@ -36,7 +36,7 @@ export const ProviderSelector = () => {
         ...Object.values(data.built_in), 
         ...Object.values(data.support), 
         ...Object.values(data.no_support)
-    ].flat();
+    ].flat().sort((a, b) => a.name.localeCompare(b.name));
 
     // update providers if description_template is set
     providers.forEach((provider) => {
@@ -55,7 +55,7 @@ export const ProviderSelector = () => {
     }
 
     return (
-        <div>
+        <div className="host-select">
             <select onChange={handleSelectionChange}>
                 <option value="none">Select a provider</option>
                 {providers.map((provider) => (
@@ -64,11 +64,11 @@ export const ProviderSelector = () => {
                     </option>
                 ))}
             </select>
-            <Admonition type="info">
+            <Admonition type="tip" title="Provider Instructions">
                 {selectedProvider ? (
                     <ReactMarkdown>{selectedProvider.description}</ReactMarkdown>
                 ) : (
-                    <p>Select a provider to see the description</p>
+                    <p>Select a provider to see specific installation instructions</p>
                 )}
             </Admonition>
         </div>

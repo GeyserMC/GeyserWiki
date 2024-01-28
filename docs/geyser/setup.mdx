@@ -15,35 +15,41 @@ import ProxyServersSelf from './setup/self/proxy-servers.mdx';
 import PaperSpigotSelf from './setup/self/paper-spigot.mdx';
 import Standalone from './setup/self/standalone.mdx';
 
+import PlatformIcon from '../../src/components/PlatformIcon'
+import FabricIcon from '@site/static/img/icons/fabric.png';
+import ProxyServersIcon from '@site/static/img/icons/velocity.png';
+import PaperSpigotIcon from '@site/static/img/icons/paper.png';
+import StandaloneIcon from '@site/static/img/icons/geyser.png';
+
 import { ProviderSelector } from "../../src/components/Provider";
 
-<Tabs>
+<Tabs className="tabs-host-type">
     <TabItem value="host-provider" label="Host Provider" default>
         <ProviderSelector/>
         <Tabs>
-            <TabItem value="paper-spigot" label="Paper / Spigot" default>
+            <TabItem value="paper-spigot" label={<PlatformIcon img={PaperSpigotIcon} text="Paper / Spigot"/>} default>
                 <PaperSpigot/>
             </TabItem>
-            <TabItem value="fabric" label="Fabric">
+            <TabItem value="fabric" label={<PlatformIcon img={FabricIcon} text="Fabric"/>}>
                 <Fabric/>
             </TabItem>
-            <TabItem value="proxy-servers" label="Proxy Servers">
+            <TabItem value="proxy-servers" label={<PlatformIcon img={ProxyServersIcon} text="Proxy Servers"/>}>
                 <ProxyServers/>
             </TabItem>
         </Tabs>
     </TabItem>
     <TabItem value="self-host" label="Self Host">
         <Tabs>
-            <TabItem value="paper-spigot-self" label="Paper / Spigot" default>
+            <TabItem value="paper-spigot-self" label={<PlatformIcon img={PaperSpigotIcon} text="Paper / Spigot"/>} default>
                 <PaperSpigotSelf/>
             </TabItem>
-            <TabItem value="fabric-self" label="Fabric">
+            <TabItem value="fabric-self" label={<PlatformIcon img={FabricIcon} text="Fabric"/>}>
                 <FabricSelf/>
             </TabItem>
-            <TabItem value="proxy-servers-self" label="Proxy Servers">
+            <TabItem value="proxy-servers-self" label={<PlatformIcon img={ProxyServersIcon} text="Proxy Servers"/>}>
                 <ProxyServersSelf/>
             </TabItem>
-            <TabItem value="standalone" label="Standalone">
+            <TabItem value="standalone" label={<PlatformIcon img={StandaloneIcon} text="Standalone"/>}>
                 <Standalone/>
             </TabItem>
         </Tabs>
