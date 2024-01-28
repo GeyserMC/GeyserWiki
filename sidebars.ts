@@ -50,6 +50,7 @@ const sidebars: SidebarsConfig = {
             },
             items: [
                 'geyser/commands',
+                'geyser/translations',
                 'geyser/geyser-command-line-arguments-and-system-properties'
             ]
         },

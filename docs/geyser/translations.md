@@ -1,5 +1,5 @@
 ---
-title: Supported languages & translations
+title: Supported Languages & Translations
 ---
 
 Geyser supports a wide variety of languages to offer the best experience for players all over the globe.
@@ -8,47 +8,47 @@ When players join your server, Geyser will automatically detect their locale and
 ## What languages are supported?
 We aim to support any of the Bedrock languages - below is a list of them and all the language codes. 
 
-|Name                        |Code |
-|----------------------------|-----|
-|Bulgarian                   |bg_bg|
-|Czech                       |cs_cz|
-|Danish                      |da_dk|
-|German                      |de_de|
-|Greek                       |el_gr|
-|British English             |en_gb|
-|American English            |en_us|
-|Spanish                     |es_es|
-|Mexican Spanish             |es_mx|
-|Finnish                     |fi_fi|
-|Canadian French             |fr_ca|
-|French                      |fr_fr|
-|Hungarian                   |hu_hu|
-|Indonesian                  |id_id|
-|Italian                     |it_it|
-|Japanese                    |ja_jp|
-|Korean                      |ko_kr|
-|Dutch                       |nl_nl|
-|Norwegian Bokmål            |nb_no|
-|Polish                      |pl_pl|
-|Brazilian Portuguese        |pt_br|
-|Portuguese                  |pt_pt|
-|Russian                     |ru_ru|
-|Slovak                      |sk_sk|
-|Swedish                     |sv_se|
-|Turkish                     |tr_tr|
-|Ukrainian                   |uk_ua|
-|Chinese Simplified (China)  |zh_cn|
-|Chinese Traditional (Taiwan)|zh_tw|
+| Name                         | Code  |
+|------------------------------|-------|
+| Bulgarian                    | bg_bg |
+| Czech                        | cs_cz |
+| Danish                       | da_dk |
+| German                       | de_de |
+| Greek                        | el_gr |
+| British English              | en_gb |
+| American English             | en_us |
+| Spanish                      | es_es |
+| Mexican Spanish              | es_mx |
+| Finnish                      | fi_fi |
+| Canadian French              | fr_ca |
+| French                       | fr_fr |
+| Hungarian                    | hu_hu |
+| Indonesian                   | id_id |
+| Italian                      | it_it |
+| Japanese                     | ja_jp |
+| Korean                       | ko_kr |
+| Dutch                        | nl_nl |
+| Norwegian Bokmål             | nb_no |
+| Polish                       | pl_pl |
+| Brazilian Portuguese         | pt_br |
+| Portuguese                   | pt_pt |
+| Russian                      | ru_ru |
+| Slovak                       | sk_sk |
+| Swedish                      | sv_se |
+| Turkish                      | tr_tr |
+| Ukrainian                    | uk_ua |
+| Chinese Simplified (China)   | zh_cn |
+| Chinese Traditional (Taiwan) | zh_tw |
 
 ### Additional languages
 These languages are also supported, and are available in the Bedrock client using [the Translations for Minecraft resource pack](https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft).
 
-|Name                        |Code |
-|----------------------------|-----|
-|Afrikaans                   |af_za|
-|Belarusian                  |be_by|
-|Hebrew                      |he_il|
-|Hindi                       |hi_in|
+| Name                | Code  |
+|---------------------|-------|
+| Afrikaans           | af_za |
+| Belarusian          | be_by |
+| Hebrew              | he_il |
+| Hindi               | hi_in |
 
 ## How can I help translate Geyser?
 We use [Crowdin](https://crowdin.com/project/geyser) to manage our translations.
