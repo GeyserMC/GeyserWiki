@@ -122,6 +122,11 @@ const config: Config = {
             darkTheme: prismThemes.dracula,
             additionalLanguages: ['bash', 'batch', 'java'],
         },
+        colorMode: {
+            defaultMode: 'dark',
+            disableSwitch: false,
+            respectPrefersColorScheme: true,
+        },
     } satisfies Preset.ThemeConfig,
 };
 
