@@ -5,7 +5,7 @@ title: GeyserConnect
 GeyserConnect is a extension for Geyser that allows you to join multiple servers using a single GeyserMC proxy.
 
 ## Setup
-(For GeyserConnect to work you need an open UDP port, by default it's `19132`.)
+(For GeyserConnect to work you need an open UDP port, by default it's `19132`).
 1. Download the latest Geyser build from the [downloads page](https://geysermc.org/download#standalone)
 2. Download the latest build from [Github Actions](https://github.com/GeyserMC/GeyserConnect/actions)
 3. Extract the downloaded ZIP file, and put the extracted JAR file into the `extensions` folder in your GeyserMC standalone installation.

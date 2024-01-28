@@ -4,7 +4,12 @@ title: Community Geyser Projects
 
 Below is a list of community-compiled plugins, extensions and tools that work with Geyser. 
 
-Please note that, as these are unofficial, the main Geyser Discord will likely be unable to help with any bugs or issues you run into. Please check the linked pages for their support systems.
+:::note
+
+As these are unofficial, the main Geyser Discord will likely be unable to help with any bugs or issues you run into. 
+Please check the linked pages for their support systems.
+
+:::
 
 If you wish to add your own plugin to this list, please reach out in the #development channel of Geyser first!
 
