@@ -3,7 +3,7 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-    title: 'GeyserMC Wiki',
+    title: 'GeyserMC',
     tagline: 'Meowing strictly prohibited',
     favicon: 'img/favicon.ico',
 
@@ -54,34 +54,52 @@ const config: Config = {
         // Replace with your project's social card
         image: 'img/docusaurus-social-card.jpg',
         navbar: {
-            title: 'GeyserWiki',
+            title: 'GeyserMC',
             logo: {
                 alt: 'GeyserMC logo',
                 src: 'img/apple-touch-icon.png',
             },
             items: [
                 {
-                    type: 'docSidebar',
-                    sidebarId: 'geyserSidebar',
-                    position: 'left',
-                    label: 'Geyser',
+                    type: 'dropdown',
+                    label: 'Wiki',
+                    position: 'right',
+                    to: 'geyser/setup',
+                    items: [
+                        {
+                            type: 'doc',
+                            docId: 'geyser/setup',
+                            label: 'Geyser',
+                        },
+                        {
+                            type: 'doc',
+                            docId: 'floodgate/setup',
+                            label: 'Floodgate',
+                        },
+                        {
+                            type: 'doc',
+                            docId: 'other/geyseroptionalpack',
+                            label: 'Other',
+                        },
+                    ]
                 },
                 {
-                    type: 'docSidebar',
-                    sidebarId: 'floodgateSidebar',
-                    position: 'left',
-                    label: 'Floodgate',
-                },
-                {
-                    type: 'docSidebar',
-                    sidebarId: 'otherSidebar',
-                    position: 'left',
-                    label: 'Other',
+                    to: 'download',
+                    'aria-label': 'Download',
+                    position: 'right',
+                    className: 'header-download-link'
                 },
                 {
                     href: 'https://github.com/GeyserMC/Geyser',
-                    label: 'GitHub',
+                    'aria-label': 'GitHub',
                     position: 'right',
+                    className: 'header-github-link'
+                },
+                {
+                    href: 'https://discord.gg/geysermc',
+                    'aria-label': 'Discord',
+                    position: 'right',
+                    className: 'header-discord-link'
                 },
             ],
         },

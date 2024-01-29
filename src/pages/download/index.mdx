@@ -1,0 +1,90 @@
+---
+title: Download
+description: Choose which platform to download Geyser or Floodgate for.
+hide_table_of_contents: true
+---
+
+import Admonition from '@theme/Admonition';
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+import HeroBanner from '@site/src/components/HeroBanner';
+import HeroBackground from '@site/static/img/site/split-background.png';
+
+import PaperSpigot from '@site/docs/geyser/setup/provider/paper-spigot.mdx';
+
+import PaperSpigotSelf from '@site/docs/geyser/setup/self/paper-spigot.mdx';
+
+import FloodgatePaperSpigot from '@site/docs/floodgate/setup/paper-spigot.mdx';
+
+import PlatformIcon from '@site/src/components/PlatformIcon';
+import PaperSpigotIcon from '@site/static/img/icons/paper.png';
+import VelocityIcon from '@site/static/img/icons/velocity.png';
+import WaterfallBungeeCordIcon from '@site/static/img/icons/waterfall.svg';
+import FabricIcon from '@site/static/img/icons/fabric.png';
+import StandaloneIcon from '@site/static/img/icons/geyser.png';
+
+import { Columns, Column } from '@site/src/components/Columns';
+import { ProviderSelector } from '@site/src/components/Provider';
+import { APIDownloadButton } from '@site/src/components/DownloadButton';
+
+<HeroBanner 
+    title="Download"
+    subheading="Choose which platform to download Geyser or Floodgate for."
+    backgroundImage={HeroBackground}
+/>
+
+<Tabs>
+    <TabItem value="paper-spigot" label={<PlatformIcon img={PaperSpigotIcon} text="Paper / Spigot"/>} default>
+        <Columns>
+            <Column>
+                <APIDownloadButton projectId="geyser" platformId="spigot" header="Download Geyser" />
+                ## Geyser Installation Instructions
+
+                Geyser allows Bedrock players to join your server, but also requires Floodgate if you wish to allow them to join with their Bedrock account.
+
+                <Tabs>
+                    <TabItem value="simple" label="Simple">
+                        1. Download Geyser using the download button.
+                        2. Place Geyser in the plugins folder.
+                        3. Start up your server and Geyser should be installed.
+                        <Admonition type="note">
+                            Keep in mind that there may be additional steps involved, such as portforwarding. Please see the detailed setup options for more information.
+                        </Admonition>
+                    </TabItem>
+                    <TabItem value="provider" label="Host Provider">
+                        <ProviderSelector/>
+                        <PaperSpigot/>
+                    </TabItem>
+                    <TabItem value="self" label= "Self Host">
+                        <PaperSpigotSelf/>
+                    </TabItem>
+                </Tabs>
+            </Column>
+            <Column>
+                <APIDownloadButton projectId="floodgate" platformId="spigot" header="Download Floodgate" />
+                ## Floodgate Installation Instructions
+
+                By using our Floodgate plugin, you can allow Xbox Live authenticated Bedrock clients to securely join your online-mode server without a Java Edition account.
+                
+                <FloodgatePaperSpigot/>
+
+                <Admonition type="note">
+                    Floodgate uses global linking by default, which allows Bedrock players to link and join as their Java ccount by connecting it to our global linking server. You can disable this or enable local linking in the Floodgate config. More info is available on the [wiki](/floodgate/linking).
+                </Admonition>
+            </Column>
+        </Columns>
+    </TabItem>
+    <TabItem value="velocity" label={<PlatformIcon img={VelocityIcon} text="Velocity"/>}>
+        Velocity
+    </TabItem>
+    <TabItem value="waterfall-bungeecord" label={<PlatformIcon svg={WaterfallBungeeCordIcon} text="Waterfall / BungeeCord"/>}>
+        Waterfall Bungee
+    </TabItem>
+    <TabItem value="fabric" label={<PlatformIcon img={FabricIcon} text="Fabric"/>}>
+        Fabric
+    </TabItem>
+    <TabItem value="standalone" label={<PlatformIcon img={StandaloneIcon} text="Standalone"/>}>
+        Standalone
+    </TabItem>
+</Tabs>
