@@ -113,11 +113,11 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 10px;
+}
 
-    &:hover {
-        background-color: var(--ifm-color-primary);
-        color: #fff;
-    }
+.download-button:hover {
+    background-color: var(--ifm-color-primary);
+    color: #fff;
 }
 
 .host-select select {
