@@ -1,9 +1,5 @@
 # ViaProxy Setup
 
-<div class="alert alert-info" role="alert">
-    NOTE: ViaProxy allows you to run Geyser on Java 8. This is not officially supported and do so at your own risk.
-</div>
-
 1. [Setup ViaProxy](https://github.com/ViaVersion/ViaProxy?tab=readme-ov-file#usage-for-players-gui).
 2. Download the plugin from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/viaproxy).
 3. Place the Geyser-ViaProxy.jar in the `plugins` folder, and restart ViaProxy.
@@ -19,12 +15,12 @@
         port: 19132 
     ```
     The vital part is the port. This is the port that Bedrock players will use to connect to your server!
-    If you enable `clone-remote-port`, the port will be overridden and the Java port is used.
+    If you enable `clone-remote-port`, the port will be overridden and the ViaProxy port is used.
     Since you are self-hosting, you can choose the port freely - the default port is 19132. <br>
     **Important**: Other services/plugins that rely on ports with UDP, such as Voice Chats or Query, cannot share the port with Geyser.
    <br>
 
-    If you use the ViaProxy GUI you can use its account management system to join online mode servers with Bedrock Edition. If you want to use ViaProxy infront of a regular server you most likely want to install and [set up Floodgate](/floodgate/setup). <br>
+    If you use the ViaProxy GUI you can use its account management system to join online mode servers with Bedrock Edition. If you use the ViaProxy CLI and want to allow Bedrock players to join your online mode server you have to install and [set up Floodgate](/floodgate/setup). <br>
 
     NOTE: The value of the `auth-type` field is ignored and managed by ViaProxy automatically.
 
