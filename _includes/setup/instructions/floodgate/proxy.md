@@ -5,7 +5,7 @@
     Additionally, it will display Bedrock edition skins properly.
 </div>
 
-1. Download Floodgate for your proxy software from the [download page](https://geysermc.org/download). 
+1. Download Floodgate for your proxy software from the [download page](https://geysermc.org/download#floodgate). 
 2. Place the Floodgate jar in the `plugins` folder, and restart the proxy server.
 3. Change `auth-type` in Geyser's config to `floodgate`.
 4. Restart the server.
