@@ -15,7 +15,7 @@ page_sidebar: false
   </div>
 
   <div id="self-host-options" class="tab-pane fade" role="tabpanel">
-    {% include setup/instructions/geyser/tabs.html type="selfhost" show_standalone=true %}
+    {% include setup/instructions/geyser/tabs.html type="selfhost" show_viaproxy=true show_standalone=true %}
   </div>
 </div>
 
