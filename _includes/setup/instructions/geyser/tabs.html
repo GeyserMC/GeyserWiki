@@ -3,7 +3,7 @@
         <a class="nav-link active" href="#" data-bs-toggle="tab" data-bs-target="#spigot-option-{{include.type}}" type="button" role="tab" aria-controls="spigot-option-{{include.type}}" aria-selected="false"><img src="{{ '/img/icons/paper.png' | relative_url }}" alt="paper icon"> Paper / Spigot</a>
     </li>
     <li class="nav-item" role="presentation">
-        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#fabric-option-{{include.type}}" type="button" role="tab" aria-controls="fabric-option-{{include.type}}" aria-selected="false"><img src="{{ '/img/icons/fabric.png' | relative_url }}" alt="fabric icon"> Fabric</a>
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#mod-option-{{include.type}}" type="button" role="tab" aria-controls="mod-option-{{include.type}}" aria-selected="false"><img src="{{ '/img/icons/fabric.png' | relative_url }}" alt="fabric icon"> Fabric / NeoForge</a>
     </li>
     <li class="nav-item" role="presentation">
         <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#proxy-option-{{include.type}}" type="button" role="tab" aria-controls="proxy-option-{{include.type}}" aria-selected="false"><img src="{{ '/img/icons/velocity.svg' | relative_url }}" alt="velocity icon"> Proxy Servers</a>
@@ -25,8 +25,8 @@
         {% capture my_include %}{% include setup/instructions/geyser/{{include.type}}/spigot.md %}{% endcapture %}
         {{ my_include | markdownify }}
     </div>
-    <div id="fabric-option-{{include.type}}" class="tab-pane fade" role="tabpanel">
-        {% capture my_include %}{% include setup/instructions/geyser/{{include.type}}/fabric.md %}{% endcapture %}
+    <div id="mod-option-{{include.type}}" class="tab-pane fade" role="tabpanel">
+        {% capture my_include %}{% include setup/instructions/geyser/{{include.type}}/mod.md %}{% endcapture %}
         {{ my_include | markdownify }}
     </div>
     <div id="proxy-option-{{include.type}}" class="tab-pane fade" role="tabpanel">
