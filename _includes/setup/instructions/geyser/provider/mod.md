@@ -1,10 +1,14 @@
 
-# Fabric / NeoForge setup with server hosting provider
+# Modded server setup with server hosting provider
 
 <div class="alert alert-warning" role="alert">
-	Geyser-Fabric and Geyser-NeoForge run <b>only</b> on a {{ site.data.versions.java }} server. <br>
+	Geyser-Fabric and Geyser-NeoForge run <b>only</b> on {{ site.data.versions.java }}. <br>
 To use Geyser with an older server version, you can use Geyser on a BungeeCord/Velocity proxy, Geyser-ViaProxy, or Geyser Standalone instead. 
  </div>
+
+<div class="alert alert-info" role="alert">
+    Geyser only works with <b>server-side</b> mods. Mods that require a client-side install will not work!
+</div>
 
 1. Select your server hosting provider in the dropdown above.
 2. Download the mod from [the download page](https://geysermc.org/download#geyser).
