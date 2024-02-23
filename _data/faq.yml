@@ -57,10 +57,12 @@
           * Any other forks of the above
         * Geyser-Velocity works with [Velocity](https://www.velocitypowered.com/)
         * Geyser-Fabric works with [Fabric](https://www.fabricmc.net/), and requires FabricAPI to be installed on the server as well.
+        * Geyser-NeoForge works with [NeoForge](https://neoforged.net/),
+        * Geyser-ViaProxy works with [ViaProxy](https://github.com/ViaVersion/ViaProxy).
 
     - title: Which type of Geyser version is better, standalone or plugin?
       content: |
-        Because of optimizations that hook into the plugin platforms, plugin versions of Geyser are preferable compared to standalone Geyser. On Spigot, Velocity, and BungeeCord versions of Geyser, direct connections allow for faster loading times, lower latency, and accurate IP addresses without requiring Floodgate. Geyser-Spigot has further optimizations due to having direct world access, including lower memory usage and greater translation accuracy. However, large server networks might prefer standalone Geyser because it can be updated without needing to restart any other proxies or servers, and can offload resource usage onto seperate machines.
+        Because of optimizations that hook into the plugin platforms, plugin versions of Geyser are preferable compared to standalone Geyser. On Spigot, Velocity, Fabric/NeoForge and BungeeCord versions of Geyser, direct connections allow for faster loading times, lower latency, and accurate IP addresses without requiring Floodgate. Geyser on Spigot, Fabric and NeoForge has further optimizations due to having direct world access, including lower memory usage and greater translation accuracy. However, large server networks might prefer standalone Geyser because it can be updated without needing to restart any other proxies or servers, and can offload resource usage onto seperate machines.
 
     - title: If using BungeeCord or another fork, where do I need to put Geyser/Floodgate?
       content: |
@@ -140,7 +142,7 @@
       content: |
         If the server has ViaVersion and/or supports the latest Minecraft version, yes. However, we are unable to support older versions of Minecraft due to a limitation in our Java support library.
 
-    - title: Can I connect Geyser to a modded (Forge/Fabric) server?
+    - title: Can I connect Geyser to a modded (Forge/Fabric/NeoForge) server?
       content: |
         The short answer: if a vanilla client can join the server, then so can Geyser.
 
