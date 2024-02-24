@@ -385,6 +385,11 @@
             "description_template": "default"
         },
         {
+            "name": "VexyHost",
+            "url": "https://vexyhost.com/",
+            "description_template": "default"
+        },
+        {
             "name": "Volcano Hosting",
             "url": "https://www.volcanohosting.net/",
             "description_template": "default"

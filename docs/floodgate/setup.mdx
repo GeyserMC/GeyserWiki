@@ -9,12 +9,14 @@ import TabItem from "@theme/TabItem";
 import Fabric from './setup/fabric.mdx';
 import ProxyServers from './setup/proxy-servers.mdx';
 import PaperSpigot from './setup/paper-spigot.mdx';
+import ViaProxy from './setup/viaproxy.mdx';
 import Standalone from './setup/standalone.mdx';
 
 import PlatformIcon from '../../src/components/PlatformIcon'
 import FabricIcon from '@site/static/img/icons/fabric.png';
 import ProxyServersIcon from '@site/static/img/icons/velocity.png';
 import PaperSpigotIcon from '@site/static/img/icons/paper.png';
+import ViaProxyIcon from '@site/static/img/icons/viaproxy.png';
 import StandaloneIcon from '@site/static/img/icons/geyser.png';
 
 <Tabs>
@@ -26,6 +28,9 @@ import StandaloneIcon from '@site/static/img/icons/geyser.png';
     </TabItem>
     <TabItem value="proxy-servers" label={<PlatformIcon img={ProxyServersIcon} text="Proxy Servers"/>}>
         <ProxyServers/>
+    </TabItem>
+    <TabItem value="viaproxy" label={<PlatformIcon img={ViaProxyIcon} text="ViaProxy"/>}>
+        <ViaProxy/>
     </TabItem>
     <TabItem value="standalone" label={<PlatformIcon img={StandaloneIcon} text="Standalone"/>}>
         <Standalone/>

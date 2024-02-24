@@ -7,7 +7,7 @@ Geyser has an API to extend what is possible with Geyser, and to allow you to in
 ### Where can I use the Geyser API?
 You could use the Geyser API in:
 - A plugin for Paper/Spigot, Velocity, Waterfall/BungeeCord, etc.
-- A mod for Fabric or Forge
+- A mod for Fabric or NeoForge
 - A Geyser Extension
 
 ### Accessing the Geyser API

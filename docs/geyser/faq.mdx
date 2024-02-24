@@ -42,7 +42,7 @@ Here you can find answers to frequently asked questions about Geyser - if you ha
             * [ExploitFixer](https://www.spigotmc.org/resources/62842/) thinks that Floodgate users are UUID spoofing - disable the `uuidspoof` setting in ExploitFixer's config.
             * [JPremium](https://www.spigotmc.org/resources/27766/) alters the UUID of a player, causing Floodgate not to be able to get the Bedrock data from its map.
             * [LibHatesMods](https://www.spigotmc.org/resources/78202/) causes authentication to fail with `com.github.steveice10.mc.auth.exception.request.InvalidCredentialsException`
-            * [ProtocolSupport](https://www.spigotmc.org/resources/7201/) ~~is currently incompatible with Floodgate.~~ Works with Floodgate, but we recommend using [ViaBackwards](https://www.spigotmc.org/resources/27448/) instead.
+            * [ProtocolSupport](https://www.spigotmc.org/resources/7201/) ~~is currently incompatible with Floodgate.~~ Works with Floodgate, but we recommend using [ViaBackwards](https://hangar.papermc.io/ViaVersion/ViaBackwards) instead.
             * [ProtocolSupportBungee](https://www.spigotmc.org/resources/8733/) changes how the login process works and therefore breaks the Floodgate injection code.
             * [SayNoToMcLeaks](https://www.spigotmc.org/resources/40906/) prevents Floodgate from finishing its login system.
 
@@ -53,7 +53,7 @@ Here you can find answers to frequently asked questions about Geyser - if you ha
         What server versions does Geyser support?
         <A>
             The Geyser-Spigot plugin supports any Minecraft server version 1.16.5 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
-            Since Geyser emulates a <Versions platform="java"/> Java Edition client, you need to [install ViaVersion](https://www.spigotmc.org/resources/viaversion.19254/) on your server
+            Since Geyser emulates a <Versions platform="java"/> Java Edition client, you need to [install ViaVersion](https://viaversion.com/) on your server
             if it is not running the latest version of Minecraft.   
 
             In order for Bedrock players to chat (1.19.3+) or join (1.19.1/1.19.2), you need to disable chat signing. More information about that can be read on the [chat signing page](/geyser/secure-chat/).   
@@ -76,12 +76,14 @@ Here you can find answers to frequently asked questions about Geyser - if you ha
             * Any other forks of the above
             * Geyser-Velocity works with [Velocity](https://www.velocitypowered.com/)
             * Geyser-Fabric works with [Fabric](https://www.fabricmc.net/), and requires FabricAPI to be installed on the server as well.
+            * Geyser-NeoForge works with [NeoForge](https://neoforged.net/),
+            * Geyser-ViaProxy works with [ViaProxy](https://github.com/ViaVersion/ViaProxy).
         </A>
     </Q>
     <Q>
         Which type of Geyser version is better, standalone or plugin?
         <A>
-            Because of optimizations that hook into the plugin platforms, plugin versions of Geyser are preferable compared to standalone Geyser. On Spigot, Velocity, and BungeeCord versions of Geyser, direct connections allow for faster loading times, lower latency, and accurate IP addresses without requiring Floodgate. Geyser-Spigot has further optimizations due to having direct world access, including lower memory usage and greater translation accuracy. However, large server networks might prefer standalone Geyser because it can be updated without needing to restart any other proxies or servers, and can offload resource usage onto seperate machines.
+            Because of optimizations that hook into the plugin platforms, plugin versions of Geyser are preferable compared to standalone Geyser. On Spigot, Velocity, Fabric/NeoForge and BungeeCord versions of Geyser, direct connections allow for faster loading times, lower latency, and accurate IP addresses without requiring Floodgate. Geyser on Spigot, Fabric and NeoForge has further optimizations due to having direct world access, including lower memory usage and greater translation accuracy. However, large server networks might prefer standalone Geyser because it can be updated without needing to restart any other proxies or servers, and can offload resource usage onto seperate machines.
         </A>
     </Q>
     <Q>
@@ -193,7 +195,7 @@ Here you can find answers to frequently asked questions about Geyser - if you ha
         </A>
     </Q>
     <Q>
-        Can I connect Geyser to a modded (Forge/Fabric) server?
+        Can I connect Geyser to a modded (Forge/Fabric/NeoForge) server?
         <A>
             The short answer: if a vanilla client can join the server, then so can Geyser.
 

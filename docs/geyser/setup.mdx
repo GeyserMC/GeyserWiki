@@ -6,19 +6,21 @@ page_sidebar: false
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
-import Fabric from './setup/provider/fabric.mdx';
+import ModdedServers from './setup/provider/modded-servers.mdx';
 import ProxyServers from './setup/provider/proxy-servers.mdx';
 import PaperSpigot from './setup/provider/paper-spigot.mdx';
 
-import FabricSelf from './setup/self/fabric.mdx';
+import ModdedServersSelf from './setup/self/modded-servers.mdx';
 import ProxyServersSelf from './setup/self/proxy-servers.mdx';
 import PaperSpigotSelf from './setup/self/paper-spigot.mdx';
+import ViaProxy from './setup/self/viaproxy.mdx';
 import Standalone from './setup/self/standalone.mdx';
 
 import PlatformIcon from '../../src/components/PlatformIcon'
-import FabricIcon from '@site/static/img/icons/fabric.png';
+import ModIcon from '@site/static/img/icons/fabric.png';
 import ProxyServersIcon from '@site/static/img/icons/velocity.png';
 import PaperSpigotIcon from '@site/static/img/icons/paper.png';
+import ViaProxyIcon from '@site/static/img/icons/viaproxy.png';
 import StandaloneIcon from '@site/static/img/icons/geyser.png';
 
 import { ProviderSelector } from "../../src/components/Provider";
@@ -30,8 +32,8 @@ import { ProviderSelector } from "../../src/components/Provider";
             <TabItem value="paper-spigot" label={<PlatformIcon img={PaperSpigotIcon} text="Paper / Spigot"/>} default>
                 <PaperSpigot/>
             </TabItem>
-            <TabItem value="fabric" label={<PlatformIcon img={FabricIcon} text="Fabric"/>}>
-                <Fabric/>
+            <TabItem value="modded-servers" label={<PlatformIcon img={ModIcon} text="Modded Servers"/>}>
+                <ModdedServers/>
             </TabItem>
             <TabItem value="proxy-servers" label={<PlatformIcon img={ProxyServersIcon} text="Proxy Servers"/>}>
                 <ProxyServers/>
@@ -43,11 +45,14 @@ import { ProviderSelector } from "../../src/components/Provider";
             <TabItem value="paper-spigot-self" label={<PlatformIcon img={PaperSpigotIcon} text="Paper / Spigot"/>} default>
                 <PaperSpigotSelf/>
             </TabItem>
-            <TabItem value="fabric-self" label={<PlatformIcon img={FabricIcon} text="Fabric"/>}>
-                <FabricSelf/>
+            <TabItem value="modded-servers-self" label={<PlatformIcon img={ModIcon} text="Modded Servers"/>}>
+                <ModdedServersSelf/>
             </TabItem>
             <TabItem value="proxy-servers-self" label={<PlatformIcon img={ProxyServersIcon} text="Proxy Servers"/>}>
                 <ProxyServersSelf/>
+            </TabItem>
+            <TabItem value="viaproxy" label={<PlatformIcon img={ViaProxyIcon} text="ViaProxy"/>}>
+                <ViaProxy/>
             </TabItem>
             <TabItem value="standalone" label={<PlatformIcon img={StandaloneIcon} text="Standalone"/>}>
                 <Standalone/>
