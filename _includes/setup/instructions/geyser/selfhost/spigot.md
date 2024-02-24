@@ -2,7 +2,7 @@
 # Paper / Spigot setup - self-hosting
 
 <div class="alert alert-info" role="alert">
-    If your server is not running {{ site.data.versions.java }}, you will need to install <a href="https://www.spigotmc.org/resources/viaversion.19254/">ViaVersion</a>.
+    If your server is not running {{ site.data.versions.java }}, you will need to install <a href="https://viaversion.com/">ViaVersion</a>.
     See also our <a href="/geyser/faq/#what-server-versions-does-geyser-support">FAQ article</a> on supported versions.
 </div>
 

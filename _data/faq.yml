@@ -27,7 +27,7 @@
         * [ExploitFixer](https://www.spigotmc.org/resources/62842/) thinks that Floodgate users are UUID spoofing - disable the `uuidspoof` setting in ExploitFixer's config.
         * [JPremium](https://www.spigotmc.org/resources/27766/) alters the UUID of a player, causing Floodgate not to be able to get the Bedrock data from its map.
         * [LibHatesMods](https://www.spigotmc.org/resources/78202/) causes authentication to fail with `com.github.steveice10.mc.auth.exception.request.InvalidCredentialsException`
-        * [ProtocolSupport](https://www.spigotmc.org/resources/7201/) ~~is currently incompatible with Floodgate.~~ Works with Floodgate, but we recommend using [ViaBackwards](https://www.spigotmc.org/resources/27448/) instead.
+        * [ProtocolSupport](https://www.spigotmc.org/resources/7201/) ~~is currently incompatible with Floodgate.~~ Works with Floodgate, but we recommend using [ViaBackwards](https://hangar.papermc.io/ViaVersion/ViaBackwards) instead.
         * [ProtocolSupportBungee](https://www.spigotmc.org/resources/8733/) changes how the login process works and therefore breaks the Floodgate injection code.
         * [SayNoToMcLeaks](https://www.spigotmc.org/resources/40906/) prevents Floodgate from finishing its login system.
 
@@ -36,7 +36,7 @@
     - title: What server versions does Geyser support?
       content: |
         The Geyser-Spigot plugin supports any Minecraft server version 1.16.5 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
-        Since Geyser emulates a {{ site.data.versions.java }} Java Edition client, you need to [install ViaVersion](https://www.spigotmc.org/resources/viaversion.19254/) on your server
+        Since Geyser emulates a {{ site.data.versions.java }} Java Edition client, you need to [install ViaVersion](https://viaversion.com/) on your server
         if it is not running the latest version of Minecraft. <br>
 
         In order for Bedrock players to chat (1.19.3+) or join (1.19.1/1.19.2), you need to disable chat signing. More information about that can be read on the [chat signing page](/geyser/secure-chat/). <br>
