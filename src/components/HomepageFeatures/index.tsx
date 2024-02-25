@@ -1,56 +1,63 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Crossplatform0Img from '@site/static/img/site/crossplatform_0.png';
+import Crossplatform1Img from '@site/static/img/site/crossplatform_1.png';
 
 type FeatureItem = {
     title: string;
-    Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+    image?: string;
     description: JSX.Element;
+    index?: number;
 };
 
 const FeatureList: FeatureItem[] = [
     {
-        title: 'Easy to Use',
-        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+        title: 'What is Geyser?',
+        image: Crossplatform0Img,
         description: (
             <>
-                Docusaurus was designed from the ground up to be easily installed and
-                used to get your website up and running quickly.
+                Geyser is a program that allows Minecraft: Bedrock Edition clients to join Minecraft: Java Edition servers, allowing for true crossplay between both editions of the game. The ultimate goal of this project is to allow Minecraft: Bedrock Edition users to join Minecraft: Java Edition servers as seamlessly as possible.
             </>
         ),
     },
     {
-        title: 'Focus on What Matters',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        title: 'How does it work?',
+        image: Crossplatform1Img,
         description: (
             <>
-                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-                ahead and move your docs into the <code>docs</code> directory.
+                Geyser acts as a translator which sits between the Bedrock client and the Java server. It takes data from the Bedrock client and translates it into a format the Java server understands and vice versa. Geyser works with any modern Minecraft version and can be installed either as a plugin or ran as a standalone program.
             </>
         ),
     },
     {
-        title: 'Powered by React',
-        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        title: 'Join from anywhere',
         description: (
             <>
-                Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.
+                Geyser can be joined from Bedrock clients on Windows 10/11, iOS, Android, and even consoles (more info here). Geyser works with a wide array of hosting providers, but can also be used as its own standalone proxy to join any Minecraft server!
+
+                If you are a server owner, you can install our Floodgate plugin which allows Xbox Live authenticated Bedrock users to join without a Java Edition account!
             </>
         ),
     },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+function Feature({ title, image, description, index }: FeatureItem) {
+    const Content = () => (
+        <div className="text--left padding-horiz--md">
+            <Heading as="h3">{title}</Heading>
+            <p>{description}</p>
+        </div>
+    );
+    const Image = () => (
+        image &&
+        <div className="column text--left">
+            <img src={image} alt={title} />
+        </div>
+    );
     return (
-        <div className={clsx('col col--4')}>
-            <div className="text--center">
-                <Svg className={styles.featureSvg} role="img" />
-            </div>
-            <div className="text--center padding-horiz--md">
-                <Heading as="h3">{title}</Heading>
-                <p>{description}</p>
-            </div>
+        <div className={clsx('column')}>
+            {index % 2 === 0 ? <><Image /><Content /></> : <><Content /><Image /></>}
         </div>
     );
 }
@@ -61,7 +68,7 @@ export default function HomepageFeatures(): JSX.Element {
             <div className="container">
                 <div className="row">
                     {FeatureList.map((props, idx) => (
-                        <Feature key={idx} {...props} />
+                        <Feature key={idx} {...props} index={idx} />
                     ))}
                 </div>
             </div>

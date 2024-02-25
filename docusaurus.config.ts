@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
     title: 'GeyserMC',
-    tagline: 'Meowing strictly prohibited',
+    tagline: 'Revolutionize Your Minecraft Server',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
@@ -105,35 +105,7 @@ const config: Config = {
         },
         footer: {
             style: 'dark',
-            links: [
-                {
-                    title: 'Community',
-                    items: [
-                        {
-                            label: 'Stack Overflow',
-                            href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                        },
-                        {
-                            label: 'Discord',
-                            href: 'https://discordapp.com/invite/docusaurus',
-                        },
-                        {
-                            label: 'Twitter',
-                            href: 'https://twitter.com/docusaurus',
-                        },
-                    ],
-                },
-                {
-                    title: 'More',
-                    items: [
-                        {
-                            label: 'GitHub',
-                            href: 'https://github.com/GeyserMC/Geyser',
-                        },
-                    ],
-                },
-            ],
-            copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+            copyright: `© ${new Date().getFullYear()} GeyserMC`,
         },
         prism: {
             theme: prismThemes.github,
