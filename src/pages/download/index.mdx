@@ -8,6 +8,9 @@ import Admonition from '@theme/Admonition';
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 
+import { faTowerCell, faFileZipper } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import HeroBanner from '@site/src/components/HeroBanner';
 import HeroBackground from '@site/static/img/site/split-background.png';
 
@@ -22,69 +25,73 @@ import PaperSpigotIcon from '@site/static/img/icons/paper.png';
 import VelocityIcon from '@site/static/img/icons/velocity.png';
 import WaterfallBungeeCordIcon from '@site/static/img/icons/waterfall.svg';
 import FabricIcon from '@site/static/img/icons/fabric.png';
+import NeoForgeIcon from '@site/static/img/icons/neoforge.png';
+import ViaProxyIcon from '@site/static/img/icons/viaproxy.png';
 import StandaloneIcon from '@site/static/img/icons/geyser.png';
 
 import { Columns, Column } from '@site/src/components/Columns';
 import { ProviderSelector } from '@site/src/components/Provider';
-import { APIDownloadButton } from '@site/src/components/DownloadButton';
+import { ProjectDownload } from '@site/src/components/ProjectDownload';
 
 <HeroBanner 
     title="Download"
-    subheading="Choose which platform to download Geyser or Floodgate for."
+    subheading="Download the latest versions of our various projects."
     backgroundImage={HeroBackground}
 />
 
 <Tabs>
-    <TabItem value="paper-spigot" label={<PlatformIcon img={PaperSpigotIcon} text="Paper / Spigot"/>} default>
-        <Columns>
-            <Column>
-                <APIDownloadButton projectId="geyser" platformId="spigot" header="Download Geyser" />
-                ## Geyser Installation Instructions
-
-                Geyser allows Bedrock players to join your server, but also requires Floodgate if you wish to allow them to join with their Bedrock account.
-
-                <Tabs>
-                    <TabItem value="simple" label="Simple">
-                        1. Download Geyser using the download button.
-                        2. Place Geyser in the plugins folder.
-                        3. Start up your server and Geyser should be installed.
-                        <Admonition type="note">
-                            Keep in mind that there may be additional steps involved, such as portforwarding. Please see the detailed setup options for more information.
-                        </Admonition>
-                    </TabItem>
-                    <TabItem value="provider" label="Host Provider">
-                        <ProviderSelector/>
-                        <PaperSpigot/>
-                    </TabItem>
-                    <TabItem value="self" label= "Self Host">
-                        <PaperSpigotSelf/>
-                    </TabItem>
-                </Tabs>
-            </Column>
-            <Column>
-                <APIDownloadButton projectId="floodgate" platformId="spigot" header="Download Floodgate" />
-                ## Floodgate Installation Instructions
-
-                By using our Floodgate plugin, you can allow Xbox Live authenticated Bedrock clients to securely join your online-mode server without a Java Edition account.
-                
-                <FloodgatePaperSpigot/>
-
-                <Admonition type="note">
-                    Floodgate uses global linking by default, which allows Bedrock players to link and join as their Java ccount by connecting it to our global linking server. You can disable this or enable local linking in the Floodgate config. More info is available on the [wiki](/floodgate/linking).
-                </Admonition>
-            </Column>
-        </Columns>
+    <TabItem value="geyser" label="Geyser" default>
+        <ProjectDownload 
+            projectId="geyser" 
+            description="A bridge/proxy allowing you to connect to Minecraft: Java Edition servers with Minecraft: Bedrock Edition."
+            setup="/geyser/setup"
+            downloadsInfo={{
+                bungeecord: <PlatformIcon svg={WaterfallBungeeCordIcon} text="BungeeCord"/>,
+                fabric: <PlatformIcon img={FabricIcon} text="Fabric"/>,
+                neoforge: <PlatformIcon img={NeoForgeIcon} text="NeoForge"/>,
+                spigot: <PlatformIcon img={PaperSpigotIcon} text="Spigot/Paper"/>,
+                standalone: <PlatformIcon img={StandaloneIcon} text="Standalone"/>,
+                velocity: <PlatformIcon img={VelocityIcon} text="Velocity"/>,
+                viaproxy: <PlatformIcon img={ViaProxyIcon} text="ViaProxy"/>,
+            }}
+        />
     </TabItem>
-    <TabItem value="velocity" label={<PlatformIcon img={VelocityIcon} text="Velocity"/>}>
-        Velocity
+    <TabItem value="floodgate" label="Floodgate">
+        <ProjectDownload
+            projectId="floodgate"
+            description="Hybrid mode plugin to allow for connections from Geyser to join online mode servers."
+            setup="/floodgate/setup"
+            downloadsInfo={{
+                bungee: <PlatformIcon svg={WaterfallBungeeCordIcon} text="BungeeCord"/>,
+                spigot: <PlatformIcon img={PaperSpigotIcon} text="Spigot/Paper"/>,
+                velocity: <PlatformIcon img={VelocityIcon} text="Velocity"/>,
+            }}
+        />
     </TabItem>
-    <TabItem value="waterfall-bungeecord" label={<PlatformIcon svg={WaterfallBungeeCordIcon} text="Waterfall / BungeeCord"/>}>
-        Waterfall Bungee
-    </TabItem>
-    <TabItem value="fabric" label={<PlatformIcon img={FabricIcon} text="Fabric"/>}>
-        Fabric
-    </TabItem>
-    <TabItem value="standalone" label={<PlatformIcon img={StandaloneIcon} text="Standalone"/>}>
-        Standalone
+    <TabItem value="other-projects" label="Other Projects">
+        <Tabs>
+            <TabItem value='geyserconnect' label='GeyserConnect'>
+                <ProjectDownload
+                    projectId="geyserconnect"
+                    description="An easy way for Bedrock Edition clients to connect to any Java Edition servers without having to run anything."
+                    setup='/other/geyserconnect'
+                    downloadsInfo={{
+                        geyserconnect: <><FontAwesomeIcon icon={faTowerCell}/> GeyserConnect</>,
+                    }}
+                    gridColumns={1}
+                />
+            </TabItem>
+            <TabItem value='geyseroptionalpack' label='GeyserOptionalPack'>
+                <ProjectDownload
+                    projectId="geyseroptionalpack"
+                    description="Optional Bedrock resource pack to extend Geyser functionality."
+                    setup='/other/geyseroptionalpack'
+                    downloadsInfo={{
+                        geyseroptionalpack: <><FontAwesomeIcon icon={faFileZipper}/> GeyserOptionalPack</>,
+                    }}
+                    gridColumns={1}
+                />
+            </TabItem>
+        </Tabs>
     </TabItem>
 </Tabs>

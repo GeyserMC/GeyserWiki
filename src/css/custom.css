@@ -7,6 +7,7 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
+  --ifm-color-secondary: #0097c5;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -21,6 +22,7 @@
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
+  --ifm-color-secondary: #00d5ff;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
@@ -112,7 +114,6 @@
     transition: background-color 0.5s ease, color 0.5s ease;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 10px;
 }
 
 .download-button:hover {
@@ -180,6 +181,29 @@
 
 .question-text {
     font-size: 18px;
+}
+
+.no-underline {
+    text-decoration: transparent !important;
+}
+
+.setup-button {
+    width: 100%;
+    outline: 3px solid var(--ifm-color-secondary);
+    outline-offset: -3px;
+    border: 0;
+    border-radius: var(--ifm-global-radius);
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--ifm-color-secondary);
+}
+
+.setup-button:hover {
+    background-color: var(--ifm-color-secondary);
+    color: #fff;
 }
 
 .tabs {
