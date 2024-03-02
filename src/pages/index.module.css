@@ -21,6 +21,12 @@
     color: #fff;
 }
 
+@media screen and (max-width: 410px) {
+    .textSection h1 {
+        font-size: var(--ifm-h1-font-size);
+    }
+}
+
 .buttons {
     display: flex;
     align-items: center;
