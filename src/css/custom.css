@@ -214,7 +214,7 @@
 }
 
 @media (pointer:coarse) {
-    .tabs {
+    .tabs:not(.tabs-host-type) {
         flex-wrap: nowrap;
         white-space: nowrap;
         display: inline-block;
