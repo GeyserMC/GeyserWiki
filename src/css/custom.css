@@ -213,6 +213,13 @@
     border-bottom-style: solid;
 }
 
+@media (pointer:coarse) {
+    .tabs {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+}
+
 .tabs-host-type {
     flex-wrap: nowrap;
     border-bottom-style: none;
