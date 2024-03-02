@@ -217,12 +217,14 @@
     .tabs {
         flex-wrap: nowrap;
         white-space: nowrap;
+        display: inline-block;
     }
 }
 
 .tabs-host-type {
     flex-wrap: nowrap;
     border-bottom-style: none;
+    display: flex;
 }
 
 .tabs-host-type .tabs__item {
