@@ -12,8 +12,6 @@ export const Provider = ({ type }) => {
     const data: Providers = require('@site/_data/providers.json')
     const providers: HostingProvider[] = data[type as ProviderType]
 
-    console.log(data, type, providers)
-
     return (
         <div>
             <ul>{providers.map((provider: HostingProvider) => (
