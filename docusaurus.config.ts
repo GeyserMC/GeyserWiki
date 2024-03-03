@@ -41,7 +41,6 @@ const config: Config = {
                         'https://github.com/GeyserMC/Geyser/tree/main/',
 
                     routeBasePath: '/', // Serve the docs at the site's root
-                    sidebarCollapsible: true,
                 },
                 blog: false,
                 theme: {
