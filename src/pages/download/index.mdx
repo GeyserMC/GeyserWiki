@@ -32,6 +32,7 @@ import StandaloneIcon from '@site/static/img/icons/geyser.png';
 import { Columns, Column } from '@site/src/components/Columns';
 import { ProviderSelector } from '@site/src/components/Provider';
 import { ProjectDownload } from '@site/src/components/ProjectDownload';
+import { Collapsibles, Collapsible } from '@site/src/components/Collapsibles';
 
 <HeroBanner 
     title="Download"
@@ -69,29 +70,35 @@ import { ProjectDownload } from '@site/src/components/ProjectDownload';
         />
     </TabItem>
     <TabItem value="other-projects" label="Other Projects">
-        <Tabs>
-            <TabItem value='geyserconnect' label='GeyserConnect'>
-                <ProjectDownload
-                    projectId="geyserconnect"
-                    description="An easy way for Bedrock Edition clients to connect to any Java Edition servers without having to run anything."
-                    setup='/other/geyserconnect'
-                    downloadsInfo={{
-                        geyserconnect: <><FontAwesomeIcon icon={faTowerCell}/> GeyserConnect</>,
-                    }}
-                    gridColumns={1}
-                />
-            </TabItem>
-            <TabItem value='geyseroptionalpack' label='GeyserOptionalPack'>
-                <ProjectDownload
-                    projectId="geyseroptionalpack"
-                    description="Optional Bedrock resource pack to extend Geyser functionality."
-                    setup='/other/geyseroptionalpack'
-                    downloadsInfo={{
-                        geyseroptionalpack: <><FontAwesomeIcon icon={faFileZipper}/> GeyserOptionalPack</>,
-                    }}
-                    gridColumns={1}
-                />
-            </TabItem>
-        </Tabs>
+        <Collapsibles>
+            <Collapsible
+                title='GeyserConnect'
+                subtitle='A plugin to allow for Geyser players to connect to your server without needing to use a proxy.'
+                inner={
+                    <ProjectDownload
+                        projectId="geyserconnect"
+                        setup='/other/geyserconnect'
+                        downloadsInfo={{
+                            geyserconnect: <><FontAwesomeIcon icon={faTowerCell}/> GeyserConnect</>,
+                        }}
+                        gridColumns={1}
+                    />
+                }
+            />
+            <Collapsible
+                title='GeyserOptionalPack'
+                subtitle='An optional Bedrock resource pack to extend Geyser functionality.'
+                inner={
+                    <ProjectDownload
+                        projectId="geyseroptionalpack"
+                        setup='/other/geyseroptionalpack'
+                        downloadsInfo={{
+                            geyseroptionalpack: <><FontAwesomeIcon icon={faFileZipper}/> GeyserOptionalPack</>,
+                        }}
+                        gridColumns={1}
+                    />
+                }
+            />
+        </Collapsibles>
     </TabItem>
 </Tabs>

@@ -74,7 +74,7 @@ export const ProjectDownload: React.FC<ProjectDownloadProps> = ({ projectId, des
             <p>{description}</p>
             <Columns>
                 <Column>
-                    <h2>Build #{latestBuild.build} · {new Date(latestBuild.time).toLocaleDateString()}:</h2>
+                    <h3>Build #{latestBuild.build} · {new Date(latestBuild.time).toLocaleDateString()}:</h3>
                     <Grid elementsPerRow={gridColumns || 2} gap="8px">
                         { setup &&
                             <a href={setup} className='no-underline'>
@@ -99,7 +99,7 @@ export const ProjectDownload: React.FC<ProjectDownloadProps> = ({ projectId, des
                     </Grid>
                 </Column>
                 <Column>
-                    <h2>Recent Changes:</h2>
+                    <h3>Recent Changes:</h3>
                     <ul>
                         {
                             changes.map((change, i) => {

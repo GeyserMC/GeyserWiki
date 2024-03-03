@@ -78,9 +78,54 @@
     background-color: var(--ifm-navbar-link-hover-color);
 }
 
-.answer {
-    overflow: hidden;
-    transition: height 0.3s ease-out;
+.collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.collapsible-header h3 {
+    margin: 0;
+}
+
+.collapsible-header p {
+    margin-right: 18px;
+}
+
+.collapsible-arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid var(--ifm-color-primary);
+    border-bottom: 2px solid var(--ifm-color-primary);
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.collapsible-arrow.expanded {
+    transform: rotate(225deg);
+}
+
+
+.collapsible-line {
+    border-bottom: 1px solid var(--ifm-horizontal-line-color);
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.collapsible-subtitle {
+    font-size: 14px;
+}
+
+.collapsible-title {
+    font-size: 20px;
+    margin-right: 20px;
 }
 
 .columns {
@@ -142,49 +187,23 @@
     }
 }
 
-.question-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: relative; /* Needed for absolute positioning of the arrow */
+.inner {
+    overflow: hidden;
+    transition: height 0.3s ease-out;
 }
 
-.question-header h3 {
-    margin: 0;
-}
-
-.question-arrow {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid var(--ifm-color-primary);
-    border-bottom: 2px solid var(--ifm-color-primary);
-    transform: rotate(45deg);
-    transition: transform 0.3s ease;
-    position: absolute;
-    right: 0;
-    top: 50%;
+.inner-content {
+    margin-bottom: 20px;
     margin-top: -20px;
-}
-
-.question-arrow.expanded {
-    transform: rotate(225deg);
-}
-
-
-.question-line {
-    border-bottom: 1px solid var(--ifm-horizontal-line-color);
-    margin-top: -15px;
-    margin-bottom: 10px;
-}
-
-.question-text {
-    font-size: 18px;
 }
 
 .no-underline {
     text-decoration: transparent !important;
+}
+
+.question-text p {
+    font-size: 18px;
+    margin-right: 18px;
 }
 
 .setup-button {

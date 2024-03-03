@@ -3,6 +3,7 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import Crossplatform0Img from '@site/static/img/site/crossplatform_0.png';
 import Crossplatform1Img from '@site/static/img/site/crossplatform_1.png';
+import Crossplatform2Img from '@site/static/img/site/crossplatform_2.png';
 
 type FeatureItem = {
     title: string;
@@ -14,7 +15,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
     {
         title: 'What is Geyser?',
-        image: Crossplatform0Img,
+        image: Crossplatform2Img,
         description: (
             <>
                 Geyser is a program that allows Minecraft: Bedrock Edition clients to join Minecraft: Java Edition servers, allowing for true crossplay between both editions of the game. The ultimate goal of this project is to allow Minecraft: Bedrock Edition users to join Minecraft: Java Edition servers as seamlessly as possible.
@@ -32,6 +33,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: 'Join from anywhere',
+        image: Crossplatform0Img,
         description: (
             <>
                 Geyser can be joined from Bedrock clients on Windows 10/11, iOS, Android, and even consoles (more info here). Geyser works with a wide array of hosting providers, but can also be used as its own standalone proxy to join any Minecraft server!
