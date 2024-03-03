@@ -7,8 +7,8 @@ const config: Config = {
     tagline: 'Revolutionize Your Minecraft Server',
     favicon: 'img/favicon.ico',
 
-    // Set the production url of your site here
-    url: 'https://wiki.geysermc.org',
+    // TODO: Change to correct domain in production! 
+    url: 'https://chew-geyserwiki.pages.dev',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
