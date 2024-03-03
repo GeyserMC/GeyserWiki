@@ -8,6 +8,33 @@
     position: relative;
     overflow: hidden;
     color: var(--ifm-font-color-base);
+    background-color: var(--ifm-background-color);
+}
+
+.heroContent {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.heroImage {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 100, 100, 0.5));
+    filter: drop-shadow(12px 12px 7px rgba(0, 100, 100, 0.5));
+}
+
+.heroImageBackgroundBlur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 40%;
+    left: 50%;
+    width: 80vh;
+    filter: blur(1.5rem);
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    z-index: -1;
 }
 
 @media screen and (max-width: 996px) {
@@ -17,7 +44,6 @@
 }
 
 .textSection {
-    text-shadow: 1px 1px 5px #000;
     color: #fff;
 }
 

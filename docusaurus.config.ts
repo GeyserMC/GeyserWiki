@@ -41,6 +41,7 @@ const config: Config = {
                         'https://github.com/GeyserMC/Geyser/tree/main/',
 
                     routeBasePath: '/', // Serve the docs at the site's root
+                    sidebarCollapsible: true,
                 },
                 blog: false,
                 theme: {
@@ -63,6 +64,7 @@ const config: Config = {
                 {
                     type: 'dropdown',
                     label: 'Wiki',
+                    className: 'header-wiki-link',
                     position: 'right',
                     to: 'geyser/setup',
                     items: [
@@ -85,19 +87,19 @@ const config: Config = {
                 },
                 {
                     to: 'download',
-                    'aria-label': 'Download',
+                    label: 'Download',
                     position: 'right',
                     className: 'header-download-link'
                 },
                 {
                     href: 'https://github.com/GeyserMC/Geyser',
-                    'aria-label': 'GitHub',
+                    label: 'GitHub',
                     position: 'right',
                     className: 'header-github-link'
                 },
                 {
                     href: 'https://discord.gg/geysermc',
-                    'aria-label': 'Discord',
+                    label: 'Discord',
                     position: 'right',
                     className: 'header-discord-link'
                 },
@@ -105,17 +107,22 @@ const config: Config = {
         },
         footer: {
             style: 'dark',
-            copyright: `© ${new Date().getFullYear()} GeyserMC`,
+            copyright: `© ${new Date().getFullYear()} GeyserMC | Built with Docusaurus`,
         },
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
-            additionalLanguages: ['bash', 'batch', 'java'],
+            additionalLanguages: ['bash', 'batch', 'java', 'json'],
         },
         colorMode: {
             defaultMode: 'dark',
             disableSwitch: false,
             respectPrefersColorScheme: false,
+        },
+        docs: {
+            sidebar: {
+                hideable: true,
+            }
         },
     } satisfies Preset.ThemeConfig,
 };
