@@ -1,3 +1,11 @@
+:root {
+    --ifm-background-image-url: url('/img/site/split-background-light.png');
+}
+
+[data-theme='dark'] {
+    --ifm-background-image-url: url('/img/site/split-background.png');
+}
+
 .heroBanner {
     background-repeat: no-repeat;
     background-position-x: center;
@@ -9,6 +17,7 @@
     overflow: hidden;
     color: var(--ifm-font-color-base);
     background-color: var(--ifm-background-color);
+    background-image: var(--ifm-background-image-url);
 }
 
 .heroContent {
