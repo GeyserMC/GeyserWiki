@@ -26,7 +26,7 @@ const config: Config = {
     // may want to replace "en" with "zh-Hans".
     i18n: {
         defaultLocale: 'en',
-        locales: ['en'],
+        locales: ['en', 'de'],
     },
 
     presets: [
@@ -101,6 +101,10 @@ const config: Config = {
                     label: 'Discord',
                     position: 'right',
                     className: 'header-discord-link'
+                },
+                {
+                    type: 'localeDropdown',
+                    position: 'right',
                 },
             ],
         },

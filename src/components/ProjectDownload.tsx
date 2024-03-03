@@ -7,10 +7,10 @@ import { Grid } from './Grid';
 
 interface ProjectDownloadProps {
     projectId: string;
-    description: string;
+    description?: React.ReactNode;
     setup?: string;
     downloadsInfo: {
-        [key: string]: string;
+        [key: string]: string | React.ReactNode;
     };
     gridColumns?: number;
 }

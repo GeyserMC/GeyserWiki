@@ -2,6 +2,7 @@ import type { Providers, HostingProvider, ProviderType } from "@site/src/types/p
 import ReactMarkdown from "react-markdown";
 import Admonition from '@theme/Admonition';
 import React, { useState } from 'react';
+import Translate from "@docusaurus/Translate";
 
 export const noP = (props: { children: any; }) => {
     const { children } = props;
@@ -66,7 +67,9 @@ export const ProviderSelector = () => {
                 {selectedProvider ? (
                     <ReactMarkdown>{selectedProvider.description}</ReactMarkdown>
                 ) : (
-                    <p>Select a provider to see specific installation instructions</p>
+                    <p>
+                        <Translate>Select a provider to see specific installation instructions</Translate>
+                    </p>
                 )}
             </Admonition>
         </div>

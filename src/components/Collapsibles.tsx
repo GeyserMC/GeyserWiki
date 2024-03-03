@@ -9,8 +9,8 @@ export const Collapsibles = ({ children }) => {
 };
 
 interface CollapsibleProps {
-    title: string;
-    subtitle?: string;
+    title: React.ReactNode;
+    subtitle?: React.ReactNode;
     inner: React.ReactNode;
 }
 

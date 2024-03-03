@@ -6,10 +6,9 @@ import Heading from '@theme/Heading';
 import HeroImage from '@site/static/img/site/geyser.png';
 
 import styles from './index.module.css';
+import Translate from '@docusaurus/Translate';
 
 function HomepageHeader() {
-    const { siteConfig } = useDocusaurusContext();
-
     return (
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
             <div className={styles.heroContent}>
@@ -17,10 +16,10 @@ function HomepageHeader() {
                 <img src={HeroImage} alt="Geyser Logo" className={styles.heroImageBackgroundBlur}/>
                 <div className={styles.textSection}>
                     <Heading as="h1" className="hero__title">
-                        {siteConfig.tagline}
+                        <Translate>Revolutionize Your Minecraft Server</Translate>
                     </Heading>
                     <p className="hero__subtitle">
-                        Enable clients from Minecraft Bedrock Edition to join your Minecraft Java server.
+                        <Translate>Enable clients from Minecraft Bedrock Edition to join your Minecraft Java server</Translate>
                     </p>
                 </div>
             </div>
@@ -33,7 +32,8 @@ export default function Home(): JSX.Element {
     return (
         <Layout
             title={`Hello from ${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />">
+            description="Description will go into a meta tag in <head />"
+        >
             <HomepageHeader />
             <main>
                 <HomepageFeatures />
