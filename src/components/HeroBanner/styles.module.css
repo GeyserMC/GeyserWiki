@@ -16,6 +16,10 @@
     padding: 15px;
 }
 
+.textSection p {
+    padding-right: 15px;
+}
+
 .textSection::after {
     content: '';
     position: absolute;
@@ -28,7 +32,7 @@
     transform-origin: top right;
     transform: skewX(-16deg);
     overflow: hidden;
-    width: 110%;
+    width: 100%;
 }
 
 [data-theme='light'] .textSection::after {
