@@ -105,7 +105,7 @@ export const ProjectDownload: React.FC<ProjectDownloadProps> = ({ projectId, des
                             changes.map((change, i) => {
                                 return (
                                     <li key={i}><b>{
-                                        <a href={`https://github.com/GeyserMC/${platformInfo.project_name}/commit/${change.commit}`}>{change.commit.substring(0, 7)}</a>
+                                        <a className='download-link' href={`https://github.com/GeyserMC/${platformInfo.project_name}/commit/${change.commit}`}>{change.commit.substring(0, 7)}</a>
                                     }</b> · {<LinkedCommitMessage message={change.summary} repo={platformInfo.project_name}/>}</li>
                                 )
                             })

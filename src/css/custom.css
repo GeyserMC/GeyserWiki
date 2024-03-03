@@ -224,6 +224,10 @@ html[data-theme='dark'] {
     color: #fff;
 }
 
+.download-link {
+    font-family: var(--ifm-font-family-monospace);
+}
+
 .host-select select {
     font-family: inherit;
     padding: 11px;
