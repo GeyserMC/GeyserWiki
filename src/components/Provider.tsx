@@ -4,7 +4,6 @@ import Admonition from '@theme/Admonition';
 import React, { useState } from 'react';
 import Translate from "@docusaurus/Translate";
 import { providersData } from "../data/providers";
-import MarkdownRenderer from "./MarkdownReander";
 
 export const noP = (props: { children: any; }) => {
     const { children } = props;
