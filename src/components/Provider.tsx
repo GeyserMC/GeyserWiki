@@ -1,8 +1,10 @@
-import type { Providers, HostingProvider, ProviderType } from "@site/src/types/providers";
+import type { HostingProvider, ProviderType } from "@site/src/types/providers";
 import ReactMarkdown from "react-markdown";
 import Admonition from '@theme/Admonition';
 import React, { useState } from 'react';
 import Translate from "@docusaurus/Translate";
+import { providersData } from "../data/providers";
+import MarkdownRenderer from "./MarkdownReander";
 
 export const noP = (props: { children: any; }) => {
     const { children } = props;
@@ -10,16 +12,15 @@ export const noP = (props: { children: any; }) => {
 }
 
 export const Provider = ({ type }) => {
-    const data: Providers = require('@site/_data/providers.json')
-    const providers: HostingProvider[] = data[type as ProviderType]
+    const hostingProviders: HostingProvider[] = providersData[type as ProviderType]
 
     return (
         <div>
-            <ul>{providers.map((provider: HostingProvider) => (
+            <ul>{hostingProviders.map((provider: HostingProvider) => (
                 <li>
                     <a href={provider.url}>{provider.name}</a>
-                    {provider.description != null || provider.description_template != null ? (
-                        <ReactMarkdown children={`&nbsp;&hyphen; ${data.description_templates[provider.description_template] || ''} ${provider.description || ''}`} components={{ p: noP }} />
+                    {provider.description != null ? (
+                        <ReactMarkdown children={`&nbsp;&hyphen; ${provider.description}`} components={{ p: noP }} />
                     ) : (
                         ''
                     )}
@@ -30,19 +31,11 @@ export const Provider = ({ type }) => {
 }
 
 export const ProviderSelector = () => {
-    const data: Providers = require('@site/_data/providers.json')
     const providers: HostingProvider[] = [
-        ...Object.values(data.built_in), 
-        ...Object.values(data.support), 
-        ...Object.values(data.no_support)
+        ...Object.values(providersData.built_in),
+        ...Object.values(providersData.support), 
+        ...Object.values(providersData.no_support)
     ].flat().sort((a, b) => a.name.localeCompare(b.name));
-
-    // update providers if description_template is set
-    providers.forEach((provider) => {
-        if (provider.description_template != null) {
-            provider.description = data.description_templates[provider.description_template]
-        }
-    })
     
 
     const [selectedProvider, setSelectedProvider] = useState(null);
@@ -63,12 +56,12 @@ export const ProviderSelector = () => {
                     </option>
                 ))}
             </select>
-            <Admonition type="tip" title="Provider Instructions">
+            <Admonition type="tip" title={<Translate id='providers.instructions'>Provider Instructions</Translate>}>
                 {selectedProvider ? (
                     <ReactMarkdown>{selectedProvider.description}</ReactMarkdown>
                 ) : (
                     <p>
-                        <Translate>Select a provider to see specific installation instructions</Translate>
+                        <Translate id='providers.select'>Select a provider to see specific installation instructions</Translate>
                     </p>
                 )}
             </Admonition>
