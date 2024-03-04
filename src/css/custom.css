@@ -230,14 +230,13 @@ html[data-theme='dark'] {
 
 .host-select select {
     font-family: var(--ifm-font-family-base);
+    vertical-align: middle;
     padding: 11px;
-    flex-direction: column;
     margin-bottom: 15px;
     width: 99.5%;
     height: 50px;
     border: 1px solid var(--ifm-tabs-color-active);
     border-radius: var(--ifm-global-radius);
-    border-offset: -1px;
     background-color: var(--ifm-background-color);
     font-size: 16px;
     color: var(--ifm-font-color-base);
@@ -245,7 +244,6 @@ html[data-theme='dark'] {
     &:focus {
         border-radius: var(--ifm-global-radius);
         border: 1px solid var(--ifm-tabs-color-active);
-        border-offset: -1px;
     }
 }
 
