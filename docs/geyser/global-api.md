@@ -13,7 +13,7 @@ As a user of the API, you can get various info about Geyser (or specifically, Fl
 
 See the [Global API docs](https://api.geysermc.org/docs) for more info, and detailed usage.
 
-## Examples
+## Examples {#examples}
 
 Here are a few examples of how you could use the Global API.   
 

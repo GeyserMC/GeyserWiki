@@ -8,7 +8,7 @@ Geyser Extensions are the equivalent of "plugins", but specifically for the Geys
 This brings the advantage of them being platform-agnostic, meaning that you won't have to worry about supporting all platforms individually. 
 Additionally, they will be, by design, only applied for Bedrock players joining via Geyser.
 
-## What can Geyser Extensions do?
+## What can Geyser Extensions do? {#what-can-geyser-extensions-do}
 
 Extensions can fully utilize the Geyser API to add additional functionality to Geyser. 
 See [Geyser API docs](/geyser/api/) for info on what is currently possible. 
@@ -22,7 +22,7 @@ To name a few examples:
 
 The underlying Geyser API is steadily expanding, creating more and more opportunities.
 
-## Which Geyser Extensions exist?
+## Which Geyser Extensions exist? {#which-geyser-extensions-exist}
 
 At the moment, extensions are still a new system, so there is only a small list of known extensions for Geyser. 
 However, new extensions are always being created!
@@ -30,12 +30,12 @@ However, new extensions are always being created!
 There is an [official list](https://github.com/GeyserMC/GeyserExtensionList) of available extensions you can check out. 
 If you have an extension you'd like to see on this list, feel free to open a PR!
 
-## Installing Extensions
+## Installing Extensions {#installing-extensions}
 
 To install an extension, simply put the extension .jar file into Geyser's 'extensions' folder. 
 Then, restart Geyser (or the server Geyser runs on).
 
-## Creating Geyser Extensions
+## Creating Geyser Extensions {#creating-geyser-extensions}
 
 The easiest way to create an extension would be utilizing [this official template](https://github.com/GeyserMC/GeyserExampleExtension/). 
 Simply create a new repository from the template, customize the `extension.yml` & `settings.gradle` files, and get started making the extension.
@@ -58,7 +58,7 @@ Explanations for the individual fields:
 - api: The Base API version your extension targets.
 - authors: The author(s) of the extension. To add more than one entry, separate entries with a comma.
 
-## Creating the main class
+## Creating the main class {#creating-the-main-class}
 
 The main class, the entrypoint for the extension, needs to [implement the 'Extension' interface provided by Geyser](https://github.com/GeyserMC/GeyserExampleExtension/blob/master/src/main/java/org/geyser/extension/exampleid/ExampleExtension.java#L12). 
 That way, Geyser recognizes the extension, and gives you access to important methods - such as 'logger()', to get your extensions logger.   
@@ -84,7 +84,7 @@ and register them in the event. You can find an example for custom items [here](
 
 To build your extension, run the Gradle build task, and install the extension.
 
-## Creating commands with Geyser Extensions
+## Creating commands with Geyser Extensions {#creating-commands-with-geyser-extensions}
 To create a command, you would need to use the "Commands" package in the Geyser API. Brief rundown:
 - [Command.java](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/command/Command.java)
   This interface represents a command in Geyser - to make one, you can use the CommandBuilder. You can register it with the
@@ -126,12 +126,12 @@ Here, it would send "Hello World" to the source that ran the command.
 Since we also set aliases, you could also run `/exampleid example` or `/exampleid ex` for the same command.
 To provide args, simple run `/exampleid examplecommand [args]` - replacing [args] with the arguments you want to pass to the command.
 
-## Listening to Events
+## Listening to Events {#listening-to-events}
 See [here](/geyser/events) for documentation. You do not need to register the event listener, Geyser will do that for you.
 
 ---
 
-## Facing troubles with extensions?
+## Facing troubles with extensions? {#facing-troubles-with-extensions}
 
 - Make sure you are using the latest version of Geyser - older versions might not have the latest API changes.
 - Add debug prints.

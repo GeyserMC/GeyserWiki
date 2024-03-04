@@ -5,7 +5,7 @@ title: Supported Languages & Translations
 Geyser supports a wide variety of languages to offer the best experience for players all over the globe.
 When players join your server, Geyser will automatically detect their locale and provide the appropriate language.
 
-## What languages are supported?
+## What languages are supported? {#what-languages-are-supported}
 We aim to support any of the Bedrock languages - below is a list of them and all the language codes. 
 
 | Name                         | Code  |
@@ -40,7 +40,7 @@ We aim to support any of the Bedrock languages - below is a list of them and all
 | Chinese Simplified (China)   | zh_cn |
 | Chinese Traditional (Taiwan) | zh_tw |
 
-### Additional languages
+### Additional languages {#additional-languages}
 These languages are also supported, and are available in the Bedrock client using [the Translations for Minecraft resource pack](https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft).
 
 | Name                | Code  |
@@ -50,12 +50,12 @@ These languages are also supported, and are available in the Bedrock client usin
 | Hebrew              | he_il |
 | Hindi               | hi_in |
 
-## How can I help translate Geyser?
+## How can I help translate Geyser? {#how-can-i-help-translate-geyser}
 We use [Crowdin](https://crowdin.com/project/geyser) to manage our translations.
 We also can add support for more languages, and please request them in the Discord server if you are willing to translate them.
 (Those can be enabled clientside via [https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft](https://www.curseforge.com/minecraft-bedrock/addons/translations-for-minecraft))
 
-## Adding custom Geyser translation overrides
+## Adding custom Geyser translation overrides {#adding-custom-geyser-translation-overrides}
 These strings are only for places where Geyser uses them. To edit Minecraft Java translations, see the section below.
 
 To start, create a `languages` folder in the same directory as the Geyser config file.
@@ -65,7 +65,7 @@ you can download these as a starting point, or you can just add the strings you 
 
 You must restart Geyser for the changes to apply.
 
-## Modifying/Adding Minecraft Java translations
+## Modifying/Adding Minecraft Java translations {#modifyingadding-minecraft-java-translations}
 Geyser also downloads the Minecraft Java translations from Mojang's servers and sends them to Bedrock clients when needed.
 To modify these, open the `overrides` subfolder in the `locales` folder. Then, place your modified `.json` files in the `overrides` folder.
 You can also add custom Java translation strings to that json file.

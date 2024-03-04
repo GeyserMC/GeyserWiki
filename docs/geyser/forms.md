@@ -17,7 +17,7 @@ We'll discuss them one by one starting with the easiest and ending with the leas
 After that, you get an overview of every single component.  
 Then we'll talk about sending the form, receiving a response and doing advanced stuff.  
 
-## ModalForm
+## ModalForm {#modalform}
 
 While this is the easiest form type it's also the least customisable.  
 You have a title, description (content) and two buttons.
@@ -34,7 +34,7 @@ ModalForm.builder()
     .button2("Button 2")
 ```
 
-## SimpleForm
+## SimpleForm {#simpleform}
 
 While this one is less easy than ModalForm is, it also has more customizability.  
 It's still limited to a title, content and buttons, but these buttons can also have images and do not have a minimum and maximum of two.
@@ -51,7 +51,7 @@ SimpleForm.builder()
     .button("Button with path image", FormImage.Type.PATH, "textures/i/glyph_world_template.png")
 ```
 
-## CustomForm
+## CustomForm {#customform}
 
 While the CustomForm is the last one on our list (and thus the least easy one), it also has the greatest customizability.  
 This form exists of a title, content and a list of different components e.g. label, slider and input.  
@@ -70,7 +70,7 @@ CustomForm.builder()
     .slider("Text", 0, 10, 1, 5)
 ```
 
-## Sending a form
+## Sending a form {#sending-a-form}
 
 After you decided which form type you want to use and finished filling in the actual content, it's time to send the Form to the Bedrock player.  
 You can do that by calling the API and send a form to the player's UUID and the form:
@@ -93,7 +93,7 @@ player.sendForm(
 );
 ```
 
-## Receiving a response from the client
+## Receiving a response from the client {#receiving-a-response-from-the-client}
 
 It's nice and all that we can send forms to a client, but we also want to be able to get a response from a client and being able to handle them.  
 We can do that using one (or multiple) result handers. The most used result handlers are: `validResultHandler(BiConsumer<Form, ValidFormResponseResult> | Consumer<ValidFormResponseResult>)`, `invalidResultHandler`, `closedResultHandler` and `closedOrInvalidResultHandler`.  
@@ -108,7 +108,7 @@ CustomForm.builder()
     .validResultHandler(response -> session.authenticate(response.next(), response.next())));
 ```
 
-## Advanced stuff
+## Advanced stuff {#advanced-stuff}
 
 The FormBuilder also has support for translating the data used in the builder.  
 To add a translator, you can use the `translator(BiFunction<String, String, String>)` or the `translator(BiFunction<String, String, String>, String)` method:

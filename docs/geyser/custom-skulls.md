@@ -8,7 +8,7 @@ Unlike Java Edition, Bedrock does not have native support for custom skull items
 
 To setup custom skulls in geyser, you have to choose how you are going to register your blocks. The easiest is [using custom-skulls.yml](#custom-skullsyml), but you can also [use a Geyser extension](#geyser-extensions).
 
-## Enabling custom skulls
+## Enabling custom skulls {#enabling-custom-skulls}
 
 To enable custom skulls, you must set `add-non-bedrock-items` to `true` in the `config.yml` file. This will enable the generation of the custom resource pack and the translation of custom skulls to custom blocks. You can then add custom skulls to the `custom-skulls.yml` file.
 
@@ -21,7 +21,7 @@ To enable custom skulls, you must set `add-non-bedrock-items` to `true` in the `
 add-non-bedrock-items: true
 ```
 
-## custom-skulls.yml
+## custom-skulls.yml {#custom-skullsyml}
 
 The configuration file `custom-skulls.yml` is present in Geyser's configuration folder and is laid out as follows:
 
@@ -59,15 +59,15 @@ skin-hashes:
 
 To add a skull, you need to choose any of the four methods, and add a new entry. The following sections will explain each method:
 
-### Player usernames
+### Player usernames {#player-usernames}
 
 Skulls can be registered in this section via player usernames. These will be updated when Geyser starts. As a result, they may change if the player's username or skin changes.
 
-### Player UUIDs
+### Player UUIDs {#player-uuids}
 
 Skulls can be registered in this section via player UUIDs. These will be updated when Geyser starts. As a result, they may change if skin changes.
 
-### Player profiles
+### Player profiles {#player-profiles}
 
 Skulls can be registered in this section via the texture string found in the NBT of custom player heads. Unless the value is changed manually, these will not be updated when Geyser starts. As a result, they will not change if the player's username or skin changes. The data is simply base64 encoded JSON. For instance, the example given in the config decodes as follows:
 
@@ -94,13 +94,13 @@ If on a paper server, this data can be obtained for a skull by holding the item 
 [05:58:07 INFO]: minecraft:player_head{display: {Name: '{"text":"Test"}'}, SkullOwner: {Properties: {textures: [{Value: "ewogICJ0aW1lc3RhbXAiIDogMTY1NzMyMjIzOTgzMywKICAicHJvZmlsZUlkIiA6ICJjZGRiZTUyMGQwNDM0YThiYTFjYzlmYzkyZmRlMmJjZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJkYXZjaG9vIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E5MDc5MGM1N2UxODFlZDEzYWRlZDE0YzQ3ZWUyZjdjOGRlMzUzM2UwMTdiYTk1N2FmN2JkZjlkZjFiZGU5NGYiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ"}]}, Id: [I; -229048314, -553040501, -1407961158, 465313087]}}
 ```
 
-### Skin Hashes
+### Skin Hashes {#skin-hashes}
 
 Skulls can be registered in this section via the hash of the skin on Minecraft's skin server. This is found at the end of the URL. For example, in the URL `http://textures.minecraft.net/texture/a90790c57e181ed13aded14c47ee2f7c8de3533e017ba957af7bdf9df1bde94f` the hash is `a90790c57e181ed13aded14c47ee2f7c8de3533e017ba957af7bdf9df1bde94f`.Unless the value is changed manually, these will not be updated when Geyser starts. As a result, they will not change if the player's username or skin changes.
 
 This can be obtained by decoding the base64 data obtained from a player profile.
 
-## Geyser extensions
+## Geyser extensions {#geyser-extensions}
 
 In this example, we will register a custom skull from a player profile. We will use the player profile from the example above.
 
@@ -135,6 +135,6 @@ public class RegisterCustomSkull implements Extension {
 }
 ```
 
-## Scraping custom skulls from a world
+## Scraping custom skulls from a world {#scraping-custom-skulls-from-a-world}
 
 Custom skulls can be extracted from an existing world for easy implementation via mappings or API using the tool [HeadExtractor](https://github.com/davchoo/HeadExtractor) made by Amberichu. See the linked repository for usage instructions.

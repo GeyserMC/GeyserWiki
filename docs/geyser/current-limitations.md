@@ -7,7 +7,7 @@ title: Current Limitations
 With Geyser being a protocol translator between two different games with two different codebases, there are a handful of limitations that Geyser is unfortunately unable to handle. 
 Despite Minecraft Bedrock and Java being quite close in comparison, there are some vast differences in many areas.
 
-## Unfixable
+## Unfixable {#unfixable}
 
 The following things cannot be fixed without changes to Bedrock or the Java protocol in general. As of now, they are not fixable in Geyser.
 
@@ -32,7 +32,7 @@ The following things cannot be fixed without changes to Bedrock or the Java prot
 - Saddled camels unmoveable/unrideable on bedrock.
 - Bedrock edition players cannot see the changes to fence block states made by the Java Debug Stick.
 
-## Fixable With GeyserOptionalPack
+## Fixable With GeyserOptionalPack {#fixable-with-geyseroptionalpack}
 
 The following changes **are supported** with the [GeyserOptionalPack](/other/geyseroptionalpack/), which is a Bedrock resource pack you can install for additional functionality for features Bedrock does not natively support:
 - Custom armor stand poses

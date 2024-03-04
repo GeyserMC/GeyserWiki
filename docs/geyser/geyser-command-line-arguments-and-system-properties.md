@@ -7,7 +7,7 @@ title: Geyser Command Line Arguments and System Properties
 Geyser offers a few command line arguments/system properties to allow you to configure Geyser without editing the config files.
 Additionally, you can suppress some warnings that may be printed to the console.
 
-## Configuration system properties
+## Configuration system properties {#configuration-system-properties}
 
 You can set Geyser to automatically bind to a specific address and port by using the following command line arguments.   
 This is primarily aimed at server hosting providers to automatically configure servers for users.
@@ -27,7 +27,7 @@ The Geyser specific properties are prioritized over the plugin properties!
   - ```server``` means to match the bind address of the TCP server
   - any other string will be used as-is for the bind address.
 
-## Disabling warnings and advanced configuration
+## Disabling warnings and advanced configuration {#disabling-warnings-and-advanced-configuration}
 You may disable some warnings that may be printed to the console by using the following command line arguments:
 
 :::caution
@@ -55,17 +55,17 @@ Disabling Geyser warnings from being logged will not fix the real issue! Only di
   - Allows you to turn off suggestions for teams in the scoreboard command. This is enabled by default, disabling this can help with performance if there are a lot of teams defined. 
   Setting "command-suggestions" to false in the config will also disable this.
 
-## Geyser-Standalone Specific Options
+## Geyser-Standalone Specific Options {#geyser-standalone-specific-options}
 
-### `--config [file]`
+### `--config [file]` {#--config-file}
 - **Alias: `-c`**
 - Points to an alternative config file to use.
 
-### `--gui` / `--nogui`
+### `--gui` / `--nogui` {#--gui----nogui}
 - **Alias: `gui` / `nogui`**:
 - Forces GUI or non-GUI usage, depending on context.
 
-## Overriding specific config values
+## Overriding specific config values {#overriding-specific-config-values}
 Overriding a standard config option (e.g. `command-suggestions`):
 
 `--command-suggestions=false`

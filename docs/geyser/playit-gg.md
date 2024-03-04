@@ -2,7 +2,7 @@
 title: playit.gg Setup
 ---
 
-## Prerequisites
+## Prerequisites {#prerequisites}
 
 :::info
 You must be able to connect to your Geyser instance locally!
@@ -14,7 +14,7 @@ The playit.gg Minecraft server plugin does not support UDP tunnels. You will nee
 
 - If you already have playit.gg running & set up (for e.g. Minecraft Java edition), skip steps 1 and 2 and proceed with step 3.
 
-## Setup
+## Setup {#setup}
 1. Head over to [playit.gg's website](https://playit.gg/) - download the program & run it. It will open the login site in the browser - create an account & sign in. Or, use a guest account.
 2. Once logged in, make sure to connect the program + site, until step 4 is reached. This should happen automatically, if it does not, follow the instructions on the website and the playit.gg program console.
    ![img](/img/wiki/playit-gg/running.png)
@@ -27,9 +27,9 @@ The playit.gg Minecraft server plugin does not support UDP tunnels. You will nee
 6. If you join successfully, then you are done! Make sure to leave the playit.gg program running as closing it will close the tunnel. You also may want to ratelimit individual connections - use the "Per Connection Rate Limit" option to do so.
    (If you failed to join, check out the [troubleshooting](#troubleshooting) section of the page.) 
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### I can't connect to my server!
+### I can't connect to my server! {#i-cant-connect-to-my-server}
 * *Are there errors in your minecraft server console?*
 * *Make sure to check [here](/geyser/fixing-unable-to-connect-to-world/) beforehand.*
 * *If you changed the port that Geyser would bind to, you'll have to tell playit.gg to use that port instead! See step 5 here.*

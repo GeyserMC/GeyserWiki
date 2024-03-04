@@ -17,19 +17,19 @@ or the [Public GeyserConnect](https://www.geyserconnect.net) which allows connec
 
 :::
 
-## Xbox One
+## Xbox One {#xbox-one}
 
 (Video linked below)
 
 [![Xbox One BedrockConnect](https://img.youtube.com/vi/g8mHvasVHMs/0.jpg)](https://www.youtube.com/watch?v=g8mHvasVHMs)
 
-## Nintendo Switch
+## Nintendo Switch {#nintendo-switch}
 
 (Video linked below)
 
 [![Nintendo Switch BedrockConnect](https://img.youtube.com/vi/zalT_oR1nPM/0.jpg)](https://www.youtube.com/watch?v=zalT_oR1nPM)
 
-## PlayStation 4
+## PlayStation 4 {#playstation-4}
 
 1. Go to your PS4 Home screen.
 2. Go to Settings.
@@ -42,16 +42,16 @@ or the [Public GeyserConnect](https://www.geyserconnect.net) which allows connec
 9. Under DNS Settings, select Manual.
 10. Enter the BedrockConnect IP for the preferred Primary DNS (Multiple options depending on region can be found on the [BedrockConnect GitHub Page](https://github.com/Pugmatt/BedrockConnect)) and something like Google or Cloudflare's IP for the Secondary DNS (8.8.8.8 or 1.1.1.1).
 
-## Alternative Methods
+## Alternative Methods {#alternative-methods}
 
 If you'd rather try emulating a LAN game on your network on another device, here's how you'd do that.
 
 *Note that this method will not work with the Nintendo Switch.*
 
-### Using a PC
+### Using a PC {#using-a-pc}
 If you have a PC, you can use [Phantom](https://github.com/jhead/phantom).
 
-### Using an Android Device
+### Using an Android Device {#using-an-android-device}
 If you have an Android device, you have several options:
 - ~~[Geyser Android app](https://github.com/GeyserMC/GeyserAndroid)~~ (Discontinued)
 - [BedrockTogether](https://play.google.com/store/apps/details?id=pl.extollite.bedrocktogetherapp)
@@ -60,5 +60,5 @@ If you have an Android device, you have several options:
 - [MC Server Connector](https://play.google.com/store/apps/details?id=com.smokiem.mcserverconnector)
 - [Tempest](https://play.google.com/store/apps/details?id=net.ahmed.tempest)
 
-### Using an iOS device
+### Using an iOS device {#using-an-ios-device}
 If you have an iOS 14+ device, you can use [BedrockTogether](https://apps.apple.com/app/bedrocktogether/id1534593376).

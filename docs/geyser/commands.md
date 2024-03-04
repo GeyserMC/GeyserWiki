@@ -13,7 +13,7 @@ on the proxy server to assign permissions to players. Assigning permissions on t
 
 :::
 
-## Geyser commands & their permissions
+## Geyser commands & their permissions {#geyser-commands--their-permissions}
 
 |                Command                 |           Permission           |                             Description                             |
 |:--------------------------------------:|:------------------------------:|:-------------------------------------------------------------------:|
@@ -29,7 +29,7 @@ on the proxy server to assign permissions to players. Assigning permissions on t
 |            `geyser version`            |    `geyser.command.version`    |      Shows the current Geyser version and checks for updates.       |
 |           `geyser tooltips`            |   `geyser.command.tooltips`    |          Toggle showing Advanced Tooltips (F3 + H on Java)          |
 
-## Other Permissions
+## Other Permissions {#other-permissions}
 
 Besides commands, there are other permissions that are used to guard specific Geyser features.
 
@@ -37,6 +37,6 @@ Besides commands, there are other permissions that are used to guard specific Ge
 |--------------------------|------------------------------------------------------------------------------------------------------------|
 | `geyser.settings.server` | Allow players to use the [game settings menu](/img/wiki/game_menu.png). (Also requires player to have op.) |
 
-## Floodgate commands and permissions
+## Floodgate commands and permissions {#floodgate-commands-and-permissions}
 
 For Floodgate commands, see [here](/floodgate/commands/).

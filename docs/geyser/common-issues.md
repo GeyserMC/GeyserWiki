@@ -15,7 +15,7 @@ For Floodgate issues see: [Floodgate: Known Issues/Caveats](/floodgate/issues/).
 * If you don't use a reverse proxy such as TCPShield make sure that `enable-proxy-protocol` is set to false.
 To fix "Unable to connect to world" with no console errors, see [here](/geyser/fixing-unable-to-connect-to-world/).
 
-## If the server doesn't show up in the friends list
+## If the server doesn't show up in the friends list {#if-the-server-doesnt-show-up-in-the-friends-list}
 
 * *If using Windows 10, iOS, or Android*: try adding the server to the Servers list in-game.
 * *If using Xbox One*: try connecting with [BedrockConnect](/geyser/using-geyser-with-consoles/).
@@ -31,14 +31,14 @@ See [here](/geyser/fixing-unable-to-connect-to-world/) for fixing "Unable to Con
 
 :::
 
-### `java.net.BindException: Address already in use: bind` on startup.
+### `java.net.BindException: Address already in use: bind` on startup. {#javanetbindexception-address-already-in-use-bind-on-startup}
 This means something (likely another instance of Geyser) is running on the port you have specified in the config. Please make sure you close all applications running on this port. If you don't recall opening anything, usually restarting your computer fixes this.
 
-### [...]` has been compiled by a more recent version of the Java Runtime (class file version 60.0)`
+### [...]` has been compiled by a more recent version of the Java Runtime (class file version 60.0)` {#-has-been-compiled-by-a-more-recent-version-of-the-java-runtime-class-file-version-600}
 
 See this link for updating to Java 17: https://paper.readthedocs.io/en/latest/java-update/index.html.
 
-### Hosting provider will not immediately open up UDP.
+### Hosting provider will not immediately open up UDP. {#hosting-provider-will-not-immediately-open-up-udp}
 
 These steps only apply for the standalone version of Geyser.
 This usually has something to do on your host's end. Most commonly, it's because they do not open up ports over the UDP protocol, which is what Minecraft: Bedrock Edition uses, opposed to Minecraft: Java Edition using TCP. 
@@ -58,7 +58,7 @@ This option will most likely not help if you are getting "Unable to Connect to W
 
 ***If you are using a plugin version:*** in your Geyser config, set your remote address to `127.0.0.1`. If that does not work, check your startup log for a message about Docker, and use that address in the remote address
 
-### Cannot reply to EncryptionRequestPacket without profile and access token
+### Cannot reply to EncryptionRequestPacket without profile and access token {#cannot-reply-to-encryptionrequestpacket-without-profile-and-access-token}
 
 There are two causes of this message:
 
@@ -70,21 +70,21 @@ This message can occur with a Floodgate setup. Usually, it means that a misconfi
 
 If you have your configuration set up like this, put simply, it won't work. If authentication for the Java server is set to online, it is expected Geyser is configured the same way. The server requires a valid Minecraft: Java Edition account, and if you aren't logging into one with Geyser, then you will be unable to join the server. If your configuration is set up properly and you're still getting this issue, it could be that your credentials are invalid.
 
-### Connection Refused: \<INSERT IP AND/OR DOMAIN\>
+### Connection Refused: \<INSERT IP AND/OR DOMAIN\> {#connection-refused-insert-ip-andor-domain}
 
 Connection Refused usually means that a Java server could not be found on that port, or the server denied access to the connection on a network level. 
 The latter can happen with anti-DDOS plugins such as TCPShield, but otherwise ensure that the server you're trying to connect to is spelled correctly in the config, is up and is port forwarded correctly.
 
 If you're updating from an old build of Geyser, set your remote address to `auto` and try again.
 
-### Floodgate Misconfiguration
+### Floodgate Misconfiguration {#floodgate-misconfiguration}
 See [this page](/floodgate/setup/) for more information.
 
-### Missing profile key. This server requires secure profiles.
+### Missing profile key. This server requires secure profiles. {#missing-profile-key-this-server-requires-secure-profiles}
 
 See [this page](/geyser/secure-chat/).
 
-### Mojang Resetting Account Credentials
+### Mojang Resetting Account Credentials {#mojang-resetting-account-credentials}
 This is unfortunately something we have no control over, and is most likely the case when you're running Geyser as a plugin on a server host or joining a friend far away from your location. If you're running Geyser locally, this should not happen to you, but what we recommend for servers is a plugin we make called [Floodgate](https://github.com/GeyserMC/Floodgate), which allows for Bedrock clients to join your server without needing a Java Edition account. Take a look [here](/floodgate) for more information.
 
 # "Invalid IP address!" from Bedrock
@@ -129,5 +129,5 @@ And so on.
 
 If your players can't connect from the lobby to another backend server, check console.
 
-### Plugins that can cause issues
+### Plugins that can cause issues {#plugins-that-can-cause-issues}
 * `HamsterAPI`

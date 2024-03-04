@@ -6,7 +6,7 @@ title: Custom items with Geyser
 
 To setup custom items in geyser, you have to choose how you are going to register your items. The easiest is [using a json file](#json-mappings) but you can also [use a Geyser extension](#geyser-extensions).
 
-## JSON mappings
+## JSON mappings {#json-mappings}
 
 1. Start your server, and you should have a folder called `custom_mappings` that is created. That would be with the folder of `Geyser.jar` file for standalone and inside your Geyser data folder for a plugin.
 2. Create a `.json` file, it can be any name you like and as many files as you like. You don't need to make one file per item. Here is the structure of the file:
@@ -73,9 +73,9 @@ To setup custom items in geyser, you have to choose how you are going to registe
     }
     ```
 
-## Geyser extensions
+## Geyser extensions {#geyser-extensions}
 
-### Extending a vanilla item
+### Extending a vanilla item {#extending-a-vanilla-item}
 
 1. Create your custom item options or registrations, to which you can add any of the following. They can be stacked, so that all of the specified types need to match, but you **do NOT need all of them.**
 ```java
@@ -108,7 +108,7 @@ public void onGeyserPreInitializeEvent(GeyserDefineCustomItemsEvent event) {
 }
 ```
 
-### Non vanilla (modded) items with Geyser extensions (for example to use with Fabric)
+### Non vanilla (modded) items with Geyser extensions (for example to use with Fabric) {#non-vanilla-modded-items-with-geyser-extensions-for-example-to-use-with-fabric}
 
 1. Create your item data:
 ```java
@@ -126,7 +126,7 @@ public void onGeyserDefineCustomItemsEvent(GeyserDefineCustomItemsEvent event) {
 }
 ```
 
-## Resource pack
+## Resource pack {#resource-pack}
 
 1. Setup a basic bedrock resource pack. If you need help, you can find it [here](https://wiki.bedrock.dev/guide/project-setup.html#rp-manifest).
 2. Make a `textures` folder.

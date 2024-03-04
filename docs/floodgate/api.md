@@ -7,7 +7,7 @@ Floodgate has an API to extend what is possible and allow servers to get informa
 This page will contain information about class FloodgateApi.  
 See the sidebar for more information about other parts of the API.
 
-### Accessing the Floodgate API
+### Accessing the Floodgate API {#accessing-the-floodgate-api}
 See [here](/geyser/getting-started-with-the-api) for how to include the Floodgate API in your project.
 
 
@@ -29,7 +29,7 @@ To see full, detailed documentation, see the [javadocs](https://repo.opencollab.
 
 :::
 
-#### We'll highlight a few to get you started quickly:
+#### We'll highlight a few to get you started quickly: {#well-highlight-a-few-to-get-you-started-quickly}
 `FloodgateApi#isFloodgatePlayer(UUID)`  
 Used to check if the given UUID of an **online** player is a Bedrock player.
 
@@ -48,5 +48,5 @@ Click [here](/floodgate/linking/) to get more information about the PlayerLink c
 Used to send a form to the Bedrock player with the given UUID.  
 Click [here](/geyser/forms/) to get more information about Forms.
 
-### Using the API on backend servers
+### Using the API on backend servers {#using-the-api-on-backend-servers}
 In order to successfully use the API on backend Spigot servers when using a proxy, `send-floodgate-data` must be set to `true` on the proxy Floodgate's config, and the `key.pem` file must be identical between all Floodgate instances.
