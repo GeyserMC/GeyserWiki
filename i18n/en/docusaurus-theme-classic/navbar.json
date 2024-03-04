@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "GeyserMC",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "GeyserMC logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Wiki": {
+    "message": "Wiki",
+    "description": "Navbar item with label Wiki"
+  },
+  "item.label.Download": {
+    "message": "Download",
+    "description": "Navbar item with label Download"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Discord": {
+    "message": "Discord",
+    "description": "Navbar item with label Discord"
+  },
+  "item.label.Geyser": {
+    "message": "Geyser",
+    "description": "Navbar item with label Geyser"
+  },
+  "item.label.Floodgate": {
+    "message": "Floodgate",
+    "description": "Navbar item with label Floodgate"
+  },
+  "item.label.Other": {
+    "message": "Other",
+    "description": "Navbar item with label Other"
+  }
+}
