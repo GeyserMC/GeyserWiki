@@ -15,15 +15,14 @@ import StandaloneIcon from '@site/static/img/icons/geyser.png';
 import PlatformIcon from '@site/src/components/PlatformIcon';
 import { ProjectDownload } from '@site/src/components/ProjectDownload';
 import { Collapsibles, Collapsible } from '@site/src/components/Collapsibles';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Translate from '@docusaurus/Translate';
 
 const DownloadPage: React.FC = () => (
     <>
         <HeroBanner
-            title="Download"
-            subheading="Download the latest versions of our various projects."
+            title={<Translate id='pages.download.title'>Download</Translate>}
+            subheading={<Translate id='pages.download.subheading'>Download the latest versions of our various projects.</Translate>}
             backgroundImage={HeroBackground}
         />
 
@@ -31,7 +30,7 @@ const DownloadPage: React.FC = () => (
             <TabItem value="geyser" label="Geyser" default>
                 <ProjectDownload
                     projectId="geyser"
-                    description={<Translate>A bridge/proxy allowing you to connect to Minecraft: Java Edition servers with Minecraft: Bedrock Edition.</Translate>}
+                    description={<Translate id='pages.download.description.geyser'>A bridge/proxy allowing you to connect to Minecraft: Java Edition servers with Minecraft: Bedrock Edition.</Translate>}
                     setup="/geyser/setup"
                     downloadsInfo={{
                         bungeecord: <PlatformIcon svg={WaterfallBungeeCordIcon} text="BungeeCord" />,
@@ -47,7 +46,7 @@ const DownloadPage: React.FC = () => (
             <TabItem value="floodgate" label="Floodgate">
                 <ProjectDownload
                     projectId="floodgate"
-                    description={<Translate>Hybrid mode plugin to allow for connections from Geyser to join online mode servers.</Translate>}
+                    description={<Translate id='pages.download.description.floodgate'>Hybrid mode plugin to allow for connections from Geyser to join online mode servers.</Translate>}
                     setup="/floodgate/setup"
                     downloadsInfo={{
                         bungee: <PlatformIcon svg={WaterfallBungeeCordIcon} text="BungeeCord" />,
@@ -60,7 +59,7 @@ const DownloadPage: React.FC = () => (
                 <Collapsibles>
                     <Collapsible
                         title='GeyserConnect'
-                        subtitle={<Translate>A plugin to allow for Geyser players to connect to your server without needing to use a proxy.</Translate>}
+                        subtitle={<Translate id='pages.download.description.geyserconnect'>A plugin to allow for Geyser players to connect to your server without needing to use a proxy.</Translate>}
                         inner={
                             <ProjectDownload
                                 projectId="geyserconnect"
@@ -74,7 +73,7 @@ const DownloadPage: React.FC = () => (
                     />
                     <Collapsible
                         title='GeyserOptionalPack'
-                        subtitle={<Translate>An optional Bedrock resource pack to extend Geyser functionality.</Translate>}
+                        subtitle={<Translate id='pages.download.description.geyseroptionalpack'>An optional Bedrock resource pack to extend Geyser functionality.</Translate>}
                         inner={
                             <ProjectDownload
                                 projectId="geyseroptionalpack"
@@ -93,10 +92,9 @@ const DownloadPage: React.FC = () => (
 );
 
 export default function Download(): JSX.Element {
-    const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
-            title={`Download from ${siteConfig.title}`}
+            title={`Geyser Downloads`}
             description="Download the latest versions of our various projects."
         >
             <main>

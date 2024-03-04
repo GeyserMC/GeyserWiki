@@ -5,7 +5,7 @@
         "**/node_modules": true,
         "**/dist": true
     },
-    "editor.detectIndentation": false,
+    "editor.detectIndentation": true,
     "editor.autoIndent": "full",
     "editor.indentSize": "tabSize",
     "[typescript]": {

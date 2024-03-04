@@ -19,7 +19,7 @@ const FeatureList: FeatureItem[] = [
         image: Crossplatform2Img,
         description: (
             <>
-                <Translate id="homepage.features.1">Geyser is a program that allows Minecraft: Bedrock Edition clients to join Minecraft: Java Edition servers, allowing for true crossplay between both editions of the game. The ultimate goal of this project is to allow Minecraft: Bedrock Edition users to join Minecraft: Java Edition servers as seamlessly as possible.</Translate>
+                <Translate id="components.homepage_features.1">Geyser is a program that allows Minecraft: Bedrock Edition clients to join Minecraft: Java Edition servers, allowing for true crossplay between both editions of the game. The ultimate goal of this project is to allow Minecraft: Bedrock Edition users to join Minecraft: Java Edition servers as seamlessly as possible.</Translate>
             </>
         ),
     },
@@ -28,7 +28,7 @@ const FeatureList: FeatureItem[] = [
         image: Crossplatform1Img,
         description: (
             <>
-                <Translate id='homepage.features.2'>Geyser acts as a translator which sits between the Bedrock client and the Java server. It takes data from the Bedrock client and translates it into a format the Java server understands and vice versa. Geyser works with any modern Minecraft version and can be installed either as a plugin or ran as a standalone program.</Translate>
+                <Translate id='components.homepage_features.features.2'>Geyser acts as a translator which sits between the Bedrock client and the Java server. It takes data from the Bedrock client and translates it into a format the Java server understands and vice versa. Geyser works with any modern Minecraft version and can be installed either as a plugin or ran as a standalone program.</Translate>
             </>
         ),
     },
@@ -37,9 +37,9 @@ const FeatureList: FeatureItem[] = [
         image: Crossplatform0Img,
         description: (
             <>
-                <Translate id='homepage.features.3'>Geyser can be joined from Bedrock clients on Windows 10/11, iOS, Android, and even consoles (more info here). Geyser works with a wide array of hosting providers, but can also be used as its own standalone proxy to join any Minecraft server!</Translate>
+                <Translate id='components.homepage_features.features.3'>Geyser can be joined from Bedrock clients on Windows 10/11, iOS, Android, and even consoles (more info here). Geyser works with a wide array of hosting providers, but can also be used as its own standalone proxy to join any Minecraft server!</Translate>
 
-                <Translate id='homepage.features.4'>If you are a server owner, you can install our Floodgate plugin which allows Xbox Live authenticated Bedrock users to join without a Java Edition account!</Translate>
+                <Translate id='components.homepage_features.features.4'>If you are a server owner, you can install our Floodgate plugin which allows Xbox Live authenticated Bedrock users to join without a Java Edition account!</Translate>
             </>
         ),
     },

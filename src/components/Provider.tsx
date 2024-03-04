@@ -55,12 +55,12 @@ export const ProviderSelector = () => {
                     </option>
                 ))}
             </select>
-            <Admonition type="tip" title={<Translate id='providers.instructions'>Provider Instructions</Translate>}>
+            <Admonition type="tip" title={<Translate id='components.provider.instructions'>Provider Instructions</Translate>}>
                 {selectedProvider ? (
                     <ReactMarkdown>{selectedProvider.description}</ReactMarkdown>
                 ) : (
                     <p>
-                        <Translate id='providers.select'>Select a provider to see specific installation instructions</Translate>
+                        <Translate id='components.provider.select'>Select a provider to see specific installation instructions</Translate>
                     </p>
                 )}
             </Admonition>

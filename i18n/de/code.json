@@ -1,0 +1,520 @@
+{
+  "components.provider.instructions": {
+    "message": "Provider Instructions"
+  },
+  "components.provider.select": {
+    "message": "Select a provider to see specific installation instructions"
+  },
+  "providers.templates.default": {
+    "message": "Enable `clone-remote-port` (or manually set `bedrock port` to the Java port), and connect with the Java IP and port."
+  },
+  "providers.templates.ip_and_port": {
+    "message": "Enable `clone-remote-port` (or manually set `bedrock port` to the Java port), uncomment `bedrock address`, and change `0.0.0.0` to your Java server's IP. Connect with the Java IP and port."
+  },
+  "providers.templates.forwarding_option": {
+    "message": "Offers a working port forwarding option."
+  },
+  "providers.templates.java_ip": {
+    "message": "Make sure your remote address is 'auto', uncomment `bedrock address`, and change `0.0.0.0` to your Java server's IP."
+  },
+  "providers.provider.aternos.description": {
+    "message": "Install Geyser in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details. Do note: Aternos automatically installs the latest version of the plugin, but does not auto update it. To update Geyser on Aternos, simply reinstall the plugin (no need to uninstall the plugin/deleting the plugin files)."
+  },
+  "providers.provider.apex_hosting.description": {
+    "message": "Full auto installation. Go to the Customizations tab in the panel and select 'Enabled' under the 'Geyser Auto Installer' option. Then, restart and connect to your server with your Java IP and port. See [Apex's article](https://apexminecrafthosting.com/geysermc/) for more details."
+  },
+  "providers.provider.cloud_nord.description": {
+    "message": "Go to their [Crossplay Server](https://cloudnord.net/minecraftcrossplay-server-hosting/) hosting section and order your server. Instructions on how to join are provided."
+  },
+  "providers.provider.creeperhost.description": {
+    "message": "Has a toggle within the control panel to automatically enable Geyser. May not be enabled by default, so you may need to toggle it and restart the server."
+  },
+  "providers.provider.cubes_hosting.description": {
+    "message": "Install Geyser using the plugin manager. Then restart the server and Geyser will run on an additional port - you can check it in the server console. Geyser-Standalone can be set up through a support ticket."
+  },
+  "providers.provider.exaroton.description": {
+    "message": "Install Geyser in the exaroton plugin list and connect to your server with your Java IP and port. See [exaroton's article](https://support.exaroton.com/hc/en-us/articles/360019857918-Geyser) for more details."
+  },
+  "providers.provider.ggservers.description": {
+    "message": "Can be installed to any server from their auto plugin setups. No further configuration needed."
+  },
+  "providers.provider.mcprohosting.description": {
+    "message": "Click 'Enable Bedrock Support' on the server dashboard and follow the steps. For manual installation: Add 'Destination Port' `19132` with 'Protocol UDP' to the port forward mapping and connect to the given source port."
+  },
+  "providers.provider.minefort.description": {
+    "message": "On the server dashboard under 'Connect Support', make sure 'Allow Bedrock' is enabled. Then connect via `play.minefort.com` and join using `/server [servername]`, or connect via `[servername].minefort.com`."
+  },
+  "providers.provider.minehut.description": {
+    "message": "Connect via `bedrock.minehut.com` and do `/join [servername]`, or connect directly via `[servername].bedrock.minehut.gg`."
+  },
+  "providers.provider.omgserv.description": {
+    "message": "Select Geyser in the [Install Menu](https://i.imgur.com/Gewpsrq.png), it will be automatically installed. You can enable floodgate in the [server properties on the dashboard](https://i.imgur.com/jg5mzNj.png)."
+  },
+  "providers.provider.pufferfish_host.description": {
+    "message": "Geyser is installed and configured on all servers by default."
+  },
+  "providers.provider.server.pro.description": {
+    "message": "Different instructions for different plans: On VPS, select Geyser in the [Service Type Menu](https://i.imgur.com/loSNmvu.png), Floodgate can be enabled on the dashboard configuration. For manual installation: Using a Premium or Free plan, use the same port as your Java server for the Bedrock port in the configuration file and connect that; for the Free plan, also enable the `clone-remote-port` option. If you are using a PRO or a VPS plan, you can use any port, which can be opened on the Firewall tab."
+  },
+  "providers.provider.snakecraft_hosting.description": {
+    "message": "Select 'Paper + Geyser with Floodgate' under the Jar Type at checkout to install the Geyser plugin. Players will Connect with the same IP and port as you would on Java."
+  },
+  "providers.provider.srkhost.description": {
+    "message": "You can enable Geyser on the version changer page. Geyser will run on the given port by the host."
+  },
+  "providers.provider.virtual_gladiators.description": {
+    "message": "Find the plugin in the control panel under the 'VG Recommended' category and restart your server. IP and port are the same as Java."
+  },
+  "providers.provider.wisehosting.description": {
+    "message": "Both auto and manual installation available. Find the GeyserMC presets from the `Properties` tab in the Game Panel. There, click `Install` and restart your server. See [Crossplay FAQ](https://wisehosting.com/knowledgebase/how-to-install-geysermc-java-bedrock-crossplay-to-your-server) for additional details."
+  },
+  "providers.provider.zaphosting.description": {
+    "message": "Find the plugin in the control panel and restart your server. IP and port are the same as Java."
+  },
+  "providers.provider.365hosts.description": {
+    "message": "Go to their [Minecraft: Crossplay](https://www.365hosts.com/gaming/crossplayminecraft) hosting section and order your server. Instructions on how to join are provided."
+  },
+  "providers.provider.aquatis.description": {
+    "message": "Need to open a support ticket to get a UDP port, then use that as the `bedrock port`."
+  },
+  "providers.provider.bisecthosting.description": {
+    "message": "You must have a plan with a dedicated IP. In Geyser's config, uncomment the `bedrock address` and set it to the public IP of your server (e.g. `address: 51.79.129.18`). Leave the port as `19132`. Under the home tab, select 'Enable UDP Network' and restart the server. See Bisect's [article](https://www.bisecthosting.com/clients/index.php?rp=/knowledgebase/193/How-to-install-Geyser-and-Floodgate-on-a-Minecraft-Java-server.html) for full instructions. If you still cannot connect after following these instructions, contact Bisect Support as they reportedly have UDP disabled on some nodes."
+  },
+  "providers.provider.craft-hosting.description": {
+    "message": "Set the Bedrock port to the Java server's port and connect with that port; note that this provider appears to only provide service in Russia."
+  },
+  "providers.provider.dedicatedmc.description": {
+    "message": "Contact the support to open the default Bedrock port, which Geyser is configured to use by default."
+  },
+  "providers.provider.elfidc.description": {
+    "message": "When placing an order, choose Paper/Spigot + Geyser, which will automatically install the Geyser plugin. Connect with the Java server's IP and port. Note: This provider only provides service in China."
+  },
+  "providers.provider.fadehost.description": {
+    "message": "Set the Bedrock port to the Java server's port and connect with that port. Alternatively, buy a dedicated IP address to support a different port."
+  },
+  "providers.provider.fakaheda.description": {
+    "message": "Set the `bedrock port` in the config to the Java server's port or use one of the available ports allocated to your server, and connect with that port."
+  },
+  "providers.provider.falixnodes.description": {
+    "message": "Open a port yourself on the network page in the game panel, then use that port in the bedrock section of the Geyser config."
+  },
+  "providers.provider.ferox_hosting.description": {
+    "message": "Open a port yourself in their panel and check out the [knowledgebase article](https://feroxhosting.nl/kb/) for how to install and configure Geyser."
+  },
+  "providers.provider.fusion_hosting.description": {
+    "message": "Get Geyser as a plugin. Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling “clone-remote-port”) and connect with the same IP and port as you would on Java or create a port in the Network tab on the panel & use this for Geyser."
+  },
+  "providers.provider.gportal.description": {
+    "message": "You have to adjust the port according to your query port. Scheme: Query port: xxx65. The ports from xxx66 to xxx70 are available. For example, if your query port is 12365, then Geyser can only run under the port range 12366-12370. Furthermore, you have to change the 'Bedrock' 'address' in the Geyser config to your IP address. You can find it above your query port. Don't forget to delete the # in front of `address'."
+  },
+  "providers.provider.heavynode.description": {
+    "message": "Open a port yourself in the networking section of the control panel. Port `19132` is only available with a dedicated IP (contact support), otherwise you will need to use a randomly assigned port. To resolve further connection issues for servers located in Canada and the UK, contact their support with the info found [here](https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart)."
+  },
+  "providers.provider.hicoria.description": {
+    "message": "Use one of the available ports allocated for your server for the Bedrock port in your config and connect with that port."
+  },
+  "providers.provider.hosterfy.description": {
+    "message": "Use the same port as your Java server for the Bedrock port in your config (either by setting it yourself, or enabling `clone-remote-port`) and connect with the same IP and port as you would on Java. You can also ask for a new port."
+  },
+  "providers.provider.hostez.description": {
+    "message": "Geyser plugin supported with self-install or installed on request with its own port."
+  },
+  "providers.provider.hosting-minecraft.description": {
+    "message": "Create a new port and use that port in the config. If you have a plan from the 'Boost' category, you will need to open a [support ticket](https://my.hosting-minecraft.pro/submitticket.php) to get a port with UDP protocol enabled."
+  },
+  "providers.provider.humbleservers.description": {
+    "message": "Set the Bedrock port to the Java server's port, or to one of the two extra ports, and connect with that port. If the subdomain doesn't work, use your regular numbered IP address."
+  },
+  "providers.provider.kekshost.description": {
+    "message": "Use the default bedrock port (19132) and the server ip to connect on Bedrock edition. No changes to the Geyser config are needed. You can also ask for a new port and use it instead."
+  },
+  "providers.provider.kinetic_hosting.description": {
+    "message": "Open a port in the Network and Ports page, and set that port as the `bedrock port` in the Geyser config. Alternatively, use the Java server's port by enabling the `clone-remote-port` option in the config. Connect with the same IP as on Java, and the port that you have chosen. For more info see the hosts [support article](https://www.kinetichosting.net/articles/minecraft-java/plugins/geyser)."
+  },
+  "providers.provider.mcpehost.ru.description": {
+    "message": "Create an additional port in the server settings and enable UDP protocol, then use that as the `bedrock port` in the config. Connect with the Java IP and that new port."
+  },
+  "providers.provider.meloncube.description": {
+    "message": "Contact the support for a UDP port to use for Geyser. Set that port as the `bedrock port`, and connect with it."
+  },
+  "providers.provider.netbela.description": {
+    "message": "Install Geyser with the dedicated Plugin installer. Use the same port as your Java server in your config. Connect with the same address and port as your Java server."
+  },
+  "providers.provider.nfoservers.description": {
+    "message": "Uncomment and set `bedrock address` to the server IP in the Geyser config file. As an alternative, you can run Geyser standalone separately on an Unmanaged VDS."
+  },
+  "providers.provider.nitrado.description": {
+    "message": "Get Geyser as a plugin. Add 4 to the Port of the Java server. See [here](https://wiki.nitrado.net/en/How_to_install_GeyserMC_and_Floodgate) for specific instructions."
+  },
+  "providers.provider.nodecraft.description": {
+    "message": "Use the default server port and `0.0.0.0` or your server IP as the host address."
+  },
+  "providers.provider.pebblehost.description": {
+    "message": "Enable `clone-remote-port` (or manually set `bedrock port` to the Java port), and connect with the Java IP and port. See [this video](https://youtu.be/v9lC80UBZF4) for a PebbleHost-specific tutorial."
+  },
+  "providers.provider.pubcs.description": {
+    "message": "Set the Bedrock port to the Java server's port and connect with that port, or upgrade to a plan that includes dedicated IP address to support a different port."
+  },
+  "providers.provider.revivenode.description": {
+    "message": "Set `bedrock port` to the Java server's port (either by setting it yourself, or enabling `clone-remote-port`). You can also create a secondary port in the `network tab` and use that. To fix random `Unable to Connect` issues, see [here](https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart)."
+  },
+  "providers.provider.shockbyte.description": {
+    "message": "The port will be automatically set after you download Geyser and restart the server. Connect with the same IP and port as on Java. For Geyser Standalone installation instructions, see [here](https://shockbyte.com/billing/knowledgebase/173/Introduction-to-GeyserMCorDragonProxy-How-GeyserMC-Works.html)."
+  },
+  "providers.provider.skynode.pro.description": {
+    "message": "Go to 'Server Details', add a new port, and set the `bedrock port` in your config to that port. Connect with it and the Java server's address."
+  },
+  "providers.provider.stipe.description": {
+    "message": "Set the Bedrock port to the Java server's port and connect with that port; note that this provider only provides service in Australia."
+  },
+  "providers.provider.syntexhosting.description": {
+    "message": "Set the Bedrock port to the Java server's port and connect with that port, or request a (free) additional port."
+  },
+  "providers.provider.the_minecraft hosting.description": {
+    "message": "Try using `19132` as the Bedrock port, if that does not work, use the same Java server's port for the `bedrock port` in your config and connect with that port and the Java server's IP."
+  },
+  "providers.provider.volthosting.description": {
+    "message": "Enable clone-remote-port (or manually set bedrock port to the Java port), and connect with the Java IP and port. Alternatively, request an additional port, or buy a dedicated IP address. If you continue to have issues, please [contact VoltHosting support](https://volthosting.co.uk/contact.html) for further assistance."
+  },
+  "providers.provider.vultam.description": {
+    "message": "Set the `bedrock port` to the Java server's port, or request an additional port. The additional port can be `19132` if you buy a dedicated IP."
+  },
+  "providers.provider.winternode.description": {
+    "message": "Set the Bedrock port to the Java server's port and connect with that port. Alternatively, request an additional port, or buy a dedicated IP address."
+  },
+  "providers.provider.witherhosting.description": {
+    "message": "Either use the Java server's port, or create a port in the ports manager on the panel and use that for Bedrock. Refer to the hosts [support article](https://support.witherhosting.com/en/article/how-to-install-and-use-geysermc-1xn5l6v/) for further info."
+  },
+  "providers.provider.myarena.description": {
+    "message": "Does seem to be working, but the Java version is too old in order for Geyser to run properly."
+  },
+  "providers.provider.nicraft.description": {
+    "message": "Does not provide Bedrock support, and are affected by a [firewall configuration issue](https://wiki.geysermc.org/geyser/port-forwarding/#ovh-and-soyoustart), which prohibits most players from joining."
+  },
+  "providers.provider.feather.description": {
+    "message": "Their proxy network does not support UDP. Therefore, Geyser is not supported. As an alternative, set up a paper server with e.g. playit.gg instead of port forwarding."
+  },
+  "pages.main.title": {
+    "message": "Revolutionieren Sie Ihren Minecraft-Server"
+  },
+  "pages.main.subtitle": {
+    "message": "Ermöglichen Sie Clients der Minecraft Bedrock Edition, Ihrem Minecraft Java-Server beizutreten"
+  },
+  "components.homepage_features.1": {
+    "message": "Geyser is a program that allows Minecraft: Bedrock Edition clients to join Minecraft: Java Edition servers, allowing for true crossplay between both editions of the game. The ultimate goal of this project is to allow Minecraft: Bedrock Edition users to join Minecraft: Java Edition servers as seamlessly as possible."
+  },
+  "components.homepage_features.features.2": {
+    "message": "Geyser acts as a translator which sits between the Bedrock client and the Java server. It takes data from the Bedrock client and translates it into a format the Java server understands and vice versa. Geyser works with any modern Minecraft version and can be installed either as a plugin or ran as a standalone program."
+  },
+  "components.homepage_features.features.3": {
+    "message": "Geyser can be joined from Bedrock clients on Windows 10/11, iOS, Android, and even consoles (more info here). Geyser works with a wide array of hosting providers, but can also be used as its own standalone proxy to join any Minecraft server!"
+  },
+  "components.homepage_features.features.4": {
+    "message": "If you are a server owner, you can install our Floodgate plugin which allows Xbox Live authenticated Bedrock users to join without a Java Edition account!"
+  },
+  "pages.download.title": {
+    "message": "Download"
+  },
+  "pages.download.subheading": {
+    "message": "Download the latest versions of our various projects."
+  },
+  "pages.download.description.geyser": {
+    "message": "A bridge/proxy allowing you to connect to Minecraft: Java Edition servers with Minecraft: Bedrock Edition."
+  },
+  "pages.download.description.floodgate": {
+    "message": "Hybrid mode plugin to allow for connections from Geyser to join online mode servers."
+  },
+  "pages.download.description.geyserconnect": {
+    "message": "A plugin to allow for Geyser players to connect to your server without needing to use a proxy."
+  },
+  "pages.download.description.geyseroptionalpack": {
+    "message": "An optional Bedrock resource pack to extend Geyser functionality."
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Die Seite ist abgestürzt.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Zurück nach oben scrollen",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archiv",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.archive.description": {
+    "message": "Archiv",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Navigation der Blog-Listenseite",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Neuere Einträge",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Ältere Einträge",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Blog Post Seiten Navigation",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Neuer Post",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Älterer Post",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Ein Post|{count} Posts",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} getaggt mit \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Alle Tags anzeigen",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Umschalten zwischen dunkler und heller Ansicht (momentan {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dunkler Modus",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "heller Modus",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} Einträge",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Dokumentation Seiten",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Zurück",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Weiter",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Ein doc getaggt|{count} docs getaggt",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} mit \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Das ist die unveröffentlichte Dokumentation für {siteTitle} {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Das ist die Dokumentation für {siteTitle} {versionLabel} und wird nicht weiter gewartet.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Für die aktuellste Dokumentation bitte auf {latestVersionLink} ({versionLabel}) gehen.",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "letzte Version",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.common.editThisPage": {
+    "message": "Diese Seite bearbeiten",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Direkter Link zur {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " am {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " von {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Letztes Update{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versionen",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "Seite nicht gefunden",
+    "description": "The title of the 404 page"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Tags:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "warning",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Schließen",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navigation der letzten Beiträge im Blog",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Kopiert",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "In die Zwischenablage kopieren",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Kopieren",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expand sidebar category '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Collapse sidebar category '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Sprachen",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.NotFound.p1": {
+    "message": "Wir konnten nicht finden, wonach Sie gesucht haben.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Bitte kontaktieren Sie den Besitzer der Seite, die Sie mit der ursprünglichen URL verlinkt hat, und teilen Sie ihm mit, dass der Link nicht mehr funktioniert.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Auf dieser Seite",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Mehr lesen",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Mehr lesen über {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Eine Minute Lesezeit|{readingTime} Minuten Lesezeit",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Seitenleiste einklappen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Seitenleiste einklappen",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Zurück zum Hauptmenü",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Seitenleiste ausklappen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Seitenleiste ausklappen",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Nochmal versuchen",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Zum Hauptinhalt springen",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Tags",
+    "description": "The title of the tag list page"
+  },
+  "theme.unlistedContent.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.unlistedContent.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  }
+}

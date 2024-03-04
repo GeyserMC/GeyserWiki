@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Floodgate": {
+    "message": "Floodgate",
+    "description": "The label for category Floodgate in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.setup": {
+    "message": "setup",
+    "description": "The label for category setup in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Geyser": {
+    "message": "Geyser",
+    "description": "The label for category Geyser in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.provider": {
+    "message": "provider",
+    "description": "The label for category provider in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.self": {
+    "message": "self",
+    "description": "The label for category self in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.other": {
+    "message": "other",
+    "description": "The label for category other in sidebar tutorialSidebar"
+  },
+  "sidebar.geyserSidebar.category.Setup": {
+    "message": "Setup",
+    "description": "The label for category Setup in sidebar geyserSidebar"
+  },
+  "sidebar.geyserSidebar.category.Common Issues": {
+    "message": "Common Issues",
+    "description": "The label for category Common Issues in sidebar geyserSidebar"
+  },
+  "sidebar.geyserSidebar.category.Configuring Geyser": {
+    "message": "Configuring Geyser",
+    "description": "The label for category Configuring Geyser in sidebar geyserSidebar"
+  },
+  "sidebar.geyserSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar geyserSidebar"
+  },
+  "sidebar.geyserSidebar.category.Geyser API": {
+    "message": "Geyser API",
+    "description": "The label for category Geyser API in sidebar geyserSidebar"
+  }
+}
