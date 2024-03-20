@@ -320,6 +320,11 @@
       "description": "Set the Bedrock port to the Java server's port and connect with that port, or upgrade to a plan that includes dedicated IP address to support a different port."
     },
     {
+      "name": "PaperNodes",
+      "url": "https://papernodes.com/",
+      "description": "Enable clone-remote-port (or manually set the Bedrock port to the Java port), and connect with the Java IP and port or you can contact us to request an additional port or a dedicated IP."
+    },
+    {
       "name": "RamShard",
       "url": "https://ramshard.com/",
       "description_template": "default"
