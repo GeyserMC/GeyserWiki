@@ -304,6 +304,11 @@
       "description": "Use the default server port and `0.0.0.0` or your server IP as the host address."
     },
     {
+      "name": "PaperNodes",
+      "url": "https://papernodes.com/",
+      "description": "Enable clone-remote-port (or manually set the Bedrock port to the Java port), and connect with the Java IP and port. Alternatively, you can contact the host to request an additional port or a dedicated IP."
+    },
+    {
       "name": "Pebblehost",
       "url": "https://pebblehost.com/",
       "description_template": "default",
