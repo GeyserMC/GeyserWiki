@@ -48,6 +48,14 @@ You may disable some warnings that may be printed to the console by using the fo
 - `-DGeyser.AddTeamSuggestions=true`
   - Allows you to turn off suggestions for teams in the scoreboard command. This is enabled by default, disabling this can help with performance if there are a lot of teams defined. 
   Setting "command-suggestions" to false in the config will also disable this.
+- `-DGeyser.RakPacketLimit=120`
+  - Sets RakNet's per-ip per-tick (10ms) post-connection packet limit.
+- `-DGeyser.RakOfflinePacketLimit=10`
+  - Sets RakNet's per-ip per-second pre-connection packet limit.
+- `-DGeyser.RakGlobalPacketLimit=100000`
+  - Sets RakNet's per-tick (10ms) overall packet limit.
+- `-DGeyser.RakRateLimitingDisabled=true`
+  - Completely disable RakNet's post-connection rate limiter. This should not be disabled unless initial RakNet connections are being handled by a reverse proxy.
 
 ## Geyser-Standalone specific options:
 
