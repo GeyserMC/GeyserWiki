@@ -126,7 +126,7 @@
     {
       "name": "Bloom.Host",
       "url": "https://www.bloom.host/",
-      "description_template": "forwarding_option"
+      "description": "https://docs.bloom.host/es/plugins/geysermc/"
     },
     {
       "name": "Clovux",
