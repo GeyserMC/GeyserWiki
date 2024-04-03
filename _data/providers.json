@@ -264,6 +264,11 @@
       "description_template": "ip_and_port"
     },
     {
+      "name": "MCFORFREE.DE",
+      "url": "https://mcforfree.de/",
+      "description": "Create an extra port in the game panel, then use the created port and enter it in the config. Connect with the Java Port (the standard one) and that new port (that you created). It may take a few minutes for the port to become active."
+    },
+    {
       "name": "MCPEhost.ru",
       "url": "https://mcpehost.ru",
       "description": "Create an additional port in the server settings and enable UDP protocol, then use that as the `bedrock port` in the config. Connect with the Java IP and that new port."
