@@ -60,4 +60,4 @@ example [https://visage.surgeplay.com/full/384/4df623184c7325846c3e30394d86f6697
 
 ![image](https://github.com/GeyserMC/GeyserWiki/assets/145860929/b709975b-dff5-4480-8631-0d44a66e3d0c)
 
-( I used simple additional features in the Visage API to make the skin slim and show no shadow: ?no=shadow&slim )
+(I used simple additional features in the Visage API to make the skin slim and show no shadow: `?no=shadow&slim`)
