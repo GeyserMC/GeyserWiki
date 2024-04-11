@@ -47,7 +47,7 @@ example: https://textures.minecraft.net/texture/655ddd816a67fbe32b1baa5065dd632e
 
 ![image](https://github.com/GeyserMC/GeyserWiki/assets/145860929/4ad3c188-b821-4dd1-abe8-d9ef94a55bba)
 
-Note: The skin texture doesnt update automatically, you will need to fetch the XUID again in step 2 if you want to update them manually. The old texture_id will still work.
+Note: The skin texture doesnt update automatically, you will need to fetch the XUID again in step 2 if you want to update them manually. The old `texture_id` will still work.
 
 # Step 4
 - Use [Visage API](https://visage.surgeplay.com/index.html) to get the 3d png render of the skin
