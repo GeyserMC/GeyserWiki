@@ -49,7 +49,7 @@ example: https://textures.minecraft.net/texture/655ddd816a67fbe32b1baa5065dd632e
 
 Note: The skin texture doesnt update automatically, you will need to fetch the XUID again in step 2 if you want to update them manually. The old `texture_id` will still work.
 
-# Step 4
+## Step 4
 - Use [Visage API](https://visage.surgeplay.com/index.html) to get the 3d png render of the skin
 
 - In the Visage API to load bedrock skins you need to paste the `texture_id` instead of username that is for java only
