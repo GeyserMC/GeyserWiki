@@ -38,7 +38,7 @@ example: https://api.geysermc.org/v2/skin/2535447554706112
     }
 
 # Step 3
-- Copy the "texture_id" from JSON output and paste it in this link to get the png skin URL. By dioing this, you can make sure its the correct skin and if there arent any typos
+- Copy the "texture_id" from JSON output and paste it in this link to get the png skin URL. By doing this, you can make sure its the correct skin and if there arent any typos
 - You can skip this step if you straight want to get the 3d render
   
 https://textures.minecraft.net/texture/TEXTURE_ID_HERE < paste texture id here
