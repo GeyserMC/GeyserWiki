@@ -17,7 +17,7 @@ example: https://api.geysermc.org/v2/xbox/xuid/nixybuilder
     }
 
 
-# Step 2
+## Step 2
 - Copy the XUID from the JSON output and paste it in this link
 
 https://api.geysermc.org/v2/skin/XUID_HERE < paste xuid here
