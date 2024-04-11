@@ -1,7 +1,7 @@
 # How to get a 3D render image of skin using GeyserMC API and Visage API
 A simple tutorial to get 3D image render of bedrock skin
 
-# Step 1
+## Step 1
 - You will need to fetch the API xuid by Xbox player username
 
 https://api.geysermc.org/v2/xbox/xuid/USERNAME_HERE < username
