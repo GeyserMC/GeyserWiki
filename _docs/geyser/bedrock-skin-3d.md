@@ -2,7 +2,7 @@
 A simple tutorial to get 3D image render of bedrock skin
 
 # Step 1
-- You will need to fetch the API xuid by xbox player username
+- You will need to fetch the API xuid by Xbox player username
 
 https://api.geysermc.org/v2/xbox/xuid/USERNAME_HERE < username
 
