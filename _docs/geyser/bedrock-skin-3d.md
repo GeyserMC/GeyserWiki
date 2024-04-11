@@ -37,7 +37,7 @@ example: https://api.geysermc.org/v2/skin/2535447554706112
     "value": "ewogICJ0aW1lc3RhbXAiIDogMTY5NzkxNDI1NzMzMiwKICAicHJvZmlsZUlkIiA6ICJjN2FmMWNkNjNiNTE0Y2YzOGY4NWQ2ZDUxNzhjYThlNCIsCiAgInByb2ZpbGVOYW1lIiA6ICJtb25zdGVyZ2FtZXIzMTUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU1ZGRkODE2YTY3ZmJlMzJiMWJhYTUwNjVkZDYzMmU0ZTAyZGZkODY2MWNmYzA2MGFjMzBkMGUzNWZhMWQxYSIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
     }
 
-# Step 3
+## Step 3
 - Copy the "texture_id" from JSON output and paste it in this link to get the png skin URL. By doing this, you can make sure its the correct skin and if there arent any typos
 - You can skip this step if you straight want to get the 3d render
   
