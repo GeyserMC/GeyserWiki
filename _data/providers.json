@@ -11,7 +11,7 @@
       "url": "https://apexminecrafthosting.com/",
       "description": "Full auto installation. Go to the Customizations tab in the panel and select 'Enabled' under the 'Geyser Auto Installer' option. Then, restart and connect to your server with your Java IP and port. See [Apex's article](https://apexminecrafthosting.com/geysermc/) for more details."
     },
-        {
+    {
       "name": "Arth Hosting",
       "url": "https://arthmc.xyz/",
       "description": "Geyser is installed and configured on all servers by default. You can disable it in the 'Manage Plugins' menu."
