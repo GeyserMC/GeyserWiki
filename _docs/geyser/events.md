@@ -50,7 +50,7 @@ public class ExampleMod implements ModInitializer, EventRegistrar {
     
     // here an event, we subscribe as usual with the @Subscribe annotation
     @Subscribe 
-    public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent eventad {
+    public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent event) {
         LOGGER.info("Geyser started!");
     }
 }
