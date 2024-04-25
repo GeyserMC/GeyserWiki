@@ -54,6 +54,8 @@ You may disable some warnings that may be printed to the console by using the fo
   - Sets RakNet's per-tick (10ms) overall packet limit.
 - `-DGeyser.RakRateLimitingDisabled=true`
   - Completely disable RakNet's post-connection rate limiter. This should not be disabled unless initial RakNet connections are being handled by a reverse proxy.
+- -`-DGeyser.RakSendCookie=false`
+  - Disables sending and validation of a cookie challenge in [Open Connection Reply 1](https://wiki.vg/Raknet_Protocol#Open_Connection_Reply_1) packet. This should not be set to `false` unless Geyser is running behind a reverse proxy that is also sending a challenge to prevent IP spoofing.
 
 ## Geyser-Standalone specific options:
 
