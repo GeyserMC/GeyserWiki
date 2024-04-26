@@ -41,6 +41,8 @@ To setup custom items in geyser, you have to choose how you are going to registe
     * `icon` (string) default: item name
     * `allow_offhand` (boolean) default: false
     * `texture_size` (int) default: 16
+    * `creative_category` (int) default: not set. This can take values between 1-5, and defines the creative category the item appears in. Note: Adding your item to a creative category is needed if you want recipes that output this custom item to show up in the recipe book! However, including it does NOT mean you can get the custom item from the creative inventory.
+    * `creative_group` (string) default: not set. Requires a creative category to also be set - allows you to group the custom item in a sub-group. See [here](https://wiki.bedrock.dev/documentation/creative-categories.html#list-of-categories) for all categories.
     * `render_offsets` (object) It works as follows. Note that all the sub-objects are optional, except x, y and z. You can have for example only a main hand with a position, and noting else. default: no render offset
     * `tags` (array) default: no tags. Allows defining tags that can be used in Molang queries. Example value: ["test:tag_one", "test:tag_two"].
     ```json

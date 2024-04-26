@@ -204,7 +204,7 @@ export const providersData: Providers = {
         },
         {
             name: 'Bloom.Host',
-            url: 'https://www.bloom.host/',
+            url: 'https://docs.bloom.host/plugins/geysermc/',
             description: descriptionTemplates.forwardingOption
         },
         {
