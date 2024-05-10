@@ -266,7 +266,7 @@
     {
       "name": "MCFORFREE.DE",
       "url": "https://mcforfree.de/",
-      "description": "Create an extra port in the game panel, then use the created port and enter it in the config. Connect with the Java Port (the standard one) and that new port (that you created). It may take a few minutes for the port to become active."
+      "description": "Create an extra port in the game panel, then change the `port` in the `bedrock` section to the newly created port. To connect on Bedrock edition, use the Java server's IP and the port you've created. It may take a few minutes for the port to become active."
     },
     {
       "name": "MCPEhost.ru",
