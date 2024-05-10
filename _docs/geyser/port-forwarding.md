@@ -123,8 +123,9 @@ Alternatively, try connecting to the server first on Java edition, then on Bedro
 
 OVH:
 1. Navigate to `Network interfaces`
-2. Click on the `...` button on the table for your IP -> then `...` and `Configure the GAME firewall` -> `Add rule` -> `Other protocol` (or `minecraftPocketEdition` if available)
+2. Click on the `...` button on the table for your IP -> then `...` and `Configure the GAME firewall` -> `Add rule` -> `Other protocol` ~~(or `minecraftPocketEdition` if available)~~
 3. Add your Geyser port into `outgoing port`.
+
 
 SoYouStart (subsidiary of OVH):
 1. Click the IP tab.
@@ -132,6 +133,15 @@ SoYouStart (subsidiary of OVH):
 3. Pick "Add a rule".
 4. Select "minecraftPocketEdition" in the dropdown list and enter the target UDP ports.
 5. Save and wait a few seconds for the changes to come into effect.
+
+#### OVH/SoYouStart Filter Incompatibility Issue
+The `minecraftPocketEdition` rule/filter/game type currently does not work and you must use the `Other` type.  
+
+If you would like to continue using `minecraftPocketEdition`, you may disable the incompatible security feature by adding `-DGeyser.RakSendCookie=false` to your startup flags for Geyser (works regardless of whether you use plugin or standalone Geyser).
+
+For more information see:  
+    [This issue on OVH's infrastructure roadmap](https://github.com/ovh/infrastructure-roadmap/issues/186)  
+    [The pull request which implemented the security feature that caused the incompatibility](https://github.com/GeyserMC/Geyser/pull/4554)
 
 ### Oracle Cloud/OCI
 By default, Oracle Cloud will block all incoming traffic except for SSH and RDP. This must be resolved within Oracle Cloud itself and the Compute Instance running Geyser.
