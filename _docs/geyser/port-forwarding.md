@@ -139,8 +139,8 @@ The `minecraftPocketEdition` rule/filter/game type currently does not work and y
 If you would like to continue using the filter type `minecraftPocketEdition`, you may disable the incompatible security feature by adding `-DGeyser.RakSendCookie=false` to your Java server's (or Geyser Standalone proxy's) startup flags.
 
 For more information see:  
-    [This issue on OVH's infrastructure roadmap](https://github.com/ovh/infrastructure-roadmap/issues/186)  
-    [The pull request which implemented the security feature that caused the incompatibility](https://github.com/GeyserMC/Geyser/pull/4554)
+ - [This issue on OVH's infrastructure roadmap](https://github.com/ovh/infrastructure-roadmap/issues/186)  
+ - [The pull request which implemented the security feature that caused the incompatibility](https://github.com/GeyserMC/Geyser/pull/4554)
 
 ### Oracle Cloud/OCI
 By default, Oracle Cloud will block all incoming traffic except for SSH and RDP. This must be resolved within Oracle Cloud itself and the Compute Instance running Geyser.
