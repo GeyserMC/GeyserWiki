@@ -126,7 +126,6 @@ OVH:
 2. Click on the `...` button on the table for your IP -> then `...` and `Configure the GAME firewall` -> `Add rule` -> `Other protocol` ~~(or `minecraftPocketEdition` if available)~~
 3. Add your Geyser port into `outgoing port`.
 
-
 SoYouStart (subsidiary of OVH):
 1. Click the IP tab.
 2. Click the gear at the right of the public IP address; select "Game mitigation".
