@@ -133,8 +133,8 @@ SoYouStart (subsidiary of OVH):
 4. Select "minecraftPocketEdition" in the dropdown list and enter the target UDP ports.
 5. Save and wait a few seconds for the changes to come into effect.
 
-#### OVH/SoYouStart Filter Incompatibility Issue
-The `minecraftPocketEdition` rule/filter/game type currently does not work and you must use the `Other` type.  
+#### OVH/SoYouStart Game Firewall Incompatibility Issue
+The OVH GAME filter type `minecraftPocketEdition` currently does not work and you must use the `Other` type.  
 
 If you would like to continue using the filter type `minecraftPocketEdition`, you may disable the incompatible security feature by adding `-DGeyser.RakSendCookie=false` to your Java server's (or Geyser Standalone proxy's) startup flags.
 
