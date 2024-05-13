@@ -136,7 +136,7 @@ SoYouStart (subsidiary of OVH):
 #### OVH/SoYouStart Filter Incompatibility Issue
 The `minecraftPocketEdition` rule/filter/game type currently does not work and you must use the `Other` type.  
 
-If you would like to continue using `minecraftPocketEdition`, you may disable the incompatible security feature by adding `-DGeyser.RakSendCookie=false` to your startup flags for Geyser (works regardless of whether you use plugin or standalone Geyser).
+If you would like to continue using the filter type `minecraftPocketEdition`, you may disable the incompatible security feature by adding `-DGeyser.RakSendCookie=false` to your Java server's (or Geyser Standalone proxy's) startup flags.
 
 For more information see:  
     [This issue on OVH's infrastructure roadmap](https://github.com/ovh/infrastructure-roadmap/issues/186)  
