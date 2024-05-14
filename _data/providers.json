@@ -7,14 +7,19 @@
   },
   "built_in": [
     {
-      "name": "Aternos",
-      "url": "https://aternos.org/",
-      "description": "Install Geyser in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details. Do note: Aternos automatically installs the latest version of the plugin, but does not auto update it. To update Geyser on Aternos, simply reinstall the plugin (no need to uninstall the plugin/deleting the plugin files)."
-    },
-    {
       "name": "Apex Hosting",
       "url": "https://apexminecrafthosting.com/",
       "description": "Full auto installation. Go to the Customizations tab in the panel and select 'Enabled' under the 'Geyser Auto Installer' option. Then, restart and connect to your server with your Java IP and port. See [Apex's article](https://apexminecrafthosting.com/geysermc/) for more details."
+    },
+    {
+      "name": "Arth Hosting",
+      "url": "https://arthmc.xyz/",
+      "description": "Geyser is installed and configured on all servers by default. You can disable it in the 'Manage Plugins' menu."
+    },
+    {
+      "name": "Aternos",
+      "url": "https://aternos.org/",
+      "description": "Install Geyser in the Aternos plugin list and connect to your server with your Java IP and port. See [Aternos's article](https://support.aternos.org/hc/en-us/articles/360051047631) for more details. Do note: Aternos automatically installs the latest version of the plugin, but does not auto update it. To update Geyser on Aternos, simply reinstall the plugin (no need to uninstall the plugin/deleting the plugin files)."
     },
     {
       "name": "Cloud Nord",
