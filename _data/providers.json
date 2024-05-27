@@ -430,6 +430,11 @@
       "description": "Set the `bedrock port` to the Java server's port, or request an additional port. The additional port can be `19132` if you buy a dedicated IP."
     },
     {
+      "name": "Wepwawet",
+      "url": "https://wepwawet.net/",
+      "description": "Add a new port in the Network tab. Use this new port as the bedrock port."
+    },
+    {
       "name": "WinterNode",
       "url": "https://winternode.com",
       "description": "Set the Bedrock port to the Java server's port and connect with that port. Alternatively, request an additional port, or buy a dedicated IP address."
