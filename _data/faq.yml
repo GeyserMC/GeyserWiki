@@ -27,7 +27,7 @@
         * [ExploitFixer](https://www.spigotmc.org/resources/62842/) thinks that Floodgate users are UUID spoofing - disable the `uuidspoof` setting in ExploitFixer's config.
         * [JPremium](https://www.spigotmc.org/resources/27766/) alters the UUID of a player, causing Floodgate not to be able to get the Bedrock data from its map.
         * [LibHatesMods](https://www.spigotmc.org/resources/78202/) causes authentication to fail with `com.github.steveice10.mc.auth.exception.request.InvalidCredentialsException`
-        * [ProtocolSupport](https://www.spigotmc.org/resources/7201/) ~~is currently incompatible with Floodgate.~~ Works with Floodgate, but we recommend using [ViaBackwards](https://www.spigotmc.org/resources/27448/) instead.
+        * [ProtocolSupport](https://www.spigotmc.org/resources/7201/) ~~is currently incompatible with Floodgate.~~ Works with Floodgate, but we recommend using [ViaBackwards](https://hangar.papermc.io/ViaVersion/ViaBackwards) instead.
         * [ProtocolSupportBungee](https://www.spigotmc.org/resources/8733/) changes how the login process works and therefore breaks the Floodgate injection code.
         * [SayNoToMcLeaks](https://www.spigotmc.org/resources/40906/) prevents Floodgate from finishing its login system.
 
@@ -35,14 +35,14 @@
 
     - title: What server versions does Geyser support?
       content: |
-        The Geyser-Spigot plugin supports any Minecraft server version 1.13.2 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
-        Since Geyser emulates a {{ site.data.versions.java }} Java Edition client, you need to [install ViaVersion](https://www.spigotmc.org/resources/viaversion.19254/) on your server
+        The Geyser-Spigot plugin supports any Minecraft server version 1.16.5 or later. Any earlier version is not supported by the plugin - use a proxy version or the standalone build instead.
+        Since Geyser emulates a {{ site.data.versions.java }} Java Edition client, you need to [install ViaVersion](https://viaversion.com/) on your server
         if it is not running the latest version of Minecraft. <br>
 
         In order for Bedrock players to chat (1.19.3+) or join (1.19.1/1.19.2), you need to disable chat signing. More information about that can be read on the [chat signing page](/geyser/secure-chat/). <br>
 
-        You will also need to run at least Java 16 or later to use Geyser. See [here](https://docs.papermc.io/misc/java-install) for more info on updating Java.
-        Paper versions not supporting Java 16 can add `-DPaper.IgnoreJavaVersion=true` flag to the Java startup arguments to allow Paper to run on Java 16.
+        You will also need to run at least Java 17 or later to use Geyser. See [here](https://docs.papermc.io/misc/java-install) for more info on updating Java.
+        Paper versions not supporting Java 17 can add `-DPaper.IgnoreJavaVersion=true` flag to the Java startup arguments to allow Paper to run on Java 17.
 
     - title: Which plugin version of Geyser do I need?
       content: |
@@ -57,10 +57,12 @@
           * Any other forks of the above
         * Geyser-Velocity works with [Velocity](https://www.velocitypowered.com/)
         * Geyser-Fabric works with [Fabric](https://www.fabricmc.net/), and requires FabricAPI to be installed on the server as well.
+        * Geyser-NeoForge works with [NeoForge](https://neoforged.net/),
+        * Geyser-ViaProxy works with [ViaProxy](https://github.com/ViaVersion/ViaProxy).
 
     - title: Which type of Geyser version is better, standalone or plugin?
       content: |
-        Because of optimizations that hook into the plugin platforms, plugin versions of Geyser are preferable compared to standalone Geyser. On Spigot, Velocity, and BungeeCord versions of Geyser, direct connections allow for faster loading times, lower latency, and accurate IP addresses without requiring Floodgate. Geyser-Spigot has further optimizations due to having direct world access, including lower memory usage and greater translation accuracy. However, large server networks might prefer standalone Geyser because it can be updated without needing to restart any other proxies or servers, and can offload resource usage onto seperate machines.
+        Because of optimizations that hook into the plugin platforms, plugin versions of Geyser are preferable compared to standalone Geyser. On Spigot, Velocity, Fabric/NeoForge and BungeeCord versions of Geyser, direct connections allow for faster loading times, lower latency, and accurate IP addresses without requiring Floodgate. Geyser on Spigot, Fabric and NeoForge has further optimizations due to having direct world access, including lower memory usage and greater translation accuracy. However, large server networks might prefer standalone Geyser because it can be updated without needing to restart any other proxies or servers, and can offload resource usage onto seperate machines.
 
     - title: If using BungeeCord or another fork, where do I need to put Geyser/Floodgate?
       content: |
@@ -99,7 +101,7 @@
 
     - title: How do I find a player's UUID without them joining when using Floodgate?
       content: |
-        Use [this page.](https://uuid.kejona.dev/) If this doesn't work, then try this method:
+        Use [this page.](https://mcprofile.io/) If this doesn't work, then try this method:
         
         First, you'll need to get the XUID of the player. There are several third-party websites to find this, for example, [this one](https://cxkes.me/xbox/xuid) (unaffiliated with Geyser). Make sure to choose "Hexidecimal." You'll need to enter the player's Xbox Gamertag, and, once submitted, it should display the XUID in the format of `xxxxxxxxxxxxxxxx`. To turn the XUID into a UUID that Java Edition can recognize, you need to put the XUID in this format: `00000000-0000-0000-xxxx-xxxxxxxxxxxx`. If formatted right, Java Edition should accept it as a UUID.
 
@@ -140,7 +142,7 @@
       content: |
         If the server has ViaVersion and/or supports the latest Minecraft version, yes. However, we are unable to support older versions of Minecraft due to a limitation in our Java support library.
 
-    - title: Can I connect Geyser to a modded (Forge/Fabric) server?
+    - title: Can I connect Geyser to a modded (Forge/Fabric/NeoForge) server?
       content: |
         The short answer: if a vanilla client can join the server, then so can Geyser.
 
@@ -193,64 +195,6 @@
         Your store is now set up to support Bedrock & Java players.
 
         **(Please note, if you are using a prefix with Floodgate, Bedrock players will have to enter the prefix.)**
-
-    - title: What languages does Geyser support?
-      content: |  
-        We aim to support any of the bedrock languages; see [here](https://translate.geysermc.org/) for our Crowdin page, and below is a list of all the language codes. We also can add support for more languages, and please request them in the Discord server if you are willing to translate them. (Enabled clientside via [https://www.curseforge.com/minecraft/mc-addons/translations-for-minecraft](https://www.curseforge.com/minecraft/mc-addons/translations-for-minecraft))
-
-        ### Bedrock languages    
-
-        |Name                        |Code |
-        |----------------------------|-----|
-        |Bulgarian                   |bg_bg|
-        |Czech                       |cs_cz|
-        |Danish                      |da_dk|
-        |German                      |de_de|
-        |Greek                       |el_gr|
-        |British English             |en_gb|
-        |American English            |en_us|
-        |Spanish                     |es_es|
-        |Mexican Spanish             |es_mx|
-        |Finnish                     |fi_fi|
-        |Canadian French             |fr_ca|
-        |French                      |fr_fr|
-        |Hungarian                   |hu_hu|
-        |Indonesian                  |id_id|
-        |Italian                     |it_it|
-        |Japanese                    |ja_jp|
-        |Korean                      |ko_kr|
-        |Dutch                       |nl_nl|
-        |Norwegian Bokmål            |nb_no|
-        |Polish                      |pl_pl|
-        |Brazilian Portuguese        |pt_br|
-        |Portuguese                  |pt_pt|
-        |Russian                     |ru_ru|
-        |Slovak                      |sk_sk|
-        |Swedish                     |sv_se|
-        |Turkish                     |tr_tr|
-        |Ukrainian                   |uk_ua|
-        |Chinese Simplified (China)  |zh_cn|
-        |Chinese Traditional (Taiwan)|zh_tw|
-
-        ### Additional languages
-
-        |Name                        |Code |
-        |----------------------------|-----|
-        |Afrikaans                   |af_za|
-        |Belarusian                  |be_by|
-        |Hebrew                      |he_il|
-        |Hindi                       |hi_in|
-
-    - title: Adding custom Geyser translation overrides
-      content: |
-        Please note that you cannot add strings that work in Minecraft formatting - these strings are only for places where Geyser uses them.
-
-        To start, create a `languages` folder in the same directory as the Geyser config file.
-        Inside of it, you'll need to add a file with your desired locale ending in `.properties`. You can see
-        [here](https://github.com/GeyserMC/languages/tree/master/texts) for the locale files that Geyser uses - 
-        you can download these as a starting point, or you can just add the strings you want to overwrite. 
-
-        You must restart Geyser for the changes to apply.
 
 - title: Questions not related to gameplay
   items:

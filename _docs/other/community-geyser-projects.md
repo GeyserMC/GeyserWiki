@@ -75,6 +75,15 @@ Plugin that blocks Java players from joining your Geyser server, so you can have
 
 Creator: [Camotoy](https://github.com/Camotoy)
 
+## GeyserExtras
+A Spigot plugin which attempts to unify features for Bedrock Edition players, including features like a cleaner looking combat cooldown, combat sounds and other helpful features and workarounds.
+
+* [Modrinth](https://modrinth.com/plugin/geyserextras)
+* [Hangar](https://hangar.papermc.io/GeyserExtras/GeyserExtras)
+* [GitHub](https://github.com/GeyserExtras/GeyserExtras)
+
+Creator: [LetsGoAway](https://github.com/letsgoawaydev)
+
 ## GeyserPreventServerSwitch
 Prevent Bedrock players from joining specific sub-servers on a proxy
 
@@ -104,6 +113,6 @@ Creator: [Vincss](https://github.com/vincss)
 
 ## TydiumCraft Skin API
 An API makes it easier for your Bedrock skin to be rendered and outputted!
-* [Website](https://tydiumcraft.net/)
+* [Website](https://tydiumcraft.net/api)
 
 Creators: [Tydium](https://github.com/Tydium)

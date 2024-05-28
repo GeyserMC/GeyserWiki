@@ -30,7 +30,7 @@ This means something (likely another instance of Geyser) is running on the port 
 
 ### [...]` has been compiled by a more recent version of the Java Runtime (class file version 60.0)`
 
-See this link for updating to Java 16: https://paper.readthedocs.io/en/latest/java-update/index.html.
+See this link for updating to Java 17: https://paper.readthedocs.io/en/latest/java-update/index.html.
 
 ### Hosting provider will not immediately open up UDP.
 
