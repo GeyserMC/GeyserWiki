@@ -10,6 +10,7 @@ title: Anticheat Compatibility
 
 Full Compatibility (Checks Bedrock Players Accurately)
 
+- [AntiAura](https://www.spigotmc.org/resources/1368/){:target="_blank"} (Paid) - Last Updated on 19th August 2021
 - [Themis](https://www.spigotmc.org/resources/90766/){:target="_blank"} - Last Updated on 15th Jun 2022
 - [Spartan: Bedrock Edition](https://builtbybit.com/resources/12832/){:target="_blank"} (Paid) - Last Updated on 22nd May 2023
 
