@@ -26,3 +26,4 @@ Incompatible (False Positives on Bedrock Players, no Compatibility at All)
 
 - [NoCheatPlus](https://ci.codemc.io/job/Updated-NoCheatPlus/job/Updated-NoCheatPlus/){:target="_blank"} ([Compat NCP](https://github.com/Updated-NoCheatPlus/CompatNoCheatPlus/){:target="_blank"} is an addon that enables Partial Compatibility) - Last Updated on 19th August 2021
 - [GodsEye](https://www.spigotmc.org/resources/69595/){:target="_blank"} ([GodsEyeGeyserMC](https://github.com/TheDejavu/GodsEyeGeyserMC/releases){:target="_blank"} is an addon that enables Partial Compatibility) (Paid) - Last Updated on 21st March 2022
+- [Wraith](https://www.spigotmc.org/resources/66887/){:target="_blank"} (Paid) - Last Updated on 19th August 2021
