@@ -5,7 +5,7 @@ title: Developer Guide
 ## Compiling
 1. Clone the repo to your computer.
 2. Navigate to the Geyser root directory and run `git submodule update --init --recursive`. This command downloads all the needed submodules for Geyser and is a crucial step in this process.
-3. Run `gradlew build` and locate to `bootstrap/<platform>/build/` folder.
+3. Run `./gradlew build` and locate to `bootstrap/<platform>/build/` folder.
 
 ## Project layout
 
