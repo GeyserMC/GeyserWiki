@@ -3,14 +3,18 @@ title: Developer Guide
 ---
 
 ## Compiling
-1. Clone the repo to your computer (EG: `git clone https://github.com/GeyserMC/Geyser.git`)
-2. [Install Maven](https://maven.apache.org/install.html)
-3. Navigate to the Geyser root directory and run `git submodule update --init --recursive`. This downloads all the needed submodules for Geyser and is a crucial step in this process.
-4. Run `mvn clean install` and locate to the `bootstrap`, then your desired Geyser version, then `target` folder.
+1. Clone the repo to your computer.
+2. Navigate to the Geyser root directory and run `git submodule update --init --recursive`. This command downloads all the needed submodules for Geyser and is a crucial step in this process.
+3. Run `gradlew build` and locate to `bootstrap/<platform>/build/` folder.
 
 ## Project layout
+
+Geyser's code is divided into different modules. For example:
+
 * `bootstrap` is where we hold the specific platform code. So if you're porting Geyser to a new platform, or working with platform-specific code, you likely want to be in here.
-* `core` is where connections are handled and the data conversion is done. The majority of Geyser work is held here.
+* `core` is where connections are handled and the data/packet conversion is done. The majority of Geyser work is held here.
+* `api` is where the Geyser API is found.
+* `build-logic` contains the kotlin gradle plugins that are used to build Geyser.
 
 # Compiler Tools
 
@@ -45,6 +49,7 @@ You can download it from [here](https://modrinth.com/mod/gadget).
 
 ## ProxyPass
 ProxyPass is a tool for intercepting packets between a Bedrock server and client developed by the Cloudburst team. It can be found [here](https://github.com/CloudburstMC/ProxyPass) and the vanilla Bedrock server can be found [here](https://www.minecraft.net/download/server/bedrock/).
+There is a ProxyPass fork that supports online-mode (allowing you to join Geyser servers and see sent packets): [Kastle's proxypass fork](https://github.com/Kas-tle/ProxyPass/).
 
 ## MCC Toolchest
 MCC Toolchest is a tool for viewing and editing NBT data for Bedrock edition, this allows you to see data as it is stored in Bedrock. You can download it from [here](https://mcctoolchest.weebly.com/).
