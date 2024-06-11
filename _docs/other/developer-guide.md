@@ -14,7 +14,7 @@ Geyser's code is divided into different modules. For example:
 * `bootstrap` is where we hold the specific platform code. So if you're porting Geyser to a new platform, or working with platform-specific code, you likely want to be in here.
 * `core` is where connections are handled and the data/packet conversion is done. The majority of Geyser work is held here.
 * `api` is where the Geyser API is found.
-* `build-logic` contains the kotlin gradle plugins that are used to build Geyser.
+* `build-logic` is where the Kotlin Gradle plugins used to build Geyser are.
 
 # Compiler Tools
 
