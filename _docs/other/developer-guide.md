@@ -2,13 +2,13 @@
 title: Developer Guide
 ---
 
-## Compiling
+# Compiling
 1. Clone the repo to your computer.
 2. Make sure that you have Java 21 installed.
 3. Navigate to the Geyser root directory and run `git submodule update --init --recursive`. This command downloads all the needed submodules for Geyser and is a crucial step in this process.
 4. Run `./gradlew build` and locate to `bootstrap/<platform>/build/` folder.
 
-## Project layout
+# Project layout
 
 Geyser's code is divided into different modules. For example:
 
@@ -17,7 +17,7 @@ Geyser's code is divided into different modules. For example:
 * `api` is where the Geyser API is found.
 * `build-logic` is where the Kotlin Gradle plugins used to build Geyser are.
 
-## Compiler/IDE Tools
+# Compiler/IDE Tools
 
 ### Minecraft Development (IntelliJ IDEA plugin)
 
@@ -32,9 +32,7 @@ more. While not strictly needed, it is definitely recommended.
 If you're using an IDE for editing any of the GeyserMC projects you will most likely need to install the Project Lombok plugin as it is used to generate a bunch of handy functions. 
 You can edit without it but you may get missing functions and or other issues displayed in your IDE. Please see the IDE section on their site for the supported plugins and install methods [https://projectlombok.org/setup/overview](https://projectlombok.org/setup/overview).
 
-### 
-
-## Protocol Information
+# Protocol Information
 
 ### GopherTunnel
 [GopherTunnel](https://github.com/Sandertv/gophertunnel/tree/master/minecraft/protocol/packet) is a library for Bedrock Edition written in Go. The source code is an excellent documentation for the Bedrock protocol.
@@ -45,7 +43,7 @@ For a full rundown of the Java Edition protocol, see [here](https://wiki.vg/Prot
 ### wiki.vg (Bedrock)
 The Bedrock Edition protocol is documented [here](https://wiki.vg/Bedrock_Protocol), but it's currently incomplete so only use it as a reference.
 
-## Programs
+# Programs
 
 ### debuginfo-be
 [debuginfo-be](https://github.com/Heath123/debuginfo-be) is a Spigot plugin that displays an overlay to Geyser clients with useful debug information, similar to the F3 screen in Java Edition.
