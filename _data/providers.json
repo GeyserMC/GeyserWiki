@@ -77,6 +77,11 @@
       "description": "Select Geyser in the [Install Menu](https://i.imgur.com/Gewpsrq.png), it will be automatically installed. You can enable floodgate in the [server properties on the dashboard](https://i.imgur.com/jg5mzNj.png)."
     },
     {
+      "name": "PiglinHost",
+      "url": "https://piglinhost.com/",
+      "description": "Order from our [Cross-platofrm servers page](https://piglinhost.com/minecraft-java-hosting.html) . Alternatively, contact our Support via [Support Ticket](https://billing.piglinhost.com/submitticket.php?step=2&deptid=5) or Discord for free installation and configuration."
+    },
+    {
       "name": "Pufferfish Host",
       "url": "https://pufferfish.host/",
       "description": "Geyser is installed and configured on all servers by default."
