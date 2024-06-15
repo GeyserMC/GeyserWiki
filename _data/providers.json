@@ -67,14 +67,14 @@
       "description": "Connect via `bedrock.minehut.com` and do `/join <servername>`, or connect directly via `<servername>.bedrock.minehut.gg`."
     },
     {
-      "name": "Physgun",
-      "url": "https://physgun.com/",
-      "description_template": "default"
-    },
-    {
       "name": "OMGServ",
       "url": "https://www.omgserv.com/en/",
       "description": "Select Geyser in the [Install Menu](https://i.imgur.com/Gewpsrq.png), it will be automatically installed. You can enable floodgate in the [server properties on the dashboard](https://i.imgur.com/jg5mzNj.png)."
+    },
+    {
+      "name": "Physgun",
+      "url": "https://physgun.com/",
+      "description_template": "default"
     },
     {
       "name": "PiglinHost",
