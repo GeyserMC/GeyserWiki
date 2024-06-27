@@ -20,7 +20,18 @@ There is also a tool anyone can set up that allows you to connect to the server 
 
 [![Nintendo Switch BedrockConnect](https://img.youtube.com/vi/zalT_oR1nPM/0.jpg)](https://www.youtube.com/watch?v=zalT_oR1nPM)
 
-# PlayStation 4
+Text directions:
+1. Select “System Settings” from the HOME Menu of your Nintendo Switch console.
+2.  Select “Internet”, and then “Internet Settings”. Your Nintendo Switch console will automatically search for nearby Wi-Fi signals.
+3.  Select your network from the list of networks located under “Registered Networks”.
+4.  Select “Change Settings”, then scroll down and select "DNS Settings".
+5.  Select "Manual".
+6.  Select "Primary DNS" with the A Button, and then hold down the B Button to delete the DNS (it defaults to zeros).
+7.  Enter a GeyserMC DNS.
+8.  Select "Secondary DNS" with the A Button, and then hold down the B Button to delete the existing DNS.
+9.  Enter a recomended DNS (Cloudflare is the fastest.)
+
+# PlayStation 4/5
 1. Go to your PS4 Home screen.
 2. Go to Settings.
 3. Go to Network.
