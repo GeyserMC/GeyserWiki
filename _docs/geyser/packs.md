@@ -18,9 +18,10 @@ Resource packs offer a range of customization options. Just like on Java, they c
 #### Sending local packs
 The easiest way to send resource packs to Bedrock players is by putting the Bedrock edition resource pack, either as a `.zip` or `.mcpack` file, into Geyser's `packs` folder.
 
-Location of the packs folder:
-- Fabric/NeoForge: `/config/Geyser-xxx/packs/`
-- Other platforms: `/plugins/Geyser-xxx/packs/`
+Location of the 'packs' folder:
+- Fabric/NeoForge: `/config/Geyser-<platform>/packs/`
+- Geyser Standalone: '/packs/' at the root directory
+- Other platforms: `/plugins/Geyser-<platform>/packs/`
 
 After restarting the server (or reloading Geyser), players that connect will receive all packs that are in that folder.
 
@@ -29,21 +30,19 @@ After restarting the server (or reloading Geyser), players that connect will rec
 As an alternative to sending local packs, you can also send resource packs by sending Bedrock players a link to download the packs from.
 This works similarly to Java edition's pack downloading. However, there are a few key limitations:
 
-- The link must be a direct link to the resource pack
-- The Content-Length header must specify the exact file size
+- The link must be a direct link to the resource pack download (it will follow redirects, but those must result in a file download)
+- The Content-Length header must specify the exact file size.
 - The Content-Type application header must be set to `application/zip`.
-- Additionally, the resource pack itself must be in an enclosing folder before being zipped.
-  Example: Usually, you would place your `manifest.json` file in to the root of the zip, so `mypack.zip/manifest.json`.
-  With remote resource packs however, it needs to be inside an enclosing folder, aka `mypack.zip/mypack/manifest.json`.
 
 You can add links to remote packs in the Geyser config under the `remote-pack-urls` section:
+
 ```yaml
 # A list of links to send to the client to download resource packs from.
 # These must be direct links to the resource pack, not a link to a page containing the resource pack.
 # If you enter a link here, Geyser will download the resource pack once to check if it's in a valid format.
 resource-pack-urls:
   # Example: GeyserOptionalPack
-  - "https://ci.opencollab.dev/job/GeyserMC/job/GeyserOptionalPack/job/master/lastSuccessfulBuild/artifact/GeyserOptionalPack.mcpack"
+  - "https://download.geysermc.org/v2/projects/geyseroptionalpack/versions/latest/builds/latest/downloads/geyseroptionalpack"
 ```
 
 Geyser will download your configured remote resource packs once on boot, and warn you if any of these conditions are not met.
@@ -51,9 +50,37 @@ It is unfortunately not possible to bypass these, as these are restrictions impo
 
 To verify headers manually, curl the website and check the values.
 For example:
-`curl -i -k -X GET <TODO link>` returns the following:
+`curl -I -k -L https://download.geysermc.org/v2/projects/geyseroptionalpack/versions/1.0.10/builds/11/downloads/geyseroptionalpack` returns the following:
+- `-I`: This option tells curl to fetch the HTTP response headers in the output.
+- `-L`: Ensures that curl follows redirects
 
-//aldljfjaef
+The output for this shows the following:
+```shell
+HTTP/1.1 200 OK
+Date: Wed, 03 Jul 2024 23:03:06 GMT
+Content-Type: application/zip
+Content-Length: 95400
+Connection: keep-alive
+access-control-allow-methods: GET
+access-control-allow-origin: *
+Cache-Control: public, s-maxage=1209600
+content-disposition: attachment; filename="=?UTF-8?Q?GeyserOptionalPack.mcpack?="; filename*=UTF-8''GeyserOptionalPack.mcpack
+etag: "0258409cde3a2906e1085490fa5b10b77"
+last-modified: Wed, 03 Jul 2024 08:42:41 GMT
+CF-Cache-Status: HIT
+Age: 21500
+Accept-Ranges: bytes
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=DUpNVi9R96y13%2BlJm%2BNTpDLvSt9bw9CFDUh8Qwhpb9SsqjJbuInBGtSM5hiM2dGbSGkUccP4KvSqqD%2FCKrrcQ9ur5at5G0u8FrfooVTKLP%2B4MwGoUl29DwlxeMVg6tX36RjjICmV97M4FlErCZEe%2F3gM%2FA%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 89da81ca69c63735-FRA
+alt-svc: h3=":443"; ma=86400
+```
+This shows that the content-length is indeed set correctly, and that the content type indeed is `application/zip`.
+Further, Geyser will attempt to read the `ETag` to see if the content has changed. To query that, you can use the following:
+
+`curl -I -k -L -v https://download.geysermc.org/v2/projects/geyseroptionalpack/versions/1.0.10/builds/11/downloads/geyseroptionalpack 2>&1 | grep ETag`
+Alternatively, just using the `-v` header will turn on verbose mode that would also display the etag.
 
 ## Common questions
 
@@ -63,7 +90,7 @@ However, many things that are possible with add-ons or behavior packs can be don
 or [custom blocks](/geyser/custom-blocks).
 
 - **Does Geyser convert Java edition resource packs?**
-Not currently, but it is planned. For now, you would need to manually create a Bedrock edition resource pack equivalent.
+Not currently. For now, you would need to manually create a Bedrock edition resource pack equivalent.
 
 - **Can I allow players to choose resource packs themselves?** 
 On most Bedrock platforms (except consoles), players are able to download and install resource packs on the client. 
