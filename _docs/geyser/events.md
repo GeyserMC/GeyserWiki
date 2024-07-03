@@ -42,7 +42,7 @@ public class ExampleMod implements ModInitializer, EventRegistrar {
     @Override 
     public void onInitialize() {
         ServerLifecycleEvents.SERVER_STARTING.register((server) -> {
-            GeyserApi.api().eventBus().register(this, ExampleMod.class); // register your mod & this class as a listener
+            GeyserApi.api().eventBus().register(this, this); // register your mod & this class instance as a listener
         });
         
         LOGGER.info("Geyser is cool!");
@@ -50,7 +50,7 @@ public class ExampleMod implements ModInitializer, EventRegistrar {
     
     // here an event, we subscribe as usual with the @Subscribe annotation
     @Subscribe 
-    public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent eventad {
+    public void onGeyserPostInitializeEvent(GeyserPostInitializeEvent event) {
         LOGGER.info("Geyser started!");
     }
 }
@@ -76,7 +76,7 @@ public class ExamplePlugin extends JavaPlugin implements EventRegistrar {
     @Override
     public void onEnable(){
         getLogger().info("Registering Geyser event bus!");
-        GeyserApi.api().eventBus().register(this, this); // register your plugin & this class as a listener
+        GeyserApi.api().eventBus().register(this, this); // register your plugin & this class instance as a listener
     }
 
     // here an event, we subscribe as usual with the @Subscribe annotation

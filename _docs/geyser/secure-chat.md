@@ -13,7 +13,7 @@ For a technical explanation of Java's chat signing system, see this [article](ht
 
 # Disabling
 
-*Vanilla, Spigot/Paper/forks, Fabric*
+*Vanilla, Spigot/Paper/forks, Fabric, NeoForge*
 
 Set `enforce-secure-profile: false` in [server.properties](https://minecraft.fandom.com/wiki/Server.properties)
 

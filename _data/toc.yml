@@ -22,6 +22,8 @@
       children:
         - title: Commands
           url: "geyser/commands/"
+        - title: Languages and Translations
+          url: "geyser/translations/"
         - title: Geyser Command Line Arguments and System Properties
           url: "geyser/geyser-command-line-arguments-and-system-properties/"
     - title: FAQ

@@ -25,7 +25,7 @@ The options for Geyser on the Bedrock-facing end. Mostly contains options for ho
 
 **`enable-proxy-protocol`**:  Whether to enable PROXY protocol or not for clients. You DO NOT WANT this feature unless you run UDP reverse proxy in front of your Geyser instance. You do NOT need this for BungeeCord (and forks), Velocity, or Waterfall.
 
-**`proxy-protocol-whitelisted-ips`**: Disabled by default, and only enable this if you use "enable-proxy-protocol". A list of allowed PROXY protocol speaking proxy IP addresses/subnets. Should really only be used when you are not able to use a proper firewall (usually true with shared hosting providers etc.). Keeping this list empty means there is no IP address whitelist. Both IP addresses and subnets are supported.
+**`proxy-protocol-whitelisted-ips`**: Disabled by default, and only enable this if you use "enable-proxy-protocol". A list of allowed PROXY protocol speaking proxy IP addresses/subnets. Should really only be used when you are not able to use a proper firewall (usually true with shared hosting providers etc.). Keeping this list empty means there is no IP address whitelist. IP addresses, subnets, and links to plain text files containing either are supported.
 
 ## Remote Section
 Options for the remote (Java) server.

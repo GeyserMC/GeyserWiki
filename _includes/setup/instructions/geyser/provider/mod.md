@@ -1,15 +1,19 @@
 
-# Fabric setup with server hosting provider
+# Modded server setup with server hosting provider
 
 <div class="alert alert-warning" role="alert">
-	Geyser-Fabric runs <b>only</b> on a {{ site.data.versions.java }} Fabric server. <br>
-To use Geyser on an older Fabric server, you can use Geyser on a BungeeCord/Velocity proxy, or Geyser Standalone instead. 
+	Geyser-Fabric and Geyser-NeoForge run <b>only</b> on {{ site.data.versions.java }}. <br>
+To use Geyser with an older server version, you can use Geyser on a BungeeCord/Velocity proxy, Geyser-ViaProxy, or Geyser Standalone instead. 
  </div>
 
+<div class="alert alert-info" role="alert">
+    Geyser only works with <b>server-side</b> mods. Mods that require a client-side install will not work!
+</div>
+
 1. Select your server hosting provider in the dropdown above.
-2. Download the mod from [the download page](https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/fabric).
-3. Place the Geyser-Fabric.jar in the `mods` folder, and restart the server. **You also need [FabricAPI](https://modrinth.com/mod/fabric-api).**
-4. Open your Geyser config, located in `/config/Geyser-Fabric/config.yml`, and find the following:
+2. Download the mod from [the download page](https://geysermc.org/download#geyser).
+3. Place the Geyser mod jar in the `mods` folder, and restart the server. **For Fabric, you will also need [FabricAPI](https://modrinth.com/mod/fabric-api).**
+4. Open your Geyser config, located in `/config/Geyser-Fabric/config.yml` (or `/config/Geyser-NeoForge/config.yml`), and find the following:
 
     ```yaml
     bedrock: 
@@ -33,5 +37,5 @@ To use Geyser on an older Fabric server, you can use Geyser on a BungeeCord/Velo
 5. Verify whether connections are possible by running `geyser connectiontest <ip>:<port>` in the console.
 
 <div class="alert alert-info" role="alert">
-    To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
+    For Geyser-Fabric: To allow Bedrock Edition players to join your server without needing to log in to a paid Java Edition account, you can use <a href="/floodgate/setup/">Floodgate</a>.
 </div>

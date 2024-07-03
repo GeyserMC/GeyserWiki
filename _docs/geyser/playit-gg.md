@@ -9,9 +9,8 @@ title: playit.gg Setup
 </div>
 
 <div class="alert alert-warning" role="alert">
-   The playit.gg plugin does not support creating UDP tunnels. You will need to use the playit.gg program instead.
+    The playit.gg Minecraft server plugin does not support UDP tunnels. You will need to use the program agent instead!
 </div>
-
 
 - If you already have playit.gg running & set up (for e.g. Minecraft Java edition), skip steps 1 and 2 and proceed with step 3.
 

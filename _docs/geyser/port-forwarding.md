@@ -123,7 +123,7 @@ Alternatively, try connecting to the server first on Java edition, then on Bedro
 
 OVH:
 1. Navigate to `Network interfaces`
-2. Click on the `...` button on the table for your IP -> then `...` and `Configure the GAME firewall` -> `Add rule` -> `Other protocol` (or `minecraftPocketEdition` if available)
+2. Click on the `...` button on the table for your IP -> then `...` and `Configure the GAME firewall` -> `Add rule` -> `Other protocol` ~~(or `minecraftPocketEdition` if available)~~
 3. Add your Geyser port into `outgoing port`.
 
 SoYouStart (subsidiary of OVH):
@@ -133,13 +133,49 @@ SoYouStart (subsidiary of OVH):
 4. Select "minecraftPocketEdition" in the dropdown list and enter the target UDP ports.
 5. Save and wait a few seconds for the changes to come into effect.
 
-### Oracle Cloud/OCI
-You'll need to allow port 19132 on UDP in both the security list and the firewall-cmd command.
+#### OVH/SoYouStart Game Firewall Incompatibility Issue
+The OVH GAME filter type `minecraftPocketEdition` currently does not work and you must use the `Other` type.  
 
-Additional step for Ubuntu users: 
+If you would like to continue using the filter type `minecraftPocketEdition`, you may disable the incompatible security feature by adding `-DGeyser.RakSendCookie=false` to your Java server's (or Geyser Standalone proxy's) startup flags.
+
+For more information see:  
+ - [This issue on OVH's infrastructure roadmap](https://github.com/ovh/infrastructure-roadmap/issues/186)  
+ - [The pull request which implemented the security feature that caused the incompatibility](https://github.com/GeyserMC/Geyser/pull/4554)
+
+### Oracle Cloud/OCI
+By default, Oracle Cloud will block all incoming traffic except for SSH and RDP. This must be resolved within Oracle Cloud itself and the Compute Instance running Geyser.
+
+The steps below assume that you are using the default ports for the Java server and Geyser, and should be adjusted accordingly.
+
+1. Find your Compute Instance in the OCI Console
+2. Click on the instances Virtual Cloud Network (this will be under "Instance details")
+3. On the left-hand side, select "Security Lists"
+4. Select one of the security lists. By default only one security list will exist. It doesn't matter which security list we add the rules to.
+5. Select "Add Ingress Rules"
+6. Configure rules for Java (optional)
+   - Set "Source CIDR" to `0.0.0.0/0`
+   - Set "Destination Port Range" to `25565-25565`
+   - Select "Another Ingress Rule"
+7. Configure rules for Geyser
+   - Set "Source CIDR" to `0.0.0.0/0`
+   - Set "Destination Port Range" to `19132-19132`
+   - Set "IP Protocol" to UDP
+8. Select "Add Ingress Rules"
+
+#### Oracle Linux
+
+Run the following commands to allow Minecraft and Geyser through the OS firewall:
+
+```bash
+sudo firewall-cmd --add-port=25565/tcp --permanent
+sudo firewall-cmd --add-port=19132/udp --permanent
+sudo firewall-cmd --reload
+```
+
+#### Ubuntu
+
 1. Remove/comment out `-A INPUT -j REJECT --reject-with icmp-host-prohibited` in the `/etc/iptables/rules.v4` file.
-2. Then, run the following command to fix ufw:
+2. Run the following command to fix `ufw`:
 ```bash 
 sudo iptables-restore < /etc/iptables/rules.v4
 ```
-

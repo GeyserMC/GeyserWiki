@@ -20,6 +20,9 @@ page_sidebar: false
         <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#proxy-option" type="button" role="tab" aria-controls="proxy-option" aria-selected="false"><img src="{{ '/img/icons/velocity.svg' | relative_url }}" alt="velocity icon"> Proxy Servers</a>
     </li>
     <li class="nav-item" role="presentation">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#viaproxy-option" type="button" role="tab" aria-controls="viaproxy-option" aria-selected="false"><img src="{{ '/img/icons/viaproxy.png' | relative_url }}" alt="viaproxy icon"> ViaProxy</a>
+    </li>
+    <li class="nav-item" role="presentation">
         <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#standalone-option" type="button" role="tab" aria-controls="standalone-option" aria-selected="false"><img src="{{ '/img/icons/geyser.png' | relative_url }}" alt="geyser icon"> Standalone</a>
     </li>
   </div>
@@ -35,6 +38,10 @@ page_sidebar: false
     </div>
     <div id="proxy-option" class="tab-pane fade" role="tabpanel">
         {% capture my_include %}{% include setup/instructions/floodgate/proxy.md %}{% endcapture %}
+        {{ my_include | markdownify }}
+    </div>
+    <div id="viaproxy-option" class="tab-pane fade" role="tabpanel">
+        {% capture my_include %}{% include setup/instructions/floodgate/viaproxy.md %}{% endcapture %}
         {{ my_include | markdownify }}
     </div>
     <div id="standalone-option" class="tab-pane fade" role="tabpanel">
