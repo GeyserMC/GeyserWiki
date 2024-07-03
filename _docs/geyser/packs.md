@@ -2,7 +2,7 @@
 title: Using Resource Packs with Geyser
 ---
 
-## Introduction
+# Introduction
 
 Geyser supports sending Bedrock edition resource packs to connecting Bedrock clients. 
 However, Geyser does not convert Java edition resource packs into Bedrock edition ones.
@@ -13,20 +13,20 @@ Resource packs offer a range of customization options. Just like on Java, they c
 - UI Enhancements: Resource packs can modify the user interface - a popular example would be providing a dark mode UI option.
 ... and much more!
 
-## Using resource packs
+# Using resource packs
 
-#### Sending local packs
+### Sending local packs
 The easiest way to send resource packs to Bedrock players is by putting the Bedrock edition resource pack, either as a `.zip` or `.mcpack` file, into Geyser's `packs` folder.
 
 Location of the 'packs' folder:
 - Fabric/NeoForge: `/config/Geyser-<platform>/packs/`
-- Geyser Standalone: '/packs/' at the root directory
+- Geyser Standalone: `/packs/` at the root directory
 - Other platforms: `/plugins/Geyser-<platform>/packs/`
 
 After restarting the server (or reloading Geyser), players that connect will receive all packs that are in that folder.
 
 
-#### Remote pack urls
+### Remote pack urls
 As an alternative to sending local packs, you can also send resource packs by sending Bedrock players a link to download the packs from.
 This works similarly to Java edition's pack downloading. However, there are a few key limitations:
 
@@ -50,7 +50,7 @@ It is unfortunately not possible to bypass these, as these are restrictions impo
 
 To verify headers manually, curl the website and check the values.
 For example:
-`curl -I -k -L https://download.geysermc.org/v2/projects/geyseroptionalpack/versions/1.0.10/builds/11/downloads/geyseroptionalpack` returns the following:
+`curl -I -L https://download.geysermc.org/v2/projects/geyseroptionalpack/versions/1.0.10/builds/11/downloads/geyseroptionalpack` returns the following:
 - `-I`: This option tells curl to fetch the HTTP response headers in the output.
 - `-L`: Ensures that curl follows redirects
 
@@ -79,10 +79,10 @@ alt-svc: h3=":443"; ma=86400
 This shows that the content-length is indeed set correctly, and that the content type indeed is `application/zip`.
 Further, Geyser will attempt to read the `ETag` to see if the content has changed. To query that, you can use the following:
 
-`curl -I -k -L -v https://download.geysermc.org/v2/projects/geyseroptionalpack/versions/1.0.10/builds/11/downloads/geyseroptionalpack 2>&1 | grep ETag`
+`curl -I -L -v https://download.geysermc.org/v2/projects/geyseroptionalpack/versions/1.0.10/builds/11/downloads/geyseroptionalpack 2>&1 | grep ETag`
 Alternatively, just using the `-v` header will turn on verbose mode that would also display the etag.
 
-## Common questions
+# Common questions
 
 - **Does Geyser support behavior packs/add-ons?**
 No. These would require modifications on the Java server side, which isn't possible when Geyser is used on a proxy. 
@@ -104,3 +104,4 @@ For per-server-packs, you can use the [GeyserPackSync](https://github.com/onebea
 - **Does Geyser have an API to send resource packs**
 Yes! See the [Geyser API docs](/geyser/api/) for more info on that. There is a `SessionLoadResourcePacksEvent` to determine which 
 packs are sent to each connecting player, or the more general `GeyserDefineResourcePacksEvent` that defines the packs all users receive.
+
