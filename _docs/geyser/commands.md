@@ -28,6 +28,7 @@ on the proxy server to assign permissions to players. Assigning permissions on t
 | `geyser statistics` | `geyser.command.statistics` | Open the Java statistics menu. |
 | `geyser version` | `geyser.command.version` | Shows the current Geyser version and checks for updates. |
 | `geyser tooltips` | `geyser.command.tooltips`| Toggle showing Advanced Tooltips (F3 + H on Java) |
+| `geyser extensions` | `geyser.command.extensions` | Lists all currently loaded extensions. This command is only registered if any extensions are loaded. |
 
 ## Permissions for Geyser extensions
 
@@ -36,8 +37,7 @@ For the following, `<id>` refers to the extensions' id.
 {:.table .table-striped .table-bordered}
 | Command | Permission | Description |
 | :--- | :--- | :--- |
-| `<id>` <br> Extension root command | `<id>.command` | The permission required to see/run any commands of said Geyser extension. |
-| `<id> help` <br> `<id> ?` | `<id>.command.help` | Shows help for all commands registered by this extension. |
+| `<id> help` <br> `<id> ?` | `geyser.command.exthelp.<id>` | Shows help for all commands registered by this extension. |
 
 ## Other Geyser permissions
 
@@ -52,6 +52,7 @@ Besides commands, there are other permissions that are used to guard specific Ge
 ## Permissions when using Geyser-Standalone/Geyser-ViaProxy
 Geyser-ViaProxy and Geyser-Standalone feature their own basic permission handler. To edit base permissions,
 open the `permissions.yml` file and add or remove permissions that Geyser players should receive when joining.
+See the file for more information.
 
 You can further customize permission handling by creating a [Geyser extension](/geyser/extensions/) that makes use of Geysers API 
 to deal with permission checking.
@@ -59,15 +60,13 @@ to deal with permission checking.
 ## Permissions when using Geyser on platforms without permission handlers
 The following affects Geyser-BungeeCord, Geyser-Velocity, and Geyser-Fabric. 
 These platforms unfortunately do not have built-in permission handlers. Because of that, you will need to grant permissions on those platforms 
-manually using permission handlers, such as [LuckPerms](https://luckperms.net/). 
+manually using permission handlers, such as [LuckPerms](https://luckperms.net/). Geyser's permission are listed above. For extension permissions, consult their documentation.
 
-To resolve:
+Alternatively, you can use [LuckLink](https://github.com/onebeastchris/LuckLink), a third-party Geyser extension, to automatically register permissions using [LuckPerms](https://luckperms.net/).
 - Install [LuckPerms](https://luckperms.net/) on the platform where you've installed Geyser (BungeeCord/Velocity/Fabric).
 - To allow Geyser to automatically register permission defaults, install the [LuckLink](https://github.com/onebeastchris/LuckLink) Geyser extension
 by downloading the `LuckLink.jar` and adding it to Geyser's `extensions` folder.
 - Restart the server, and permissions should be automatically registered.
-
-Alternatively, you can manually grant the necessary permissions using luckperms. See the table above for all of them.
 
 ## Floodgate commands and permissions
 
