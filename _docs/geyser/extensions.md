@@ -46,7 +46,7 @@ Explanations for the individual fields:
 
 ### Creating the main class
 
-The main class, the entrypoint for the extension, needs to [implement the 'Extension' interface provided by Geyser](https://github.com/GeyserMC/GeyserExampleExtension/blob/master/src/main/java/org/geyser/extension/exampleid/ExampleExtension.java#L12). 
+The main class, the entrypoint for the extension, needs to [implement the **Extension** interface provided by Geyser](https://github.com/GeyserMC/GeyserExampleExtension/blob/master/src/main/java/org/geyser/extension/exampleid/ExampleExtension.java#L12). 
 That way, Geyser recognizes the extension, and gives you access to important methods - such as `logger()`, to get your extensions logger. <br>
 To see all the methods provided by that interface, see [here](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/extension/Extension.java).
 
