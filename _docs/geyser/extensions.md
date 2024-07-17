@@ -20,14 +20,14 @@ At the moment, extensions are still a new system, so there is only a small list 
 There is an [official list](https://github.com/GeyserMC/GeyserExtensionList) of available extensions you can check out. If you have an extension you'd like to see on this list, feel free to open a PR!
 
 ### Installing Extensions
-To install an extension, simply put the extension .jar file into Geyser's 'extensions' folder. Then, restart Geyser (or the server Geyser runs on).
+To install an extension, simply put the extension .jar file into Geyser's `extensions` folder. Then, restart Geyser (or the server Geyser runs on).
 
 ### Creating Geyser Extensions
-The easiest way to create an extension would be utilizing [this official template](https://github.com/GeyserMC/GeyserExampleExtension/). Simply create a new repository from the template, customize the 'extension.yml' & 'settings.gradle' files, and get started making the extension.
+The easiest way to create an extension would be utilizing [this official template](https://github.com/GeyserMC/GeyserExampleExtension/). Simply create a new repository from the template, customize the `extension.yml` & `settings.gradle` files, and get started making the extension.
 
-Geyser recognizes extensions when they have a file called 'extension.yml' in the jars 'resources' folder.
+Geyser recognizes extensions when they have a file called `extension.yml` in the jars `resources` folder.
 
-extension.yml:
+`extension.yml`:
 ```yml
 id: exampleid
 name: ExampleExtension
@@ -38,7 +38,7 @@ authors: [ExampleAuthor]
 ```
 
 Explanations for the individual fields:
-- id: The id of the extension. Every extension needs to have their unique id - all lowercase letters. If you e.g. register a command for your extension, it will have the id as a prefix: e.g. '/exampleid command'.
+- id: The id of the extension. Every extension needs to have their unique id - all lowercase letters. If you e.g. register a command for your extension, it will have the id as a prefix: e.g. `/exampleid command`.
 - name: The name of the extension.
 - main: The main class of your extension.
 - api: The Base API version your extension targets.
@@ -47,10 +47,10 @@ Explanations for the individual fields:
 ### Creating the main class
 
 The main class, the entrypoint for the extension, needs to [implement the 'Extension' interface provided by Geyser](https://github.com/GeyserMC/GeyserExampleExtension/blob/master/src/main/java/org/geyser/extension/exampleid/ExampleExtension.java#L12). 
-That way, Geyser recognizes the extension, and gives you access to important methods - such as 'logger()', to get your extensions logger. <br>
+That way, Geyser recognizes the extension, and gives you access to important methods - such as `logger()`, to get your extensions logger. <br>
 To see all the methods provided by that interface, see [here](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/extension/Extension.java).
 
-Unlike plugins, extensions do not have a 'onEnable' or 'onDisable' method. Instead, most actions are done in events at different stages during Geyser's lifecycle using events.
+Unlike plugins, extensions do not have a `onEnable` or `onDisable` method. Instead, most actions are done in events at different stages during Geyser's lifecycle using events.
 Some important ones are:
 - `GeyserPreInitializeEvent`: This event is fired when Geyser starts to initialize. If you e.g. need to register extension commands that are configured in your config, 
 you would need to load the config here to ensure that your config is ready before the `GeyserDefineCommandsEvent` is fired. 
@@ -71,7 +71,7 @@ and register them in the event. You can find an example for custom items [here](
 To build your extension, run the Gradle build task, and install the extension.
 
 ### Creating commands with Geyser Extensions
-To create a command, you would need to use the "Commands" package in the Geyser API. Brief rundown:
+To create a command, you would need to use the `Commands` package in the Geyser API. Brief rundown:
 - [Command.java](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/command/Command.java)
   This interface represents a command in Geyser - to make one, you can use the CommandBuilder. You can register it with the
   [GeyserDefineCommandsEvent](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle/GeyserDefineCommandsEvent.java)
