@@ -53,7 +53,7 @@ To see all the methods provided by that interface, see [here](https://github.com
 Unlike plugins, extensions do not have a 'onEnable' or 'onDisable' method. Instead, most actions are done in events at different stages during Geyser's lifecycle using events.
 Some important ones are:
 - `GeyserPreInitializeEvent`: This event is fired when Geyser starts to initialize. If you e.g. need to register extension commands that are configured in your config, 
-you would need to load the config here to ensure that your config is ready before the GeyserDefineCommandsEvent is fired. 
+you would need to load the config here to ensure that your config is ready before the `GeyserDefineCommandsEvent` is fired. 
 - `GeyserPostInitializeEvent`: It is called when Geyser has completed initializing. The bulk of your code should go here, as the GeyserAPI is fully available at this stage.
 - `GeyserShutdownEvent`: Called when Geyser is shutting down. You can use this to e.g. save data, or clean up resources.
 
@@ -100,7 +100,7 @@ Command command = Command.builder(this) // "this" is the extension's main class
         .build();
 ```
 
-To register the command, you would need to subscribe to the GeyserDefineCommandsEvent, and register the command there:
+To register the command, you would need to subscribe to the `GeyserDefineCommandsEvent`, and register the command there:
 ```java
 @Subscribe
 public void onDefineCommands(GeyserDefineCommandsEvent event) {
