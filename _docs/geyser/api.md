@@ -91,6 +91,9 @@ The network package contains basic information about the remote server via the
 interface, such as the server's IP address and port, and the protocol version of the remote server. Or the auth type.
 You can also get the port/IP that Geyser listens to via the [BedrockListener](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/network/BedrockListener.java) interface.
 
+### [Skin](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/skin)
+The skin package contains some records to record skin data. If you want to change the skin of players, you can listen to `SessionSkinApplyEvent`,then use `SessionSkinApplyEvent#skin(Skin newSkin)`,`SessionSkinApplyEvent#cape(Cape newCape)` or `SessionSkinApplyEvent#geometry(SkinGeometry newGeometry)` to change the skin.
+
 #### [Pack](https://github.com/GeyserMC/Geyser/tree/master/api/src/main/java/org/geysermc/geyser/api/pack)
 The pack package contains classes and interfaces related to resource packs in Geyser. You can create custom resource packs and send them to individual sessions before they log in using the [SessionLoadResourcePacksEvent](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/event/bedrock/SessionLoadResourcePacksEvent.java).
 If you wish to send a resource pack to all sessions, you can use the [GeyserLoadResourcePacksEvent](https://github.com/GeyserMC/Geyser/blob/master/api/src/main/java/org/geysermc/geyser/api/event/lifecycle/GeyserLoadResourcePacksEvent.java).
