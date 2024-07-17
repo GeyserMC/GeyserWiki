@@ -107,10 +107,10 @@ public void onDefineCommands(GeyserDefineCommandsEvent event) {
     event.register(command);
 }
 ```
-If everything went right, you should be able to execute the command in-game by running "/extesionid [command]" - in our case, "/exampleid examplecommand".
+If everything went right, you should be able to execute the command in-game by running `/extesionid [command]` - in our case, `/exampleid examplecommand`.
 Here, it would send "Hello World" to the source that ran the command.
-Since we also set aliases, you could also run "/exampleid example" or "/exampleid ex" for the same command.
-To provide args, simple run "/exampleid examplecommand [args]" - replacing [args] with the arguments you want to pass to the command.
+Since we also set aliases, you could also run `/exampleid example` or `/exampleid ex` for the same command.
+To provide args, simple run `/exampleid examplecommand [args]` - replacing `[args]` with the arguments you want to pass to the command.
 
 ### Listening to Events
 See [here](/geyser/events) for documentation. You do not need to register the event listener, Geyser will do that for you.
