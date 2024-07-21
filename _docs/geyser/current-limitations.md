@@ -18,19 +18,19 @@ The following things cannot be fixed without changes to Bedrock or the Java prot
 - Anything that relies on tab complete or typing in the chat UI (related to the above) - Bedrock sends no packet that indicates they are in this menu
 - Unable to see banner layers past 6
 - Movement issues around bamboo due to offset differences between Java and Bedrock: [Hurricane](/other/hurricane) can work around it.
-- Custom anvil recipes or custom smithing table ingredients/patterns (https://github.com/GeyserMC/Geyser/issues/4706)
-- Heights lower than -64 or higher than 320 in the overworld with extended height enabled, and heights lower than 0 or higher than 256 in other dimensions (https://github.com/GeyserMC/Geyser/issues/3804)
+- Custom anvil recipes or custom smithing table ingredients/patterns ([GeyserMC/Geyser#4706](https://github.com/GeyserMC/Geyser/issues/4706))
+- Heights lower than -64 or higher than 320 in the overworld with extended height enabled, and heights lower than 0 or higher than 256 in other dimensions ([GeyserMC/Geyser#3804](https://github.com/GeyserMC/Geyser/issues/3804))
 - Dolphin's Grace potion effect visuals (effects should still work correctly)
 - Invisible item frames
 - Blocks (excluding jack-o-lantern) on entity heads (E.G. armor stands, players)
-- Some block state changes are controlled client side, and are not influenced by the debug stick - fences for example. (https://github.com/GeyserMC/Geyser/issues/3125)
-- Custom beacon base blocks (https://github.com/GeyserMC/Geyser/issues/2301) - these are hardcoded on Bedrock edition.
-- Climbable blocks changed by datapacks (https://github.com/GeyserMC/Geyser/issues/4051)
-- Custom enchantments/sweeping edge (https://github.com/GeyserMC/Geyser/issues/3121)
-- "Bordure Indented" pattern shape not appearing on the Bedrock side in the loom (https://github.com/GeyserMC/Geyser/issues/3183)
+- Some block state changes are controlled client side, and are not influenced by the debug stick - fences for example. ([GeyserMC/Geyser#3125](https://github.com/GeyserMC/Geyser/issues/3125))
+- Custom beacon base blocks ([GeyserMC/Geyser#2301](https://github.com/GeyserMC/Geyser/issues/2301)) - these are hardcoded on Bedrock edition.
+- Climbable blocks changed by datapacks ([GeyserMC/Geyser#4051](https://github.com/GeyserMC/Geyser/issues/4051))
+- Custom enchantments/sweeping edge ([GeyserMC/Geyser#3121](https://github.com/GeyserMC/Geyser/issues/3121))
+- "Bordure Indented" pattern shape not appearing on the Bedrock side in the loom ([GeyserMC/Geyser#3183](https://github.com/GeyserMC/Geyser/issues/3183))
 - Gliding without elytras/custom elytras (https://github.com/GeyserMC/Geyser/issues/3255, https://github.com/GeyserMC/Geyser/issues/3299)
-- Custom furnace cook times (https://github.com/GeyserMC/Geyser/issues/4104)
-- Maximum sign length different on Java/Bedrock edition (https://github.com/GeyserMC/Geyser/issues/4130)
+- Custom furnace cook times ([GeyserMC/Geyser#4104](https://github.com/GeyserMC/Geyser/issues/4104))
+- Maximum sign length different on Java/Bedrock edition ([GeyserMC/Geyser#4130](https://github.com/GeyserMC/Geyser/issues/4130))
 
 The following changes **are supported** with the [GeyserOptionalPack](/other/geyseroptionalpack/), which is a Bedrock resource pack you can install for additional functionality for features Bedrock does not natively support:
 - Custom armor stand poses

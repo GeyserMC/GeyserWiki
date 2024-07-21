@@ -5,11 +5,20 @@ title: GeyserOptionalPack
 
 GeyserOptionalPack is a Bedrock resource pack that adds more features to Geyser to bring Bedrock Edition in line with Java Edition. A resource pack allows various features and bug fixes to be implemented in Bedrock, including:
 
-- Armor stand poses and arm/baseplate visibility
-- Illusioner texture
-- Missing particles, like sweep attack
+- Armor base arms/baseplate visibility
+- Armor stand poses
+- Illusioners
+- Missing particles
+- Offhand animations
+- Shulker invisibility parity
 - Spectral arrow entity texture
-
+- Bypass for the scoreboard character limit
+- Hides UI elements that do not exist on Java edition, such as:
+  - Text input field in the cartography table
+  - 2x2 crafting grid while in creative mode
+  - Tick-delay and rename fields in the command block menu
+  - Structure block options that do not exist on Java
+  
 A more complete list can be found on the optional pack's [README](https://github.com/GeyserMC/GeyserOptionalPack/blob/master/README.md). Implementation details for those interested in how features are added can be found [here](https://github.com/GeyserMC/GeyserOptionalPack/blob/master/developer_documentation.md).
 
 While recommended, it is not required to install the resource pack on the server - clients can install it themselves. Additionally, if you use a proxy like WaterdogPE, you can install the pack on the server without impacting gameplay on other Bedrock servers.
