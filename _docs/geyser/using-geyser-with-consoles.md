@@ -27,7 +27,7 @@ Text directions:
 4.  Select “Change Settings”, then scroll down and select "DNS Settings".
 5.  Select "Manual".
 6.  Select "Primary DNS" with the A Button, and then hold down the B Button to delete the DNS (it defaults to zeros).
-7.  Enter a GeyserMC DNS.
+7.  Enter the BedrockConnect IP for the preferred Primary DNS (Multiple options depending on region can be found on the [BedrockConnect Github Page](https://github.com/Pugmatt/BedrockConnect)).
 8.  Select "Secondary DNS" with the A Button, and then hold down the B Button to delete the existing DNS.
 9.  Enter a secondary DNS. Google's or Cloudfare's IP (8.8.8.8 or 1.1.1.1) are recommended.
 
