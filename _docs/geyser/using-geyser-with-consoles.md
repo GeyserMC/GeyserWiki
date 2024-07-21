@@ -29,7 +29,7 @@ Text directions:
 6.  Select "Primary DNS" with the A Button, and then hold down the B Button to delete the DNS (it defaults to zeros).
 7.  Enter a GeyserMC DNS.
 8.  Select "Secondary DNS" with the A Button, and then hold down the B Button to delete the existing DNS.
-9.  Enter a recomended DNS (Cloudflare is the fastest.)
+9.  Enter a secondary DNS. Google's or Cloudfare's IP (8.8.8.8 or 1.1.1.1) are recommended.
 
 # PlayStation 4/5
 1. Go to your PS4 Home screen.
